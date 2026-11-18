@@ -1,0 +1,2090 @@
+{
+  "_comment": "Toyota catalog expansion batch 1 (2026-11-18). Import file in the catalog's Product shape plus review fields. NOT loaded by the storefront. Validate with: node scripts/check-toyota-expansion.mjs",
+  "groups": {
+    "ready": 0,
+    "commercial_pending": 27,
+    "research_pending": 23
+  },
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-F0050 — RAV4 and Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17801-F0050",
+      "supersedes": "17801-25020; 17801-F0070",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2019–2024 Toyota RAV4 (2.5L gas, non-hybrid); 2018–2024 Toyota Camry (2.5L / 3.5L gas, non-hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L gas, non-hybrid"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L / 3.5L gas, non-hybrid"
+        }
+      ],
+      "engines": "A25A-FKS; 2GR-FKS",
+      "description": "Genuine Toyota engine air filter 17801-F0050 for the Toyota RAV4 and Camry. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. It supersedes 17801-25020; 17801-F0070. Hybrid RAV4 uses 17801-77050; Hybrid Camry uses 17801-F0020.\n\nSpecifications\n\nPart number: 17801-F0050\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; 2GR-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L gas, non-hybrid); 2018–2024 Toyota Camry (2.5L / 3.5L gas, non-hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://parts.lakelandtoyota.com/p/TOYOTA__RAV-4-LE/Engine-Air-Filter/14760743/17801F0050.html",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-air_filter.html",
+        "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-f0050"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-0P100 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17801-0P100",
+      "supersedes": "17801-0S020",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Genuine Toyota engine air filter 17801-0P100 for the Toyota Tacoma. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. It supersedes 17801-0S020. 2.7L Tacoma uses 17801-0C040.\n\nSpecifications\n\nPart number: 17801-0P100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-air-filter-element-sequoia-tacoma-178010p100",
+        "https://www.toyotapartsdeal.com/oem-2016-toyota-tacoma-air_filter.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-0C040 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17801-0C040",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2016–2023 Toyota Tacoma (2.7L 4-cyl)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.7L 4-cyl"
+        }
+      ],
+      "engines": "2TR-FE",
+      "description": "Genuine Toyota engine air filter 17801-0C040 for the Toyota Tacoma. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. Dealer range 2005-2023; listed here only for the 2016-2023 2.7L confirmed by VIN-based fitment.\n\nSpecifications\n\nPart number: 17801-0C040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2TR-FE\nFitment: 2016–2023 Toyota Tacoma (2.7L 4-cyl)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.sparksparts.com/oem-parts/toyota-air-filter-178010c040",
+        "https://parts.northparktoyota.com/oem-parts/toyota-air-filter-178010c040"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-0P051 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17801-0P051",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2024–2025 Toyota Tacoma (2.4L turbo)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L turbo"
+        }
+      ],
+      "engines": "T24A-FTS",
+      "description": "Genuine Toyota engine air filter 17801-0P051 for the Toyota Tacoma. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. Also listed for earlier Camry/Highlander/Sienna/Avalon; those engine splits are unresolved and not claimed.\n\nSpecifications\n\nPart number: 17801-0P051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: T24A-FTS\nFitment: 2024–2025 Toyota Tacoma (2.4L turbo)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~element~sub~assy~ai~17801-0p051.html",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-tacoma-air_filter.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-38051 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17801-38051",
+      "supersedes": "17801-38050",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2010–2024 Toyota 4Runner (4.0L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6"
+        }
+      ],
+      "engines": "1GR-FE",
+      "description": "Genuine Toyota engine air filter 17801-38051 for the Toyota 4Runner. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. It supersedes 17801-38050. One dealer lists replacement by 17801-YZZ13; confirm current number at order.\n\nSpecifications\n\nPart number: 17801-38051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE\nFitment: 2010–2024 Toyota 4Runner (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-1780138051",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-4runner-air_filter.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-F0020 — Corolla and Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17801-F0020",
+      "supersedes": "17801-F0030",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2020–2024 Toyota Corolla (2.0L / 1.8L Hybrid); 2018–2024 Toyota Camry (2.5L Hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "2.0L / 1.8L Hybrid"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L Hybrid"
+        }
+      ],
+      "engines": "M20A-FKS; 2ZR-FXE; A25A-FXS",
+      "description": "Genuine Toyota engine air filter 17801-F0020 for the Toyota Corolla and Camry. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. It supersedes 17801-F0030.\n\nSpecifications\n\nPart number: 17801-F0020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: M20A-FKS; 2ZR-FXE; A25A-FXS\nFitment: 2020–2024 Toyota Corolla (2.0L / 1.8L Hybrid); 2018–2024 Toyota Camry (2.5L Hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.sparksparts.com/oem-parts/toyota-2018-2024-toyota-air-filter-17801f0020",
+        "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0020"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA1 — Camry, Highlander and Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04152-YZZA1",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L / 3.5L"
+        },
+        {
+          "yearFrom": 2017,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.5L V6"
+        },
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "A25A-FKS; 2GR-FKS",
+      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Camry, Highlander and Tacoma. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. Cartridge element; replace the housing O-ring with each change.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; 2GR-FKS\nFitment: 2018–2024 Toyota Camry (2.5L / 3.5L); 2017–2023 Toyota Highlander (3.5L V6); 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza1.html",
+        "https://www.sparksparts.com/oem-parts/toyota-toyota-oil-filter-camry-highlander-rav4-sienna-tacoma-venza-4152yzza1",
+        "https://autoparts.toyota.com/products/product/replaceable-element-oil-filter-04152yzza1"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA6 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04152-YZZA6",
+      "supersedes": "04152-37010",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2009–2018 Toyota Corolla (1.8L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L"
+        }
+      ],
+      "engines": "2ZR-FE",
+      "description": "Genuine Toyota oil filter element 04152-YZZA6 for the Toyota Corolla. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-37010. Not claimed for the 2.0L M20A-FKS.\n\nSpecifications\n\nPart number: 04152-YZZA6\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2ZR-FE\nFitment: 2009–2018 Toyota Corolla (1.8L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza6.html",
+        "https://www.toyotapartsnow.com/oem/toyota~replaceable-element~04152-yzza6"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZD3 — Tacoma, 4Runner and Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90915-YZZD3",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2010 Toyota Tundra (4.0L V6 / 4.7L V8)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "4.0L V6"
+        },
+        {
+          "yearFrom": 2003,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6 / 4.7L V8"
+        },
+        {
+          "yearFrom": 2000,
+          "yearTo": 2010,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.0L V6 / 4.7L V8"
+        }
+      ],
+      "engines": "1GR-FE; 2UZ-FE",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZD3 for the Toyota Tacoma, 4Runner and Tundra. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. 2.7L Tacoma fitment disputed between dealer catalogs and not claimed.\n\nSpecifications\n\nPart number: 90915-YZZD3\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE; 2UZ-FE\nFitment: 2005–2015 Toyota Tacoma (4.0L V6); 2003–2009 Toyota 4Runner (4.0L V6 / 4.7L V8); 2000–2010 Toyota Tundra (4.0L V6 / 4.7L V8)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~filter~oil~90915-yzzd3.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-oil-filter-90915yzzd3",
+        "https://www.sparksparts.com/oem-parts/toyota-1984-2015-toyota-engine-oil-filter-tacoma-tundra-4runner-fj-cruiser-land-cruiser-90915yzzd3"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN3 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90915-YZZN3",
+      "supersedes": "90915-10010",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2024–2025 Toyota Tacoma (2.4L turbo)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L turbo"
+        }
+      ],
+      "engines": "T24A-FTS",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZN3 for the Toyota Tacoma. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10010. 2025+ 4Runner fitment is seller-stated only and not claimed.\n\nSpecifications\n\nPart number: 90915-YZZN3\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: T24A-FTS\nFitment: 2024–2025 Toyota Tacoma (2.4L turbo)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/filter-oil-90915yzzn3",
+        "https://www.toyotapartsnow.com/oem/toyota~filter-oil~90915-yzzn3"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Cabin Air Filter 87139-0R030 — RAV4 and Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87139-0R030",
+      "supersedes": "87139-28020",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2019–2023 Toyota RAV4; 2019–2024 Toyota Corolla",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota cabin air filter 87139-0R030 for the Toyota RAV4 and Corolla. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. It supersedes 87139-28020. Some RAV4 trims list 87139-58010 instead; check the existing filter.\n\nSpecifications\n\nPart number: 87139-0R030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2023 Toyota RAV4; 2019–2024 Toyota Corolla\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/element-air-refiner-871390r030",
+        "https://www.sparksparts.com/oem-parts/toyota-cabin-air-filter-871390r030",
+        "https://www.toyotapartsnow.com/oem/toyota~air-refiner-element~87139-0r030"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Cabin Air Filter (Deodorizing) 87139-0E040 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87139-0E040",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2018–2024 Toyota Camry",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota cabin air filter 87139-0E040 for the Toyota Camry. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. 2018-2019 Camry also listed for 87139-58010.\n\nSpecifications\n\nPart number: 87139-0E040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2024 Toyota Camry\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/element-air-refiner-871390e040",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-camry-cabin_air_filter.html",
+        "https://parts.northparktoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Cabin Air Filter 87139-58010 — Highlander and Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87139-58010",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2020–2024 Toyota Highlander; 2021–2024 Toyota Sienna",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota cabin air filter 87139-58010 for the Toyota Highlander and Sienna. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. Also listed for 2018-2019 Camry and some 2019-2024 RAV4 trims.\n\nSpecifications\n\nPart number: 87139-58010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Highlander; 2021–2024 Toyota Sienna\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-58010.html",
+        "https://autoparts.toyota.com/products/product/element-air-refiner-8713958010"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01289 — RAV4 and Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90919-01289",
+      "supersedes": "90919-A1001",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "ignition",
+      "proposedCategoryName": "Ignition",
+      "fitment": "2019–2024 Toyota RAV4 (2.5L); 2018–2024 Toyota Camry (2.5L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L"
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Genuine Toyota iridium spark plug 90919-01289 for the Toyota RAV4 and Camry. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-A1001. Sold individually; four required.\n\nSpecifications\n\nPart number: 90919-01289\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L); 2018–2024 Toyota Camry (2.5L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901289",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-spark_plug.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Direct Ignition Coil 90919-02258 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90919-02258",
+      "supersedes": "90919-02248; 90919-02252",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "ignition",
+      "proposedCategoryName": "Ignition",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Genuine Toyota direct ignition coil 90919-02258 for the Toyota Tacoma. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. It supersedes 90919-02248; 90919-02252. Sold individually; a V6 uses six.\n\nSpecifications\n\nPart number: 90919-02258\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/coil-ignition-9091902258",
+        "https://www.toyotapartsdeal.com/oem/toyota~coil~ignition~90919-02258.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-direct-ignition-coil-9091902258"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-04090 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-04090",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2016–2023 Toyota Tacoma",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": null
+        }
+      ],
+      "engines": "2TR-FE; 2GR-FKS",
+      "description": "Genuine Toyota front disc brake pad set 04465-04090 for the Toyota Tacoma. The set covers one front axle, both sides. Pads only; fitting hardware sold separately. Manufacturer note: Mark Advics VC070H.\n\nSpecifications\n\nPart number: 04465-04090\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2TR-FE; 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 74.93,
+      "referencePriceSource": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-04090.html",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-front-446504090",
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-04090.html",
+        "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446504090"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Rotor 43512-04052 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-04052",
+      "supersedes": "43512-04050; 43512-04051",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2005–2023 Toyota Tacoma",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake rotor 43512-04052 for the Toyota Tacoma. Sold individually; rotors should be replaced in pairs across the axle. It supersedes 43512-04050; 43512-04051. Fits left or right; replace in pairs. 2024+ Tacoma uses 43512-04060.\n\nSpecifications\n\nPart number: 43512-04052\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2005–2023 Toyota Tacoma\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~front~43512-04052.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351204052",
+        "https://www.sparksparts.com/oem-parts/toyota-rotor-4351204052"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0C020 — Tundra and Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-0C020",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2007–2018 Toyota Tundra; 2008–2018 Toyota Sequoia",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": null
+        }
+      ],
+      "engines": "1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE",
+      "description": "Genuine Toyota front disc brake pad set 04465-0C020 for the Toyota Tundra and Sequoia. The set covers one front axle, both sides. Ceramic; four pads; hardware sold separately. One dealer ends at 2017.\n\nSpecifications\n\nPart number: 04465-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE\nFitment: 2007–2018 Toyota Tundra; 2008–2018 Toyota Sequoia\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~front~pad~only~04465-0c020.html",
+        "https://www.sparksparts.com/oem-parts/toyota-genuine-oem-toyota-front-right-and-left-brake-pads-sequoia-and-tundra-44650c020",
+        "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-044650c020"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Rotor 43512-06200 — Camry, RAV4 and Corolla Cross",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-06200",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2018–2024 Toyota Camry; 2019–2024 Toyota RAV4; 2022–2025 Toyota Corolla Cross",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Corolla Cross",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake rotor 43512-06200 for the Toyota Camry, RAV4 and Corolla Cross. Sold individually; rotors should be replaced in pairs across the axle. Fitment can vary by trim and brake package; confirm by VIN.\n\nSpecifications\n\nPart number: 43512-06200\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2024 Toyota Camry; 2019–2024 Toyota RAV4; 2022–2025 Toyota Corolla Cross\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 76.0,
+      "referencePriceSource": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206200"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — Camry and RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-0E060",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2018–2024 Toyota Camry (2.5L); 2019–2024 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L"
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Genuine Toyota front disc brake pad set 04465-0E060 for the Toyota Camry and RAV4. The set covers one front axle, both sides. TRD and some trims use different pads.\n\nSpecifications\n\nPart number: 04465-0E060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L); 2019–2024 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 75.0,
+      "referencePriceSource": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-front-44650e060",
+        "https://www.sparksparts.com/oem-parts/toyota-brake-pads-44650e060"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-06170 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-06170",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2023–2024 Toyota Camry (US-built from 02/2023)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "US-built from 02/2023"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake pad set 04465-06170 for the Toyota Camry. The set covers one front axle, both sides. Production-date restricted: US-built units from 02/2023.\n\nSpecifications\n\nPart number: 04465-06170\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2024 Toyota Camry (US-built from 02/2023)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://parts.northparktoyota.com/oem-parts/toyota-disc-brake-pad-set-446506170"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-35330 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-35330",
+      "supersedes": "04465-35190; 04465-35230",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota 4Runner (4.0L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6"
+        }
+      ],
+      "engines": "1GR-FE",
+      "description": "Genuine Toyota front disc brake pad set 04465-35330 for the Toyota 4Runner. The set covers one front axle, both sides. It supersedes 04465-35190; 04465-35230. Manufacturer note: Mark Advics PV565H.\n\nSpecifications\n\nPart number: 04465-35330\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE\nFitment: 2019–2024 Toyota 4Runner (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-35330.html",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-4runner-brake_pad_set.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-02530 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-02530",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2021–2022 Toyota Highlander (2.4L / 2.5L / 3.5L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "2.4L / 2.5L / 3.5L"
+        }
+      ],
+      "engines": "T24A-FTS; A25A-FXS; 2GR-FKS",
+      "description": "Genuine Toyota front disc brake pad set 04465-02530 for the Toyota Highlander. The set covers one front axle, both sides. Manufacturer note: Mark Advics VC084H. Other years unconfirmed.\n\nSpecifications\n\nPart number: 04465-02530\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: T24A-FTS; A25A-FXS; 2GR-FKS\nFitment: 2021–2022 Toyota Highlander (2.4L / 2.5L / 3.5L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446502530",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_pad_set.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16032-F0011 — RAV4 and Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16032-F0011",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "cooling",
+      "proposedCategoryName": "Cooling System",
+      "fitment": "2019–2024 Toyota RAV4 (2.5L gas, non-hybrid); 2018–2024 Toyota Camry (2.5L gas, non-hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L gas, non-hybrid"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L gas, non-hybrid"
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Genuine Toyota engine water pump 16032-F0011 for the Toyota RAV4 and Camry. It circulates coolant through the engine and radiator; leaks at the weep hole or bearing noise are the usual signs of failure. Includes water pump gasket and thermostat housing per dealer catalog.\n\nSpecifications\n\nPart number: 16032-F0011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L gas, non-hybrid); 2018–2024 Toyota Camry (2.5L gas, non-hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-water_pump.html",
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--limited--2-5l-l4-gas/cooling-system--radiator-and-components"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alternator Assembly with Regulator (100A) 27060-F0010 — Camry and Avalon",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "27060-F0010",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "electrical",
+      "proposedCategoryName": "Electrical",
+      "fitment": "2018–2024 Toyota Camry (2.5L gas, non-hybrid); 2020–2022 Toyota Avalon (2.5L gas)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L gas, non-hybrid"
+        },
+        {
+          "yearFrom": 2020,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Avalon",
+          "submodel": "2.5L gas"
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Genuine Toyota alternator assembly with regulator 27060-F0010 for the Toyota Camry and Avalon. It charges the battery and powers the vehicle's electrical system while the engine runs. 12V 100A.\n\nSpecifications\n\nPart number: 27060-F0010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L gas, non-hybrid); 2020–2022 Toyota Avalon (2.5L gas)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-alternator-27060f0010",
+        "https://www.toyotapartsdeal.com/oem/toyota~alternator~assy~w~r~27060-f0010.html",
+        "https://www.sparksparts.com/oem-parts/toyota-alternator-27060f0010"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Wheel Bearing and Hub Assembly 43550-0R060 — RAV4 and Venza",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43550-0R060",
+      "supersedes": "43550-33070",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension & Wheel Ends",
+      "fitment": "2019–2024 Toyota RAV4 (2.5L); 2021–2024 Toyota Venza",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L"
+        },
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Venza",
+          "submodel": null
+        }
+      ],
+      "engines": "A25A-FKS; A25A-FXS",
+      "description": "Genuine Toyota front wheel bearing and hub assembly 43550-0R060 for the Toyota RAV4 and Venza. The bearing comes pressed into the hub as one assembly. A worn bearing usually shows up as a growl that changes with speed or when turning. It supersedes 43550-33070. Side-specific; confirm left/right. RAV4 Prime uses 43550-42030.\n\nSpecifications\n\nPart number: 43550-0R060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; A25A-FXS\nFitment: 2019–2024 Toyota RAV4 (2.5L); 2021–2024 Toyota Venza\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 277.11,
+      "referencePriceSource": "https://www.toyotapartsdeal.com/oem/toyota~hub~bearing~assy~43550-0r060.html",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium-high",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~hub~bearing~assy~43550-0r060.html",
+        "https://www.sparksparts.com/oem-parts/toyota-hub-assembly-435500r060"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Disc Brake Rotor 43512-0R010 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-0R010",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2009–2018 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake rotor 43512-0R010 for the Toyota RAV4. Sold individually; rotors should be replaced in pairs across the axle. 2019+ RAV4 uses 43512-06200.\n\nSpecifications\n\nPart number: 43512-0R010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2018 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "medium",
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-435120r010",
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-0r010.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Direct Ignition Coil 90919-A2009 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90919-A2009",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "ignition",
+      "proposedCategoryName": "Ignition",
+      "fitment": "2019–2024 Toyota RAV4 (2.5L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L"
+        }
+      ],
+      "engines": "A25A-FKS; A25A-FXS",
+      "description": "Genuine Toyota direct ignition coil 90919-A2009 for the Toyota RAV4. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. Single dealer source; needs a second catalog.\n\nSpecifications\n\nPart number: 90919-A2009\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; A25A-FXS\nFitment: 2019–2024 Toyota RAV4 (2.5L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem-toyota-rav4-ignition_coil.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-42200 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-42200",
+      "supersedes": "04465-42160",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake pad set 04465-42200 for the Toyota RAV4. The set covers one front axle, both sides. It supersedes 04465-42160. Toyota confirms identity; RAV4 years not shown. MSRP $104.50 at one dealer.\n\nSpecifications\n\nPart number: 04465-42200\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 75.25,
+      "referencePriceSource": "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-l-fitting-parts-fr-0446542200",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-l-fitting-parts-fr-0446542200"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-42220 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-42220",
+      "supersedes": "04465-0R010",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2013–2018 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2013,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "2AR-FE",
+      "description": "Genuine Toyota front disc brake pad set 04465-42220 for the Toyota RAV4. The set covers one front axle, both sides. It supersedes 04465-0R010. Dealer shows 04465-0R010 (2009-2018 RAV4) replaced by 42220; 42220's own fitment not yet confirmed.\n\nSpecifications\n\nPart number: 04465-42220\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2AR-FE\nFitment: 2013–2018 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0r010.html",
+        "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-044650r010"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-33480 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-33480",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2018–2019 Toyota Camry (LE / SE 2.5L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "LE / SE 2.5L"
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Genuine Toyota front disc brake pad set 04465-33480 for the Toyota Camry. The set covers one front axle, both sides. Overlaps 04465-0E060; resolve which is current.\n\nSpecifications\n\nPart number: 04465-33480\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2019 Toyota Camry (LE / SE 2.5L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-33480.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01287 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90919-01287",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "ignition",
+      "proposedCategoryName": "Ignition",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Genuine Toyota iridium spark plug 90919-01287 for the Toyota Tacoma. It is the plug specified for this engine's heat range and gap, sold individually. Conflicts with 90919-01263 for the same engine.\n\nSpecifications\n\nPart number: 90919-01287\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 17.48,
+      "referencePriceSource": "https://www.toyotapartsdeal.com/oem/toyota~plug~spark~90919-01287.html",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~plug~spark~90919-01287.html",
+        "https://autoparts.toyota.com/products/product/plug-spark-9091901287"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01263 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90919-01263",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "ignition",
+      "proposedCategoryName": "Ignition",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Genuine Toyota iridium spark plug 90919-01263 for the Toyota Tacoma. It is the plug specified for this engine's heat range and gap, sold individually. Conflicts with 90919-01287.\n\nSpecifications\n\nPart number: 90919-01263\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.sparksparts.com/oem-parts/toyota-spark-plug-9091901263",
+        "https://parts.olathetoyota.com/oem-parts/toyota-spark-plug-9091901263"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01275 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90919-01275",
+      "supersedes": "90919-01253",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "ignition",
+      "proposedCategoryName": "Ignition",
+      "fitment": "2009–2019 Toyota Corolla (1.8L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L"
+        }
+      ],
+      "engines": "2ZR-FE",
+      "description": "Genuine Toyota iridium spark plug 90919-01275 for the Toyota Corolla. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-01253. Retailer-stated 1.8L fitment only.\n\nSpecifications\n\nPart number: 90919-01275\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2ZR-FE\nFitment: 2009–2019 Toyota Corolla (1.8L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/plug-spark-9091901275",
+        "https://parts.northparktoyota.com/oem-parts/toyota-spark-plug-9091901275"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "90915-YZZN1",
+      "supersedes": "90915-10009",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2020–2024 Toyota Corolla (2.0L)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "2.0L"
+        }
+      ],
+      "engines": "M20A-FKS",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZN1 for the Toyota Corolla. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10009. Supersession inferred from one dealer page.\n\nSpecifications\n\nPart number: 90915-YZZN1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: M20A-FKS\nFitment: 2020–2024 Toyota Corolla (2.0L)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-oil_filter.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA5 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04152-YZZA5",
+      "supersedes": "04152-31050; 04152-31060; 04152-38010",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2010–2015 Toyota Tundra",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": null
+        }
+      ],
+      "engines": "1UR-FE / 3UR-FE (unresolved)",
+      "description": "Genuine Toyota oil filter element 04152-YZZA5 for the Toyota Tundra. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-31050; 04152-31060; 04152-38010. Dealer catalogs conflict on engine.\n\nSpecifications\n\nPart number: 04152-YZZA5\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1UR-FE / 3UR-FE (unresolved)\nFitment: 2010–2015 Toyota Tundra\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza5.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-oil-filter-4152yzza5"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Cabin Air Filter 87139-YZZ08 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87139-YZZ08",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2018–2024 Toyota Camry",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota cabin air filter 87139-YZZ08 for the Toyota Camry. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. Marketplace-only fitment.\n\nSpecifications\n\nPart number: 87139-YZZ08\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2024 Toyota Camry\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Cabin Air Filter 87139-50100 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87139-50100",
+      "supersedes": "87139-50060",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "filters-maintenance",
+      "proposedCategoryName": "Filters & Maintenance",
+      "fitment": "2010–2024 Toyota 4Runner",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota cabin air filter 87139-50100 for the Toyota 4Runner. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. It supersedes 87139-50060. Dealer listing internally inconsistent.\n\nSpecifications\n\nPart number: 87139-50100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2024 Toyota 4Runner\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-50100.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Front Wheel Bearing and Hub Assembly 43550-0R070 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43550-0R070",
+      "supersedes": "43550-33050",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension & Wheel Ends",
+      "fitment": "2019–2024 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front wheel bearing and hub assembly 43550-0R070 for the Toyota RAV4. The bearing comes pressed into the hub as one assembly. A worn bearing usually shows up as a growl that changes with speed or when turning. It supersedes 43550-33050. Listed 'with body stripe' -- side/trim restriction unresolved.\n\nSpecifications\n\nPart number: 43550-0R070\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": 261.22,
+      "referencePriceSource": "https://www.toyotapartsdeal.com/oem/toyota~hub~bearing~assy~43550-0r070.html",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~hub~bearing~assy~43550-0r070.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Front Disc Brake Rotor 43512-0E060 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-0E060",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2024 Toyota Highlander",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake rotor 43512-0E060 for the Toyota Highlander. Sold individually; rotors should be replaced in pairs across the axle. Several front rotor numbers listed for this generation; engine split unresolved.\n\nSpecifications\n\nPart number: 43512-0E060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Highlander\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://autoparts.toyota.com/products/product/disc-fr-435120e060"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Genuine Toyota Alternator Assembly with Regulator 27060-25010 — RAV4 and Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "27060-25010",
+      "supersedes": "",
+      "partType": "Genuine Toyota",
+      "condition": "brand-new",
+      "proposedCategory": "electrical",
+      "proposedCategoryName": "Electrical",
+      "fitment": "2019–2024 Toyota RAV4; 2019–2024 Toyota Corolla",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alternator assembly with regulator 27060-25010 for the Toyota RAV4 and Corolla. It charges the battery and powers the vehicle's electrical system while the engine runs. Dealers disagree on Camry years.\n\nSpecifications\n\nPart number: 27060-25010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4; 2019–2024 Toyota Corolla\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
+      "fitmentConfidence": "low",
+      "sources": [
+        "https://www.toyotapartsdeal.com/oem/toyota~alternator~assy~w~r~27060-25010.html"
+      ],
+      "blocking": [
+        "approved selling price",
+        "licensed product image",
+        "fitment / identity verification"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota A25A-FKS 2.5L inline-4 (Dynamic Force) Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2018–2024 Toyota Camry; 2019–2024 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "A25A-FKS",
+      "description": "Toyota A25A-FKS 2.5L inline-4 (Dynamic Force) engine assembly. US applications: 2018–2024 Toyota Camry; 2019–2024 Toyota RAV4. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 2GR-FKS 3.5L V6 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2018–2024 Toyota Camry; 2017–2019 Toyota Highlander; 2016–2023 Toyota Tacoma; 2017–2020 Toyota Sienna",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2017,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2017,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": null
+        }
+      ],
+      "engines": "2GR-FKS",
+      "description": "Toyota 2GR-FKS 3.5L V6 engine assembly. US applications: 2018–2024 Toyota Camry; 2017–2019 Toyota Highlander; 2016–2023 Toyota Tacoma; 2017–2020 Toyota Sienna. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [
+        "https://8020automotive.com/toyota-2gr-fks-engine-guide/",
+        "https://www.carwhere.com/toyota/engines"
+      ],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 2GR-FE 3.5L V6 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2007–2017 Toyota Camry; 2008–2016 Toyota Highlander; 2007–2016 Toyota Sienna",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2017,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2016,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2007,
+          "yearTo": 2016,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": null
+        }
+      ],
+      "engines": "2GR-FE",
+      "description": "Toyota 2GR-FE 3.5L V6 engine assembly. US applications: 2007–2017 Toyota Camry; 2008–2016 Toyota Highlander; 2007–2016 Toyota Sienna. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 2AR-FE 2.5L inline-4 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2009–2017 Toyota Camry; 2009–2018 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2017,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2009,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "2AR-FE",
+      "description": "Toyota 2AR-FE 2.5L inline-4 engine assembly. US applications: 2009–2017 Toyota Camry; 2009–2018 Toyota RAV4. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 2TR-FE 2.7L inline-4 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2005–2023 Toyota Tacoma",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": null
+        }
+      ],
+      "engines": "2TR-FE",
+      "description": "Toyota 2TR-FE 2.7L inline-4 engine assembly. US applications: 2005–2023 Toyota Tacoma. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 1GR-FE 4.0L V6 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2010–2024 Toyota 4Runner; 2005–2015 Toyota Tacoma",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2005,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": null
+        }
+      ],
+      "engines": "1GR-FE",
+      "description": "Toyota 1GR-FE 4.0L V6 engine assembly. US applications: 2010–2024 Toyota 4Runner; 2005–2015 Toyota Tacoma. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 3UR-FE 5.7L V8 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2007–2021 Toyota Tundra; 2008–2022 Toyota Sequoia",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": null
+        }
+      ],
+      "engines": "3UR-FE",
+      "description": "Toyota 3UR-FE 5.7L V8 engine assembly. US applications: 2007–2021 Toyota Tundra; 2008–2022 Toyota Sequoia. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota 2ZR-FE 1.8L inline-4 Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2009–2019 Toyota Corolla",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": null
+        }
+      ],
+      "engines": "2ZR-FE",
+      "description": "Toyota 2ZR-FE 1.8L inline-4 engine assembly. US applications: 2009–2019 Toyota Corolla. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    },
+    {
+      "status": "research_pending",
+      "name": "Toyota M20A-FKS 2.0L inline-4 (Dynamic Force) Engine Assembly",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "",
+      "supersedes": "",
+      "partType": "Toyota engine (condition per vendor unit)",
+      "condition": null,
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2020–2024 Toyota Corolla",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": null
+        }
+      ],
+      "engines": "M20A-FKS",
+      "description": "Toyota M20A-FKS 2.0L inline-4 (Dynamic Force) engine assembly. US applications: 2020–2024 Toyota Corolla. Condition, mileage, configuration (long block or complete engine) and included components are set from the vendor's actual unit before listing.",
+      "price": null,
+      "referencePrice": null,
+      "referencePriceSource": "",
+      "image": null,
+      "imageStatus": "pending: photos of the actual unit required",
+      "fitmentConfidence": "medium (engine-family applications; unit-level interchange to confirm)",
+      "sources": [],
+      "blocking": [
+        "vendor unit details (condition, mileage, inclusions)",
+        "approved selling price",
+        "photos of the unit"
+      ]
+    }
+  ]
+}
