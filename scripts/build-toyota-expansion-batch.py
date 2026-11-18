@@ -85,12 +85,12 @@ PARTS = [
          notes="2024+ Tacoma and 2025+ 4Runner fitment is seller-stated only and not claimed.",
          sources=[f"{TA}/filter-oil-90915yzzn3", "https://parts.frontiertoyota.com/oem-parts/toyota-oil-filter-90915yzzn3", "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-oil-filter-90915yzzn3"]),
     dict(pn="87139-0R030", kind="cabin_filter", name="Cabin Air Filter", group="commercial_pending", conf="medium",
-         apps=[app(2019, 2023, "RAV4"), app(2019, 2024, "Corolla")], engines="", supersedes="87139-28020",
-         notes="Some RAV4 trims list 87139-58010 instead; check the existing filter.",
+         apps=[app(2019, 2024, "Corolla")], engines="", supersedes="87139-28020",
+         notes="RAV4 not claimed: dealers split 2019+ RAV4 trims between this filter and 87139-58010.",
          sources=[f"{TA}/element-air-refiner-871390r030", f"{SP}/toyota-cabin-air-filter-871390r030", f"{TN}/oem/toyota~air-refiner-element~87139-0r030"]),
     dict(pn="87139-0E040", kind="cabin_filter", name="Cabin Air Filter (Deodorizing)", group="commercial_pending", conf="medium",
-         apps=[app(2018, 2024, "Camry")], engines="", supersedes="",
-         notes="2018-2019 Camry also listed for 87139-58010.",
+         apps=[app(2020, 2024, "Camry")], engines="", supersedes="",
+         notes="2018-2019 Camry not claimed: those years are also listed for 87139-58010.",
          sources=[f"{TA}/element-air-refiner-871390e040", f"{TD}/oem-2024-toyota-camry-cabin_air_filter.html", "https://parts.northparktoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"]),
     dict(pn="87139-58010", kind="cabin_filter", name="Cabin Air Filter", group="commercial_pending", conf="medium",
          apps=[app(2020, 2024, "Highlander"), app(2021, 2024, "Sienna")], engines="", supersedes="",
@@ -103,7 +103,7 @@ PARTS = [
          sources=[f"{OL}/toyota-spark-plug-9091901289", f"{TD}/oem-2019-toyota-rav4-spark_plug.html"]),
     dict(pn="90919-02258", kind="ignition_coil", name="Direct Ignition Coil", group="research_pending", conf="low",
          apps=[app(2016, 2023, "Tacoma", "3.5L V6")], engines="2GR-FKS", supersedes="90919-02248; 90919-02252",
-         notes="Conflict: dealer price listings show 1.8L Corolla / Prius / C-HR / Matrix fitment, not the Tacoma 3.5L. Sold individually.",
+         notes="Not the Tacoma 3.5L coil: dealer listings show 1.8L Corolla / Prius / C-HR / Matrix. The 2016-2023 Tacoma 3.5L (2GR-FKS) coil is 90919-A2008 (ToyotaPartsDeal, OEMGenuineParts; about $93-100) -- add it in batch 2.",
          sources=[f"{TA}/coil-ignition-9091902258", f"{TD}/oem/toyota~coil~ignition~90919-02258.html", f"{OL}/toyota-direct-ignition-coil-9091902258"]),
     # ---------------- Brakes ----------------
     dict(pn="04465-04090", kind="pads_front", name="Front Disc Brake Pad Set", group="commercial_pending", conf="medium-high",
@@ -116,8 +116,8 @@ PARTS = [
          notes="Fits left or right; replace in pairs. 2024+ Tacoma uses 43512-04060.",
          sources=[f"{TD}/oem/toyota~disc~front~43512-04052.html", f"{OL}/toyota-disc-brake-rotor-front-4351204052", f"{SP}/toyota-rotor-4351204052"]),
     dict(pn="04465-0C020", kind="pads_front", name="Front Disc Brake Pad Set", group="commercial_pending", conf="medium-high",
-         apps=[app(2007, 2018, "Tundra"), app(2008, 2018, "Sequoia")], engines="1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE", supersedes="",
-         notes="Ceramic; four pads; hardware sold separately. One dealer ends at 2017.",
+         apps=[app(2007, 2017, "Tundra"), app(2008, 2017, "Sequoia")], engines="1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE", supersedes="",
+         notes="Ceramic; four pads; hardware sold separately. 2018 is listed by some dealers only and is not claimed.",
          sources=[f"{TD}/oem/toyota~pad~kit~disc~brake~front~pad~only~04465-0c020.html", f"{SP}/toyota-genuine-oem-toyota-front-right-and-left-brake-pads-sequoia-and-tundra-44650c020", f"{TA}/pad-kit-disc-brake-044650c020"]),
     dict(pn="43512-06200", kind="rotor_front", name="Front Disc Brake Rotor", group="commercial_pending", conf="medium-high",
          apps=[app(2018, 2024, "Camry"), app(2019, 2024, "RAV4"), app(2022, 2025, "Corolla Cross")], engines="", supersedes="",
@@ -222,6 +222,25 @@ ENGINES = [
     dict(code="M20A-FKS", desc="2.0L inline-4 (Dynamic Force)", apps=[app(2020, 2024, "Corolla")]),
 ]
 # fmt: on
+
+# Final audit (2026-11-18): restrictions or conflicts still unresolved on
+# records that otherwise have dealer fitment.
+AUDIT_FITMENT_ISSUES = {
+    "43550-0R060": "Build-origin restriction unresolved: dealers list it 'except Japan-built' and 'local built, without hybrid'; RAV4 plants differ.",
+    "16032-F0011": "Identity/inclusions conflict: some dealers title it a water pump housing / water inlet assembly; gasket included per some listings, excluded per others; one fitment table includes hybrid trims.",
+    "04465-0E060": "Overlaps 04465-33480 for 2018-2019 Camry and 2019+ RAV4; which number is current by build date is unresolved.",
+}
+
+# Bundling recommendations for low-ticket parts (recommendations only; no
+# catalog or shipping change). Kits use only records with verified fitment.
+BUNDLES = [
+    dict(name="RAV4 2019-2024 2.5L (gas) service kit", parts=[("04152-YZZA1", 1), ("17801-F0050", 1), ("90919-01289", 4)]),
+    dict(name="Camry 2020-2024 2.5L (gas) service kit", parts=[("04152-YZZA1", 1), ("17801-F0050", 1), ("87139-0E040", 1), ("90919-01289", 4)]),
+    dict(name="Tacoma 2016-2023 3.5L tune-up kit", parts=[("04152-YZZA1", 1), ("17801-0P100", 1), ("90919-01287", 6)]),
+    dict(name="Tacoma 2016-2023 front brake kit", parts=[("04465-04090", 1), ("43512-04052", 2)]),
+    dict(name="Tundra 2007-2017 / Sequoia 2008-2017 front pad set (stand-alone)", parts=[("04465-0C020", 1)]),
+    dict(name="Oil filter 5-pack (any single verified oil filter)", parts=[("04152-YZZA1", 5)]),
+]
 
 CATEGORY = {
     "air_filter": ("filters-maintenance", "Filters & Maintenance"),
@@ -371,3 +390,157 @@ with open(f"{OUT_DIR}/toyota-expansion-batch-1.csv", "w", newline="", encoding="
                     r["imageStatus"], "; ".join(r["blocking"]), " | ".join(r["sources"])])
 
 print(len(records), "records:", {k: sum(r["status"] == k for r in records) for k in ("ready", "commercial_pending", "research_pending")})
+
+
+# ---------------------------------------------------------------------------
+# Final audit outputs: per-record classification, CSV and Markdown report.
+# ---------------------------------------------------------------------------
+BUCKETS = ["Ready for price approval", "Fitment verification required", "Pricing evidence insufficient",
+           "Supplier cost required", "Product photography required"]
+
+
+def classify(r):
+    pn = r["partNumber"]
+    pr = r["pricing"]
+    fitment_ok = r["status"] != "research_pending" and pn not in AUDIT_FITMENT_ISSUES
+    pricing_ok = pr["status"] == "verified"
+    cost_ok = False   # no acquisition cost on file for any record
+    photo_ok = False  # no licensed, matching photograph for any record
+    checks = {
+        "Fitment verification required": not fitment_ok,
+        "Pricing evidence insufficient": not pricing_ok,
+        "Supplier cost required": not cost_ok,
+        "Product photography required": not photo_ok,
+    }
+    blocking = [k for k, v in checks.items() if v]
+    primary = blocking[0] if blocking else "Ready for price approval"
+    issues = []
+    if r["status"] == "research_pending":
+        issues.append("research pending: " + (r["description"].split("\n")[0][:0] or "fitment/identity unresolved"))
+    if pn in AUDIT_FITMENT_ISSUES:
+        issues.append(AUDIT_FITMENT_ISSUES[pn])
+    issues += pr.get("flags", [])
+    issues += pr.get("profitabilityFlags", [])
+    return primary, checks, issues
+
+
+audit_rows = []
+for r in records:
+    primary, checks, issues = classify(r)
+    r["audit"] = {"auditedOn": "2026-11-18", "primaryStatus": primary, "checks": checks, "issues": issues,
+                  "approvalStatus": "not approved"}
+    audit_rows.append(r)
+
+# rewrite JSON with the audit block
+with open(f"{OUT_DIR}/toyota-expansion-batch-1.json", "w", encoding="utf-8") as f:
+    json.dump({
+        "_comment": "Toyota catalog expansion batch 1 (2026-11-18), final audit. NOT loaded by the storefront. Nothing approved or published. Validate with: node scripts/check-toyota-expansion.mjs",
+        "groups": {k: sum(r["status"] == k for r in records) for k in ("ready", "commercial_pending", "research_pending")},
+        "auditSummary": {b: sum(r["audit"]["primaryStatus"] == b for r in records) for b in BUCKETS},
+        "bundleRecommendations": BUNDLES,
+        "records": records,
+    }, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+
+with open(f"{OUT_DIR}/toyota-expansion-batch-1-final-audit.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f)
+    w.writerow(["primary_status", "approval_status", "part_number", "name", "verified_applications", "engines",
+                "fitment_check", "pricing_check", "supplier_cost_check", "photo_check",
+                "lowest_competitor", "lowest_price", "lowest_url", "recommended_price", "pricing_confidence",
+                "all_competitors", "prices_checked", "outstanding_issues", "fitment_sources"])
+    for r in records:
+        pr, a = r["pricing"], r["audit"]
+        lo = pr.get("lowestCompetitor") or {}
+        ok = lambda k: "BLOCKED" if a["checks"][k] else "ok"
+        w.writerow([a["primaryStatus"], a["approvalStatus"], r["partNumber"] or "(engine family)", r["name"], r["fitment"], r["engines"],
+                    ok("Fitment verification required"), ok("Pricing evidence insufficient"), ok("Supplier cost required"), ok("Product photography required"),
+                    lo.get("seller", ""), lo.get("price", ""), lo.get("url", ""),
+                    pr["recommendedPrice"] if pr["recommendedPrice"] is not None else "", pr["confidence"],
+                    "; ".join(f"{x['seller']} ${x['price']:.2f} {x['url']}" for x in pr.get("competitors", [])),
+                    pr["checkedOn"], " | ".join(a["issues"]), " | ".join(r["sources"])])
+
+by_pn = {r["partNumber"]: r for r in records if r["partNumber"]}
+
+
+def bundle_line(b):
+    total, missing = 0.0, []
+    for pn, qty in b["parts"]:
+        rp = by_pn.get(pn, {}).get("pricing", {}).get("recommendedPrice")
+        if rp is None:
+            missing.append(pn)
+        else:
+            total += rp * qty
+    parts = ", ".join(f"{pn} x{q}" for pn, q in b["parts"])
+    price = f"${total:,.2f}" if not missing else f"incomplete ({', '.join(missing)} unpriced)"
+    return f"| {b['name']} | {parts} | {price} |"
+
+
+ready_once_cost = [r for r in records if not r["audit"]["checks"]["Fitment verification required"] and not r["audit"]["checks"]["Pricing evidence insufficient"]]
+low_ticket = [r for r in ready_once_cost if (r["pricing"]["recommendedPrice"] or 0) < 25]
+
+md = []
+md.append("# Toyota Expansion Batch 1 — Final Commercial Audit\n")
+md.append("Audited 2026-11-18. **Nothing has been approved, priced live, published or deployed.**\n")
+md.append("## Summary\n")
+md.append("| Primary status | Records |\n|---|---|")
+for b in BUCKETS:
+    md.append(f"| {b} | {sum(r['audit']['primaryStatus'] == b for r in records)} |")
+md.append("")
+md.append(f"- {len(ready_once_cost)} records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.")
+md.append("- No record is *Ready for price approval*: no acquisition cost is on file for any part, so no margin can be confirmed, and no licensed, matching photograph exists for any part.")
+md.append("- Each record's status is the first blocking item in this order: fitment, pricing evidence, supplier cost, photography. The CSV shows every check.\n")
+md.append("## Pass fitment and pricing — waiting on supplier cost and photos\n")
+md.append("| Part number | Product | Verified applications | Lowest competitor | Recommended | Confidence |\n|---|---|---|---|---|---|")
+for r in ready_once_cost:
+    pr = r["pricing"]; lo = pr["lowestCompetitor"]
+    md.append(f"| {r['partNumber']} | {r['name'].split(' — ')[0].replace('Genuine Toyota ', '')} | {r['fitment']} | [{lo['seller']} ${lo['price']:.2f}]({lo['url']}) | **${pr['recommendedPrice']:.2f}** | {pr['confidence']} |")
+md.append("")
+md.append("## Fitment verification required\n")
+md.append("| Part number | Product | Outstanding issue |\n|---|---|---|")
+for r in records:
+    if r["audit"]["checks"]["Fitment verification required"]:
+        issue = AUDIT_FITMENT_ISSUES.get(r["partNumber"]) or next((x for x in r["description"].split("\n") if x and not x.startswith(("Specifications", "Part number", "Brand", "Type", "Condition", "Engines", "Fitment", "Confirm"))), "")
+        md.append(f"| {r['partNumber'] or '(engine)'} | {r['name']} | {issue[:220]} |")
+md.append("")
+md.append("## Pricing evidence insufficient\n")
+md.append("| Record | Reason |\n|---|---|")
+for r in records:
+    if r["pricing"]["status"] != "verified":
+        why = "; ".join(r["pricing"].get("flags", [])) or r["pricing"].get("excluded", "") or "no attributed competitors"
+        md.append(f"| {r['partNumber'] or r['name']} | {why} |")
+md.append("")
+md.append("## Profitability\n")
+md.append("No acquisition cost is on file for any of the 50 records, so **every** price needs a supplier cost before approval. The recommended prices sit about 40-45% below Toyota MSRP (dealers already sell about 30% below MSRP; we would be 15% under them). Margin per unit = recommended price - acquisition cost - payment processing fee - packaging - outbound shipping (free on US parcel orders under $1,000).\n")
+md.append("## Shipping suitability\n")
+md.append(f"{len(low_ticket)} parts recommend under $25 and ship free as parcels under the published US rate table. On their own they are commercially unsuitable: the carrier cost of a single parcel will usually exceed the margin.\n")
+md.append("| Part number | Product | Recommended |\n|---|---|---|")
+for r in low_ticket:
+    md.append(f"| {r['partNumber']} | {r['name'].split(' — ')[0].replace('Genuine Toyota ', '')} | ${r['pricing']['recommendedPrice']:.2f} |")
+md.append("\nRecommendations (none changes the published shipping policy):\n")
+md.append("1. **Sell low-ticket parts as engine-correct sets and service kits** instead of single units (below). Spark plugs are needed in sets of 4 or 6 anyway.")
+md.append("2. **Multi-packs** for oil filters (5 or 10), priced per pack.")
+md.append("3. **Price low-ticket items at the competitor benchmark, not 15% under it**, once supplier cost and your parcel cost are known; 15% of a $4.68 filter is $0.70 and cannot fund shipping.")
+md.append("4. **Show them as add-ons** on the product pages of related brake and service parts, so they ride in larger orders.\n")
+md.append("| Suggested kit | Contents | Sum of recommended prices |\n|---|---|---|")
+for b in BUNDLES:
+    md.append(bundle_line(b))
+md.append("")
+md.append("## Product photography\n")
+md.append("All 50 records lack a legitimate, licensed, matching photograph. No Toyota or dealer reuse permission was found, Toyota's own catalog uses placeholders for many parts, and no unrelated or AI-generated image has been used. Needed: supplier photos of the exact part numbers, or a licensed distributor image feed; engine families need photos of the actual units.\n")
+md.append("## Corrections made during the audit\n")
+md.append("- 90919-02258 is not the Tacoma 3.5L coil (dealers list 1.8L Corolla/Prius/C-HR/Matrix); the correct 2016-2023 Tacoma 2GR-FKS coil is **90919-A2008** — candidate for batch 2.")
+md.append("- 90915-YZZN3 fits the 2022+ Tundra and 2023+ Sequoia 3.4L, not the Tacoma.")
+md.append("- 87139-0R030 narrowed to the 2019-2024 Corolla; 87139-0E040 narrowed to the 2020-2024 Camry (RAV4 and 2018-2019 Camry are split with 87139-58010).")
+md.append("- 04465-0C020 narrowed to 2007-2017 Tundra and 2008-2017 Sequoia (2018 listed by some dealers only).")
+md.append("- Alternator 27060-F0010: the lowest listing ($239.74) was stale and is excluded; benchmark is now $262.44.")
+md.append("- 43512-06200 confirmed sold individually (two per axle).\n")
+md.append("## Limits of this audit\n")
+md.append("- Prices are from dealer and retailer pages as indexed by search on 2026-11-18; live pages could not be opened from this environment, so each price must be re-confirmed at approval time.")
+md.append("- Fitment comes from Toyota-dealer catalogs, not a VIN-level Toyota EPC lookup; restrictions shown above should be checked by VIN on first orders.")
+md.append("- Shipping was not shown in any competitor listing; all competitor prices are item-only.\n")
+md.append("Files: `docs/catalog-expansion/toyota-expansion-batch-1.json`, `toyota-expansion-batch-1.csv`, `toyota-expansion-batch-1-final-audit.csv`, this report.")
+with open(f"{OUT_DIR}/toyota-expansion-batch-1-final-audit.md", "w", encoding="utf-8") as f:
+    f.write("\n".join(md) + "\n")
+
+print("audit:", {b: sum(r["audit"]["primaryStatus"] == b for r in records) for b in BUCKETS},
+      "| pass fitment+pricing:", len(ready_once_cost), "| low-ticket:", len(low_ticket))

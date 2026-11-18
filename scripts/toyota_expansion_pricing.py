@@ -101,14 +101,25 @@ PRICING = {
         c("Capo Valley Toyota", 22.49, "https://parts.capovalleytoyota.com/oem-parts/toyota-cabin-air-filter-871390r030"),
     ]),
     "87139-0E040": dict(msrp=52.99, comps=[
-        c("Frontier Toyota", 44.79, "https://parts.frontiertoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"),
-    ], unattributed=[36.47, 37.43, 38.07, 43.19]),
+        c("Grieco Toyota", 35.51, "https://parts.griecotoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"),
+        c("OEMGenuineParts.com (All Star Automotive)", 35.79, "https://www.oemgenuineparts.com/toyota-avalon-cabin-air-filters"),
+        c("Lakeland Toyota", 38.07, "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"),
+        c("Toyota of Nashua", 39.35, "https://parts.toyotaofnashua.com/oem-parts/toyota-genuine-toyota-cabin-air-filter-87139-0e040-871390e040"),
+        c("American Toyota", 39.67, "https://parts.americantoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"),
+        c("Capo Valley Toyota", 39.74, "https://parts.capovalleytoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"),
+        c("Modern Toyota Wholesale Direct", 43.19, "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"),
+    ]),
     "87139-58010": dict(msrp=52.99, comps=[
         c("OEMGenuineParts.com", 35.79, f"{OGP}/toyota-cabin-air-filter-8713958010?c=az0x"),
         c("Toyota OEM Parts Online", 38.39, "https://toyota.oempartsonline.com/oem-parts/toyota-cabin-air-filter-8713958010"),
         c("Olathe Toyota", 40.00, "https://parts.olathetoyota.com/oem-parts/toyota-cabin-air-filter-8713958010?c=az0x"),
     ]),
-    "90919-01289": dict(msrp=21.61, comps=[], unattributed=[15.13, 15.46, 15.46, 17.15, 17.37, 19.45]),
+    "90919-01289": dict(msrp=21.61, comps=[
+        c("OEMGenuineParts.com", 13.08, f"{OGP}/toyota-spark-plug-9091901289"),
+        c("Lakeland Toyota", 15.46, "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-spark-plug-9091901289"),
+        c("ToyotaPartsDeal", 15.46, f"{TPD}/toyota~plug~spark~90919-01289.html"),
+        c("Longo Toyota", 17.15, "https://parts.longotoyota.com/oem-parts/toyota-spark-plug-9091901289"),
+    ]),
     "90919-01287": dict(msrp=24.43, comps=[
         c("OEMGenuineParts.com", 16.44, f"{OGP}/toyota-spark-plug-9091901287"),
         c("ToyotaPartsDeal", 17.48, f"{TPD}/toyota~plug~spark~90919-01287.html"),
@@ -148,7 +159,7 @@ PRICING = {
         c("ToyotaPartsDeal", 73.50, f"{TPD}/toyota~disc~fr~43512-06200.html"),
         c("Lakeland Toyota", 74.13, "https://parts.lakelandtoyota.com/p/toyota__/Disc-Brake-Rotor-Front/14763752/4351206200.html"),
         c("Ourisman Toyota of Richmond", 75.46, "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-disc-brake-rotor-front-4351206200"),
-    ], note="Per rotor; listings disagree on whether the price is each or per pair."),
+    ], info="Sold individually (confirmed by dealer listing); two per axle."),
     "04465-0E060": dict(msrp=104.50, comps=[
         c("Toyota OEM Parts Online", 72.07, "https://toyota.oempartsonline.com/oem-parts/toyota-disc-brake-pad-set-front-44650e060"),
         c("Modern Toyota Wholesale Direct", 72.71, "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-44650e060"),
@@ -177,19 +188,18 @@ PRICING = {
         c("Modern Toyota Wholesale Direct", 87.66, "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446502530"),
         c("Toyota Direct", 91.87, "https://autoparts.toyotadirect.com/products/product/pad-kit-disc-brake-l-fitting-parts-fr-0446578010"),
         c("Frontier Toyota", 107.18, "https://parts.frontiertoyota.com/oem-parts/toyota-disc-brake-pad-set-446502530"),
-    ], note="Seller-to-price mapping for the three lowest is from one search summary; re-check before approval."),
+    ], info="Seller-to-price mapping re-checked in a second search."),
     "16032-F0011": dict(msrp=362.46, comps=[
         c("OEMGenuineParts.com", 244.15, f"{OGP}/toyota-water-pump-16032f0011"),
         c("Kendall Toyota", 272.49, "https://parts.kendalltoyota.com/oem-parts/toyota-engine-water-pump-16032f0011"),
         c("Longo Toyota", 287.75, "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-16032f0011"),
     ], unattributed=[209.96], note="Inclusions differ: some listings include gasket and thermostat housing, Longo excludes the gasket."),
     "27060-F0010": dict(msrp=400.85, comps=[
-        c("Larry H. Miller Toyota", 239.74, "https://parts.larryhmillertoyota.com/oem-parts/toyota-alternator-27060f0010"),
         c("Ourisman Toyota of Richmond", 262.44, "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-alternator-27060f0010"),
         c("OEMGenuineParts.com", 269.91, f"{OGP}/toyota-alternator-27060f0010"),
         c("ToyotaPartsDeal", 271.31, f"{TPD}/toyota~alternator~assy~w~r~27060-f0010.html"),
         c("Toyota OEM Parts Online", 272.32, "https://toyota.oempartsonline.com/oem-parts/toyota-alternator-27060f0010"),
-    ], excluded="AH Parts $85 (used)", note="Lowest listing shows an older MSRP ($349.81) and may be stale."),
+    ], excluded="AH Parts $85 (used); Larry H. Miller Toyota $239.74 (stale: old MSRP $349.81 and 2018-2023 fitment)"),
     "43550-0R060": dict(msrp=397.36, comps=[
         c("Modern Toyota Wholesale Direct", 256.61, "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-hub-assembly-435500r060"),
         c("Toyota OEM Parts Online", 262.04, "https://toyota.oempartsonline.com/oem-parts/toyota-hub-assembly-435500r060"),
@@ -313,6 +323,7 @@ def assess(pn, is_parcel):
         "recommendedPrice": rec,
         "confidence": confidence,
         "flags": flags,
+        "info": data.get("info", ""),
         "profitabilityFlags": profit_flags,
         "approved": False,
     }

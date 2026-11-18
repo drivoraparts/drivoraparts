@@ -1,10 +1,105 @@
 {
-  "_comment": "Toyota catalog expansion batch 1 (2026-11-18). Import file in the catalog's Product shape plus review fields. NOT loaded by the storefront. Validate with: node scripts/check-toyota-expansion.mjs",
+  "_comment": "Toyota catalog expansion batch 1 (2026-11-18), final audit. NOT loaded by the storefront. Nothing approved or published. Validate with: node scripts/check-toyota-expansion.mjs",
   "groups": {
     "ready": 0,
     "commercial_pending": 27,
     "research_pending": 23
   },
+  "auditSummary": {
+    "Ready for price approval": 0,
+    "Fitment verification required": 26,
+    "Pricing evidence insufficient": 0,
+    "Supplier cost required": 24,
+    "Product photography required": 0
+  },
+  "bundleRecommendations": [
+    {
+      "name": "RAV4 2019-2024 2.5L (gas) service kit",
+      "parts": [
+        [
+          "04152-YZZA1",
+          1
+        ],
+        [
+          "17801-F0050",
+          1
+        ],
+        [
+          "90919-01289",
+          4
+        ]
+      ]
+    },
+    {
+      "name": "Camry 2020-2024 2.5L (gas) service kit",
+      "parts": [
+        [
+          "04152-YZZA1",
+          1
+        ],
+        [
+          "17801-F0050",
+          1
+        ],
+        [
+          "87139-0E040",
+          1
+        ],
+        [
+          "90919-01289",
+          4
+        ]
+      ]
+    },
+    {
+      "name": "Tacoma 2016-2023 3.5L tune-up kit",
+      "parts": [
+        [
+          "04152-YZZA1",
+          1
+        ],
+        [
+          "17801-0P100",
+          1
+        ],
+        [
+          "90919-01287",
+          6
+        ]
+      ]
+    },
+    {
+      "name": "Tacoma 2016-2023 front brake kit",
+      "parts": [
+        [
+          "04465-04090",
+          1
+        ],
+        [
+          "43512-04052",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "Tundra 2007-2017 / Sequoia 2008-2017 front pad set (stand-alone)",
+      "parts": [
+        [
+          "04465-0C020",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Oil filter 5-pack (any single verified oil filter)",
+      "parts": [
+        [
+          "04152-YZZA1",
+          5
+        ]
+      ]
+    }
+  ],
   "records": [
     {
       "status": "commercial_pending",
@@ -90,6 +185,7 @@
         "recommendedPrice": 16.09,
         "confidence": "medium",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
@@ -107,7 +203,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -176,6 +287,7 @@
         "recommendedPrice": 15.99,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
@@ -192,7 +304,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -256,6 +383,7 @@
         "recommendedPrice": 16.09,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
@@ -272,7 +400,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -346,6 +489,7 @@
         "recommendedPrice": 16.09,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
@@ -362,7 +506,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -436,6 +595,7 @@
         "recommendedPrice": 16.59,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.59 item"
@@ -452,7 +612,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.59 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -528,6 +703,7 @@
         "recommendedPrice": 15.99,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
@@ -544,7 +720,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $15.99 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -627,6 +818,7 @@
         "recommendedPrice": 3.89,
         "confidence": "medium",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
@@ -644,7 +836,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -713,6 +920,7 @@
         "recommendedPrice": 3.79,
         "confidence": "medium",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
@@ -729,7 +937,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -802,6 +1025,7 @@
         "recommendedPrice": 3.79,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
@@ -819,7 +1043,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.79 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -894,6 +1133,7 @@
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
@@ -911,11 +1151,27 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Cabin Air Filter 87139-0R030 — RAV4 and Corolla",
+      "name": "Genuine Toyota Cabin Air Filter 87139-0R030 — Corolla",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "87139-0R030",
@@ -924,15 +1180,8 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2019–2023 Toyota RAV4; 2019–2024 Toyota Corolla",
+      "fitment": "2019–2024 Toyota Corolla",
       "fitmentApplications": [
-        {
-          "yearFrom": 2019,
-          "yearTo": 2023,
-          "make": "Toyota",
-          "model": "RAV4",
-          "submodel": null
-        },
         {
           "yearFrom": 2019,
           "yearTo": 2024,
@@ -942,7 +1191,7 @@
         }
       ],
       "engines": "",
-      "description": "Genuine Toyota cabin air filter 87139-0R030 for the Toyota RAV4 and Corolla. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. It supersedes 87139-28020. Some RAV4 trims list 87139-58010 instead; check the existing filter.\n\nSpecifications\n\nPart number: 87139-0R030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2023 Toyota RAV4; 2019–2024 Toyota Corolla\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota cabin air filter 87139-0R030 for the Toyota Corolla. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. It supersedes 87139-28020. RAV4 not claimed: dealers split 2019+ RAV4 trims between this filter and 87139-58010.\n\nSpecifications\n\nPart number: 87139-0R030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota Corolla\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -997,6 +1246,7 @@
         "recommendedPrice": 16.09,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
@@ -1014,7 +1264,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $16.09 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1027,10 +1292,10 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2018–2024 Toyota Camry",
+      "fitment": "2020–2024 Toyota Camry",
       "fitmentApplications": [
         {
-          "yearFrom": 2018,
+          "yearFrom": 2020,
           "yearTo": 2024,
           "make": "Toyota",
           "model": "Camry",
@@ -1038,39 +1303,62 @@
         }
       ],
       "engines": "",
-      "description": "Genuine Toyota cabin air filter 87139-0E040 for the Toyota Camry. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. 2018-2019 Camry also listed for 87139-58010.\n\nSpecifications\n\nPart number: 87139-0E040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2024 Toyota Camry\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota cabin air filter 87139-0E040 for the Toyota Camry. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. 2018-2019 Camry not claimed: those years are also listed for 87139-58010.\n\nSpecifications\n\nPart number: 87139-0E040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Camry\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 52.99,
         "lowestCompetitor": {
-          "seller": "Frontier Toyota",
-          "price": 44.79,
-          "url": "https://parts.frontiertoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+          "seller": "Grieco Toyota",
+          "price": 35.51,
+          "url": "https://parts.griecotoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
         },
         "competitors": [
           {
-            "seller": "Frontier Toyota",
-            "price": 44.79,
-            "url": "https://parts.frontiertoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+            "seller": "Grieco Toyota",
+            "price": 35.51,
+            "url": "https://parts.griecotoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+          },
+          {
+            "seller": "OEMGenuineParts.com (All Star Automotive)",
+            "price": 35.79,
+            "url": "https://www.oemgenuineparts.com/toyota-avalon-cabin-air-filters"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 38.07,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+          },
+          {
+            "seller": "Toyota of Nashua",
+            "price": 39.35,
+            "url": "https://parts.toyotaofnashua.com/oem-parts/toyota-genuine-toyota-cabin-air-filter-87139-0e040-871390e040"
+          },
+          {
+            "seller": "American Toyota",
+            "price": 39.67,
+            "url": "https://parts.americantoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+          },
+          {
+            "seller": "Capo Valley Toyota",
+            "price": 39.74,
+            "url": "https://parts.capovalleytoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
+          },
+          {
+            "seller": "Modern Toyota Wholesale Direct",
+            "price": 43.19,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-cabin-air-filter-871390e040"
           }
         ],
-        "unattributedPrices": [
-          36.47,
-          37.43,
-          38.07,
-          43.19
-        ],
+        "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": null,
-        "confidence": "low",
-        "flags": [
-          "only 1 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark"
-        ],
+        "recommendedPrice": 30.09,
+        "confidence": "high",
+        "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1087,7 +1375,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1153,6 +1455,7 @@
         "recommendedPrice": 30.39,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1168,7 +1471,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1202,30 +1519,47 @@
       "description": "Genuine Toyota iridium spark plug 90919-01289 for the Toyota RAV4 and Camry. It is the plug specified for this engine's heat range and gap, sold individually. It supersedes 90919-A1001. Sold individually; four required.\n\nSpecifications\n\nPart number: 90919-01289\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L); 2018–2024 Toyota Camry (2.5L)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 21.61,
-        "lowestCompetitor": null,
-        "competitors": [],
-        "unattributedPrices": [
-          15.13,
-          15.46,
-          15.46,
-          17.15,
-          17.37,
-          19.45
+        "lowestCompetitor": {
+          "seller": "OEMGenuineParts.com",
+          "price": 13.08,
+          "url": "https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901289"
+        },
+        "competitors": [
+          {
+            "seller": "OEMGenuineParts.com",
+            "price": 13.08,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-spark-plug-9091901289"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 15.46,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-spark-plug-9091901289"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 15.46,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~plug~spark~90919-01289.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 17.15,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-spark-plug-9091901289"
+          }
         ],
+        "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": null,
-        "confidence": "none",
-        "flags": [
-          "only 0 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark"
-        ],
+        "recommendedPrice": 11.09,
+        "confidence": "high",
+        "flags": [],
+        "info": "",
         "profitabilityFlags": [
-          "acquisition cost not provided -- margin not verified"
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $11.09 item"
         ],
         "approved": false
       },
@@ -1239,7 +1573,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $11.09 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -1263,7 +1612,7 @@
         }
       ],
       "engines": "2GR-FKS",
-      "description": "Genuine Toyota direct ignition coil 90919-02258 for the Toyota Tacoma. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. It supersedes 90919-02248; 90919-02252. Conflict: dealer price listings show 1.8L Corolla / Prius / C-HR / Matrix fitment, not the Tacoma 3.5L. Sold individually.\n\nSpecifications\n\nPart number: 90919-02258\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota direct ignition coil 90919-02258 for the Toyota Tacoma. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. It supersedes 90919-02248; 90919-02252. Not the Tacoma 3.5L coil: dealer listings show 1.8L Corolla / Prius / C-HR / Matrix. The 2016-2023 Tacoma 3.5L (2GR-FKS) coil is 90919-A2008 (ToyotaPartsDeal, OEMGenuineParts; about $93-100) -- add it in batch 2.\n\nSpecifications\n\nPart number: 90919-02258\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -1303,6 +1652,7 @@
         "recommendedPrice": 82.29,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1320,7 +1670,22 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1379,6 +1744,7 @@
         "recommendedPrice": 59.59,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1395,7 +1761,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1464,6 +1844,7 @@
         "recommendedPrice": 68.99,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1480,7 +1861,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1493,25 +1888,25 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2007–2018 Toyota Tundra; 2008–2018 Toyota Sequoia",
+      "fitment": "2007–2017 Toyota Tundra; 2008–2017 Toyota Sequoia",
       "fitmentApplications": [
         {
           "yearFrom": 2007,
-          "yearTo": 2018,
+          "yearTo": 2017,
           "make": "Toyota",
           "model": "Tundra",
           "submodel": null
         },
         {
           "yearFrom": 2008,
-          "yearTo": 2018,
+          "yearTo": 2017,
           "make": "Toyota",
           "model": "Sequoia",
           "submodel": null
         }
       ],
       "engines": "1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE",
-      "description": "Genuine Toyota front disc brake pad set 04465-0C020 for the Toyota Tundra and Sequoia. The set covers one front axle, both sides. Ceramic; four pads; hardware sold separately. One dealer ends at 2017.\n\nSpecifications\n\nPart number: 04465-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE\nFitment: 2007–2018 Toyota Tundra; 2008–2018 Toyota Sequoia\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake pad set 04465-0C020 for the Toyota Tundra and Sequoia. The set covers one front axle, both sides. Ceramic; four pads; hardware sold separately. 2018 is listed by some dealers only and is not claimed.\n\nSpecifications\n\nPart number: 04465-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE; 2UZ-FE; 1UR-FE; 3UR-FE\nFitment: 2007–2017 Toyota Tundra; 2008–2017 Toyota Sequoia\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -1556,6 +1951,7 @@
         "recommendedPrice": 60.29,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1572,7 +1968,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1658,10 +2068,9 @@
         "shipping": "not verified (item price only)",
         "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
         "recommendedPrice": 56.69,
-        "confidence": "medium",
-        "flags": [
-          "Per rotor; listings disagree on whether the price is each or per pair."
-        ],
+        "confidence": "high",
+        "flags": [],
+        "info": "Sold individually (confirmed by dealer listing); two per axle.",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1677,7 +2086,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1758,6 +2181,7 @@
         "recommendedPrice": 61.19,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1774,7 +2198,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "Overlaps 04465-33480 for 2018-2019 Camry and 2019+ RAV4; which number is current by build date is unresolved.",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1843,6 +2282,7 @@
         "recommendedPrice": 68.99,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1857,7 +2297,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -1926,6 +2380,7 @@
         "recommendedPrice": 63.59,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -1941,7 +2396,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -2008,10 +2477,9 @@
         "shipping": "not verified (item price only)",
         "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
         "recommendedPrice": 72.19,
-        "confidence": "medium",
-        "flags": [
-          "Seller-to-price mapping for the three lowest is from one search summary; re-check before approval."
-        ],
+        "confidence": "high",
+        "flags": [],
+        "info": "Seller-to-price mapping re-checked in a second search.",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2027,7 +2495,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -2098,6 +2580,7 @@
           "lower unattributed listing(s) seen; not used as benchmark",
           "Inclusions differ: some listings include gasket and thermostat housing, Longo excludes the gasket."
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2113,7 +2596,24 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "Identity/inclusions conflict: some dealers title it a water pump housing / water inlet assembly; gasket included per some listings, excluded per others; one fitment table includes hybrid trims.",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "Inclusions differ: some listings include gasket and thermostat housing, Longo excludes the gasket.",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -2151,16 +2651,11 @@
         "checkedOn": "2026-11-18",
         "msrp": 400.85,
         "lowestCompetitor": {
-          "seller": "Larry H. Miller Toyota",
-          "price": 239.74,
-          "url": "https://parts.larryhmillertoyota.com/oem-parts/toyota-alternator-27060f0010"
+          "seller": "Ourisman Toyota of Richmond",
+          "price": 262.44,
+          "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-alternator-27060f0010"
         },
         "competitors": [
-          {
-            "seller": "Larry H. Miller Toyota",
-            "price": 239.74,
-            "url": "https://parts.larryhmillertoyota.com/oem-parts/toyota-alternator-27060f0010"
-          },
           {
             "seller": "Ourisman Toyota of Richmond",
             "price": 262.44,
@@ -2183,14 +2678,13 @@
           }
         ],
         "unattributedPrices": [],
-        "excluded": "AH Parts $85 (used)",
+        "excluded": "AH Parts $85 (used); Larry H. Miller Toyota $239.74 (stale: old MSRP $349.81 and 2018-2023 fitment)",
         "shipping": "not verified (item price only)",
         "formula": "lowest verified competitor x 0.85, rounded down to x.x9",
-        "recommendedPrice": 203.69,
-        "confidence": "medium",
-        "flags": [
-          "Lowest listing shows an older MSRP ($349.81) and may be stale."
-        ],
+        "recommendedPrice": 222.99,
+        "confidence": "high",
+        "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2207,7 +2701,21 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -2283,6 +2791,7 @@
         "recommendedPrice": 218.09,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2298,7 +2807,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "Build-origin restriction unresolved: dealers list it 'except Japan-built' and 'local built, without hybrid'; RAV4 plants differ.",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -2362,6 +2886,7 @@
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2377,7 +2902,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2436,6 +2976,7 @@
         "recommendedPrice": 87.99,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2451,7 +2992,22 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2514,6 +3070,7 @@
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2529,7 +3086,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2570,6 +3143,7 @@
         "flags": [
           "only 0 attributed competitor price(s) -- fewer than 3"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2586,7 +3160,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "only 0 attributed competitor price(s) -- fewer than 3",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2654,6 +3244,7 @@
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2669,7 +3260,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "commercial_pending",
@@ -2738,6 +3345,7 @@
         "recommendedPrice": 13.89,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $13.89 item"
@@ -2755,7 +3363,22 @@
       "blocking": [
         "approved selling price",
         "licensed product image"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Supplier cost required",
+        "checks": {
+          "Fitment verification required": false,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $13.89 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2804,6 +3427,7 @@
           "lower unattributed listing(s) seen; not used as benchmark",
           "Quantity ambiguous (one listing is a set of 6)."
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2820,7 +3444,25 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "only 0 attributed competitor price(s) -- fewer than 3",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "Quantity ambiguous (one listing is a set of 6).",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2876,6 +3518,7 @@
           "only 1 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2892,7 +3535,24 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "only 1 attributed competitor price(s) -- fewer than 3",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -2947,6 +3607,7 @@
           "only 1 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -2962,7 +3623,24 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "only 1 attributed competitor price(s) -- fewer than 3",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3031,6 +3709,7 @@
         "recommendedPrice": 3.89,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
@@ -3048,7 +3727,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $3.89 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3089,6 +3784,7 @@
         "flags": [
           "only 0 attributed competitor price(s) -- fewer than 3"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -3104,7 +3800,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "only 0 attributed competitor price(s) -- fewer than 3",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3168,6 +3880,7 @@
         "recommendedPrice": 22.79,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $22.79 item"
@@ -3184,7 +3897,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "acquisition cost not provided -- margin not verified",
+          "ships free under the US parcel table; shipping cost will likely exceed the margin on a $22.79 item"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3252,6 +3981,7 @@
         "flags": [
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -3267,7 +3997,23 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "lower unattributed listing(s) seen; not used as benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3331,6 +4077,7 @@
         "recommendedPrice": 63.09,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -3346,7 +4093,22 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3412,6 +4174,7 @@
         "recommendedPrice": 250.39,
         "confidence": "high",
         "flags": [],
+        "info": "",
         "profitabilityFlags": [
           "acquisition cost not provided -- margin not verified"
         ],
@@ -3427,7 +4190,22 @@
         "approved selling price",
         "licensed product image",
         "fitment / identity verification"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": false,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3481,7 +4259,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3552,7 +4346,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3613,7 +4423,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3667,7 +4493,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3714,7 +4556,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3768,7 +4626,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3822,7 +4696,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3869,7 +4759,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     },
     {
       "status": "research_pending",
@@ -3916,7 +4822,23 @@
         "vendor unit details (condition, mileage, inclusions)",
         "approved selling price",
         "photos of the unit"
-      ]
+      ],
+      "audit": {
+        "auditedOn": "2026-11-18",
+        "primaryStatus": "Fitment verification required",
+        "checks": {
+          "Fitment verification required": true,
+          "Pricing evidence insufficient": true,
+          "Supplier cost required": true,
+          "Product photography required": true
+        },
+        "issues": [
+          "research pending: fitment/identity unresolved",
+          "engine units are priced from the vendor's actual unit; no part number to benchmark",
+          "acquisition cost not provided -- margin not verified"
+        ],
+        "approvalStatus": "not approved"
+      }
     }
   ]
 }
