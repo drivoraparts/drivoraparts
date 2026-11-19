@@ -14,9 +14,9 @@ Audited 2026-11-18. Staged data only: nothing is published, and no live inventor
 
 ## Results
 
-- Applications reviewed: 124 — verified 45, VIN-dependent 33, unresolved 25, removed 21.
-- Records: verified 17, VIN-dependent 17, unresolved 16.
-- Groups after the audit: 25 commercial_pending, 25 research_pending, 0 ready.
+- Applications reviewed: 124 — verified 45, VIN-dependent 34, unresolved 24, removed 21.
+- Records: verified 17, VIN-dependent 18, unresolved 15.
+- Groups after the audit: 26 commercial_pending, 24 research_pending, 0 ready.
 - Live storefront check: none of the 50 part numbers, their superseded numbers or their replacements appears in the deployed catalog (347 listings), so there is no duplicate or conflicting live listing.
 
 ## Priority resolutions (Toyota application charts)
@@ -59,7 +59,7 @@ Audited 2026-11-18. Staged data only: nothing is published, and no live inventor
 | 43512-06200 | 2024-2025 Toyota Corolla Cross | M20A-FKS 2.0L | unresolved | — | — | — | Dealers disagree (2022-2023 vs 2022-2025). |
 | 43512-06200 | 2019-2024 Toyota RAV4 | A25A-FXS 2.5L hybrid | unresolved | — | — | [retailer] dealer notes conflict (with / without hybrid) https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html | Dealer notes conflict on hybrid fitment; needs a VIN-level lookup. |
 | 04465-0E060 | 2018-2024 Toyota Camry | A25A-FKS 2.5L | unresolved | USA-built, without TRD; USA-built; split with 04465-33480 by production window | — | [retailer] ToyotaPartsDeal (2018-2024 Camry) https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html<br>[dealer_catalog_ca] Scarborough Toyota (Camry; USA built; w/o TRD) https://parts.scarboroughtoyota.ca/p/Toyota__/Disc-Brake-Pad-Set-Front/71575523/044650E060.html<br>[service_doc] Toyota brake pad application sheet (split by production window) https://attachments.priuschat.com/attachment-files/2022/03/219936_04_BrakePads2020_hi.pdf | Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source. |
-| 04465-0E060 | 2019-2023 Toyota RAV4 | — | unresolved | North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies; North American-built | — | [retailer] ToyotaPartsDeal (2019-2024 RAV4) https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html | Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source. |
+| 04465-0E060 | 2019-2023 Toyota RAV4 | — | vin_dependent | North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies; North American-built | — | [retailer] ToyotaPartsDeal (2019-2024 RAV4) https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html<br>[dealer_catalog] Olathe Toyota (2019 RAV4 front brakes: 04465-0E060 and 04465-33480 by build) https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/brakes--front-brakes | — |
 | 04465-0E060 | 2024-2024 Toyota RAV4 | — | unresolved | — | — | — | One catalog ends at 2023, another at 2024. |
 | 04465-06170 | 2023-2024 Toyota Camry | — | vin_dependent | US-built, without TRD, from 02/2023; US-built; from 02/2023 | — | [dealer_catalog] Northpark Toyota (2023-2024 Camry) https://parts.northparktoyota.com/oem-parts/toyota-disc-brake-pad-set-446506170<br>[dealer_catalog] NuCar Toyota (2023-2024 Camry) https://toyotaparts.nucar.com/parts/toyota-2023-2024-toyota-camry-brake-pads-446506170 | — |
 | 04465-35330 | 2024-2024 Toyota 4Runner | 1GR-FE 4.0L V6 | unresolved | — | supersedes 04465-35190 (unresolved); supersedes 04465-35230 (unresolved) | — | Dealer ranges disagree (2020-2023 vs 2020-2024). |

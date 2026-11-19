@@ -8,12 +8,12 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 |---|---|
 | Ready for approval | 0 |
 | Rejected (incorrect or unsupported) | 2 |
-| Awaiting Toyota fitment confirmation | 23 |
+| Awaiting Toyota fitment confirmation | 22 |
 | Awaiting pricing verification | 0 |
-| Awaiting supplier cost | 25 |
+| Awaiting supplier cost | 26 |
 | Awaiting image verification | 0 |
 
-- 25 records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.
+- 26 records pass fitment and pricing; every one still needs a supplier acquisition cost and a licensed product photo before its price can be approved.
 - No record is *Ready for approval*: no supplier cost is on file for any part, so profitability cannot be established, and no licensed, matching photograph exists for any part.
 - **Pricing rule:** about 5% below the lowest verified US retailer selling the exact same genuine Toyota part number, moving toward 3% only when needed for margin, never less than 3% below. Every price shown is a *competitive target flagged for profitability review*, not a selling price. No automatic discount, sale price or inflated reference price is used.
 - Each record's status is the first blocking item in this order: fitment, pricing evidence, supplier cost, photography. The CSV shows every check.
@@ -35,6 +35,7 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 | 43512-04052 | Front Disc Brake Rotor 43512-04052 | 2005–2023 Toyota Tacoma | [Sparks Toyota $81.29](https://www.sparksparts.com/oem-parts/toyota-disc-brake-rotor-front-4351204052) | **$77.29** | high |
 | 04465-0C020 | Front Disc Brake Pad Set 04465-0C020 | 2007–2017 Toyota Tundra | [OEMGenuineParts.com $71.04](https://www.oemgenuineparts.com/oem-parts/toyota-brake-pads-front-44650c020) | **$67.49** | high |
 | 43512-06200 | Front Disc Brake Rotor 43512-06200 | 2018–2024 Toyota Camry (without TRD, without hybrid; US-built (Japan-built excluded)); 2022–2023 Toyota Corolla Cross (2.0L) | [Grieco Toyota $66.73](https://parts.griecotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206200) | **$63.49** | high |
+| 04465-0E060 | Front Disc Brake Pad Set 04465-0E060 | 2019–2023 Toyota RAV4 (North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies) | [Toyota OEM Parts Online $72.07](https://toyota.oempartsonline.com/oem-parts/toyota-disc-brake-pad-set-front-44650e060) | **$68.49** | high |
 | 04465-06170 | Front Disc Brake Pad Set 04465-06170 | 2023–2024 Toyota Camry (US-built, without TRD, from 02/2023) | [Ourisman Toyota of Richmond $81.29](https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-brake-pads-446506170) | **$77.29** | high |
 | 04465-35330 | Front Disc Brake Pad Set 04465-35330 | 2020–2023 Toyota 4Runner (4.0L V6) | [OEMGenuineParts.com $74.90](https://www.oemgenuineparts.com/oem-parts/toyota-brake-pads-front-446535330) | **$71.19** | high |
 | 27060-F0010 | Alternator Assembly with Regulator (100A) 27060-F0010 | 2018–2024 Toyota Camry (2.5L; gas, non-hybrid, 100A) | [Ourisman Toyota of Richmond $262.44](https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-alternator-27060f0010) | **$249.39** | high |
@@ -58,7 +59,6 @@ Audited 2026-11-18. **Nothing has been approved, priced live, published or deplo
 | 87139-0R030 | Genuine Toyota Cabin Air Filter 87139-0R030 — vehicles (fitment under review) | 2020-2024 Corolla: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.; 2019-2019 Corolla: 2019 Corolla sedan is the pr |
 | 87139-58010 | Genuine Toyota Cabin Air Filter 87139-58010 — vehicles (fitment under review) | 2023-2024 Highlander: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.; 2020-2022 Highlander: Year pages exist but t |
 | 90919-02258 | Genuine Toyota Direct Ignition Coil 90919-02258 — vehicles (fitment under review) | 2016-2023 Tacoma 2GR-FKS 3.5L V6: Dealers list 90919-02258 for 1.8L engines (Corolla, Prius, C-HR, Matrix). The Tacoma 3.5L coil is 90919-A2008 (candidate for batch 2). No 1.8L application verified by year yet. |
-| 04465-0E060 | Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — vehicles (fitment under review) | 2018-2024 Camry A25A-FKS 2.5L: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.; 2019-2023 RAV4: Only retailer catal |
 | 04465-02530 | Genuine Toyota Front Disc Brake Pad Set 04465-02530 — vehicles (fitment under review) | Olathe Toyota's note for this number reads 'Grand Highlander, without hybrid', contradicting the hybrid listings.; 2021-2022 Highlander A25A-FXS 2.5L hybrid: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsN |
 | 16032-F0011 | Genuine Toyota Water Inlet Housing 16032-F0011 — Camry | Single dealer catalog for applications; it includes hybrid models that the staged 'gas, non-hybrid' restriction excluded. Gasket (16325-25010) inclusion unconfirmed.; 2019-2024 RAV4 A25A-FKS / A25A-FXS 2.5L: Only retaile |
 | 04465-42200 | Genuine Toyota Front Disc Brake Pad Set 04465-42200 — vehicles (fitment under review) | Superseded by 04465-42220.; 2006-2018 RAV4: Superseded by 04465-42220; year ranges do not separate 2006-2012 from 2013-2018. |

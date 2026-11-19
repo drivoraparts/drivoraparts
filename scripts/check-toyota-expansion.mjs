@@ -159,6 +159,13 @@ const ENGINE_YEARS = {
 };
 const ENGINE_CODE = /\b[0-9A-Z]{2,5}-[A-Z]{2,4}\b/g;
 const FAMILY = { oil_filter: "oil_filter", oil_filter_spin: "oil_filter" };
+// Vehicle corner a record's name states ("Front Left", "Rear Right"), or "" when unsided.
+const position = (r) => {
+  const n = r.name ?? "";
+  const axle = /\bRear\b/.test(n) ? "rear" : /\bFront\b/.test(n) ? "front" : "";
+  const side = /\bLeft\b/.test(n) ? "left" : /\bRight\b/.test(n) ? "right" : "";
+  return side ? `${axle}-${side}` : "";
+};
 const VIN_CLAIM = /\bVIN[- ](?:verified|confirmed|based|checked)\b|\b(?:verified|confirmed) (?:by|with|against) (?:the )?VIN\b/i;
 
 const allRecords = [];
@@ -260,6 +267,9 @@ for (let i = 0; i < listable.length; i += 1) {
     const A = listable[i].r;
     const B = listable[j].r;
     if ((FAMILY[A.partKind] ?? A.partKind) !== (FAMILY[B.partKind] ?? B.partKind)) continue;
+    // Sided parts (e.g. calipers) for different corners of the vehicle are
+    // different positions, not competing numbers for one position.
+    if (position(A) !== position(B)) continue;
     for (const a of A.fitmentVerification.applications.filter((x) => CLAIMED.has(x.status))) {
       for (const b of B.fitmentVerification.applications.filter((x) => CLAIMED.has(x.status))) {
         if (a.model !== b.model || a.yearTo < b.yearFrom || b.yearTo < a.yearFrom) continue;
