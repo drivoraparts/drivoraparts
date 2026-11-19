@@ -1,0 +1,4282 @@
+{
+  "_comment": "Toyota expansion batch 5 (2026-11-19): premium genuine Toyota parts, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Fuel Pump Assembly 23220-F0020 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "23220-F0020",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fuel_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2018–2024 Toyota Camry (2.5L; four-cylinder; V6 Camrys use 23220-0P240)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L; four-cylinder; V6 Camrys use 23220-0P240"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota fuel pump assembly 23220-F0020 for the Toyota Camry. In-tank electric fuel pump and strainer set.\n\nSpecifications\n\nPart number: 23220-F0020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2024 Toyota Camry (2.5L; four-cylinder; V6 Camrys use 23220-0P240)\nRestriction (2018-2024 Camry): 2.5L four-cylinder; V6 Camrys use 23220-0P240\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 456.24,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 275.07,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-23220f0020"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 275.07,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-23220f0020"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 305.68,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-fuel-pump-23220f0020"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 318.18,
+            "url": "https://www.toyotapartsdeal.com/oem-2018-toyota-camry-fuel_pump.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 333.18,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-23220f0020"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 261.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2018,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "2.5L",
+            "restriction": "2.5L four-cylinder; V6 Camrys use 23220-0P240",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (23220-F0020 Fuel Pump 2018-2024 Toyota Camry)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-23220f0020",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2018-2024 Toyota Camry fuel pump 23220-F0020)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-fuel-pump-23220f0020",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2018-2024 Toyota Camry fuel pump and strainer set 23220-F0020)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-and-strainer-set-23220f0020",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-23220f0020",
+        "https://parts.olathetoyota.com/oem-parts/toyota-fuel-pump-23220f0020",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-and-strainer-set-23220f0020",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-23220f0020",
+        "https://www.toyotapartsdeal.com/oem-2018-toyota-camry-fuel_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Fuel Pump Assembly 23220-0C301 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "23220-0C301",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fuel_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2016–2023 Toyota Tacoma (2.7L; four-cylinder; 3.5L V6 Tacomas use 23220-0P240)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.7L; four-cylinder; 3.5L V6 Tacomas use 23220-0P240"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota fuel pump assembly 23220-0C301 for the Toyota Tacoma. In-tank electric fuel pump.\n\nSpecifications\n\nPart number: 23220-0C301\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2023 Toyota Tacoma (2.7L; four-cylinder; 3.5L V6 Tacomas use 23220-0P240)\nRestriction (2016-2023 Tacoma): 2.7L four-cylinder; 3.5L V6 Tacomas use 23220-0P240; from 08/2015\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 426.3,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 289.21,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-fuel-pump-232200c301"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 289.21,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-fuel-pump-232200c301"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 298.9,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200c301"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 300.2,
+            "url": "https://www.autopartsprime.com/p/2018-toyota-tacoma-fuel-pump"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 304.14,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-232200c301"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 274.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2016,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "2.7L",
+            "restriction": "2.7L four-cylinder; 3.5L V6 Tacomas use 23220-0P240",
+            "assemblyOrigin": null,
+            "productionDates": "from 08/2015",
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2016-2023 Toyota Tacoma fuel pump 23220-0C301)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (23220-0C301 Fuel Pump 2016-2023 Toyota Tacoma; 2.7L, from 08/2015)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2016-2023 Toyota Tacoma fuel pump 23220-0C301)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+        "https://parts.olathetoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200c301",
+        "https://www.autopartsprime.com/p/2018-toyota-tacoma-fuel-pump"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Fuel Pump Assembly 23220-0P240 — Tacoma / Camry / Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "23220-0P240",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fuel_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2016–2020 Toyota Tacoma (3.5L V6; only); 2018–2023 Toyota Camry (3.5L V6; only); 2020–2020 Toyota Sienna (3.5L V6; only)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6; only"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "3.5L V6; only"
+        },
+        {
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "3.5L V6; only"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota fuel pump assembly 23220-0P240 for the Toyota Tacoma, Camry, Sienna. In-tank electric fuel pump.\n\nSpecifications\n\nPart number: 23220-0P240\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2020 Toyota Tacoma (3.5L V6; only); 2018–2023 Toyota Camry (3.5L V6; only); 2020–2020 Toyota Sienna (3.5L V6; only)\nRestriction (2016-2020 Tacoma): 3.5L V6 only\nRestriction (2018-2023 Camry): 3.5L V6 only\nRestriction (2020-2020 Sienna): 3.5L V6 only\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 456.24,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 293.44,
+          "url": "https://www.autopartsprime.com/p/2018-toyota-tacoma-fuel-pump"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 293.44,
+            "url": "https://www.autopartsprime.com/p/2018-toyota-tacoma-fuel-pump"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 312.69,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200p240"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 327.8,
+            "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-fuel_pump.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 278.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2016,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2016 Tacoma SR5 3.5L fuel system components)",
+                "url": "https://parts.olathetoyota.com/v-2016-toyota-tacoma--sr5--3-5l-v6-gas/fuel-system--fuel-system-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2019 Tacoma SR5 3.5L fuel system components)",
+                "url": "https://parts.longotoyota.com/v-2019-toyota-tacoma--sr5--3-5l-v6-gas/fuel-system--fuel-system-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Tacoma SR5 3.5L fuel system components)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-tacoma--sr5--3-5l-v6-gas/fuel-system--fuel-system-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2018,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2018 Camry XLE 3.5L fuel pump)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2018-toyota-camry--xle--3-5l-v6-gas/fuel-system--fuel-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2021 Camry XLE 3.5L fuel system components)",
+                "url": "https://parts.longotoyota.com/v-2021-toyota-camry--xle--3-5l-v6-gas/fuel-system--fuel-system-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2023 Camry XLE 3.5L fuel pump)",
+                "url": "https://parts.olathetoyota.com/v-2023-toyota-camry--xle--3-5l-v6-gas/fuel-system--fuel-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2020,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2020 Sienna XLE 3.5L fuel system components)",
+                "url": "https://parts.longotoyota.com/v-2020-toyota-sienna--xle--3-5l-v6-gas/fuel-system--fuel-system-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Sienna XLE 3.5L fuel system components)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-sienna--xle--3-5l-v6-gas/fuel-system--fuel-system-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2019-toyota-tacoma--sr5--3-5l-v6-gas/fuel-system--fuel-system-components",
+        "https://parts.longotoyota.com/v-2020-toyota-sienna--xle--3-5l-v6-gas/fuel-system--fuel-system-components",
+        "https://parts.longotoyota.com/v-2021-toyota-camry--xle--3-5l-v6-gas/fuel-system--fuel-system-components",
+        "https://parts.olathetoyota.com/v-2016-toyota-tacoma--sr5--3-5l-v6-gas/fuel-system--fuel-system-components",
+        "https://parts.olathetoyota.com/v-2020-toyota-sienna--xle--3-5l-v6-gas/fuel-system--fuel-system-components",
+        "https://parts.olathetoyota.com/v-2020-toyota-tacoma--sr5--3-5l-v6-gas/fuel-system--fuel-system-components",
+        "https://parts.olathetoyota.com/v-2023-toyota-camry--xle--3-5l-v6-gas/fuel-system--fuel-pump",
+        "https://toyotaparts.lakelandtoyota.com/v-2018-toyota-camry--xle--3-5l-v6-gas/fuel-system--fuel-pump",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200p240",
+        "https://www.autopartsprime.com/p/2018-toyota-tacoma-fuel-pump",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-fuel_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Fuel Pump Assembly 23220-0S011 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "23220-0S011",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fuel_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2008–2018 Toyota Tundra (4.6L / 5.7L V8; fuel-tank size and flex-fuel dependent (dealer notes differ on 26 vs 38 gallon tanks); supersedes 23220-0S010)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2008,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.6L / 5.7L V8; fuel-tank size and flex-fuel dependent (dealer notes differ on 26 vs 38 gallon tanks); supersedes 23220-0S010"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota fuel pump assembly 23220-0S011 for the Toyota Tundra. In-tank electric fuel pump and strainer set.\n\nSpecifications\n\nPart number: 23220-0S011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2008–2018 Toyota Tundra (4.6L / 5.7L V8; fuel-tank size and flex-fuel dependent (dealer notes differ on 26 vs 38 gallon tanks); supersedes 23220-0S010)\nRestriction (2008-2018 Tundra): 4.6L / 5.7L V8; fuel-tank size and flex-fuel dependent (dealer notes differ on 26 vs 38 gallon tanks); supersedes 23220-0S010\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 467.56,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 304.72,
+          "url": "https://www.toyotapartsdeal.com/oem-2011-toyota-tundra-fuel_pump.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 304.72,
+            "url": "https://www.toyotapartsdeal.com/oem-2011-toyota-tundra-fuel_pump.html"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 331.57,
+            "url": "https://www.autopartsprime.com/toyota/fuel-pump-assembly/oe-232200s011"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 363.39,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-fuel-pump-232200s011"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 371.04,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-232200s011"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 289.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2008,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "4.6L / 5.7L V8",
+            "restriction": "4.6L / 5.7L V8; fuel-tank size and flex-fuel dependent (dealer notes differ on 26 vs 38 gallon tanks); supersedes 23220-0S010",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2007-2022 Toyota fuel pump and strainer set 23220-0S011)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200s011",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2008 Tundra 5.7L fuel system components)",
+                "url": "https://parts.olathetoyota.com/v-2008-toyota-tundra--base--5-7l-v8-gas/fuel-system--fuel-system-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2015 Tundra SR 4.6L fuel system components)",
+                "url": "https://parts.longotoyota.com/v-2015-toyota-tundra--sr--4-6l-v8-gas/fuel-system--fuel-system-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2018 Tundra SR 4.6L fuel system components)",
+                "url": "https://parts.olathetoyota.com/v-2018-toyota-tundra--sr--4-6l-v8-gas/fuel-system--fuel-system-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-232200s011",
+        "https://parts.longotoyota.com/v-2015-toyota-tundra--sr--4-6l-v8-gas/fuel-system--fuel-system-components",
+        "https://parts.olathetoyota.com/v-2008-toyota-tundra--base--5-7l-v8-gas/fuel-system--fuel-system-components",
+        "https://parts.olathetoyota.com/v-2018-toyota-tundra--sr--4-6l-v8-gas/fuel-system--fuel-system-components",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-232200s011",
+        "https://www.autopartsprime.com/toyota/fuel-pump-assembly/oe-232200s011",
+        "https://www.sparksparts.com/oem-parts/toyota-fuel-pump-232200s011",
+        "https://www.toyotapartsdeal.com/oem-2011-toyota-tundra-fuel_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Steering Rack and Pinion Assembly 45510-42161 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "45510-42161",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2013–2018 Toyota RAV4 (2.5L; Japan-built with 17-inch wheels (dealer note); supersedes 45510-42160)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2013,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L; Japan-built with 17-inch wheels (dealer note); supersedes 45510-42160"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota steering rack and pinion assembly 45510-42161 for the Toyota RAV4. Complete electric power steering rack and pinion assembly.\n\nSpecifications\n\nPart number: 45510-42161\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2013–2018 Toyota RAV4 (2.5L; Japan-built with 17-inch wheels (dealer note); supersedes 45510-42160)\nRestriction (2013-2018 RAV4): Japan-built with 17-inch wheels (dealer note); supersedes 45510-42160; Japan-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 865.59,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 572.43,
+          "url": "https://parts.olathetoyota.com/v-2015-toyota-rav4--limited--2-5l-l4-gas/steering--steering-gear-and-linkage"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 572.43,
+            "url": "https://parts.olathetoyota.com/v-2015-toyota-rav4--limited--2-5l-l4-gas/steering--steering-gear-and-linkage"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 579.71,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~steering~45510-42161.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 603.65,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4551042161"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 686.91,
+            "url": "https://parts.longotoyota.com/v-2013-toyota-rav4--le--2-5l-l4-gas/steering--steering-gear-and-linkage"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 543.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2013,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "2.5L",
+            "restriction": "Japan-built with 17-inch wheels (dealer note); supersedes 45510-42160",
+            "assemblyOrigin": "Japan-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2013-2018 Toyota RAV4 rack and pinion assembly 45510-42161; Japan built, 17-inch wheels)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4551042161",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2013 RAV4 XLE steering gear and linkage)",
+                "url": "https://parts.olathetoyota.com/v-2013-toyota-rav4--xle--2-5l-l4-gas/steering--steering-gear-and-linkage",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2015 RAV4 Limited steering gear and linkage)",
+                "url": "https://parts.olathetoyota.com/v-2015-toyota-rav4--limited--2-5l-l4-gas/steering--steering-gear-and-linkage",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2013-toyota-rav4--le--2-5l-l4-gas/steering--steering-gear-and-linkage",
+        "https://parts.olathetoyota.com/v-2013-toyota-rav4--xle--2-5l-l4-gas/steering--steering-gear-and-linkage",
+        "https://parts.olathetoyota.com/v-2015-toyota-rav4--limited--2-5l-l4-gas/steering--steering-gear-and-linkage",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4551042161",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~steering~45510-42161.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-0C160 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-0C160",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2007–2013 Toyota Tundra (supersedes 44250-0C070 and 44250-0C100; confirm drivetrain and configuration by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "supersedes 44250-0C070 and 44250-0C100; confirm drivetrain and configuration by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power steering rack and pinion assembly 44250-0C160 for the Toyota Tundra. Hydraulic power steering rack and pinion (gear assembly).\n\nSpecifications\n\nPart number: 44250-0C160\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2013 Toyota Tundra (supersedes 44250-0C070 and 44250-0C100; confirm drivetrain and configuration by VIN)\nRestriction (2007-2013 Tundra): supersedes 44250-0C070 and 44250-0C100; confirm drivetrain and configuration by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 814.86,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 538.88,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-442500c160"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 538.88,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-442500c160"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 545.74,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~power~ste~44250-0c160.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 548.68,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-442500c160"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 563.37,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-rack-and-pinion-442500c160?c=az0x"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 568.27,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-442500c160"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 646.65,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-442500c160"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 511.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "supersedes 44250-0C070 and 44250-0C100; confirm drivetrain and configuration by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2007-2013 Toyota Tundra rack and pinion 44250-0C160)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007-2013 Toyota Tundra rack and pinion 44250-0C160)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (44250-0C160 Rack and Pinion 2007-2013 Toyota Tundra)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+        "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-442500c160",
+        "https://www.sparksparts.com/oem-parts/toyota-rack-and-pinion-442500c160?c=az0x",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~power~ste~44250-0c160.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04030 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-04030",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2005–2011 Toyota Tacoma (configuration dependent; 2012-2016 Tacomas use 44250-04040; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "configuration dependent; 2012-2016 Tacomas use 44250-04040; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power steering rack and pinion assembly 44250-04030 for the Toyota Tacoma. Hydraulic power steering rack and pinion (gear assembly).\n\nSpecifications\n\nPart number: 44250-04030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2005–2011 Toyota Tacoma (configuration dependent; 2012-2016 Tacomas use 44250-04040; confirm by VIN)\nRestriction (2005-2011 Tacoma): configuration dependent; 2012-2016 Tacomas use 44250-04040; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1099.96,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 720.81,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-4425004030"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 720.81,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-4425004030"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 736.68,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~power~steering~for~rack~pinion~44250-04030.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 767.1,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-4425004030"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 866.29,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-4425004030"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 684.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2005,
+            "yearTo": 2011,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "configuration dependent; 2012-2016 Tacomas use 44250-04040; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2005-2011 Toyota Tacoma rack and pinion 44250-04030)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-4425004030",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2005-2011 Toyota Tacoma rack and pinion 44250-04030)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-4425004030",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (44250-04030 Rack and Pinion 2005-2011 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-4425004030",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-4425004030",
+        "https://parts.olathetoyota.com/oem-parts/toyota-rack-and-pinion-4425004030",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-4425004030",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~power~steering~for~rack~pinion~44250-04030.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04040 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-04040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2012–2016 Toyota Tacoma (configuration dependent (engine and trim); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2012,
+          "yearTo": 2016,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "configuration dependent (engine and trim); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power steering rack and pinion assembly 44250-04040 for the Toyota Tacoma. Hydraulic power steering rack and pinion (gear assembly).\n\nSpecifications\n\nPart number: 44250-04040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2012–2016 Toyota Tacoma (configuration dependent (engine and trim); confirm by VIN)\nRestriction (2012-2016 Tacoma): configuration dependent (engine and trim); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1099.96,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 650.9,
+          "url": "https://www.toyotapartsdeal.com/parts-list/2015-toyota-tacoma/power_train_chassis/front_steering_gear_link.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 650.9,
+            "url": "https://www.toyotapartsdeal.com/parts-list/2015-toyota-tacoma/power_train_chassis/front_steering_gear_link.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 767.1,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-4425004040"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 866.29,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-4425004040"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 934.97,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2012-2016-toyota-tacoma-rack-and-pinion-4425004040"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 618.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "medium",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2012,
+            "yearTo": 2016,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "configuration dependent (engine and trim); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2012-2016 Toyota Tacoma rack and pinion 44250-04040)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-4425004040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (44250-04040 Rack and Pinion 2012-2016 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-4425004040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2012-2016 Toyota Tacoma rack and pinion 44250-04040)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2012-2016-toyota-tacoma-rack-and-pinion-4425004040",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-4425004040",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rack-and-pinion-4425004040",
+        "https://www.sparksparts.com/oem-parts/toyota-2012-2016-toyota-tacoma-rack-and-pinion-4425004040",
+        "https://www.toyotapartsdeal.com/parts-list/2015-toyota-tacoma/power_train_chassis/front_steering_gear_link.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Steering Knuckle, Front Right 43211-60200 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43211-60200",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2003–2015 Toyota 4Runner (passenger side; 4WD with coil-spring front suspension; supersedes 43211-60170)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2003,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "passenger side; 4WD with coil-spring front suspension; supersedes 43211-60170"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota steering knuckle, front right 43211-60200 for the Toyota 4Runner. Front right (passenger side) steering knuckle.\n\nSpecifications\n\nPart number: 43211-60200\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2003–2015 Toyota 4Runner (passenger side; 4WD with coil-spring front suspension; supersedes 43211-60170)\nRestriction (2003-2015 4Runner): passenger side; 4WD with coil-spring front suspension; supersedes 43211-60170\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 575.5,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 385.59,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-knuckle-4321160200"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 385.59,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-knuckle-4321160200"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 390.27,
+            "url": "https://www.autopartsprime.com/p/toyota-4runner-steering-knuckle"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 390.97,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~knuckle~steering~r~43211-60200.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 366.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2003,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "",
+            "restriction": "passenger side; 4WD with coil-spring front suspension; supersedes 43211-60170",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2003-2015 Toyota knuckle 43211-60200; 4WD coil spring)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-knuckle-4321160200",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2003 4Runner Limited suspension components)",
+                "url": "https://parts.longotoyota.com/v-2003-toyota-4runner--limited--4-7l-v8-gas/suspension--suspension-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2003-toyota-4runner--limited--4-7l-v8-gas/suspension--suspension-components",
+        "https://parts.olathetoyota.com/oem-parts/toyota-steering-knuckle-4321160200",
+        "https://www.autopartsprime.com/p/toyota-4runner-steering-knuckle",
+        "https://www.toyotapartsdeal.com/oem/toyota~knuckle~steering~r~43211-60200.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Lower Control Arm, Right 48068-60040 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "48068-60040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "control_arm",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2010–2024 Toyota 4Runner (4.0L V6; passenger side; 4.0L V6 without dynamic (KDSS) suspension per dealer notes; includes lower ball joint)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6; passenger side; 4.0L V6 without dynamic (KDSS) suspension per dealer notes; includes lower ball joint"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front lower control arm, right 48068-60040 for the Toyota 4Runner. Front lower control arm sub-assembly (right side) with lower ball joint.\n\nSpecifications\n\nPart number: 48068-60040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2024 Toyota 4Runner (4.0L V6; passenger side; 4.0L V6 without dynamic (KDSS) suspension per dealer notes; includes lower ball joint)\nRestriction (2010-2024 4Runner): passenger side; 4.0L V6 without dynamic (KDSS) suspension per dealer notes; includes lower ball joint\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 397.39,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 272.36,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 272.36,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 274.75,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-suspension-control-arm-right-front-lower-4806860040"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 277.14,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~arm~sub~assy~suspen~48068-60040.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 299.0,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 315.36,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 258.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "4.0L V6",
+            "restriction": "passenger side; 4.0L V6 without dynamic (KDSS) suspension per dealer notes; includes lower ball joint",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010-2024 Toyota suspension control arm (right, front, lower) 48068-60040)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (48068-60040 Suspension Control Arm (Right, Front, Lower) 2010-2024 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2010-2024 Toyota suspension control arm (right, front, lower) 48068-60040)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040",
+        "https://parts.olathetoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-suspension-control-arm-right-front-lower-4806860040",
+        "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-suspension-control-arm-right-front-lower-4806860040",
+        "https://www.toyotapartsdeal.com/oem/toyota~arm~sub~assy~suspen~48068-60040.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Drive Axle Assembly, Right 43410-06B80 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43410-06B80",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "axle",
+      "condition": "brand-new",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2007–2011 Toyota Camry (3.5L V6; passenger side; 3.5L V6 with automatic transmission; supersedes 43410-06780)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "3.5L V6; passenger side; 3.5L V6 with automatic transmission; supersedes 43410-06780"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front drive axle assembly, right 43410-06B80 for the Toyota Camry. Complete front drive shaft (CV axle) assembly, right side.\n\nSpecifications\n\nPart number: 43410-06B80\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2011 Toyota Camry (3.5L V6; passenger side; 3.5L V6 with automatic transmission; supersedes 43410-06780)\nRestriction (2007-2011 Camry): passenger side; 3.5L V6 with automatic transmission; supersedes 43410-06780\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 566.74,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 362.1,
+          "url": "https://www.toyotapartsdeal.com/oem-toyota-avalon-axle_shaft.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 362.1,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-avalon-axle_shaft.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 379.72,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-axle-assembly-4341006b80"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 398.78,
+            "url": "https://www.autopartsprime.com/p/lexus-es350-axle-shaft"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 344.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2011,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "3.5L V6",
+            "restriction": "passenger side; 3.5L V6 with automatic transmission; supersedes 43410-06780",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2007-2011 Toyota Camry axle assembly 43410-06B80)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-axle-assembly-4341006b80",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2011 Camry LE 3.5L drive axles)",
+                "url": "https://parts.olathetoyota.com/v-2011-toyota-camry--le--3-5l-v6-gas/suspension--drive-axles",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2009 Camry LE 3.5L CV boots and related components)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2009-toyota-camry--le--3-5l-v6-gas/driveline-and-axles--cv-boots-and-related-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-axle-assembly-4341006b80",
+        "https://parts.olathetoyota.com/v-2011-toyota-camry--le--3-5l-v6-gas/suspension--drive-axles",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-axle-assembly-4341006b80",
+        "https://toyotaparts.lakelandtoyota.com/v-2009-toyota-camry--le--3-5l-v6-gas/driveline-and-axles--cv-boots-and-related-components",
+        "https://www.autopartsprime.com/p/lexus-es350-axle-shaft",
+        "https://www.toyotapartsdeal.com/oem-toyota-avalon-axle_shaft.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Wheel Hub and Bearing Assembly 43550-0C020 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43550-0C020",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "hub_bearing",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2022–2025 Toyota Tundra (front, left or right; confirm drivetrain by VIN); 2023–2025 Toyota Sequoia (front, left or right; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "front, left or right; confirm drivetrain by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "front, left or right; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front wheel hub and bearing assembly 43550-0C020 for the Toyota Tundra, Sequoia. Front wheel hub and bearing assembly; fits either side.\n\nSpecifications\n\nPart number: 43550-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (front, left or right; confirm drivetrain by VIN); 2023–2025 Toyota Sequoia (front, left or right; confirm by VIN)\nRestriction (2022-2025 Tundra): front, left or right; confirm drivetrain by VIN\nRestriction (2023-2025 Sequoia): front, left or right; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 664.99,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 432.72,
+          "url": "https://www.toyotapartsdeal.com/oem-2025-toyota-sequoia-wheel_hub.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 432.72,
+            "url": "https://www.toyotapartsdeal.com/oem-2025-toyota-sequoia-wheel_hub.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 445.54,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-hub-assembly-435500c020"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 463.76,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-hub-assembly-435500c020"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 471.5,
+            "url": "https://parts.longotoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/suspension--suspension-components"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 411.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "front, left or right; confirm drivetrain by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2026 Toyota hub assembly 43550-0C020)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-hub-assembly-435500c020",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tundra Platinum front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--platinum--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2025 Tundra SR suspension components)",
+                "url": "https://parts.longotoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/suspension--suspension-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "front, left or right; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2025 Sequoia TRD Pro front brakes)",
+                "url": "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes",
+        "https://parts.longotoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/suspension--suspension-components",
+        "https://parts.olathetoyota.com/oem-parts/toyota-hub-assembly-435500c020",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-hub-assembly-435500c020",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--platinum--3-4l-v6-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-2025-toyota-sequoia-wheel_hub.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator and Condenser Fan Assembly 16360-F0150 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16360-F0150",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fan",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2021–2024 Toyota Sienna (2.5L hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota radiator and condenser fan assembly 16360-F0150 for the Toyota Sienna. Complete dual radiator/condenser cooling fan assembly with blades, motors and shroud.\n\nSpecifications\n\nPart number: 16360-F0150\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2024 Toyota Sienna (2.5L hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3001.67,
+        "lowestCompetitor": {
+          "seller": "Sparks Toyota",
+          "price": 2039.18,
+          "url": "https://www.sparksparts.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150"
+        },
+        "competitors": [
+          {
+            "seller": "Sparks Toyota",
+            "price": 2039.18,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2073.59,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-sienna-cooling_fan_assembly.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 2074.43,
+            "url": "https://parts.olathetoyota.com/v-2023-toyota-sienna--le--2-5l-l4-electric-gas/cooling-system--cooling-fan"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 2530.82,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1937.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (16360-F0150 Dual Radiator And Condenser Fan Assembly 2021-2025 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2021-2024 Toyota Sienna dual radiator and condenser fan assembly 16360-F0150)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2022 Sienna LE cooling fan)",
+                "url": "https://parts.olathetoyota.com/v-2022-toyota-sienna--le--2-5l-l4-electric-gas/cooling-system--cooling-fan",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150",
+        "https://parts.olathetoyota.com/v-2022-toyota-sienna--le--2-5l-l4-electric-gas/cooling-system--cooling-fan",
+        "https://parts.olathetoyota.com/v-2023-toyota-sienna--le--2-5l-l4-electric-gas/cooling-system--cooling-fan",
+        "https://www.sparksparts.com/oem-parts/toyota-dual-radiator-and-condenser-fan-assembly-16360f0150",
+        "https://www.toyotapartsdeal.com/oem-toyota-sienna-cooling_fan_assembly.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator Cooling Fan Assembly 16360-F0070 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16360-F0070",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fan",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2021–2025 Toyota RAV4 (2.5L plug-in hybrid; RAV4 Prime (plug-in hybrid) only)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L plug-in hybrid; RAV4 Prime (plug-in hybrid) only"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota radiator cooling fan assembly 16360-F0070 for the Toyota RAV4. Complete cooling fan assembly with blade, motor and shroud.\n\nSpecifications\n\nPart number: 16360-F0070\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota RAV4 (2.5L plug-in hybrid; RAV4 Prime (plug-in hybrid) only)\nRestriction (2021-2025 RAV4): RAV4 Prime (plug-in hybrid) only\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 2963.92,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 1985.03,
+          "url": "https://www.toyotapartsdeal.com/oem-toyota-rav4-cooling_fan_assembly.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1985.03,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-rav4-cooling_fan_assembly.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 2066.99,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-rav4-prime--xse--2-5l-l4-electric-gas/cooling-system--radiator-and-components"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 2316.46,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-fan-assembly-16360f0070"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1885.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "2.5L plug-in hybrid",
+            "restriction": "RAV4 Prime (plug-in hybrid) only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (16360-F0070 Fan Assembly 2021-2025 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-fan-assembly-16360f0070",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023 RAV4 Prime XSE radiator and components)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-rav4-prime--xse--2-5l-l4-electric-gas/cooling-system--radiator-and-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-fan-assembly-16360f0070",
+        "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-rav4-prime--xse--2-5l-l4-electric-gas/cooling-system--radiator-and-components",
+        "https://www.toyotapartsdeal.com/oem-toyota-rav4-cooling_fan_assembly.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Brake Booster 44610-02441 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44610-02441",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "booster",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2009–2013 Toyota Corolla (US-built Corolla; stability-control and engine dependent)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "US-built Corolla; stability-control and engine dependent"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power brake booster 44610-02441 for the Toyota Corolla. Vacuum power brake booster assembly.\n\nSpecifications\n\nPart number: 44610-02441\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2013 Toyota Corolla (US-built Corolla; stability-control and engine dependent)\nRestriction (2009-2013 Corolla): US-built Corolla; stability-control and engine dependent; US-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 941.61,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 578.0,
+          "url": "https://parts.olathetoyota.com/auto-parts/2009/toyota/matrix/base-trim/1-8l-l4-gas-engine/body-cat/master-cylinder-components-on-dash-panel-scat"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 578.0,
+            "url": "https://parts.olathetoyota.com/auto-parts/2009/toyota/matrix/base-trim/1-8l-l4-gas-engine/body-cat/master-cylinder-components-on-dash-panel-scat"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 628.36,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-booster-4461002441"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 630.62,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~booster~assy~brake~44610-02441.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 651.0,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-brake-booster-4461002441"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 656.66,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-brake-booster-4461002441"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 549.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "US-built Corolla; stability-control and engine dependent",
+            "assemblyOrigin": "US-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2009-2013 Toyota power brake booster 44610-02441)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-brake-booster-4461002441",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2009-2013 Toyota power brake booster 44610-02441; Corolla US built)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-booster-4461002441",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2012 Corolla L hardware, fasteners and fittings)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2012-toyota-corolla--l--1-8l-l4-gas/brakes--hardware-fasteners-and-fittings",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/auto-parts/2009/toyota/matrix/base-trim/1-8l-l4-gas-engine/body-cat/master-cylinder-components-on-dash-panel-scat",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-brake-booster-4461002441",
+        "https://toyotaparts.lakelandtoyota.com/v-2012-toyota-corolla--l--1-8l-l4-gas/brakes--hardware-fasteners-and-fittings",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-booster-4461002441",
+        "https://www.sparksparts.com/oem-parts/toyota-brake-booster-4461002441",
+        "https://www.toyotapartsdeal.com/oem/toyota~booster~assy~brake~44610-02441.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Brake Booster 44610-0E191 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44610-0E191",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "booster",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2023–2025 Toyota Highlander (2.4L turbo; without hybrid; option-code dependent)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "2.4L turbo; without hybrid; option-code dependent"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power brake booster 44610-0E191 for the Toyota Highlander. Vacuum power brake booster assembly.\n\nSpecifications\n\nPart number: 44610-0E191\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2025 Toyota Highlander (2.4L turbo; without hybrid; option-code dependent)\nRestriction (2023-2025 Highlander): 2.4L turbo without hybrid; option-code dependent\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 889.88,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 588.49,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-power-brake-booster-446100e191"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 588.49,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-power-brake-booster-446100e191"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 595.31,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-highlander-brake_booster.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 619.88,
+            "url": "https://toyotaparts.lakelandtoyota.com/c/brakes-brake-parts/master-cylinders-parts?page=2"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 559.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "2.4L turbo",
+            "restriction": "2.4L turbo without hybrid; option-code dependent",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2023-2026 Toyota power brake booster 44610-0E191; 2.4L without hybrid)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-power-brake-booster-446100e191",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2024 Highlander Platinum 2.4L brake hardware)",
+                "url": "https://parts.olathetoyota.com/v-2024-toyota-highlander--platinum--2-4l-l4-gas/brakes--hardware-fasteners-and-fittings",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023 Highlander L 2.4L brake hardware)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-highlander--l--2-4l-l4-gas/brakes--hardware-fasteners-and-fittings",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-power-brake-booster-446100e191",
+        "https://parts.olathetoyota.com/v-2024-toyota-highlander--platinum--2-4l-l4-gas/brakes--hardware-fasteners-and-fittings",
+        "https://toyotaparts.lakelandtoyota.com/c/brakes-brake-parts/master-cylinders-parts?page=2",
+        "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-highlander--l--2-4l-l4-gas/brakes--hardware-fasteners-and-fittings",
+        "https://www.toyotapartsdeal.com/oem-toyota-highlander-brake_booster.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator Assembly 16400-0S010 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16400-0S010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "radiator",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2007–2013 Toyota Tundra (4.6L / 5.7L V8; Tundra built to 08/2013; supersedes 16400-0S020); 2008–2013 Toyota Sequoia (4.6L / 5.7L V8; 2014+ Sequoias use 16400-0S040)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.6L / 5.7L V8; Tundra built to 08/2013; supersedes 16400-0S020"
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "4.6L / 5.7L V8; 2014+ Sequoias use 16400-0S040"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota radiator assembly 16400-0S010 for the Toyota Tundra, Sequoia. Complete radiator assembly.\n\nSpecifications\n\nPart number: 16400-0S010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2013 Toyota Tundra (4.6L / 5.7L V8; Tundra built to 08/2013; supersedes 16400-0S020); 2008–2013 Toyota Sequoia (4.6L / 5.7L V8; 2014+ Sequoias use 16400-0S040)\nRestriction (2007-2013 Tundra): 4.6L / 5.7L V8; Tundra built to 08/2013; supersedes 16400-0S020; to 08/2013\nRestriction (2008-2013 Sequoia): 4.6L / 5.7L V8; 2014+ Sequoias use 16400-0S040\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 427.32,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 294.14,
+          "url": "https://www.autopartsprime.com/p/toyota-radiator"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 294.14,
+            "url": "https://www.autopartsprime.com/p/toyota-radiator"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 298.0,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-0s010.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 298.0,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-radiator-assembly-164000s010"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 300.57,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s010"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 279.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "4.6L / 5.7L V8",
+            "restriction": "4.6L / 5.7L V8; Tundra built to 08/2013; supersedes 16400-0S020",
+            "assemblyOrigin": null,
+            "productionDates": "to 08/2013",
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007-2014 Toyota radiator assembly 16400-0S010; Tundra to 08/2013, 4.6L/5.7L)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2007-2014 Toyota radiator assembly 16400-0S010)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-radiator-assembly-164000s010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2008,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "4.6L / 5.7L V8",
+            "restriction": "4.6L / 5.7L V8; 2014+ Sequoias use 16400-0S040",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010 Sequoia SR5 5.7L radiator and components)",
+                "url": "https://parts.olathetoyota.com/v-2010-toyota-sequoia--sr5--5-7l-v8-gas/cooling-system--radiator-and-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s010",
+        "https://parts.olathetoyota.com/v-2010-toyota-sequoia--sr5--5-7l-v8-gas/cooling-system--radiator-and-components",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-radiator-assembly-164000s010",
+        "https://www.autopartsprime.com/p/toyota-radiator",
+        "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-0s010.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Cooling Fan Assembly 16360-AK010 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16360-AK010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fan",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2024–2025 Toyota Tacoma (2.4L turbo; four-cylinder; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L turbo; four-cylinder; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine cooling fan assembly 16360-AK010 for the Toyota Tacoma. Complete engine cooling fan assembly with blade, motor and shroud.\n\nSpecifications\n\nPart number: 16360-AK010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (2.4L turbo; four-cylinder; confirm by VIN)\nRestriction (2024-2025 Tacoma): 2.4L turbo four-cylinder; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 2036.76,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 1320.81,
+          "url": "https://www.toyotapartsdeal.com/oem-toyota-tacoma-fan_blade.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1320.81,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-tacoma-fan_blade.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1379.02,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/cooling-system--cooling-fan"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1545.45,
+            "url": "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/cooling-system--cooling-system"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1254.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "2.4L turbo",
+            "restriction": "2.4L turbo four-cylinder; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (16360-AK010 Engine Cooling Fan Assembly; 2.4L Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-engine-cooling-fan-assembly-16360ak010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tacoma TRD Off-Road 2.4L cooling fan)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/cooling-system--cooling-fan",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-engine-cooling-fan-assembly-16360ak010",
+        "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/cooling-system--cooling-system",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/cooling-system--cooling-fan",
+        "https://www.toyotapartsdeal.com/oem-toyota-tacoma-fan_blade.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Cooling Fan Assembly 16360-F0100 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16360-F0100",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fan",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2020–2022 Toyota Highlander (3.5L V6 / 2.5L hybrid; 3.5L V6 or 2.5L hybrid; 2023+ 2.4L turbo Highlanders use 16360-F0110)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.5L V6 / 2.5L hybrid; 3.5L V6 or 2.5L hybrid; 2023+ 2.4L turbo Highlanders use 16360-F0110"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine cooling fan assembly 16360-F0100 for the Toyota Highlander. Complete engine cooling fan assembly with blade and motor.\n\nSpecifications\n\nPart number: 16360-F0100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2022 Toyota Highlander (3.5L V6 / 2.5L hybrid; 3.5L V6 or 2.5L hybrid; 2023+ 2.4L turbo Highlanders use 16360-F0110)\nRestriction (2020-2022 Highlander): 3.5L V6 or 2.5L hybrid; 2023+ 2.4L turbo Highlanders use 16360-F0110\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 2499.58,
+        "lowestCompetitor": {
+          "seller": "Sparks Toyota",
+          "price": 1651.5,
+          "url": "https://www.sparksparts.com/oem-parts/toyota-fan-assembly-16360f0100"
+        },
+        "competitors": [
+          {
+            "seller": "Sparks Toyota",
+            "price": 1651.5,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-fan-assembly-16360f0100"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 1699.71,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-fan-assembly-16360f0100"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2073.59,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~fan~assy~w~motor~16360-f0100.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 2457.03,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-fan-module-16360f0100"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1568.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "medium",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2022,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "3.5L V6 / 2.5L hybrid",
+            "restriction": "3.5L V6 or 2.5L hybrid; 2023+ 2.4L turbo Highlanders use 16360-F0110",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Toyota Highlander fan assembly 16360-F0100)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-fan-assembly-16360f0100",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Highlander L 3.5L cooling fan)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-highlander--l--3-5l-v6-gas/cooling-system--cooling-fan",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2021 Highlander XSE 3.5L cooling fan)",
+                "url": "https://parts.longotoyota.com/v-2021-toyota-highlander--xse--3-5l-v6-gas/cooling-system--cooling-fan",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-fan-module-16360f0100",
+        "https://parts.longotoyota.com/v-2021-toyota-highlander--xse--3-5l-v6-gas/cooling-system--cooling-fan",
+        "https://parts.olathetoyota.com/oem-parts/toyota-fan-assembly-16360f0100",
+        "https://parts.olathetoyota.com/v-2020-toyota-highlander--l--3-5l-v6-gas/cooling-system--cooling-fan",
+        "https://www.sparksparts.com/oem-parts/toyota-fan-assembly-16360f0100",
+        "https://www.toyotapartsdeal.com/oem/toyota~fan~assy~w~motor~16360-f0100.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Tail Lamp Assembly, Right 81550-0E230 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81550-0E230",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "taillight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2020–2023 Toyota Highlander (passenger side; lamp style may vary by trim, confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "passenger side; lamp style may vary by trim, confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota tail lamp assembly, right 81550-0E230 for the Toyota Highlander. Rear combination (tail) lamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81550-0E230\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2023 Toyota Highlander (passenger side; lamp style may vary by trim, confirm by VIN)\nRestriction (2020-2023 Highlander): passenger side; lamp style may vary by trim, confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 416.65,
+        "lowestCompetitor": {
+          "seller": "Longo Toyota",
+          "price": 274.92,
+          "url": "https://parts.longotoyota.com/v-2021-toyota-highlander--limited--3-5l-v6-gas/electrical--bulbs-chassis"
+        },
+        "competitors": [
+          {
+            "seller": "Longo Toyota",
+            "price": 274.92,
+            "url": "https://parts.longotoyota.com/v-2021-toyota-highlander--limited--3-5l-v6-gas/electrical--bulbs-chassis"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 284.53,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-tail-lamp-assembly-passenger-side-815500e230"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 285.56,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e230"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 290.57,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~lamp~assy~rr~combin~81550-0e230.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 261.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "passenger side; lamp style may vary by trim, confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020-2023 Toyota Highlander tail lamp assembly - passenger side 81550-0E230)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-tail-lamp-assembly-passenger-side-815500e230",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81550-0E230 Tail Lamp Assembly 2020-2023 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e230",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2023 Toyota Highlander tail light assembly 81550-0E230)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e230",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e230",
+        "https://parts.longotoyota.com/v-2021-toyota-highlander--limited--3-5l-v6-gas/electrical--bulbs-chassis",
+        "https://parts.olathetoyota.com/oem-parts/toyota-tail-lamp-assembly-passenger-side-815500e230",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e230",
+        "https://www.toyotapartsdeal.com/oem/toyota~lamp~assy~rr~combin~81550-0e230.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Tail Lamp Assembly, Left 81560-0E230 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81560-0E230",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "taillight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2020–2023 Toyota Highlander (driver side; lamp style may vary by trim, confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "driver side; lamp style may vary by trim, confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota tail lamp assembly, left 81560-0E230 for the Toyota Highlander. Rear combination (tail) lamp assembly, driver side.\n\nSpecifications\n\nPart number: 81560-0E230\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2023 Toyota Highlander (driver side; lamp style may vary by trim, confirm by VIN)\nRestriction (2020-2023 Highlander): driver side; lamp style may vary by trim, confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 394.7,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 271.69,
+          "url": "https://www.autopartsprime.com/p/toyota-highlander-tail-light-bulbs"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 271.69,
+            "url": "https://www.autopartsprime.com/p/toyota-highlander-tail-light-bulbs"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 278.39,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-tail_light.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 280.79,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 313.22,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 258.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "driver side; lamp style may vary by trim, confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020-2023 Toyota Highlander tail light assembly - drivers side 81560-0E230)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2023 Toyota Highlander tail light assembly 81560-0E230)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2020-2023 Toyota Highlander tail lamp assembly 81560-0E230)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2020-2023-toyota-highlander-tail-lamp-assembly-815600e230",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230",
+        "https://parts.olathetoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-815600e230",
+        "https://www.autopartsprime.com/p/toyota-highlander-tail-light-bulbs",
+        "https://www.sparksparts.com/oem-parts/toyota-2020-2023-toyota-highlander-tail-lamp-assembly-815600e230",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-tail_light.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Left 81150-0R162 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81150-0R162",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2019–2021 Toyota RAV4 (driver side; LED projector headlamp without adaptive lighting; supersedes 81150-0R160/-0R161)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "driver side; LED projector headlamp without adaptive lighting; supersedes 81150-0R160/-0R161"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, left 81150-0R162 for the Toyota RAV4. Complete headlamp assembly, driver side.\n\nSpecifications\n\nPart number: 81150-0R162\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2021 Toyota RAV4 (driver side; LED projector headlamp without adaptive lighting; supersedes 81150-0R160/-0R161)\nRestriction (2019-2021 RAV4): driver side; LED projector headlamp without adaptive lighting; supersedes 81150-0R160/-0R161\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1287.59,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 819.12,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r162"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 819.12,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r162"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 834.15,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-left-hand-front-left-811500r162"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 862.34,
+            "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-rav4-headlight.html"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 873.16,
+            "url": "https://www.autopartsprime.com/p/toyota-rav4-headlight"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1032.23,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-left-hand-front-left-811500r162"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 778.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "driver side; LED projector headlamp without adaptive lighting; supersedes 81150-0R160/-0R161",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019-2021 Toyota headlamp assembly - drivers side 81150-0R162)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r162",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 RAV4 Hybrid Limited headlamp components)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/electrical--headlamp-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-left-hand-front-left-811500r162",
+        "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r162",
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/electrical--headlamp-components",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-left-hand-front-left-811500r162",
+        "https://www.autopartsprime.com/p/toyota-rav4-headlight",
+        "https://www.toyotapartsdeal.com/oem-2021-toyota-rav4-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0R162 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-0R162",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2019–2021 Toyota RAV4 (passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-0R160/-0R161)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-0R160/-0R161"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-0R162 for the Toyota RAV4. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-0R162\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2021 Toyota RAV4 (passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-0R160/-0R161)\nRestriction (2019-2021 RAV4): passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-0R160/-0R161\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1287.59,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 773.1,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-hand-front-right-811100r162"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 773.1,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-hand-front-right-811100r162"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 837.16,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-rav4-headlight.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 843.76,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-passenger-side-811100r162"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 984.73,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-headlamp-assembly-right-hand-front-right-811100r162"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 734.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-0R160/-0R161",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019-2021 Toyota headlamp assembly - passenger side 81110-0R162; projector LED without adaptive lights)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-passenger-side-811100r162",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 RAV4 Hybrid XSE headlamp components)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-xse--2-5l-l4-electric-gas/electrical--headlamp-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-passenger-side-811100r162",
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-xse--2-5l-l4-electric-gas/electrical--headlamp-components",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-hand-front-right-811100r162",
+        "https://www.sparksparts.com/oem-parts/toyota-headlamp-assembly-right-hand-front-right-811100r162",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-rav4-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Left 81150-0R360 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81150-0R360",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2022–2024 Toyota RAV4 (driver side; LED projector headlamp without adaptive lighting; Japan-built per dealer note; supersedes 81150-42D90)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "driver side; LED projector headlamp without adaptive lighting; Japan-built per dealer note; supersedes 81150-42D90"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, left 81150-0R360 for the Toyota RAV4. Complete headlamp assembly, driver side.\n\nSpecifications\n\nPart number: 81150-0R360\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2024 Toyota RAV4 (driver side; LED projector headlamp without adaptive lighting; Japan-built per dealer note; supersedes 81150-42D90)\nRestriction (2022-2024 RAV4): driver side; LED projector headlamp without adaptive lighting; Japan-built per dealer note; supersedes 81150-42D90; Japan-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1281.27,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 839.62,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r360"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 839.62,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r360"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 855.8,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811500r360"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 858.88,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~lh~81150-0r360.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1024.49,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811500r360"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 797.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "driver side; LED projector headlamp without adaptive lighting; Japan-built per dealer note; supersedes 81150-42D90",
+            "assemblyOrigin": "Japan-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81150-0R360 Headlamp Assembly 2022-2024 Toyota; LED projector, Japan built)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811500r360?c=az0x",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2022-2025 Toyota headlamp assembly - drivers side 81150-0R360)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r360",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811500r360",
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811500r360?c=az0x",
+        "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-811500r360",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811500r360",
+        "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~lh~81150-0r360.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0R360 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-0R360",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2022–2024 Toyota RAV4 (passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-42D90)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-42D90"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-0R360 for the Toyota RAV4. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-0R360\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2024 Toyota RAV4 (passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-42D90)\nRestriction (2022-2024 RAV4): passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-42D90\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1281.27,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 782.85,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0r360.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 782.85,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0r360.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 855.02,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811100r360"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 859.96,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-headlamp-assembly-811100r360"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 867.44,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100r360"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 743.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "passenger side; LED projector headlamp without adaptive lighting; supersedes 81110-42D90",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2025 Toyota headlamp assembly 81110-0R360; RAV4 and RAV4 Prime fitment)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100r360",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2022-2025 Toyota headlight assembly 81110-0R360)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811100r360",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100r360",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811100r360",
+        "https://www.sparksparts.com/oem-parts/toyota-headlamp-assembly-811100r360",
+        "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0r360.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0E530 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-0E530",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2020–2023 Toyota Highlander (passenger side; without adaptive lighting, with LED-strip daytime running lamp)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "passenger side; without adaptive lighting, with LED-strip daytime running lamp"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-0E530 for the Toyota Highlander. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-0E530\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2023 Toyota Highlander (passenger side; without adaptive lighting, with LED-strip daytime running lamp)\nRestriction (2020-2023 Highlander): passenger side; without adaptive lighting, with LED-strip daytime running lamp\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1346.31,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 898.42,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 898.42,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 914.61,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0e530.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1027.93,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 853.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "passenger side; without adaptive lighting, with LED-strip daytime running lamp",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2023 Toyota Highlander headlamp assembly right 81110-0E530; without adaptive lighting, LED strip DRL)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-0E530 Headlamp Assembly Right 2020-2024 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Highlander Limited headlamp components)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-highlander--limited--3-5l-v6-gas/electrical--headlamp-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530",
+        "https://parts.olathetoyota.com/v-2020-toyota-highlander--limited--3-5l-v6-gas/electrical--headlamp-components",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-right-811100e530",
+        "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0e530.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Left 81150-08430 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81150-08430",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid; driver side; Platinum trim with signature lighting)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid; driver side; Platinum trim with signature lighting"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, left 81150-08430 for the Toyota Sienna. Complete headlamp assembly, driver side.\n\nSpecifications\n\nPart number: 81150-08430\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid; driver side; Platinum trim with signature lighting)\nRestriction (2021-2025 Sienna): driver side; Platinum trim with signature lighting\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1622.59,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 1085.63,
+          "url": "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 1085.63,
+            "url": "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1086.7,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~lh~81150-08430.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1250.03,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-8115008430"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1031.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": "driver side; Platinum trim with signature lighting",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81150-08430 Headlamp Assembly 2021-2025 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-8115008430",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2021 Sienna Platinum headlamp components)",
+                "url": "https://parts.longotoyota.com/v-2021-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2025 Sienna Platinum headlamp components)",
+                "url": "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-8115008430",
+        "https://parts.longotoyota.com/v-2021-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+        "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+        "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~lh~81150-08430.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-08430 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-08430",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid; passenger side; Platinum trim with signature lighting)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid; passenger side; Platinum trim with signature lighting"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-08430 for the Toyota Sienna. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-08430\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid; passenger side; Platinum trim with signature lighting)\nRestriction (2021-2025 Sienna): passenger side; Platinum trim with signature lighting\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1622.59,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 1085.63,
+          "url": "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 1085.63,
+            "url": "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1098.51,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-8111008430"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1231.09,
+            "url": "https://parts.longotoyota.com/v-2021-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1031.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": "passenger side; Platinum trim with signature lighting",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2025 Toyota Sienna headlamp assembly 81110-08430)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-8111008430",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-08430 Headlight Assembly 2021-2025 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-8111008430",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2021 Sienna Platinum headlamp components)",
+                "url": "https://parts.longotoyota.com/v-2021-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-8111008430",
+        "https://parts.longotoyota.com/v-2021-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+        "https://parts.olathetoyota.com/v-2025-toyota-sienna--platinum--2-5l-l4-electric-gas/electrical--headlamp-components",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-8111008430"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0R440 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-0R440",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2022–2025 Toyota RAV4 (passenger side; headlamp type is trim dependent (other 2022+ RAV4 trims use 81110-0R360); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "passenger side; headlamp type is trim dependent (other 2022+ RAV4 trims use 81110-0R360); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-0R440 for the Toyota RAV4. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-0R440\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota RAV4 (passenger side; headlamp type is trim dependent (other 2022+ RAV4 trims use 81110-0R360); confirm by VIN)\nRestriction (2022-2025 RAV4): passenger side; headlamp type is trim dependent (other 2022+ RAV4 trims use 81110-0R360); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 834.99,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 553.54,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0r440.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 553.54,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0r440.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 556.52,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-composite-assembly-811100r440"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 582.31,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100r440"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 662.63,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811100r440"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 525.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "passenger side; headlamp type is trim dependent (other 2022+ RAV4 trims use 81110-0R360); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-0R440 Headlamp Assembly 2022-2025 Toyota RAV4)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811100r440",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2022-2025 Toyota RAV4 headlamp assembly 81110-0R440)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-composite-assembly-811100r440",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2025 Toyota RAV4 headlamp assembly 81110-0R440)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100r440",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811100r440",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100r440",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-composite-assembly-811100r440",
+        "https://www.toyotapartsdeal.com/oem/toyota~headlamp~assy~rh~81110-0r440.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0R152 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-0R152",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2019–2024 Toyota RAV4 (passenger side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81110-0R150/-0R151)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "passenger side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81110-0R150/-0R151"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-0R152 for the Toyota RAV4. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-0R152\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4 (passenger side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81110-0R150/-0R151)\nRestriction (2019-2024 RAV4): passenger side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81110-0R150/-0R151\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 815.69,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 497.81,
+          "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 497.81,
+            "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 502.98,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811100r152"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 531.96,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-rav4-headlight.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 634.95,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-headlamp-assembly-811100r152"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 648.77,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-811100r152"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 472.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "passenger side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81110-0R150/-0R151",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2019-2024 Toyota headlamp assembly 81110-0R152)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811100r152",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-0R152 Headlight Assembly 2019-2024 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-811100r152",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 RAV4 Adventure bulbs - chassis)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-811100r152",
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlamp-assembly-811100r152",
+        "https://www.sparksparts.com/oem-parts/toyota-headlamp-assembly-811100r152",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-rav4-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Left 81150-0R152 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81150-0R152",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2019–2024 Toyota RAV4 (driver side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81150-0R150/-0R151)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "driver side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81150-0R150/-0R151"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, left 81150-0R152 for the Toyota RAV4. Complete headlamp assembly, driver side.\n\nSpecifications\n\nPart number: 81150-0R152\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4 (driver side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81150-0R150/-0R151)\nRestriction (2019-2024 RAV4): driver side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81150-0R150/-0R151\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 815.69,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 497.81,
+          "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 497.81,
+            "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 546.29,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-rav4-headlight.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 647.31,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assy-lh-811500r152"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 472.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "driver side; trim and bezel dependent (dealer notes list it on Adventure builds); supersedes 81150-0R150/-0R151",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (811500R152 Headlamp Assy, Lh 2019-2024 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assy-lh-811500r152",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 RAV4 Adventure bulbs - chassis)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assy-lh-811500r152",
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--adventure--2-5l-l4-gas/electrical--bulbs-chassis",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-rav4-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
