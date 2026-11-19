@@ -37,6 +37,9 @@ STAGED = sorted(os.path.join(ROOT, "docs/catalog-expansion", f) for f in os.list
 DATA = os.path.join(ROOT, "lib/inventory/data/toyota-genuine-oem.json")
 PROV = os.path.join(ROOT, "lib/inventory/data/image-provenance.json")
 GENUINE = os.path.join(ROOT, "lib/inventory/data/toyota-genuine.json")
+# Storefront category slugs (lib/inventory/categories.ts); a listing in any
+# other category would be missing from every category page.
+CATEGORY_SLUGS = set(re.findall(r'slug: "([a-z0-9-]+)"', open(os.path.join(ROOT, "lib/inventory/categories.ts"), encoding="utf-8").read()))
 MEDIA = "/product-media/toyota-genuine"
 FIRST_ID = 4304          # above every existing listing id (max 4303)
 MIN_PRICE = 25.0
@@ -174,6 +177,8 @@ for pn, r in sorted(staged.items()):
         "Confirm fitment with your VIN before ordering.", "",
         "Shipping", "Ships within the United States only.",
     ])
+    if r["proposedCategory"] not in CATEGORY_SLUGS:
+        sys.exit(f"{pn}: category {r['proposedCategory']!r} is not a storefront category slug")
     products.append({
         "id": pid,
         "name": name,

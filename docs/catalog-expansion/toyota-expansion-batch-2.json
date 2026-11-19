@@ -196,8 +196,8 @@
       "partType": "Genuine Toyota",
       "partKind": "radiator",
       "condition": "brand-new",
-      "proposedCategory": "cooling",
-      "proposedCategoryName": "Cooling System",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
       "fitment": "2010–2024 Toyota 4Runner (4.0L V6)",
       "fitmentApplications": [
         {
@@ -349,8 +349,8 @@
       "partType": "Genuine Toyota",
       "partKind": "radiator",
       "condition": "brand-new",
-      "proposedCategory": "cooling",
-      "proposedCategoryName": "Cooling System",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
       "fitment": "2014–2021 Toyota Tundra (5.7L V8 / 4.6L V8; V8; one 2014 catalog page carries a 'to 08/2013' build note)",
       "fitmentApplications": [
         {
@@ -491,8 +491,8 @@
       "partType": "Genuine Toyota",
       "partKind": "radiator",
       "condition": "brand-new",
-      "proposedCategory": "cooling",
-      "proposedCategoryName": "Cooling System",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
       "fitment": "2020–2022 Toyota Highlander (3.5L V6); 2020–2024 Toyota Highlander (2.5L hybrid; hybrid; 2024 also lists 16400-F0190 for some builds)",
       "fitmentApplications": [
         {
@@ -793,8 +793,8 @@
       "partType": "Genuine Toyota",
       "partKind": "radiator",
       "condition": "brand-new",
-      "proposedCategory": "cooling",
-      "proposedCategoryName": "Cooling System",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
       "fitment": "2014–2022 Toyota Sequoia (5.7L V8)",
       "fitmentApplications": [
         {
@@ -917,8 +917,8 @@
       "partType": "Genuine Toyota",
       "partKind": "inverter_cooler",
       "condition": "brand-new",
-      "proposedCategory": "cooling",
-      "proposedCategoryName": "Cooling System",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
       "fitment": "2021–2021 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed); 2022–2022 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed)",
       "fitmentApplications": [
         {
@@ -1084,8 +1084,8 @@
       "partType": "Genuine Toyota",
       "partKind": "radiator",
       "condition": "brand-new",
-      "proposedCategory": "cooling",
-      "proposedCategoryName": "Cooling System",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
       "fitment": "",
       "fitmentApplications": [],
       "engines": "",
