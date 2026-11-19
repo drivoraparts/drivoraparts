@@ -1,0 +1,3948 @@
+{
+  "_comment": "Toyota expansion batch 3 (2026-11-19): genuine Toyota parts for the second storefront import.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Rotor 43512-33150 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-33150",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2021 Toyota RAV4 (trim and build dependent; other RAV4 builds use 43512-06200)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "trim and build dependent; other RAV4 builds use 43512-06200"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake rotor 43512-33150 for the Toyota RAV4. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 43512-33150\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2021 Toyota RAV4 (trim and build dependent; other RAV4 builds use 43512-06200)\nRestriction (2019-2021 RAV4): trim and build dependent; other RAV4 builds use 43512-06200\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 104.28,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 64.95,
+          "url": "https://www.autopartsprime.com/toyota/front-disc/oe-4351233150"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 64.95,
+            "url": "https://www.autopartsprime.com/toyota/front-disc/oe-4351233150"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 68.6,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-33150"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 85.51,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-4351233150"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 61.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "trim and build dependent; other RAV4 builds use 43512-06200",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2019 RAV4 front brakes)",
+                "url": "https://parts.longotoyota.com/v-2019-toyota-rav4--hybrid-le--2-5l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 RAV4 front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2021 RAV4 front brakes)",
+                "url": "https://parts.longotoyota.com/v-2021-toyota-rav4--adventure--2-5l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2019-toyota-rav4--hybrid-le--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://parts.longotoyota.com/v-2021-toyota-rav4--adventure--2-5l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-4351233150",
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://www.autopartsprime.com/toyota/front-disc/oe-4351233150",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-33150"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-78010 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-78010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota RAV4 (FWD with electric parking brake; AWD models use 42431-06180)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "FWD with electric parking brake; AWD models use 42431-06180"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-78010 for the Toyota RAV4. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-78010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4 (FWD with electric parking brake; AWD models use 42431-06180)\nRestriction (2019-2024 RAV4): FWD with electric parking brake; AWD models use 42431-06180\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 89.21,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 61.4,
+          "url": "https://www.autopartsprime.com/toyota/rear-disc/oe-4243178010"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 61.4,
+            "url": "https://www.autopartsprime.com/toyota/rear-disc/oe-4243178010"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 63.55,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-78010"
+          },
+          {
+            "seller": "LexusPartsNow",
+            "price": 72.8,
+            "url": "https://www.lexuspartsnow.com/parts/lexus-disc-rr~42431-78010.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 58.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "FWD with electric parking brake; AWD models use 42431-06180",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2024 RAV4 LE rear brakes: 42431-78010)",
+                "url": "https://parts.olathetoyota.com/v-2024-toyota-rav4--le--2-5l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 RAV4 rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-le--2-5l-l4-electric-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (2019-2024 RAV4)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~rr~42431-78010.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-le--2-5l-l4-electric-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/v-2024-toyota-rav4--le--2-5l-l4-gas/brakes--rear-brakes",
+        "https://www.autopartsprime.com/toyota/rear-disc/oe-4243178010",
+        "https://www.lexuspartsnow.com/parts/lexus-disc-rr~42431-78010.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~rr~42431-78010.html",
+        "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-78010"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Rotor 43512-60191 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-60191",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2010–2023 Toyota 4Runner (4.0L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6"
+        }
+      ],
+      "engines": "1GR-FE",
+      "description": "Genuine Toyota front brake rotor 43512-60191 for the Toyota 4Runner. Sold individually; rotors should be replaced in pairs across the axle. Supersedes 43512-60190.\n\nSpecifications\n\nPart number: 43512-60191\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2023 Toyota 4Runner (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 111.1,
+        "lowestCompetitor": {
+          "seller": "Grieco Toyota",
+          "price": 71.59,
+          "url": "https://parts.griecotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191"
+        },
+        "competitors": [
+          {
+            "seller": "Grieco Toyota",
+            "price": 71.59,
+            "url": "https://parts.griecotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 76.46,
+            "url": "https://www.autopartsprime.com/p/2022-toyota-4runner-brake-disc"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 76.78,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-60191"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 88.36,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-rotor-4351260191"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 68.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "1GR-FE 4.0L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2010-2024 4Runner front rotor 43512-60191)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (front rotor 43512-60191)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Grieco Toyota (front rotor 43512-60191)",
+                "url": "https://parts.griecotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2024,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "1GR-FE 4.0L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "unresolved",
+            "evidence": [],
+            "reason": "Dealer ranges disagree (2010-2023 vs 2010-2024)."
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": [
+          "2024-2024 4Runner: Dealer ranges disagree (2010-2023 vs 2010-2024)."
+        ]
+      },
+      "sources": [
+        "https://parts.griecotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191",
+        "https://parts.olathetoyota.com/oem-parts/toyota-rotor-4351260191",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351260191",
+        "https://www.autopartsprime.com/p/2022-toyota-4runner-brake-disc",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-60191"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Shoe Set 04495-04010 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04495-04010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2005–2023 Toyota Tacoma (rear drum brakes; 2WD without PreRunner, and 4WD)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "rear drum brakes; 2WD without PreRunner, and 4WD"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake shoe set 04495-04010 for the Toyota Tacoma. Rear drum brake shoe set (the Tacoma uses rear drum brakes).\n\nSpecifications\n\nPart number: 04495-04010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2005–2023 Toyota Tacoma (rear drum brakes; 2WD without PreRunner, and 4WD)\nRestriction (2005-2023 Tacoma): rear drum brakes; 2WD without PreRunner, and 4WD\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 94.96,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 65.32,
+          "url": "https://www.autopartsprime.com/p/2022-toyota-tacoma-brake-shoe-set"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 65.32,
+            "url": "https://www.autopartsprime.com/p/2022-toyota-tacoma-brake-shoe-set"
+          },
+          {
+            "seller": "Northpark Toyota",
+            "price": 66.51,
+            "url": "https://parts.northparktoyota.com/oem-parts/toyota-shoes-449504010"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 67.33,
+            "url": "https://www.toyotapartsdeal.com/oem-2018-toyota-tacoma-brake_shoe_set.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 67.62,
+            "url": "https://www.toyotapartsnow.com/parts-select/2018-toyota-tacoma-brake-shoe-set"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 62.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2005,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "rear drum brakes; 2WD without PreRunner, and 4WD",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Northpark Toyota (Tacoma rear brake shoes)",
+                "url": "https://parts.northparktoyota.com/oem-parts/toyota-shoes-449504010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Toyota of Laredo (Tacoma rear brake shoes)",
+                "url": "https://parts.toyotaoflaredo.com/oem-parts/toyota-shoes-449504010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.northparktoyota.com/oem-parts/toyota-shoes-449504010",
+        "https://parts.toyotaoflaredo.com/oem-parts/toyota-shoes-449504010",
+        "https://www.autopartsprime.com/p/2022-toyota-tacoma-brake-shoe-set",
+        "https://www.toyotapartsdeal.com/oem-2018-toyota-tacoma-brake_shoe_set.html",
+        "https://www.toyotapartsnow.com/parts-select/2018-toyota-tacoma-brake-shoe-set"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-0C011 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-0C011",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2007–2021 Toyota Tundra",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-0C011 for the Toyota Tundra. Sold individually; rotors should be replaced in pairs across the axle. Replaces 42431-0C010.\n\nSpecifications\n\nPart number: 42431-0C011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2021 Toyota Tundra\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 136.21,
+        "lowestCompetitor": {
+          "seller": "Ourisman Toyota of Richmond",
+          "price": 87.44,
+          "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011"
+        },
+        "competitors": [
+          {
+            "seller": "Ourisman Toyota of Richmond",
+            "price": 87.44,
+            "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 96.63,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~rear~42431-0c011.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 111.69,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 83.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2007-2021 Toyota rear rotor 42431-0C011)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011?c=az0x",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2007-2021 Tundra / Sequoia rear rotor)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2007-2021-toyota-rear-right-or-left-disc-brake-rotor-tundra-sequoia-424310c011",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2008,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "unresolved",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (Tundra / Sequoia)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2007-2021-toyota-rear-right-or-left-disc-brake-rotor-tundra-sequoia-424310c011",
+                "note": ""
+              }
+            ],
+            "reason": "Sequoia named without its own year range."
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": [
+          "2008-2021 Sequoia: Sequoia named without its own year range."
+        ]
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011?c=az0x",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011",
+        "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-disc-brake-rotor-rear-424310c011",
+        "https://www.sparksparts.com/oem-parts/toyota-2007-2021-toyota-rear-right-or-left-disc-brake-rotor-tundra-sequoia-424310c011",
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~rear~42431-0c011.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-02460 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-02460",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2024 Toyota Corolla (sedan without hybrid, US-built (dealer note))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "sedan without hybrid, US-built (dealer note)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-02460 for the Toyota Corolla. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-02460\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Corolla (sedan without hybrid, US-built (dealer note))\nRestriction (2020-2024 Corolla): sedan without hybrid, US-built (dealer note); US-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 104.5,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsNow",
+          "price": 75.25,
+          "url": "https://www.toyotapartsnow.com/oem/toyota~disc-brake-pad-kit~04465-02460"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 75.25,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~disc-brake-pad-kit~04465-02460"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 75.74,
+            "url": "https://toyotapartsdeal.com/oem-2022-toyota-corolla-brake_pad_set.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 79.99,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-front-446502460"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 71.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "sedan without hybrid, US-built (dealer note)",
+            "assemblyOrigin": "US-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2026 Corolla front pads 04465-02460)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-front-446502460",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020-2026 Corolla)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-front-446502460",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-front-446502460",
+        "https://toyotapartsdeal.com/oem-2022-toyota-corolla-brake_pad_set.html",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-front-446502460",
+        "https://www.toyotapartsnow.com/oem/toyota~disc-brake-pad-kit~04465-02460"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Pad Set 04466-02390 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04466-02390",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2024 Toyota Corolla (one catalog limits 2023-2025 to US-built sedans without LE)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "one catalog limits 2023-2025 to US-built sedans without LE"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake pad set 04466-02390 for the Toyota Corolla. Rear axle pad set, both sides.\n\nSpecifications\n\nPart number: 04466-02390\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Corolla (one catalog limits 2023-2025 to US-built sedans without LE)\nRestriction (2020-2024 Corolla): one catalog limits 2023-2025 to US-built sedans without LE\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 63.81,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 44.79,
+          "url": "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446602390"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 44.79,
+            "url": "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446602390"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 44.99,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-rear-446602390"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 46.16,
+            "url": "https://toyotapartsdeal.com/oem-2022-toyota-corolla-brake_pad_set.html"
+          },
+          {
+            "seller": "Mike Calvert Toyota",
+            "price": 47.95,
+            "url": "https://toyotaparts.mikecalverttoyota.com/oem-parts/toyota-brake-pads-rear-446602390"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 42.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "one catalog limits 2023-2025 to US-built sedans without LE",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2020-2026 Corolla rear pads)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2026 Corolla rear pads)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020-2026 Corolla)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+        "https://toyotaparts.mikecalverttoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+        "https://toyotapartsdeal.com/oem-2022-toyota-corolla-brake_pad_set.html",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-rear-446602390",
+        "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446602390"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-12270 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-12270",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota Corolla (hatchback, and Japan-built sedans (US-built 2023+ sedans use 42431-02310))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "hatchback, and Japan-built sedans (US-built 2023+ sedans use 42431-02310)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-12270 for the Toyota Corolla. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-12270\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota Corolla (hatchback, and Japan-built sedans (US-built 2023+ sedans use 42431-02310))\nRestriction (2019-2024 Corolla): hatchback, and Japan-built sedans (US-built 2023+ sedans use 42431-02310)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 83.32,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 57.34,
+          "url": "https://www.autopartsprime.com/toyota/rear-disc/oe-4243112270"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 57.34,
+            "url": "https://www.autopartsprime.com/toyota/rear-disc/oe-4243112270"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 58.42,
+            "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-brake_disc.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 59.36,
+            "url": "https://www.toyotapartsnow.com/parts-select/2023-toyota-corolla-brake-disc"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 54.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "hatchback, and Japan-built sedans (US-built 2023+ sedans use 42431-02310)",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2019-2026 Corolla rear rotor 42431-12270)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112270",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112270",
+        "https://www.autopartsprime.com/toyota/rear-disc/oe-4243112270",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-brake_disc.html",
+        "https://www.toyotapartsnow.com/parts-select/2023-toyota-corolla-brake-disc"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator Assembly 16400-F4010 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16400-F4010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "radiator",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2022–2025 Toyota Tundra (3.4L twin-turbo V6; 3.4L twin-turbo, gas and i-FORCE MAX); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid; 3.4L i-FORCE MAX)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "3.4L twin-turbo V6; 3.4L twin-turbo, gas and i-FORCE MAX"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "3.4L twin-turbo V6 hybrid; 3.4L i-FORCE MAX"
+        }
+      ],
+      "engines": "V35A-FTS",
+      "description": "Genuine Toyota radiator assembly 16400-F4010 for the Toyota Tundra, Sequoia. New genuine Toyota radiator assembly.\n\nSpecifications\n\nPart number: 16400-F4010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (3.4L twin-turbo V6; 3.4L twin-turbo, gas and i-FORCE MAX); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid; 3.4L i-FORCE MAX)\nRestriction (2022-2025 Tundra): 3.4L twin-turbo, gas and i-FORCE MAX\nRestriction (2023-2025 Sequoia): 3.4L i-FORCE MAX\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 437.78,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 305.3,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-f4010.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 305.3,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-f4010.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 307.93,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-16400f4010"
+          },
+          {
+            "seller": "Toyota South Atlanta",
+            "price": 307.93,
+            "url": "https://onlineparts.toyotasouthatlanta.com/p/Toyota_2023_Tundra-34L-i-Force-V6-AT-RWD-SR5-Extended-Cab-Pickup-Fleetside/Radiator/109146907/16400F4010.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 290.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "V35A-FTS 3.4L twin-turbo V6",
+            "restriction": "3.4L twin-turbo, gas and i-FORCE MAX",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Toyota South Atlanta (2023 Tundra 3.4L i-Force V6 radiator)",
+                "url": "https://onlineparts.toyotasouthatlanta.com/p/Toyota_2023_Tundra-34L-i-Force-V6-AT-RWD-SR5-Extended-Cab-Pickup-Fleetside/Radiator/109146907/16400F4010.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Tundra / Sequoia radiator assembly)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-16400f4010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "V35A-FTS 3.4L twin-turbo V6 hybrid",
+            "restriction": "3.4L i-FORCE MAX",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Tundra / Sequoia radiator assembly)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-16400f4010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://onlineparts.toyotasouthatlanta.com/p/Toyota_2023_Tundra-34L-i-Force-V6-AT-RWD-SR5-Extended-Cab-Pickup-Fleetside/Radiator/109146907/16400F4010.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-16400f4010",
+        "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-f4010.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Rotor 43512-0E030 — Sienna / Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-0E030",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2011–2020 Toyota Sienna (US-built); 2010–2019 Toyota Highlander",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2011,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "US-built"
+        },
+        {
+          "yearFrom": 2010,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake rotor 43512-0E030 for the Toyota Sienna, Highlander. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 43512-0E030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2011–2020 Toyota Sienna (US-built); 2010–2019 Toyota Highlander\nRestriction (2011-2020 Sienna): US-built; US-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 100.62,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 71.38,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-0e030.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 71.38,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-0e030.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 71.68,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-0e030"
+          },
+          {
+            "seller": "Toyota of Laredo",
+            "price": 73.5,
+            "url": "https://parts.toyotaoflaredo.com/oem-parts/toyota-rotor-435120e030"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 87.55,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-rotor-435120e030"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 67.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2011,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "US-built",
+            "assemblyOrigin": "US-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010-2020 Sienna front rotor 43512-0E030)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-435120e030",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2011 Sienna front brakes: 2WD, 4WD, US built)",
+                "url": "https://parts.longotoyota.com/v-2011-toyota-sienna--base--2-7l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2010,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010-2019 Highlander front rotor 43512-0E030)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-rotor-435120e030",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2011-toyota-sienna--base--2-7l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-435120e030",
+        "https://parts.olathetoyota.com/oem-parts/toyota-rotor-435120e030",
+        "https://parts.toyotaoflaredo.com/oem-parts/toyota-rotor-435120e030",
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-0e030.html",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-0e030"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-0R010 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-0R010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2009–2018 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-0R010 for the Toyota RAV4. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-0R010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2018 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 105.77,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 72.8,
+          "url": "https://www.autopartsprime.com/toyota/front-disc-brake-pad-kit/oe-044650r010?pnType=2"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 72.8,
+            "url": "https://www.autopartsprime.com/toyota/front-disc-brake-pad-kit/oe-044650r010?pnType=2"
+          },
+          {
+            "seller": "Toyota of Colorado Springs",
+            "price": 74.3,
+            "url": "https://parts.toyotaofcoloradosprings.com/oem-parts/toyota-disc-brake-pad-set-front-44650r010"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 78.1,
+            "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-rav4-brake_pad_set.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 78.44,
+            "url": "https://www.toyotapartsnow.com/parts-select/2018-toyota-rav4-brake-pad-set"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 69.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2009-2018 RAV4 front pad set 04465-0R010)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-44650r010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Toyota of Colorado Springs (front pad set)",
+                "url": "https://parts.toyotaofcoloradosprings.com/oem-parts/toyota-disc-brake-pad-set-front-44650r010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-44650r010",
+        "https://parts.toyotaofcoloradosprings.com/oem-parts/toyota-disc-brake-pad-set-front-44650r010",
+        "https://www.autopartsprime.com/toyota/front-disc-brake-pad-kit/oe-044650r010?pnType=2",
+        "https://www.toyotapartsdeal.com/oem-2010-toyota-rav4-brake_pad_set.html",
+        "https://www.toyotapartsnow.com/parts-select/2018-toyota-rav4-brake-pad-set"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-42060 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-42060",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2006–2018 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2006,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-42060 for the Toyota RAV4. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-42060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2006–2018 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 82.77,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsNow",
+          "price": 59.46,
+          "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-42060"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 59.46,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-42060"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 59.71,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2006-2018-toyota-rav4-disc-brake-rotor-rear-4243142060"
+          },
+          {
+            "seller": "Longo Toyota of Prosper",
+            "price": 62.08,
+            "url": "https://parts.longotoyotaofprosper.com/oem-parts/toyota-disc-brake-rotor-rear-4243142060"
+          },
+          {
+            "seller": "Toyota of Bedford",
+            "price": 62.2,
+            "url": "https://parts.toyotaofbedford.com/oem-parts/toyota-disc-brake-rotor-rear-4243142060"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 56.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2006,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2006-2018 Toyota RAV4 rear rotor 42431-42060)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2006-2018-toyota-rav4-disc-brake-rotor-rear-4243142060",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyotaofprosper.com/oem-parts/toyota-disc-brake-rotor-rear-4243142060",
+        "https://parts.toyotaofbedford.com/oem-parts/toyota-disc-brake-rotor-rear-4243142060",
+        "https://www.sparksparts.com/oem-parts/toyota-2006-2018-toyota-rav4-disc-brake-rotor-rear-4243142060",
+        "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-42060"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Pad Set 04466-42060 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04466-42060",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2006–2018 Toyota RAV4 (dealer listings differ on 2WD/4WD application; confirm drivetrain by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2006,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "dealer listings differ on 2WD/4WD application; confirm drivetrain by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake pad set 04466-42060 for the Toyota RAV4. Rear axle pad set, both sides.\n\nSpecifications\n\nPart number: 04466-42060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2006–2018 Toyota RAV4 (dealer listings differ on 2WD/4WD application; confirm drivetrain by VIN)\nRestriction (2006-2018 RAV4): dealer listings differ on 2WD/4WD application; confirm drivetrain by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 78.0,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsNow",
+          "price": 53.78,
+          "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc-brake-pad-kit~04466-42060"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 53.78,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc-brake-pad-kit~04466-42060"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 54.0,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-rear-446642060"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 54.99,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-rear-446642060"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 59.4,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446642060"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 51.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2006,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "dealer listings differ on 2WD/4WD application; confirm drivetrain by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04466-42060 Brake Pads Rear 2006-2018 Toyota RAV4)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446642060",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2006-2018 Toyota RAV4 rear pads 04466-42060)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-rear-446642060",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2006-2018 Toyota RAV4 rear pads)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-rear-446642060",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446642060",
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-rear-446642060",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-rear-446642060",
+        "https://www.toyotapartsnow.com/oem/toyota~rear-disc-brake-pad-kit~04466-42060"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-0E020 — Sienna / Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-0E020",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2011–2020 Toyota Sienna; 2014–2019 Toyota Highlander (dealer evidence covers the 2015 Highlander LE 2.7L; confirm other trims by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2011,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": null
+        },
+        {
+          "yearFrom": 2014,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "dealer evidence covers the 2015 Highlander LE 2.7L; confirm other trims by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-0E020 for the Toyota Sienna, Highlander. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-0E020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2011–2020 Toyota Sienna; 2014–2019 Toyota Highlander (dealer evidence covers the 2015 Highlander LE 2.7L; confirm other trims by VIN)\nRestriction (2014-2019 Highlander): dealer evidence covers the 2015 Highlander LE 2.7L; confirm other trims by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 103.94,
+        "lowestCompetitor": {
+          "seller": "Longo Lexus",
+          "price": 75.13,
+          "url": "https://parts.longolexus.com/oem-parts/lexus-rotor-424310e020"
+        },
+        "competitors": [
+          {
+            "seller": "Longo Lexus",
+            "price": 75.13,
+            "url": "https://parts.longolexus.com/oem-parts/lexus-rotor-424310e020"
+          },
+          {
+            "seller": "Lexus of Kendall",
+            "price": 75.74,
+            "url": "https://parts.lexusofkendall.com/oem-parts/lexus-rotor-424310e020"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 80.57,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-0e020"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 85.23,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-424310e020"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 71.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2011,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42431-0E020 Disc Brake Rotor 2011-2020 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-424310e020",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2011 Sienna rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2011-toyota-sienna--le--3-5l-v6-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 Sienna rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-sienna--xle-premium--3-5l-v6-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2014,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "dealer evidence covers the 2015 Highlander LE 2.7L; confirm other trims by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2015 Highlander rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2015-toyota-highlander--le--2-7l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.lexusofkendall.com/oem-parts/lexus-rotor-424310e020",
+        "https://parts.longolexus.com/oem-parts/lexus-rotor-424310e020",
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-424310e020",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-424310e020",
+        "https://parts.olathetoyota.com/v-2011-toyota-sienna--le--3-5l-v6-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/v-2015-toyota-highlander--le--2-7l-l4-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/v-2019-toyota-sienna--xle-premium--3-5l-v6-gas/brakes--rear-brakes",
+        "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-0e020"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-02220 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-02220",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2009–2013 Toyota Corolla (Japan-built Corolla; US-built Corollas use 04465-02240)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "Japan-built Corolla; US-built Corollas use 04465-02240"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-02220 for the Toyota Corolla. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-02220\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2013 Toyota Corolla (Japan-built Corolla; US-built Corollas use 04465-02240)\nRestriction (2009-2013 Corolla): Japan-built Corolla; US-built Corollas use 04465-02240; Japan-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 104.5,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 79.99,
+          "url": "https://parts.olathetoyota.com/v-2012-toyota-corolla--s--1-8l-l4-gas/brakes--front-brakes"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 79.99,
+            "url": "https://parts.olathetoyota.com/v-2012-toyota-corolla--s--1-8l-l4-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 82.82,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc-brake-pad-set~04465-02220"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 84.0,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2009-toyota-corolla--xle--1-8l-l4-gas/brakes--anti-lock-brakes"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 76.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "Japan-built Corolla; US-built Corollas use 04465-02240",
+            "assemblyOrigin": "Japan-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010 Corolla front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2010-toyota-corolla--le--1-8l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2012 Corolla front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2012-toyota-corolla--l--1-8l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2013 Corolla front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2013-toyota-corolla--l--1-8l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/v-2010-toyota-corolla--le--1-8l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2012-toyota-corolla--l--1-8l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2012-toyota-corolla--s--1-8l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2013-toyota-corolla--l--1-8l-l4-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2009-toyota-corolla--xle--1-8l-l4-gas/brakes--anti-lock-brakes",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc-brake-pad-set~04465-02220"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-48150 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-48150",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2008–2013 Toyota Highlander (2010-2013 Highlanders may use 04465-0E010 by build; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2008,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "2010-2013 Highlanders may use 04465-0E010 by build; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-48150 for the Toyota Highlander. Front axle pad set with spring clips, both sides.\n\nSpecifications\n\nPart number: 04465-48150\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2008–2013 Toyota Highlander (2010-2013 Highlanders may use 04465-0E010 by build; confirm by VIN)\nRestriction (2008-2013 Highlander): 2010-2013 Highlanders may use 04465-0E010 by build; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 105.63,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 73.5,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 73.5,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 76.07,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc-brake-pad-set~04465-48150"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 76.39,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 84.73,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 69.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2008,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "2010-2013 Highlanders may use 04465-0E010 by build; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04465-48150 Disc Brake Pad Set Front 2008-2013 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2008-2013 Toyota Highlander front pad set)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2008-2013 Toyota Highlander front pad set)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446548150",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc-brake-pad-set~04465-48150"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-33160 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-33160",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2018–2024 Toyota Camry (FWD without electric parking brake)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "FWD without electric parking brake"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-33160 for the Toyota Camry. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-33160\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2024 Toyota Camry (FWD without electric parking brake)\nRestriction (2018-2024 Camry): FWD without electric parking brake\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 106.11,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 73.04,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rotor-4243133160"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 73.04,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rotor-4243133160"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 75.91,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243133160"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 81.08,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-4243133160"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 81.75,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-33160"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 69.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2018,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "FWD without electric parking brake",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2018-2024 Toyota Camry rear rotor 42431-33160)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rotor-4243133160",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42431-33160 Rotor 2018-2024 Toyota Camry)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-rotor-4243133160",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2018-2024 Toyota Camry rear rotor)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-rotor-4243133160",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-4243133160",
+        "https://parts.longotoyota.com/oem-parts/toyota-rotor-4243133160",
+        "https://parts.olathetoyota.com/oem-parts/toyota-rotor-4243133160",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243133160",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rotor-4243133160",
+        "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-33160"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-04080 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-04080",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2005–2015 Toyota Tacoma (2WD 2.7L without PreRunner, and 4.0L X-Runner; other Tacoma configurations use different pad sets)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2WD 2.7L without PreRunner, and 4.0L X-Runner; other Tacoma configurations use different pad sets"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-04080 for the Toyota Tacoma. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-04080\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2005–2015 Toyota Tacoma (2WD 2.7L without PreRunner, and 4.0L X-Runner; other Tacoma configurations use different pad sets)\nRestriction (2005-2015 Tacoma): 2WD 2.7L without PreRunner, and 4.0L X-Runner; other Tacoma configurations use different pad sets\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 115.02,
+        "lowestCompetitor": {
+          "seller": "Longo Toyota",
+          "price": 78.11,
+          "url": "https://parts.longotoyota.com/v-2012-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes"
+        },
+        "competitors": [
+          {
+            "seller": "Longo Toyota",
+            "price": 78.11,
+            "url": "https://parts.longotoyota.com/v-2012-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 79.99,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-0446504080"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 80.02,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-front-446504080"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 82.82,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc-brake-pad-set~04465-04080"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 83.17,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2007-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 74.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2005,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "2WD 2.7L without PreRunner, and 4.0L X-Runner; other Tacoma configurations use different pad sets",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2005-2015 Toyota Tacoma front pads 04465-04080)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-front-446504080",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04465-04080 Brake Pads Front 2005-2015 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-front-446504080",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2008 Tacoma 2.7L front brakes)",
+                "url": "https://parts.longotoyota.com/v-2008-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-front-446504080",
+        "https://parts.longotoyota.com/v-2008-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes",
+        "https://parts.longotoyota.com/v-2012-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-0446504080",
+        "https://toyotaparts.lakelandtoyota.com/v-2007-toyota-tacoma--base--2-7l-l4-gas/brakes--front-brakes",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-pads-front-446504080",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc-brake-pad-set~04465-04080"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Pad Set 04466-02430 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04466-02430",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2025 Toyota Highlander",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake pad set 04466-02430 for the Toyota Highlander. Rear axle pad set, both sides.\n\nSpecifications\n\nPart number: 04466-02430\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2025 Toyota Highlander\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 71.63,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 50.22,
+          "url": "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446602430"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 50.22,
+            "url": "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446602430"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 51.24,
+            "url": "https://toyotapartsdeal.com/oem-2020-toyota-highlander-brake_pad_set.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 51.46,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~disc-brake-pad-kit~04466-02430"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 51.67,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 54.95,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 47.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04466-02430 Disc Brake Pad Set 2020-2025 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020-2025 Toyota Highlander pad set 04466-02430)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2025 Toyota Highlander pad set 04466-02430)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430",
+        "https://toyotapartsdeal.com/oem-2020-toyota-highlander-brake_pad_set.html",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446602430",
+        "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-0446602430",
+        "https://www.toyotapartsnow.com/oem/toyota~disc-brake-pad-kit~04466-02430"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-02630 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-02630",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2024–2025 Toyota Tacoma (trim dependent; some 2024+ Tacoma trims use 04465-02640)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "trim dependent; some 2024+ Tacoma trims use 04465-02640"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-02630 for the Toyota Tacoma. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-02630\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (trim dependent; some 2024+ Tacoma trims use 04465-02640)\nRestriction (2024-2025 Tacoma): trim dependent; some 2024+ Tacoma trims use 04465-02640\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 121.85,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 86.45,
+          "url": "https://www.toyotapartsdeal.com/oem-2025-toyota-tacoma-brake_pad_set.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 86.45,
+            "url": "https://www.toyotapartsdeal.com/oem-2025-toyota-tacoma-brake_pad_set.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 86.81,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~pad-kit-disc-brake~04465-02630"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 99.92,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-446502630"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 82.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "trim dependent; some 2024+ Tacoma trims use 04465-02640",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04465-02630 Disc Brake Pad Set 2024-2026 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446502630",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (front disc brake pad set 04465-02630)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-446502630",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446502630",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-446502630",
+        "https://www.toyotapartsdeal.com/oem-2025-toyota-tacoma-brake_pad_set.html",
+        "https://www.toyotapartsnow.com/oem/toyota~pad-kit-disc-brake~04465-02630"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Rotor 43512-02240 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-02240",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2009–2019 Toyota Corolla (1.8L / 2.4L; Corolla sedan with 1.8L or 2.4L; supersedes 43512-12710; some 2014-2015 builds list the rotor with the caliper assembly)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L / 2.4L; Corolla sedan with 1.8L or 2.4L; supersedes 43512-12710; some 2014-2015 builds list the rotor with the caliper assembly"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake rotor 43512-02240 for the Toyota Corolla. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 43512-02240\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2019 Toyota Corolla (1.8L / 2.4L; Corolla sedan with 1.8L or 2.4L; supersedes 43512-12710; some 2014-2015 builds list the rotor with the caliper assembly)\nRestriction (2009-2019 Corolla): Corolla sedan with 1.8L or 2.4L; supersedes 43512-12710; some 2014-2015 builds list the rotor with the caliper assembly\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 87.81,
+        "lowestCompetitor": {
+          "seller": "Jim Hudson Toyota",
+          "price": 60.16,
+          "url": "https://parts.jimhudsontoyota.com/oem-parts/toyota-brake-rotor-4351202240"
+        },
+        "competitors": [
+          {
+            "seller": "Jim Hudson Toyota",
+            "price": 60.16,
+            "url": "https://parts.jimhudsontoyota.com/oem-parts/toyota-brake-rotor-4351202240"
+          },
+          {
+            "seller": "Group 1 Auto Parts",
+            "price": 62.03,
+            "url": "https://www.group1autoparts.com/oem-parts/toyota-brake-rotor-4351202240"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 69.9,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-02240"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 57.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "1.8L / 2.4L",
+            "restriction": "Corolla sedan with 1.8L or 2.4L; supersedes 43512-12710; some 2014-2015 builds list the rotor with the caliper assembly",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Nucar Toyota (2009-2019 Toyota brake rotor 43512-02240)",
+                "url": "https://toyotaparts.nucar.com/parts/toyota-2009-2019-toyota-brake-rotor-4351202240",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (brake rotor 43512-02240)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-brake-rotor-4351202240",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.jimhudsontoyota.com/oem-parts/toyota-brake-rotor-4351202240",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-brake-rotor-4351202240",
+        "https://toyotaparts.nucar.com/parts/toyota-2009-2019-toyota-brake-rotor-4351202240",
+        "https://www.group1autoparts.com/oem-parts/toyota-brake-rotor-4351202240",
+        "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-02240"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16100-09720 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16100-09720",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "water_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2016–2023 Toyota Tacoma (3.5L V6)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.5L V6"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine water pump 16100-09720 for the Toyota Tacoma. Engine water pump assembly for the 3.5L V6; dealer listings differ on whether the gasket is included.\n\nSpecifications\n\nPart number: 16100-09720\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2023 Toyota Tacoma (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 182.78,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 108.42,
+          "url": "https://parts.olathetoyota.com/v-2020-toyota-tacoma--sr--3-5l-v6-gas/cooling-system--water-pump"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 108.42,
+            "url": "https://parts.olathetoyota.com/v-2020-toyota-tacoma--sr--3-5l-v6-gas/cooling-system--water-pump"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 111.73,
+            "url": "https://toyotapartsdeal.com/oem-2016-toyota-tacoma-water_pump.html"
+          },
+          {
+            "seller": "Treasure Coast Toyota of Stuart",
+            "price": 125.27,
+            "url": "https://parts.treasurecoasttoyotaofstuart.com/parts/toyota-engine-water-pump-1610009720"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 125.81,
+            "url": "https://www.autopartsprime.com/p/2021-toyota-tacoma-water-pump"
+          },
+          {
+            "seller": "Mike Calvert Toyota",
+            "price": 131.87,
+            "url": "https://toyotaparts.mikecalverttoyota.com/oem-parts/toyota-engine-water-pump-1610009720"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 103.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2016,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "3.5L V6",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2016-2023 Toyota Tacoma engine water pump 16100-09720)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009720",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2016-2023 Toyota Tacoma engine water pump 16100-09720)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009720",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2021 Tacoma 3.5L water pump)",
+                "url": "https://parts.longotoyota.com/v-2021-toyota-tacoma--sr--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2021-toyota-tacoma--sr--3-5l-v6-gas/cooling-system--water-pump",
+        "https://parts.olathetoyota.com/v-2020-toyota-tacoma--sr--3-5l-v6-gas/cooling-system--water-pump",
+        "https://parts.treasurecoasttoyotaofstuart.com/parts/toyota-engine-water-pump-1610009720",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009720",
+        "https://toyotaparts.mikecalverttoyota.com/oem-parts/toyota-engine-water-pump-1610009720",
+        "https://toyotapartsdeal.com/oem-2016-toyota-tacoma-water_pump.html",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009720",
+        "https://www.autopartsprime.com/p/2021-toyota-tacoma-water-pump"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16100-39545 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16100-39545",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "water_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2010–2024 Toyota 4Runner (4.0L V6; only; dealer listings differ on whether the gasket is included)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6; only; dealer listings differ on whether the gasket is included"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine water pump 16100-39545 for the Toyota 4Runner. Engine water pump assembly for the 4.0L V6.\n\nSpecifications\n\nPart number: 16100-39545\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2024 Toyota 4Runner (4.0L V6; only; dealer listings differ on whether the gasket is included)\nRestriction (2010-2024 4Runner): 4.0L V6 only; dealer listings differ on whether the gasket is included\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 169.82,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 116.88,
+          "url": "https://www.autopartsprime.com/toyota/engine-water-pump-assembly/oe-1610039545"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 116.88,
+            "url": "https://www.autopartsprime.com/toyota/engine-water-pump-assembly/oe-1610039545"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 119.96,
+            "url": "https://toyotapartsnow.com/oem/toyota~pump_assy_water~16100-39545"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 153.06,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-engine-water-pump-1610039545"
+          },
+          {
+            "seller": "Reliable Toyota",
+            "price": 174.32,
+            "url": "https://parts.reliabletoyotamo.com/oem-parts/toyota-engine-water-pump-1610039545"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 111.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "medium",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "4.0L V6",
+            "restriction": "4.0L V6 only; dealer listings differ on whether the gasket is included",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (16100-39545 Engine Water Pump 2010-2024 Toyota; 4.0L)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610039545",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2010-2024 Toyota engine water pump 16100-39545)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-engine-water-pump-1610039545",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610039545",
+        "https://parts.olathetoyota.com/oem-parts/toyota-engine-water-pump-1610039545",
+        "https://parts.reliabletoyotamo.com/oem-parts/toyota-engine-water-pump-1610039545",
+        "https://toyotapartsnow.com/oem/toyota~pump_assy_water~16100-39545",
+        "https://www.autopartsprime.com/toyota/engine-water-pump-assembly/oe-1610039545",
+        "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-engine-water-pump-1610039545"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator Assembly 16400-AD020 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16400-AD020",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "radiator",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2007–2015 Toyota Camry (3.5L V6; with towing package)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "3.5L V6; with towing package"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota radiator assembly 16400-AD020 for the Toyota Camry. Complete radiator assembly.\n\nSpecifications\n\nPart number: 16400-AD020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2015 Toyota Camry (3.5L V6; with towing package)\nRestriction (2007-2015 Camry): 3.5L V6 with towing package\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 422.28,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 294.49,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-ad020.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 294.49,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-ad020.html"
+          },
+          {
+            "seller": "Lexus Parts Now",
+            "price": 304.64,
+            "url": "https://lexuspartsnow.com/parts/lexus-radiator-assy~16400-ad020.html"
+          },
+          {
+            "seller": "AutoNation Parts",
+            "price": 321.15,
+            "url": "https://www.autonationparts.com/part-categories/cooling-systems/radiators?page=5"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 279.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 with towing package",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007-2015 Toyota Radiator Assembly 16400-AD020; Camry 3.5L with towing package)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-16400ad020",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://lexuspartsnow.com/parts/lexus-radiator-assy~16400-ad020.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-16400ad020",
+        "https://www.autonationparts.com/part-categories/cooling-systems/radiators?page=5",
+        "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-ad020.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-02560 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-02560",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-02560 for the Toyota Sienna. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-02560\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 128.71,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 91.32,
+          "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-brake_pad_set.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 91.32,
+            "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-brake_pad_set.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 92.66,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~pad-kit-disc-brake~04465-02560"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 105.54,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-0446502560"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 86.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2025 Toyota Sienna disc brake pad set 04465-02560)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-pad-set-446502560",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (OEM Toyota disc brake pad set for 2021-2025 Toyota Sienna)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-0446502560",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2024 Sienna LE front brakes)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-pads-0446502560",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-pad-set-446502560",
+        "https://wholesaledirect.moderntoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-brake_pad_set.html",
+        "https://www.toyotapartsnow.com/oem/toyota~pad-kit-disc-brake~04465-02560"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Pad Set 04466-02460 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04466-02460",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake pad set 04466-02460 for the Toyota Sienna. Rear axle pad set, both sides.\n\nSpecifications\n\nPart number: 04466-02460\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 72.8,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 52.35,
+          "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-brake_pad_set.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 52.35,
+            "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-brake_pad_set.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 52.79,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446602460"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 53.17,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~pad-kit-disc-brake~04466-02460"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 58.07,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446602460"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 49.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04466-02460 Disc Brake Pad Set 2021-2025 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446602460",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2021-2025 Toyota Sienna disc brake pad set 04466-02460)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446602460",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-446602460",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-446602460",
+        "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-brake_pad_set.html",
+        "https://www.toyotapartsnow.com/oem/toyota~pad-kit-disc-brake~04466-02460"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-06100 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-06100",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2007–2011 Toyota Camry (build dependent; dealer notes exclude some Japan-built Camrys)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "build dependent; dealer notes exclude some Japan-built Camrys"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-06100 for the Toyota Camry. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-06100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2011 Toyota Camry (build dependent; dealer notes exclude some Japan-built Camrys)\nRestriction (2007-2011 Camry): build dependent; dealer notes exclude some Japan-built Camrys\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 105.63,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 75.74,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~front~pad~only~04465-06100.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 75.74,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~front~pad~only~04465-06100.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 75.99,
+            "url": "https://parts.olathetoyota.com/v-2008-toyota-camry--se--3-5l-v6-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "Lexus Parts Now",
+            "price": 79.81,
+            "url": "https://www.lexuspartsnow.com/parts/lexus-pad-kit-disc-brake~04465-06100.html"
+          },
+          {
+            "seller": "Lexus of Kendall",
+            "price": 80.24,
+            "url": "https://parts.lexusofkendall.com/oem-parts/lexus-brake-pads-446506100"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 84.73,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-front-446506100"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 71.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2011,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "build dependent; dealer notes exclude some Japan-built Camrys",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04465-06100 Brake Pads Front 2007-2011 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-front-446506100",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2009 Camry LE 2.4L front brakes)",
+                "url": "https://parts.longotoyota.com/v-2009-toyota-camry--le--2-4l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007 Camry LE 3.5L front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2007-toyota-camry--le--3-5l-v6-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.lexusofkendall.com/oem-parts/lexus-brake-pads-446506100",
+        "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-front-446506100",
+        "https://parts.longotoyota.com/v-2009-toyota-camry--le--2-4l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2007-toyota-camry--le--3-5l-v6-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2008-toyota-camry--se--3-5l-v6-gas/brakes--front-brakes",
+        "https://www.lexuspartsnow.com/parts/lexus-pad-kit-disc-brake~04465-06100.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~front~pad~only~04465-06100.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-0E070 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-0E070",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2025 Toyota Highlander",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-0E070 for the Toyota Highlander. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-0E070\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2025 Toyota Highlander\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 138.21,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 88.84,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-424310e070"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 88.84,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-424310e070"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 90.0,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rotor-424310e070"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 98.05,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~rr~42431-0e070.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 113.33,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-rotor-424310e070"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 84.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2020-2025 Toyota Highlander disc brake rotor 42431-0E070)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-424310e070",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020-2025 Toyota Highlander disc brake rotor 42431-0E070)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-rotor-424310e070",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2025 Toyota Highlander rotor 42431-0E070)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rotor-424310e070",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-rotor-424310e070",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-424310e070",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rotor-424310e070",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-424310e070",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rotor-424310e070",
+        "https://www.toyotapartsdeal.com/oem/toyota~disc~rr~42431-0e070.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Pad Set 04466-0E070 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04466-0E070",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2018–2025 Toyota Camry (trim and parking-brake dependent (dealer notes cite XLE/XSE, AWD, and some LE/SE without electric parking brake); Camry 2018-2024 rear pads may instead be 04466-33210)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "trim and parking-brake dependent (dealer notes cite XLE/XSE, AWD, and some LE/SE without electric parking brake); Camry 2018-2024 rear pads may instead be 04466-33210"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake pad set 04466-0E070 for the Toyota Camry. Rear axle pad set, both sides.\n\nSpecifications\n\nPart number: 04466-0E070\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2025 Toyota Camry (trim and parking-brake dependent (dealer notes cite XLE/XSE, AWD, and some LE/SE without electric parking brake); Camry 2018-2024 rear pads may instead be 04466-33210)\nRestriction (2018-2025 Camry): trim and parking-brake dependent (dealer notes cite XLE/XSE, AWD, and some LE/SE without electric parking brake); Camry 2018-2024 rear pads may instead be 04466-33210\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 72.0,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 50.23,
+          "url": "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-044660e070"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 50.23,
+            "url": "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-044660e070"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 51.77,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04466-0e070.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 52.2,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-rear-44660e070"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 54.95,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-rear-44660e070"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 47.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2018,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "trim and parking-brake dependent (dealer notes cite XLE/XSE, AWD, and some LE/SE without electric parking brake); Camry 2018-2024 rear pads may instead be 04466-33210",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04466-0E070 Disc Brake Pad Set Rear 2018-2025 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-rear-44660e070",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2023 Camry LE rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2023-toyota-camry--le--2-5l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Camry Hybrid SE rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-camry--hybrid-se--2-5l-l4-electric-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-rear-44660e070",
+        "https://parts.longotoyota.com/v-2023-toyota-camry--le--2-5l-l4-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-rear-44660e070",
+        "https://parts.olathetoyota.com/v-2020-toyota-camry--hybrid-se--2-5l-l4-electric-gas/brakes--rear-brakes",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-rear-44660e070",
+        "https://www.autopartsprime.com/toyota/disc-brake-pad-kit/oe-044660e070",
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04466-0e070.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

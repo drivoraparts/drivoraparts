@@ -799,3 +799,7 @@ CORROBORATION.update({
     "17801-F0050": [("Camry", 2018, 2024, E("dealer_catalog", "Olathe Toyota (2018-2026 Toyota; Avalon, Camry, Highlander, RAV4)", "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0050"))],
     "43512-06200": [("Camry", 2018, 2024, E("dealer_catalog", "Olathe Toyota (Camry 2.5L / 3.5L, without hybrid, without TRD; US built; 2019-20 Canada-built note)", "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206200"))],
 })
+
+CORROBORATION.setdefault("04465-0E060", []).append(
+    ("RAV4", 2019, 2023, E("dealer_catalog", "Olathe Toyota (2019 RAV4 front brakes: 04465-0E060 and 04465-33480 by build)",
+                           "https://parts.olathetoyota.com/v-2019-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/brakes--front-brakes")))

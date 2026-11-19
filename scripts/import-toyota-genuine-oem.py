@@ -32,7 +32,8 @@ import sys
 
 IMG_DIR = sys.argv[1]
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-STAGED = [os.path.join(ROOT, f"docs/catalog-expansion/toyota-expansion-batch-{n}.json") for n in (1, 2)]
+STAGED = sorted(os.path.join(ROOT, "docs/catalog-expansion", f) for f in os.listdir(os.path.join(ROOT, "docs/catalog-expansion"))
+                if re.fullmatch(r"toyota-expansion-batch-\d+\.json", f))
 DATA = os.path.join(ROOT, "lib/inventory/data/toyota-genuine-oem.json")
 PROV = os.path.join(ROOT, "lib/inventory/data/image-provenance.json")
 GENUINE = os.path.join(ROOT, "lib/inventory/data/toyota-genuine.json")
@@ -43,9 +44,12 @@ TODAY = "2026-11-19"
 PLACEHOLDER_BYTES = 69745  # Toyota's "no image" response
 
 # Toyota catalog photos per part number (files in IMG_DIR), in display order.
+# Part numbers not listed here use every real photo fetched for them by
+# scripts/fetch-toyota-epc-images.py (top_<PN>.webp first, then <PN>_<n>.webp).
 # Both paths are Toyota's own image host for the part number:
 #   https://epc-images.toyota.com/<PN>.webp            -> top_<PN>.webp
 #   https://epc-images.toyota.com/img/<PN>/<PN>_<n>.webp -> <PN nodash>_<n>.webp
+#   https://epc-images.toyota.com/<PN>_<n>.webp        -> pn_<PN>_<n>.webp
 IMAGES = {
     "04465-04090": ["top_04465-04090.webp", "0446504090_1.webp", "0446504090_2.webp"],
     "04465-06170": ["0446506170_1.webp"],
@@ -56,12 +60,26 @@ IMAGES = {
     "43512-0R010": ["top_43512-0R010.webp"],
 }
 
+
+
+def images_for(pn):
+    if pn in IMAGES:
+        return IMAGES[pn]
+    n = pn.replace("-", "")
+    found = [f"top_{pn}.webp"] if os.path.exists(os.path.join(IMG_DIR, f"top_{pn}.webp")) else []
+    found += sorted(f for f in os.listdir(IMG_DIR) if re.fullmatch(rf"{re.escape(n)}_\d\.webp", f))
+    found += sorted(f for f in os.listdir(IMG_DIR) if re.fullmatch(rf"pn_{re.escape(pn)}_\d\.webp", f))
+    return found
+
+
 PART_TITLE = {"pads_front": "Front Brake Pad Set", "rotor_front": "Front Brake Rotor"}
 
 
 def source_url(fname):
     if fname.startswith("top_"):
         return f"https://epc-images.toyota.com/{fname[4:-5]}.webp"
+    if fname.startswith("pn_"):
+        return f"https://epc-images.toyota.com/{fname[3:-5]}.webp"
     n, i = fname[:-5].rsplit("_", 1)
     return f"https://epc-images.toyota.com/img/{n}/{n}_{i}.webp"
 
@@ -96,7 +114,10 @@ live = json.load(open(os.path.join(ROOT, "lib/inventory/data/catalog-snapshot.js
 live_pns = {re.sub(r"[^0-9A-Z]", "", str(x.get("partNumber") or "").upper()) for x in live["records"]}
 
 products, prov_new, genuine_new, excluded = [], {}, [], []
-next_id = FIRST_ID
+# Listing ids never change once published: reuse each part number's id.
+previous = {p["partNumber"]: p["id"] for p in (json.load(open(DATA, encoding="utf-8")) if os.path.exists(DATA) else [])}
+next_id = max([FIRST_ID - 1, *previous.values()]) + 1
+imported_pns = set(previous)
 for pn, r in sorted(staged.items()):
     pr = r["pricing"]
     price = pr.get("recommendedPrice")
@@ -107,9 +128,9 @@ for pn, r in sorted(staged.items()):
         reasons.append("fewer than 3 attributed competitor prices")
     elif price < MIN_PRICE:
         reasons.append(f"${price:.2f} part ships free under the US parcel table: unprofitable on its own")
-    if pn not in IMAGES:
+    if not images_for(pn):
         reasons.append("Toyota's image host has no photo for this part number (placeholder only)")
-    if re.sub(r"[^0-9A-Z]", "", pn) in live_pns:
+    if re.sub(r"[^0-9A-Z]", "", pn) in live_pns and pn not in imported_pns:
         reasons.append("duplicate of a live listing")
     if reasons:
         excluded.append({"partNumber": pn, "name": r["name"], "reasons": reasons})
@@ -123,11 +144,14 @@ for pn, r in sorted(staged.items()):
     title = PART_TITLE.get(r["partKind"], r["name"].split(" — ")[0].replace("Genuine Toyota ", "").rsplit(" ", 1)[0])
     name = f"Genuine Toyota {title} {pn} for Toyota {' / '.join(models)} ({years_text(apps)})"
     slug = slugify(f"toyota-{title}-{pn}")
-    pid = next_id
-    next_id += 1
+    if pn in previous:
+        pid = previous[pn]
+    else:
+        pid = next_id
+        next_id += 1
 
     files = []
-    for i, fname in enumerate(IMAGES[pn], 1):
+    for i, fname in enumerate(images_for(pn), 1):
         src = os.path.join(IMG_DIR, fname)
         b = open(src, "rb").read()
         if len(b) == PLACEHOLDER_BYTES or b[:4] != b"RIFF" or b[8:12] != b"WEBP":
@@ -206,6 +230,7 @@ for pn, r in sorted(staged.items()):
                     + "); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json.",
     })
 
+products.sort(key=lambda p: p["id"])
 with open(DATA, "w", encoding="utf-8") as f:
     json.dump(products, f, ensure_ascii=False, indent=2)
     f.write("\n")
