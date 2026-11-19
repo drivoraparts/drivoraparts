@@ -51,6 +51,13 @@
       "evidence": "Owner confirmation (DrivoraParts LLC), 2026-11-18: sold as Genuine Toyota transmissions under the Toyota part number shown. Supplier invoice not yet on file -- attach it here when available."
     },
     {
+      "id": 4373,
+      "partNumber": "04465-02070",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4320,
       "partNumber": "04465-02220",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -72,8 +79,22 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4374,
+      "partNumber": "04465-02580",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4321,
       "partNumber": "04465-02630",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4375,
+      "partNumber": "04465-04040",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -107,6 +128,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4376,
+      "partNumber": "04465-0C012",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4306,
       "partNumber": "04465-0C020",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -135,6 +163,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4377,
+      "partNumber": "04465-33471",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4307,
       "partNumber": "04465-33480",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -142,8 +177,29 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo; https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446533480); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4378,
+      "partNumber": "04465-42130",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4379,
+      "partNumber": "04465-48100",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4325,
       "partNumber": "04465-48150",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4408,
+      "partNumber": "04466-02310",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -184,6 +240,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4380,
+      "partNumber": "04466-33090",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4327,
       "partNumber": "04466-42060",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -193,6 +256,41 @@
     {
       "id": 4313,
       "partNumber": "04495-04010",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4381,
+      "partNumber": "12372-F2111",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4382,
+      "partNumber": "16031-25011",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4383,
+      "partNumber": "16031-F0040",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4384,
+      "partNumber": "16031-F0050",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4385,
+      "partNumber": "16100-09201",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -226,6 +324,20 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4386,
+      "partNumber": "16100-09620",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4387,
+      "partNumber": "16100-09690",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4328,
       "partNumber": "16100-09720",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -233,8 +345,57 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4388,
+      "partNumber": "16100-0H010",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4389,
+      "partNumber": "16100-28041",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4390,
+      "partNumber": "16100-29085",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4329,
       "partNumber": "16100-39545",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4391,
+      "partNumber": "16100-39575",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4392,
+      "partNumber": "16100-F0010",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4393,
+      "partNumber": "16363-0T100",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4394,
+      "partNumber": "16363-36170",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -254,6 +415,27 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4409,
+      "partNumber": "16571-0V020",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4395,
+      "partNumber": "16571-F0010",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4396,
+      "partNumber": "16620-0V022",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4340,
       "partNumber": "42431-02230",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -261,8 +443,22 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4397,
+      "partNumber": "42431-04061",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4341,
       "partNumber": "42431-04100",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4398,
+      "partNumber": "42431-08040",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -303,6 +499,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4399,
+      "partNumber": "42431-33100",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4332,
       "partNumber": "42431-33160",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -317,6 +520,20 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4400,
+      "partNumber": "42431-48041",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4401,
+      "partNumber": "42431-60201",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4317,
       "partNumber": "42431-78010",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -324,8 +541,22 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4410,
+      "partNumber": "43512-02111",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4334,
       "partNumber": "43512-02240",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4402,
+      "partNumber": "43512-04020",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -380,8 +611,29 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4403,
+      "partNumber": "43512-35210",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4404,
+      "partNumber": "43512-60151",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4319,
       "partNumber": "43512-60191",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4405,
+      "partNumber": "45046-19425",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -410,6 +662,13 @@
     {
       "id": 4370,
       "partNumber": "47730-08040",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4406,
+      "partNumber": "47730-0C022",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
@@ -473,6 +732,13 @@
     {
       "id": 4358,
       "partNumber": "47750-06070",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4407,
+      "partNumber": "47750-0C022",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
