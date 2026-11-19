@@ -96,7 +96,7 @@ It does **not** mean supplier, stock, image licence or cost are verified; see Ou
 | 81150-0C300 | Sequoia | Headlamp, left | no Toyota photo |
 | 42611-AQ040 | Camry | 19in wheel | no Toyota photo |
 | 83800-0R430 | RAV4 | Instrument cluster | no Toyota photo; clusters need odometer/VIN programming |
-| 16400-F4010 | Tundra/Sequoia | Radiator 3.4L | Toyota photos are close-up fragments; part not identifiable |
+| 16400-F4010 | Tundra/Sequoia | Radiator 3.4L | Toyota photos are close-up fragments; part not identifiable. **Correction (Phase 3):** this part was already live as ID 4314 (batch 3) and is unchanged; this row is not a removal |
 | 16400-AK010 | Tacoma | Radiator | no Toyota photo |
 | 88310-AK010 | Tacoma | A/C compressor | no Toyota photo |
 | 884A0-08010 | Sienna | A/C condenser | no Toyota photo |

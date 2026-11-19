@@ -159,3 +159,9 @@ five fit a single carton; the $199 charge exceeds typical parcel cost, but no ca
 | 44110-60211 | LC 80 steering gear box | 1 price; discontinued per one dealer |
 | 41110-60B81 / 41110-60A11 | LC 200 differential carriers | ratio-specific; 1 seller; no photo |
 | 44050-35070 | 4Runner 2016-2024 ABS actuator | booster-type conflict between dealers; no photo |
+
+## Phase 3 (2026-11-19)
+
+Supplier sourcing, batch 7 profitability, shipping, discounts and photo corrections: see
+`../phase3/README.md`. Added 47050-60041 (LC 1999-2001 booster, LX470-shared) to the ledger as
+RESEARCH REQUIRED (two US prices). No batch 8: no new part met every requirement.
