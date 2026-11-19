@@ -28,7 +28,7 @@ CAT = {
     "radiator": ("engine", "Engine"), "ac_compressor": ("engine", "Engine"), "condenser": ("engine", "Engine"),
     "alternator": ("engine", "Engine"), "starter": ("engine", "Engine"), "water_pump": ("engine", "Engine"),
     "ignition_coil": ("engine", "Engine"), "sensor": ("engine", "Engine"), "fuel_pump": ("engine", "Engine"),
-    "inverter_cooler": ("engine", "Engine"), "fan": ("engine", "Engine"),
+    "inverter_cooler": ("engine", "Engine"), "fan": ("engine", "Engine"), "thermostat": ("engine", "Engine"), "engine_mount": ("engine", "Engine"), "tensioner": ("engine", "Engine"), "hose": ("engine", "Engine"),
     "headlight": ("lighting", "Lighting"), "taillight": ("lighting", "Lighting"), "fog_light": ("lighting", "Lighting"),
     "mirror": ("body-parts", "Body Parts"), "grille": ("body-parts", "Body Parts"),
 }
