@@ -1,0 +1,19 @@
+tier,n,scenario,paidVsCheapestDealer,medianNetPctMSRP,medianBreakEvenCostPctMSRP,medianMaxCostFor20pctMarginPctMSRP
+"Under $1,000",160,S0 Current: list 5% under cheapest dealer + 5% checkout,-9.75,59.6,59.6,47.2
+"Under $1,000",160,"S1 List 5% under, no checkout discount",-5.0,62.7,62.7,49.7
+"Under $1,000",160,S2 List at cheapest dealer price + 5% checkout,-5.0,62.7,62.7,49.7
+"Under $1,000",160,"S3 List 3% under, no checkout discount",-3.0,64.1,64.1,50.7
+"Under $1,000",160,"S4 List at cheapest dealer price, no checkout discount",0.0,66.0,66.0,52.3
+"Under $1,000",160,"S0m Current, multi-item cart (10% off)",-14.5,56.4,56.4,44.7
+"$1,000-$2,500",10,S0 Current: list 5% under cheapest dealer + 5% checkout,-9.75,65.0,65.0,53.0
+"$1,000-$2,500",10,"S1 List 5% under, no checkout discount",-5.0,68.1,68.1,55.4
+"$1,000-$2,500",10,S2 List at cheapest dealer price + 5% checkout,-5.0,68.1,68.1,55.4
+"$1,000-$2,500",10,"S3 List 3% under, no checkout discount",-3.0,69.3,69.3,56.4
+"$1,000-$2,500",10,"S4 List at cheapest dealer price, no checkout discount",0.0,71.3,71.3,58.0
+"$1,000-$2,500",10,"S0m Current, multi-item cart (10% off)",-14.5,62.0,62.0,50.5
+"Over $2,500",7,S0 Current: list 5% under cheapest dealer + 5% checkout,-9.75,72.4,72.4,58.5
+"Over $2,500",7,"S1 List 5% under, no checkout discount",-5.0,75.9,75.9,61.3
+"Over $2,500",7,S2 List at cheapest dealer price + 5% checkout,-5.0,75.9,75.9,61.3
+"Over $2,500",7,"S3 List 3% under, no checkout discount",-3.0,77.4,77.4,62.5
+"Over $2,500",7,"S4 List at cheapest dealer price, no checkout discount",0.0,79.7,79.7,64.2
+"Over $2,500",7,"S0m Current, multi-item cart (10% off)",-14.5,68.9,68.9,55.7

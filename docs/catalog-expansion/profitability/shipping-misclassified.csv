@@ -1,0 +1,50 @@
+id,partNumber,product,price,currentLabel,currentShippingCharged,proposedLabel,proposedShippingIfAloneInCart,note
+4383,16031-F0040,Thermostat Housing with Thermostat 16031-F0040 for Toyota Highlander (2023–2025),27.29,freight,199,parcel,0,single carton; label came from category rule
+4384,16031-F0050,Engine Coolant Thermostat Kit 16031-F0050 for Toyota Tacoma (2024–2025),33.09,freight,199,parcel,0,single carton; label came from category rule
+4382,16031-25011,Engine Coolant Thermostat Kit 16031-25011 for Toyota Camry / RAV4 (2018–2024),46.19,freight,199,parcel,0,single carton; label came from category rule
+4405,45046-19425,Outer Tie Rod End 45046-19425 for Toyota Corolla (2009–2013),54.49,multibox,199,parcel,0,single carton; label came from category rule
+4381,12372-F2111,"Engine Mount, Left 12372-F2111 for Toyota Corolla (2022–2025)",101.49,freight,199,parcel,0,single carton; label came from category rule
+4394,16363-36170,Engine Cooling Fan Motor 16363-36170 for Toyota Camry (2013–2016),193.99,freight,199,parcel,0,single carton; label came from category rule
+4393,16363-0T100,Engine Cooling Fan Motor 16363-0T100 for Toyota Corolla (2009–2019),207.69,freight,199,parcel,0,single carton; label came from category rule
+4465,87910-08220,"Outside Mirror Assembly, Right 87910-08220 for Toyota Sienna (2021–2024)",228.09,freight,199,parcel,0,single carton; label came from category rule
+4417,16400-F0080,Radiator 16400-F0080 for Toyota Highlander (2020–2024),239.59,freight,199,parcel,0,single carton; label came from category rule
+4467,87910-0R908,"Outside Mirror Assembly, Right 87910-0R908 for Toyota RAV4 (2019–2025)",242.99,freight,199,parcel,0,single carton; label came from category rule
+4469,87940-0R908,"Outside Mirror Assembly, Left 87940-0R908 for Toyota RAV4 (2019–2025)",247.59,freight,199,parcel,0,single carton; label came from category rule
+4431,48068-60040,"Front Lower Control Arm, Right 48068-60040 for Toyota 4Runner (2010–2024)",258.79,multibox,199,parcel,0,single carton; label came from category rule
+4416,16400-0S030,Radiator Assembly 16400-0S030 for Toyota Tundra (2014–2021),261.09,freight,199,parcel,0,single carton; label came from category rule
+4470,884A0-0C010,A/C Condenser Assembly 884A0-0C010 for Toyota Tundra (2022–2025),262.59,freight,199,parcel,0,single carton; label came from category rule
+4446,22030-F0030,Throttle Body Assembly 22030-F0030 for Toyota Tacoma / Highlander (2023–2025),274.89,freight,199,parcel,0,single carton; label came from category rule
+4415,16400-0S010,Radiator Assembly 16400-0S010 for Toyota Tundra / Sequoia (2007–2013),279.49,freight,199,parcel,0,single carton; label came from category rule
+4330,16400-AD020,Radiator Assembly 16400-AD020 for Toyota Camry (2007–2015),279.79,freight,199,parcel,0,single carton; label came from category rule
+4314,16400-F4010,Radiator Assembly 16400-F4010 for Toyota Tundra / Sequoia (2022–2025),290.09,freight,199,parcel,0,single carton; label came from category rule
+4423,43410-06B80,"Front Drive Axle Assembly, Right 43410-06B80 for Toyota Camry (2007–2011)",344.09,freight,199,parcel,0,single carton; label came from category rule
+4454,42611-AQ030,"Alloy Wheel, 18-inch Black 42611-AQ030 for Toyota Camry (2025)",357.69,multibox,199,parcel,0,single carton; label came from category rule
+4422,43211-60200,"Steering Knuckle, Front Right 43211-60200 for Toyota 4Runner (2003–2015)",366.39,multibox,199,parcel,0,single carton; label came from category rule
+4451,42611-AK011,"Alloy Wheel, 17-inch Silver 42611-AK011 for Toyota Tacoma (2024–2025)",389.89,multibox,199,parcel,0,single carton; label came from category rule
+4424,43550-0C020,Front Wheel Hub and Bearing Assembly 43550-0C020 for Toyota Tundra / Sequoia (2022–2025),411.09,multibox,199,parcel,0,single carton; label came from category rule
+4453,42611-AK051,"Alloy Wheel, 17-inch Dark Gray 42611-AK051 for Toyota Tacoma (2024–2025)",428.29,multibox,199,parcel,0,single carton; label came from category rule
+4448,42611-0C300,"Alloy Wheel, 18-inch TRD Off-Road 42611-0C300 for Toyota Tundra (2022–2025)",435.09,multibox,199,parcel,0,single carton; label came from category rule
+4452,42611-AK031,"Alloy Wheel, 18-inch Chrome/Black 42611-AK031 for Toyota Tacoma (2024–2025)",438.19,multibox,199,parcel,0,single carton; label came from category rule
+4447,42611-0C280,"Alloy Wheel, 18-inch Silver 42611-0C280 for Toyota Tundra (2022–2025)",439.59,multibox,199,parcel,0,single carton; label came from category rule
+4450,42611-0EB80,"Alloy Wheel, 20-inch 42611-0EB80 for Toyota Highlander (2023–2025)",449.19,multibox,199,parcel,0,single carton; label came from category rule
+4449,42611-0C320,"Alloy Wheel, 20-inch Black 42611-0C320 for Toyota Tundra (2022–2025)",463.69,multibox,199,parcel,0,single carton; label came from category rule
+4427,44250-0C160,Power Steering Rack and Pinion Assembly 44250-0C160 for Toyota Tundra (2007–2013),511.99,multibox,199,parcel,0,single carton; label came from category rule
+4430,45510-42161,Steering Rack and Pinion Assembly 45510-42161 for Toyota RAV4 (2013–2018),543.89,multibox,199,parcel,0,single carton; label came from category rule
+4426,44250-04040,Power Steering Rack and Pinion Assembly 44250-04040 for Toyota Tacoma (2012–2016),618.39,multibox,199,parcel,0,single carton; label came from category rule
+4468,87910-AK040,"Outside Mirror Assembly, Right, with Camera 87910-AK040 for Toyota Tacoma (2024–2025)",625.29,freight,199,parcel,0,single carton; label came from category rule
+4425,44250-04030,Power Steering Rack and Pinion Assembly 44250-04030 for Toyota Tacoma (2005–2011),684.79,multibox,199,parcel,0,single carton; label came from category rule
+4444,16360-F0190,Radiator Cooling Fan Assembly 16360-F0190 for Toyota Camry (2025),840.69,freight,199,parcel,0,single carton; label came from category rule
+4466,87910-08240,"Outside Mirror Assembly, Right, with Camera 87910-08240 for Toyota Sienna (2021–2024)",1068.69,freight,199,parcel,100,single carton; label came from category rule
+4411,16360-AK010,Engine Cooling Fan Assembly 16360-AK010 for Toyota Tacoma (2024–2025),1254.79,freight,199,parcel,100,single carton; label came from category rule
+4413,16360-F0100,Engine Cooling Fan Assembly 16360-F0100 for Toyota Highlander (2020–2022),1568.99,freight,199,parcel,100,single carton; label came from category rule
+4412,16360-F0070,Radiator Cooling Fan Assembly 16360-F0070 for Toyota RAV4 (2021–2025),1885.79,freight,199,parcel,100,single carton; label came from category rule
+4414,16360-F0150,Radiator and Condenser Fan Assembly 16360-F0150 for Toyota Sienna (2021–2024),1937.29,freight,199,parcel,100,single carton; label came from category rule
+1825,,ARB Safari Snorkel for Toyota Hilux,210,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1827,,ARB Safari Snorkel for Toyota Prado,210,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1815,,Safari ARMAX Snorkel for Toyota Hilux (2015+),280,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1828,,TJM Airtec Snorkel for Toyota Hilux,280,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1818,,Safari ARMAX Snorkel for Toyota LandCruiser 300 Series,380,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1819,,Safari ARMAX Snorkel for Toyota Prado 150,380,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1817,,Safari ARMAX Snorkel Kit for Toyota LandCruiser 79 Series,410,multibox,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1977,TH08SDX,"Exedy Hyper Single EVO Clutch and Flywheel Kit TH08SDX — Toyota 86 / GR86, Subaru BRZ",525,freight,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
+1975,,"XClutch Twin Sprung Clutch Kit for Toyota GR Supra (B58, 2023+ Manual)",1265,freight,199,owner review,,"not a genuine Toyota listing; likely parcel-size, not in the patch"
