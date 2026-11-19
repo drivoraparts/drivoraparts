@@ -3812,7 +3812,7 @@
   {
     "id": 4416,
     "name": "Genuine Toyota Radiator Assembly 16400-0S030 for Toyota Tundra (2014–2021)",
-    "category": "cooling",
+    "category": "engine",
     "brand": "toyota",
     "price": 261.09,
     "competitorPriced": true,
@@ -3844,7 +3844,7 @@
   {
     "id": 4417,
     "name": "Genuine Toyota Radiator 16400-F0080 for Toyota Highlander (2020–2024)",
-    "category": "cooling",
+    "category": "engine",
     "brand": "toyota",
     "price": 239.59,
     "competitorPriced": true,
