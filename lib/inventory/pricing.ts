@@ -78,8 +78,12 @@ const PUBLIC_PRICE_ROUNDING = 5;
  */
 const PUBLIC_PRICE_CENTS_BELOW = 20;
 
-export function resolvePublicPrice(product: Pick<Product, "id" | "price">): number {
+export function resolvePublicPrice(
+  product: Pick<Product, "id" | "price"> & { competitorPriced?: boolean }
+): number {
   if (product.id === CHECKOUT_TEST_PRODUCT_ID) return product.price;
+  // Genuine Toyota parts carry their final, competitor-based price.
+  if (product.competitorPriced) return product.price;
   if (product.price <= 0) return 0;
 
   const discounted = product.price * PUBLIC_PRICE_RATIO;

@@ -47,10 +47,12 @@ import { classicEuroProducts } from "./classic-euro-products";
 import { jdmEuroBrakeKitsProducts } from "./jdm-euro-brake-kits-products";
 import { performanceWheelsProducts } from "./performance-wheels-products";
 import { marketExpansionProducts } from "./market-expansion-products";
+import { toyotaGenuineOemProducts } from "./toyota-genuine-oem-products";
 import { CHECKOUT_TEST_PRODUCT_ID } from "./pricing";
 
 /** Category-specific listings — every array here is merged into the master catalog for All Products. */
 const extensionProducts: Product[] = [
+  ...toyotaGenuineOemProducts,
   ...electronicsProducts,
   ...lightingProducts,
   ...bodyPartsProducts,

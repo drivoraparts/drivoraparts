@@ -60,6 +60,7 @@ for r in records:
             if (r.get("pricing", {}).get("recommendedPrice") or 0) >= 200 or any(c.get("price", 0) >= 200 for c in r.get("pricing", {}).get("competitors", [])):
                 per_model[m]["$200+"] += 1
 
+imported = json.load(open("lib/inventory/data/toyota-genuine-oem.json", encoding="utf-8"))
 live = json.load(open("lib/inventory/data/catalog-snapshot.json", encoding="utf-8"))["records"]
 fv = Counter(a["status"] for r in records for a in r.get("fitmentVerification", {}).get("applications", []))
 
@@ -73,10 +74,10 @@ md = ["# Toyota Catalog Expansion — Progress\n",
       f"| REJECTED | {st['REJECTED']} |",
       f"| With 3+ attributed competitor prices and a 3-5% target | {priced} |",
       "| Supplier costs established | 0 |",
-      "| Licensed images acquired | 0 |",
+      f"| Toyota catalog images integrated | {sum(len(p['images']) for p in imported)} (for {len(imported)} products) |",
       f"| Fitment applications: verified / VIN-dependent / unresolved / removed | {fv['verified']} / {fv['vin_dependent']} / {fv['unresolved']} / {fv['removed']} |",
       f"| Live storefront listings (unchanged) | {len(live)} |",
-      "| New products integrated into the storefront | 0 |", "",
+      f"| New products integrated into the storefront | {len(imported)} ({', '.join(str(p['id']) for p in imported)}) |", "",
       "## By model (target 100 each)\n", "| Model | Staged records | With listed fitment | $200+ | Ready | Progress |", "|---|---|---|---|---|---|"]
 for m in MODELS:
     c = per_model[m]

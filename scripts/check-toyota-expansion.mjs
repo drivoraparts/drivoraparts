@@ -44,6 +44,13 @@ const liveNumbers = new Set(
   snapshot.records.map((r) => String(r.partNumber ?? "").trim().toUpperCase()).filter(Boolean)
 );
 
+// Staged records imported into the storefront by scripts/import-toyota-genuine-oem.py:
+// the live listing is the import of that record, not a duplicate of it.
+const importFile = path.join(ROOT, "lib/inventory/data/toyota-genuine-oem.json");
+const importedNumbers = new Set(
+  (fs.existsSync(importFile) ? JSON.parse(fs.readFileSync(importFile, "utf8")) : []).map((p) => String(p.partNumber).toUpperCase())
+);
+
 const files = fs.existsSync(DIR)
   ? fs.readdirSync(DIR).filter((f) => /^toyota-expansion-batch-\d+\.json$/.test(f))
   : [];
@@ -68,7 +75,8 @@ for (const file of files) {
       if (!PART_NUMBER.test(pn)) problems.push(`${at}: part number "${pn}" is not a Toyota service number`);
       if (seen.has(pn)) problems.push(`${at}: duplicate of ${seen.get(pn)}`);
       seen.set(pn, at);
-      if (liveNumbers.has(pn)) problems.push(`${at}: already in the live catalog`);
+      if (liveNumbers.has(pn) && !importedNumbers.has(pn)) problems.push(`${at}: already in the live catalog`);
+      if (importedNumbers.has(pn)) counts.imported = (counts.imported ?? 0) + 1;
     }
 
     for (const a of r.fitmentApplications ?? []) {
