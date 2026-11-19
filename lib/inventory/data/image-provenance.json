@@ -69908,5 +69908,1387 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4411": {
+    "productId": 4411,
+    "productName": "Genuine Toyota Engine Cooling Fan Assembly 16360-AK010 for Toyota Tacoma (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-ak010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360AK010/16360AK010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16360-AK010",
+      "16360AK010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-AK010",
+    "sha256": "8a0378a5f803a2efb87b223fe36cf27156c89a8e1661460fcc845d402bb195f8",
+    "bytes": 23812,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-ak010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360AK010/16360AK010_2.webp",
+        "sha256": "6b733b194ce653eaa37ae277a9bad6f7dc8587b54a09b3706993e9f689d05116",
+        "bytes": 6654,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-ak010/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360AK010/16360AK010_3.webp",
+        "sha256": "50ab10caa28bbfc3a505df3078e3fcc91f32f763e7b44f1324fefbf7441be3b7",
+        "bytes": 9988,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4412": {
+    "productId": 4412,
+    "productName": "Genuine Toyota Radiator Cooling Fan Assembly 16360-F0070 for Toyota RAV4 (2021–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0070/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16360-F0070",
+      "16360F0070"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-F0070",
+    "sha256": "96d61333bbf2be35dc5499b197dacd3b7a94b966a4c1c7d3f97cf352c90a7815",
+    "bytes": 7886,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0070/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_2.webp",
+        "sha256": "d3e7b1fc9ca7a82a0020cabd920644a9ea87bfd481690815dc9be61b5529d25a",
+        "bytes": 16558,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0070/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_3.webp",
+        "sha256": "fb1ca511ca44fc5431e901a0a18deb0cb48533ddddb85c188e759abcbd5089f9",
+        "bytes": 33142,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4413": {
+    "productId": 4413,
+    "productName": "Genuine Toyota Engine Cooling Fan Assembly 16360-F0100 for Toyota Highlander (2020–2022)",
+    "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-f0100/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16360-F0100",
+      "16360F0100"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-F0100",
+    "sha256": "001bd07dafcb9806d9e4a14a6c2cf289adf295c6d455ae842e9bfdf579906da7",
+    "bytes": 11346,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-f0100/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_2.webp",
+        "sha256": "a9187d5fc91118f56416842b7617f081bf0b4d4c35853bd465303c1745342343",
+        "bytes": 35204,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-f0100/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_3.webp",
+        "sha256": "a2367db37b08464782b0f28614dd8b6e4eb4f9a84d1452493887ab6b75857124",
+        "bytes": 6132,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4414": {
+    "productId": 4414,
+    "productName": "Genuine Toyota Radiator and Condenser Fan Assembly 16360-F0150 for Toyota Sienna (2021–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-and-condenser-fan-assembly-16360-f0150/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360F0150/16360F0150_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16360-F0150",
+      "16360F0150"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-F0150",
+    "sha256": "faeb45fd796f7facbc0756c3ae66a48d4518267d86b4e5c589ddddddd17d186e",
+    "bytes": 41968,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-and-condenser-fan-assembly-16360-f0150/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0150/16360F0150_2.webp",
+        "sha256": "28ed2ee6c151f31fe4f54413a1dfc8f8741db99d52bcaeda1df670a41280a794",
+        "bytes": 27284,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-and-condenser-fan-assembly-16360-f0150/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0150/16360F0150_3.webp",
+        "sha256": "a2367db37b08464782b0f28614dd8b6e4eb4f9a84d1452493887ab6b75857124",
+        "bytes": 6132,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4415": {
+    "productId": 4415,
+    "productName": "Genuine Toyota Radiator Assembly 16400-0S010 for Toyota Tundra / Sequoia (2007–2013)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-0s010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/16400-0S010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16400-0S010",
+      "164000S010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16400-0S010",
+    "sha256": "e02e460d6625c26687a64f78e13f44f1ae6ec358b0c09f6aac99f8023bb7ffae",
+    "bytes": 70790,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-0s010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/16400-0S010_2.webp",
+        "sha256": "dd04b3f2b5244480917e66df96bcf8463553d2468f7de75a0a67986351c7bb3b",
+        "bytes": 71302,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4416": {
+    "productId": 4416,
+    "productName": "Genuine Toyota Radiator Assembly 16400-0S030 for Toyota Tundra (2014–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-0s030/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/16400-0S030_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16400-0S030",
+      "164000S030"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16400-0S030",
+    "sha256": "4137ca1d359280602aca2638980a0e5693b30805dfb8c760a4a275d416043373",
+    "bytes": 75738,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-0s030/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/16400-0S030_2.webp",
+        "sha256": "0f76a5d3dca7910775a46d040e3f963b0cb627f361357b80de13c4b6331d262f",
+        "bytes": 69166,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4417": {
+    "productId": 4417,
+    "productName": "Genuine Toyota Radiator 16400-F0080 for Toyota Highlander (2020–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-16400-f0080/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16400F0080/16400F0080_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16400-F0080",
+      "16400F0080"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16400-F0080",
+    "sha256": "93f235b3c07d1780d7a8d337402eb5b39abfefd75ef9fc093f7cff6c06c5e9a0",
+    "bytes": 43808,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-16400-f0080/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16400F0080/16400F0080_2.webp",
+        "sha256": "41d35c0892b4cb7cc5b3439b3a884951c3022c81dfe41a2e15e34b0b45338e06",
+        "bytes": 5878,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4418": {
+    "productId": 4418,
+    "productName": "Genuine Toyota Fuel Pump Assembly 23220-0C301 for Toyota Tacoma (2016–2023)",
+    "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0c301/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/232200C301/232200C301_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "23220-0C301",
+      "232200C301"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 23220-0C301",
+    "sha256": "d19e11f849e3f3058bf21b24051c067deea3b1ab1ae3e1dc184268b21a716328",
+    "bytes": 11374,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0c301/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/232200C301/232200C301_2.webp",
+        "sha256": "e528e0759a56d6b810606ba15ca4ad0501934ebe0c814f35aafb680fe8b6c0f2",
+        "bytes": 7604,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0c301/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/232200C301/232200C301_3.webp",
+        "sha256": "69aecfaced331f063ce008f4faa4b87c261f96a6df7cc57331b83e7f446c37a1",
+        "bytes": 8546,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4419": {
+    "productId": 4419,
+    "productName": "Genuine Toyota Fuel Pump Assembly 23220-0P240 for Toyota Tacoma / Camry / Sienna (2016–2023)",
+    "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0p240/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/232200P240/232200P240_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "23220-0P240",
+      "232200P240"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 23220-0P240",
+    "sha256": "b6d6dcf50fb24208389b43624d99cd724368603b911bcd62be1b17c8ffabe4b2",
+    "bytes": 9896,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0p240/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/232200P240/232200P240_2.webp",
+        "sha256": "394569d9f8b4433b8e4d50324e01a5c27c610f51aa668bbb4435b7e2d2c297c5",
+        "bytes": 11266,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0p240/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/232200P240/232200P240_3.webp",
+        "sha256": "f063fa54a0bbf37b27c61049edfe7bc7e7ded3a48864e99c332181125016a23c",
+        "bytes": 15844,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4420": {
+    "productId": 4420,
+    "productName": "Genuine Toyota Fuel Pump Assembly 23220-0S011 for Toyota Tundra (2008–2018)",
+    "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0s011/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/232200S011/232200S011_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "23220-0S011",
+      "232200S011"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 23220-0S011",
+    "sha256": "f84bfdce2e4d9ceb437136439390f603eabf6b0ff942d18bc18bc04459112588",
+    "bytes": 6226,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0s011/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/232200S011/232200S011_2.webp",
+        "sha256": "923b15f60ecd4024c071583d03e0d01c50348d7ce7a00118fcf3ee840b34be10",
+        "bytes": 6178,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-0s011/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/232200S011/232200S011_3.webp",
+        "sha256": "da4f05e9c294a3567a83c574d54d360e240158d1f2e5520bb8ab9c7548654c76",
+        "bytes": 4914,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4421": {
+    "productId": 4421,
+    "productName": "Genuine Toyota Fuel Pump Assembly 23220-F0020 for Toyota Camry (2018–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-f0020/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/23220F0020/23220F0020_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "23220-F0020",
+      "23220F0020"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 23220-F0020",
+    "sha256": "834d22e372fb4c2933dd8f5c3debf57fce8c1d6999184c56428b7396edae7678",
+    "bytes": 7112,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-f0020/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/23220F0020/23220F0020_2.webp",
+        "sha256": "4db26da2b913a4a3cb66ea6d7556d3446289d672043cbdc7dd33c8600609dfea",
+        "bytes": 14698,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-assembly-23220-f0020/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/23220F0020/23220F0020_3.webp",
+        "sha256": "d100173819f8bb90d629a390602b5aa0c1bc6a3add41fd7db705706a91062490",
+        "bytes": 7024,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4422": {
+    "productId": 4422,
+    "productName": "Genuine Toyota Steering Knuckle, Front Right 43211-60200 for Toyota 4Runner (2003–2015)",
+    "localFile": "/product-media/toyota-genuine/toyota-steering-knuckle-front-right-43211-60200/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/43211-60200_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "43211-60200",
+      "4321160200"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 43211-60200",
+    "sha256": "3664180e00f95fbb2946080675f1c6848f90ee186aea970baacd47780f3c75fe",
+    "bytes": 11492,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-steering-knuckle-front-right-43211-60200/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/43211-60200_2.webp",
+        "sha256": "ae80131673609ac161dbe485e298a7e44112a9d5a46eb071d8b8abd63dc4d516",
+        "bytes": 8520,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-steering-knuckle-front-right-43211-60200/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/43211-60200_3.webp",
+        "sha256": "567ef56ff5a4e43bd206a8a6e10e20e8336a4003277ff72b1881b5381556c3f6",
+        "bytes": 8512,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4423": {
+    "productId": 4423,
+    "productName": "Genuine Toyota Front Drive Axle Assembly, Right 43410-06B80 for Toyota Camry (2007–2011)",
+    "localFile": "/product-media/toyota-genuine/toyota-front-drive-axle-assembly-right-43410-06b80/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/43410-06B80_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "43410-06B80",
+      "4341006B80"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 43410-06B80",
+    "sha256": "c9e1edb60ea1daca9771ebad42699b78d91cc1562f0da882aeee2c489f1b7728",
+    "bytes": 4404,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-front-drive-axle-assembly-right-43410-06b80/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/43410-06B80_2.webp",
+        "sha256": "e1689ba42d2c3e3363477946ede2dec007fbc6dfcfba574fac9454ae753a0c68",
+        "bytes": 4358,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4424": {
+    "productId": 4424,
+    "productName": "Genuine Toyota Front Wheel Hub and Bearing Assembly 43550-0C020 for Toyota Tundra / Sequoia (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-front-wheel-hub-and-bearing-assembly-43550-0c020/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/435500C020/435500C020_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "43550-0C020",
+      "435500C020"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 43550-0C020",
+    "sha256": "739d24e6ae0e7f247ce3e730c39b2adb3939940be2703d9cb1fb297d2487d5cf",
+    "bytes": 21472,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4425": {
+    "productId": 4425,
+    "productName": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04030 for Toyota Tacoma (2005–2011)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04030/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4425004030/4425004030_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44250-04030",
+      "4425004030"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44250-04030",
+    "sha256": "a4ed972e6ff91642376863aa90365fb59b9c247ab40cc79834ffd97af428456b",
+    "bytes": 9258,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04030/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4425004030/4425004030_2.webp",
+        "sha256": "bb57829036599558b2ed0b942f4c97999b1439ce30e81aca438e0b7029b54c81",
+        "bytes": 10012,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4426": {
+    "productId": 4426,
+    "productName": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04040 for Toyota Tacoma (2012–2016)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04040/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4425004040/4425004040_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44250-04040",
+      "4425004040"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44250-04040",
+    "sha256": "a14b48b1920c92e833e342cd00ac8cf56e1c1e78ec08d8f91a53bb56441f30e0",
+    "bytes": 4628,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04040/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4425004040/4425004040_2.webp",
+        "sha256": "089c80866c47d77ace26f387131e03df4b9e65833fac5b67adf20c75d7e69f0f",
+        "bytes": 30522,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04040/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4425004040/4425004040_3.webp",
+        "sha256": "54a7cf0c75498b665eebe06560b50e8bf041e8a3dc5c316d2fe3756459c37565",
+        "bytes": 6290,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4427": {
+    "productId": 4427,
+    "productName": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-0C160 for Toyota Tundra (2007–2013)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c160/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/442500C160/442500C160_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44250-0C160",
+      "442500C160"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44250-0C160",
+    "sha256": "09bc7a89d57ad2066080499e5f8d4aba3e4925ba0e85b824aa8bce2b1121f9ac",
+    "bytes": 9742,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c160/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/442500C160/442500C160_2.webp",
+        "sha256": "c31aeb81642b7735422f92c6ca501ea44fdd4f00578f216eb8456d60e2a34f03",
+        "bytes": 13072,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4428": {
+    "productId": 4428,
+    "productName": "Genuine Toyota Power Brake Booster 44610-02441 for Toyota Corolla (2009–2013)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-brake-booster-44610-02441/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4461002441/4461002441_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44610-02441",
+      "4461002441"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44610-02441",
+    "sha256": "99a523791d21f6f3e3f86dc14c892ec51c5f392cad6362da0d7c70c784b03943",
+    "bytes": 18396,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-brake-booster-44610-02441/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4461002441/4461002441_2.webp",
+        "sha256": "fc844848218c73f01f74bcc6b11cc3e025abb2ce0e7718c3100b6f5ab6cdf44d",
+        "bytes": 13186,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4429": {
+    "productId": 4429,
+    "productName": "Genuine Toyota Power Brake Booster 44610-0E191 for Toyota Highlander (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-brake-booster-44610-0e191/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/446100E191/446100E191_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44610-0E191",
+      "446100E191"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44610-0E191",
+    "sha256": "4c2a5ae57e8f8f3eb97dec0a61261f9d8a8f0961a75174244a8e81e1498d0dc8",
+    "bytes": 17806,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-brake-booster-44610-0e191/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/446100E191/446100E191_2.webp",
+        "sha256": "ee8b6d538c7c3b983e5f619ce53f6619dfd97b4803c4d6c0b082d40354833e43",
+        "bytes": 18326,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-brake-booster-44610-0e191/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/446100E191/446100E191_3.webp",
+        "sha256": "dc7e858db0d34d83c40815d9d88b11a4643032e2e5670cfb43f450d78dd29ce1",
+        "bytes": 7602,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4430": {
+    "productId": 4430,
+    "productName": "Genuine Toyota Steering Rack and Pinion Assembly 45510-42161 for Toyota RAV4 (2013–2018)",
+    "localFile": "/product-media/toyota-genuine/toyota-steering-rack-and-pinion-assembly-45510-42161/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/45510-42161_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "45510-42161",
+      "4551042161"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 45510-42161",
+    "sha256": "d287c7d80d5f8b12e8b9d0eb6ce06bae6890e245fa177dde29cf8042d9bebac9",
+    "bytes": 4344,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-steering-rack-and-pinion-assembly-45510-42161/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/45510-42161_2.webp",
+        "sha256": "49773d1681a73e626902cd3a0b3396b04ad6189a05dbbae8ea8fd4324e6a5461",
+        "bytes": 4386,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4431": {
+    "productId": 4431,
+    "productName": "Genuine Toyota Front Lower Control Arm, Right 48068-60040 for Toyota 4Runner (2010–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-front-lower-control-arm-right-48068-60040/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/48068-60040_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "48068-60040",
+      "4806860040"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 48068-60040",
+    "sha256": "f0a27ca937818b7a8e489f6ab4dc9e7fac00e5087f63e17a27834a66de4c06e7",
+    "bytes": 13500,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-front-lower-control-arm-right-48068-60040/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/48068-60040_2.webp",
+        "sha256": "8ebfb1b3c443e873f2af5a6ddab3b3d28e7fad295f4b6bce16ae73f35b80aa20",
+        "bytes": 13476,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-front-lower-control-arm-right-48068-60040/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/48068-60040_3.webp",
+        "sha256": "331fa0484be22a7e3f1046ef8c8ca0b90f70d191221597aa79f1e35657341c59",
+        "bytes": 12876,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4432": {
+    "productId": 4432,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-08430 for Toyota Sienna (2021–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-08430/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8111008430/8111008430_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-08430",
+      "8111008430"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-08430",
+    "sha256": "875b6f03a01f9e1372d4cf4257dd03b99f506ea3ca77623a2620457a2dcd710f",
+    "bytes": 19064,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-08430/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8111008430/8111008430_2.webp",
+        "sha256": "467fc86e3d8cc85bdf70ea3f4f6a4ea5c6e94bf763bd1d60af368fd14b3bbf88",
+        "bytes": 28292,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4433": {
+    "productId": 4433,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-0E530 for Toyota Highlander (2020–2023)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0e530/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811100E530/811100E530_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-0E530",
+      "811100E530"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-0E530",
+    "sha256": "1020bc1db84630eb64b4d04a16f2e31e397a76155ce1568145b9ecf01b766e2a",
+    "bytes": 31324,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0e530/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811100E530/811100E530_2.webp",
+        "sha256": "4928b7c5207fe16d69fb09d0fd1510d2d952c48992e37add250c57b716901016",
+        "bytes": 20564,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4434": {
+    "productId": 4434,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-0R152 for Toyota RAV4 (2019–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r152/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811100R152/811100R152_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-0R152",
+      "811100R152"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-0R152",
+    "sha256": "c4a76b5d693319190ae36419007b2fa7470a3a38cc4a5461e7c79169be2397fe",
+    "bytes": 34700,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r152/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811100R152/811100R152_2.webp",
+        "sha256": "87b094b0b00b5c974978c26d62319a644a6be32e26ab8915ea03194e018a1dc6",
+        "bytes": 25504,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4435": {
+    "productId": 4435,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-0R162 for Toyota RAV4 (2019–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r162/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811100R162/811100R162_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-0R162",
+      "811100R162"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-0R162",
+    "sha256": "7252aa7f7bb4b95c60023eed3f82757104ffb7b00e75752379f40ce4e0ec3bf3",
+    "bytes": 30590,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r162/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811100R162/811100R162_2.webp",
+        "sha256": "c81dad0361e0c7a012931680092c9f7a5cc89ba74c42f21c6813c3d44e9cf30f",
+        "bytes": 17872,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4436": {
+    "productId": 4436,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-0R360 for Toyota RAV4 (2022–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r360/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811100R360/811100R360_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-0R360",
+      "811100R360"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-0R360",
+    "sha256": "a5cdc7caa91cf88324ad871994f76aa262ea0918abf392b0ca7850dc376c43f9",
+    "bytes": 30166,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r360/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811100R360/811100R360_2.webp",
+        "sha256": "0609dadff114ed10e991d0ce9c99edc1b6db267fd196892bb71f4de8a46c4815",
+        "bytes": 11850,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4437": {
+    "productId": 4437,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-0R440 for Toyota RAV4 (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r440/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811100R440/811100R440_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-0R440",
+      "811100R440"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-0R440",
+    "sha256": "e04cd0fe844c9fdad90be100e36eee1bf621b9aac121e4de8d8b9c9807e1f12c",
+    "bytes": 14600,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0r440/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811100R440/811100R440_2.webp",
+        "sha256": "10e0587af3cd8ae2fd605048864ad9d5fe02f67709f1547a765718406650e805",
+        "bytes": 29880,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4438": {
+    "productId": 4438,
+    "productName": "Genuine Toyota Headlamp Assembly, Left 81150-08430 for Toyota Sienna (2021–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-08430/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8115008430/8115008430_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81150-08430",
+      "8115008430"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81150-08430",
+    "sha256": "875b6f03a01f9e1372d4cf4257dd03b99f506ea3ca77623a2620457a2dcd710f",
+    "bytes": 19064,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-08430/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8115008430/8115008430_2.webp",
+        "sha256": "467fc86e3d8cc85bdf70ea3f4f6a4ea5c6e94bf763bd1d60af368fd14b3bbf88",
+        "bytes": 28292,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-08430/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8115008430/8115008430_3.webp",
+        "sha256": "70c598ce12c508aba291803e3e920a766857b76fbca33ecd58d0f82802e343c9",
+        "bytes": 4836,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4439": {
+    "productId": 4439,
+    "productName": "Genuine Toyota Headlamp Assembly, Left 81150-0R152 for Toyota RAV4 (2019–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-0r152/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811500R152/811500R152_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81150-0R152",
+      "811500R152"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81150-0R152",
+    "sha256": "b0262cf6ce03b2b7fa254f6675277ac57c4cdd16e0393134ee6b2c94558885ee",
+    "bytes": 37440,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-0r152/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811500R152/811500R152_2.webp",
+        "sha256": "b9dc03d231998e471d33ef825ea732ec891d9919351d28cdf62cd61afdabdef8",
+        "bytes": 25952,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4440": {
+    "productId": 4440,
+    "productName": "Genuine Toyota Headlamp Assembly, Left 81150-0R162 for Toyota RAV4 (2019–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-0r162/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811500R162/811500R162_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81150-0R162",
+      "811500R162"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81150-0R162",
+    "sha256": "db2fac4b2578c202363d329ec6199a50e7130f93abe27d6a925a22020e97b27d",
+    "bytes": 19132,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-0r162/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811500R162/811500R162_2.webp",
+        "sha256": "78deedcde6481e9d1c9e3fcb69e733ebc05e2ea6b9f93d5c46e393cef170fcde",
+        "bytes": 31876,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4441": {
+    "productId": 4441,
+    "productName": "Genuine Toyota Headlamp Assembly, Left 81150-0R360 for Toyota RAV4 (2022–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-0r360/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811500R360/811500R360_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81150-0R360",
+      "811500R360"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81150-0R360",
+    "sha256": "4cb51ff09e5e33c0692fa724ffb10bfd9179e1e0721c752d4fd3447463a283b5",
+    "bytes": 28274,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-0r360/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811500R360/811500R360_2.webp",
+        "sha256": "89b4f0c149d7a2f38488b845e751eff45a18470ebb0039eb474129d90d0458ac",
+        "bytes": 13308,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4442": {
+    "productId": 4442,
+    "productName": "Genuine Toyota Tail Lamp Assembly, Right 81550-0E230 for Toyota Highlander (2020–2023)",
+    "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-right-81550-0e230/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/815500E230/815500E230_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81550-0E230",
+      "815500E230"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81550-0E230",
+    "sha256": "9dc1a0f6cd91a1bdc572c15c6c33d45d62df0798e11ad535e5b374cd9e44f75c",
+    "bytes": 28878,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-right-81550-0e230/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/815500E230/815500E230_2.webp",
+        "sha256": "9f4f422cb784347f38711b13d4fbb5d93a67eb2a4310c500456b7f261f1f7e8a",
+        "bytes": 25030,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4443": {
+    "productId": 4443,
+    "productName": "Genuine Toyota Tail Lamp Assembly, Left 81560-0E230 for Toyota Highlander (2020–2023)",
+    "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-left-81560-0e230/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/815600E230/815600E230_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81560-0E230",
+      "815600E230"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81560-0E230",
+    "sha256": "23abfd2198800f470d9a5ff2ac66926ef11fea922b47301d96a4e79bb8a94518",
+    "bytes": 30524,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-left-81560-0e230/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/815600E230/815600E230_2.webp",
+        "sha256": "9f4f422cb784347f38711b13d4fbb5d93a67eb2a4310c500456b7f261f1f7e8a",
+        "bytes": 25030,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

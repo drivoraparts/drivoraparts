@@ -365,19 +365,34 @@
       "description": "Genuine Toyota radiator assembly 16400-0S030 for the Toyota Tundra. New genuine Toyota radiator assembly.\n\nSpecifications\n\nPart number: 16400-0S030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2014–2021 Toyota Tundra (5.7L V8 / 4.6L V8; V8; one 2014 catalog page carries a 'to 08/2013' build note)\nRestriction (2014-2021 Tundra): V8; one 2014 catalog page carries a 'to 08/2013' build note; early 2014 builds may differ\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 400.85,
         "lowestCompetitor": {
-          "seller": "ToyotaPartsDeal",
-          "price": 279.55,
-          "url": "https://www.toyotapartsdeal.com/oem-2014-toyota-tundra-radiator.html"
+          "seller": "Modern Toyota",
+          "price": 274.73,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-assembly-164000s030"
         },
         "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 274.73,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-assembly-164000s030"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 277.14,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-radiator-assembly-164000s030"
+          },
           {
             "seller": "ToyotaPartsDeal",
             "price": 279.55,
             "url": "https://www.toyotapartsdeal.com/oem-2014-toyota-tundra-radiator.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 281.96,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s030"
           },
           {
             "seller": "AutoNation Parts",
@@ -389,17 +404,17 @@
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 261.09,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "low",
-        "flags": [
-          "only 2 attributed competitor price(s) -- fewer than 3"
-        ],
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
         "info": "",
-        "profitabilityFlags": [],
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
         "approved": false
       },
       "image": null,
@@ -456,11 +471,11 @@
         "https://toyota.oempartsonline.com/oem-parts/toyota-radiator-assembly-164000s030",
         "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-assembly-164000s030",
         "https://www.autonationparts.com/part-categories/cooling-systems/radiators/Toyota?page=1",
+        "https://www.sparksparts.com/oem-parts/toyota-radiator-assembly-164000s030",
         "https://www.toyotapartsdeal.com/oem-2014-toyota-tundra-radiator.html"
       ],
       "approvalStatus": "REVIEW REQUIRED",
       "reviewReasons": [
-        "pricing: 2 attributed competitor price(s), 3 required",
         "supplier cost not established",
         "no licensed product image"
       ]
@@ -499,15 +514,20 @@
       "description": "Genuine Toyota radiator 16400-F0080 for the Toyota Highlander. New genuine Toyota radiator.\n\nSpecifications\n\nPart number: 16400-F0080\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2022 Toyota Highlander (3.5L V6); 2020–2024 Toyota Highlander (2.5L hybrid; hybrid; 2024 also lists 16400-F0190 for some builds)\nRestriction (2020-2024 Highlander): hybrid; 2024 also lists 16400-F0190 for some builds\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 367.99,
         "lowestCompetitor": {
-          "seller": "ToyotaPartsDeal",
-          "price": 256.63,
-          "url": "https://www.toyotapartsdeal.com/oem-2023-toyota-highlander-radiator.html"
+          "seller": "Modern Toyota",
+          "price": 252.2,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-16400f0080"
         },
         "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 252.2,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-16400f0080"
+          },
           {
             "seller": "ToyotaPartsDeal",
             "price": 256.63,
@@ -517,23 +537,28 @@
             "seller": "Olathe Toyota",
             "price": 258.84,
             "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-16400f0080"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 292.02,
+            "url": "https://parts.longotoyota.com/v-2021-toyota-highlander--hybrid-limited--2-5l-l4-electric-gas/cooling-system--radiator-and-components"
           }
         ],
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 239.59,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "low",
-        "flags": [
-          "only 2 attributed competitor price(s) -- fewer than 3"
-        ],
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
         "info": "",
-        "profitabilityFlags": [],
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
         "approved": false
       },
       "image": null,
@@ -623,13 +648,13 @@
       },
       "sources": [
         "https://parts.lakelandtoyota.com/p/toyota__/Radiator-Radiator-Assembly-Engine-Cooling-Radiator/17305970/16400F0190.html",
+        "https://parts.longotoyota.com/v-2021-toyota-highlander--hybrid-limited--2-5l-l4-electric-gas/cooling-system--radiator-and-components",
         "https://parts.olathetoyota.com/oem-parts/toyota-radiator-16400f0080",
         "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-16400f0080",
         "https://www.toyotapartsdeal.com/oem-2023-toyota-highlander-radiator.html"
       ],
       "approvalStatus": "REVIEW REQUIRED",
       "reviewReasons": [
-        "pricing: 2 attributed competitor price(s), 3 required",
         "supplier cost not established",
         "no licensed product image"
       ]

@@ -22,13 +22,13 @@ CHECKED = "2026-11-19"
 # existing catalog does.
 CAT = {
     "rotor_front": ("brakes", "Brakes"), "rotor_rear": ("brakes", "Brakes"), "pads_front": ("brakes", "Brakes"),
-    "pads_rear": ("brakes", "Brakes"), "caliper": ("brakes", "Brakes"),
+    "pads_rear": ("brakes", "Brakes"), "caliper": ("brakes", "Brakes"), "booster": ("brakes", "Brakes"),
     "strut": ("suspension", "Suspension"), "shock": ("suspension", "Suspension"), "control_arm": ("suspension", "Suspension"),
     "hub_bearing": ("suspension", "Suspension"), "steering": ("suspension", "Suspension"),
     "radiator": ("engine", "Engine"), "ac_compressor": ("engine", "Engine"), "condenser": ("engine", "Engine"),
     "alternator": ("engine", "Engine"), "starter": ("engine", "Engine"), "water_pump": ("engine", "Engine"),
     "ignition_coil": ("engine", "Engine"), "sensor": ("engine", "Engine"), "fuel_pump": ("engine", "Engine"),
-    "inverter_cooler": ("engine", "Engine"), "fan": ("engine", "Engine"), "thermostat": ("engine", "Engine"), "engine_mount": ("engine", "Engine"), "tensioner": ("engine", "Engine"), "hose": ("engine", "Engine"),
+    "inverter_cooler": ("engine", "Engine"), "fan": ("engine", "Engine"), "thermostat": ("engine", "Engine"), "engine_mount": ("engine", "Engine"), "tensioner": ("engine", "Engine"), "axle": ("transmission", "Transmission"), "hose": ("engine", "Engine"),
     "headlight": ("lighting", "Lighting"), "taillight": ("lighting", "Lighting"), "fog_light": ("lighting", "Lighting"),
     "mirror": ("body-parts", "Body Parts"), "grille": ("body-parts", "Body Parts"),
 }
