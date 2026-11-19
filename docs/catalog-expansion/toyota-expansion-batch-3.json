@@ -6897,6 +6897,1881 @@
         "supplier cost not established",
         "no licensed product image"
       ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Left Brake Caliper 47750-0E071 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47750-0E071",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2025 Toyota Highlander (driver side front; supersedes 47750-0E070; trim and engine dependent)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "driver side front; supersedes 47750-0E070; trim and engine dependent"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front left brake caliper 47750-0E071 for the Toyota Highlander. Front left (driver side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47750-0E071\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2025 Toyota Highlander (driver side front; supersedes 47750-0E070; trim and engine dependent)\nRestriction (2020-2025 Highlander): driver side front; supersedes 47750-0E070; trim and engine dependent\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 297.89,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 207.74,
+          "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_caliper.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 207.74,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_caliper.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 209.54,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-caliper-assembly-477500e071"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 236.4,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-477500e071"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 197.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "driver side front; supersedes 47750-0E070; trim and engine dependent",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47750-0E071 Disc Brake Caliper 2020-2026 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-477500e071",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Highlander L front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-highlander--l--3-5l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023 Highlander L 2.4L front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-highlander--l--2-4l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-477500e071",
+        "https://parts.olathetoyota.com/oem-parts/toyota-caliper-assembly-477500e071",
+        "https://parts.olathetoyota.com/v-2020-toyota-highlander--l--3-5l-v6-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-highlander--l--2-4l-l4-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-0E071 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-0E071",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2025 Toyota Highlander (passenger side front; trim and engine dependent)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "passenger side front; trim and engine dependent"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-0E071 for the Toyota Highlander. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-0E071\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2025 Toyota Highlander (passenger side front; trim and engine dependent)\nRestriction (2020-2025 Highlander): passenger side front; trim and engine dependent\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 297.89,
+        "lowestCompetitor": {
+          "seller": "Lakeland Toyota",
+          "price": 201.6,
+          "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-grand-highlander--limited--2-4l-l4-gas/brakes--brake-components"
+        },
+        "competitors": [
+          {
+            "seller": "Lakeland Toyota",
+            "price": 201.6,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-grand-highlander--limited--2-4l-l4-gas/brakes--brake-components"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 203.33,
+            "url": "https://parts.olathetoyota.com/v-2025-toyota-grand-highlander--xle--2-4l-l4-gas/brakes--brake-components"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 207.74,
+            "url": "https://www.toyotapartsdeal.com/parts-list/2024-toyota-highlander/power_train_chassis/front_disc_brake_caliper_dust_cover.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 236.4,
+            "url": "https://parts.longotoyota.com/brake-calipers"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 191.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "passenger side front; trim and engine dependent",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2020 Highlander L front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2020-toyota-highlander--l--3-5l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2022 Highlander Hybrid LE front brakes)",
+                "url": "https://parts.longotoyota.com/v-2022-toyota-highlander--hybrid-le--2-5l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023 Highlander L 2.4L front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-highlander--l--2-4l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/brake-calipers",
+        "https://parts.longotoyota.com/v-2022-toyota-highlander--hybrid-le--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2020-toyota-highlander--l--3-5l-v6-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2025-toyota-grand-highlander--xle--2-4l-l4-gas/brakes--brake-components",
+        "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-highlander--l--2-4l-l4-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-grand-highlander--limited--2-4l-l4-gas/brakes--brake-components",
+        "https://www.toyotapartsdeal.com/parts-list/2024-toyota-highlander/power_train_chassis/front_disc_brake_caliper_dust_cover.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Left Brake Caliper 47750-0C060 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47750-0C060",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2022–2025 Toyota Tundra (driver side front; dealer notes split 2WD and 4WD; confirm by VIN); 2023–2025 Toyota Sequoia (driver side front; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "driver side front; dealer notes split 2WD and 4WD; confirm by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "driver side front; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front left brake caliper 47750-0C060 for the Toyota Tundra, Sequoia. Front left (driver side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47750-0C060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (driver side front; dealer notes split 2WD and 4WD; confirm by VIN); 2023–2025 Toyota Sequoia (driver side front; confirm by VIN)\nRestriction (2022-2025 Tundra): driver side front; dealer notes split 2WD and 4WD; confirm by VIN\nRestriction (2023-2025 Sequoia): driver side front; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 241.34,
+        "lowestCompetitor": {
+          "seller": "Lakeland Toyota",
+          "price": 163.32,
+          "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/brakes--front-brakes"
+        },
+        "competitors": [
+          {
+            "seller": "Lakeland Toyota",
+            "price": 163.32,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 164.72,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-brake_caliper.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 166.85,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2022-2024-toyota-caliper-477500c060"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 155.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "driver side front; dealer notes split 2WD and 4WD; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2022-2024 Toyota caliper 47750-0C060)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2022-2024-toyota-caliper-477500c060",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tundra Platinum front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--platinum--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Tundra SR front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "driver side front; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2025 Sequoia TRD Pro front brakes)",
+                "url": "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--platinum--3-4l-v6-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/brakes--front-brakes",
+        "https://www.sparksparts.com/oem-parts/toyota-2022-2024-toyota-caliper-477500c060",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-0C060 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-0C060",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2022–2025 Toyota Tundra (passenger side front; dealer notes split 2WD and 4WD; confirm by VIN); 2023–2025 Toyota Sequoia (passenger side front; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "passenger side front; dealer notes split 2WD and 4WD; confirm by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "passenger side front; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-0C060 for the Toyota Tundra, Sequoia. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-0C060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (passenger side front; dealer notes split 2WD and 4WD; confirm by VIN); 2023–2025 Toyota Sequoia (passenger side front; confirm by VIN)\nRestriction (2022-2025 Tundra): passenger side front; dealer notes split 2WD and 4WD; confirm by VIN\nRestriction (2023-2025 Sequoia): passenger side front; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 269.62,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 188.02,
+          "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-brake_caliper.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 188.02,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-brake_caliper.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 193.71,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 237.89,
+            "url": "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 178.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "passenger side front; dealer notes split 2WD and 4WD; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tundra 1794 Edition front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Tundra SR5 front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr5--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "passenger side front; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2025 Sequoia TRD Pro front brakes)",
+                "url": "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2025-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr5--3-4l-v6-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-06321 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-06321",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota Camry (passenger side front; dealer notes: USA-built, without TRD, from 08/2018 production)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "passenger side front; dealer notes: USA-built, without TRD, from 08/2018 production"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-06321 for the Toyota Camry. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-06321\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota Camry (passenger side front; dealer notes: USA-built, without TRD, from 08/2018 production)\nRestriction (2019-2024 Camry): passenger side front; dealer notes: USA-built, without TRD, from 08/2018 production; USA-built; from 08/2018\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 186.94,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 127.75,
+          "url": "https://www.toyotapartsdeal.com/oem-toyota-avalon-brake_caliper.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 127.75,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-avalon-brake_caliper.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 128.12,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4773006321"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 141.95,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773006321"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 121.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "passenger side front; dealer notes: USA-built, without TRD, from 08/2018 production",
+            "assemblyOrigin": "USA-built",
+            "productionDates": "from 08/2018",
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47730-06321 Disc Brake Caliper 2019-2025 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773006321",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2019-2025 Toyota disc brake caliper 47730-06321)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4773006321",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2021 Camry Hybrid SE front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2021-toyota-camry--hybrid-se--2-5l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773006321",
+        "https://parts.olathetoyota.com/v-2021-toyota-camry--hybrid-se--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4773006321",
+        "https://www.toyotapartsdeal.com/oem-toyota-avalon-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-33381 — RAV4 / Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-33381",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota RAV4 (passenger side front; Japan-built RAV4 without plug-in (RAV4 Prime excluded)); 2018–2019 Toyota Camry (passenger side front; build dependent (USA-built Camrys from 08/2018 use 47730-06321))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "passenger side front; Japan-built RAV4 without plug-in (RAV4 Prime excluded)"
+        },
+        {
+          "yearFrom": 2018,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "passenger side front; build dependent (USA-built Camrys from 08/2018 use 47730-06321)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-33381 for the Toyota RAV4, Camry. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-33381\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4 (passenger side front; Japan-built RAV4 without plug-in (RAV4 Prime excluded)); 2018–2019 Toyota Camry (passenger side front; build dependent (USA-built Camrys from 08/2018 use 47730-06321))\nRestriction (2019-2024 RAV4): passenger side front; Japan-built RAV4 without plug-in (RAV4 Prime excluded); Japan-built\nRestriction (2018-2019 Camry): passenger side front; build dependent (USA-built Camrys from 08/2018 use 47730-06321)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 186.94,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 120.44,
+          "url": "https://wholesaledirect.moderntoyota.com/v-2020-toyota-rav4--le--2-5l-l4-gas/brakes--front-brakes"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 120.44,
+            "url": "https://wholesaledirect.moderntoyota.com/v-2020-toyota-rav4--le--2-5l-l4-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 126.54,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2021-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 127.64,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-rav4-brake_caliper.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 135.4,
+            "url": "https://parts.olathetoyota.com/v-2021-toyota-rav4--xle--2-5l-l4-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 148.35,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773033381"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 114.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "passenger side front; Japan-built RAV4 without plug-in (RAV4 Prime excluded)",
+            "assemblyOrigin": "Japan-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47730-33381 Disc Brake Caliper 2018-2025 Toyota; without plug-in, Japan built)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773033381",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020 RAV4 LE front brakes)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2020-toyota-rav4--le--2-5l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2021 RAV4 XLE front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2021-toyota-rav4--xle--2-5l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2018,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "passenger side front; build dependent (USA-built Camrys from 08/2018 use 47730-06321)",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2018 Camry XLE front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2018-toyota-camry--xle--2-5l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019 Camry L front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2019-toyota-camry--l--2-5l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773033381",
+        "https://parts.olathetoyota.com/v-2018-toyota-camry--xle--2-5l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2019-toyota-camry--l--2-5l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/v-2021-toyota-rav4--xle--2-5l-l4-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2021-toyota-rav4--hybrid-limited--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://wholesaledirect.moderntoyota.com/v-2020-toyota-rav4--le--2-5l-l4-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-toyota-rav4-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Left Brake Caliper 47850-0C010 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47850-0C010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2007–2015 Toyota Tundra (driver side rear; confirm by VIN); 2008–2015 Toyota Sequoia (driver side rear; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "driver side rear; confirm by VIN"
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "driver side rear; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear left brake caliper 47850-0C010 for the Toyota Tundra, Sequoia. Rear left (driver side) caliper; pads sold separately.\n\nSpecifications\n\nPart number: 47850-0C010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2015 Toyota Tundra (driver side rear; confirm by VIN); 2008–2015 Toyota Sequoia (driver side rear; confirm by VIN)\nRestriction (2007-2015 Tundra): driver side rear; confirm by VIN\nRestriction (2008-2015 Sequoia): driver side rear; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 176.63,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 103.53,
+          "url": "https://www.autopartsprime.com/parts-list/2014-toyota-tundra/brake-components-brakes"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 103.53,
+            "url": "https://www.autopartsprime.com/parts-list/2014-toyota-tundra/brake-components-brakes"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 123.18,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2007-toyota-tundra--limited--4-7l-v8-gas/brakes--brake-components"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 124.24,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~rear~lh~47850-0c010.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 132.47,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-left-rear-478500c010"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 136.08,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-left-rear-478500c010"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 98.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "driver side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007-2015 Toyota disc brake caliper (left, rear) 47850-0C010)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-left-rear-478500c010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2010 Tundra SR5 rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2010-toyota-tundra--sr5--4-0l-v6-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2008 Tundra rear brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2008-toyota-tundra--base--5-7l-v8-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2008,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "driver side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007-2015 Toyota disc brake caliper (left, rear) 47850-0C010; Tundra and Sequoia)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-left-rear-478500c010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-left-rear-478500c010",
+        "https://parts.longotoyota.com/v-2010-toyota-tundra--sr5--4-0l-v6-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-left-rear-478500c010",
+        "https://toyotaparts.lakelandtoyota.com/v-2007-toyota-tundra--limited--4-7l-v8-gas/brakes--brake-components",
+        "https://toyotaparts.lakelandtoyota.com/v-2008-toyota-tundra--base--5-7l-v8-gas/brakes--rear-brakes",
+        "https://www.autopartsprime.com/parts-list/2014-toyota-tundra/brake-components-brakes",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~rear~lh~47850-0c010.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-08040 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-08040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid; passenger side front; confirm side and drivetrain by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid; passenger side front; confirm side and drivetrain by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-08040 for the Toyota Sienna. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-08040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid; passenger side front; confirm side and drivetrain by VIN)\nRestriction (2021-2025 Sienna): passenger side front; confirm side and drivetrain by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 247.99,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 161.33,
+          "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-brake_caliper.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 161.33,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-brake_caliper.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 169.96,
+            "url": "https://wholesaledirect.moderntoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 172.94,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773008040"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 196.8,
+            "url": "https://parts.longotoyota.com/v-2024-toyota-sienna--platinum--2-5l-l4-electric-gas/brakes--brake-components"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 153.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": "passenger side front; confirm side and drivetrain by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2025 Toyota Sienna disc brake caliper 47730-08040)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773008040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2024 Sienna LE front brakes)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2024-toyota-sienna--platinum--2-5l-l4-electric-gas/brakes--brake-components",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773008040",
+        "https://wholesaledirect.moderntoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16100-09491 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16100-09491",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "water_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2007–2021 Toyota Tundra (5.7L V8; only; supersedes 16100-09490); 2008–2022 Toyota Sequoia (5.7L V8; only)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "5.7L V8; only; supersedes 16100-09490"
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "5.7L V8; only"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine water pump 16100-09491 for the Toyota Tundra, Sequoia. Engine water pump assembly for the 5.7L V8; dealer listings note the gasket is included.\n\nSpecifications\n\nPart number: 16100-09491\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2021 Toyota Tundra (5.7L V8; only; supersedes 16100-09490); 2008–2022 Toyota Sequoia (5.7L V8; only)\nRestriction (2007-2021 Tundra): 5.7L V8 only; supersedes 16100-09490\nRestriction (2008-2022 Sequoia): 5.7L V8 only\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 196.0,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 137.7,
+          "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-land_cruiser-water_pump.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 137.7,
+            "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-land_cruiser-water_pump.html"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 142.3,
+            "url": "https://www.autopartsprime.com/p/2015-toyota-tundra-water-pump"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 153.0,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009491"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 155.03,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009491"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 130.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "5.7L V8",
+            "restriction": "5.7L V8 only; supersedes 16100-09490",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2007-2022 Toyota engine water pump 16100-09491)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009491",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2009 Tundra SR5 5.7L water pump)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2009-toyota-tundra--sr5--5-7l-v8-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2013 Tundra Limited 5.7L water pump)",
+                "url": "https://parts.longotoyota.com/v-2013-toyota-tundra--limited--5-7l-v8-flex/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2008,
+            "yearTo": 2022,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "5.7L V8",
+            "restriction": "5.7L V8 only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2011 Sequoia Limited 5.7L water pump)",
+                "url": "https://parts.longotoyota.com/v-2011-toyota-sequoia--limited--5-7l-v8-flex/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2015 Sequoia SR5 5.7L water pump)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2015-toyota-sequoia--sr5--5-7l-v8-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2016 Sequoia SR5 5.7L water pump)",
+                "url": "https://parts.longotoyota.com/v-2016-toyota-sequoia--sr5--5-7l-v8-flex/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009491",
+        "https://parts.longotoyota.com/v-2011-toyota-sequoia--limited--5-7l-v8-flex/cooling-system--water-pump",
+        "https://parts.longotoyota.com/v-2013-toyota-tundra--limited--5-7l-v8-flex/cooling-system--water-pump",
+        "https://parts.longotoyota.com/v-2016-toyota-sequoia--sr5--5-7l-v8-flex/cooling-system--water-pump",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009491",
+        "https://wholesaledirect.moderntoyota.com/v-2009-toyota-tundra--sr5--5-7l-v8-gas/cooling-system--water-pump",
+        "https://wholesaledirect.moderntoyota.com/v-2015-toyota-sequoia--sr5--5-7l-v8-gas/cooling-system--water-pump",
+        "https://www.autopartsprime.com/p/2015-toyota-tundra-water-pump",
+        "https://www.toyotapartsdeal.com/oem-2010-toyota-land_cruiser-water_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16100-09515 — Camry / RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16100-09515",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "water_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2011–2017 Toyota Camry (2.5L; without hybrid); 2015–2017 Toyota RAV4 (2.5L; without hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2011,
+          "yearTo": 2017,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L; without hybrid"
+        },
+        {
+          "yearFrom": 2015,
+          "yearTo": 2017,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.5L; without hybrid"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine water pump 16100-09515 for the Toyota Camry, RAV4. Engine water pump assembly for the 2.5L four-cylinder; dealer listings differ on whether the gasket is included.\n\nSpecifications\n\nPart number: 16100-09515\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2011–2017 Toyota Camry (2.5L; without hybrid); 2015–2017 Toyota RAV4 (2.5L; without hybrid)\nRestriction (2011-2017 Camry): 2.5L without hybrid\nRestriction (2015-2017 RAV4): 2.5L without hybrid\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 161.66,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 102.88,
+          "url": "https://www.toyotapartsdeal.com/oem-2016-toyota-highlander-water_pump.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 102.88,
+            "url": "https://www.toyotapartsdeal.com/oem-2016-toyota-highlander-water_pump.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 111.28,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009515"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 112.74,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009515?c=bT0xJmw9NyZuPVJlY29tbWVuZGVkIFByb2R1Y3RzJms9MQ%3D%3D"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 128.29,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009515"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 97.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2011,
+            "yearTo": 2017,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "2.5L",
+            "restriction": "2.5L without hybrid",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2011 Camry SE 2.5L water pump)",
+                "url": "https://parts.olathetoyota.com/v-2011-toyota-camry--se--2-5l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2014 Camry SE Sport 2.5L water pump)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2014-toyota-camry--se-sport--2-5l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2016 Camry XSE 2.5L water pump)",
+                "url": "https://parts.olathetoyota.com/v-2016-toyota-camry--xse--2-5l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2015,
+            "yearTo": 2017,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "2.5L",
+            "restriction": "2.5L without hybrid",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2015 RAV4 Limited 2.5L water pump)",
+                "url": "https://parts.longotoyota.com/v-2015-toyota-rav4--limited--2-5l-l4-gas/belts-and-cooling--water-pump-and-related-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2017 RAV4 LE 2.5L water pump)",
+                "url": "https://parts.olathetoyota.com/v-2017-toyota-rav4--le--2-5l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009515",
+        "https://parts.longotoyota.com/v-2015-toyota-rav4--limited--2-5l-l4-gas/belts-and-cooling--water-pump-and-related-components",
+        "https://parts.olathetoyota.com/v-2011-toyota-camry--se--2-5l-l4-gas/cooling-system--water-pump",
+        "https://parts.olathetoyota.com/v-2016-toyota-camry--xse--2-5l-l4-gas/cooling-system--water-pump",
+        "https://parts.olathetoyota.com/v-2017-toyota-rav4--le--2-5l-l4-gas/cooling-system--water-pump",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009515?c=bT0xJmw9NyZuPVJlY29tbWVuZGVkIFByb2R1Y3RzJms9MQ%3D%3D",
+        "https://toyotaparts.lakelandtoyota.com/v-2014-toyota-camry--se-sport--2-5l-l4-gas/cooling-system--water-pump",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009515",
+        "https://www.toyotapartsdeal.com/oem-2016-toyota-highlander-water_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16100-09560 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16100-09560",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "water_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2010–2018 Toyota Corolla (1.8L; without Eco / Valvematic engine)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2018,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L; without Eco / Valvematic engine"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine water pump 16100-09560 for the Toyota Corolla. Engine water pump assembly for the 1.8L four-cylinder; gasket included per dealer listings.\n\nSpecifications\n\nPart number: 16100-09560\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2018 Toyota Corolla (1.8L; without Eco / Valvematic engine)\nRestriction (2010-2018 Corolla): 1.8L without Eco / Valvematic engine\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 133.38,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 88.37,
+          "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-corolla-water_pump.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 88.37,
+            "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-corolla-water_pump.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 102.15,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-engine-water-pump-1610009560"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 105.55,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009560"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 105.85,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009560"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 83.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2018,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "1.8L",
+            "restriction": "1.8L without Eco / Valvematic engine",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010 Corolla LE 1.8L water pump)",
+                "url": "https://parts.olathetoyota.com/v-2010-toyota-corolla--le--1-8l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2015 Corolla LE 1.8L water pump)",
+                "url": "https://parts.longotoyota.com/v-2015-toyota-corolla--le--1-8l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2018 Corolla XLE 1.8L water pump)",
+                "url": "https://parts.longotoyota.com/v-2018-toyota-corolla--xle--1-8l-l4-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009560",
+        "https://parts.longotoyota.com/v-2015-toyota-corolla--le--1-8l-l4-gas/cooling-system--water-pump",
+        "https://parts.longotoyota.com/v-2018-toyota-corolla--xle--1-8l-l4-gas/cooling-system--water-pump",
+        "https://parts.olathetoyota.com/oem-parts/toyota-engine-water-pump-1610009560",
+        "https://parts.olathetoyota.com/v-2010-toyota-corolla--le--1-8l-l4-gas/cooling-system--water-pump",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009560",
+        "https://www.toyotapartsdeal.com/oem-2010-toyota-corolla-water_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Engine Water Pump 16100-09442 — Camry / Highlander / Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16100-09442",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "water_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2007–2015 Toyota Camry (3.5L V6; only); 2015–2016 Toyota Highlander (3.5L V6; without hybrid); 2008–2016 Toyota Sienna (3.5L V6; only)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "3.5L V6; only"
+        },
+        {
+          "yearFrom": 2015,
+          "yearTo": 2016,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.5L V6; without hybrid"
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2016,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "3.5L V6; only"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota engine water pump 16100-09442 for the Toyota Camry, Highlander, Sienna. Engine water pump assembly for the 3.5L V6; supersedes 16100-09440/-09441; dealer notes differ on gasket and timing-cover inclusion.\n\nSpecifications\n\nPart number: 16100-09442\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2015 Toyota Camry (3.5L V6; only); 2015–2016 Toyota Highlander (3.5L V6; without hybrid); 2008–2016 Toyota Sienna (3.5L V6; only)\nRestriction (2007-2015 Camry): 3.5L V6 only\nRestriction (2015-2016 Highlander): 3.5L V6 without hybrid\nRestriction (2008-2016 Sienna): 3.5L V6 only\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 203.41,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 136.18,
+          "url": "https://www.toyotapartsdeal.com/oem-2016-toyota-highlander-water_pump.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 136.18,
+            "url": "https://www.toyotapartsdeal.com/oem-2016-toyota-highlander-water_pump.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 141.86,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009442"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 151.61,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009442"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 161.42,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009442"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 129.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2007 Camry LE 3.5L water pump)",
+                "url": "https://parts.longotoyota.com/v-2007-toyota-camry--le--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2015 Camry XSE 3.5L water pump)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2015-toyota-camry--xse--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2015,
+            "yearTo": 2016,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 without hybrid",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2015 Highlander LE 3.5L water pump)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2015-toyota-highlander--le--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2016 Highlander LE Plus 3.5L water pump)",
+                "url": "https://parts.olathetoyota.com/v-2016-toyota-highlander--le-plus--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2008,
+            "yearTo": 2016,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "3.5L V6",
+            "restriction": "3.5L V6 only",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2008 Sienna CE 3.5L water pump)",
+                "url": "https://parts.longotoyota.com/v-2008-toyota-sienna--ce--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2016 Sienna L 3.5L water pump)",
+                "url": "https://parts.longotoyota.com/v-2016-toyota-sienna--l--3-5l-v6-gas/cooling-system--water-pump",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-engine-water-pump-1610009442",
+        "https://parts.longotoyota.com/v-2007-toyota-camry--le--3-5l-v6-gas/cooling-system--water-pump",
+        "https://parts.longotoyota.com/v-2008-toyota-sienna--ce--3-5l-v6-gas/cooling-system--water-pump",
+        "https://parts.longotoyota.com/v-2016-toyota-sienna--l--3-5l-v6-gas/cooling-system--water-pump",
+        "https://parts.olathetoyota.com/v-2016-toyota-highlander--le-plus--3-5l-v6-gas/cooling-system--water-pump",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-engine-water-pump-1610009442",
+        "https://toyotaparts.lakelandtoyota.com/v-2015-toyota-highlander--le--3-5l-v6-gas/cooling-system--water-pump",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-engine-water-pump-1610009442",
+        "https://wholesaledirect.moderntoyota.com/v-2015-toyota-camry--xse--3-5l-v6-gas/cooling-system--water-pump",
+        "https://www.toyotapartsdeal.com/oem-2016-toyota-highlander-water_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
     }
   ]
 }
