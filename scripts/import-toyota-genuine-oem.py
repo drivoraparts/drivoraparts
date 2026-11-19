@@ -61,6 +61,16 @@ IMAGES = {
     "43512-04052": ["top_43512-04052.webp"],
     "43512-06200": ["top_43512-06200.webp"],
     "43512-0R010": ["top_43512-0R010.webp"],
+    # Batch 6: Toyota's first photo shows a left/right pair; the listing is one mirror.
+    "87910-08220": ["8791008220_2.webp", "8791008220_3.webp"],
+    # Batch 6: photo 3 is a label card, not the lamp.
+    "81550-08190": ["8155008190_2.webp", "8155008190_1.webp"],
+    # Batch 6: photo 2 is a can of compressor oil, not the condenser.
+    "884A0-0C010": ["884A00C010_1.webp"],
+    # Batch 6: photo 2 is the front of the lamp; photo 3 is a dust cap.
+    "81110-02T70": ["8111002T70_2.webp", "8111002T70_1.webp"],
+    # Batch 6: Toyota's first photo shows a left/right pair; the listing is one mirror.
+    "87910-08240": ["8791008240_2.webp", "8791008240_3.webp"],
 }
 
 

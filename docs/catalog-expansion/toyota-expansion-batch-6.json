@@ -1,0 +1,3540 @@
+{
+  "_comment": "Toyota expansion batch 6 (2026-11-19): premium genuine Toyota parts, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 17-inch Dark Gray 42611-AK051 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-AK051",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2024–2025 Toyota Tacoma (17-inch dark gray alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "17-inch dark gray alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 17-inch dark gray 42611-AK051 for the Toyota Tacoma. Genuine Toyota 17-inch dark gray alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-AK051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (17-inch dark gray alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)\nRestriction (2024-2025 Tacoma): 17-inch dark gray alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 672.82,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 450.79,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611ak051"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 450.79,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611ak051"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 461.15,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak051.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 465.16,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611ak051"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 469.21,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-42611ak051"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 551.75,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak051"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 428.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "17-inch dark gray alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2024-2025 Toyota Tacoma Wheel, Alloy 42611-AK051)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611ak051",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024-2025 Toyota Tacoma Wheel, Alloy 42611-AK051)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-42611ak051",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42611-AK051 Wheel, Alloy 2024-2026 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak051",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak051",
+        "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611ak051",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-42611ak051",
+        "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611ak051",
+        "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak051.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch Chrome/Black 42611-AK031 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-AK031",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2024–2025 Toyota Tacoma (18-inch chrome/black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "18-inch chrome/black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 18-inch chrome/black 42611-AK031 for the Toyota Tacoma. Genuine Toyota 18-inch chrome and black alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-AK031\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (18-inch chrome/black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)\nRestriction (2024-2025 Tacoma): 18-inch chrome/black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 687.95,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 461.15,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak031.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 461.15,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak031.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 463.22,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-42611ak031"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 495.0,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak031"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 438.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "18-inch chrome/black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2024-2026 Toyota Tacoma Wheel, Alloy 42611-AK031)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-42611ak031",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42611-AK031 Wheel, Alloy 2024 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak031",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak031",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-42611ak031",
+        "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak031.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 17-inch Silver 42611-AK011 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-AK011",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2024–2025 Toyota Tacoma (17-inch silver alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "17-inch silver alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 17-inch silver 42611-AK011 for the Toyota Tacoma. Genuine Toyota 17-inch silver alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-AK011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (17-inch silver alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)\nRestriction (2024-2025 Tacoma): 17-inch silver alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 612.1,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 410.31,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak011.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 410.31,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak011.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 423.19,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611ak011"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 469.64,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak011"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 389.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "17-inch silver alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42611-AK011 Wheel, Alloy 2024-2025 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak011",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2024-2026 Toyota Tacoma Wheel, Alloy 42611-AK011)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611ak011",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-42611ak011",
+        "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611ak011",
+        "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-ak011.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 20-inch Black 42611-0C320 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-0C320",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2022–2025 Toyota Tundra (20-inch black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "20-inch black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 20-inch black 42611-0C320 for the Toyota Tundra. Genuine Toyota 20-inch black alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-0C320\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (20-inch black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)\nRestriction (2022-2025 Tundra): 20-inch black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 728.37,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 488.01,
+          "url": "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/suspension--wheels"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 488.01,
+            "url": "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/suspension--wheels"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 503.57,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-426110c320"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 507.95,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c320"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 463.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "20-inch black alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2026 Toyota Tundra Wheel, Alloy 42611-0C320)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c320",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42611-0C320 Wheel, Alloy 2022-2026 Toyota Tundra)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110c320",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110c320",
+        "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/suspension--wheels",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c320",
+        "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-426110c320"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch Silver 42611-0C280 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-0C280",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2022–2025 Toyota Tundra (18-inch silver 6 double-spoke alloy wheel; wheel style is trim dependent; sold individually; Sequoia use not confirmed; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "18-inch silver 6 double-spoke alloy wheel; wheel style is trim dependent; sold individually; Sequoia use not confirmed; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 18-inch silver 42611-0C280 for the Toyota Tundra. Genuine Toyota 18-inch silver 6 double-spoke alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-0C280\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (18-inch silver 6 double-spoke alloy wheel; wheel style is trim dependent; sold individually; Sequoia use not confirmed; confirm by VIN)\nRestriction (2022-2025 Tundra): 18-inch silver 6 double-spoke alloy wheel; wheel style is trim dependent; sold individually; Sequoia use not confirmed; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 667.98,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 462.71,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-0c280.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 462.71,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-0c280.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 465.84,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c280"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 530.1,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110c280"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 439.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "18-inch silver 6 double-spoke alloy wheel; wheel style is trim dependent; sold individually; Sequoia use not confirmed; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2025 Toyota Wheel, Alloy 42611-0C280)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c280",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (Wheels for 2024 Toyota Tundra 1794 Edition)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/suspension--wheels",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110c280",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c280",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/suspension--wheels",
+        "https://www.toyotapartsdeal.com/oem/toyota~wheel~disc~42611-0c280.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch TRD Off-Road 42611-0C300 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-0C300",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2022–2025 Toyota Tundra (18-inch TRD Off-Road (type 1) alloy wheel; TRD Off-Road package only; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "18-inch TRD Off-Road (type 1) alloy wheel; TRD Off-Road package only; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 18-inch trd off-road 42611-0C300 for the Toyota Tundra. Genuine Toyota 18-inch TRD Off-Road alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-0C300\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (18-inch TRD Off-Road (type 1) alloy wheel; TRD Off-Road package only; sold individually; confirm by VIN)\nRestriction (2022-2025 Tundra): 18-inch TRD Off-Road (type 1) alloy wheel; TRD Off-Road package only; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 683.12,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 457.92,
+          "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-tundra-spare_wheel.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 457.92,
+            "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-tundra-spare_wheel.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 459.97,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-426110c300"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 476.4,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c300"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 435.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "18-inch TRD Off-Road (type 1) alloy wheel; TRD Off-Road package only; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2026 Toyota Wheel, Alloy 42611-0C300)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c300",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2022-2026 Toyota Wheel, Alloy 42611-0C300)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-426110c300",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110c300",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-426110c300",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-tundra-spare_wheel.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Throttle Body Assembly 22030-F0030 — Tacoma / Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "22030-F0030",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "throttle",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2024–2025 Toyota Tacoma (2.4L turbo; (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN); 2023–2025 Toyota Highlander (2.4L turbo; (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L turbo; (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "2.4L turbo; (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota throttle body assembly 22030-F0030 for the Toyota Tacoma, Highlander. Electronic throttle body with actuator for the 2.4L turbocharged four-cylinder.\n\nSpecifications\n\nPart number: 22030-F0030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (2.4L turbo; (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN); 2023–2025 Toyota Highlander (2.4L turbo; (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN)\nRestriction (2024-2025 Tacoma): 2.4L turbo (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN\nRestriction (2023-2025 Highlander): 2.4L turbo (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 440.77,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 289.32,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-throttle-body-22030f0030"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 289.32,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-throttle-body-22030f0030"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 303.33,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-tacoma-throttle_body.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 307.39,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-throttle-body-22030f0030"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 274.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "2.4L turbo",
+            "restriction": "2.4L turbo (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2025 Toyota Throttle Body 22030-F0030)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-throttle-body-22030f0030",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2023-2025 Toyota Throttle Body 22030-F0030)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-throttle-body-22030f0030",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "2.4L turbo",
+            "restriction": "2.4L turbo (T24A-FTS) only; dealer notes exclude Japan-built vehicles; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2025 Toyota Throttle Body 22030-F0030)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-throttle-body-22030f0030",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2023-2025 Toyota Throttle Body 22030-F0030)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-throttle-body-22030f0030",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-throttle-body-22030f0030",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-throttle-body-22030f0030",
+        "https://www.toyotapartsdeal.com/oem-toyota-tacoma-throttle_body.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Turbocharger, Left 17201-F4011 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "17201-F4011",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "turbo",
+      "condition": "brand-new",
+      "proposedCategory": "turbocharger",
+      "proposedCategoryName": "Turbocharger",
+      "fitment": "2022–2025 Toyota Tundra (3.4L twin-turbo V6; left-bank turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications: confirm by VIN; one-time-use fasteners are sold separately); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid; left-bank turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "3.4L twin-turbo V6; left-bank turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications: confirm by VIN; one-time-use fasteners are sold separately"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "3.4L twin-turbo V6 hybrid; left-bank turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota turbocharger, left 17201-F4011 for the Toyota Tundra, Sequoia. Left-bank turbocharger for the 3.4L twin-turbo V6.\n\nSpecifications\n\nPart number: 17201-F4011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (3.4L twin-turbo V6; left-bank turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications: confirm by VIN; one-time-use fasteners are sold separately); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid; left-bank turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately)\nRestriction (2022-2025 Tundra): left-bank turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications: confirm by VIN; one-time-use fasteners are sold separately\nRestriction (2023-2025 Sequoia): left-bank turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 4249.39,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 2835.82,
+          "url": "https://wholesaledirect.moderntoyota.com/v-2022-toyota-tundra--platinum--3-4l-v6-electric-gas/air-and-fuel-delivery--turbocharger-supercharger-and-ram-air"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 2835.82,
+            "url": "https://wholesaledirect.moderntoyota.com/v-2022-toyota-tundra--platinum--3-4l-v6-electric-gas/air-and-fuel-delivery--turbocharger-supercharger-and-ram-air"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 2963.56,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/engine--turbocharger-and-components"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 3321.12,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-turbocharger-17201f4011"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 2694.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "3.4L twin-turbo V6",
+            "restriction": "left-bank turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications: confirm by VIN; one-time-use fasteners are sold separately",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2024 Tundra Capstone 3.4L turbocharger and components)",
+                "url": "https://parts.longotoyota.com/v-2024-toyota-tundra--capstone--3-4l-v6-electric-gas/engine--turbocharger-and-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Tundra SR 3.4L turbocharger and components)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/engine--turbocharger-and-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "3.4L twin-turbo V6 hybrid",
+            "restriction": "left-bank turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2023 Sequoia SR5 3.4L turbocharger, supercharger and ram air)",
+                "url": "https://parts.olathetoyota.com/v-2023-toyota-sequoia--sr5--3-4l-v6-electric-gas/air-and-fuel-delivery--turbocharger-supercharger-and-ram-air",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-turbocharger-17201f4011",
+        "https://parts.longotoyota.com/v-2024-toyota-tundra--capstone--3-4l-v6-electric-gas/engine--turbocharger-and-components",
+        "https://parts.olathetoyota.com/v-2023-toyota-sequoia--sr5--3-4l-v6-electric-gas/air-and-fuel-delivery--turbocharger-supercharger-and-ram-air",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr--3-4l-v6-gas/engine--turbocharger-and-components",
+        "https://wholesaledirect.moderntoyota.com/v-2022-toyota-tundra--platinum--3-4l-v6-electric-gas/air-and-fuel-delivery--turbocharger-supercharger-and-ram-air"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-AQ010 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-AQ010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2025–2025 Toyota Camry (passenger side; headlamp type is trim dependent; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2025,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "passenger side; headlamp type is trim dependent; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-AQ010 for the Toyota Camry. Complete headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-AQ010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2025–2025 Toyota Camry (passenger side; headlamp type is trim dependent; confirm by VIN)\nRestriction (2025-2025 Camry): passenger side; headlamp type is trim dependent; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1222.4,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 819.01,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 819.01,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 916.39,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 955.37,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 778.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2025,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "passenger side; headlamp type is trim dependent; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2025 Toyota Camry Headlamp Assembly 81110-AQ010)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Toyota Camry Headlamp Assembly 81110-AQ010)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-AQ010 Headlamp Assembly 2025 Toyota Camry)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010",
+        "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-81110aq010"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Sliding Door Motor, Right 85005-08051 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "85005-08051",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "door_lock",
+      "condition": "brand-new",
+      "proposedCategory": "electronics",
+      "proposedCategoryName": "Electronics",
+      "fitment": "2022–2024 Toyota Sienna (right (passenger) power sliding door motor; supersedes 85005-08050; 2021 and 2025 models use other numbers; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "right (passenger) power sliding door motor; supersedes 85005-08050; 2021 and 2025 models use other numbers; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power sliding door motor, right 85005-08051 for the Toyota Sienna. Power sliding door drive motor and cable assembly, right side.\n\nSpecifications\n\nPart number: 85005-08051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2024 Toyota Sienna (right (passenger) power sliding door motor; supersedes 85005-08050; 2021 and 2025 models use other numbers; confirm by VIN)\nRestriction (2022-2024 Sienna): right (passenger) power sliding door motor; supersedes 85005-08050; 2021 and 2025 models use other numbers; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1598.97,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 1047.81,
+          "url": "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/body--sliding-door-hardware"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 1047.81,
+            "url": "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/body--sliding-door-hardware"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1070.88,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-door_lock_actuator_motor.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1096.54,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-power-sliding-door-motor-8500508051"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 995.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "right (passenger) power sliding door motor; supersedes 85005-08050; 2021 and 2025 models use other numbers; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2024 Toyota Sienna Motor 85005-08051)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-power-sliding-door-motor-8500508051",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2022 Sienna sliding door hardware)",
+                "url": "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/body--sliding-door-hardware",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/body--sliding-door-hardware",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-power-sliding-door-motor-8500508051",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-door_lock_actuator_motor.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Sliding Door Motor, Left 85006-08051 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "85006-08051",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "door_lock",
+      "condition": "brand-new",
+      "proposedCategory": "electronics",
+      "proposedCategoryName": "Electronics",
+      "fitment": "2022–2024 Toyota Sienna (left (driver) power sliding door motor; 2021 and 2025 models use other numbers; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "left (driver) power sliding door motor; 2021 and 2025 models use other numbers; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power sliding door motor, left 85006-08051 for the Toyota Sienna. Power sliding door drive motor and cable assembly, left side.\n\nSpecifications\n\nPart number: 85006-08051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2024 Toyota Sienna (left (driver) power sliding door motor; 2021 and 2025 models use other numbers; confirm by VIN)\nRestriction (2022-2024 Sienna): left (driver) power sliding door motor; 2021 and 2025 models use other numbers; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1522.0,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 1015.67,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-motor-8500608051"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 1015.67,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-motor-8500608051"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1043.12,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-motor-8500608051"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1070.88,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-door_lock_actuator_motor.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 964.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "left (driver) power sliding door motor; 2021 and 2025 models use other numbers; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2024 Toyota Sienna Motor 85006-08051)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-motor-8500608051",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2022-2024 Toyota Sienna Motor 85006-08051)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-motor-8500608051",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-motor-8500608051",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-motor-8500608051",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-door_lock_actuator_motor.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Tail Lamp Assembly, Right 81550-08190 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81550-08190",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "taillight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2023–2025 Toyota Sienna (right (passenger) side; LE, XLE and Woodland trims; XSE, Limited and Platinum use a different lamp; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "right (passenger) side; LE, XLE and Woodland trims; XSE, Limited and Platinum use a different lamp; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota tail lamp assembly, right 81550-08190 for the Toyota Sienna. Rear combination (tail) lamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81550-08190\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2025 Toyota Sienna (right (passenger) side; LE, XLE and Woodland trims; XSE, Limited and Platinum use a different lamp; confirm by VIN)\nRestriction (2023-2025 Sienna): right (passenger) side; LE, XLE and Woodland trims; XSE, Limited and Platinum use a different lamp; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 341.47,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 231.18,
+          "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-tail_light.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 231.18,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-tail_light.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 234.03,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 238.14,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 242.05,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 219.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "right (passenger) side; LE, XLE and Woodland trims; XSE, Limited and Platinum use a different lamp; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2025 Toyota Sienna Tail Light Assembly 81550-08190)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81550-08190 Tail Lamp Assembly 2023-2025 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2023-2025 Toyota Sienna Tail Light Assembly 81550-08190)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-tail-lamp-assembly-8155008190",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-sienna-tail_light.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right 87910-08220 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87910-08220",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "mirror",
+      "condition": "brand-new",
+      "proposedCategory": "body-parts",
+      "proposedCategoryName": "Body Parts",
+      "fitment": "2021–2024 Toyota Sienna (right (passenger) side; without power fold; built to 05/2024; mirror cover paint not included; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "right (passenger) side; without power fold; built to 05/2024; mirror cover paint not included; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota outside mirror assembly, right 87910-08220 for the Toyota Sienna. Outside rear-view mirror assembly, passenger side.\n\nSpecifications\n\nPart number: 87910-08220\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2024 Toyota Sienna (right (passenger) side; without power fold; built to 05/2024; mirror cover paint not included; confirm by VIN)\nRestriction (2021-2024 Sienna): right (passenger) side; without power fold; built to 05/2024; mirror cover paint not included; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 384.38,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 240.01,
+          "url": "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/electrical--mirrors"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 240.01,
+            "url": "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/electrical--mirrors"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 268.06,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87910-08220.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 268.06,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008220"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 296.99,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008220"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 228.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "right (passenger) side; without power fold; built to 05/2024; mirror cover paint not included; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2024 Toyota Sienna Mirror Assembly Outer R 87910-08220)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008220",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (87910-08220 Mirror Assembly Outer R 2021-2024 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008220",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008220",
+        "https://parts.olathetoyota.com/v-2022-toyota-sienna--woodland-edition--2-5l-l4-electric-gas/electrical--mirrors",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008220",
+        "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87910-08220.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 20-inch 42611-0EB80 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-0EB80",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2023–2025 Toyota Highlander (20-inch alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "20-inch alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 20-inch 42611-0EB80 for the Toyota Highlander. Genuine Toyota 20-inch alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-0EB80\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2025 Toyota Highlander (20-inch alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN)\nRestriction (2023-2025 Highlander): 20-inch alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 743.34,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 472.74,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-426110eb80?c=bD0xMyZuPUR5bmFtaWMgU0VPIFBhZ2U%3D"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 472.74,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-426110eb80?c=bD0xMyZuPUR5bmFtaWMgU0VPIFBhZ2U%3D"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 513.92,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2023-2024-toyota-highlander-wheel-alloy-426110eb80"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 518.39,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110eb80"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 589.89,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110eb80"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 449.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "20-inch alloy wheel; wheel style is trim dependent; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2025 Toyota Highlander Wheel, Alloy 42611-0EB80)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110eb80",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42611-0EB80 Wheel, Alloy 2023-2025 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110eb80",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2023-2025 Toyota Highlander Wheel, Alloy 42611-0EB80)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-426110eb80",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-wheel-alloy-426110eb80",
+        "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-426110eb80",
+        "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-426110eb80?c=bD0xMyZuPUR5bmFtaWMgU0VPIFBhZ2U%3D",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-alloy-426110eb80",
+        "https://www.sparksparts.com/oem-parts/toyota-2023-2024-toyota-highlander-wheel-alloy-426110eb80"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right 87910-0R908 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87910-0R908",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "mirror",
+      "condition": "brand-new",
+      "proposedCategory": "body-parts",
+      "proposedCategoryName": "Body Parts",
+      "fitment": "2019–2025 Toyota RAV4 (right (passenger) side (87910 = right in Toyota numbering; one retailer page mislabels it driver side); heated, with blind spot monitor; mirror cover paint not included; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "right (passenger) side (87910 = right in Toyota numbering; one retailer page mislabels it driver side); heated, with blind spot monitor; mirror cover paint not included; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota outside mirror assembly, right 87910-0R908 for the Toyota RAV4. Outside rear-view mirror assembly, passenger side, heated with blind spot monitor.\n\nSpecifications\n\nPart number: 87910-0R908\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2025 Toyota RAV4 (right (passenger) side (87910 = right in Toyota numbering; one retailer page mislabels it driver side); heated, with blind spot monitor; mirror cover paint not included; confirm by VIN)\nRestriction (2019-2025 RAV4): right (passenger) side (87910 = right in Toyota numbering; one retailer page mislabels it driver side); heated, with blind spot monitor; mirror cover paint not included; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 399.19,
+        "lowestCompetitor": {
+          "seller": "Sparks Toyota",
+          "price": 255.75,
+          "url": "https://www.sparksparts.com/oem-parts/toyota-mirror-assembly-879100r908"
+        },
+        "competitors": [
+          {
+            "seller": "Sparks Toyota",
+            "price": 255.75,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-mirror-assembly-879100r908"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 257.97,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87910-0r908.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 278.39,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-879100r908"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 316.79,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-879100r908"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 242.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "right (passenger) side (87910 = right in Toyota numbering; one retailer page mislabels it driver side); heated, with blind spot monitor; mirror cover paint not included; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2019-2025 Toyota Mirror Assembly Outer Right PASSENGER SIDE 87910-0R908)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-mirror-assembly-outer-right-passenger-side-879100r908",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2019-2025 Toyota Mirror Assembly 87910-0R908)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-879100r908",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (87910-0R908 Mirror Assembly 2019-2025 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-879100r908",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-879100r908",
+        "https://parts.olathetoyota.com/oem-parts/toyota-mirror-assembly-outer-right-passenger-side-879100r908",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-879100r908",
+        "https://www.sparksparts.com/oem-parts/toyota-mirror-assembly-879100r908",
+        "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87910-0r908.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right, with Camera 87910-AK040 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87910-AK040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "mirror",
+      "condition": "brand-new",
+      "proposedCategory": "body-parts",
+      "proposedCategoryName": "Body Parts",
+      "fitment": "2024–2025 Toyota Tacoma (right (passenger) side; with turn signal lamp and surround-view camera (Toyota photo shows the camera; one dealer page omits it); mirror cover paint not included; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "right (passenger) side; with turn signal lamp and surround-view camera (Toyota photo shows the camera; one dealer page omits it); mirror cover paint not included; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota outside mirror assembly, right, with camera 87910-AK040 for the Toyota Tacoma. Outside rear-view mirror assembly, passenger side, with turn signal and surround-view camera.\n\nSpecifications\n\nPart number: 87910-AK040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (right (passenger) side; with turn signal lamp and surround-view camera (Toyota photo shows the camera; one dealer page omits it); mirror cover paint not included; confirm by VIN)\nRestriction (2024-2025 Tacoma): right (passenger) side; with turn signal lamp and surround-view camera (Toyota photo shows the camera; one dealer page omits it); mirror cover paint not included; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1026.11,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 658.11,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-87910ak040"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 658.11,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-87910ak040"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 687.22,
+            "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-tacoma-car_mirror.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 715.59,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tacoma--sr--2-4l-l4-gas/body--outside-mirrors"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 717.59,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-door-mirror-87910ak040"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 625.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "right (passenger) side; with turn signal lamp and surround-view camera (Toyota photo shows the camera; one dealer page omits it); mirror cover paint not included; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2024-2025 Toyota Tacoma Mirror Assembly 87910-AK040)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-87910ak040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2024-2026 Toyota Tacoma Mirror Assembly 87910-AK040)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-door-mirror-87910ak040",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tacoma--sr--2-4l-l4-gas/body--outside-mirrors",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-87910ak040",
+        "https://www.sparksparts.com/oem-parts/toyota-door-mirror-87910ak040",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-tacoma-car_mirror.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0C300 — Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-0C300",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2023–2025 Toyota Sequoia (passenger side; with daytime running lamps, TRD Pro; other trims use different headlamps; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "passenger side; with daytime running lamps, TRD Pro; other trims use different headlamps; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-0C300 for the Toyota Sequoia. Complete LED headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-0C300\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2025 Toyota Sequoia (passenger side; with daytime running lamps, TRD Pro; other trims use different headlamps; confirm by VIN)\nRestriction (2023-2025 Sequoia): passenger side; with daytime running lamps, TRD Pro; other trims use different headlamps; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 989.84,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 663.19,
+          "url": "https://parts.olathetoyota.com/headlights?page=3"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 663.19,
+            "url": "https://parts.olathetoyota.com/headlights?page=3"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 690.3,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100c300"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 704.94,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2023-2024-toyota-sequoia-headlamp-assembly-811100c300"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 751.0,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811100c300"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 630.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "passenger side; with daytime running lamps, TRD Pro; other trims use different headlamps; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2025 Toyota Sequoia Headlamp Assembly 81110-0C300)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100c300",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-0C300 Headlamp Assembly 2023-2025 Toyota Sequoia)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811100c300",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-811100c300",
+        "https://parts.olathetoyota.com/headlights?page=3",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-811100c300",
+        "https://www.sparksparts.com/oem-parts/toyota-2023-2024-toyota-sequoia-headlamp-assembly-811100c300"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch Black 42611-AQ030 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42611-AQ030",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "wheel",
+      "condition": "brand-new",
+      "proposedCategory": "wheels-tires",
+      "proposedCategoryName": "Wheels & Tires",
+      "fitment": "2025–2025 Toyota Camry (18-inch alloy wheel, SE trim per dealer notes; sold individually; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2025,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "18-inch alloy wheel, SE trim per dealer notes; sold individually; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota alloy wheel, 18-inch black 42611-AQ030 for the Toyota Camry. Genuine Toyota 18-inch alloy road wheel, sold individually (no tire, cap or lug nuts).\n\nSpecifications\n\nPart number: 42611-AQ030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2025–2025 Toyota Camry (18-inch alloy wheel, SE trim per dealer notes; sold individually; confirm by VIN)\nRestriction (2025-2025 Camry): 18-inch alloy wheel, SE trim per dealer notes; sold individually; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 561.87,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 376.45,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611aq030"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 376.45,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611aq030"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 378.32,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-42611aq030"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 380.35,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-disc-42611aq030"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 420.89,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611aq030"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 357.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2025,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "18-inch alloy wheel, SE trim per dealer notes; sold individually; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2025 Toyota Camry Wheel, Alloy 42611-AQ030)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611aq030",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Toyota Camry Wheel, Alloy 42611-AQ030)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-disc-42611aq030",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-wheel-alloy-42611aq030",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-wheel-disc-42611aq030",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-wheel-alloy-42611aq030",
+        "https://www.sparksparts.com/oem-parts/toyota-wheel-alloy-42611aq030"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Fuel Pump and Sender Assembly 77020-02890 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "77020-02890",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fuel_pump",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2019–2025 Toyota Corolla (sedan; dealer notes restrict by engine and build plant (Japan- or US-built); supersedes 77020-12A00; tank O-ring is single-use and sold separately; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "sedan; dealer notes restrict by engine and build plant (Japan- or US-built); supersedes 77020-12A00; tank O-ring is single-use and sold separately; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota fuel pump and sender assembly 77020-02890 for the Toyota Corolla. In-tank fuel pump and fuel sender (gauge) assembly.\n\nSpecifications\n\nPart number: 77020-02890\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2025 Toyota Corolla (sedan; dealer notes restrict by engine and build plant (Japan- or US-built); supersedes 77020-12A00; tank O-ring is single-use and sold separately; confirm by VIN)\nRestriction (2019-2025 Corolla): sedan; dealer notes restrict by engine and build plant (Japan- or US-built); supersedes 77020-12A00; tank O-ring is single-use and sold separately; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 529.26,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 356.37,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 356.37,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 369.05,
+            "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-corolla-fuel_pump.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 369.1,
+            "url": "https://parts.olathetoyota.com/v-2021-toyota-corolla--l--1-8l-l4-gas/fuel-system--fuel-system-components"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 408.31,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 413.65,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 338.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "sedan; dealer notes restrict by engine and build plant (Japan- or US-built); supersedes 77020-12A00; tank O-ring is single-use and sold separately; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2019-2025 Toyota Corolla Fuel Pump And Sender Assembly 77020-02890)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (77020-02890 Fuel Pump And Sender Assembly 2019-2025 Toyota Corolla)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2019-2025 Toyota Corolla Fuel Pump And Sender Assembly 77020-02890)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890",
+        "https://parts.olathetoyota.com/v-2021-toyota-corolla--l--1-8l-l4-gas/fuel-system--fuel-system-components",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-fuel-pump-and-sender-assembly-7702002890",
+        "https://www.toyotapartsdeal.com/oem-2021-toyota-corolla-fuel_pump.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Tail Lamp Assembly, Right 81550-0E360 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81550-0E360",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "taillight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2024–2025 Toyota Highlander (right (passenger) side, body-mounted rear combination lamp; 2020-2023 models use 81550-0E230; Grand Highlander uses a different lamp; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "right (passenger) side, body-mounted rear combination lamp; 2020-2023 models use 81550-0E230; Grand Highlander uses a different lamp; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota tail lamp assembly, right 81550-0E360 for the Toyota Highlander. Rear combination (tail) lamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81550-0E360\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Highlander (right (passenger) side, body-mounted rear combination lamp; 2020-2023 models use 81550-0E230; Grand Highlander uses a different lamp; confirm by VIN)\nRestriction (2024-2025 Highlander): right (passenger) side, body-mounted rear combination lamp; 2020-2023 models use 81550-0E230; Grand Highlander uses a different lamp; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 400.52,
+        "lowestCompetitor": {
+          "seller": "Lakeland Toyota",
+          "price": 258.8,
+          "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-highlander--platinum--2-4l-l4-gas/electrical--tail-lamps"
+        },
+        "competitors": [
+          {
+            "seller": "Lakeland Toyota",
+            "price": 258.8,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-highlander--platinum--2-4l-l4-gas/electrical--tail-lamps"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 287.78,
+            "url": "https://www.toyotapartsdeal.com/parts-list/2023-toyota-highlander/electrical/rear_combination_lamp.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 315.43,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e360"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 245.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "right (passenger) side, body-mounted rear combination lamp; 2020-2023 models use 81550-0E230; Grand Highlander uses a different lamp; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024-2025 Toyota Highlander Tail Lamp Assembly 81550-0E360)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e360",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81550-0E360 Tail Lamp Assembly 2024-2025 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e360",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e360",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-tail-lamp-assembly-815500e360",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-highlander--platinum--2-4l-l4-gas/electrical--tail-lamps",
+        "https://www.toyotapartsdeal.com/parts-list/2023-toyota-highlander/electrical/rear_combination_lamp.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota A/C Condenser Assembly 884A0-0C010 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "884A0-0C010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "condenser",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2022–2025 Toyota Tundra (3.4L twin-turbo V6; non-hybrid (i-FORCE) only; hybrid i-FORCE MAX trucks use a different condenser; includes receiver drier; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "3.4L twin-turbo V6; non-hybrid (i-FORCE) only; hybrid i-FORCE MAX trucks use a different condenser; includes receiver drier; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota a/c condenser assembly 884A0-0C010 for the Toyota Tundra. A/C condenser assembly with receiver drier.\n\nSpecifications\n\nPart number: 884A0-0C010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (3.4L twin-turbo V6; non-hybrid (i-FORCE) only; hybrid i-FORCE MAX trucks use a different condenser; includes receiver drier; confirm by VIN)\nRestriction (2022-2025 Tundra): non-hybrid (i-FORCE) only; hybrid i-FORCE MAX trucks use a different condenser; includes receiver drier; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 403.29,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 276.39,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-condenser-assembly-884a00c010"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 276.39,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-condenser-assembly-884a00c010"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 281.24,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-condenser-assembly-884a00c010"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 281.24,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-tundra-a_c_condenser.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 283.67,
+            "url": "https://parts.olathetoyota.com/v-2024-toyota-tundra--limited--3-4l-v6-electric-gas/hvac--switches-and-sensors"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 262.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "3.4L twin-turbo V6",
+            "restriction": "non-hybrid (i-FORCE) only; hybrid i-FORCE MAX trucks use a different condenser; includes receiver drier; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2026 Toyota Tundra A/C Condenser 884A0-0C010)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-condenser-assembly-884a00c010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2022-2026 Toyota Tundra A/C Condenser 884A0-0C010)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-condenser-assembly-884a00c010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/v-2024-toyota-tundra--limited--3-4l-v6-electric-gas/hvac--switches-and-sensors",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-condenser-assembly-884a00c010",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-condenser-assembly-884a00c010",
+        "https://www.toyotapartsdeal.com/oem-toyota-tundra-a_c_condenser.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator Cooling Fan Assembly 16360-F0190 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16360-F0190",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "fan",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2025–2025 Toyota Camry (2.5L hybrid; complete shroud, fan blade and motor; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2025,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L hybrid; complete shroud, fan blade and motor; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota radiator cooling fan assembly 16360-F0190 for the Toyota Camry. Radiator cooling fan assembly with shroud, blade and motor.\n\nSpecifications\n\nPart number: 16360-F0190\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2025–2025 Toyota Camry (2.5L hybrid; complete shroud, fan blade and motor; confirm by VIN)\nRestriction (2025-2025 Camry): 2.5L hybrid; complete shroud, fan blade and motor; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1360.94,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 884.86,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~fan~assy~w~motor~16360-f0190.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 884.86,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~fan~assy~w~motor~16360-f0190.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 940.92,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-fan-assembly-16360f0190"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 949.1,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fan-assembly-16360f0190"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 840.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2025,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "2.5L hybrid",
+            "restriction": "2.5L hybrid; complete shroud, fan blade and motor; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025-2026 Toyota Camry Fan Assembly 16360-F0190)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fan-assembly-16360f0190",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2025-2026 Toyota Camry Fan Assembly 16360-F0190)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-fan-assembly-16360f0190",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Camry SE 2.5L cooling fan)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-camry--se--2-5l-l4-electric-gas/cooling-system--cooling-fan",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-fan-assembly-16360f0190",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-camry--se--2-5l-l4-electric-gas/cooling-system--cooling-fan",
+        "https://www.sparksparts.com/oem-parts/toyota-fan-assembly-16360f0190",
+        "https://www.toyotapartsdeal.com/oem/toyota~fan~assy~w~motor~16360-f0190.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-02T70 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-02T70",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2023–2025 Toyota Corolla (passenger side; SE, XLE and XSE without adaptive headlamps per dealer notes; sedan; build origin may matter; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "passenger side; SE, XLE and XSE without adaptive headlamps per dealer notes; sedan; build origin may matter; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-02T70 for the Toyota Corolla. Complete LED headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-02T70\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2025 Toyota Corolla (passenger side; SE, XLE and XSE without adaptive headlamps per dealer notes; sedan; build origin may matter; confirm by VIN)\nRestriction (2023-2025 Corolla): passenger side; SE, XLE and XSE without adaptive headlamps per dealer notes; sedan; build origin may matter; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1111.11,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 741.47,
+          "url": "https://wholesaledirect.moderntoyota.com/v-2025-toyota-corolla--hybrid-le--1-8l-l4-electric-gas/electrical--headlamp-components"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 741.47,
+            "url": "https://wholesaledirect.moderntoyota.com/v-2025-toyota-corolla--hybrid-le--1-8l-l4-electric-gas/electrical--headlamp-components"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 743.25,
+            "url": "https://www.toyotapartsdeal.com/oem-2023-toyota-corolla-headlight.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 769.3,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-8111002t70"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 881.75,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-8111002t70"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 704.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "passenger side; SE, XLE and XSE without adaptive headlamps per dealer notes; sedan; build origin may matter; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2025 Toyota Corolla Headlamp Assembly 81110-02T70)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-8111002t70",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-02T70 Headlight Assembly 2023-2025 Toyota Corolla)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-8111002t70",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlamp-assembly-8111002t70",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-8111002t70",
+        "https://wholesaledirect.moderntoyota.com/v-2025-toyota-corolla--hybrid-le--1-8l-l4-electric-gas/electrical--headlamp-components",
+        "https://www.toyotapartsdeal.com/oem-2023-toyota-corolla-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Outside Mirror Assembly, Left 87940-0R908 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87940-0R908",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "mirror",
+      "condition": "brand-new",
+      "proposedCategory": "body-parts",
+      "proposedCategoryName": "Body Parts",
+      "fitment": "2019–2025 Toyota RAV4 (left (driver) side, companion to 87910-0R908; heated, with blind spot monitor; mirror cover paint not included; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "left (driver) side, companion to 87910-0R908; heated, with blind spot monitor; mirror cover paint not included; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota outside mirror assembly, left 87940-0R908 for the Toyota RAV4. Outside rear-view mirror assembly, driver side, heated with blind spot monitor.\n\nSpecifications\n\nPart number: 87940-0R908\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2025 Toyota RAV4 (left (driver) side, companion to 87910-0R908; heated, with blind spot monitor; mirror cover paint not included; confirm by VIN)\nRestriction (2019-2025 RAV4): left (driver) side, companion to 87910-0R908; heated, with blind spot monitor; mirror cover paint not included; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 399.19,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 260.52,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87940-0r908.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 260.52,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87940-0r908.html"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 267.89,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-879400r908"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 272.59,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-879400r908"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 310.19,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-879400r908"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 247.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "left (driver) side, companion to 87910-0R908; heated, with blind spot monitor; mirror cover paint not included; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2019-2025 Toyota Mirror Assembly 87940-0R908)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-879400r908",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (87940-0R908 Mirror Assembly 2019-2025 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-879400r908",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2019-2025 Toyota Mirror Assembly 87940-0R908)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-879400r908",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-879400r908",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-879400r908",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-mirror-assembly-879400r908",
+        "https://www.toyotapartsdeal.com/oem/toyota~mirror~assy~outer~r~87940-0r908.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right, with Camera 87910-08240 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "87910-08240",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "mirror",
+      "condition": "brand-new",
+      "proposedCategory": "body-parts",
+      "proposedCategoryName": "Body Parts",
+      "fitment": "2021–2024 Toyota Sienna (right (passenger) side; premium version with turn signal and camera (panoramic view monitor) as shown in Toyota's photo; mirrors without the camera use 87910-08220/-08230; mirror cover paint not included; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "right (passenger) side; premium version with turn signal and camera (panoramic view monitor) as shown in Toyota's photo; mirrors without the camera use 87910-08220/-08230; mirror cover paint not included; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota outside mirror assembly, right, with camera 87910-08240 for the Toyota Sienna. Outside rear-view mirror assembly, passenger side, with turn signal and camera.\n\nSpecifications\n\nPart number: 87910-08240\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2024 Toyota Sienna (right (passenger) side; premium version with turn signal and camera (panoramic view monitor) as shown in Toyota's photo; mirrors without the camera use 87910-08220/-08230; mirror cover paint not included; confirm by VIN)\nRestriction (2021-2024 Sienna): right (passenger) side; premium version with turn signal and camera (panoramic view monitor) as shown in Toyota's photo; mirrors without the camera use 87910-08220/-08230; mirror cover paint not included; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1649.2,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 1124.87,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-mirror-assembly-outer-right-passenger-side-8791008240"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 1124.87,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-mirror-assembly-outer-right-passenger-side-8791008240"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1150.13,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008240"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1298.85,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008240"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1068.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "right (passenger) side; premium version with turn signal and camera (panoramic view monitor) as shown in Toyota's photo; mirrors without the camera use 87910-08220/-08230; mirror cover paint not included; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2021-2024 Toyota Sienna Mirror Assembly Outer Right PASSENGER SIDE 87910-08240)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-mirror-assembly-outer-right-passenger-side-8791008240",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2024 Toyota Sienna Mirror Assembly Outer R 87910-08240)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008240",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (87910-08240 Mirror Assembly Outer R 2021-2024 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008240",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008240",
+        "https://parts.olathetoyota.com/oem-parts/toyota-mirror-assembly-outer-right-passenger-side-8791008240",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-mirror-assembly-outer-r-8791008240"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-08110 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-08110",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2021–2025 Toyota Sienna (passenger side; headlamp type is trim dependent (Platinum uses 81110-08430, Woodland uses 81110-08270); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "passenger side; headlamp type is trim dependent (Platinum uses 81110-08430, Woodland uses 81110-08270); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-08110 for the Toyota Sienna. Complete LED headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-08110\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (passenger side; headlamp type is trim dependent (Platinum uses 81110-08430, Woodland uses 81110-08270); confirm by VIN)\nRestriction (2021-2025 Sienna): passenger side; headlamp type is trim dependent (Platinum uses 81110-08430, Woodland uses 81110-08270); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1446.6,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 952.35,
+          "url": "https://www.autopartsprime.com/p/2022-toyota-sienna-headlight"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 952.35,
+            "url": "https://www.autopartsprime.com/p/2022-toyota-sienna-headlight"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1008.84,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-right-hand-8111008110"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1012.61,
+            "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-headlight.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 904.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "passenger side; headlamp type is trim dependent (Platinum uses 81110-08430, Woodland uses 81110-08270); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2025 Toyota Sienna Headlamp Assembly Right-hand 81110-08110)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-right-hand-8111008110",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (headlight catalog listing 81110-08110)",
+                "url": "https://parts.olathetoyota.com/c/lighting-lamps/headlights?page=52",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/c/lighting-lamps/headlights?page=52",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-headlamp-assembly-right-hand-8111008110",
+        "https://www.autopartsprime.com/p/2022-toyota-sienna-headlight",
+        "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-08270 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81110-08270",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2022–2024 Toyota Sienna (passenger side; Woodland Edition, without signature lighting; other trims use 81110-08110 or 81110-08430; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "passenger side; Woodland Edition, without signature lighting; other trims use 81110-08110 or 81110-08430; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlamp assembly, right 81110-08270 for the Toyota Sienna. Complete LED headlamp assembly, passenger side.\n\nSpecifications\n\nPart number: 81110-08270\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2024 Toyota Sienna (passenger side; Woodland Edition, without signature lighting; other trims use 81110-08110 or 81110-08430; confirm by VIN)\nRestriction (2022-2024 Sienna): passenger side; Woodland Edition, without signature lighting; other trims use 81110-08110 or 81110-08430; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1216.06,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 811.51,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlight-assembly-8111008270"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 811.51,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlight-assembly-8111008270"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 928.48,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-8111008270"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 959.14,
+            "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-headlight.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 770.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "passenger side; Woodland Edition, without signature lighting; other trims use 81110-08110 or 81110-08430; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (81110-08270 Headlight Assembly 2022-2024 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-8111008270",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2022-2024 Toyota Sienna Headlight Assembly 81110-08270)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlight-assembly-8111008270",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (headlight catalog: 81110-08270 Woodland Edition, without signature lighting)",
+                "url": "https://parts.olathetoyota.com/c/lighting-lamps/headlights?page=52",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-headlight-assembly-8111008270",
+        "https://parts.olathetoyota.com/c/lighting-lamps/headlights?page=52",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-headlight-assembly-8111008270",
+        "https://www.toyotapartsdeal.com/oem-2021-toyota-sienna-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

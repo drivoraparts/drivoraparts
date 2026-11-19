@@ -31,6 +31,17 @@ CAT = {
     "inverter_cooler": ("engine", "Engine"), "fan": ("engine", "Engine"), "thermostat": ("engine", "Engine"), "engine_mount": ("engine", "Engine"), "tensioner": ("engine", "Engine"), "axle": ("transmission", "Transmission"), "hose": ("engine", "Engine"),
     "headlight": ("lighting", "Lighting"), "taillight": ("lighting", "Lighting"), "fog_light": ("lighting", "Lighting"),
     "mirror": ("body-parts", "Body Parts"), "grille": ("body-parts", "Body Parts"),
+    "master_cylinder": ("brakes", "Brakes"), "abs": ("brakes", "Brakes"),
+    "propshaft": ("transmission", "Transmission"), "transfer": ("transmission", "Transmission"),
+    "turbo": ("turbocharger", "Turbocharger"),
+    "throttle": ("engine", "Engine"), "manifold": ("engine", "Engine"), "valve_cover": ("engine", "Engine"),
+    "oil_pump": ("engine", "Engine"), "blower": ("engine", "Engine"), "ps_pump": ("suspension", "Suspension"),
+    "wheel": ("wheels-tires", "Wheels & Tires"),
+    "window_regulator": ("electronics", "Electronics"), "door_lock": ("electronics", "Electronics"),
+    "camera": ("electronics", "Electronics"), "switch": ("electronics", "Electronics"), "module": ("electronics", "Electronics"),
+    "fender": ("body-parts", "Body Parts"), "hood": ("body-parts", "Body Parts"), "door_handle": ("body-parts", "Body Parts"),
+    "bumper_cover": ("bumper", "Bumpers"), "bumper_reinf": ("bumper", "Bumpers"),
+    "seat_belt": ("interior", "Interior"), "console": ("interior", "Interior"),
 }
 
 
