@@ -71290,5 +71290,1153 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4444": {
+    "productId": 4444,
+    "productName": "Genuine Toyota Radiator Cooling Fan Assembly 16360-F0190 for Toyota Camry (2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0190/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360F0190/16360F0190_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16360-F0190",
+      "16360F0190"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-F0190",
+    "sha256": "b5e5b8a7c58419bd3b653a3991125a5e5b2a4d0637a18fb534a0eb32c9a37172",
+    "bytes": 41444,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0190/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/16360F0190/16360F0190_2.webp",
+        "sha256": "a149ef19b9fcc83bf6e23f6640827c9923d0a118aab9a620f298fab9a2821277",
+        "bytes": 37028,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4445": {
+    "productId": 4445,
+    "productName": "Genuine Toyota Turbocharger, Left 17201-F4011 for Toyota Tundra / Sequoia (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-turbocharger-left-17201-f4011/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/17201F4011/17201F4011_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "17201-F4011",
+      "17201F4011"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 17201-F4011",
+    "sha256": "aa668ca5890d35b417d4cd321aeaa7542d5b20b77cdc7f21094330e331fb41da",
+    "bytes": 16800,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-turbocharger-left-17201-f4011/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/17201F4011/17201F4011_2.webp",
+        "sha256": "34d8f37a5a5eb48f3333880c6c6abcbb602c5d70d0435c1989abb97d180bfa87",
+        "bytes": 15542,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4446": {
+    "productId": 4446,
+    "productName": "Genuine Toyota Throttle Body Assembly 22030-F0030 for Toyota Tacoma / Highlander (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-throttle-body-assembly-22030-f0030/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/22030F0030/22030F0030_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "22030-F0030",
+      "22030F0030"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 22030-F0030",
+    "sha256": "7050c541db04a5b76a4a2be295336b755083ff89b248b4cf7a820061cdc0949d",
+    "bytes": 13528,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-throttle-body-assembly-22030-f0030/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/22030F0030/22030F0030_2.webp",
+        "sha256": "fc3f4602fe880435455bfe7d54430835c3a3cb67f1365120a038bd0a54147778",
+        "bytes": 19694,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-throttle-body-assembly-22030-f0030/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/22030F0030/22030F0030_3.webp",
+        "sha256": "b03bfb6fbb6c66c96b7220e2cd9ec5a30954dad936300e922a47547ed080e871",
+        "bytes": 14744,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4447": {
+    "productId": 4447,
+    "productName": "Genuine Toyota Alloy Wheel, 18-inch Silver 42611-0C280 for Toyota Tundra (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-silver-42611-0c280/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/426110C280/426110C280_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-0C280",
+      "426110C280"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-0C280",
+    "sha256": "756204917419a4a18f341efb73110ced19d646210476ecdaef12ef0ebc1c18c4",
+    "bytes": 16010,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-silver-42611-0c280/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/426110C280/426110C280_2.webp",
+        "sha256": "9a8176c95a455fd82269d8482f89190b35085210ec8468ef419251676fd695d9",
+        "bytes": 17668,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4448": {
+    "productId": 4448,
+    "productName": "Genuine Toyota Alloy Wheel, 18-inch TRD Off-Road 42611-0C300 for Toyota Tundra (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-trd-off-road-42611-0c300/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/426110C300/426110C300_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-0C300",
+      "426110C300"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-0C300",
+    "sha256": "ef3d179933db8ad986d39034b47a2510aceea9affb5b77997ae35b41513c258e",
+    "bytes": 28312,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-trd-off-road-42611-0c300/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/426110C300/426110C300_2.webp",
+        "sha256": "aa7ef22786b72265dfe4b34dd1fbd5658aa744425d17ddbad5d711e1896967b4",
+        "bytes": 23292,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4449": {
+    "productId": 4449,
+    "productName": "Genuine Toyota Alloy Wheel, 20-inch Black 42611-0C320 for Toyota Tundra (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-20-inch-black-42611-0c320/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/426110C320/426110C320_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-0C320",
+      "426110C320"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-0C320",
+    "sha256": "9f40e2a4d62e4decb967ff35ef861a1569a10750ff3c2a832e4b9eee6c996f4a",
+    "bytes": 21944,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-20-inch-black-42611-0c320/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/426110C320/426110C320_2.webp",
+        "sha256": "4f59e96ce445d5ca8e76499f078d3a14a97e79266c13c6815f2425cf6e991b58",
+        "bytes": 8518,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-20-inch-black-42611-0c320/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/426110C320/426110C320_3.webp",
+        "sha256": "3cf370cd65d7ae38e5b0c25f51333f8242b4f247833bf51163f00732cc0d9955",
+        "bytes": 18456,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4450": {
+    "productId": 4450,
+    "productName": "Genuine Toyota Alloy Wheel, 20-inch 42611-0EB80 for Toyota Highlander (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-20-inch-42611-0eb80/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/426110EB80/426110EB80_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-0EB80",
+      "426110EB80"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-0EB80",
+    "sha256": "3304445389ebba79b3d5ef9f090cb4655ab59c84df7259823132d7b0143eb638",
+    "bytes": 29366,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-20-inch-42611-0eb80/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/426110EB80/426110EB80_2.webp",
+        "sha256": "b4e459b2d3bd8da348e840668adfe7287d040eee522a5314fd50ea6ba2800611",
+        "bytes": 12494,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-20-inch-42611-0eb80/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/426110EB80/426110EB80_3.webp",
+        "sha256": "f55a45deede40227cde63c8ec2f8f40c4b88e22a9a162c9492a42c2f58a30893",
+        "bytes": 23636,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4451": {
+    "productId": 4451,
+    "productName": "Genuine Toyota Alloy Wheel, 17-inch Silver 42611-AK011 for Toyota Tacoma (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-17-inch-silver-42611-ak011/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/42611AK011/42611AK011_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-AK011",
+      "42611AK011"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-AK011",
+    "sha256": "5d75d5bff0164c27c3c62a34816814ad6f20bd1fa6c86495f49df96b2a81fa1a",
+    "bytes": 21038,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-17-inch-silver-42611-ak011/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AK011/42611AK011_2.webp",
+        "sha256": "b36fccd7c0ee80815e7d29565b71425350327dbb5ba46d1a9cfa07e44085c3fa",
+        "bytes": 23302,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-17-inch-silver-42611-ak011/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AK011/42611AK011_3.webp",
+        "sha256": "97ad47ba2b888f1f1d0f16a2afd647a40361c5fb2cbddc6842c1e77bfdb54f99",
+        "bytes": 7188,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4452": {
+    "productId": 4452,
+    "productName": "Genuine Toyota Alloy Wheel, 18-inch Chrome/Black 42611-AK031 for Toyota Tacoma (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-chrome-black-42611-ak031/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/42611AK031/42611AK031_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-AK031",
+      "42611AK031"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-AK031",
+    "sha256": "d28af2039a895312762603bbe450ba275cac33c4f9760aa9a61ed1cb19a4660c",
+    "bytes": 25072,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-chrome-black-42611-ak031/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AK031/42611AK031_2.webp",
+        "sha256": "0464a981ce388c14c1c0e9f5f776b200a654bd47f30c9c2c67925ce67066cbaa",
+        "bytes": 12262,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-chrome-black-42611-ak031/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AK031/42611AK031_3.webp",
+        "sha256": "7166a142a930c632ca56caf2edaefb9d4657149784d9ecaa694634fbe32d3d6e",
+        "bytes": 21420,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4453": {
+    "productId": 4453,
+    "productName": "Genuine Toyota Alloy Wheel, 17-inch Dark Gray 42611-AK051 for Toyota Tacoma (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-17-inch-dark-gray-42611-ak051/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/42611AK051/42611AK051_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-AK051",
+      "42611AK051"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-AK051",
+    "sha256": "4d6d00f7bc7e99d416ff37fbef1cc1fbdd569764e53f81cd3d7dc1eba4de3ba5",
+    "bytes": 20958,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-17-inch-dark-gray-42611-ak051/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AK051/42611AK051_2.webp",
+        "sha256": "492fd52a4a6d8f7e5b4538bc28b78f09aab274faf71f78ee3723ba1c395c4b64",
+        "bytes": 14112,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-17-inch-dark-gray-42611-ak051/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AK051/42611AK051_3.webp",
+        "sha256": "b7f1317e062c9fc43b9651a11676f2fecc569022fd8e0d351eb41bb72f86900a",
+        "bytes": 20480,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4454": {
+    "productId": 4454,
+    "productName": "Genuine Toyota Alloy Wheel, 18-inch Black 42611-AQ030 for Toyota Camry (2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-black-42611-aq030/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/42611AQ030/42611AQ030_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "42611-AQ030",
+      "42611AQ030"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 42611-AQ030",
+    "sha256": "d224900cba1a453cd3b4322ddbbc514e60e40b575422980b943c3188e13cbb79",
+    "bytes": 27910,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-black-42611-aq030/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AQ030/42611AQ030_2.webp",
+        "sha256": "8903c7a52c4f084e6ef5f4c27b97bff6c1d43f76c2aa51e05dd62d6b0f948f46",
+        "bytes": 14172,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-alloy-wheel-18-inch-black-42611-aq030/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/42611AQ030/42611AQ030_3.webp",
+        "sha256": "f14390cca104de6602dd4e564bfabc132973cd93c97769609d2b17a144bb5b4c",
+        "bytes": 23298,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4455": {
+    "productId": 4455,
+    "productName": "Genuine Toyota Fuel Pump and Sender Assembly 77020-02890 for Toyota Corolla (2019–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-and-sender-assembly-77020-02890/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/7702002890/7702002890_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "77020-02890",
+      "7702002890"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 77020-02890",
+    "sha256": "6c2ee9a1217a27177bbb6090743680e6ffc35992e10ce88998b4c14e00853eb6",
+    "bytes": 11704,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-and-sender-assembly-77020-02890/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/7702002890/7702002890_2.webp",
+        "sha256": "7a44fbd871545b9fcedee02a8751580f2434a0dec4de885f020b77a2e00c08b3",
+        "bytes": 8790,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-fuel-pump-and-sender-assembly-77020-02890/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/7702002890/7702002890_3.webp",
+        "sha256": "76d797c85a361ca261a4c25732bfabd0eaac0055b17adb13d5f9fa0974c348fc",
+        "bytes": 9588,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4456": {
+    "productId": 4456,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-02T70 for Toyota Corolla (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-02t70/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8111002T70/8111002T70_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-02T70",
+      "8111002T70"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-02T70",
+    "sha256": "a5c8abe3ce1c3aab850649ea6e429562c38ed72b88602fc8b10d8f31b235fe45",
+    "bytes": 29178,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-02t70/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8111002T70/8111002T70_1.webp",
+        "sha256": "cf560181f6bb5837f4a8ea0b0ddd3bbb8f217faf7a737e115429e9bf8a9cbade",
+        "bytes": 22498,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4457": {
+    "productId": 4457,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-08110 for Toyota Sienna (2021–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-08110/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8111008110/8111008110_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-08110",
+      "8111008110"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-08110",
+    "sha256": "79e1bddebb5a95c9bc2fabd665e65e5a0ef11753d7dcc65b3a0375a077c34a51",
+    "bytes": 26580,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-08110/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8111008110/8111008110_2.webp",
+        "sha256": "bc881deefbc7fcc870e01bdc8d2b0b705ce0ff9a77f5fb57ec33530099ae2671",
+        "bytes": 16032,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4458": {
+    "productId": 4458,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-08270 for Toyota Sienna (2022–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-08270/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8111008270/8111008270_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-08270",
+      "8111008270"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-08270",
+    "sha256": "7fce87a3b0ad8d11058440d2b802ab693fb0258c44716bc49ff341d293b0d31b",
+    "bytes": 28960,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-08270/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8111008270/8111008270_2.webp",
+        "sha256": "fce261562d34a7b673c9d46d4273ee4e42eb0abf5c8c5a9e3a8cb123895ed531",
+        "bytes": 16774,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4459": {
+    "productId": 4459,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-0C300 for Toyota Sequoia (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0c300/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/811100C300/811100C300_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-0C300",
+      "811100C300"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-0C300",
+    "sha256": "b9830f99abc6950e8984e69450140320dcc9b83bdfe11c13914aa00de9900999",
+    "bytes": 22658,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-0c300/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/811100C300/811100C300_2.webp",
+        "sha256": "8b7178d84642e2e6de8ce1cfaed6f11a8f8719490642fa516d1a9fd048d7fdbd",
+        "bytes": 21796,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4460": {
+    "productId": 4460,
+    "productName": "Genuine Toyota Headlamp Assembly, Right 81110-AQ010 for Toyota Camry (2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-aq010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/81110AQ010/81110AQ010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81110-AQ010",
+      "81110AQ010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81110-AQ010",
+    "sha256": "606a5bdcc80a9b82f4b6456db4ec26083a8ea9fe77f8b2cdb4c906952f22f97b",
+    "bytes": 33764,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-aq010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/81110AQ010/81110AQ010_2.webp",
+        "sha256": "18fb96749d41b6e725854bd4a1acfe2d9a633813d4719d64833aafbb1a577054",
+        "bytes": 10132,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-right-81110-aq010/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/81110AQ010/81110AQ010_3.webp",
+        "sha256": "88564899fe5f5a343cd7feacfdd90990e89d06aabc4a15513ce5c70738a8a90a",
+        "bytes": 8594,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4461": {
+    "productId": 4461,
+    "productName": "Genuine Toyota Tail Lamp Assembly, Right 81550-08190 for Toyota Sienna (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-right-81550-08190/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8155008190/8155008190_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81550-08190",
+      "8155008190"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81550-08190",
+    "sha256": "01f03b4ca3d46ce015d15c1fbf6e036963c75a460a491f1b78ed7881eb5902b3",
+    "bytes": 26350,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-right-81550-08190/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8155008190/8155008190_1.webp",
+        "sha256": "fb2dde6d09535f61a6ebba7e695830fd43e0ce882791b51d1e22a637977366f6",
+        "bytes": 24026,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4462": {
+    "productId": 4462,
+    "productName": "Genuine Toyota Tail Lamp Assembly, Right 81550-0E360 for Toyota Highlander (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-right-81550-0e360/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/815500E360/815500E360_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "81550-0E360",
+      "815500E360"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 81550-0E360",
+    "sha256": "492f84df5910ff043f743dec0fa057e68c303b924fa4c5530ecbd493300b3916",
+    "bytes": 29416,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-tail-lamp-assembly-right-81550-0e360/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/815500E360/815500E360_2.webp",
+        "sha256": "9f4f422cb784347f38711b13d4fbb5d93a67eb2a4310c500456b7f261f1f7e8a",
+        "bytes": 25030,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4463": {
+    "productId": 4463,
+    "productName": "Genuine Toyota Power Sliding Door Motor, Right 85005-08051 for Toyota Sienna (2022–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-sliding-door-motor-right-85005-08051/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8500508051/8500508051_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "85005-08051",
+      "8500508051"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 85005-08051",
+    "sha256": "8f83c9481617d442445d7219f45834edb7433a1683e9f5914cb7d5fcdc111907",
+    "bytes": 11460,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-sliding-door-motor-right-85005-08051/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8500508051/8500508051_2.webp",
+        "sha256": "75c69b8e3f942257f38207d35c559a092ae974e3861c0828c8b05069d4915aef",
+        "bytes": 13968,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4464": {
+    "productId": 4464,
+    "productName": "Genuine Toyota Power Sliding Door Motor, Left 85006-08051 for Toyota Sienna (2022–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-sliding-door-motor-left-85006-08051/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8500608051/8500608051_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "85006-08051",
+      "8500608051"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 85006-08051",
+    "sha256": "d02d294f92c9439b267c78717f26f45ac5d80214b6a11feae5007979307a33ac",
+    "bytes": 11506,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-sliding-door-motor-left-85006-08051/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8500608051/8500608051_2.webp",
+        "sha256": "4f19f288a5ff48b0668382a5efdd613b4a6a7e5bdf36398d60981c85f8208900",
+        "bytes": 13362,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-sliding-door-motor-left-85006-08051/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8500608051/8500608051_3.webp",
+        "sha256": "5e980ed2c53adefb261e23432f21edfc5343409d39d1f476fd62013056f54f5e",
+        "bytes": 20996,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4465": {
+    "productId": 4465,
+    "productName": "Genuine Toyota Outside Mirror Assembly, Right 87910-08220 for Toyota Sienna (2021–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-87910-08220/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8791008220/8791008220_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "87910-08220",
+      "8791008220"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 87910-08220",
+    "sha256": "dbc752f5f4db1b160ab197c448f6dfe8e470d3b8f79b8909875a180ccb4dd435",
+    "bytes": 17198,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-87910-08220/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8791008220/8791008220_3.webp",
+        "sha256": "54b81c5aa5e12e97037ffb0aa8c0be1e324d50254c9a3a8ee9bcfae5dead33f5",
+        "bytes": 13162,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4466": {
+    "productId": 4466,
+    "productName": "Genuine Toyota Outside Mirror Assembly, Right, with Camera 87910-08240 for Toyota Sienna (2021–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-with-camera-87910-08240/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/8791008240/8791008240_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "87910-08240",
+      "8791008240"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 87910-08240",
+    "sha256": "015f3dddab5169f88c8a53498b8cbd1b3664f92528c7d1f1a0bf9ac540c365c7",
+    "bytes": 22540,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-with-camera-87910-08240/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/8791008240/8791008240_3.webp",
+        "sha256": "16a80bfd4ffae184789d24ec20647a3b7e3f0abdbc781136bec34048e380b38c",
+        "bytes": 14630,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4467": {
+    "productId": 4467,
+    "productName": "Genuine Toyota Outside Mirror Assembly, Right 87910-0R908 for Toyota RAV4 (2019–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-87910-0r908/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/879100R908/879100R908_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "87910-0R908",
+      "879100R908"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 87910-0R908",
+    "sha256": "fb39b947cf77bbdf9bfc43ba28b4b4f469e9701f2100b74944acf86415066e12",
+    "bytes": 14244,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-87910-0r908/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/879100R908/879100R908_2.webp",
+        "sha256": "ad3f900b4adcb8ae56bd242cb6c3b800680628bf05cd0c35574ff14a5b53b4ec",
+        "bytes": 15684,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-87910-0r908/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/879100R908/879100R908_3.webp",
+        "sha256": "dc0ef55c8a6f3b45a02da53ccffd091dea35499b94c99d53548bf9b922ea88a5",
+        "bytes": 16610,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4468": {
+    "productId": 4468,
+    "productName": "Genuine Toyota Outside Mirror Assembly, Right, with Camera 87910-AK040 for Toyota Tacoma (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-with-camera-87910-ak040/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/87910AK040/87910AK040_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "87910-AK040",
+      "87910AK040"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 87910-AK040",
+    "sha256": "8916ee229f52acbd3a9a6c8e24ccea961383443dde9454e670e9dee4ad61236b",
+    "bytes": 24496,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-with-camera-87910-ak040/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/87910AK040/87910AK040_2.webp",
+        "sha256": "f8439f9dd388c3a7595d8bf561ece31b7c5fab5689b7a668c336616f600548fd",
+        "bytes": 16038,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-right-with-camera-87910-ak040/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/87910AK040/87910AK040_3.webp",
+        "sha256": "e053093a83647c7d45493135aafee26fd8e81be4ff0fee53bab683ceb7df3e6d",
+        "bytes": 16120,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4469": {
+    "productId": 4469,
+    "productName": "Genuine Toyota Outside Mirror Assembly, Left 87940-0R908 for Toyota RAV4 (2019–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-left-87940-0r908/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/879400R908/879400R908_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "87940-0R908",
+      "879400R908"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 87940-0R908",
+    "sha256": "7e4254cc6984507581f22724d98e5555efe3e660cc1e51ab70152c6b79545333",
+    "bytes": 15802,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-left-87940-0r908/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/879400R908/879400R908_2.webp",
+        "sha256": "3cd855713b781000cebe75ca04c011754c0484f2c361406f2a8b3aa89e86f030",
+        "bytes": 10058,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-outside-mirror-assembly-left-87940-0r908/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/879400R908/879400R908_3.webp",
+        "sha256": "49b06162c1488e2b609ec41e57e52ceab536e4d3ab388a800a5d560625ddc883",
+        "bytes": 13338,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4470": {
+    "productId": 4470,
+    "productName": "Genuine Toyota A/C Condenser Assembly 884A0-0C010 for Toyota Tundra (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-a-c-condenser-assembly-884a0-0c010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/884A00C010/884A00C010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "884A0-0C010",
+      "884A00C010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 884A0-0C010",
+    "sha256": "fc3f0fe43bd7bd155e7b7e011862c9ebefa27283e57f2fc18eceab5677eecef7",
+    "bytes": 49726,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

@@ -840,6 +840,168 @@
       "partNumber": "81560-0E230",
       "name": "Genuine Toyota Tail Lamp Assembly, Left 81560-0E230 for Toyota Highlander (2020–2023)",
       "price": 258.19
+    },
+    {
+      "id": 4444,
+      "partNumber": "16360-F0190",
+      "name": "Genuine Toyota Radiator Cooling Fan Assembly 16360-F0190 for Toyota Camry (2025)",
+      "price": 840.69
+    },
+    {
+      "id": 4445,
+      "partNumber": "17201-F4011",
+      "name": "Genuine Toyota Turbocharger, Left 17201-F4011 for Toyota Tundra / Sequoia (2022–2025)",
+      "price": 2694.09
+    },
+    {
+      "id": 4446,
+      "partNumber": "22030-F0030",
+      "name": "Genuine Toyota Throttle Body Assembly 22030-F0030 for Toyota Tacoma / Highlander (2023–2025)",
+      "price": 274.89
+    },
+    {
+      "id": 4447,
+      "partNumber": "42611-0C280",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch Silver 42611-0C280 for Toyota Tundra (2022–2025)",
+      "price": 439.59
+    },
+    {
+      "id": 4448,
+      "partNumber": "42611-0C300",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch TRD Off-Road 42611-0C300 for Toyota Tundra (2022–2025)",
+      "price": 435.09
+    },
+    {
+      "id": 4449,
+      "partNumber": "42611-0C320",
+      "name": "Genuine Toyota Alloy Wheel, 20-inch Black 42611-0C320 for Toyota Tundra (2022–2025)",
+      "price": 463.69
+    },
+    {
+      "id": 4450,
+      "partNumber": "42611-0EB80",
+      "name": "Genuine Toyota Alloy Wheel, 20-inch 42611-0EB80 for Toyota Highlander (2023–2025)",
+      "price": 449.19
+    },
+    {
+      "id": 4451,
+      "partNumber": "42611-AK011",
+      "name": "Genuine Toyota Alloy Wheel, 17-inch Silver 42611-AK011 for Toyota Tacoma (2024–2025)",
+      "price": 389.89
+    },
+    {
+      "id": 4452,
+      "partNumber": "42611-AK031",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch Chrome/Black 42611-AK031 for Toyota Tacoma (2024–2025)",
+      "price": 438.19
+    },
+    {
+      "id": 4453,
+      "partNumber": "42611-AK051",
+      "name": "Genuine Toyota Alloy Wheel, 17-inch Dark Gray 42611-AK051 for Toyota Tacoma (2024–2025)",
+      "price": 428.29
+    },
+    {
+      "id": 4454,
+      "partNumber": "42611-AQ030",
+      "name": "Genuine Toyota Alloy Wheel, 18-inch Black 42611-AQ030 for Toyota Camry (2025)",
+      "price": 357.69
+    },
+    {
+      "id": 4455,
+      "partNumber": "77020-02890",
+      "name": "Genuine Toyota Fuel Pump and Sender Assembly 77020-02890 for Toyota Corolla (2019–2025)",
+      "price": 338.59
+    },
+    {
+      "id": 4456,
+      "partNumber": "81110-02T70",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-02T70 for Toyota Corolla (2023–2025)",
+      "price": 704.49
+    },
+    {
+      "id": 4457,
+      "partNumber": "81110-08110",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-08110 for Toyota Sienna (2021–2025)",
+      "price": 904.79
+    },
+    {
+      "id": 4458,
+      "partNumber": "81110-08270",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-08270 for Toyota Sienna (2022–2024)",
+      "price": 770.99
+    },
+    {
+      "id": 4459,
+      "partNumber": "81110-0C300",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-0C300 for Toyota Sequoia (2023–2025)",
+      "price": 630.09
+    },
+    {
+      "id": 4460,
+      "partNumber": "81110-AQ010",
+      "name": "Genuine Toyota Headlamp Assembly, Right 81110-AQ010 for Toyota Camry (2025)",
+      "price": 778.09
+    },
+    {
+      "id": 4461,
+      "partNumber": "81550-08190",
+      "name": "Genuine Toyota Tail Lamp Assembly, Right 81550-08190 for Toyota Sienna (2023–2025)",
+      "price": 219.69
+    },
+    {
+      "id": 4462,
+      "partNumber": "81550-0E360",
+      "name": "Genuine Toyota Tail Lamp Assembly, Right 81550-0E360 for Toyota Highlander (2024–2025)",
+      "price": 245.89
+    },
+    {
+      "id": 4463,
+      "partNumber": "85005-08051",
+      "name": "Genuine Toyota Power Sliding Door Motor, Right 85005-08051 for Toyota Sienna (2022–2024)",
+      "price": 995.49
+    },
+    {
+      "id": 4464,
+      "partNumber": "85006-08051",
+      "name": "Genuine Toyota Power Sliding Door Motor, Left 85006-08051 for Toyota Sienna (2022–2024)",
+      "price": 964.89
+    },
+    {
+      "id": 4465,
+      "partNumber": "87910-08220",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right 87910-08220 for Toyota Sienna (2021–2024)",
+      "price": 228.09
+    },
+    {
+      "id": 4466,
+      "partNumber": "87910-08240",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right, with Camera 87910-08240 for Toyota Sienna (2021–2024)",
+      "price": 1068.69
+    },
+    {
+      "id": 4467,
+      "partNumber": "87910-0R908",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right 87910-0R908 for Toyota RAV4 (2019–2025)",
+      "price": 242.99
+    },
+    {
+      "id": 4468,
+      "partNumber": "87910-AK040",
+      "name": "Genuine Toyota Outside Mirror Assembly, Right, with Camera 87910-AK040 for Toyota Tacoma (2024–2025)",
+      "price": 625.29
+    },
+    {
+      "id": 4469,
+      "partNumber": "87940-0R908",
+      "name": "Genuine Toyota Outside Mirror Assembly, Left 87940-0R908 for Toyota RAV4 (2019–2025)",
+      "price": 247.59
+    },
+    {
+      "id": 4470,
+      "partNumber": "884A0-0C010",
+      "name": "Genuine Toyota A/C Condenser Assembly 884A0-0C010 for Toyota Tundra (2022–2025)",
+      "price": 262.59
     }
   ],
   "excluded": [
