@@ -27,7 +27,9 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from toyota_expansion_pricing import assess  # noqa: E402
-from toyota_fitment_evidence import AUDITED, ENGINE_EVIDENCE, EVIDENCE  # noqa: E402
+from toyota_fitment_evidence import AUDITED, ENGINE_EVIDENCE, EVIDENCE, apply_reclassification  # noqa: E402
+
+apply_reclassification()
 
 OUT_DIR = "docs/catalog-expansion"
 

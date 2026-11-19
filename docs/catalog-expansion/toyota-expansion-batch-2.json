@@ -661,36 +661,51 @@
       "description": "Genuine Toyota a/c compressor 88310-02B60 for the Toyota Corolla. New genuine Toyota A/C compressor; replaces 88310-12B10 per the dealer listing.\n\nSpecifications\n\nPart number: 88310-02B60\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Corolla (2.0L; sedan, 2.0L, without hybrid)\nRestriction (2020-2024 Corolla): sedan, 2.0L, without hybrid\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 856.03,
         "lowestCompetitor": {
-          "seller": "Toyota OEM Parts Online",
-          "price": 567.75,
-          "url": "https://toyota.oempartsonline.com/oem-parts/toyota-a-c-compressor-8831002b60"
+          "seller": "Olathe Toyota",
+          "price": 562.64,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-a-c-compressor-8831002b60"
         },
         "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 562.64,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-a-c-compressor-8831002b60"
+          },
           {
             "seller": "Toyota OEM Parts Online",
             "price": 567.75,
             "url": "https://toyota.oempartsonline.com/oem-parts/toyota-a-c-compressor-8831002b60"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 576.95,
+            "url": "https://autopartsprime.com/toyota/compressor-assembly-w-p/oe-8831002b60"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 580.54,
+            "url": "https://www.toyotapartsnow.com/parts-select/2024-toyota-corolla-a-c-compressor"
           }
         ],
         "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 534.59,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "low",
-        "flags": [
-          "only 1 attributed competitor price(s) -- fewer than 3"
-        ],
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
         "info": "",
-        "profitabilityFlags": [],
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
         "approved": false
       },
       "image": null,
@@ -731,11 +746,13 @@
         "unresolved": []
       },
       "sources": [
-        "https://toyota.oempartsonline.com/oem-parts/toyota-a-c-compressor-8831002b60"
+        "https://autopartsprime.com/toyota/compressor-assembly-w-p/oe-8831002b60",
+        "https://parts.olathetoyota.com/oem-parts/toyota-a-c-compressor-8831002b60",
+        "https://toyota.oempartsonline.com/oem-parts/toyota-a-c-compressor-8831002b60",
+        "https://www.toyotapartsnow.com/parts-select/2024-toyota-corolla-a-c-compressor"
       ],
       "approvalStatus": "REVIEW REQUIRED",
       "reviewReasons": [
-        "pricing: 1 attributed competitor price(s), 3 required",
         "supplier cost not established",
         "no licensed product image"
       ]
@@ -753,54 +770,70 @@
       "condition": "brand-new",
       "proposedCategory": "cooling",
       "proposedCategoryName": "Cooling System",
-      "fitment": "2014–2022 Toyota Sequoia (5.7L V8; single dealer source; 2013 also seen)",
+      "fitment": "2014–2022 Toyota Sequoia (5.7L V8)",
       "fitmentApplications": [
         {
           "yearFrom": 2014,
           "yearTo": 2022,
           "make": "Toyota",
           "model": "Sequoia",
-          "submodel": "5.7L V8; single dealer source; 2013 also seen"
+          "submodel": "5.7L V8"
         }
       ],
       "engines": "3UR-FE",
-      "description": "Genuine Toyota radiator assembly 16400-0S040 for the Toyota Sequoia. New genuine Toyota radiator assembly.\n\nSpecifications\n\nPart number: 16400-0S040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2014–2022 Toyota Sequoia (5.7L V8; single dealer source; 2013 also seen)\nRestriction (2014-2022 Sequoia): 5.7L V8; single dealer source; 2013 also seen\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota radiator assembly 16400-0S040 for the Toyota Sequoia. New genuine Toyota radiator assembly.\n\nSpecifications\n\nPart number: 16400-0S040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2014–2022 Toyota Sequoia (5.7L V8)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
-        "status": "insufficient",
+        "status": "verified",
         "checkedOn": "2026-11-18",
         "msrp": 392.04,
-        "lowestCompetitor": null,
-        "competitors": [],
-        "unattributedPrices": [
-          273.4,
-          268.69
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 269.86,
+          "url": "https://www.autopartsprime.com/p/2015-toyota-sequoia-radiator"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 269.86,
+            "url": "https://www.autopartsprime.com/p/2015-toyota-sequoia-radiator"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 274.58,
+            "url": "https://www.toyotapartsnow.com/parts-select/2015-toyota-sequoia-radiator"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 275.76,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s040"
+          }
         ],
+        "unattributedPrices": [],
         "excluded": "",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
-        "undercut": null,
-        "recommendedPrice": null,
-        "priceType": null,
+        "undercut": 0.05,
+        "recommendedPrice": 256.39,
+        "priceType": "competitive target (not approved)",
         "supplierCost": null,
-        "profitability": "not assessed",
-        "confidence": "none",
-        "flags": [
-          "only 0 attributed competitor price(s) -- fewer than 3",
-          "lower unattributed listing(s) seen; not used as benchmark"
-        ],
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
         "info": "",
-        "profitabilityFlags": [],
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
         "approved": false
       },
       "image": null,
       "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
-      "vinDependent": true,
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "verified",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -810,15 +843,21 @@
             "make": "Toyota",
             "model": "Sequoia",
             "engine": "3UR-FE 5.7L V8",
-            "restriction": "5.7L V8; single dealer source; 2013 also seen",
+            "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "verified",
             "evidence": [
               {
                 "kind": "dealer_catalog",
                 "source": "Modern Toyota Wholesale Direct (2014-2022 Sequoia radiator assembly)",
                 "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-assembly-164000s040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2014-2022 Sequoia, 5.7L)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s040",
                 "note": ""
               }
             ],
@@ -831,11 +870,13 @@
         "unresolved": []
       },
       "sources": [
-        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-assembly-164000s040"
+        "https://parts.olathetoyota.com/oem-parts/toyota-radiator-assembly-164000s040",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-radiator-assembly-164000s040",
+        "https://www.autopartsprime.com/p/2015-toyota-sequoia-radiator",
+        "https://www.toyotapartsnow.com/parts-select/2015-toyota-sequoia-radiator"
       ],
       "approvalStatus": "REVIEW REQUIRED",
       "reviewReasons": [
-        "pricing: 0 attributed competitor price(s), 3 required",
         "supplier cost not established",
         "no licensed product image"
       ]
@@ -853,7 +894,7 @@
       "condition": "brand-new",
       "proposedCategory": "cooling",
       "proposedCategoryName": "Cooling System",
-      "fitment": "2021–2021 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed)",
+      "fitment": "2021–2021 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed); 2022–2022 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed)",
       "fitmentApplications": [
         {
           "yearFrom": 2021,
@@ -861,22 +902,43 @@
           "make": "Toyota",
           "model": "Sienna",
           "submodel": "2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed"
+        },
+        {
+          "yearFrom": 2022,
+          "yearTo": 2022,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed"
         }
       ],
       "engines": "A25A-FXS",
-      "description": "Genuine Toyota hybrid inverter cooler (radiator) G9010-48100 for the Toyota Sienna. New genuine Toyota inverter cooler (auxiliary radiator for the hybrid drive inverter); not the engine radiator.\n\nSpecifications\n\nPart number: G9010-48100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2021 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed)\nRestriction (2021-2021 Sienna): hybrid inverter cooler; G9010-48110 also listed\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota hybrid inverter cooler (radiator) G9010-48100 for the Toyota Sienna. New genuine Toyota inverter cooler (auxiliary radiator for the hybrid drive inverter); not the engine radiator.\n\nSpecifications\n\nPart number: G9010-48100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2021 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed); 2022–2022 Toyota Sienna (2.5L hybrid; hybrid inverter cooler; G9010-48110 also listed)\nRestriction (2021-2021 Sienna): hybrid inverter cooler; G9010-48110 also listed\nRestriction (2022-2022 Sienna): hybrid inverter cooler; G9010-48110 also listed\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "insufficient",
         "checkedOn": "2026-11-18",
         "msrp": 640.04,
-        "lowestCompetitor": null,
-        "competitors": [],
-        "unattributedPrices": [
-          429.04,
-          446.36
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 429.04,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~g9010-48100.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 429.04,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~g9010-48100.html"
+          },
+          {
+            "seller": "AutoNation Parts",
+            "price": 486.76,
+            "url": "https://www.autonationparts.com/v-2021-toyota-sienna--limited--2-5l-l4-electric-gas/belts-and-cooling--radiators-coolers-and-related-components"
+          }
         ],
-        "excluded": "",
+        "unattributedPrices": [
+          320.95
+        ],
+        "excluded": "Country Hills Toyota $417.70 CAD (Canada); Go-Parts $320.95 (genuine status not stated)",
         "shipping": "not verified (item price only)",
         "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
         "undercut": null,
@@ -884,9 +946,9 @@
         "priceType": null,
         "supplierCost": null,
         "profitability": "not assessed",
-        "confidence": "none",
+        "confidence": "low",
         "flags": [
-          "only 0 attributed competitor price(s) -- fewer than 3",
+          "only 2 attributed competitor price(s) -- fewer than 3",
           "lower unattributed listing(s) seen; not used as benchmark"
         ],
         "info": "",
@@ -926,6 +988,26 @@
           },
           {
             "yearFrom": 2022,
+            "yearTo": 2022,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid inverter cooler; G9010-48110 also listed",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Chapel Hill Toyota (2022 Sienna 2.5L FHEV LE inverter cooler)",
+                "url": "https://toyotaparts.chtoyota.com/p/Toyota_2022_Sienna-25L-FULL-HYBRID-EV-GAS-FHEV-CVT-FWD-LE-Mini-Passenger-Van/Radiator-Inverter-Cooler-AUXILIARY-Drive-Motor/98558429/G901048100.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
             "yearTo": 2024,
             "make": "Toyota",
             "model": "Sienna",
@@ -934,23 +1016,34 @@
             "assemblyOrigin": null,
             "productionDates": null,
             "status": "unresolved",
-            "evidence": [],
-            "reason": "Only a 2021 catalog page was seen."
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (2024 Sienna radiator page)",
+                "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-radiator.html",
+                "note": ""
+              }
+            ],
+            "reason": "Retailer-only for 2023-2024."
           }
         ],
         "supersession": [],
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
-          "2022-2024 Sienna: Only a 2021 catalog page was seen."
+          "2023-2024 Sienna: Retailer-only for 2023-2024."
         ]
       },
       "sources": [
-        "https://parts.lakelandtoyota.com/p/toyota_2021_SIENNA/Radiator-Inverter-Cooler-AUXILIARY-Drive-Motor/16361171/G901048100.html"
+        "https://parts.lakelandtoyota.com/p/toyota_2021_SIENNA/Radiator-Inverter-Cooler-AUXILIARY-Drive-Motor/16361171/G901048100.html",
+        "https://toyotaparts.chtoyota.com/p/Toyota_2022_Sienna-25L-FULL-HYBRID-EV-GAS-FHEV-CVT-FWD-LE-Mini-Passenger-Van/Radiator-Inverter-Cooler-AUXILIARY-Drive-Motor/98558429/G901048100.html",
+        "https://www.autonationparts.com/v-2021-toyota-sienna--limited--2-5l-l4-electric-gas/belts-and-cooling--radiators-coolers-and-related-components",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-radiator.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~g9010-48100.html"
       ],
       "approvalStatus": "REVIEW REQUIRED",
       "reviewReasons": [
-        "pricing: 0 attributed competitor price(s), 3 required",
+        "pricing: 2 attributed competitor price(s), 3 required",
         "supplier cost not established",
         "no licensed product image"
       ]
@@ -1052,6 +1145,349 @@
       "reviewReasons": [
         "fitment unresolved",
         "pricing: 1 attributed competitor price(s), 3 required",
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlight Assembly, Left (Halogen with LED DRL) 81150-04270 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81150-04270",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2016–2023 Toyota Tacoma (driver side; halogen with LED daytime running lights (LED and sequential-turn headlights use other numbers))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "driver side; halogen with LED daytime running lights (LED and sequential-turn headlights use other numbers)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlight assembly, left (halogen with led drl) 81150-04270 for the Toyota Tacoma. New genuine Toyota driver-side headlight assembly.\n\nSpecifications\n\nPart number: 81150-04270\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2023 Toyota Tacoma (driver side; halogen with LED daytime running lights (LED and sequential-turn headlights use other numbers))\nRestriction (2016-2023 Tacoma): driver side; halogen with LED daytime running lights (LED and sequential-turn headlights use other numbers)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "insufficient",
+        "checkedOn": "2026-11-18",
+        "msrp": 850.95,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 570.14,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-8115004270"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 570.14,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-8115004270"
+          },
+          {
+            "seller": "BAM Wholesale Parts",
+            "price": 595.5,
+            "url": "https://www.bamwholesaleparts.com/oem-parts/toyota-composite-assembly-left-8115004270"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
+        "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
+        "confidence": "low",
+        "flags": [
+          "only 2 attributed competitor price(s) -- fewer than 3"
+        ],
+        "info": "",
+        "profitabilityFlags": [],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-18",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2016,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "driver side; halogen with LED daytime running lights (LED and sequential-turn headlights use other numbers)",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2016-2023 Tacoma headlamp assembly, driver side)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-8115004270",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-headlamp-assembly-drivers-side-8115004270",
+        "https://www.bamwholesaleparts.com/oem-parts/toyota-composite-assembly-left-8115004270"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "pricing: 2 attributed competitor price(s), 3 required",
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Headlight Assembly, Left (LED, Sequential Turn) 81150-04290 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "81150-04290",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "headlight",
+      "condition": "brand-new",
+      "proposedCategory": "lighting",
+      "proposedCategoryName": "Lighting",
+      "fitment": "2020–2023 Toyota Tacoma (driver side; LED headlight with sequential turn signal)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "driver side; LED headlight with sequential turn signal"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota headlight assembly, left (led, sequential turn) 81150-04290 for the Toyota Tacoma. New genuine Toyota driver-side LED headlight assembly with sequential turn signal.\n\nSpecifications\n\nPart number: 81150-04290\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2023 Toyota Tacoma (driver side; LED headlight with sequential turn signal)\nRestriction (2020-2023 Tacoma): driver side; LED headlight with sequential turn signal\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "insufficient",
+        "checkedOn": "2026-11-18",
+        "msrp": null,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 856.65,
+          "url": "https://www.toyotapartsdeal.com/oem-toyota-tacoma-headlight.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 856.65,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-tacoma-headlight.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 884.34,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2020-2023-toyota-tacoma-headlight-left-8115004290"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
+        "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
+        "confidence": "low",
+        "flags": [
+          "only 2 attributed competitor price(s) -- fewer than 3"
+        ],
+        "info": "",
+        "profitabilityFlags": [],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-18",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "driver side; LED headlight with sequential turn signal",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2020-2023 Tacoma headlight left; LED, sequential turn)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-2020-2023-toyota-tacoma-headlight-left-8115004290",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://www.sparksparts.com/oem-parts/toyota-2020-2023-toyota-tacoma-headlight-left-8115004290",
+        "https://www.toyotapartsdeal.com/oem-toyota-tacoma-headlight.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "pricing: 2 attributed competitor price(s), 3 required",
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Electric A/C Compressor (Hybrid) 88370-48170 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "88370-48170",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "ac_compressor",
+      "condition": "brand-new",
+      "proposedCategory": "hvac",
+      "proposedCategoryName": "Heating & Air Conditioning",
+      "fitment": "2021–2023 Toyota Sienna (2.5L hybrid; hybrid electric compressor; 88370-08020 also listed for some Siennas)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid; hybrid electric compressor; 88370-08020 also listed for some Siennas"
+        }
+      ],
+      "engines": "A25A-FXS",
+      "description": "Genuine Toyota electric a/c compressor (hybrid) 88370-48170 for the Toyota Sienna. New genuine Toyota electric A/C compressor for the hybrid powertrain.\n\nSpecifications\n\nPart number: 88370-48170\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2023 Toyota Sienna (2.5L hybrid; hybrid electric compressor; 88370-08020 also listed for some Siennas)\nRestriction (2021-2023 Sienna): hybrid electric compressor; 88370-08020 also listed for some Siennas\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "insufficient",
+        "checkedOn": "2026-11-18",
+        "msrp": 1608.19,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 1074.92,
+          "url": "https://www.toyotapartsdeal.com/oem-toyota-sienna-a_c_compressor.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1074.92,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-sienna-a_c_compressor.html"
+          },
+          {
+            "seller": "Venice Toyota",
+            "price": 1148.25,
+            "url": "https://parts.venicetoyota.com/p/toyota__Sienna/AC-Compressor/94497281/8837048170.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": null,
+        "recommendedPrice": null,
+        "priceType": null,
+        "supplierCost": null,
+        "profitability": "not assessed",
+        "confidence": "low",
+        "flags": [
+          "only 2 attributed competitor price(s) -- fewer than 3"
+        ],
+        "info": "",
+        "profitabilityFlags": [],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-18",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "A25A-FXS 2.5L hybrid",
+            "restriction": "hybrid electric compressor; 88370-08020 also listed for some Siennas",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota parts (2022 Sienna A/C compressor 88370-48170, MSRP $1,608.19)",
+                "url": "https://parts.toyota.com/p/Toyota_2022_Sienna/AC-Compressor/92686229/8837048170.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Venice Toyota (Sienna 2021-2023)",
+                "url": "https://parts.venicetoyota.com/p/toyota__Sienna/AC-Compressor/94497281/8837048170.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.toyota.com/p/Toyota_2022_Sienna/AC-Compressor/92686229/8837048170.html",
+        "https://parts.venicetoyota.com/p/toyota__Sienna/AC-Compressor/94497281/8837048170.html",
+        "https://www.toyotapartsdeal.com/oem-toyota-sienna-a_c_compressor.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "pricing: 2 attributed competitor price(s), 3 required",
         "supplier cost not established",
         "no licensed product image"
       ]

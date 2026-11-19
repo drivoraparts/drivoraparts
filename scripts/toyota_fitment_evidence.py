@@ -373,7 +373,7 @@ EVIDENCE = {
             A(2018, 2024, "Camry", "", "vin_dependent",
               [E("dealer_catalog", "ToyotaPartsDeal (part page)", f"{TD}/oem/toyota~disc~fr~43512-06200.html"),
                E("dealer_catalog_ca", "Scarborough Toyota (2021 Camry XSE)", f"{SC}/Toyota_2021_Camry-XSE-Sedan/Disc-Brake-Rotor-Front/71596501/4351206200.html")],
-              restriction="without TRD; hybrid notes conflict"),
+              restriction="without TRD, without hybrid; US-built (Japan-built excluded)", origin="US-built"),
             A(2019, 2024, "RAV4", "", "vin_dependent",
               [E("dealer_catalog", "ToyotaPartsDeal (part page)", f"{TD}/oem/toyota~disc~fr~43512-06200.html")],
               restriction="engine / hybrid notes vary by listing"),
@@ -745,3 +745,57 @@ EVIDENCE["43512-06200"]["apps"].append(
     A(2019, 2024, "RAV4", "A25A-FXS 2.5L hybrid", "unresolved",
       [E("dealer_catalog", "dealer notes conflict (with / without hybrid)", f"{TD}/oem/toyota~disc~fr~43512-06200.html")],
       reason="Dealer notes conflict on hybrid fitment; needs a VIN-level lookup."))
+
+
+# ---------------------------------------------------------------------------
+# Source classification correction (2026-11-19). ToyotaPartsDeal describes
+# itself as an online store whose parts ship from authorized Toyota dealers;
+# it is operated by Original Parts Giant, and ToyotaPartsNow runs on the same
+# platform. Neither is a dealer catalog, so their pages are reclassified as
+# `retailer`: they remain recorded as evidence and price sources but cannot
+# establish fitment on their own. Any listed application left without a
+# Toyota or dealer catalog source becomes `unresolved` until corroborated.
+# ---------------------------------------------------------------------------
+import re as _re
+
+RETAILER_HOSTS = _re.compile(r"toyotaparts(deal|now)\.com")
+STRONG = ("toyota_official", "dealer_catalog")
+
+
+def _reclassify(ev_map, engines=False):
+    for pn, ev in ev_map.items():
+        for a in ev["apps"]:
+            for e in a["evidence"]:
+                if e["kind"] == "dealer_catalog" and RETAILER_HOSTS.search(e["url"]):
+                    e["kind"] = "retailer"
+            if engines or a["status"] not in ("verified", "vin_dependent"):
+                continue
+            if not any(e["kind"] in STRONG for e in a["evidence"]):
+                a["status"] = "unresolved"
+                a["reason"] = ("Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source "
+                               "reclassification; needs a Toyota or dealer catalog source.")
+        for sx in ev.get("supersession", []):
+            for e in sx["evidence"]:
+                if e["kind"] == "dealer_catalog" and RETAILER_HOSTS.search(e["url"]):
+                    e["kind"] = "retailer"
+            if sx["status"] == "verified" and not any(e["kind"] in STRONG + ("dealer_catalog_ca",) for e in sx["evidence"]):
+                sx["status"] = "unresolved"
+                sx["reason"] = "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
+
+
+CORROBORATION = {}  # pn -> list of (model, yearFrom, yearTo, evidence) added after reclassification
+
+
+def apply_reclassification():
+    for pn, items in CORROBORATION.items():
+        for model, y1, y2, ev in items:
+            for a in EVIDENCE[pn]["apps"]:
+                if a["model"] == model and a["yearFrom"] == y1 and a["yearTo"] == y2:
+                    a["evidence"].append(ev)
+    _reclassify(EVIDENCE)
+    _reclassify(ENGINE_EVIDENCE, engines=True)
+
+CORROBORATION.update({
+    "17801-F0050": [("Camry", 2018, 2024, E("dealer_catalog", "Olathe Toyota (2018-2026 Toyota; Avalon, Camry, Highlander, RAV4)", "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0050"))],
+    "43512-06200": [("Camry", 2018, 2024, E("dealer_catalog", "Olathe Toyota (Camry 2.5L / 3.5L, without hybrid, without TRD; US built; 2019-20 Canada-built note)", "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206200"))],
+})

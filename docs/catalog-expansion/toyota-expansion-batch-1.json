@@ -2,15 +2,15 @@
   "_comment": "Toyota catalog expansion batch 1 (2026-11-18), final audit. NOT loaded by the storefront. Nothing approved or published. Validate with: node scripts/check-toyota-expansion.mjs",
   "groups": {
     "ready": 0,
-    "commercial_pending": 30,
-    "research_pending": 20
+    "commercial_pending": 25,
+    "research_pending": 25
   },
   "auditSummary": {
     "Ready for approval": 0,
-    "Rejected (incorrect or unsupported)": 4,
-    "Awaiting Toyota fitment confirmation": 16,
+    "Rejected (incorrect or unsupported)": 2,
+    "Awaiting Toyota fitment confirmation": 23,
     "Awaiting pricing verification": 0,
-    "Awaiting supplier cost": 30,
+    "Awaiting supplier cost": 25,
     "Awaiting image verification": 0
   },
   "bundleRecommendations": [
@@ -222,7 +222,7 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (part page, 2019-2023 RAV4 2.5L trims)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-f0050",
                 "note": ""
@@ -268,15 +268,21 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~element~sub~assy~ai~17801-f0050.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (part page, 2018-2024)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-f0050",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2018-2026 Toyota; Avalon, Camry, Highlander, RAV4)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0050",
                 "note": ""
               }
             ],
@@ -296,6 +302,12 @@
               {
                 "kind": "dealer_catalog",
                 "source": "aggregator dealer page (fragmented Camry 3.5L note)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0050",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2018-2026 Toyota; Avalon, Camry, Highlander, RAV4)",
                 "url": "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0050",
                 "note": ""
               }
@@ -342,6 +354,7 @@
       },
       "sources": [
         "https://parts.lakelandtoyota.com/p/TOYOTA__RAV-4-LE/Engine-Air-Filter/14760743/17801F0050.html",
+        "https://parts.olathetoyota.com/oem-parts/toyota-air-filter-17801f0050",
         "https://www.toyotapartsdeal.com/oem-2019-toyota-rav4-air_filter.html",
         "https://www.toyotapartsdeal.com/oem/toyota~element~sub~assy~ai~17801-f0050.html",
         "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-f0050"
@@ -476,7 +489,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2022 Tacoma)",
                 "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-tacoma-air_filter.html",
                 "note": ""
@@ -677,28 +690,20 @@
       }
     },
     {
-      "status": "commercial_pending",
-      "name": "Genuine Toyota Engine Air Filter 17801-0P051 — Tacoma",
+      "status": "research_pending",
+      "name": "Genuine Toyota Engine Air Filter 17801-0P051 — vehicles (fitment under review)",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "17801-0P051",
-      "supersedes": "17801-31131",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2024–2025 Toyota Tacoma (2.4L turbo; i-FORCE MAX hybrid coverage by VIN)",
-      "fitmentApplications": [
-        {
-          "yearFrom": 2024,
-          "yearTo": 2025,
-          "make": "Toyota",
-          "model": "Tacoma",
-          "submodel": "2.4L turbo; i-FORCE MAX hybrid coverage by VIN"
-        }
-      ],
-      "engines": "T24A-FTS",
-      "description": "Genuine Toyota engine air filter 17801-0P051 for the Toyota Tacoma. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. It supersedes 17801-31131. Also listed for earlier Camry/Highlander/Sienna/Avalon; those engine splits are unresolved and not claimed.\n\nSpecifications\n\nPart number: 17801-0P051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: T24A-FTS\nFitment: 2024–2025 Toyota Tacoma (2.4L turbo; i-FORCE MAX hybrid coverage by VIN)\nRestriction: 2024-2025 Tacoma: 2.4L turbo; i-FORCE MAX hybrid coverage by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "fitment": "",
+      "fitmentApplications": [],
+      "engines": "",
+      "description": "Genuine Toyota engine air filter 17801-0P051 for the Toyota vehicles (fitment under review). The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. Also listed for earlier Camry/Highlander/Sienna/Avalon; those engine splits are unresolved and not claimed.\n\nSpecifications\n\nPart number: 17801-0P051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -761,14 +766,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "low (unresolved)",
       "partKind": "air_filter",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "unresolved",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -781,64 +786,67 @@
             "restriction": "2.4L turbo; i-FORCE MAX hybrid coverage by VIN",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2025 Tacoma, TZNA submodels)",
                 "url": "https://www.toyotapartsdeal.com/oem-2025-toyota-tacoma-air_filter.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2024 Tacoma: 17801-31131 replaced by 17801-0P051)",
                 "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-tacoma-air_filter.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           }
         ],
         "supersession": [
           {
             "partNumber": "17801-31131",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2024 Tacoma)",
                 "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-tacoma-air_filter.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
         "blocking": [],
-        "unresolved": []
+        "unresolved": [
+          "2024-2025 Tacoma T24A-FTS 2.4L turbo: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
+        ]
       },
       "sources": [
         "https://www.toyotapartsdeal.com/oem-2024-toyota-tacoma-air_filter.html",
-        "https://www.toyotapartsdeal.com/oem-2025-toyota-tacoma-air_filter.html",
         "https://www.toyotapartsdeal.com/oem/toyota~element~sub~assy~ai~17801-0p051.html"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image"
+        "licensed product image",
+        "fitment / identity verification"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Awaiting supplier cost",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
           "Rejected (incorrect or unsupported)": false,
-          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": false,
           "Awaiting supplier cost": true,
           "Awaiting image verification": true
         },
         "issues": [
+          "research pending: fitment/identity unresolved",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
@@ -851,7 +859,7 @@
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "17801-38051",
-      "supersedes": "17801-38050",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
@@ -867,7 +875,7 @@
         }
       ],
       "engines": "1GR-FE",
-      "description": "Genuine Toyota engine air filter 17801-38051 for the Toyota 4Runner. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. It supersedes 17801-38050. Superseded by 17801-YZZ13; to be listed under the current number.\n\nSpecifications\n\nPart number: 17801-38051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE\nFitment: 2010–2024 Toyota 4Runner (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota engine air filter 17801-38051 for the Toyota 4Runner. The pleated element sits in the factory air box and stops dust and road debris before they reach the throttle body and cylinders. Toyota's maintenance schedule calls for inspection at every service and replacement on a set mileage interval, sooner in dusty conditions. Superseded by 17801-YZZ13; to be listed under the current number.\n\nSpecifications\n\nPart number: 17801-38051\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE\nFitment: 2010–2024 Toyota 4Runner (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -959,7 +967,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2010 4Runner)",
                 "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-4runner-air_filter.html",
                 "note": ""
@@ -972,16 +980,16 @@
           {
             "partNumber": "17801-38050",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (17801-YZZ13 replaces 17801-38050, 17801-38051)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~element~sub~assy~ai~17801-yzz13.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           },
           {
             "partNumber": "17801-YZZ13",
@@ -989,7 +997,7 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (17801-YZZ13 replaces 17801-38051)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~element~sub~assy~ai~17801-yzz13.html",
                 "note": ""
@@ -1164,7 +1172,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (2023 Camry Hybrid LE/SE/XLE/XSE)",
                 "url": "https://www.toyotapartsnow.com/parts-select/2023-toyota-camry-air-filter",
                 "note": ""
@@ -1240,7 +1248,7 @@
             "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (17801-77050 replaced by 17801-F0020)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~air-filter-element-sub-assembly~17801-77050",
                 "note": ""
@@ -1287,7 +1295,7 @@
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04152-YZZA1",
-      "supersedes": "04152-31090; 04152-31110; 04152-0V010",
+      "supersedes": "04152-31090; 04152-31110",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
@@ -1324,7 +1332,7 @@
         }
       ],
       "engines": "2GR-FKS",
-      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Tacoma, Camry, Highlander and Sienna. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-31090; 04152-31110; 04152-0V010. Cartridge element; replace the housing O-ring with each change. Not claimed for the 2.5L A25A-FKS: dealer catalogs list spin-on 90915-YZZN1 for the 2019+ RAV4 2.5L and the US-built 2020 Camry 2.5L.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6); 2017–2020 Toyota Sienna (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota oil filter element 04152-YZZA1 for the Toyota Tacoma, Camry, Highlander and Sienna. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-31090; 04152-31110. Cartridge element; replace the housing O-ring with each change. Not claimed for the 2.5L A25A-FKS: dealer catalogs list spin-on 90915-YZZN1 for the 2019+ RAV4 2.5L and the US-built 2020 Camry 2.5L.\n\nSpecifications\n\nPart number: 04152-YZZA1\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 2GR-FKS\nFitment: 2016–2023 Toyota Tacoma (3.5L V6); 2018–2024 Toyota Camry (3.5L V6); 2017–2022 Toyota Highlander (3.5L V6); 2017–2020 Toyota Sienna (3.5L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -1411,7 +1419,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (2020 Tacoma 3.5L)",
                 "url": "https://www.toyotapartsnow.com/parts-select/2020-toyota-tacoma-oil-filter",
                 "note": ""
@@ -1437,7 +1445,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (2018 Camry, 3.5L)",
                 "url": "https://www.toyotapartsnow.com/parts-select/2018-toyota-camry-oil-filter",
                 "note": ""
@@ -1577,16 +1585,16 @@
           {
             "partNumber": "04152-0V010",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (04152-0V010 replaced by 04152-YZZA1)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~element~kit~oil~fil~04152-0v010.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
@@ -1756,7 +1764,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~replaceable~element~04152-yzza6.html",
                 "note": ""
@@ -2129,8 +2137,8 @@
       }
     },
     {
-      "status": "commercial_pending",
-      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN3 — Tundra and Sequoia",
+      "status": "research_pending",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN3 — vehicles (fitment under review)",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90915-YZZN3",
@@ -2139,25 +2147,10 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2022–2025 Toyota Tundra (3.4L twin-turbo V6); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid)",
-      "fitmentApplications": [
-        {
-          "yearFrom": 2022,
-          "yearTo": 2025,
-          "make": "Toyota",
-          "model": "Tundra",
-          "submodel": "3.4L twin-turbo V6"
-        },
-        {
-          "yearFrom": 2023,
-          "yearTo": 2025,
-          "make": "Toyota",
-          "model": "Sequoia",
-          "submodel": "3.4L twin-turbo V6 hybrid"
-        }
-      ],
-      "engines": "V35A-FTS",
-      "description": "Genuine Toyota spin-on oil filter 90915-YZZN3 for the Toyota Tundra and Sequoia. It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10010. 2024+ Tacoma and 2025+ 4Runner fitment is seller-stated only and not claimed.\n\nSpecifications\n\nPart number: 90915-YZZN3\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: V35A-FTS\nFitment: 2022–2025 Toyota Tundra (3.4L twin-turbo V6); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "fitment": "",
+      "fitmentApplications": [],
+      "engines": "",
+      "description": "Genuine Toyota spin-on oil filter 90915-YZZN3 for the Toyota vehicles (fitment under review). It threads onto the engine's filter mount and is replaced as a complete unit at each oil change. It supersedes 90915-10010. 2024+ Tacoma and 2025+ 4Runner fitment is seller-stated only and not claimed.\n\nSpecifications\n\nPart number: 90915-YZZN3\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -2214,14 +2207,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "high (dealer catalog)",
+      "fitmentConfidence": "low (unresolved)",
       "partKind": "oil_filter_spin",
       "supersededBy": null,
       "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "verified",
+        "verificationStatus": "unresolved",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -2234,22 +2227,22 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2022 Tundra)",
                 "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-oil_filter.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2023 Tundra)",
                 "url": "https://www.toyotapartsdeal.com/oem-2023-toyota-tundra-oil_filter.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2023,
@@ -2260,16 +2253,16 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2023 Sequoia)",
                 "url": "https://www.toyotapartsdeal.com/oem-2023-toyota-sequoia-oil_filter.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           }
         ],
         "supersession": [
@@ -2290,31 +2283,33 @@
         ],
         "rejectedSupersessions": [],
         "blocking": [],
-        "unresolved": []
+        "unresolved": [
+          "2022-2025 Tundra V35A-FTS 3.4L twin-turbo V6: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
+          "2023-2025 Sequoia V35A-FTS 3.4L twin-turbo V6 hybrid: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
+        ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/filter-oil-90915yzzn3",
         "https://parts.frontiertoyota.com/oem-parts/toyota-oil-filter-90915yzzn3",
-        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-oil-filter-90915yzzn3",
-        "https://www.toyotapartsdeal.com/oem-2022-toyota-tundra-oil_filter.html",
-        "https://www.toyotapartsdeal.com/oem-2023-toyota-sequoia-oil_filter.html",
-        "https://www.toyotapartsdeal.com/oem-2023-toyota-tundra-oil_filter.html"
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-oil-filter-90915yzzn3"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image"
+        "licensed product image",
+        "fitment / identity verification"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Awaiting supplier cost",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
           "Rejected (incorrect or unsupported)": false,
-          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": false,
           "Awaiting supplier cost": true,
           "Awaiting image verification": true
         },
         "issues": [
+          "research pending: fitment/identity unresolved",
           "lower unattributed listing(s) seen; not used as benchmark",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $4.49 item"
@@ -2323,8 +2318,8 @@
       }
     },
     {
-      "status": "commercial_pending",
-      "name": "Genuine Toyota Cabin Air Filter 87139-0R030 — Corolla",
+      "status": "research_pending",
+      "name": "Genuine Toyota Cabin Air Filter 87139-0R030 — vehicles (fitment under review)",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "87139-0R030",
@@ -2333,18 +2328,10 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2020–2024 Toyota Corolla (standard (non-charcoal) filter)",
-      "fitmentApplications": [
-        {
-          "yearFrom": 2020,
-          "yearTo": 2024,
-          "make": "Toyota",
-          "model": "Corolla",
-          "submodel": "standard (non-charcoal) filter"
-        }
-      ],
+      "fitment": "",
+      "fitmentApplications": [],
       "engines": "",
-      "description": "Genuine Toyota cabin air filter 87139-0R030 for the Toyota Corolla. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. It supersedes 87139-28020. RAV4 not claimed: dealers split 2019+ RAV4 trims between this filter and 87139-58010.\n\nSpecifications\n\nPart number: 87139-0R030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2024 Toyota Corolla (standard (non-charcoal) filter)\nRestriction: 2020-2024 Corolla: standard (non-charcoal) filter; North American-built\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota cabin air filter 87139-0R030 for the Toyota vehicles (fitment under review). It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. It supersedes 87139-28020. RAV4 not claimed: dealers split 2019+ RAV4 trims between this filter and 87139-58010.\n\nSpecifications\n\nPart number: 87139-0R030\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -2412,14 +2399,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "low (unresolved)",
       "partKind": "cabin_filter",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "unresolved",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -2432,10 +2419,10 @@
             "restriction": "standard (non-charcoal) filter",
             "assemblyOrigin": "North American-built",
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page, pollen filter)",
                 "url": "https://toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-0r030.html",
                 "note": ""
@@ -2447,7 +2434,7 @@
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2019,
@@ -2482,31 +2469,32 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
+          "2020-2024 Corolla: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
           "2019-2019 Corolla: 2019 Corolla sedan is the previous generation; no 2019 evidence for this number."
         ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/element-air-refiner-871390r030",
-        "https://filterbuy.com/auto-cabin-filters/cabin/by-vehicle/toyota/corolla/",
-        "https://toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-0r030.html",
         "https://www.sparksparts.com/oem-parts/toyota-cabin-air-filter-871390r030",
         "https://www.toyotapartsnow.com/oem/toyota~air-refiner-element~87139-0r030"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image"
+        "licensed product image",
+        "fitment / identity verification"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Awaiting supplier cost",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
           "Rejected (incorrect or unsupported)": false,
-          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": false,
           "Awaiting supplier cost": true,
           "Awaiting image verification": true
         },
         "issues": [
+          "research pending: fitment/identity unresolved",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price",
           "ships free under the US parcel table; shipping cost will likely exceed the margin on a $18.09 item"
         ],
@@ -2631,7 +2619,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2020 Camry cabin air filter)",
                 "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-camry-cabin_air_filter.html",
                 "note": ""
@@ -2673,8 +2661,8 @@
       }
     },
     {
-      "status": "commercial_pending",
-      "name": "Genuine Toyota Cabin Air Filter 87139-58010 — Highlander",
+      "status": "research_pending",
+      "name": "Genuine Toyota Cabin Air Filter 87139-58010 — vehicles (fitment under review)",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "87139-58010",
@@ -2683,18 +2671,10 @@
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
       "proposedCategoryName": "Filters & Maintenance",
-      "fitment": "2023–2024 Toyota Highlander (charcoal filter)",
-      "fitmentApplications": [
-        {
-          "yearFrom": 2023,
-          "yearTo": 2024,
-          "make": "Toyota",
-          "model": "Highlander",
-          "submodel": "charcoal filter"
-        }
-      ],
+      "fitment": "",
+      "fitmentApplications": [],
       "engines": "",
-      "description": "Genuine Toyota cabin air filter 87139-58010 for the Toyota Highlander. It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. Also listed for 2018-2019 Camry and some 2019-2024 RAV4 trims.\n\nSpecifications\n\nPart number: 87139-58010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2024 Toyota Highlander (charcoal filter)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota cabin air filter 87139-58010 for the Toyota vehicles (fitment under review). It cleans the air entering the cabin through the heating and air-conditioning system, and a clogged filter is a common cause of weak airflow and musty smells from the vents. Also listed for 2018-2019 Camry and some 2019-2024 RAV4 trims.\n\nSpecifications\n\nPart number: 87139-58010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -2741,14 +2721,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "high (dealer catalog)",
+      "fitmentConfidence": "low (unresolved)",
       "partKind": "cabin_filter",
       "supersededBy": null,
       "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "verified",
+        "verificationStatus": "unresolved",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -2761,22 +2741,22 @@
             "restriction": "charcoal filter",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2023 Highlander)",
                 "url": "https://www.toyotapartsdeal.com/oem-2023-toyota-highlander-cabin_air_filter.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2024 Highlander)",
                 "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-highlander-cabin_air_filter.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2020,
@@ -2790,7 +2770,7 @@
             "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2020-2022 Highlander pages indexed; fitment not visible)",
                 "url": "https://www.toyotapartsdeal.com/oem-2021-toyota-highlander-cabin_air_filter.html",
                 "note": ""
@@ -2816,31 +2796,32 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
+          "2023-2024 Highlander: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
           "2020-2022 Highlander: Year pages exist but their fitment content could not be confirmed.",
           "2021-2024 Sienna: No catalog evidence found for the Sienna."
         ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/element-air-refiner-8713958010",
-        "https://www.toyotapartsdeal.com/oem-2023-toyota-highlander-cabin_air_filter.html",
-        "https://www.toyotapartsdeal.com/oem-2024-toyota-highlander-cabin_air_filter.html",
         "https://www.toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-58010.html"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image"
+        "licensed product image",
+        "fitment / identity verification"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Awaiting supplier cost",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
           "Rejected (incorrect or unsupported)": false,
-          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": false,
           "Awaiting supplier cost": true,
           "Awaiting image verification": true
         },
         "issues": [
+          "research pending: fitment/identity unresolved",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
@@ -3384,7 +3365,7 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (2023 Tacoma: Limited, SR, SR5, Trail, TRD Off-Road, TRD Pro, TRD Sport; 2.7L and 3.5L)",
                 "url": "https://www.toyotapartsnow.com/parts-select/2023-toyota-tacoma-brake-pad-set",
                 "note": ""
@@ -3538,7 +3519,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (front disc)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~front-disc~43512-04052",
                 "note": ""
@@ -3609,7 +3590,7 @@
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0C020 — Tundra and Sequoia",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0C020 — Tundra",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04465-0C020",
@@ -3618,7 +3599,7 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2007–2017 Toyota Tundra; 2008–2017 Toyota Sequoia",
+      "fitment": "2007–2017 Toyota Tundra",
       "fitmentApplications": [
         {
           "yearFrom": 2007,
@@ -3626,17 +3607,10 @@
           "make": "Toyota",
           "model": "Tundra",
           "submodel": null
-        },
-        {
-          "yearFrom": 2008,
-          "yearTo": 2017,
-          "make": "Toyota",
-          "model": "Sequoia",
-          "submodel": null
         }
       ],
       "engines": "",
-      "description": "Genuine Toyota front disc brake pad set 04465-0C020 for the Toyota Tundra and Sequoia. The set covers one front axle, both sides. Ceramic; four pads; hardware sold separately. 2018 is listed by some dealers only and is not claimed.\n\nSpecifications\n\nPart number: 04465-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2017 Toyota Tundra; 2008–2017 Toyota Sequoia\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake pad set 04465-0C020 for the Toyota Tundra. The set covers one front axle, both sides. Ceramic; four pads; hardware sold separately. 2018 is listed by some dealers only and is not claimed.\n\nSpecifications\n\nPart number: 04465-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2017 Toyota Tundra\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -3739,36 +3713,36 @@
             "restriction": null,
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2012 Sequoia)",
                 "url": "https://www.toyotapartsdeal.com/oem-2012-toyota-sequoia-brake_pad_set.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2017 Sequoia)",
                 "url": "https://www.toyotapartsdeal.com/oem-2017-toyota-sequoia-brake_pad_set.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           }
         ],
         "supersession": [],
         "rejectedSupersessions": [],
         "blocking": [],
-        "unresolved": []
+        "unresolved": [
+          "2008-2017 Sequoia: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
+        ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-044650c020",
         "https://parts.scarboroughtoyota.ca/p/Toyota_2017_Tundra-46L-V8-AT-RWD-SR-Extended-Cab-Pickup-Fleetside/Disc-Brake-Pad-Set-Front-A-set-of-disc-brake-pads/47994284/044650C020.html",
         "https://www.lithiatoyotaparts.com/oem-parts/toyota-2007-2017-toyota-brake-pads-44650c020",
         "https://www.sparksparts.com/oem-parts/toyota-genuine-oem-toyota-front-right-and-left-brake-pads-sequoia-and-tundra-44650c020",
-        "https://www.toyotapartsdeal.com/oem-2012-toyota-sequoia-brake_pad_set.html",
-        "https://www.toyotapartsdeal.com/oem-2017-toyota-sequoia-brake_pad_set.html",
         "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~front~pad~only~04465-0c020.html"
       ],
       "blocking": [
@@ -3793,7 +3767,7 @@
     },
     {
       "status": "commercial_pending",
-      "name": "Genuine Toyota Front Disc Brake Rotor 43512-06200 — Camry, RAV4 and Corolla Cross",
+      "name": "Genuine Toyota Front Disc Brake Rotor 43512-06200 — Camry and Corolla Cross",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "43512-06200",
@@ -3802,21 +3776,14 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2018–2024 Toyota Camry (without TRD; hybrid notes conflict); 2019–2024 Toyota RAV4 (engine / hybrid notes vary by listing); 2022–2023 Toyota Corolla Cross (2.0L)",
+      "fitment": "2018–2024 Toyota Camry (without TRD, without hybrid; US-built (Japan-built excluded)); 2022–2023 Toyota Corolla Cross (2.0L)",
       "fitmentApplications": [
         {
           "yearFrom": 2018,
           "yearTo": 2024,
           "make": "Toyota",
           "model": "Camry",
-          "submodel": "without TRD; hybrid notes conflict"
-        },
-        {
-          "yearFrom": 2019,
-          "yearTo": 2024,
-          "make": "Toyota",
-          "model": "RAV4",
-          "submodel": "engine / hybrid notes vary by listing"
+          "submodel": "without TRD, without hybrid; US-built (Japan-built excluded)"
         },
         {
           "yearFrom": 2022,
@@ -3827,7 +3794,7 @@
         }
       ],
       "engines": "M20A-FKS",
-      "description": "Genuine Toyota front disc brake rotor 43512-06200 for the Toyota Camry, RAV4 and Corolla Cross. Sold individually; rotors should be replaced in pairs across the axle. Fitment can vary by trim and brake package; confirm by VIN.\n\nSpecifications\n\nPart number: 43512-06200\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: M20A-FKS\nFitment: 2018–2024 Toyota Camry (without TRD; hybrid notes conflict); 2019–2024 Toyota RAV4 (engine / hybrid notes vary by listing); 2022–2023 Toyota Corolla Cross (2.0L)\nRestriction: 2018-2024 Camry: without TRD; hybrid notes conflict\nRestriction: 2019-2024 RAV4: engine / hybrid notes vary by listing\nRestriction: 2022-2023 Corolla Cross: 2.0L\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake rotor 43512-06200 for the Toyota Camry and Corolla Cross. Sold individually; rotors should be replaced in pairs across the axle. Fitment can vary by trim and brake package; confirm by VIN.\n\nSpecifications\n\nPart number: 43512-06200\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: M20A-FKS\nFitment: 2018–2024 Toyota Camry (without TRD, without hybrid; US-built (Japan-built excluded)); 2022–2023 Toyota Corolla Cross (2.0L)\nRestriction: 2018-2024 Camry: without TRD, without hybrid; US-built (Japan-built excluded); US-built\nRestriction: 2022-2023 Corolla Cross: 2.0L\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -3906,13 +3873,13 @@
             "make": "Toyota",
             "model": "Camry",
             "engine": "",
-            "restriction": "without TRD; hybrid notes conflict",
-            "assemblyOrigin": null,
+            "restriction": "without TRD, without hybrid; US-built (Japan-built excluded)",
+            "assemblyOrigin": "US-built",
             "productionDates": null,
             "status": "vin_dependent",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
                 "note": ""
@@ -3921,6 +3888,12 @@
                 "kind": "dealer_catalog_ca",
                 "source": "Scarborough Toyota (2021 Camry XSE)",
                 "url": "https://parts.scarboroughtoyota.ca/p/Toyota_2021_Camry-XSE-Sedan/Disc-Brake-Rotor-Front/71596501/4351206200.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Camry 2.5L / 3.5L, without hybrid, without TRD; US built; 2019-20 Canada-built note)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206200",
                 "note": ""
               }
             ],
@@ -3935,16 +3908,16 @@
             "restriction": "engine / hybrid notes vary by listing",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2022,
@@ -3958,7 +3931,7 @@
             "status": "vin_dependent",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
                 "note": ""
@@ -3997,7 +3970,7 @@
             "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "dealer notes conflict (with / without hybrid)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~disc~fr~43512-06200.html",
                 "note": ""
@@ -4010,6 +3983,7 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
+          "2019-2024 RAV4: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
           "2024-2025 Corolla Cross M20A-FKS 2.0L: Dealers disagree (2022-2023 vs 2022-2025).",
           "2019-2024 RAV4 A25A-FXS 2.5L hybrid: Dealer notes conflict on hybrid fitment; needs a VIN-level lookup."
         ]
@@ -4041,8 +4015,8 @@
       }
     },
     {
-      "status": "commercial_pending",
-      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — Camry and RAV4",
+      "status": "research_pending",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — vehicles (fitment under review)",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04465-0E060",
@@ -4051,25 +4025,10 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies)",
-      "fitmentApplications": [
-        {
-          "yearFrom": 2018,
-          "yearTo": 2024,
-          "make": "Toyota",
-          "model": "Camry",
-          "submodel": "2.5L; USA-built, without TRD"
-        },
-        {
-          "yearFrom": 2019,
-          "yearTo": 2023,
-          "make": "Toyota",
-          "model": "RAV4",
-          "submodel": "North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies"
-        }
-      ],
-      "engines": "A25A-FKS",
-      "description": "Genuine Toyota front disc brake pad set 04465-0E060 for the Toyota Camry and RAV4. The set covers one front axle, both sides. TRD and some trims use different pads.\n\nSpecifications\n\nPart number: 04465-0E060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2018–2024 Toyota Camry (2.5L; USA-built, without TRD); 2019–2023 Toyota RAV4 (North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies)\nRestriction: 2018-2024 Camry: USA-built, without TRD; USA-built; split with 04465-33480 by production window\nRestriction: 2019-2023 RAV4: North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies; North American-built\n\nConfirm fitment with your VIN before ordering.",
+      "fitment": "",
+      "fitmentApplications": [],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake pad set 04465-0E060 for the Toyota vehicles (fitment under review). The set covers one front axle, both sides. TRD and some trims use different pads.\n\nSpecifications\n\nPart number: 04465-0E060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -4131,14 +4090,14 @@
       },
       "image": null,
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
-      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "fitmentConfidence": "low (unresolved)",
       "partKind": "pads_front",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
-        "verificationStatus": "vin_dependent",
+        "verificationStatus": "unresolved",
         "vinLookupPerformed": false,
         "identity": null,
         "applications": [
@@ -4151,10 +4110,10 @@
             "restriction": "USA-built, without TRD",
             "assemblyOrigin": "USA-built",
             "productionDates": "split with 04465-33480 by production window",
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2018-2024 Camry)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html",
                 "note": ""
@@ -4172,7 +4131,7 @@
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2019,
@@ -4183,16 +4142,16 @@
             "restriction": "North American-built; Japan-built 2019-2020 units use 04465-33480; end year 2023 / 2024 varies",
             "assemblyOrigin": "North American-built",
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2019-2024 RAV4)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2024,
@@ -4212,31 +4171,33 @@
         "rejectedSupersessions": [],
         "blocking": [],
         "unresolved": [
+          "2018-2024 Camry A25A-FKS 2.5L: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
+          "2019-2023 RAV4: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
           "2024-2024 RAV4: One catalog ends at 2023, another at 2024."
         ]
       },
       "sources": [
-        "https://attachments.priuschat.com/attachment-files/2022/03/219936_04_BrakePads2020_hi.pdf",
         "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-front-44650e060",
-        "https://parts.scarboroughtoyota.ca/p/Toyota__/Disc-Brake-Pad-Set-Front/71575523/044650E060.html",
         "https://www.sparksparts.com/oem-parts/toyota-brake-pads-44650e060",
         "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0e060.html"
       ],
       "blocking": [
         "approved selling price",
-        "licensed product image"
+        "licensed product image",
+        "fitment / identity verification"
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Awaiting supplier cost",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
           "Rejected (incorrect or unsupported)": false,
-          "Awaiting Toyota fitment confirmation": false,
+          "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": false,
           "Awaiting supplier cost": true,
           "Awaiting image verification": true
         },
         "issues": [
+          "research pending: fitment/identity unresolved",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
         "approvalStatus": "not approved"
@@ -4496,7 +4457,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (part page)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~disc-brake-pad-kit~04465-35330",
                 "note": ""
@@ -4568,7 +4529,7 @@
     },
     {
       "status": "research_pending",
-      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-02530 — Highlander",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-02530 — vehicles (fitment under review)",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04465-02530",
@@ -4577,18 +4538,10 @@
       "condition": "brand-new",
       "proposedCategory": "brakes",
       "proposedCategoryName": "Brakes",
-      "fitment": "2021–2022 Toyota Highlander (2.5L hybrid; hybrid)",
-      "fitmentApplications": [
-        {
-          "yearFrom": 2021,
-          "yearTo": 2022,
-          "make": "Toyota",
-          "model": "Highlander",
-          "submodel": "2.5L hybrid; hybrid"
-        }
-      ],
-      "engines": "A25A-FXS",
-      "description": "Genuine Toyota front disc brake pad set 04465-02530 for the Toyota Highlander. The set covers one front axle, both sides. Manufacturer note: Mark Advics VC084H. Other years unconfirmed.\n\nSpecifications\n\nPart number: 04465-02530\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FXS\nFitment: 2021–2022 Toyota Highlander (2.5L hybrid; hybrid)\nRestriction: 2021-2022 Highlander: hybrid\n\nConfirm fitment with your VIN before ordering.",
+      "fitment": "",
+      "fitmentApplications": [],
+      "engines": "",
+      "description": "Genuine Toyota front disc brake pad set 04465-02530 for the Toyota vehicles (fitment under review). The set covers one front axle, both sides. Manufacturer note: Mark Advics VC084H. Other years unconfirmed.\n\nSpecifications\n\nPart number: 04465-02530\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -4648,7 +4601,7 @@
       "fitmentConfidence": "low (unresolved)",
       "partKind": "pads_front",
       "supersededBy": null,
-      "vinDependent": true,
+      "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
         "auditedOn": "2026-11-18",
@@ -4665,22 +4618,22 @@
             "restriction": "hybrid",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2022 Highlander, hybrid submodel codes)",
                 "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_pad_set.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-02530.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           },
           {
             "yearFrom": 2021,
@@ -4715,14 +4668,14 @@
           "Olathe Toyota's note for this number reads 'Grand Highlander, without hybrid', contradicting the hybrid listings."
         ],
         "unresolved": [
+          "2021-2022 Highlander A25A-FXS 2.5L hybrid: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source.",
           "2021-2022 Highlander T24A-FTS 2.4L turbo: The 2.4L turbo entered the Highlander for 2023; a 2021-2022 2.4L application does not exist.",
           "2021-2022 Highlander 2GR-FKS 3.5L V6: No catalog evidence for the V6; evidence covers hybrid trims only."
         ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/pad-kit-disc-brake-0446502530",
-        "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_pad_set.html",
-        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-02530.html"
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-highlander-brake_pad_set.html"
       ],
       "blocking": [
         "approved selling price",
@@ -4749,16 +4702,16 @@
     },
     {
       "status": "research_pending",
-      "name": "Genuine Toyota Water Inlet Housing 16032-F0011 — Camry and RAV4",
+      "name": "Genuine Toyota Water Inlet Housing 16032-F0011 — Camry",
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "16032-F0011",
-      "supersedes": "16032-F0012; 16032-F0010; 16032-25010",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "cooling",
       "proposedCategoryName": "Cooling System",
-      "fitment": "2018–2024 Toyota Camry (2.5L; hybrid inclusion unresolved); 2019–2024 Toyota RAV4 (2.5L; hybrid inclusion unresolved)",
+      "fitment": "2018–2024 Toyota Camry (2.5L; hybrid inclusion unresolved)",
       "fitmentApplications": [
         {
           "yearFrom": 2018,
@@ -4766,17 +4719,10 @@
           "make": "Toyota",
           "model": "Camry",
           "submodel": "2.5L; hybrid inclusion unresolved"
-        },
-        {
-          "yearFrom": 2019,
-          "yearTo": 2024,
-          "make": "Toyota",
-          "model": "RAV4",
-          "submodel": "2.5L; hybrid inclusion unresolved"
         }
       ],
       "engines": "A25A-FKS; A25A-FXS",
-      "description": "Genuine Toyota water inlet housing sub-assembly 16032-F0011 for the Toyota Camry and RAV4. It is the coolant inlet housing on the engine; Toyota catalogs it separately from the water pump. It supersedes 16032-F0012; 16032-F0010; 16032-25010. Gasket inclusion is not confirmed.\n\nSpecifications\n\nPart number: 16032-F0011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; A25A-FXS\nFitment: 2018–2024 Toyota Camry (2.5L; hybrid inclusion unresolved); 2019–2024 Toyota RAV4 (2.5L; hybrid inclusion unresolved)\nRestriction: 2018-2024 Camry: 2.5L; hybrid inclusion unresolved\nRestriction: 2019-2024 RAV4: 2.5L; hybrid inclusion unresolved\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota water inlet housing sub-assembly 16032-F0011 for the Toyota Camry. It is the coolant inlet housing on the engine; Toyota catalogs it separately from the water pump. Gasket inclusion is not confirmed.\n\nSpecifications\n\nPart number: 16032-F0011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS; A25A-FXS\nFitment: 2018–2024 Toyota Camry (2.5L; hybrid inclusion unresolved)\nRestriction: 2018-2024 Camry: 2.5L; hybrid inclusion unresolved\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -4857,7 +4803,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (2018-2024 Camry, 2019-2025 RAV4, 2020-2025 Highlander, 2021-2025 Sienna)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~housing-sub-assy-wa~16032-f0011",
                 "note": ""
@@ -4874,67 +4820,69 @@
             "restriction": "2.5L; hybrid inclusion unresolved",
             "assemblyOrigin": null,
             "productionDates": null,
-            "status": "vin_dependent",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~housing-sub-assy-wa~16032-f0011",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
           }
         ],
         "supersession": [
           {
             "partNumber": "16032-F0012",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~housing-sub-assy-wa~16032-f0011",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           },
           {
             "partNumber": "16032-F0010",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~housing-sub-assy-wa~16032-f0011",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           },
           {
             "partNumber": "16032-25010",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~housing-sub-assy-wa~16032-f0011",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
         "blocking": [
           "Single dealer catalog for applications; it includes hybrid models that the staged 'gas, non-hybrid' restriction excluded. Gasket (16325-25010) inclusion unconfirmed."
         ],
-        "unresolved": []
+        "unresolved": [
+          "2019-2024 RAV4 A25A-FKS / A25A-FXS 2.5L: Only retailer catalog evidence (ToyotaPartsDeal / ToyotaPartsNow) after the 2026-11-19 source reclassification; needs a Toyota or dealer catalog source."
+        ]
       },
       "sources": [
         "https://autoparts.toyota.com/products/product/housing-sub-assy-water-inlet-16032f0011",
@@ -5070,7 +5018,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (12V/100A)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~alternator~assy~w~r~27060-f0010.html",
                 "note": ""
@@ -5130,7 +5078,7 @@
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "43550-0R060",
-      "supersedes": "43550-33070",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "suspension",
@@ -5146,7 +5094,7 @@
         }
       ],
       "engines": "A25A-FKS",
-      "description": "Genuine Toyota front wheel bearing and hub assembly 43550-0R060 for the Toyota RAV4. The bearing comes pressed into the hub as one assembly. A worn bearing usually shows up as a growl that changes with speed or when turning. It supersedes 43550-33070. Side-specific; confirm left/right. RAV4 Prime uses 43550-42030.\n\nSpecifications\n\nPart number: 43550-0R060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas, without hybrid or Prime)\nRestriction: 2019-2024 RAV4: gas, without hybrid or Prime; Japan-built or North American-built (both listed)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front wheel bearing and hub assembly 43550-0R060 for the Toyota RAV4. The bearing comes pressed into the hub as one assembly. A worn bearing usually shows up as a growl that changes with speed or when turning. Side-specific; confirm left/right. RAV4 Prime uses 43550-42030.\n\nSpecifications\n\nPart number: 43550-0R060\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas, without hybrid or Prime)\nRestriction: 2019-2024 RAV4: gas, without hybrid or Prime; Japan-built or North American-built (both listed)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -5238,7 +5186,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~hub~bearing~assy~43550-0r060.html",
                 "note": ""
@@ -5277,16 +5225,16 @@
           {
             "partNumber": "43550-33070",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~bearing-and-hub-assembly~43550-33070",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
@@ -5425,7 +5373,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://toyotapartsdeal.com/oem/toyota~disc~fr~43512-0r010.html",
                 "note": ""
@@ -5502,7 +5450,7 @@
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "90919-A2009",
-      "supersedes": "90919-02276",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "ignition",
@@ -5518,7 +5466,7 @@
         }
       ],
       "engines": "A25A-FKS",
-      "description": "Genuine Toyota direct ignition coil 90919-A2009 for the Toyota RAV4. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually. It supersedes 90919-02276.\n\nSpecifications\n\nPart number: 90919-A2009\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas (non-hybrid))\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota direct ignition coil 90919-A2009 for the Toyota RAV4. Each cylinder has its own coil mounted directly on the spark plug; a failing coil typically sets a cylinder-specific misfire code. Sold individually.\n\nSpecifications\n\nPart number: 90919-A2009\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: A25A-FKS\nFitment: 2019–2024 Toyota RAV4 (2.5L; gas (non-hybrid))\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -5594,13 +5542,13 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2020 RAV4)",
                 "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-rav4-ignition_coil.html",
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2024 RAV4)",
                 "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-rav4-ignition_coil.html",
                 "note": ""
@@ -5633,16 +5581,16 @@
           {
             "partNumber": "90919-02276",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (90919-02276)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~ignition-coil~90919-02276",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
@@ -5744,7 +5692,7 @@
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
       "fitmentConfidence": "low (unresolved)",
       "partKind": "pads_front",
-      "supersededBy": "04465-42220",
+      "supersededBy": null,
       "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
@@ -5765,7 +5713,7 @@
             "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-42200.html",
                 "note": ""
@@ -5778,16 +5726,16 @@
           {
             "partNumber": "04465-42220",
             "relation": "superseded_by",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (04465-42200 replaced by 04465-42220)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-42200.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           },
           {
             "partNumber": "04465-42160",
@@ -5815,9 +5763,9 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Rejected (incorrect or unsupported)",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Rejected (incorrect or unsupported)": true,
+          "Rejected (incorrect or unsupported)": false,
           "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": false,
           "Awaiting supplier cost": true,
@@ -5826,7 +5774,6 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "Superseded by 04465-42220.",
-          "superseded by 04465-42220",
           "lower unattributed listing(s) seen; not used as benchmark",
           "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
         ],
@@ -5839,7 +5786,7 @@
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04465-42220",
-      "supersedes": "04465-0R010; 04465-42200",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "brakes",
@@ -5847,7 +5794,7 @@
       "fitment": "",
       "fitmentApplications": [],
       "engines": "",
-      "description": "Genuine Toyota front disc brake pad set 04465-42220 for the Toyota vehicles (fitment under review). The set covers one front axle, both sides. It supersedes 04465-0R010; 04465-42200. Dealer shows 04465-0R010 (2009-2018 RAV4) replaced by 42220; 42220's own fitment not yet confirmed.\n\nSpecifications\n\nPart number: 04465-42220\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota front disc brake pad set 04465-42220 for the Toyota vehicles (fitment under review). The set covers one front axle, both sides. Dealer shows 04465-0R010 (2009-2018 RAV4) replaced by 42220; 42220's own fitment not yet confirmed.\n\nSpecifications\n\nPart number: 04465-42220\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: under review (no verified application)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "insufficient",
@@ -5897,7 +5844,7 @@
             "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (04465-0R010 replaced by 04465-42220)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0r010.html",
                 "note": ""
@@ -5910,30 +5857,30 @@
           {
             "partNumber": "04465-0R010",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-0r010.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           },
           {
             "partNumber": "04465-42200",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-42200.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
@@ -6959,7 +6906,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2024 Corolla)",
                 "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-corolla-oil_filter.html",
                 "note": ""
@@ -6989,7 +6936,7 @@
             "status": "verified",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2019 Avalon: 90915-10009 replaced by 90915-YZZN1)",
                 "url": "https://www.toyotapartsdeal.com/oem-2019-toyota-avalon-oil_filter.html",
                 "note": ""
@@ -7063,7 +7010,7 @@
       "brand": "toyota",
       "manufacturer": "Toyota",
       "partNumber": "04152-YZZA5",
-      "supersedes": "04152-38010",
+      "supersedes": "",
       "partType": "Genuine Toyota",
       "condition": "brand-new",
       "proposedCategory": "filters-maintenance",
@@ -7093,7 +7040,7 @@
         }
       ],
       "engines": "1GR-FE",
-      "description": "Genuine Toyota oil filter element 04152-YZZA5 for the Toyota 4Runner, FJ Cruiser and Tundra. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. It supersedes 04152-38010. Some catalogs also list 2007-2011 Camry and 2006-2008 RAV4; those are not claimed.\n\nSpecifications\n\nPart number: 04152-YZZA5\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE\nFitment: 2010–2024 Toyota 4Runner (4.0L V6); 2010–2014 Toyota FJ Cruiser (4.0L V6); 2011–2014 Toyota Tundra (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
+      "description": "Genuine Toyota oil filter element 04152-YZZA5 for the Toyota 4Runner, FJ Cruiser and Tundra. This is a cartridge-type element that drops into the engine's filter housing, so only the paper element and seals are replaced at each oil change, not a whole canister. Some catalogs also list 2007-2011 Camry and 2006-2008 RAV4; those are not claimed.\n\nSpecifications\n\nPart number: 04152-YZZA5\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nEngines: 1GR-FE\nFitment: 2010–2024 Toyota 4Runner (4.0L V6); 2010–2014 Toyota FJ Cruiser (4.0L V6); 2011–2014 Toyota Tundra (4.0L V6)\n\nConfirm fitment with your VIN before ordering.",
       "price": null,
       "pricing": {
         "status": "verified",
@@ -7293,16 +7240,16 @@
           {
             "partNumber": "04152-38010",
             "relation": "supersedes",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (2010 Tundra: 04152-38010 superseded by YZZA5)",
                 "url": "https://www.toyotapartsdeal.com/oem-2010-toyota-tundra-oil_filter.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           },
           {
             "partNumber": "04152-31050",
@@ -7397,7 +7344,7 @@
       "imageStatus": "pending: no licensed image source; needs vendor photo or licensed distributor feed",
       "fitmentConfidence": "low (unresolved)",
       "partKind": "cabin_filter",
-      "supersededBy": "87139-YZZ82",
+      "supersededBy": null,
       "vinDependent": false,
       "vinLookupPerformed": false,
       "fitmentVerification": {
@@ -7431,16 +7378,16 @@
           {
             "partNumber": "87139-YZZ82",
             "relation": "superseded_by",
-            "status": "verified",
+            "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal / Olathe Toyota (staged research)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-yzz08.html",
                 "note": ""
               }
             ],
-            "reason": null
+            "reason": "Seen on a retailer catalog only (ToyotaPartsDeal / ToyotaPartsNow)."
           }
         ],
         "rejectedSupersessions": [],
@@ -7461,9 +7408,9 @@
       ],
       "audit": {
         "auditedOn": "2026-11-18",
-        "primaryStatus": "Rejected (incorrect or unsupported)",
+        "primaryStatus": "Awaiting Toyota fitment confirmation",
         "checks": {
-          "Rejected (incorrect or unsupported)": true,
+          "Rejected (incorrect or unsupported)": false,
           "Awaiting Toyota fitment confirmation": true,
           "Awaiting pricing verification": true,
           "Awaiting supplier cost": true,
@@ -7472,7 +7419,6 @@
         "issues": [
           "research pending: fitment/identity unresolved",
           "Superseded by 87139-YZZ82.",
-          "superseded by 87139-YZZ82",
           "only 0 attributed competitor price(s) -- fewer than 3"
         ],
         "approvalStatus": "not approved"
@@ -7567,7 +7513,7 @@
             "status": "unresolved",
             "evidence": [
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsDeal (part page; ranges 2008-2024 / 2008-2016, no 4Runner entry)",
                 "url": "https://www.toyotapartsdeal.com/oem/toyota~element~air~refiner~87139-50100.html",
                 "note": ""
@@ -7989,7 +7935,7 @@
                 "note": ""
               },
               {
-                "kind": "dealer_catalog",
+                "kind": "retailer",
                 "source": "ToyotaPartsNow (part page)",
                 "url": "https://www.toyotapartsnow.com/oem/toyota~alternator-assembly-w-regulator~27060-25010",
                 "note": ""
