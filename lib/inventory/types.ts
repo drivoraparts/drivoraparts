@@ -116,6 +116,15 @@ export type Product = {
   msrpConfirmed?: boolean;
 
   /**
+   * The authored `price` is already the selling price: a genuine Toyota part
+   * priced 3-5% below the lowest verified US retailer for the same part
+   * number (owner's pricing strategy for genuine OEM parts). The storefront's
+   * automatic discount (PUBLIC_PRICE_RATIO) is not applied on top, and no
+   * strike-through reference is shown.
+   */
+  competitorPriced?: boolean;
+
+  /**
    * The `location` warehouse label is confirmed for this listing: the unit is
    * held in a warehouse DrivoraParts operates. Unset, a warehouse label is
    * shown as neutral fulfillment wording instead; see fulfillment.ts. Nothing

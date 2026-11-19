@@ -1,0 +1,407 @@
+{
+  "importedOn": "2026-11-19",
+  "imported": [
+    {
+      "id": 4304,
+      "partNumber": "04465-04090",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-04090 for Toyota Tacoma (2016–2023)",
+      "price": 66.69
+    },
+    {
+      "id": 4305,
+      "partNumber": "04465-06170",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-06170 for Toyota Camry (2023–2024)",
+      "price": 77.29
+    },
+    {
+      "id": 4306,
+      "partNumber": "04465-0C020",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-0C020 for Toyota Tundra (2007–2017)",
+      "price": 67.49
+    },
+    {
+      "id": 4307,
+      "partNumber": "04465-33480",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-33480 for Toyota Camry / RAV4 (2018–2020)",
+      "price": 69.09
+    },
+    {
+      "id": 4308,
+      "partNumber": "43512-04052",
+      "name": "Genuine Toyota Front Brake Rotor 43512-04052 for Toyota Tacoma (2005–2023)",
+      "price": 77.29
+    },
+    {
+      "id": 4309,
+      "partNumber": "43512-06200",
+      "name": "Genuine Toyota Front Brake Rotor 43512-06200 for Toyota Camry / Corolla Cross (2018–2024)",
+      "price": 63.49
+    },
+    {
+      "id": 4310,
+      "partNumber": "43512-0R010",
+      "name": "Genuine Toyota Front Brake Rotor 43512-0R010 for Toyota RAV4 (2009–2018)",
+      "price": 63.79
+    }
+  ],
+  "excluded": [
+    {
+      "partNumber": "04152-YZZA1",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA1 — Tacoma, Camry, Highlander and Sienna",
+      "reasons": [
+        "$4.49 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04152-YZZA5",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA5 — 4Runner, FJ Cruiser and Tundra",
+      "reasons": [
+        "$4.39 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04152-YZZA6",
+      "name": "Genuine Toyota Oil Filter Element 04152-YZZA6 — Corolla, Matrix and Prius",
+      "reasons": [
+        "$4.30 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04465-02530",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-02530 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04465-0E060",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-0E060 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04465-35330",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-35330 — 4Runner",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04465-42200",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-42200 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "04465-42220",
+      "name": "Genuine Toyota Front Disc Brake Pad Set 04465-42220 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "16032-F0011",
+      "name": "Genuine Toyota Water Inlet Housing 16032-F0011 — Camry",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "16400-0S030",
+      "name": "Genuine Toyota Radiator Assembly 16400-0S030 — Tundra",
+      "reasons": [
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "16400-0S040",
+      "name": "Genuine Toyota Radiator Assembly 16400-0S040 — Sequoia",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "16400-31B70",
+      "name": "Genuine Toyota Radiator Assembly 16400-31B70 — 4Runner",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "16400-F0080",
+      "name": "Genuine Toyota Radiator 16400-F0080 — Highlander",
+      "reasons": [
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "16410-0P290",
+      "name": "Genuine Toyota Radiator 16410-0P290 — fitment under review",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "17801-0C040",
+      "name": "Genuine Toyota Engine Air Filter 17801-0C040 — Tacoma",
+      "reasons": [
+        "$18.09 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "17801-0P051",
+      "name": "Genuine Toyota Engine Air Filter 17801-0P051 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "$18.09 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "17801-0P100",
+      "name": "Genuine Toyota Engine Air Filter 17801-0P100 — Tacoma",
+      "reasons": [
+        "$17.99 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "17801-38051",
+      "name": "Genuine Toyota Engine Air Filter 17801-38051 — 4Runner",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "$18.69 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "17801-F0020",
+      "name": "Genuine Toyota Engine Air Filter 17801-F0020 — Camry and Corolla",
+      "reasons": [
+        "$17.99 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "17801-F0050",
+      "name": "Genuine Toyota Engine Air Filter 17801-F0050 — RAV4 and Camry",
+      "reasons": [
+        "$18.09 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "27060-25010",
+      "name": "Genuine Toyota Alternator Assembly with Regulator 27060-25010 — RAV4",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "27060-F0010",
+      "name": "Genuine Toyota Alternator Assembly with Regulator (100A) 27060-F0010 — Camry",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "43512-0E060",
+      "name": "Genuine Toyota Front Disc Brake Rotor 43512-0E060 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "43550-0R060",
+      "name": "Genuine Toyota Front Wheel Bearing and Hub Assembly 43550-0R060 — RAV4",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "43550-0R070",
+      "name": "Genuine Toyota Front Wheel Bearing and Hub Assembly 43550-0R070 — RAV4",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "81150-04270",
+      "name": "Genuine Toyota Headlight Assembly, Left (Halogen with LED DRL) 81150-04270 — Tacoma",
+      "reasons": [
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "81150-04290",
+      "name": "Genuine Toyota Headlight Assembly, Left (LED, Sequential Turn) 81150-04290 — Tacoma",
+      "reasons": [
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "87139-0E040",
+      "name": "Genuine Toyota Cabin Air Filter (Deodorizing) 87139-0E040 — Camry",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "87139-0R030",
+      "name": "Genuine Toyota Cabin Air Filter 87139-0R030 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "$18.09 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "87139-50100",
+      "name": "Genuine Toyota Cabin Air Filter 87139-50100 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "87139-58010",
+      "name": "Genuine Toyota Cabin Air Filter 87139-58010 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "87139-YZZ08",
+      "name": "Genuine Toyota Cabin Air Filter 87139-YZZ08 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "88310-02B60",
+      "name": "Genuine Toyota A/C Compressor 88310-02B60 — Corolla",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "88310-06570",
+      "name": "Genuine Toyota A/C Compressor with Pulley 88310-06570 — Camry / RAV4",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "88370-48170",
+      "name": "Genuine Toyota Electric A/C Compressor (Hybrid) 88370-48170 — Sienna",
+      "reasons": [
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90915-YZZD3",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZD3 — Tacoma, 4Runner, Tundra and Sequoia",
+      "reasons": [
+        "$4.39 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90915-YZZN1",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN1 — Camry, RAV4 and Corolla",
+      "reasons": [
+        "$4.30 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90915-YZZN3",
+      "name": "Genuine Toyota Spin-On Oil Filter 90915-YZZN3 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "$4.49 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90919-01263",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01263 — Tacoma, Camry and Highlander",
+      "reasons": [
+        "$13.29 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90919-01275",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01275 — Corolla",
+      "reasons": [
+        "$12.79 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90919-01287",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01287 — Tacoma",
+      "reasons": [
+        "$15.69 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90919-01289",
+      "name": "Genuine Toyota Iridium Spark Plug 90919-01289 — Camry, RAV4, Corolla, Highlander and Venza",
+      "reasons": [
+        "$12.49 part ships free under the US parcel table: unprofitable on its own",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90919-02258",
+      "name": "Genuine Toyota Direct Ignition Coil 90919-02258 — vehicles (fitment under review)",
+      "reasons": [
+        "fitment unresolved or record superseded",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "90919-A2009",
+      "name": "Genuine Toyota Direct Ignition Coil 90919-A2009 — RAV4",
+      "reasons": [
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    },
+    {
+      "partNumber": "G9010-48100",
+      "name": "Genuine Toyota Hybrid Inverter Cooler (Radiator) G9010-48100 — Sienna",
+      "reasons": [
+        "fewer than 3 attributed competitor prices",
+        "Toyota's image host has no photo for this part number (placeholder only)"
+      ]
+    }
+  ]
+}
