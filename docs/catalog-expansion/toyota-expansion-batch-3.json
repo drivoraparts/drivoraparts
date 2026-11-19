@@ -3943,6 +3943,2960 @@
         "supplier cost not established",
         "no licensed product image"
       ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-04100 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-04100",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2024–2025 Toyota Tacoma (2.4L turbo (non-hybrid); without hybrid; i-FORCE MAX hybrid Tacomas use 42431-04090)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L turbo (non-hybrid); without hybrid; i-FORCE MAX hybrid Tacomas use 42431-04090"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-04100 for the Toyota Tacoma. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-04100\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Tacoma (2.4L turbo (non-hybrid); without hybrid; i-FORCE MAX hybrid Tacomas use 42431-04090)\nRestriction (2024-2025 Tacoma): without hybrid; i-FORCE MAX hybrid Tacomas use 42431-04090\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 133.05,
+        "lowestCompetitor": {
+          "seller": "Lakeland Toyota",
+          "price": 92.79,
+          "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100"
+        },
+        "competitors": [
+          {
+            "seller": "Lakeland Toyota",
+            "price": 92.79,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100"
+          },
+          {
+            "seller": "Longo Toyota of Prosper",
+            "price": 92.93,
+            "url": "https://parts.longotoyotaofprosper.com/oem-parts/toyota-disc-brake-rotor-4243104100"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 98.33,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 104.74,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 88.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "2.4L turbo (non-hybrid)",
+            "restriction": "without hybrid; i-FORCE MAX hybrid Tacomas use 42431-04090",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024-2026 Toyota Tacoma disc brake rotor 42431-04100)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42431-04100 Disc Brake Rotor 2024-2025 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tacoma TRD Off-Road rear brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100",
+        "https://parts.longotoyotaofprosper.com/oem-parts/toyota-disc-brake-rotor-4243104100",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243104100",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/brakes--rear-brakes"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Drum 42431-02230 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-02230",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2009–2019 Toyota Corolla (Corolla with rear drum brakes only; disc-brake Corollas use a rear rotor)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "Corolla with rear drum brakes only; disc-brake Corollas use a rear rotor"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake drum 42431-02230 for the Toyota Corolla. Sold individually; drums should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-02230\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2019 Toyota Corolla (Corolla with rear drum brakes only; disc-brake Corollas use a rear rotor)\nRestriction (2009-2019 Corolla): Corolla with rear drum brakes only; disc-brake Corollas use a rear rotor\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 117.41,
+        "lowestCompetitor": {
+          "seller": "Jim Hudson Toyota",
+          "price": 80.45,
+          "url": "https://parts.jimhudsontoyota.com/oem-parts/toyota-brake-drum-4243102230"
+        },
+        "competitors": [
+          {
+            "seller": "Jim Hudson Toyota",
+            "price": 80.45,
+            "url": "https://parts.jimhudsontoyota.com/oem-parts/toyota-brake-drum-4243102230"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 80.82,
+            "url": "https://www.autopartsprime.com/p/2009-toyota-corolla-brake-drum"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 83.65,
+            "url": "https://www.toyotapartsnow.com/parts-select/toyota-corolla-brake-drum"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 84.83,
+            "url": "https://www.toyotapartsdeal.com/oem-2015-toyota-corolla-brake_drum.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 76.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "Corolla with rear drum brakes only; disc-brake Corollas use a rear rotor",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2009-2019 Toyota Corolla brake drum 42431-02230)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-drum-4243102230",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (42431-02230 Brake Drum 2009-2019 Toyota Corolla)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-drum-4243102230",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2009-2019 Toyota Corolla brake drum 42431-02230)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-brake-drum-4243102230",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.jimhudsontoyota.com/oem-parts/toyota-brake-drum-4243102230",
+        "https://parts.longotoyota.com/oem-parts/toyota-brake-drum-4243102230",
+        "https://parts.olathetoyota.com/oem-parts/toyota-brake-drum-4243102230",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-brake-drum-4243102230",
+        "https://www.autopartsprime.com/p/2009-toyota-corolla-brake-drum",
+        "https://www.toyotapartsdeal.com/oem-2015-toyota-corolla-brake_drum.html",
+        "https://www.toyotapartsnow.com/parts-select/toyota-corolla-brake-drum"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-12310 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-12310",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2014–2019 Toyota Corolla (1.8L; Corolla with rear disc brakes only (trims with rear drums use 42431-02230))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2014,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "1.8L; Corolla with rear disc brakes only (trims with rear drums use 42431-02230)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-12310 for the Toyota Corolla. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-12310\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2014–2019 Toyota Corolla (1.8L; Corolla with rear disc brakes only (trims with rear drums use 42431-02230))\nRestriction (2014-2019 Corolla): Corolla with rear disc brakes only (trims with rear drums use 42431-02230)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 86.81,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 59.66,
+          "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-brake_disc.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 59.66,
+            "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-brake_disc.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 62.11,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 62.79,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-12310"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 66.41,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 66.78,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 56.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2014,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "1.8L",
+            "restriction": "Corolla with rear disc brakes only (trims with rear drums use 42431-02230)",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2009-2022 Toyota disc brake rotor rear 42431-12310)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2014 Corolla S rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2014-toyota-corolla--s--1-8l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2017 Corolla XSE rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2017-toyota-corolla--xse--1-8l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310",
+        "https://parts.longotoyota.com/v-2014-toyota-corolla--s--1-8l-l4-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310",
+        "https://parts.olathetoyota.com/v-2017-toyota-corolla--xse--1-8l-l4-gas/brakes--rear-brakes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-rear-4243112310",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-corolla-brake_disc.html",
+        "https://www.toyotapartsnow.com/oem/toyota~rear-disc~42431-12310"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Rotor 43512-06150 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-06150",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2011–2017 Toyota Camry (dealer fitment notes split by engine and build origin; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2011,
+          "yearTo": 2017,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "dealer fitment notes split by engine and build origin; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake rotor 43512-06150 for the Toyota Camry. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 43512-06150\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2011–2017 Toyota Camry (dealer fitment notes split by engine and build origin; confirm by VIN)\nRestriction (2011-2017 Camry): dealer fitment notes split by engine and build origin; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 96.12,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 68.23,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 68.23,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 70.91,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 78.66,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 81.28,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150/"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 64.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2011,
+            "yearTo": 2017,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "dealer fitment notes split by engine and build origin; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (43512-06150 Disc Brake Rotor (Front) 2006-2018 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "American Toyota (2011 Camry 2.5L front brakes)",
+                "url": "https://parts.americantoyota.com/v-2011-toyota-camry--base--2-5l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2014 Camry SE 3.5L front brakes)",
+                "url": "https://parts.longotoyota.com/v-2014-toyota-camry--se--3-5l-v6-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.americantoyota.com/v-2011-toyota-camry--base--2-5l-l4-gas/brakes--front-brakes",
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150",
+        "https://parts.longotoyota.com/v-2014-toyota-camry--se--3-5l-v6-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150/",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-rotor-front-4351206150"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Pad Set 04466-02380 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04466-02380",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2024 Toyota RAV4 (North American-built RAV4; Japan-built RAV4s use 04466-42080)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "North American-built RAV4; Japan-built RAV4s use 04466-42080"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake pad set 04466-02380 for the Toyota RAV4. Rear axle pad set, both sides.\n\nSpecifications\n\nPart number: 04466-02380\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2024 Toyota RAV4 (North American-built RAV4; Japan-built RAV4s use 04466-42080)\nRestriction (2019-2024 RAV4): North American-built RAV4; Japan-built RAV4s use 04466-42080; North American-built\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 72.0,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 51.77,
+          "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-rav4-brake_pad_set.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 51.77,
+            "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-rav4-brake_pad_set.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 52.2,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-brake-pads-rear-446602380"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 56.99,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446602380"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 49.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": "North American-built RAV4; Japan-built RAV4s use 04466-42080",
+            "assemblyOrigin": "North American-built",
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04466-02380 Brake Pads Rear 2019-2025 Toyota; RAV4 locally built)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446602380",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2019-2024 Toyota rear brake pads 04466-02380)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-brake-pads-rear-446602380",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2024 RAV4 Hybrid XLE Premium rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2024-toyota-rav4--hybrid-xle-premium--2-5l-l4-electric-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-brake-pads-rear-446602380",
+        "https://parts.longotoyota.com/v-2024-toyota-rav4--hybrid-xle-premium--2-5l-l4-electric-gas/brakes--rear-brakes",
+        "https://www.sparksparts.com/oem-parts/toyota-brake-pads-rear-446602380",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-rav4-brake_pad_set.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Pad Set 04465-12670 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "04465-12670",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "pads_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2025 Toyota Corolla (build dependent (hybrid, hatchback and Japan-built Corollas); US-built non-hybrid sedans use 04465-02460)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "build dependent (hybrid, hatchback and Japan-built Corollas); US-built non-hybrid sedans use 04465-02460"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake pad set 04465-12670 for the Toyota Corolla. Front axle pad set, both sides.\n\nSpecifications\n\nPart number: 04465-12670\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2025 Toyota Corolla (build dependent (hybrid, hatchback and Japan-built Corollas); US-built non-hybrid sedans use 04465-02460)\nRestriction (2019-2025 Corolla): build dependent (hybrid, hatchback and Japan-built Corollas); US-built non-hybrid sedans use 04465-02460\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 104.5,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 72.71,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 72.71,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 74.93,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-12670.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 75.57,
+            "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-prius--limited--2-0l-l4-electric-gas/brakes--brake-components"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 83.82,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 85.69,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 69.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "build dependent (hybrid, hatchback and Japan-built Corollas); US-built non-hybrid sedans use 04465-02460",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (04465-12670 Disc Brake Pad Set Front 2019-2026 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2025 Corolla Hybrid front brakes)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2025-toyota-corolla--hybrid-nightshade--1-8l-l4-electric-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-prius--limited--2-0l-l4-electric-gas/brakes--brake-components",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-pad-set-front-446512670",
+        "https://wholesaledirect.moderntoyota.com/v-2025-toyota-corolla--hybrid-nightshade--1-8l-l4-electric-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem/toyota~pad~kit~disc~brake~04465-12670.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Brake Rotor 42431-08050 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "42431-08050",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_rear",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear brake rotor 42431-08050 for the Toyota Sienna. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 42431-08050\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 124.07,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime",
+          "price": 77.22,
+          "url": "https://www.autopartsprime.com/toyota/hub-brg-assembly-rr-a/oe-424500e090"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime",
+            "price": 77.22,
+            "url": "https://www.autopartsprime.com/toyota/hub-brg-assembly-rr-a/oe-424500e090"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 88.02,
+            "url": "https://www.toyotapartsdeal.com/oem-toyota-sienna-brake_disc.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 88.76,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243108050"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 73.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "2.5L hybrid",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2021-2025 Toyota Sienna disc brake rotor 42431-08050)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243108050",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-rotor-4243108050",
+        "https://www.autopartsprime.com/toyota/hub-brg-assembly-rr-a/oe-424500e090",
+        "https://www.toyotapartsdeal.com/oem-toyota-sienna-brake_disc.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Brake Rotor 43512-0C031 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "43512-0C031",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rotor_front",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2022–2025 Toyota Tundra (supersedes 43512-0C030; confirm drivetrain and build by VIN); 2023–2025 Toyota Sequoia (dealer title covers Tundra and Sequoia; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "supersedes 43512-0C030; confirm drivetrain and build by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "dealer title covers Tundra and Sequoia; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front brake rotor 43512-0C031 for the Toyota Tundra, Sequoia. Sold individually; rotors should be replaced in pairs across the axle.\n\nSpecifications\n\nPart number: 43512-0C031\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (supersedes 43512-0C030; confirm drivetrain and build by VIN); 2023–2025 Toyota Sequoia (dealer title covers Tundra and Sequoia; confirm by VIN)\nRestriction (2022-2025 Tundra): supersedes 43512-0C030; confirm drivetrain and build by VIN\nRestriction (2023-2025 Sequoia): dealer title covers Tundra and Sequoia; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 112.65,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 77.55,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-front-435120c031"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 77.55,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-front-435120c031"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 79.08,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-front-435120c031"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 92.37,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-front-435120c031"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 73.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "supersedes 43512-0C030; confirm drivetrain and build by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2022-2026 Toyota disc front 43512-0C031; Tundra and Sequoia)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-front-435120c031",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tundra Platinum front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--platinum--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Tundra SR5 front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr5--3-4l-v6-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "dealer title covers Tundra and Sequoia; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2022-2026 Toyota disc front 43512-0C031; Tundra and Sequoia)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-front-435120c031",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-front-435120c031",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-front-435120c031",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tundra--platinum--3-4l-v6-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-tundra--sr5--3-4l-v6-gas/brakes--front-brakes",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-front-435120c031"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-04092 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-04092",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2005–2023 Toyota Tacoma (passenger side; dealer notes: 2WD PreRunner 2.7L and 4WD without X-Runner; supersedes 47730-04090/-04091)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "passenger side; dealer notes: 2WD PreRunner 2.7L and 4WD without X-Runner; supersedes 47730-04090/-04091"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-04092 for the Toyota Tacoma. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-04092\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2005–2023 Toyota Tacoma (passenger side; dealer notes: 2WD PreRunner 2.7L and 4WD without X-Runner; supersedes 47730-04090/-04091)\nRestriction (2005-2023 Tacoma): passenger side; dealer notes: 2WD PreRunner 2.7L and 4WD without X-Runner; supersedes 47730-04090/-04091\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 281.76,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 196.49,
+          "url": "https://www.toyotapartsdeal.com/oem-2006-toyota-tacoma-brake_caliper.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 196.49,
+            "url": "https://www.toyotapartsdeal.com/oem-2006-toyota-tacoma-brake_caliper.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 198.19,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 198.92,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 223.59,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 186.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2005,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "passenger side; dealer notes: 2WD PreRunner 2.7L and 4WD without X-Runner; supersedes 47730-04090/-04091",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2005-2023 Toyota Tacoma disc brake caliper (right, front) 47730-04092)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47730-04092 Disc Brake Caliper (Right, Front) 2005-2023 Toyota Tacoma)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2005-2023 Toyota Tacoma disc brake caliper (right, front))",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773004092",
+        "https://www.toyotapartsdeal.com/oem-2006-toyota-tacoma-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-60350 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-60350",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2015–2024 Toyota 4Runner (4.0L V6; passenger side; from 06/2015 production)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2015,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6; passenger side; from 06/2015 production"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-60350 for the Toyota 4Runner. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-60350\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2015–2024 Toyota 4Runner (4.0L V6; passenger side; from 06/2015 production)\nRestriction (2015-2024 4Runner): passenger side; from 06/2015 production; from 06/2015\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 209.4,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 139.3,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 139.3,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 141.74,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 144.13,
+            "url": "https://www.autopartsprime.com/p/toyota-4runner-brake-caliper"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 144.77,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2015-2024-toyota-4runner-disc-brake-caliper-right-front-4773060350"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 147.29,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~47730-60350.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 132.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2015,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "4.0L V6",
+            "restriction": "passenger side; from 06/2015 production",
+            "assemblyOrigin": null,
+            "productionDates": "from 06/2015",
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47730-60350 Disc Brake Caliper (Right, Front) 2015-2024 Toyota 4Runner)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2015-2024 Toyota 4Runner disc brake caliper (right, front))",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-right-front-4773060350",
+        "https://www.autopartsprime.com/p/toyota-4runner-brake-caliper",
+        "https://www.sparksparts.com/oem-parts/toyota-2015-2024-toyota-4runner-disc-brake-caliper-right-front-4773060350",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~47730-60350.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Left Brake Caliper 47750-60350 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47750-60350",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2015–2024 Toyota 4Runner (4.0L V6; driver side; from 06/2015 production)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2015,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6; driver side; from 06/2015 production"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front left brake caliper 47750-60350 for the Toyota 4Runner. Front left (driver side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47750-60350\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2015–2024 Toyota 4Runner (4.0L V6; driver side; from 06/2015 production)\nRestriction (2015-2024 4Runner): driver side; from 06/2015 production; from 06/2015\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 209.4,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 143.51,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-left-4775060350"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 143.51,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-left-4775060350"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 144.13,
+            "url": "https://www.autopartsprime.com/p/toyota-4runner-brake-caliper"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 144.18,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-disc-brake-caliper-left-4775060350"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 147.29,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~47750-60350.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 161.29,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-left-4775060350"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 136.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2015,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "4.0L V6",
+            "restriction": "driver side; from 06/2015 production",
+            "assemblyOrigin": null,
+            "productionDates": "from 06/2015",
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2015-2024 Toyota 4Runner disc brake caliper (left) 47750-60350)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-left-4775060350",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Sparks Toyota (2015-2024 Toyota 4Runner disc brake caliper (left) 47750-60350)",
+                "url": "https://www.sparksparts.com/oem-parts/toyota-disc-brake-caliper-left-4775060350",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-left-4775060350",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-left-4775060350",
+        "https://www.autopartsprime.com/p/toyota-4runner-brake-caliper",
+        "https://www.sparksparts.com/oem-parts/toyota-disc-brake-caliper-left-4775060350",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~47750-60350.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Left Brake Caliper 47850-0C040 — Tundra / Sequoia / Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47850-0C040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2022–2025 Toyota Tundra (driver side rear; confirm by VIN); 2023–2025 Toyota Sequoia (driver side rear; confirm by VIN); 2024–2025 Toyota Tacoma (driver side rear; trim dependent (some non-hybrid Tacomas use 47850-04010))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "driver side rear; confirm by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "driver side rear; confirm by VIN"
+        },
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "driver side rear; trim dependent (some non-hybrid Tacomas use 47850-04010)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear left brake caliper 47850-0C040 for the Toyota Tundra, Sequoia, Tacoma. Rear left (driver side) caliper; pads sold separately.\n\nSpecifications\n\nPart number: 47850-0C040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (driver side rear; confirm by VIN); 2023–2025 Toyota Sequoia (driver side rear; confirm by VIN); 2024–2025 Toyota Tacoma (driver side rear; trim dependent (some non-hybrid Tacomas use 47850-04010))\nRestriction (2022-2025 Tundra): driver side rear; confirm by VIN\nRestriction (2023-2025 Sequoia): driver side rear; confirm by VIN\nRestriction (2024-2025 Tacoma): driver side rear; trim dependent (some non-hybrid Tacomas use 47850-04010)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 166.32,
+        "lowestCompetitor": {
+          "seller": "Sparks Toyota",
+          "price": 112.62,
+          "url": "https://www.sparksparts.com/oem-parts/toyota-caliper-477500c040"
+        },
+        "competitors": [
+          {
+            "seller": "Sparks Toyota",
+            "price": 112.62,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-caliper-477500c040"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 115.99,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-478500c040"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 124.74,
+            "url": "https://parts.olathetoyota.com/v-2023-toyota-tundra--sr--3-4l-v6-gas/brakes--rear-brakes"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 126.22,
+            "url": "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-pro--2-4l-l4-electric-gas/brakes--rear-brakes"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 106.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "driver side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2026 Toyota disc brake caliper 47850-0C040)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-478500c040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2023 Tundra SR rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2023-toyota-tundra--sr--3-4l-v6-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2024 Tundra 1794 Edition rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "driver side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023 Sequoia TRD Pro rear brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "driver side rear; trim dependent (some non-hybrid Tacomas use 47850-04010)",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2024 Tacoma TRD Pro hybrid rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-pro--2-4l-l4-electric-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2024 Tacoma TRD Off-Road rear brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-pro--2-4l-l4-electric-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/v-2023-toyota-tundra--sr--3-4l-v6-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/brakes--rear-brakes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-478500c040",
+        "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--rear-brakes",
+        "https://toyotaparts.lakelandtoyota.com/v-2024-toyota-tacoma--trd-off-road--2-4l-l4-gas/brakes--rear-brakes",
+        "https://www.sparksparts.com/oem-parts/toyota-caliper-477500c040"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Right Brake Caliper 47830-0C040 — Tundra / Sequoia / Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47830-0C040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2022–2025 Toyota Tundra (passenger side rear; confirm by VIN); 2023–2025 Toyota Sequoia (passenger side rear; confirm by VIN); 2024–2025 Toyota Tacoma (passenger side rear; trim dependent (some non-hybrid Tacomas use 47830-04010))",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "passenger side rear; confirm by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "passenger side rear; confirm by VIN"
+        },
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "passenger side rear; trim dependent (some non-hybrid Tacomas use 47830-04010)"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear right brake caliper 47830-0C040 for the Toyota Tundra, Sequoia, Tacoma. Rear right (passenger side) caliper; pads sold separately.\n\nSpecifications\n\nPart number: 47830-0C040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (passenger side rear; confirm by VIN); 2023–2025 Toyota Sequoia (passenger side rear; confirm by VIN); 2024–2025 Toyota Tacoma (passenger side rear; trim dependent (some non-hybrid Tacomas use 47830-04010))\nRestriction (2022-2025 Tundra): passenger side rear; confirm by VIN\nRestriction (2023-2025 Sequoia): passenger side rear; confirm by VIN\nRestriction (2024-2025 Tacoma): passenger side rear; trim dependent (some non-hybrid Tacomas use 47830-04010)\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 166.32,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 111.17,
+          "url": "https://wholesaledirect.moderntoyota.com/v-2024-toyota-tacoma--limited--2-4l-l4-electric-gas/brakes--brake-components"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 111.17,
+            "url": "https://wholesaledirect.moderntoyota.com/v-2024-toyota-tacoma--limited--2-4l-l4-electric-gas/brakes--brake-components"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 112.62,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-caliper-478300c040"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 124.74,
+            "url": "https://parts.olathetoyota.com/v-2023-toyota-tundra--limited--3-4l-v6-gas/brakes--brake-components"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 105.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "passenger side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2022-2026 Toyota disc brake caliper 47830-0C040)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-478300c040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2024 Tundra 1794 Edition rear brakes)",
+                "url": "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "passenger side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023 Sequoia TRD Pro rear brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "",
+            "restriction": "passenger side rear; trim dependent (some non-hybrid Tacomas use 47830-04010)",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2024 Tacoma Limited hybrid brake components)",
+                "url": "https://wholesaledirect.moderntoyota.com/v-2024-toyota-tacoma--limited--2-4l-l4-electric-gas/brakes--brake-components",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2024 Tacoma TRD Pro hybrid rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-pro--2-4l-l4-electric-gas/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2024-toyota-tacoma--trd-pro--2-4l-l4-electric-gas/brakes--rear-brakes",
+        "https://parts.olathetoyota.com/v-2023-toyota-tundra--limited--3-4l-v6-gas/brakes--brake-components",
+        "https://parts.olathetoyota.com/v-2024-toyota-tundra--1794-edition--3-4l-v6-gas/brakes--rear-brakes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-caliper-478300c040",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-478300c040",
+        "https://toyotaparts.lakelandtoyota.com/v-2023-toyota-sequoia--trd-pro--3-4l-v6-electric-gas/brakes--rear-brakes",
+        "https://wholesaledirect.moderntoyota.com/v-2024-toyota-tacoma--limited--2-4l-l4-electric-gas/brakes--brake-components"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Left Brake Caliper 47750-02480 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47750-02480",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2020–2025 Toyota Corolla (driver side front; build and trim dependent; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "driver side front; build and trim dependent; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front left brake caliper 47750-02480 for the Toyota Corolla. Front left (driver side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47750-02480\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2020–2025 Toyota Corolla (driver side front; build and trim dependent; confirm by VIN)\nRestriction (2020-2025 Corolla): driver side front; build and trim dependent; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 186.94,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 124.48,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 124.48,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 128.68,
+            "url": "https://www.autopartsprime.com/p/2020-toyota-corolla-brake-caliper-repair-kit"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 131.5,
+            "url": "https://www.toyotapartsdeal.com/oem-2022-toyota-corolla-brake_caliper.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 140.21,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-caliper-assembly-4775002480"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 148.35,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 118.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2020,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "driver side front; build and trim dependent; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47750-02480 Disc Brake Caliper 2020-2026 Toyota Corolla)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2020-2025 Toyota Corolla caliper assembly 47750-02480)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2023 Corolla SE 2.0L front brakes)",
+                "url": "https://parts.longotoyota.com/v-2023-toyota-corolla--se--2-0l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480",
+        "https://parts.longotoyota.com/v-2023-toyota-corolla--se--2-0l-l4-gas/brakes--front-brakes",
+        "https://parts.olathetoyota.com/oem-parts/toyota-caliper-assembly-4775002480",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4775002480",
+        "https://www.autopartsprime.com/p/2020-toyota-corolla-brake-caliper-repair-kit",
+        "https://www.toyotapartsdeal.com/oem-2022-toyota-corolla-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-42040 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-42040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2001–2005 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2001,
+          "yearTo": 2005,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-42040 for the Toyota RAV4. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-42040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2001–2005 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 404.84,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 282.33,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~front~disc~brake~rh~47730-42040.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 282.33,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~front~disc~brake~rh~47730-42040.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 282.33,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773042040"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 284.77,
+            "url": "https://parts.olathetoyota.com/v-2005-toyota-rav4--l--2-4l-l4-gas/brakes--anti-lock-brakes"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 321.27,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-caliper-assembly-4773042040"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 268.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2001,
+            "yearTo": 2005,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47730-42040 Disc Brake Caliper 2001-2005 Toyota RAV4)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-caliper-assembly-4773042040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2001-2005 Toyota RAV4 disc brake caliper 47730-42040)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773042040",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-caliper-assembly-4773042040",
+        "https://parts.olathetoyota.com/v-2005-toyota-rav4--l--2-4l-l4-gas/brakes--anti-lock-brakes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773042040",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~front~disc~brake~rh~47730-42040.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Left Brake Caliper 47750-42040 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47750-42040",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2001–2005 Toyota RAV4",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2001,
+          "yearTo": 2005,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": null
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front left brake caliper 47750-42040 for the Toyota RAV4. Front left (driver side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47750-42040\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2001–2005 Toyota RAV4\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 404.84,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 277.46,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-caliper-assembly-4775042040"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 277.46,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-caliper-assembly-4775042040"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 282.33,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~lh~47750-42040.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 282.33,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-caliper-assembly-4775042040"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 321.27,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-caliper-assembly-4775042040"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 263.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "high (dealer catalog)",
+      "vinDependent": false,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "verified",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2001,
+            "yearTo": 2005,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "",
+            "restriction": null,
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "verified",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (2001-2005 Toyota RAV4 caliper assembly 47750-42040)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-caliper-assembly-4775042040",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47750-42040 Caliper Assembly 2001-2005 Toyota RAV4)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-caliper-assembly-4775042040",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-caliper-assembly-4775042040",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-caliper-assembly-4775042040",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-caliper-assembly-4775042040",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~lh~47750-42040.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-06070 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-06070",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2002–2006 Toyota Camry (dealer notes split by engine and build origin; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2002,
+          "yearTo": 2006,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "dealer notes split by engine and build origin; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-06070 for the Toyota Camry. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-06070\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2002–2006 Toyota Camry (dealer notes split by engine and build origin; confirm by VIN)\nRestriction (2002-2006 Camry): dealer notes split by engine and build origin; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 403.01,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 281.06,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~front~disc~brake~rh~47730-06070.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 281.06,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~front~disc~brake~rh~47730-06070.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 281.06,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773006070"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 319.82,
+            "url": "https://parts.longotoyota.com/v-2002-toyota-camry--le--2-4l-l4-gas/brakes--front-brakes"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 267.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2002,
+            "yearTo": 2006,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "dealer notes split by engine and build origin; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2002-2006 Toyota Camry disc brake caliper 47730-06070)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773006070",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2003 Camry LE 2.4L front brakes)",
+                "url": "https://parts.longotoyota.com/v-2003-toyota-camry--le--2-4l-l4-gas/brakes--front-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2002-toyota-camry--le--2-4l-l4-gas/brakes--front-brakes",
+        "https://parts.longotoyota.com/v-2003-toyota-camry--le--2-4l-l4-gas/brakes--front-brakes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773006070",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~front~disc~brake~rh~47730-06070.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Left Brake Caliper 47750-06070 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47750-06070",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2002–2006 Toyota Camry (dealer notes split by engine and build origin; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2002,
+          "yearTo": 2006,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "dealer notes split by engine and build origin; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front left brake caliper 47750-06070 for the Toyota Camry. Front left (driver side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47750-06070\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2002–2006 Toyota Camry (dealer notes split by engine and build origin; confirm by VIN)\nRestriction (2002-2006 Camry): dealer notes split by engine and build origin; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 403.01,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 281.06,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~lh~47750-06070.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 281.06,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~lh~47750-06070.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 281.06,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4775006070"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 319.82,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4775006070"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 267.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2002,
+            "yearTo": 2006,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "dealer notes split by engine and build origin; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47750-06070 Disc Brake Caliper 2002-2006 Toyota Camry)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4775006070",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2002-2006 Toyota Camry disc brake caliper 47750-06070)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4775006070",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4775006070",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4775006070",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~disc~brake~lh~47750-06070.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-0E031 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-0E031",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2011–2020 Toyota Sienna (passenger side front; supersedes 47730-0E030; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2011,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "passenger side front; supersedes 47730-0E030; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-0E031 for the Toyota Sienna. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-0E031\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2011–2020 Toyota Sienna (passenger side front; supersedes 47730-0E030; confirm by VIN)\nRestriction (2011-2020 Sienna): passenger side front; supersedes 47730-0E030; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 318.85,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 213.4,
+          "url": "https://parts.olathetoyota.com/v-2015-toyota-sienna--l--3-5l-v6-gas/brakes--front-brakes"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 213.4,
+            "url": "https://parts.olathetoyota.com/v-2015-toyota-sienna--l--3-5l-v6-gas/brakes--front-brakes"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 215.86,
+            "url": "https://www.toyotapartsdeal.com/oem-2015-toyota-sienna-brake_caliper.html"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 219.48,
+            "url": "https://autopartsprime.com/sc/2014-toyota-sienna-brake-calipers-components"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 202.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2011,
+            "yearTo": 2020,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "passenger side front; supersedes 47730-0E030; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2015 Sienna L front brakes)",
+                "url": "https://parts.olathetoyota.com/v-2015-toyota-sienna--l--3-5l-v6-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2010-2020 Toyota disc brake caliper 47750-0E031, matching left side; Sienna and Highlander)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-477500e031",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autopartsprime.com/sc/2014-toyota-sienna-brake-calipers-components",
+        "https://parts.olathetoyota.com/oem-parts/toyota-disc-brake-caliper-477500e031",
+        "https://parts.olathetoyota.com/v-2015-toyota-sienna--l--3-5l-v6-gas/brakes--front-brakes",
+        "https://www.toyotapartsdeal.com/oem-2015-toyota-sienna-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Right Brake Caliper 47730-12B10 — Corolla",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47730-12B10",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2019–2025 Toyota Corolla (passenger side front; build and trim dependent; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2019,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "passenger side front; build and trim dependent; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front right brake caliper 47730-12B10 for the Toyota Corolla. Front right (passenger side) caliper; pads and mounting hardware sold separately.\n\nSpecifications\n\nPart number: 47730-12B10\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2019–2025 Toyota Corolla (passenger side front; build and trim dependent; confirm by VIN)\nRestriction (2019-2025 Corolla): passenger side front; build and trim dependent; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 171.81,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 117.75,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 117.75,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 120.85,
+            "url": "https://www.toyotapartsdeal.com/oem-2019-toyota-corolla-brake_caliper.html"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 123.41,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 135.31,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 111.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2019,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "",
+            "restriction": "passenger side front; build and trim dependent; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (47730-12B10 Disc Brake Caliper 2019-2025 Toyota)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025 Corolla Nightshade 2.0L front brakes)",
+                "url": "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-corolla--nightshade--2-0l-l4-gas/brakes--front-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2019 Corolla SE 2.0L pads and shoes)",
+                "url": "https://parts.longotoyota.com/v-2019-toyota-corolla--se--2-0l-l4-gas/brakes--disc-pads-and-brake-shoes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10",
+        "https://parts.longotoyota.com/v-2019-toyota-corolla--se--2-0l-l4-gas/brakes--disc-pads-and-brake-shoes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10",
+        "https://toyotaparts.lakelandtoyota.com/v-2025-toyota-corolla--nightshade--2-0l-l4-gas/brakes--front-brakes",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-disc-brake-caliper-4773012b10",
+        "https://www.toyotapartsdeal.com/oem-2019-toyota-corolla-brake_caliper.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rear Right Brake Caliper 47830-0C010 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47830-0C010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "caliper",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "2007–2015 Toyota Tundra (passenger side rear; confirm by VIN); 2008–2015 Toyota Sequoia (passenger side rear; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "passenger side rear; confirm by VIN"
+        },
+        {
+          "yearFrom": 2008,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "passenger side rear; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rear right brake caliper 47830-0C010 for the Toyota Tundra, Sequoia. Rear right (passenger side) caliper; pads sold separately.\n\nSpecifications\n\nPart number: 47830-0C010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2015 Toyota Tundra (passenger side rear; confirm by VIN); 2008–2015 Toyota Sequoia (passenger side rear; confirm by VIN)\nRestriction (2007-2015 Tundra): passenger side rear; confirm by VIN\nRestriction (2008-2015 Sequoia): passenger side rear; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 176.63,
+        "lowestCompetitor": {
+          "seller": "Lakeland Toyota",
+          "price": 107.61,
+          "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-right-rear-478300c010?c=bD01Jm49QXNzZW1ibGllcyBQYWdlJms9MQ%3D%3D"
+        },
+        "competitors": [
+          {
+            "seller": "Lakeland Toyota",
+            "price": 107.61,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-right-rear-478300c010?c=bD01Jm49QXNzZW1ibGllcyBQYWdlJms9MQ%3D%3D"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 124.24,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~rear~disc~brake~rh~47830-0c010.html"
+          },
+          {
+            "seller": "Sparks Toyota",
+            "price": 137.18,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-disc-brake-caliper-right-rear-478300c010"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 102.29,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "passenger side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2007-2015 Toyota disc brake caliper (right, rear) 47830-0C010)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-right-rear-478300c010?c=bD01Jm49QXNzZW1ibGllcyBQYWdlJms9MQ%3D%3D",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2007 Tundra SR5 rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2007-toyota-tundra--sr5--4-7l-v8-gas/brakes--rear-brakes",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2015 Tundra Limited rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2015-toyota-tundra--limited--5-7l-v8-flex/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2008,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "passenger side rear; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (2011 Sequoia Limited rear brakes)",
+                "url": "https://parts.longotoyota.com/v-2011-toyota-sequoia--limited--5-7l-v8-flex/brakes--rear-brakes",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/v-2007-toyota-tundra--sr5--4-7l-v8-gas/brakes--rear-brakes",
+        "https://parts.longotoyota.com/v-2011-toyota-sequoia--limited--5-7l-v8-flex/brakes--rear-brakes",
+        "https://parts.longotoyota.com/v-2015-toyota-tundra--limited--5-7l-v8-flex/brakes--rear-brakes",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-disc-brake-caliper-right-rear-478300c010?c=bD01Jm49QXNzZW1ibGllcyBQYWdlJms9MQ%3D%3D",
+        "https://www.sparksparts.com/oem-parts/toyota-disc-brake-caliper-right-rear-478300c010",
+        "https://www.toyotapartsdeal.com/oem/toyota~cylinder~assy~rear~disc~brake~rh~47830-0c010.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
     }
   ]
 }
