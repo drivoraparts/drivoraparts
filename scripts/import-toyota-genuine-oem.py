@@ -37,6 +37,15 @@ STAGED = sorted(os.path.join(ROOT, "docs/catalog-expansion", f) for f in os.list
 DATA = os.path.join(ROOT, "lib/inventory/data/toyota-genuine-oem.json")
 PROV = os.path.join(ROOT, "lib/inventory/data/image-provenance.json")
 GENUINE = os.path.join(ROOT, "lib/inventory/data/toyota-genuine.json")
+# Shipping class. Without a freight note the storefront infers the shipping label
+# from the category (engine/transmission/body-parts = freight, suspension/wheels =
+# multibox), which charged $199 on single boxed parts such as a $27 thermostat
+# housing. Every genuine Toyota part imported so far ships as one carton, so it is
+# labelled a parcel; only whole assemblies that need a pallet are freight.
+PARCEL_NOTE = "Ships as a single parcel."
+FREIGHT_NOTE = "Ships as palletized freight (oversized assembly)."
+FREIGHT_KINDS = {"engine_assembly", "transmission_assembly", "hood", "bumper_cover", "bumper_reinf"}
+
 # Storefront category slugs (lib/inventory/categories.ts); a listing in any
 # other category would be missing from every category page.
 CATEGORY_SLUGS = set(re.findall(r'slug: "([a-z0-9-]+)"', open(os.path.join(ROOT, "lib/inventory/categories.ts"), encoding="utf-8").read()))
@@ -200,6 +209,7 @@ for pn, r in sorted(staged.items()):
         "stock": True,
         "condition": "brand-new",
         "partNumber": pn,
+        "freightNotes": FREIGHT_NOTE if r.get("partKind") in FREIGHT_KINDS else PARCEL_NOTE,
         "fitment": r["fitment"],
         "fitmentYears": years_text(apps),
         "fitmentApplications": apps,
