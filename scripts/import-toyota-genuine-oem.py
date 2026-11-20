@@ -77,6 +77,8 @@ IMAGES = {
     "36100-0C020": ["361000C020_1.webp", "361000C020_2.webp"],
     # Batch 8: photo 3 is an annotated service diagram, not a product view.
     "36100-04010": ["3610004010_1.webp", "3610004010_2.webp"],
+    # Batch 9: photo 2 is a close-up fitting not identifiable as this cylinder.
+    "48886-60032": ["pn_48886-60032_1.webp", "pn_48886-60032_3.webp"],
     # Batch 6: photo 3 is a label card, not the lamp.
     "81550-08190": ["8155008190_2.webp", "8155008190_1.webp"],
     # Batch 6: photo 2 is a can of compressor oil, not the condenser.

@@ -6032,5 +6032,38 @@
     "description": "Genuine Toyota Transfer Case Assembly 36100-0C020 for Toyota Tundra (2014–2021)\n\nGenuine Toyota transfer case assembly 36100-0C020 for the Toyota Tundra. Complete part-time 4WD transfer case assembly (transfer assy) for the 5.7L Tundra.\n\nSpecifications\n\nPart number: 36100-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2014–2021 Toyota Tundra (5.7L V8; 4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN)\nRestriction (2014-2021 Tundra): 4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-transfer-case-assembly-36100-0c020",
     "createdAt": 1795100004477
+  },
+  {
+    "id": 4478,
+    "name": "Genuine Toyota KDSS Rear Stabilizer Control Cylinder 48886-60032 for Toyota 4Runner (2010–2024)",
+    "category": "suspension",
+    "brand": "toyota",
+    "price": 833.99,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "48886-60032",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2010–2024 Toyota 4Runner (4.0L V6; 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN)",
+    "fitmentYears": "2010–2024",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2010,
+        "yearTo": 2024,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "4.0L V6; 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-kdss-rear-stabilizer-control-cylinder-48886-60032/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-kdss-rear-stabilizer-control-cylinder-48886-60032/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-kdss-rear-stabilizer-control-cylinder-48886-60032/1.webp",
+      "/product-media/toyota-genuine/toyota-kdss-rear-stabilizer-control-cylinder-48886-60032/2.webp"
+    ],
+    "description": "Genuine Toyota KDSS Rear Stabilizer Control Cylinder 48886-60032 for Toyota 4Runner (2010–2024)\n\nGenuine Toyota kdss rear stabilizer control cylinder 48886-60032 for the Toyota 4Runner. Rear KDSS stabilizer control cylinder with fluid; it takes the place of the rear sway bar link on one side.\n\nSpecifications\n\nPart number: 48886-60032\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2024 Toyota 4Runner (4.0L V6; 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN)\nRestriction (2010-2024 4Runner): 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-kdss-rear-stabilizer-control-cylinder-48886-60032",
+    "createdAt": 1795100004478
   }
 ]

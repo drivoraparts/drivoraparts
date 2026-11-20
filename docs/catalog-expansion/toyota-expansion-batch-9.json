@@ -1,0 +1,135 @@
+{
+  "_comment": "Toyota expansion batch 9 (2026-11-20): Land Cruiser / Prado-platform high-value genuine parts, $500+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota KDSS Rear Stabilizer Control Cylinder 48886-60032 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "48886-60032",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "kdss_cylinder",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2010–2024 Toyota 4Runner (4.0L V6; 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6; 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota kdss rear stabilizer control cylinder 48886-60032 for the Toyota 4Runner. Rear KDSS stabilizer control cylinder with fluid; it takes the place of the rear sway bar link on one side.\n\nSpecifications\n\nPart number: 48886-60032\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2024 Toyota 4Runner (4.0L V6; 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN)\nRestriction (2010-2024 4Runner): 4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1269.62,
+        "lowestCompetitor": {
+          "seller": "Sparks Toyota",
+          "price": 877.78,
+          "url": "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-4runner-suspension-stabilizer-bar-link-kit-4888660032"
+        },
+        "competitors": [
+          {
+            "seller": "Sparks Toyota",
+            "price": 877.78,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-4runner-suspension-stabilizer-bar-link-kit-4888660032"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 893.05,
+            "url": "https://parts.lakelandtoyota.com/p/TOYOTA_2013_4RUNNER/Suspension-Stabilizer-Bar-Link-Kit-Rear/14762960/4888660032.html"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1058.63,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-suspension-stabilizer-bar-link-kit-4888660032"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 833.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2024,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "4.0L V6",
+            "restriction": "4WD with KDSS (Kinetic Dynamic Suspension System) only; rear cylinder; supersedes 48886-60030/-60031; one retailer lists 48886-60051 for 2013-2015 Trail models; KDSS bleeding and pressurising need the service tool; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (48886-60032 Suspension Stabilizer Bar Link Kit, 2010-2024 Toyota 4Runner)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-suspension-stabilizer-bar-link-kit-4888660032",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2013 Toyota 4Runner rear stabilizer bar link kit 48886-60032)",
+                "url": "https://parts.lakelandtoyota.com/p/TOYOTA_2013_4RUNNER/Suspension-Stabilizer-Bar-Link-Kit-Rear/14762960/4888660032.html",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (2021 4Runner, cylinder rear stabilizer control 48886-60032; STABILIZER-KDSS, PACKAGE, TRD)",
+                "url": "https://parts.toyota.com/p/Toyota_2021_4Runner/CYLINDER---REAR-STABILIZER-CONTROL/69089182/4888660032.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.lakelandtoyota.com/p/TOYOTA_2013_4RUNNER/Suspension-Stabilizer-Bar-Link-Kit-Rear/14762960/4888660032.html",
+        "https://parts.longotoyota.com/oem-parts/toyota-suspension-stabilizer-bar-link-kit-4888660032",
+        "https://parts.toyota.com/p/Toyota_2021_4Runner/CYLINDER---REAR-STABILIZER-CONTROL/69089182/4888660032.html",
+        "https://www.sparksparts.com/oem-parts/toyota-2010-2024-toyota-4runner-suspension-stabilizer-bar-link-kit-4888660032"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

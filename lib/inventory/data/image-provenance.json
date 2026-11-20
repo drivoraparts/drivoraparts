@@ -72743,5 +72743,44 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4478": {
+    "productId": 4478,
+    "productName": "Genuine Toyota KDSS Rear Stabilizer Control Cylinder 48886-60032 for Toyota 4Runner (2010–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-kdss-rear-stabilizer-control-cylinder-48886-60032/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/48886-60032_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "48886-60032",
+      "4888660032"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 48886-60032",
+    "sha256": "a4971278fde9a3e4a3c1c093ae083f6bc901a46f461903e631e17dc133eba6ef",
+    "bytes": 8530,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-kdss-rear-stabilizer-control-cylinder-48886-60032/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/48886-60032_3.webp",
+        "sha256": "38386162a0e0a7a5313a738de85dcf42ea094ca2eb1c1fd890a833b19502a236",
+        "bytes": 7996,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
