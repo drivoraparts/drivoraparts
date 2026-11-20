@@ -19,6 +19,9 @@ listed in `../profitability/supplier-acquisition-package.md`; confirm them by ph
 | 36100-60B02 | Transfer case | Land Cruiser 2011-2021 | see ledger | not checked |
 | 36100-6D401 | Transfer case | 4Runner 4.0L | $2,795.73 | not checked |
 | 44200-35094 | Steering rack | 4Runner 2010-2024 | $742.50 | not checked |
+| 36100-0C020 | Transfer case | Tundra 2014-2021 5.7L 4WD | $2,401.42 | not checked |
+| 36100-04010 | Transfer case | Tacoma 2024-2026 4WD manual | $2,163.97 | not checked |
+| 36100-04030 | Transfer case | Tacoma 2024-2026 auto hybrid / Trailhunter | $2,261.52 | not checked |
 | G9510-45010 | Hybrid battery | Sienna 2021-early 2024 | $3,932.01 | n/a (hazmat) |
 
 ## Letter: Toyota dealer wholesale (Longo, Modern Wholesale Direct, Olathe, Fred Haas Toyota Country, Lakeland)

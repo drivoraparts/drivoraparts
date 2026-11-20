@@ -184,6 +184,9 @@ nothing new to record.
 ## 8. Photography
 
 - All four Toyota image paths are now in the probe, the fetch script and the importer.
+- **Caution (2026-11-20):** the `/img/<ND>/<PN>_n.webp` path returned an A/C compressor photo for
+  transfer case 36100-0C020. A "photo found" result from the probe is not a match: check every
+  image by eye before import.
 - 41 part numbers earlier marked "no photo" do have Toyota photos (`photo-corrections.csv`). Some
   rejections in older reports were therefore wrong.
 - Authorized supplier photography: no supplier has granted image rights. The inquiry letters ask

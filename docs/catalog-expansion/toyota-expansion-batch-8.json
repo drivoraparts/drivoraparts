@@ -1,0 +1,251 @@
+{
+  "_comment": "Toyota expansion batch 8 (2026-11-20): genuine Toyota drivetrain assemblies, $500+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Transfer Case Assembly 36100-0C020 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "36100-0C020",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transfer",
+      "condition": "brand-new",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2014–2021 Toyota Tundra (5.7L V8; 4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2014,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "5.7L V8; 4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota transfer case assembly 36100-0C020 for the Toyota Tundra. Complete part-time 4WD transfer case assembly (transfer assy) for the 5.7L Tundra.\n\nSpecifications\n\nPart number: 36100-0C020\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2014–2021 Toyota Tundra (5.7L V8; 4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN)\nRestriction (2014-2021 Tundra): 4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3199.39,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsNow",
+          "price": 2401.42,
+          "url": "https://www.toyotapartsnow.com/parts-list/2018-toyota-tundra/transmission/transfer-case"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 2401.42,
+            "url": "https://www.toyotapartsnow.com/parts-list/2018-toyota-tundra/transmission/transfer-case"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 2465.24,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-361000c020"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2519.52,
+            "url": "https://www.toyotapartsdeal.com/oem-2020-toyota-tundra-transfer_case.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 2281.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2014,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "5.7L V8",
+            "restriction": "4WD only; the 4.6L V8 uses 36100-0C010 and 2022+ Tundra uses 36100-0C030/0C040; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Transfer Case Assembly 36100-0C020 for 2014-2021 Toyota Tundra)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-361000c020",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (2018 Tundra transfer case: 36100-0C020 noted Tundra; 5.7L)",
+                "url": "https://www.toyotapartsnow.com/parts-list/2018-toyota-tundra/transmission/transfer-case",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-361000c020",
+        "https://www.toyotapartsdeal.com/oem-2020-toyota-tundra-transfer_case.html",
+        "https://www.toyotapartsnow.com/parts-list/2018-toyota-tundra/transmission/transfer-case"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Transfer Case Assembly 36100-04010 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "36100-04010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transfer",
+      "condition": "brand-new",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2024–2026 Toyota Tacoma (2.4L Turbo; 4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2026,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L Turbo; 4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota transfer case assembly 36100-04010 for the Toyota Tacoma. Complete part-time 4WD transfer case assembly (transfer assy) for the fourth-generation Tacoma.\n\nSpecifications\n\nPart number: 36100-04010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2026 Toyota Tacoma (2.4L Turbo; 4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; confirm by VIN)\nRestriction (2024-2026 Tacoma): 4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 2808.39,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 2163.97,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 2163.97,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 2203.67,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2211.61,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~transfer~assy~36100-04010.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 2055.79,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2026,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "2.4L Turbo",
+            "restriction": "4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (Transfer Case Assembly 36100-04010, 2024+ Tacoma, manual transmission)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Transfer Case Assembly 36100-04010 for 2024-2026 Toyota Tacoma)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-transfer-case-assembly-3610004010",
+        "https://www.toyotapartsdeal.com/oem/toyota~transfer~assy~36100-04010.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

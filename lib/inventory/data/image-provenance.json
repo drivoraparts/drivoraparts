@@ -72665,5 +72665,83 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4476": {
+    "productId": 4476,
+    "productName": "Genuine Toyota Transfer Case Assembly 36100-04010 for Toyota Tacoma (2024–2026)",
+    "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-04010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/3610004010/3610004010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "36100-04010",
+      "3610004010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 36100-04010",
+    "sha256": "d6a4aca601d5be81535c93f7ace15a7e816a1096712c53f5d80c7271caa48b0c",
+    "bytes": 14118,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-04010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/3610004010/3610004010_2.webp",
+        "sha256": "4ef94a1a5156efb7eaea14d6f6071b3bfd80f9388abcf6c531f0a07a5b547245",
+        "bytes": 23340,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4477": {
+    "productId": 4477,
+    "productName": "Genuine Toyota Transfer Case Assembly 36100-0C020 for Toyota Tundra (2014–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-0c020/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/361000C020/361000C020_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "36100-0C020",
+      "361000C020"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 36100-0C020",
+    "sha256": "2e4ec02ddc7c6a64afc683b749fc71163b2d9f1f698f6dd084e783490ceb35f0",
+    "bytes": 18866,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-0c020/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/361000C020/361000C020_2.webp",
+        "sha256": "dd6389020fd9c6872b88e4d38e205b6c4a4de91e849fecb694bef0823065beff",
+        "bytes": 19420,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
