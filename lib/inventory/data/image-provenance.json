@@ -72782,5 +72782,52 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4479": {
+    "productId": 4479,
+    "productName": "Genuine Toyota Brake Booster Assembly with Master Cylinder 47050-60010 for Toyota Land Cruiser (1998–2000)",
+    "localFile": "/product-media/toyota-genuine/toyota-brake-booster-assembly-with-master-cylinder-47050-60010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4705060010/47050-60010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "47050-60010",
+      "4705060010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 47050-60010",
+    "sha256": "e5c056f3672aa7df8ab89dfe6dda3dc7a96994e50f5433905f585c4933ddc1c9",
+    "bytes": 15280,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-brake-booster-assembly-with-master-cylinder-47050-60010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4705060010/47050-60010_2.webp",
+        "sha256": "b465958c07be9ef08d200f089c1a4a82381fe8ef0769ce4523cdbd1e277e9d15",
+        "bytes": 11782,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-brake-booster-assembly-with-master-cylinder-47050-60010/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4705060010/47050-60010_3.webp",
+        "sha256": "4321c9f3509f91233afe0ab45540621d35450c66392ff5d2a9c7aaa298139a33",
+        "bytes": 14980,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
