@@ -1,0 +1,129 @@
+{
+  "_comment": "Toyota expansion batch 10 (2026-11-20): Land Cruiser 100 hydraulic brake booster, $500+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Brake Booster Assembly with Master Cylinder 47050-60010 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "47050-60010",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "booster",
+      "condition": "brand-new",
+      "proposedCategory": "brakes",
+      "proposedCategoryName": "Brakes",
+      "fitment": "1998–2000 Toyota Land Cruiser (4.7L V8; 100 Series; hydraulic booster with master cylinder, reservoir and pump; Toyota catalogs split production around 07/1999 and later trucks may take 47050-60041; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1998,
+          "yearTo": 2000,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "4.7L V8; 100 Series; hydraulic booster with master cylinder, reservoir and pump; Toyota catalogs split production around 07/1999 and later trucks may take 47050-60041; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota brake booster assembly with master cylinder 47050-60010 for the Toyota Land Cruiser. Hydraulic brake booster assembly with master cylinder, reservoir and booster pump, as one unit.\n\nSpecifications\n\nPart number: 47050-60010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 1998–2000 Toyota Land Cruiser (4.7L V8; 100 Series; hydraulic booster with master cylinder, reservoir and pump; Toyota catalogs split production around 07/1999 and later trucks may take 47050-60041; confirm by VIN)\nRestriction (1998-2000 Land Cruiser): 100 Series; hydraulic booster with master cylinder, reservoir and pump; Toyota catalogs split production around 07/1999 and later trucks may take 47050-60041; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1690.18,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 1333.67,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~brake~booster~assy~w~master~cylinder~47050-60010.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1333.67,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~brake~booster~assy~w~master~cylinder~47050-60010.html"
+          },
+          {
+            "seller": "Toyota of Nashua",
+            "price": 1341.75,
+            "url": "https://parts.toyotaofnashua.com/oem-parts/toyota-1998-2003-toyota-4-0l-4-7l-master-cylinder-actuator-brake-booster-assembly-land-cruiser-4runner-4705060010"
+          },
+          {
+            "seller": "LexusPartsNow",
+            "price": 1436.63,
+            "url": "https://www.lexuspartsnow.com/parts/lexus-brake-booster-assy-w-master-cylinder~47050-60010.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1266.99,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 1998,
+            "yearTo": 2000,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "4.7L V8",
+            "restriction": "100 Series; hydraulic booster with master cylinder, reservoir and pump; Toyota catalogs split production around 07/1999 and later trucks may take 47050-60041; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (2000 Toyota Land Cruiser brake booster assembly with master cylinder 47050-60010)",
+                "url": "https://parts.toyota.com/p/Toyota_2000_Land-Cruiser/BRAKE-BOOSTER-ASSEMBLY---WITH-MASTER-CYLINDER/63025998/4705060010.html",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (47050-60010 fits 1998-2000 Land Cruiser)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~brake~booster~assy~w~master~cylinder~47050-60010.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.toyota.com/p/Toyota_2000_Land-Cruiser/BRAKE-BOOSTER-ASSEMBLY---WITH-MASTER-CYLINDER/63025998/4705060010.html",
+        "https://parts.toyotaofnashua.com/oem-parts/toyota-1998-2003-toyota-4-0l-4-7l-master-cylinder-actuator-brake-booster-assembly-land-cruiser-4runner-4705060010",
+        "https://www.lexuspartsnow.com/parts/lexus-brake-booster-assy-w-master-cylinder~47050-60010.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~brake~booster~assy~w~master~cylinder~47050-60010.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
