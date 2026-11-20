@@ -1,0 +1,38 @@
+partNumber,product,generation,catalogId,batch,stageReached,status,partNumberVerified,identityVerified,fitmentVerified,retailEvidence,supplierIdentified,supplierCostKnown,shippingEstablished,imagesAccurate,infoComplete,readyForImport,blocker
+44200-60170,Steering rack,Land Cruiser 200,4471,7,FITMENT VERIFIED,HOLD,yes,yes,yes (VIN-dependent),3 prices; lowest $728.28,no,no,estimate only,yes,yes,no,no supplier cost
+49141-60010,"AHC accumulator, front",Land Cruiser 100,4474,7,FITMENT VERIFIED,HOLD,yes,yes,yes (VIN-dependent),3 prices; lowest $844.70,no,no,estimate only,yes,yes,no,no supplier cost
+49151-60010,"AHC accumulator, rear",Land Cruiser 100,4475,7,FITMENT VERIFIED,HOLD,yes,yes,yes (VIN-dependent),3 prices; lowest $856.88,no,no,estimate only,yes,yes,no,no supplier cost
+48007-60023,KDSS front cylinder,Prado 150 platform (US: 4Runner 2010-2024; GX460 not confirmed),4472,7,FITMENT VERIFIED,HOLD,yes,yes,yes for 4Runner only,"3 prices; lowest $1,805.62",no,no,estimate only,yes,yes,no,no supplier cost; Prado/GX fitment not listed
+48910-60021,Rear air suspension compressor,Prado 120 platform (US: 4Runner 2003-2009; GX470 by cross-reference),4473,7,FITMENT VERIFIED,HOLD,yes,yes,yes for 4Runner only,"4 prices; lowest $1,710.50",no,no,estimate only,yes,yes,no,no supplier cost; Prado/GX fitment not listed
+47050-60043,Brake booster with master cylinder,Land Cruiser 100,,,VERIFIED,HOLD,yes,yes,dealer catalogs 2003-2007,"4 prices; lowest $1,339.76",no,no,no,no,no,no,no Toyota photo; no supplier cost
+47050-60041,Brake booster with master cylinder,Land Cruiser 100,,,RESEARCH,HOLD,yes,yes,1999-2001 (2 sources),"2 prices; lowest $1,370.71",no,no,no,UNKNOWN (photo found; not checked by eye),no,no,third US price
+48910-60012,AHC pump and motor,Land Cruiser 100,,,RESEARCH,HOLD,yes,yes,years conflict,"2 prices; lowest $2,937.83",no,no,no,UNKNOWN (photo found; not checked by eye),no,no,third price; fitment years
+48910-60033,AHC pump motor,Land Cruiser 100,,,RESEARCH,HOLD,yes,UNKNOWN,UNKNOWN,"1 price ($2,886.69)",no,no,no,no,no,no,fitment not shown; 1 price
+44250-60100,Power steering rack,Land Cruiser 100 (2002-2003),,,RESEARCH,HOLD,yes,yes,2 sources,2 prices; lowest $583.29,no,no,no,UNKNOWN (photo found; not checked by eye),no,no,third price
+44250-60050,Power steering rack,Land Cruiser 100 (1998-2003),,,RESEARCH,HOLD,yes,yes,UNKNOWN,"~$662-$755, sellers not itemised",no,no,no,no,no,no,attributed prices; photo
+44110-60211,Steering gear box,Land Cruiser 80,,,RESEARCH,HOLD,yes,yes,1992-1997,"1 price ($1,676.68); discontinued per Olathe",no,no,no,no,no,no,discontinued
+41110-60C50,Front differential carrier,Land Cruiser 200 (or 80: conflict),,,RESEARCH,HOLD,yes,yes,conflict (2016-2021 vs 1993-1997),"2 prices; lowest $1,383.09",no,no,no,no,no,no,fitment conflict; photo
+41110-60B81,Front differential carrier,Land Cruiser 200 (2008-2015),,,VERIFIED,HOLD,yes,yes,2008-2015 (Northpark; ToyotaPartsNow),"3 prices; lowest $1,429.36",no,no,no,no,no,no,no Toyota photo; no supplier cost
+41110-60C40,Rear differential carrier,Land Cruiser 200 (2015-2021),,,RESEARCH,HOLD,yes,yes,one retailer,no US price found,no,no,no,no,no,no,no price; photo
+35010-60B80-84,Genuine Reman automatic transmission,Land Cruiser 200 (2008-2015),,,RESEARCH,HOLD,yes,yes,retailer titles,"2 prices (~$2,957; $3,255.55) + $1,000 core",no,no,no,no,no,no,core charge unsupported; freight; photo
+35010-60E50-84,Genuine Reman automatic transmission,Land Cruiser 200 (2015-2018),,,RESEARCH,HOLD,yes,yes,retailer titles,"1 price ($4,956.24) + $1,000 core",no,no,no,no,no,no,core; 1 price; photo
+36100-60B02,Transfer case,Land Cruiser 200 (2011-2021),,,VERIFIED,HOLD,yes,yes,dealer catalogs,"5 prices; lowest $2,765.10",no,no,no,no,no,no,no Toyota photo; freight
+88320-6A320,A/C compressor,Land Cruiser 200 (2008-2020),,,VERIFIED,HOLD,yes,yes,dealer catalogs,5 prices; lowest $616.48,no,no,no,no,no,no,no Toyota photo
+47070-60060,Brake booster pump,Land Cruiser 200,,,RESEARCH,HOLD,yes,yes,conflict between sellers,3 prices; lowest $701.65,no,no,no,no,no,no,fitment conflict; photo
+53101-60D30,Radiator grille,"Land Cruiser 200 (2016-2021, 5.7L)",,,RESEARCH,HOLD,yes,yes,one retailer (2019-2021 pages),1 seller (ToyotaPartsDeal $678.89-$689.44),no,no,no,UNKNOWN (photo found; not checked by eye),no,no,1 seller; Toyota marks pickup-only (oversize)
+53101-60936,"Radiator grille, chrome",Land Cruiser 200 (2016-2021),,,RESEARCH,HOLD,yes,yes,Olathe 2016-21,2 sellers; lowest $625.33,no,no,no,no,no,no,2 sellers; no photo
+53301-60690,Hood panel,Land Cruiser 200 (2016-2021),,,RESEARCH,REJECTED,yes,yes,Olathe 2016-21,Olathe $501.59; ToyotaPartsDeal $508.43,no,no,no,UNKNOWN (photo found),no,no,"price 5% under lowest = $476.51, below the $500 floor; freight panel"
+53301-60591,Hood panel,Land Cruiser 200 (2013-2015),,,RESEARCH,REJECTED,yes,yes,conflict,$447.63-$462.71,no,no,no,UNKNOWN,no,no,below $500
+81070-60K62 / 81140-60N50,Headlamp assemblies,Land Cruiser 200 (2016-2021),,,RESEARCH,HOLD,yes,yes,one source each,"MSRP $1,973.39 only; no sale prices found",no,no,no,no,no,no,prices; photo
+17201-F0010,Turbocharger,Land Cruiser 250 (2024-2025 2.4L hybrid),,,RESEARCH,HOLD,yes,yes,one retailer,"1 price ($2,290.31)",no,no,no,no,no,no,1 price; photo
+36100-35A30,Transfer case (full-time),Land Cruiser 250,,,RESEARCH,HOLD,yes,yes,Olathe (Land Cruiser and Tacoma),"1 price ($2,216.29)",no,no,no,no,no,no,1 price; photo
+81185-60S60 / 81145-60S60,Headlamps,Land Cruiser 250,,,RESEARCH,HOLD,yes,yes,dealer catalogs,2 prices / 1 price,no,no,no,no,no,no,prices; photo
+87940-6A570,"Camera mirror, left",Land Cruiser 250,,,VERIFIED,HOLD,yes,yes,dealer catalogs,"3 prices; lowest $1,047.92",no,no,no,no,no,no,no Toyota photo
+81110-60P70,Headlamp (sealed),Land Cruiser 70,,,RESEARCH,REJECTED,yes,yes,non-US,$19.72,no,no,no,UNKNOWN,no,no,below $500; non-US
+17201-11120,1GD-FTV turbocharger,Prado 150 / Hilux (non-US),,,RESEARCH,HOLD,yes,yes,non-US (international pathway not adopted),no US genuine price (aftermarket $509.99-$760),no,no,no,no,no,no,international pathway; no US price
+23670-51010 family,1VD-FTV injectors,Land Cruiser 70 (non-US),,,RESEARCH,HOLD,yes,yes,non-US,genuine priced only in Australia,no,no,no,no,no,no,international pathway; no US price
+16400-50384 / 16400-50290 / 16400-66081,Radiators,Land Cruiser 200 / 100 / 80,,,RESEARCH,REJECTED,yes,yes,,$328-$482,no,no,no,UNKNOWN,no,no,below $500
+17610-0S030,Secondary air pump,Land Cruiser 200,,,RESEARCH,REJECTED,yes,yes,,$468.96,no,no,no,UNKNOWN,no,no,below $500
+88320-60B80,A/C compressor (2021),Land Cruiser 200,,,RESEARCH,REJECTED,yes,yes,,$351,no,no,no,UNKNOWN,no,no,below $500
+81561-60D80,Tail lamp,Land Cruiser 250,,,RESEARCH,REJECTED,yes,yes,,$428.03,no,no,no,UNKNOWN,no,no,below $500
+19000-0P441 / 19000-31K81 family,Genuine new long blocks,4Runner / Tacoma (Prado 120/150 engine family),,,RESEARCH,REJECTED,yes,yes,dealer catalogs,"~$15,000-$21,516",no,no,no,no,no,no,4-5x used/reman market
