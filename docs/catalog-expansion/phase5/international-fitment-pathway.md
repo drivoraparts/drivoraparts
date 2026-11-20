@@ -77,3 +77,9 @@ Design:
 **Not recommended:** fitment for modern Hilux, Prado 150 or LC300 as stand-alone international
 models. US demand is small, the vehicles cannot be registered here, and no US price exists to
 check against.
+
+## Prototype (2026-11-20)
+
+A standalone prototype of Step B is in `scripts/check-international-fitment.mjs`, tested by
+`scripts/test-international-fitment.mjs` (19 checks; the US pathway is tested unchanged). It is not
+wired into any npm script, the importer or the storefront. See `phase5-continued-report.md` section C.

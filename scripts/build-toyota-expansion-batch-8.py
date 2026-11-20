@@ -37,10 +37,10 @@ PARTS = [
       [("Olathe Toyota", 2163.97, f"{OLA}/toyota-transfer-case-assembly-3610004010"),
        ("Modern Toyota", 2203.67, f"{MOD}/toyota-transfer-case-assembly-3610004010"),
        ("ToyotaPartsDeal", 2211.61, f"{TD}/oem/toyota~transfer~assy~36100-04010.html")],
-      [A(2024, 2026, "Tacoma", "2.4L Turbo", "vin_dependent",
+      [A(2024, 2025, "Tacoma", "2.4L Turbo", "vin_dependent",
          [D("Modern Toyota (Transfer Case Assembly 36100-04010, 2024+ Tacoma, manual transmission)", f"{MOD}/toyota-transfer-case-assembly-3610004010"),
           D("Olathe Toyota (Transfer Case Assembly 36100-04010 for 2024-2026 Toyota Tacoma)", f"{OLA}/toyota-transfer-case-assembly-3610004010")],
-         restriction="4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; confirm by VIN")],
+         restriction="4WD with manual transmission; automatic hybrid and TRD Trailhunter trucks use 36100-04030; 36110-04010 is a different part; dealer catalogs also list 2026, outside the model years validated here; confirm by VIN")],
       "Complete part-time 4WD transfer case assembly (transfer assy) for the fourth-generation Tacoma."),
 ]
 # fmt: on
