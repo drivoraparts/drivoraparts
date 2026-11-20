@@ -1,0 +1,17 @@
+cart,subtotal,rule,discount,pctOfSubtotal
+accumulator pair (4474+4475),1616.58,Today: 5% + 10% at qty>=2 (10% total),161.66,10.0
+accumulator pair (4474+4475),1616.58,R1: 5% only (no multi-item),80.83,5.0
+accumulator pair (4474+4475),1616.58,"R2: 5%, +5% only if 2+ distinct parts each >=$100, extra capped $75",155.83,9.64
+accumulator pair (4474+4475),1616.58,"R3: 5% capped at $75 per order, no multi-item",75,4.64
+two of the same accumulator (4474x2),1604.98,Today: 5% + 10% at qty>=2 (10% total),160.5,10.0
+two of the same accumulator (4474x2),1604.98,R1: 5% only (no multi-item),80.25,5.0
+two of the same accumulator (4474x2),1604.98,"R2: 5%, +5% only if 2+ distinct parts each >=$100, extra capped $75",80.25,5.0
+two of the same accumulator (4474x2),1604.98,"R3: 5% capped at $75 per order, no multi-item",75,4.67
+compressor + KDSS cylinder (4473+4472),3340.38,Today: 5% + 10% at qty>=2 (10% total),334.04,10.0
+compressor + KDSS cylinder (4473+4472),3340.38,R1: 5% only (no multi-item),167.02,5.0
+compressor + KDSS cylinder (4473+4472),3340.38,"R2: 5%, +5% only if 2+ distinct parts each >=$100, extra capped $75",242.02,7.25
+compressor + KDSS cylinder (4473+4472),3340.38,"R3: 5% capped at $75 per order, no multi-item",75,2.25
+rack + $30 add-on,721.89,Today: 5% + 10% at qty>=2 (10% total),72.19,10.0
+rack + $30 add-on,721.89,R1: 5% only (no multi-item),36.09,5.0
+rack + $30 add-on,721.89,"R2: 5%, +5% only if 2+ distinct parts each >=$100, extra capped $75",36.09,5.0
+rack + $30 add-on,721.89,"R3: 5% capped at $75 per order, no multi-item",36.09,5.0

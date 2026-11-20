@@ -72,6 +72,11 @@ IMAGES = {
     "43512-0R010": ["top_43512-0R010.webp"],
     # Batch 6: Toyota's first photo shows a left/right pair; the listing is one mirror.
     "87910-08220": ["8791008220_2.webp", "8791008220_3.webp"],
+    # Batch 8: the /img/<ND>/<PN>_1 photo is an A/C compressor and _2/_3 are not
+    # identifiable as this part; only the two /img/<ND>/<ND>_n views show the transfer case.
+    "36100-0C020": ["361000C020_1.webp", "361000C020_2.webp"],
+    # Batch 8: photo 3 is an annotated service diagram, not a product view.
+    "36100-04010": ["3610004010_1.webp", "3610004010_2.webp"],
     # Batch 6: photo 3 is a label card, not the lamp.
     "81550-08190": ["8155008190_2.webp", "8155008190_1.webp"],
     # Batch 6: photo 2 is a can of compressor oil, not the condenser.
@@ -91,6 +96,7 @@ def images_for(pn):
     found = [f"top_{pn}.webp"] if os.path.exists(os.path.join(IMG_DIR, f"top_{pn}.webp")) else []
     found += sorted(f for f in os.listdir(IMG_DIR) if re.fullmatch(rf"{re.escape(n)}_\d\.webp", f))
     found += sorted(f for f in os.listdir(IMG_DIR) if re.fullmatch(rf"pn_{re.escape(pn)}_\d\.webp", f))
+    found += sorted(f for f in os.listdir(IMG_DIR) if re.fullmatch(rf"imgpn_{re.escape(pn)}_\d\.webp", f))
     return found
 
 
@@ -102,6 +108,9 @@ def source_url(fname):
         return f"https://epc-images.toyota.com/{fname[4:-5]}.webp"
     if fname.startswith("pn_"):
         return f"https://epc-images.toyota.com/{fname[3:-5]}.webp"
+    if fname.startswith("imgpn_"):
+        pn, i = fname[6:-5].rsplit("_", 1)
+        return f"https://epc-images.toyota.com/img/{pn.replace('-', '')}/{pn}_{i}.webp"
     n, i = fname[:-5].rsplit("_", 1)
     return f"https://epc-images.toyota.com/img/{n}/{n}_{i}.webp"
 

@@ -9,6 +9,8 @@ epc-images.toyota.com, keyed by part number, at two paths:
     https://epc-images.toyota.com/img/<PNNODASH>/<PNNODASH>_<n>.webp
                                                          -> <out>/<PNNODASH>_<n>.webp
     https://epc-images.toyota.com/<PN>_<n>.webp          -> <out>/pn_<PN>_<n>.webp
+    https://epc-images.toyota.com/img/<PNNODASH>/<PN>_<n>.webp
+                                                         -> <out>/imgpn_<PN>_<n>.webp
 For a part number Toyota has no photo of, the host answers 200 with an HTML
 "no image" page; anything that is not a WebP is discarded. Prints, per part
 number, how many real photos were kept. Requests are spaced one second apart.
@@ -49,6 +51,11 @@ for pn in sys.argv[2:]:
     for i in (1, 2, 3):
         if get(f"https://epc-images.toyota.com/{pn}_{i}.webp", os.path.join(out, f"pn_{pn}_{i}.webp")):
             kept.append(f"pn_{pn}_{i}.webp")
+        else:
+            break
+    for i in (1, 2, 3):
+        if get(f"https://epc-images.toyota.com/img/{n}/{pn}_{i}.webp", os.path.join(out, f"imgpn_{pn}_{i}.webp")):
+            kept.append(f"imgpn_{pn}_{i}.webp")
         else:
             break
     print(pn, len(kept), " ".join(kept))

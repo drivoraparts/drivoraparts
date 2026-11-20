@@ -72438,5 +72438,310 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4471": {
+    "productId": 4471,
+    "productName": "Genuine Toyota Power Steering Rack and Pinion Assembly 44200-60170 for Toyota Land Cruiser (2008–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44200-60170/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/44200-60170_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44200-60170",
+      "4420060170"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44200-60170",
+    "sha256": "832c659c99158ad52007f0d43ce8fd0c913e76f83f4be2b44d07621ff7e2d07d",
+    "bytes": 4356,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44200-60170/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/44200-60170_2.webp",
+        "sha256": "fa27bba189a80d91dbfec7a682bc22de9c1d34c4b35539d4d4c1e40ec0a8ce1e",
+        "bytes": 4510,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4472": {
+    "productId": 4472,
+    "productName": "Genuine Toyota KDSS Front Hydraulic Cylinder Assembly 48007-60023 for Toyota 4Runner (2010–2024)",
+    "localFile": "/product-media/toyota-genuine/toyota-kdss-front-hydraulic-cylinder-assembly-48007-60023/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/48007-60023_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "48007-60023",
+      "4800760023"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 48007-60023",
+    "sha256": "f296ed298fe0224f6439bb4283e280e029e1add379c9717623e4a531679d6bbe",
+    "bytes": 9444,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-kdss-front-hydraulic-cylinder-assembly-48007-60023/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/48007-60023_2.webp",
+        "sha256": "3fc925ff1a5dfe31e093ae3b4c8a25fb4a087d47a42bc3935f04bda783f2af2e",
+        "bytes": 9032,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-kdss-front-hydraulic-cylinder-assembly-48007-60023/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/48007-60023_3.webp",
+        "sha256": "2650e1de9bc642c4c57269c849bd1cf7c650fc35960c7fc5f9045195d48b7a90",
+        "bytes": 11096,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4473": {
+    "productId": 4473,
+    "productName": "Genuine Toyota Rear Air Suspension Compressor Assembly 48910-60021 for Toyota 4Runner (2003–2009)",
+    "localFile": "/product-media/toyota-genuine/toyota-rear-air-suspension-compressor-assembly-48910-60021/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4891060021/48910-60021_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "48910-60021",
+      "4891060021"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 48910-60021",
+    "sha256": "40ba4c9062ff1df54fa6c9593242e8a6c5e1ba9e586ea2f82e0600a54cf3e7bb",
+    "bytes": 16110,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-rear-air-suspension-compressor-assembly-48910-60021/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4891060021/48910-60021_2.webp",
+        "sha256": "7ff1cc11ee499ce29d9676abd0a638eb6b760d01fbb9c29f8295712b5c8bc890",
+        "bytes": 21340,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-rear-air-suspension-compressor-assembly-48910-60021/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4891060021/48910-60021_3.webp",
+        "sha256": "4a398ba566b8fe4a65ace159667667767e095d879955df263042911a5797307e",
+        "bytes": 19472,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4474": {
+    "productId": 4474,
+    "productName": "Genuine Toyota AHC Suspension Accumulator, Front 49141-60010 for Toyota Land Cruiser (2006–2007)",
+    "localFile": "/product-media/toyota-genuine/toyota-ahc-suspension-accumulator-front-49141-60010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/49141-60010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "49141-60010",
+      "4914160010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 49141-60010",
+    "sha256": "61f93b9a44196c07041f8fd0278ec10c2c4bf5ab3156582db5a863e5876dc497",
+    "bytes": 11682,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-ahc-suspension-accumulator-front-49141-60010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/49141-60010_2.webp",
+        "sha256": "968ea4ec0d90bb43858d400f3f52124bec7eadd1a7fd8eb0646a19e87fbfa57a",
+        "bytes": 26650,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-ahc-suspension-accumulator-front-49141-60010/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/49141-60010_3.webp",
+        "sha256": "e007c237934c03f41e548c34b2eac338a90e300ea7af43aea0c815d675c43369",
+        "bytes": 11440,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4475": {
+    "productId": 4475,
+    "productName": "Genuine Toyota AHC Suspension Accumulator, Rear 49151-60010 for Toyota Land Cruiser (2006–2007)",
+    "localFile": "/product-media/toyota-genuine/toyota-ahc-suspension-accumulator-rear-49151-60010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/49151-60010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "49151-60010",
+      "4915160010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 49151-60010",
+    "sha256": "6e492074cf5f6686459fbb11d2f6764918049adfa797004eba71899d64828424",
+    "bytes": 17146,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-ahc-suspension-accumulator-rear-49151-60010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/49151-60010_2.webp",
+        "sha256": "973719a61441aa268c2ce68699fb4c60102ef7a684818e3974d05f660269c61d",
+        "bytes": 17046,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-ahc-suspension-accumulator-rear-49151-60010/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/49151-60010_3.webp",
+        "sha256": "6fce7bb4b7800c9fbc187b16bf80fe095dd1fedff8951ef3878b91e7e0e6134f",
+        "bytes": 28294,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4476": {
+    "productId": 4476,
+    "productName": "Genuine Toyota Transfer Case Assembly 36100-04010 for Toyota Tacoma (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-04010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/3610004010/3610004010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "36100-04010",
+      "3610004010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 36100-04010",
+    "sha256": "d6a4aca601d5be81535c93f7ace15a7e816a1096712c53f5d80c7271caa48b0c",
+    "bytes": 14118,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-04010/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/3610004010/3610004010_2.webp",
+        "sha256": "4ef94a1a5156efb7eaea14d6f6071b3bfd80f9388abcf6c531f0a07a5b547245",
+        "bytes": 23340,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4477": {
+    "productId": 4477,
+    "productName": "Genuine Toyota Transfer Case Assembly 36100-0C020 for Toyota Tundra (2014–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-0c020/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/361000C020/361000C020_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "36100-0C020",
+      "361000C020"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 36100-0C020",
+    "sha256": "2e4ec02ddc7c6a64afc683b749fc71163b2d9f1f698f6dd084e783490ceb35f0",
+    "bytes": 18866,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-transfer-case-assembly-36100-0c020/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/361000C020/361000C020_2.webp",
+        "sha256": "dd6389020fd9c6872b88e4d38e205b6c4a4de91e849fecb694bef0823065beff",
+        "bytes": 19420,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

@@ -1002,6 +1002,48 @@
       "partNumber": "884A0-0C010",
       "name": "Genuine Toyota A/C Condenser Assembly 884A0-0C010 for Toyota Tundra (2022–2025)",
       "price": 262.59
+    },
+    {
+      "id": 4471,
+      "partNumber": "44200-60170",
+      "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44200-60170 for Toyota Land Cruiser (2008–2021)",
+      "price": 691.89
+    },
+    {
+      "id": 4472,
+      "partNumber": "48007-60023",
+      "name": "Genuine Toyota KDSS Front Hydraulic Cylinder Assembly 48007-60023 for Toyota 4Runner (2010–2024)",
+      "price": 1715.39
+    },
+    {
+      "id": 4473,
+      "partNumber": "48910-60021",
+      "name": "Genuine Toyota Rear Air Suspension Compressor Assembly 48910-60021 for Toyota 4Runner (2003–2009)",
+      "price": 1624.99
+    },
+    {
+      "id": 4474,
+      "partNumber": "49141-60010",
+      "name": "Genuine Toyota AHC Suspension Accumulator, Front 49141-60010 for Toyota Land Cruiser (2006–2007)",
+      "price": 802.49
+    },
+    {
+      "id": 4475,
+      "partNumber": "49151-60010",
+      "name": "Genuine Toyota AHC Suspension Accumulator, Rear 49151-60010 for Toyota Land Cruiser (2006–2007)",
+      "price": 814.09
+    },
+    {
+      "id": 4476,
+      "partNumber": "36100-04010",
+      "name": "Genuine Toyota Transfer Case Assembly 36100-04010 for Toyota Tacoma (2024–2025)",
+      "price": 2055.79
+    },
+    {
+      "id": 4477,
+      "partNumber": "36100-0C020",
+      "name": "Genuine Toyota Transfer Case Assembly 36100-0C020 for Toyota Tundra (2014–2021)",
+      "price": 2281.39
     }
   ],
   "excluded": [

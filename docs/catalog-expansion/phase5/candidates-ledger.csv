@@ -1,0 +1,33 @@
+platform,system,partNumber,product,fitment,usRetailPrices,priceCount,lowestUsRetail,coreCharge,toyotaPhoto,status,blocker
+Land Cruiser 200,Differential,41110-60B81,Front differential carrier assembly (genuine new),2008-2015 Land Cruiser (Northpark; ToyotaPartsNow; supersedes 41110-60B80),"ToyotaPartsDeal $1,429.36; ToyotaPartsNow $1,456.31; Northpark Toyota $1,462.72",3,1429.36,,no,HOLD,no Toyota photo; no supplier cost
+Land Cruiser 200,Differential,41110-60C50,Front differential carrier assembly (genuine new),2016-2021 Land Cruiser per Olathe; one parts finder lists 1993-1997 (conflict),"Olathe $1,383.09; ToyotaPartsNow $1,440.14",2,1383.09,,no,HOLD,2 prices; fitment conflict; no photo
+Land Cruiser 200,Transmission (Genuine Reman),35010-60B80-84,Toyota Genuine Reman automatic transmission,2008-2015 Land Cruiser (replaces 35000-0W010 / 35000-60B80),"one retailer ~$2,957 (MSRP $3,593.33 less $636.20); another $3,255.55",2,2957.13,$1000,no,HOLD,core charge not supported by checkout; freight; no photo
+Land Cruiser 200,Transmission (Genuine Reman),35010-60E50-84,Toyota Genuine Reman automatic transmission,2015-2018 Land Cruiser,"$4,956.24 (MSRP $5,867.82)",1,4956.24,$1000,no,HOLD,1 price; core; freight; no photo
+Land Cruiser 200,Transfer case,36100-60B02,Transfer case assembly,2011-2021 Land Cruiser (LX570 shared),see land-cruiser ledger,3+,,,no,HOLD,no Toyota photo
+Land Cruiser 200,Steering,44200-60170,Steering rack,2008-2021 Land Cruiser,"Olathe $728.28; Longo $730.75; ToyotaPartsDeal $749.82",3,728.28,,yes,HOLD (imported ID 4471),no supplier cost
+Land Cruiser 100,Steering,44250-60100,Power steering rack and pinion (genuine new),2002-2003 Land Cruiser,"two Toyota parts sites $583.29 and $598.10",2,583.29,,yes,HOLD,2 prices
+Land Cruiser 100,Steering,44250-60050,Power steering rack and pinion (genuine new),1998-2003 Land Cruiser,"~$662-$755 on Toyota parts sites (sellers not itemised); product pages also at Jim Hudson Toyota, Toyota of Anaheim, Legends Toyota",0 attributed,662,,no,HOLD,no photo; exact prices to record
+Land Cruiser 100,Suspension,49141-60010 / 49151-60010,AHC accumulators,2006-2007 Land Cruiser,see batch 7,3 each,844.70 / 856.88,,yes,HOLD (imported IDs 4474 / 4475),no supplier cost
+Land Cruiser 100,Brakes,47050-60043 / 47050-60041,Brake booster with master cylinder,2003-2007 / 1999-2001,see land-cruiser ledger,4 / 2,1339.76 / 1370.71,,no / yes,HOLD,photo (60043); third price (60041)
+Land Cruiser 100,Suspension,48910-60012,AHC pump and motor,Land Cruiser 100,"ToyotaPartsDeal $3,098.02; Modern $2,937.83",2,2937.83,,yes,HOLD,2 prices; years conflict
+Land Cruiser 250 / Prado 250,Turbo,17201-F0010,Turbocharger sub-assembly (genuine new),2024-2025 Land Cruiser 2.4L hybrid (ToyotaPartsNow),"ToyotaPartsNow $2,290.31 (MSRP $3,356.46)",1,2290.31,,no,HOLD,1 price; no photo; low failure volume on a new model
+Land Cruiser 250 / Prado 250,Transfer case,36100-35A30,Transfer case assembly (full-time 4WD),Olathe: 2024-2026 Land Cruiser and Tacoma,"Olathe $2,216.29 (MSRP $2,876.29)",1,2216.29,,no,HOLD,1 price; no photo
+Land Cruiser 250 / Prado 250,Lighting,81185-60S60 / 81145-60S60,Headlamps,2024+ Land Cruiser,see land-cruiser ledger,2,,,no,HOLD,2 prices; no photo
+Land Cruiser 300,Turbo,17201-F4011,Turbocharger left (V35A),"Tundra/Sequoia 2022-2025 (also LX600, Land Cruiser 300)",live,3,,,yes,LIVE (ID 4445; US fitment only),
+Land Cruiser 300 / Land Cruiser 70 / Prado 120 / Prado 150 / Hilux,Any genuine,n/a,Genuine Toyota parts for non-US models,non-US markets,"genuine prices found only in Australia (e.g. Nunawading Toyota 1VD-FTV injector A$670.42) and from exporters (Partsouq); US listings for 1GD-FTV turbo 17201-11120 are aftermarket ($509.99-$760)",0 US genuine,,,mixed,BLOCKED,validator accepts US models only; no US genuine retail market to price against (see international-fitment-pathway.md)
+Tundra / Sequoia,Hybrid battery,G9510-34010,HV battery assembly (i-FORCE MAX),2022-2024 Tundra and 2023-2025 Sequoia (sellers differ on years),"ToyotaPartsDeal $3,932.01; ToyotaPartsNow $4,005.59",2,3932.01,likely (Toyota HV batteries carry cores),no,HOLD,2 prices; years conflict; Class 9 hazmat; core; no photo
+Tundra,Transfer case,36100-0C020,Transfer case assembly,2014-2021 Tundra 5.7L 4WD,see batch 8,3,2401.42,,yes,HOLD (imported ID 4477),no supplier cost
+Tundra,Transfer case,36100-0C010,Transfer case assembly,Tundra 4.6L 4WD,"ToyotaPartsDeal $2,504.82; ToyotaPartsNow $2,495.85",2,2495.85,,yes,HOLD,2 sellers
+Tundra / Sequoia,Short block,11400-0S011 -> 11400-38130,Short block 3UR-FE,5.7L,"ToyotaPartsDeal $6,613.92",1,6613.92,,no,HOLD,1 price; no photo
+Tacoma,Transfer case,36100-04010,Transfer case assembly,2024-2026 Tacoma 4WD manual,see batch 8,3,2163.97,,yes,HOLD (imported ID 4476),no supplier cost
+Tacoma,Transfer case,36100-04030,Transfer case assembly,2024-2026 Tacoma auto hybrid / Trailhunter,"Olathe $2,261.52; ToyotaPartsDeal $2,311.32",2,2261.52,,yes,HOLD,2 prices
+Tacoma,Engine,19000-0P441 family,Partial engine 2GR-FKS (genuine new),2016-2023 Tacoma,"~$15,000",1,15000.50,,no,REJECT,4-5x the used/reman market
+4Runner,Transfer case,36100-6D401,Transfer case assembly,2017-2024 4Runner 4.0L,"Olathe $2,795.73; ToyotaPartsDeal $2,857.29; Longo $3,412.19",3,2795.73,,no,HOLD,no Toyota photo
+4Runner,Transfer case,36100-71370,Transfer case assembly,2020-2024 4Runner SR5 (Olathe),"Olathe $2,256.07",1,2256.07,,no,HOLD,1 price; no photo
+4Runner,Suspension,48007-60023 / 48910-60021,KDSS cylinder / rear air compressor,see batch 7,see batch 7,3+,,,yes,HOLD (imported IDs 4472 / 4473),no supplier cost
+4Runner / FJ Cruiser,Engine,19000-31K81,Partial engine 1GR-FE (genuine new),2010-2024 4Runner,"~$15,611",1,15611,,no,REJECT,used $2,900-$3,900; reman ~$4,390
+Highlander,Hybrid battery,G9510-48090 / G9510-48060,HV battery,2020-2024 Highlander hybrid,"G9510-48090 $3,932.01 and $3,988.07; G9510-48060 $4,205.02 + $1,350 core (AutoNation)",2-3,3932.01,$1350,no,HOLD,core; hazmat; no photo
+Sienna,Hybrid battery,G9510-45010,HV battery,Sienna 2021-early 2024,3 prices (profitability ledger),3,3932.01,,no,HOLD,no photo; hazmat
+Camry,Hybrid battery,G9510-33112,HV battery,Camry hybrid 2018-2024,3 prices (+$1,350 core),3,2591.58,$1350,no,HOLD,core; hazmat; no photo
+RAV4,Transaxle (Genuine Reman),30510-0R010-84,Reman transaxle,RAV4 2013-2018,1 price ($3,291.95 + $1,000 core),1,3291.95,$1000,no,HOLD,core; 1 price
+RAV4,Steering column,45250-07180,Steering column,RAV4 (build-plant split),2 prices,2,915.59,,yes (check by eye),HOLD,2 prices; plant split
