@@ -324,14 +324,17 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 3200,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota GR86 with the 2.4L FA24 and manual transmission, 2022–2024 (chassis ZN8), per Toyota's dealer catalog",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/toyota-gr86-6-speed-manual-transmission-su003-10764/1.jpg",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/toyota-gr86-6-speed-manual-transmission-su003-10764/1.jpg",
+      "/product-media/transmission/toyota-gr86-6-speed-manual-transmission-su003-10764/2.jpg",
+      "/product-media/transmission/toyota-gr86-6-speed-manual-transmission-su003-10764/3.jpg",
+      "/product-media/transmission/toyota-gr86-6-speed-manual-transmission-su003-10764/4.jpg"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "Toyota SU003-10764 6-Speed Manual Transmission (TL701V8ACA) — GR86 (2022–2024)\n\nComplete six-speed manual transmission assembly for the Toyota GR86, listed in Toyota's parts catalog under part number SU003-10764 (Toyota code TL70, assembly TL701V8ACA). The Subaru-style prefix is Toyota's own catalog number for this part.\n\nFitment: Toyota GR86 with the 2.4L FA24 and manual transmission, 2022–2024 (chassis ZN8), per Toyota's dealer catalog\nPart Number: SU003-10764\nSpecifications: 6-speed manual; Toyota part SU003-10764 (TL701V8ACA); rear-wheel drive; 2.4L FA24 engine\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/toyota-gr86-6-speed-manual-transmission-su003-10764/1.jpg",
+    "description": "Toyota SU003-10764 6-Speed Manual Transmission (TL701V8ACA) — GR86 (2022–2024)\n\nComplete six-speed manual transmission assembly for the Toyota GR86, listed in Toyota's parts catalog under part number SU003-10764 (Toyota code TL70, assembly TL701V8ACA). The Subaru-style prefix is Toyota's own catalog number for this part.\n\nFitment: Toyota GR86 with the 2.4L FA24 and manual transmission, 2022–2024 (chassis ZN8), per Toyota's dealer catalog\nPart Number: SU003-10764\nSpecifications: 6-speed manual; Toyota part SU003-10764 (TL701V8ACA); rear-wheel drive; 2.4L FA24 engine\n\nConfirm fitment against your vehicle and part number before ordering.\n\nToyota's parts catalog now supersedes SU003-10764 with SU003-12905 (same TL701V8ACA transmission assembly).",
     "sourceSlug": "toyota-genuine-6-speed-manual-transmission-for-toyota-gr86",
     "createdAt": 1751959999984,
     "topDemand": true,
