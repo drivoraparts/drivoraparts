@@ -606,14 +606,15 @@
     "price": 1490,
     "stock": false,
     "fitment": "Toyota GR Supra 3.0L B58, 2023 and newer, manual transmission only",
-    "thumbnail": "/product-media/placeholders/transmission.svg",
+    "thumbnail": "/product-media/transmission/xclutch-gr-supra-b58-twin-sprung-organic-clutch-kit-xkty23560-2a/1.jpg",
     "images": [
-      "/product-media/placeholders/transmission.svg"
+      "/product-media/transmission/xclutch-gr-supra-b58-twin-sprung-organic-clutch-kit-xkty23560-2a/1.jpg"
     ],
-    "image": "/product-media/placeholders/transmission.svg",
-    "description": "XClutch Twin Sprung Clutch Kit for Toyota GR Supra (B58, 2023+ Manual)\n\nClutch kit.\nFitment: Toyota GR Supra 3.0L B58, 2023 and newer, manual transmission only\nSpecifications: 9.0 in twin sprung discs; single-mass flywheel; release bearing; hardware kit\n\nConfirm fitment against your vehicle and part number before ordering.",
+    "image": "/product-media/transmission/xclutch-gr-supra-b58-twin-sprung-organic-clutch-kit-xkty23560-2a/1.jpg",
+    "description": "XClutch Twin Sprung Clutch Kit for Toyota GR Supra (B58, 2023+ Manual)\n\nClutch kit.\nFitment: Toyota GR Supra 3.0L B58, 2023 and newer, manual transmission only\nPart number: XKTY23560-2A\nSpecifications: 9.0 in twin sprung organic discs; single-mass flywheel; release bearing; hardware kit\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "xtreme-clutch-twin-plate-kit-for-toyota-gr-supra-a90",
-    "createdAt": 1751959999970
+    "createdAt": 1751959999970,
+    "partNumber": "XKTY23560-2A"
   },
   {
     "id": 1976,

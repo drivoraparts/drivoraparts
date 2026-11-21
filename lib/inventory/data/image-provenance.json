@@ -72829,5 +72829,31 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-1975-xclutch-1": {
+    "productId": 1975,
+    "productName": "XClutch Twin Sprung Clutch Kit for Toyota GR Supra (B58, 2023+ Manual)",
+    "localFile": "/product-media/transmission/xclutch-gr-supra-b58-twin-sprung-organic-clutch-kit-xkty23560-2a/1.jpg",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0704/8934/2250/files/79f57dd36e42692d2d60e5e6a5530f3e_f57d2f6e-9924-4aec-8166-1ab44d5505f7.jpg?v=1777363624",
+    "sourceName": "xclutchusa.com",
+    "landingPage": "https://www.xclutchusa.com/products/clutch-kit-inc-chromoly-flywheel-9-twin-sprung-organic-clutch-discs-xkty23560-2a-1",
+    "creator": "XClutch (manufacturer)",
+    "creatorUrl": "https://www.xclutchusa.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for this exact SKU, downloaded on the site owner's explicit instruction (2026-11-21). No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "XKTY23560-2A"
+    ],
+    "query": "manufacturer catalogue: Stage 4 - 9.0\" Twin Sprung Organic Clutch Discs XKTY23560-2A",
+    "sha256": "fee04aeae7208b65720c27cef8462a760e6d707e853590312fafca094b03e93e",
+    "bytes": 50430,
+    "width": 640,
+    "height": 427,
+    "downloadedAt": "2026-11-21T18:02:49.894Z",
+    "status": "downloaded",
+    "verified": "manufacturer product title and SKU XKTY23560-2A; owner confirmed listing 1975 sells XKTY23560-2A (organic) on 2026-11-21; image checked by eye: organic-disc twin kit; the manufacturer page lists three gallery URLs that are byte-identical copies of this one photo"
   }
 }
