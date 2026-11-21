@@ -72855,5 +72855,44 @@
     "downloadedAt": "2026-11-21T18:02:49.894Z",
     "status": "downloaded",
     "verified": "manufacturer product title and SKU XKTY23560-2A; owner confirmed listing 1975 sells XKTY23560-2A (organic) on 2026-11-21; image checked by eye: organic-disc twin kit; the manufacturer page lists three gallery URLs that are byte-identical copies of this one photo"
+  },
+  "product-4480": {
+    "productId": 4480,
+    "productName": "Genuine Toyota Brake Booster Assembly with Master Cylinder 47050-60042 for Toyota Land Cruiser (2000–2002)",
+    "localFile": "/product-media/toyota-genuine/toyota-brake-booster-assembly-with-master-cylinder-47050-60042/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4705060042/47050-60042_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "47050-60042",
+      "4705060042"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 47050-60042",
+    "sha256": "14618b7e0dead0a20caea4e245acb80410ce8068af80379e9ca544b0d0a78398",
+    "bytes": 12318,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-brake-booster-assembly-with-master-cylinder-47050-60042/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4705060042/47050-60042_2.webp",
+        "sha256": "df64e7771fdcc531ade6abb4b5dd6639d888f227712242f7a2ef650e8970d351",
+        "bytes": 17854,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
