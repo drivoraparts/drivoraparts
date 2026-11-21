@@ -21,6 +21,7 @@ import {
   type SearchIndex,
   type SearchVocabulary,
 } from "@/lib/catalog/search";
+import { isVerifiedGenuineId } from "@/lib/catalog/genuine-ids";
 
 /**
  * The one catalog query.
@@ -168,6 +169,9 @@ function namesMakeNotCarried(query: string): boolean {
     .some((token) => MAKES_NOT_CARRIED.has(token) || /^f-?(150|250|350)$/.test(token));
 }
 
+/** Search relevance added to verified Toyota Genuine listings (see queryCatalog). */
+const GENUINE_SEARCH_BOOST = 400;
+
 export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
   // Measured in-process and returned for the client to report as an analytics
   // event. No storage, no lookups -- reading a clock cannot slow a search.
@@ -245,6 +249,13 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
       getCategoryName: categoryName,
       vocabulary: getVocabulary(),
       index: searchIndex,
+      // Verified Toyota Genuine listings carry long, specific titles ("Genuine
+      // Toyota ... 44200-60170 for Toyota Land Cruiser (2008-2021)"), so the
+      // title-centrality signal ranked short accessory titles above them for
+      // vehicle searches such as "land cruiser". This lifts them by less than
+      // a single name-phrase match, so they lead only among comparable matches
+      // and never displace an exact part-number hit.
+      boost: (product) => (isVerifiedGenuineId(product.id) ? GENUINE_SEARCH_BOOST : 0),
     });
     items = result.items;
     correctedQuery = result.correctedQuery;
@@ -307,3 +318,53 @@ export function queryCatalog(input: CatalogQueryInput): CatalogQueryResult {
     tookMs: Date.now() - startedAt,
   };
 }
+
+/** A brand or category that has at least one listing on the storefront. */
+export type ListedFacet = { slug: string; name: string };
+
+export type ListedFacets = {
+  /** Brands with listings, Toyota first, then by listing count. */
+  brands: ListedFacet[];
+  /** Categories with listings, in the order the catalog defines them. */
+  categories: string[];
+  /** For each category, the brand slugs that have listings in it. */
+  brandsByCategory: Record<string, string[]>;
+};
+
+let facetsCache: ListedFacets | null = null;
+
+/**
+ * Filter options for the catalog feed, built from what is actually listed.
+ * The static brand registry (lib/inventory/brands.ts) also names makes the
+ * store does not sell (BMW, Nissan, Ford...), so offering it as the brand
+ * filter showed shoppers options that could only return nothing.
+ */
+export function listedFacets(): ListedFacets {
+  if (facetsCache) return facetsCache;
+  const counts = new Map<string, number>();
+  const categories = new Set<string>();
+  const byCategory = new Map<string, Set<string>>();
+  for (const product of getAllProducts()) {
+    if (!product.brand) continue;
+    counts.set(product.brand, (counts.get(product.brand) ?? 0) + 1);
+    categories.add(product.category);
+    if (!byCategory.has(product.category)) byCategory.set(product.category, new Set());
+    byCategory.get(product.category)!.add(product.brand);
+  }
+  const brands = [...counts.entries()]
+    .sort(([a, ca], [b, cb]) =>
+      (a === "toyota" ? -1 : 0) - (b === "toyota" ? -1 : 0) ||
+      cb - ca ||
+      brandName(a).localeCompare(brandName(b))
+    )
+    .map(([slug]) => ({ slug, name: brandName(slug) }));
+  facetsCache = {
+    brands,
+    categories: [...categories],
+    brandsByCategory: Object.fromEntries(
+      [...byCategory.entries()].map(([category, set]) => [category, [...set]])
+    ),
+  };
+  return facetsCache;
+}
+

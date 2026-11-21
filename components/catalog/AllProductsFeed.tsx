@@ -31,7 +31,7 @@ import {
   CATALOG_DEFAULT_LIMIT,
   CONDITION_FILTERS,
 } from "@/lib/catalog/query-options";
-import type { CatalogQueryResult } from "@/lib/catalog/query";
+import type { CatalogQueryResult, ListedFacets } from "@/lib/catalog/query";
 
 const PAGE_SIZE = CATALOG_DEFAULT_LIMIT;
 
@@ -105,6 +105,7 @@ export default function AllProductsFeed({
   vehicle = "",
   section = "",
   categoryShortcuts,
+  facets,
 }: {
   /** Supplied by the server page from ?q=. Deliberately a prop rather than
    * useSearchParams(): that hook requires this component to sit inside its
@@ -132,6 +133,10 @@ export default function AllProductsFeed({
    *  chips. They set the same state as the category dropdown, so the two can
    *  never disagree about what is selected. */
   categoryShortcuts?: { slug: string; name: string }[];
+  /** Brands and categories that actually have listings (listedFacets() on
+   *  the server). When present, the filters offer only these, so a shopper
+   *  is never shown a make the store does not carry. */
+  facets?: ListedFacets;
 }) {
   // Deliberately NOT read here (e.g. useRef(readSavedState())): sessionStorage
   // only exists in the browser, so a value read during the render that also
@@ -195,21 +200,30 @@ export default function AllProductsFeed({
     top: CatalogProductCardData | null;
   } | null>(null);
 
-  const filteredBrands = useMemo(
-    () =>
-      categoryFilter
-        ? brandsList.filter((b) => b.category === categoryFilter)
-        : brandsList,
-    [categoryFilter]
-  );
+  const filteredBrands = useMemo(() => {
+    if (facets) {
+      if (!categoryFilter) return facets.brands;
+      const inCategory = new Set(
+        categoryFilter
+          .split(",")
+          .flatMap((slug) => facets.brandsByCategory[slug.trim()] ?? [])
+      );
+      return facets.brands.filter((b) => inCategory.has(b.slug));
+    }
+    return categoryFilter
+      ? brandsList.filter((b) => b.category === categoryFilter)
+      : brandsList;
+  }, [categoryFilter, facets]);
 
-  const categoryOptions = useMemo(
-    () => [
+  const categoryOptions = useMemo(() => {
+    const listed = facets ? new Set(facets.categories) : null;
+    return [
       { value: "", label: "All Categories" },
-      ...categoriesList.map((cat) => ({ value: cat.slug, label: cat.name })),
-    ],
-    []
-  );
+      ...categoriesList
+        .filter((cat) => !listed || listed.has(cat.slug))
+        .map((cat) => ({ value: cat.slug, label: cat.name })),
+    ];
+  }, [facets]);
 
   const brandOptions = useMemo(
     () => [

@@ -13,7 +13,7 @@ import {
   vehicleLabel,
   type MarketKey,
 } from "@/lib/catalog/markets";
-import { CATALOG_DEFAULT_LIMIT, queryCatalog } from "@/lib/catalog/query";
+import { CATALOG_DEFAULT_LIMIT, listedFacets, queryCatalog } from "@/lib/catalog/query";
 import { routes } from "@/lib/inventory/routes";
 import { resolveCatalogView } from "@/lib/catalog/view-seo";
 import {
@@ -221,6 +221,7 @@ export default async function MarketCatalogView({
               initialQuery={query}
               initialCategory={category}
               initialData={initialData}
+              facets={listedFacets()}
               categoryShortcuts={
                 section
                   ? undefined
