@@ -13,7 +13,7 @@ import JsonLdScript from "@/components/seo/JsonLdScript";
 import { routes } from "@/lib/inventory";
 import { resolveCatalogView } from "@/lib/catalog/view-seo";
 import { getCatalogSections, getSection } from "@/lib/catalog/sections";
-import { CATALOG_DEFAULT_LIMIT, queryCatalog } from "@/lib/catalog/query";
+import { CATALOG_DEFAULT_LIMIT, listedFacets, queryCatalog } from "@/lib/catalog/query";
 import {
   buildPageMetadata,
   breadcrumbJsonLd,
@@ -163,6 +163,7 @@ export default async function AllProductsPage({
         initialCategory={initialCategory}
         section={section?.key}
         initialData={initialData}
+        facets={listedFacets()}
       />
     </div>
   );

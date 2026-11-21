@@ -104,7 +104,7 @@ export default function HeroVehicleFinder({ vehicles }: { vehicles: FinderVehicl
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="e.g. 2121K or bumper"
+            placeholder="e.g. 44200-60170 or brake pads"
             className="h-11 min-w-0 flex-1 rounded-md border border-border px-3 text-[15px] focus:border-foreground focus:outline-none"
           />
           <button

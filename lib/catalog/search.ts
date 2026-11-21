@@ -342,6 +342,11 @@ export function searchProducts<T extends SearchableProduct>(
     getCategoryName: (slug: string) => string;
     vocabulary?: SearchVocabulary;
     index?: SearchIndex;
+    /**
+     * Extra relevance for a matching product, added after the match is
+     * established (it never makes a non-matching product appear).
+     */
+    boost?: (item: T) => number;
   }
 ): SearchResult<T> {
   const { getBrandName, getCategoryName } = options;
@@ -537,6 +542,8 @@ export function searchProducts<T extends SearchableProduct>(
     ) {
       total += 5000;
     }
+
+    if (options.boost) total += options.boost(item);
 
     out.push({ item, score: total, nameLength: prepared.normalizedName.length });
   }
