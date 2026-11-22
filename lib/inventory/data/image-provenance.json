@@ -73060,5 +73060,35 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory"
+  },
+  "product-4484": {
+    "productId": 4484,
+    "productName": "Genuine Toyota Illuminated Door Sills PT944-60240 for Toyota Land Cruiser (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-illuminated-door-sills-pt944-60240/1.webp",
+    "sourceUrl": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT944-60240.jpg",
+    "sourceName": "toyota.com",
+    "landingPage": "https://www.toyota.com/landcruiser/accessories/",
+    "creator": "Toyota Motor North America (Toyota Genuine Accessories, toyota.com)",
+    "creatorUrl": "https://www.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer accessory photography published by Toyota on toyota.com for this exact accessory part number, showing the accessory installed. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-22); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "PT944-60240",
+      "PT94460240"
+    ],
+    "query": "toyota.com accessory card for PT944-60240",
+    "sha256": "7ebf8b0b7a21982abb28e8d8ba22ea310db2c13f739bd05f79c5f08450157439",
+    "bytes": 15222,
+    "width": 396,
+    "height": 220,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory"
   }
 }
