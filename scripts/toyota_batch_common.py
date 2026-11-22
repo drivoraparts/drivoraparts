@@ -42,7 +42,7 @@ CAT = {
     "fender": ("body-parts", "Body Parts"), "hood": ("body-parts", "Body Parts"), "door_handle": ("body-parts", "Body Parts"),
     "bumper_cover": ("bumper", "Bumpers"), "bumper_reinf": ("bumper", "Bumpers"),
     "seat_belt": ("interior", "Interior"), "console": ("interior", "Interior"),
-    "accumulator": ("suspension", "Suspension"), "air_compressor": ("suspension", "Suspension"), "kdss_cylinder": ("suspension", "Suspension"),
+    "accumulator": ("suspension", "Suspension"), "air_compressor": ("suspension", "Suspension"), "kdss_cylinder": ("suspension", "Suspension"), "side_step": ("4x4-accessories", "4x4 Accessories"),
 }
 
 

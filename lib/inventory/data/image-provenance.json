@@ -72961,5 +72961,44 @@
     "downloadedAt": "2026-11-21T19:38:04.303Z",
     "status": "downloaded",
     "verified": "retailer SKU SU003-10764 and title (OEM Toyota GR86/BRZ manual transmission assembly, MT only, new) match the listing; photo checked by eye: complete new 6-speed manual transmission; converted PNG to JPEG"
+  },
+  "product-4481": {
+    "productId": 4481,
+    "productName": "Genuine Toyota Predator Drop Steps, Black PT925-60240 for Toyota Land Cruiser (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-predator-drop-steps-black-pt925-60240/1.webp",
+    "sourceUrl": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT925-60240_SK.jpg",
+    "sourceName": "toyota.com",
+    "landingPage": "https://www.toyota.com/landcruiser/accessories/",
+    "creator": "Toyota Motor North America (Toyota Genuine Accessories, toyota.com)",
+    "creatorUrl": "https://www.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer accessory photography published by Toyota on toyota.com for this exact accessory part number, showing the accessory installed. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-22); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "PT925-60240",
+      "PT92560240"
+    ],
+    "query": "toyota.com accessory card for PT925-60240",
+    "sha256": "3cdc0140f6747fc3d31d588c1a2d45b58c56b5e4fe3863747f8a5259a304e9a5",
+    "bytes": 25456,
+    "width": 396,
+    "height": 220,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-predator-drop-steps-black-pt925-60240/2.webp",
+        "sourceUrl": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT925-60240.jpg",
+        "sha256": "c6c5e26bc12dd8e4394cbc36b8285c166a438196cfd109295437a33e1745a865",
+        "bytes": 12504,
+        "width": 396,
+        "height": 220
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory"
   }
 }

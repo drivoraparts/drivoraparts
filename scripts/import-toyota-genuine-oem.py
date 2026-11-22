@@ -79,6 +79,8 @@ IMAGES = {
     "36100-04010": ["3610004010_1.webp", "3610004010_2.webp"],
     # Batch 9: photo 2 is a close-up fitting not identifiable as this cylinder.
     "48886-60032": ["pn_48886-60032_1.webp", "pn_48886-60032_3.webp"],
+    # Batch 12: Toyota genuine accessory; photos from toyota.com (TCOM_SOURCES).
+    "PT925-60240": ["tcom_PT925-60240_1.webp", "tcom_PT925-60240_2.webp"],
     # Image audit 2026-11-22: lead with the part itself; drop label cards, text
     # graphics and close-up fragments that are not product views.
     "16360-F0070": ["16360F0070_3.webp", "16360F0070_2.webp"],
@@ -112,7 +114,19 @@ def images_for(pn):
 PART_TITLE = {"pads_front": "Front Brake Pad Set", "rotor_front": "Front Brake Rotor"}
 
 
+# Genuine Toyota accessory photos published by Toyota on toyota.com (accessory
+# cards on the model's accessories page), saved as tcom_<PN>_<n>.webp. Toyota's
+# parts-catalog image host has no photo for accessory (PT) numbers.
+TCOM_ACCESSORY_PAGE = "https://www.toyota.com/landcruiser/accessories/"
+TCOM_SOURCES = {
+    "tcom_PT925-60240_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT925-60240_SK.jpg",
+    "tcom_PT925-60240_2.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT925-60240.jpg",
+}
+
+
 def source_url(fname):
+    if fname in TCOM_SOURCES:
+        return TCOM_SOURCES[fname]
     if fname.startswith("top_"):
         return f"https://epc-images.toyota.com/{fname[4:-5]}.webp"
     if fname.startswith("pn_"):
@@ -238,32 +252,37 @@ for pn, r in sorted(staged.items()):
         "sourceSlug": slug,
         "createdAt": 1795100000000 + pid,
     })
+    tcom = "media.ads.vapims.tms.aws.toyota.com" in files[0]["sourceUrl"]
     prov_new[f"product-{pid}"] = {
         "productId": pid,
         "productName": name,
         "localFile": files[0]["localFile"],
         "sourceUrl": files[0]["sourceUrl"],
-        "sourceName": "epc-images.toyota.com",
-        "landingPage": next((u for u in r["sources"] if "autoparts.toyota.com" in u), "https://autoparts.toyota.com/"),
-        "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
-        "creatorUrl": "https://autoparts.toyota.com/",
+        "sourceName": "toyota.com" if tcom else "epc-images.toyota.com",
+        "landingPage": TCOM_ACCESSORY_PAGE if tcom else next((u for u in r["sources"] if "autoparts.toyota.com" in u), "https://autoparts.toyota.com/"),
+        "creator": "Toyota Motor North America (Toyota Genuine Accessories, toyota.com)" if tcom else "Toyota Motor North America (Toyota Genuine Parts catalog)",
+        "creatorUrl": "https://www.toyota.com/" if tcom else "https://autoparts.toyota.com/",
         "hostedBy": "manufacturer",
         "retailer": None,
         "license": None,
         "licenseRaw": None,
         "licenseUrl": "",
         "attributionRequired": False,
-        "usageBasis": ("manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number "
+        "usageBasis": ("manufacturer accessory photography published by Toyota on toyota.com for this exact accessory part number, showing "
+                       "the accessory installed. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of "
+                       "the image. Added on the site owner's instruction (2026-11-22); reuse rights beyond that instruction are not verified "
+                       "by this repository.") if tcom else ("manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number "
                        "and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no "
                        "ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import "
                        "workflow); reuse rights beyond that instruction are not verified by this repository."),
         "matchedTokens": [pn, pn.replace("-", "")],
-        "query": f"Toyota catalog rebuild 2026-11-19: Toyota image host for {pn}",
+        "query": f"toyota.com accessory card for {pn}" if tcom else f"Toyota catalog rebuild 2026-11-19: Toyota image host for {pn}",
         "sha256": files[0]["sha256"], "bytes": files[0]["bytes"], "width": files[0]["width"], "height": files[0]["height"],
         "additionalFiles": files[1:],
         "downloadedAt": f"{TODAY}T00:00:00.000Z",
         "status": "downloaded",
-        "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type",
+        "verified": ("Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory" if tcom
+                     else "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"),
     }
     genuine_new.append({
         "id": pid, "partNumber": pn, "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
