@@ -108,7 +108,7 @@ const SECTIONS: SectionDefinition[] = [
     label: "Steering",
     blurb: "Steering boxes, stabilisers, track bars and linkage.",
     patterns: [
-      /\b(steering (box|gear|stabili[sz]er|damper|pump)|tie rod|drag link|pitman|idler arm|track bar)\b/i,
+      /\b(steering (box|gear|stabili[sz]er|damper|pump|rack|knuckle)|rack and pinion|tie rod|drag link|pitman|idler arm|track bar)\b/i,
     ],
     specificity: 1,
   },
