@@ -79,6 +79,13 @@ IMAGES = {
     "36100-04010": ["3610004010_1.webp", "3610004010_2.webp"],
     # Batch 9: photo 2 is a close-up fitting not identifiable as this cylinder.
     "48886-60032": ["pn_48886-60032_1.webp", "pn_48886-60032_3.webp"],
+    # Image audit 2026-11-22: lead with the part itself; drop label cards, text
+    # graphics and close-up fragments that are not product views.
+    "16360-F0070": ["16360F0070_3.webp", "16360F0070_2.webp"],
+    "16360-F0100": ["16360F0100_2.webp"],
+    "16360-F0150": ["16360F0150_1.webp", "16360F0150_2.webp"],
+    "44250-0C160": ["442500C160_2.webp", "442500C160_1.webp"],
+    "81150-08430": ["8115008430_1.webp", "8115008430_2.webp"],
     # Batch 6: photo 3 is a label card, not the lamp.
     "81550-08190": ["8155008190_2.webp", "8155008190_1.webp"],
     # Batch 6: photo 2 is a can of compressor oil, not the condenser.

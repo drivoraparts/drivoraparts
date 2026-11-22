@@ -69960,7 +69960,7 @@
     "productId": 4412,
     "productName": "Genuine Toyota Radiator Cooling Fan Assembly 16360-F0070 for Toyota RAV4 (2021–2025)",
     "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0070/1.webp",
-    "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_3.webp",
     "sourceName": "epc-images.toyota.com",
     "landingPage": "https://autoparts.toyota.com/",
     "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
@@ -69977,8 +69977,8 @@
       "16360F0070"
     ],
     "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-F0070",
-    "sha256": "96d61333bbf2be35dc5499b197dacd3b7a94b966a4c1c7d3f97cf352c90a7815",
-    "bytes": 7886,
+    "sha256": "fb1ca511ca44fc5431e901a0a18deb0cb48533ddddb85c188e759abcbd5089f9",
+    "bytes": 33142,
     "width": 708,
     "height": 393,
     "additionalFiles": [
@@ -69987,14 +69987,6 @@
         "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_2.webp",
         "sha256": "d3e7b1fc9ca7a82a0020cabd920644a9ea87bfd481690815dc9be61b5529d25a",
         "bytes": 16558,
-        "width": 708,
-        "height": 393
-      },
-      {
-        "localFile": "/product-media/toyota-genuine/toyota-radiator-cooling-fan-assembly-16360-f0070/3.webp",
-        "sourceUrl": "https://epc-images.toyota.com/img/16360F0070/16360F0070_3.webp",
-        "sha256": "fb1ca511ca44fc5431e901a0a18deb0cb48533ddddb85c188e759abcbd5089f9",
-        "bytes": 33142,
         "width": 708,
         "height": 393
       }
@@ -70007,7 +69999,7 @@
     "productId": 4413,
     "productName": "Genuine Toyota Engine Cooling Fan Assembly 16360-F0100 for Toyota Highlander (2020–2022)",
     "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-f0100/1.webp",
-    "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_2.webp",
     "sourceName": "epc-images.toyota.com",
     "landingPage": "https://autoparts.toyota.com/",
     "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
@@ -70024,28 +70016,11 @@
       "16360F0100"
     ],
     "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16360-F0100",
-    "sha256": "001bd07dafcb9806d9e4a14a6c2cf289adf295c6d455ae842e9bfdf579906da7",
-    "bytes": 11346,
+    "sha256": "a9187d5fc91118f56416842b7617f081bf0b4d4c35853bd465303c1745342343",
+    "bytes": 35204,
     "width": 708,
     "height": 393,
-    "additionalFiles": [
-      {
-        "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-f0100/2.webp",
-        "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_2.webp",
-        "sha256": "a9187d5fc91118f56416842b7617f081bf0b4d4c35853bd465303c1745342343",
-        "bytes": 35204,
-        "width": 708,
-        "height": 393
-      },
-      {
-        "localFile": "/product-media/toyota-genuine/toyota-engine-cooling-fan-assembly-16360-f0100/3.webp",
-        "sourceUrl": "https://epc-images.toyota.com/img/16360F0100/16360F0100_3.webp",
-        "sha256": "a2367db37b08464782b0f28614dd8b6e4eb4f9a84d1452493887ab6b75857124",
-        "bytes": 6132,
-        "width": 708,
-        "height": 393
-      }
-    ],
+    "additionalFiles": [],
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
@@ -70081,14 +70056,6 @@
         "sourceUrl": "https://epc-images.toyota.com/img/16360F0150/16360F0150_2.webp",
         "sha256": "28ed2ee6c151f31fe4f54413a1dfc8f8741db99d52bcaeda1df670a41280a794",
         "bytes": 27284,
-        "width": 708,
-        "height": 393
-      },
-      {
-        "localFile": "/product-media/toyota-genuine/toyota-radiator-and-condenser-fan-assembly-16360-f0150/3.webp",
-        "sourceUrl": "https://epc-images.toyota.com/img/16360F0150/16360F0150_3.webp",
-        "sha256": "a2367db37b08464782b0f28614dd8b6e4eb4f9a84d1452493887ab6b75857124",
-        "bytes": 6132,
         "width": 708,
         "height": 393
       }
@@ -70608,7 +70575,7 @@
     "productId": 4427,
     "productName": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-0C160 for Toyota Tundra (2007–2013)",
     "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c160/1.webp",
-    "sourceUrl": "https://epc-images.toyota.com/img/442500C160/442500C160_1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/442500C160/442500C160_2.webp",
     "sourceName": "epc-images.toyota.com",
     "landingPage": "https://autoparts.toyota.com/",
     "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
@@ -70625,16 +70592,16 @@
       "442500C160"
     ],
     "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44250-0C160",
-    "sha256": "09bc7a89d57ad2066080499e5f8d4aba3e4925ba0e85b824aa8bce2b1121f9ac",
-    "bytes": 9742,
+    "sha256": "c31aeb81642b7735422f92c6ca501ea44fdd4f00578f216eb8456d60e2a34f03",
+    "bytes": 13072,
     "width": 708,
     "height": 393,
     "additionalFiles": [
       {
         "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c160/2.webp",
-        "sourceUrl": "https://epc-images.toyota.com/img/442500C160/442500C160_2.webp",
-        "sha256": "c31aeb81642b7735422f92c6ca501ea44fdd4f00578f216eb8456d60e2a34f03",
-        "bytes": 13072,
+        "sourceUrl": "https://epc-images.toyota.com/img/442500C160/442500C160_1.webp",
+        "sha256": "09bc7a89d57ad2066080499e5f8d4aba3e4925ba0e85b824aa8bce2b1121f9ac",
+        "bytes": 9742,
         "width": 708,
         "height": 393
       }
@@ -71080,14 +71047,6 @@
         "sourceUrl": "https://epc-images.toyota.com/img/8115008430/8115008430_2.webp",
         "sha256": "467fc86e3d8cc85bdf70ea3f4f6a4ea5c6e94bf763bd1d60af368fd14b3bbf88",
         "bytes": 28292,
-        "width": 708,
-        "height": 393
-      },
-      {
-        "localFile": "/product-media/toyota-genuine/toyota-headlamp-assembly-left-81150-08430/3.webp",
-        "sourceUrl": "https://epc-images.toyota.com/img/8115008430/8115008430_3.webp",
-        "sha256": "70c598ce12c508aba291803e3e920a766857b76fbca33ecd58d0f82802e343c9",
-        "bytes": 4836,
         "width": 708,
         "height": 393
       }
