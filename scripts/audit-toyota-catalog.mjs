@@ -160,6 +160,11 @@ const TOYOTA_PART_NUMBER = /\b(?:\d{5}-[0-9A-Z]{5}|SU\d{3}-\d{5})\b/;
    Classify
 -------------------------------------------------------------------------- */
 
+// Owner instruction (2026-11-22): the storefront lists nothing priced under
+// 200 USD. Cheaper listings stay in the catalog source but are hidden like any
+// other group C listing, so changing this number restores them.
+const MIN_LISTED_PRICE = 200;
+
 // US-market fitment research (lib/inventory/data/us-fitment-decisions.json):
 // EXCLUDE and HOLD listings stay hidden whatever their text says, until the
 // decision is changed there.
@@ -175,7 +180,9 @@ const rows = products
     const [group, reason] =
       decision && (decision.decision === "EXCLUDE" || decision.decision === "HOLD")
         ? ["C", `US fitment research: ${decision.decision}`]
-        : classify(p);
+        : typeof p.price === "number" && p.price < MIN_LISTED_PRICE
+          ? ["C", `below the ${MIN_LISTED_PRICE} USD minimum listing price (owner instruction 2026-11-22)`]
+          : classify(p);
     const genuineClaim = /\b(?:toyota genuine|genuine toyota)\b/i.test(p.name) || p.brand === "toyota";
     const toyotaPartNumber = TOYOTA_PART_NUMBER.test(`${p.partNumber} ${p.name}`);
     return { ...p, group, reason, genuineCandidate: group === "A" && (genuineClaim || toyotaPartNumber) };
@@ -214,6 +221,12 @@ if (WRITE) {
     generatedFrom: rows.length,
     visible: A.map((r) => r.id).sort((a, b) => a - b),
     review: C.map((r) => ({ id: r.id, reason: r.reason })).sort((a, b) => a.id - b.id),
+    // Hidden only because the price is under MIN_LISTED_PRICE (owner instruction),
+    // so checks can tell a deliberate price cut-off from an accidental drop-out.
+    belowMinimumPrice: rows
+      .filter((r) => typeof r.price === "number" && r.price < MIN_LISTED_PRICE)
+      .map((r) => r.id)
+      .sort((a, b) => a - b),
     genuineCandidates: A.filter((r) => r.genuineCandidate && !genuineIds.has(r.id))
       .map((r) => r.id)
       .sort((a, b) => a - b),
