@@ -75,3 +75,14 @@ Held:
   the Lexus GX; no Toyota Land Cruiser fitment confirmed.
 - **PT228-35245** (rear differential skid plate), **PT944-60240** (illuminated door sills),
   **PT949-08210** (dashcam): no attributable US prices found yet.
+
+## Batch 14 (2026-11-22)
+| ID | Part no. | Product | Fits | US prices (lowest first) | Our price | Photo |
+|---|---|---|---|---|---|---|
+| 4484 | PT944-60240 | Illuminated door sills | Land Cruiser 2024-2025 (dealers list to 2026) | Ourisman Toyota of Richmond $252.98; Modern Toyota $273.60; Elmhurst $273.60; Lakeland $278.40 (MSRP $345-$360) | $240.39 | toyota.com |
+
+Held:
+- **PT228-35247** (transmission/transfer case skid plate, replaces PT228-35241): US prices from
+  $256.50 to $325 at four dealers, but Toyota's photo is filed under the old number PT228-35241.
+- **PT228-35245** (rear differential skid plate): only two US prices (toyota.com $325, one
+  unnamed retailer $261), and one owner reports it needs extra parts to mount on the Land Cruiser.

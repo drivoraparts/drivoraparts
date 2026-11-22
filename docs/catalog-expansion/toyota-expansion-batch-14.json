@@ -1,0 +1,135 @@
+{
+  "_comment": "Toyota expansion batch 14 (2026-11-22): Land Cruiser genuine accessory, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Illuminated Door Sills PT944-60240 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "PT944-60240",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "door_sill",
+      "condition": "brand-new",
+      "proposedCategory": "interior",
+      "proposedCategoryName": "Interior",
+      "fitment": "2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota illuminated door sills PT944-60240 for the Toyota Land Cruiser. Genuine Toyota illuminated door sills for the 250-series Land Cruiser: the Toyota LED logo lights white when the front doors are open, with a durable corrosion-resistant finish and brushed polished accents that help prevent door sill scuffs and scrapes.\n\nSpecifications\n\nPart number: PT944-60240\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 360.0,
+        "lowestCompetitor": {
+          "seller": "Ourisman Toyota of Richmond",
+          "price": 252.98,
+          "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-24-land-cruiser-illuminated-door-sills-pt94460240"
+        },
+        "competitors": [
+          {
+            "seller": "Ourisman Toyota of Richmond",
+            "price": 252.98,
+            "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-24-land-cruiser-illuminated-door-sills-pt94460240"
+          },
+          {
+            "seller": "Modern Toyota (Wholesale Direct)",
+            "price": 273.6,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-illuminated-door-sills-pt94460240"
+          },
+          {
+            "seller": "McGrath Elmhurst Toyota",
+            "price": 273.6,
+            "url": "https://parts.elmhursttoyota.com/oem-parts/toyota-genuine-toyota-2024-land-cruiser-illuminated-stainless-steel-door-sills-pt94460240"
+          },
+          {
+            "seller": "Lakeland Toyota (Toyota Parts Express)",
+            "price": 278.4,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-illuminated-door-sills-pt94460240"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 240.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "2.4L Turbo Hybrid",
+            "restriction": "250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota.com Land Cruiser accessories (Illuminated Door Sills, PT944-60240)",
+                "url": "https://www.toyota.com/landcruiser/accessories/",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025-2026 Toyota Land Cruiser Illuminated Door Sills PT944-60240)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-illuminated-door-sills-pt94460240",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.elmhursttoyota.com/oem-parts/toyota-genuine-toyota-2024-land-cruiser-illuminated-stainless-steel-door-sills-pt94460240",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-illuminated-door-sills-pt94460240",
+        "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-24-land-cruiser-illuminated-door-sills-pt94460240",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-illuminated-door-sills-pt94460240",
+        "https://www.toyota.com/landcruiser/accessories/"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
