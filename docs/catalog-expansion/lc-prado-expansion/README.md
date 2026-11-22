@@ -121,3 +121,14 @@ remaining families (53811-60, 89661-60, 83800-60, 48810-60, 19000-38) were not s
 | 41110-60A91 | Rear differential carrier | Land Cruiser 1998-2002 | $2,688 |
 
 Plus the six listed in `phase7/README.md`.
+
+**Sweep completed (2026-11-22, after #135).** The remaining families were checked and none has a
+Toyota photo:
+- 53811-60 fenders, 89661-60 engine ECUs, 83800-60 instrument clusters and 48810-60 KDSS/stabilizer
+  links: 460 letter-suffix numbers each.
+- 19000-38000 to 19000-38400: 3UR-FE engine assemblies.
+
+Total swept: about 6,380 part numbers. Two have photos (back door panels 67005-60B01 and 60E00), and
+neither is listable. Toyota's own photo host is exhausted as a source for these Land Cruiser
+assemblies. Remaining routes: supplier photographs, or a manufacturer or retailer site that serves
+exact-part photos and allows automated download.
