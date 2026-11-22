@@ -84,6 +84,9 @@ IMAGES = {
     "PT228-60241": ["tcom_PT228-60241_1.webp"],
     "PT228-60242": ["tcom_PT228-60242_1.webp"],
     "PT944-60240": ["tcom_PT944-60240_1.webp"],
+    # LC200 radiator: the three imgpn photos show this radiator; pn_ photo 2 shows a different core, so it is left out
+    "16400-50384": ["imgpn_16400-50384_1.webp", "imgpn_16400-50384_3.webp", "imgpn_16400-50384_2.webp"],
+    "53301-60690": ["pn_53301-60690_2.webp", "pn_53301-60690_1.webp"],
     # Image audit 2026-11-22: lead with the part itself; drop label cards, text
     # graphics and close-up fragments that are not product views.
     "16360-F0070": ["16360F0070_3.webp", "16360F0070_2.webp"],

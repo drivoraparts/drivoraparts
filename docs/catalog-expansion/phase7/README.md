@@ -86,3 +86,15 @@ Held:
   $256.50 to $325 at four dealers, but Toyota's photo is filed under the old number PT228-35241.
 - **PT228-35245** (rear differential skid plate): only two US prices (toyota.com $325, one
   unnamed retailer $261), and one owner reports it needs extra parts to mount on the Land Cruiser.
+
+## Batch 15 (2026-11-22): Land Cruiser 200 parts under the $200 floor
+Re-checked the parts earlier rejected only by the old $500 Land Cruiser floor.
+
+| ID | Part no. | Product | Fits | US prices (lowest first) | Our price | Photo |
+|---|---|---|---|---|---|---|
+| 4485 | 16400-50384 | Radiator assembly | Land Cruiser 2010-2021 (5.7L) | OEMGenuineParts $321.20; ToyotaPartsDeal $332.68; American Toyota $338.41; Camelback $341.28; Frontier $372.83 | $305.19 | Toyota catalog (3 photos) |
+| 4486 | 53301-60690 | Hood panel (ships freight) | Land Cruiser 2016-2021 | Olathe $493.35; ToyotaPartsDeal $493.60; Ourisman $512.59; El Cajon $535.89 | $468.69 | Toyota catalog (2 photos) |
+
+Still held from that list: 53301-60591 (2008/2013-2015 hood; fitment years conflict, only two
+genuine US prices), and five parts with no Toyota photo (radiators 16400-50290 and 16400-66081,
+secondary air pump 17610-0S030, A/C compressor 88320-60B80, LC250 tail lamp 81561-60D80).

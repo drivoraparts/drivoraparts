@@ -1,0 +1,275 @@
+{
+  "_comment": "Toyota expansion batch 15 (2026-11-22): Land Cruiser 200 genuine parts, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Radiator Assembly 16400-50384 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "16400-50384",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "radiator",
+      "condition": "brand-new",
+      "proposedCategory": "engine",
+      "proposedCategoryName": "Engine",
+      "fitment": "2010–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "5.7L V8; 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota radiator assembly 16400-50384 for the Toyota Land Cruiser. Engine cooling radiator assembly for the 200-series Land Cruiser.\n\nSpecifications\n\nPart number: 16400-50384\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN)\nRestriction (2010-2021 Land Cruiser): 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 477.03,
+        "lowestCompetitor": {
+          "seller": "OEMGenuineParts.com",
+          "price": 321.2,
+          "url": "https://www.oemgenuineparts.com/oem-parts/toyota-radiator-1640050384"
+        },
+        "competitors": [
+          {
+            "seller": "OEMGenuineParts.com",
+            "price": 321.2,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-radiator-1640050384"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 332.68,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-50384.html"
+          },
+          {
+            "seller": "American Toyota",
+            "price": 338.41,
+            "url": "https://parts.americantoyota.com/oem-parts/toyota-radiator-1640050384"
+          },
+          {
+            "seller": "Camelback Toyota",
+            "price": 341.28,
+            "url": "https://parts.camelbacktoyota.com/oem-parts/toyota-radiator-1640050384"
+          },
+          {
+            "seller": "Frontier Toyota",
+            "price": 372.83,
+            "url": "https://parts.frontiertoyota.com/oem-parts/toyota-radiator-1640050384"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 305.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "5.7L V8",
+            "restriction": "200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "American Toyota (2010-2021 Toyota Land Cruiser Radiator 16400-50384)",
+                "url": "https://parts.americantoyota.com/oem-parts/toyota-radiator-1640050384",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Camelback Toyota (2010-2021 Toyota Land Cruiser Radiator 16400-50384)",
+                "url": "https://parts.camelbacktoyota.com/oem-parts/toyota-radiator-1640050384",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "OEMGenuineParts (16400-50384 Radiator, 2010-2021 Toyota Land Cruiser)",
+                "url": "https://www.oemgenuineparts.com/oem-parts/toyota-radiator-1640050384",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.americantoyota.com/oem-parts/toyota-radiator-1640050384",
+        "https://parts.camelbacktoyota.com/oem-parts/toyota-radiator-1640050384",
+        "https://parts.frontiertoyota.com/oem-parts/toyota-radiator-1640050384",
+        "https://www.oemgenuineparts.com/oem-parts/toyota-radiator-1640050384",
+        "https://www.toyotapartsdeal.com/oem/toyota~radiator~assy~16400-50384.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Hood Panel 53301-60690 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "53301-60690",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "hood",
+      "condition": "brand-new",
+      "proposedCategory": "body-parts",
+      "proposedCategoryName": "Body Parts",
+      "fitment": "2016–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2016,
+          "yearTo": 2021,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota hood panel 53301-60690 for the Toyota Land Cruiser. Steel hood panel (hood sub-assembly) for the 2016-2021 200-series Land Cruiser.\n\nSpecifications\n\nPart number: 53301-60690\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN)\nRestriction (2016-2021 Land Cruiser): 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 775.11,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 493.35,
+          "url": "https://parts.olathetoyota.com/v-2016-toyota-land-cruiser--base--5-7l-v8-gas/body--hood-and-components"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 493.35,
+            "url": "https://parts.olathetoyota.com/v-2016-toyota-land-cruiser--base--5-7l-v8-gas/body--hood-and-components"
+          },
+          {
+            "seller": "ToyotaPartsDeal (2016 Land Cruiser hood page)",
+            "price": 493.6,
+            "url": "https://www.toyotapartsdeal.com/oem-2016-toyota-land_cruiser-hood.html"
+          },
+          {
+            "seller": "Ourisman Toyota of Richmond",
+            "price": 512.59,
+            "url": "https://parts.ourismantoyotaofrichmond.com/oem-parts/toyota-hood-5330160690"
+          },
+          {
+            "seller": "Toyota of El Cajon",
+            "price": 535.89,
+            "url": "https://toyotaparts.toyotaofelcajon.com/oem-parts/toyota-hood-5330160690"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 468.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2016,
+            "yearTo": 2021,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "5.7L V8",
+            "restriction": "200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Toyota of El Cajon (Hood Panel - 2016-2021 Toyota Land Cruiser, 53301-60690)",
+                "url": "https://toyotaparts.toyotaofelcajon.com/oem-parts/toyota-hood-5330160690",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2016 Toyota Land Cruiser hood and components, 53301-60690)",
+                "url": "https://parts.olathetoyota.com/v-2016-toyota-land-cruiser--base--5-7l-v8-gas/body--hood-and-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/v-2016-toyota-land-cruiser--base--5-7l-v8-gas/body--hood-and-components",
+        "https://parts.ourismantoyotaofrichmond.com/oem-parts/toyota-hood-5330160690",
+        "https://toyotaparts.toyotaofelcajon.com/oem-parts/toyota-hood-5330160690",
+        "https://www.toyotapartsdeal.com/oem-2016-toyota-land_cruiser-hood.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
