@@ -3,86 +3,33 @@
  "generatedFrom": 4222,
  "visible": [
   34,
-  35,
   36,
   88,
   89,
   160,
   169,
-  170,
   171,
-  184,
   1715,
   1716,
   1719,
-  1800,
-  1802,
-  1804,
-  1806,
-  1808,
-  1810,
-  1812,
-  1815,
-  1817,
-  1818,
-  1819,
-  1825,
-  1827,
-  1828,
-  1830,
-  1832,
-  1833,
-  1835,
-  1837,
-  1840,
-  1842,
-  1843,
-  1845,
-  1847,
-  1848,
-  1851,
-  1852,
-  1854,
-  1858,
   1859,
   1861,
-  1862,
   1866,
-  1867,
-  1870,
   1871,
-  1874,
-  1876,
-  1879,
-  1881,
-  1885,
   1886,
-  1889,
   1890,
   1894,
   1896,
-  1897,
   1901,
-  1904,
   1908,
-  1909,
   1911,
-  1914,
   1916,
-  1919,
-  1920,
   1946,
   1952,
-  1953,
   1954,
   1961,
-  1962,
-  1963,
   1975,
   1977,
-  1987,
-  1992,
-  1993,
   1996,
   2003,
   2006,
@@ -93,22 +40,9 @@
   2093,
   2094,
   2115,
-  2240,
-  2241,
-  2244,
-  2246,
   2248,
-  2251,
-  2255,
-  2256,
-  2257,
-  2258,
   2259,
   2260,
-  2261,
-  2262,
-  2263,
-  2265,
   2267,
   2268,
   2269,
@@ -116,16 +50,11 @@
   2271,
   2272,
   2273,
-  2277,
-  2278,
   2279,
   2280,
   2281,
-  2282,
-  2283,
   2284,
   2285,
-  2286,
   2287,
   2288,
   2289,
@@ -244,15 +173,6 @@
   2463,
   2464,
   2465,
-  2466,
-  2467,
-  2468,
-  2469,
-  2470,
-  2478,
-  2479,
-  2482,
-  2483,
   2484,
   2485,
   2486,
@@ -265,8 +185,6 @@
   2493,
   2494,
   2495,
-  2496,
-  2497,
   2498,
   2499,
   2500,
@@ -275,7 +193,6 @@
   2556,
   2557,
   2559,
-  2561,
   2562,
   2564,
   2565,
@@ -294,10 +211,6 @@
   2619,
   2620,
   2621,
-  2668,
-  2669,
-  2675,
-  2676,
   3220,
   3221,
   3228,
@@ -314,8 +227,6 @@
   3379,
   3407,
   3408,
-  3599,
-  3600,
   3609,
   3610,
   3611,
@@ -410,6 +321,10 @@
   {
    "id": 2,
    "reason": "no vehicle stated"
+  },
+  {
+   "id": 35,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 59,
@@ -656,6 +571,10 @@
    "reason": "no vehicle stated"
   },
   {
+   "id": 170,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 173,
    "reason": "no vehicle stated"
   },
@@ -694,6 +613,10 @@
   {
    "id": 183,
    "reason": "no vehicle stated"
+  },
+  {
+   "id": 184,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 214,
@@ -4668,8 +4591,184 @@
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
   },
   {
+   "id": 1800,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1802,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1804,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1806,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1808,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1810,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1812,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1815,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1817,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1818,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1819,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1825,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1827,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1828,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1830,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1832,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1833,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1835,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1837,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1840,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1842,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1843,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1845,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1847,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1848,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1851,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1852,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1854,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1858,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1862,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1867,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1870,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1874,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1876,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1879,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1881,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1885,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1889,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1897,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 1899,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
+  },
+  {
+   "id": 1904,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1909,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1914,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1919,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1920,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 1924,
@@ -4760,6 +4859,18 @@
    "reason": "no vehicle stated"
   },
   {
+   "id": 1953,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1962,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1963,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 1971,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
   },
@@ -4770,6 +4881,18 @@
   {
    "id": 1973,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
+  },
+  {
+   "id": 1987,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1992,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 1993,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2022,
@@ -5068,6 +5191,22 @@
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
   },
   {
+   "id": 2240,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2241,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2244,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2246,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 2249,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
   },
@@ -5076,8 +5215,64 @@
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
   },
   {
+   "id": 2251,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 2252,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
+  },
+  {
+   "id": 2255,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2256,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2257,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2258,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2261,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2262,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2263,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2265,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2277,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2278,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2282,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2283,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2286,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2308,
@@ -5128,8 +5323,52 @@
    "reason": "no vehicle stated"
   },
   {
+   "id": 2466,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2467,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2468,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2469,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2470,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2478,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2479,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 2480,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
+  },
+  {
+   "id": 2482,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2483,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2496,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2497,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2504,
@@ -5202,6 +5441,10 @@
   {
    "id": 2560,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
+  },
+  {
+   "id": 2561,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2563,
@@ -5432,8 +5675,24 @@
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
   },
   {
+   "id": 2668,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2669,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
    "id": 2673,
    "reason": "below the 200 USD minimum listing price (owner instruction 2026-11-22)"
+  },
+  {
+   "id": 2675,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 2676,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 2679,
@@ -6058,6 +6317,14 @@
   {
    "id": 3563,
    "reason": "no vehicle stated"
+  },
+  {
+   "id": 3599,
+   "reason": "US fitment research: EXCLUDE"
+  },
+  {
+   "id": 3600,
+   "reason": "US fitment research: EXCLUDE"
   },
   {
    "id": 3604,
@@ -8023,16 +8290,12 @@
  ],
  "genuineCandidates": [
   34,
-  35,
   36,
   88,
   89,
   160,
   169,
-  170,
   171,
-  1919,
-  1920,
   2115
  ]
 }
