@@ -43,7 +43,7 @@ CAT = {
     "bumper_cover": ("bumper", "Bumpers"), "bumper_reinf": ("bumper", "Bumpers"),
     "seat_belt": ("interior", "Interior"), "console": ("interior", "Interior"),
     "accumulator": ("suspension", "Suspension"), "air_compressor": ("suspension", "Suspension"), "kdss_cylinder": ("suspension", "Suspension"), "side_step": ("4x4-accessories", "4x4 Accessories"),
-    "rock_rail": ("4x4-accessories", "4x4 Accessories"), "door_sill": ("interior", "Interior"), "skid_plate": ("4x4-accessories", "4x4 Accessories"),
+    "rock_rail": ("4x4-accessories", "4x4 Accessories"), "roof_rack": ("4x4-accessories", "4x4 Accessories"), "door_sill": ("interior", "Interior"), "skid_plate": ("4x4-accessories", "4x4 Accessories"),
 }
 
 

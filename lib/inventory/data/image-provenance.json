@@ -73314,5 +73314,35 @@
     "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
     "sha256": "df4fba4d1e6b7c98aa128f23a854feb3709c69684478d50f492fa16d28aca06f",
     "downloadedAt": "2026-11-22"
+  },
+  "product-4487": {
+    "productId": 4487,
+    "productName": "Genuine Toyota Roof Rack PT970-60241 for Toyota Land Cruiser (2024–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-roof-rack-pt970-60241/1.webp",
+    "sourceUrl": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT970-60241.jpg",
+    "sourceName": "toyota.com",
+    "landingPage": "https://www.toyota.com/landcruiser/accessories/",
+    "creator": "Toyota Motor North America (Toyota Genuine Accessories, toyota.com)",
+    "creatorUrl": "https://www.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer accessory photography published by Toyota on toyota.com for this exact accessory part number, showing the accessory installed. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-22); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "PT970-60241",
+      "PT97060241"
+    ],
+    "query": "toyota.com accessory card for PT970-60241",
+    "sha256": "ef37e99c895c99c9131de34b5b9fabadf02c3eca196d3a78b35fb980ccba53aa",
+    "bytes": 9992,
+    "width": 396,
+    "height": 220,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory"
   }
 }

@@ -6323,5 +6323,37 @@
     "description": "Genuine Toyota Hood Panel 53301-60690 for Toyota Land Cruiser (2016–2021)\n\nGenuine Toyota hood panel 53301-60690 for the Toyota Land Cruiser. Steel hood panel (hood sub-assembly) for the 2016-2021 200-series Land Cruiser.\n\nSpecifications\n\nPart number: 53301-60690\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN)\nRestriction (2016-2021 Land Cruiser): 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-hood-panel-53301-60690",
     "createdAt": 1795100004486
+  },
+  {
+    "id": 4487,
+    "name": "Genuine Toyota Roof Rack PT970-60241 for Toyota Land Cruiser (2024–2025)",
+    "category": "4x4-accessories",
+    "brand": "toyota",
+    "price": 1029.39,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "PT970-60241",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN)",
+    "fitmentYears": "2024–2025",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2024,
+        "yearTo": 2025,
+        "make": "Toyota",
+        "model": "Land Cruiser",
+        "submodel": "2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-roof-rack-pt970-60241/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-roof-rack-pt970-60241/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-roof-rack-pt970-60241/1.webp"
+    ],
+    "description": "Genuine Toyota Roof Rack PT970-60241 for Toyota Land Cruiser (2024–2025)\n\nGenuine Toyota roof rack PT970-60241 for the Toyota Land Cruiser. Genuine Toyota roof rack for the 250-series Land Cruiser: designed to secure cargo with more confidence, with additional secure tie-down points for roof-rack accessories.\n\nSpecifications\n\nPart number: PT970-60241\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-roof-rack-pt970-60241",
+    "createdAt": 1795100004487
   }
 ]
