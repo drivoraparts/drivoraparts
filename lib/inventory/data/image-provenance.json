@@ -73344,5 +73344,44 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory"
+  },
+  "product-4488": {
+    "productId": 4488,
+    "productName": "Genuine Toyota Turbocharger, Right 17208-F4011 for Toyota Tundra / Sequoia (2022–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-turbocharger-right-17208-f4011/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/17208F4011/17208F4011_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "17208-F4011",
+      "17208F4011"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 17208-F4011",
+    "sha256": "01920f9569e0ecc236bce3ad9bf9c25a9fcee98c7e7686298b6530bed0eccab5",
+    "bytes": 31544,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-turbocharger-right-17208-f4011/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/17208F4011/17208F4011_2.webp",
+        "sha256": "3bf73f6843c9d7d770c91efeed915e8ed6775a27457ebcadb21e91029589e1d7",
+        "bytes": 27330,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
