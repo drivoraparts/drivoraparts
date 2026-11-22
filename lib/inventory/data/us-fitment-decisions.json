@@ -112,7 +112,9 @@
       "product": "ARB Pinnacle canopy",
       "application": "None found for a US-market Toyota",
       "evidence": "No US listing of an ARB Pinnacle canopy; ARB USA sells only the Ascent for Tacoma. Listing fitment 'LandCruiser 300 dual cab' describes a body style that does not exist (the 300 Series is a wagon).",
-      "sources": ["https://arbusa.com/ascent"],
+      "sources": [
+        "https://arbusa.com/ascent"
+      ],
       "confidence": "high"
     },
     {
@@ -121,7 +123,9 @@
       "product": "EGR Premium canopy",
       "application": "None found for a US-market Toyota",
       "evidence": "EGR's US Tacoma range is visors, hood guards, cab spoilers and a tonneau cover; no canopy. Listing fitment: Hilux N80 dual cab.",
-      "sources": ["https://extremeterrain.com/egr-tacoma-rolltrac manual-tonneau-cover-rt040481ml.html"],
+      "sources": [
+        "https://extremeterrain.com/egr-tacoma-rolltrac manual-tonneau-cover-rt040481ml.html"
+      ],
       "confidence": "high"
     },
     {
@@ -130,7 +134,9 @@
       "product": "Carryboy S560 canopy",
       "application": "None found for a US-market Toyota",
       "evidence": "Carryboy 560 canopies are listed only for Hilux and other non-US pickups, by UK/EU distributors. No US dealer or Tacoma/Tundra version found.",
-      "sources": ["https://www.4x4at.com/toyota-hilux-2021-carryboy-leisure-560-hardtop-canopy"],
+      "sources": [
+        "https://www.4x4at.com/toyota-hilux-2021-carryboy-leisure-560-hardtop-canopy"
+      ],
       "confidence": "high"
     },
     {
@@ -161,6 +167,807 @@
         "https://www.tjm.com.au/canopies",
         "https://extremeterrain.com/tjm-tacoma-yulara-roof-top-tent-620rctrt02.html"
       ],
+      "confidence": "high"
+    },
+    {
+      "id": 170,
+      "decision": "EXCLUDE",
+      "product": "Toyota Hilux Interior Upgrade Kit",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 184,
+      "decision": "EXCLUDE",
+      "product": "ARB Classic Plus Canopy for 2016 Toyota Hilux Dual Cab",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1800,
+      "decision": "EXCLUDE",
+      "product": "ARB Summit Bull Bar for Toyota Hilux (2021+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1802,
+      "decision": "EXCLUDE",
+      "product": "ARB Deluxe Bull Bar for Toyota LandCruiser 79 Series",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1804,
+      "decision": "EXCLUDE",
+      "product": "ARB Summit Bull Bar for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1806,
+      "decision": "EXCLUDE",
+      "product": "TJM Outback Bull Bar for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1808,
+      "decision": "EXCLUDE",
+      "product": "Ironman Raid Bull Bar for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1810,
+      "decision": "EXCLUDE",
+      "product": "ECB Big Tube Bull Bar for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1812,
+      "decision": "EXCLUDE",
+      "product": "AFN Premium Bull Bar for Toyota LandCruiser 300 Series",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1815,
+      "decision": "EXCLUDE",
+      "product": "Safari ARMAX Snorkel for Toyota Hilux (2015+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1817,
+      "decision": "EXCLUDE",
+      "product": "Safari ARMAX Snorkel Kit for Toyota LandCruiser 79 Series",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1818,
+      "decision": "EXCLUDE",
+      "product": "Safari ARMAX Snorkel for Toyota LandCruiser 300 Series",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1819,
+      "decision": "EXCLUDE",
+      "product": "Safari ARMAX Snorkel for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1825,
+      "decision": "EXCLUDE",
+      "product": "ARB Safari Snorkel for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1827,
+      "decision": "EXCLUDE",
+      "product": "ARB Safari Snorkel for Toyota Prado",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1828,
+      "decision": "EXCLUDE",
+      "product": "TJM Airtec Snorkel for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1830,
+      "decision": "EXCLUDE",
+      "product": "Rhino-Rack Pioneer Platform for Toyota Hilux (2015+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1832,
+      "decision": "EXCLUDE",
+      "product": "Rhino-Rack Pioneer Platform for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1833,
+      "decision": "EXCLUDE",
+      "product": "Rhino-Rack Pioneer Platform for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1835,
+      "decision": "EXCLUDE",
+      "product": "ARB BASE Rack for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1837,
+      "decision": "EXCLUDE",
+      "product": "ARB BASE Rack for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1840,
+      "decision": "EXCLUDE",
+      "product": "Yakima LockNLoad Platform for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1842,
+      "decision": "EXCLUDE",
+      "product": "Front Runner Slimline II Roof Rack for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1843,
+      "decision": "EXCLUDE",
+      "product": "Rola Titan Tray MKIII for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1845,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu BP-51 Suspension Kit for Toyota Hilux (2015+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1847,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu MT64 Suspension Kit for Toyota LandCruiser 79 Series",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1848,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu Nitrocharger Sport Lift Kit for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1851,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu BP-51 Suspension Kit for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1852,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons IMS Lift Kit for Toyota Hilux (2015+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1854,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons IMS Lift Kit for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1858,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Lift Kit for Toyota LandCruiser 79 Series",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1862,
+      "decision": "EXCLUDE",
+      "product": "Bilstein B6 Off-Road Suspension Kit for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1867,
+      "decision": "EXCLUDE",
+      "product": "Fox 2.0 Performance Suspension Kit for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1870,
+      "decision": "EXCLUDE",
+      "product": "Fox Lift Kit for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1874,
+      "decision": "EXCLUDE",
+      "product": "King 2.5 Performance Shocks for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1876,
+      "decision": "EXCLUDE",
+      "product": "Ironman Foam Cell Pro Lift Kit for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1879,
+      "decision": "EXCLUDE",
+      "product": "Ironman Foam Cell Lift Kit for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1881,
+      "decision": "EXCLUDE",
+      "product": "Tough Dog Adjustable Lift Kit for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1885,
+      "decision": "EXCLUDE",
+      "product": "Tough Dog Suspension Kit for Toyota LandCruiser 79 Series",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1889,
+      "decision": "EXCLUDE",
+      "product": "Morimoto XB LED Headlights for Toyota Hilux (2021+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1897,
+      "decision": "EXCLUDE",
+      "product": "AlphaRex PRO Series Headlights for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1904,
+      "decision": "EXCLUDE",
+      "product": "Anzo LED Headlights for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1909,
+      "decision": "EXCLUDE",
+      "product": "Spyder Projector Headlights for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1914,
+      "decision": "EXCLUDE",
+      "product": "VLAND LED Headlights for Toyota Hilux",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1919,
+      "decision": "EXCLUDE",
+      "product": "Toyota Genuine LED Headlights for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1920,
+      "decision": "EXCLUDE",
+      "product": "Toyota Genuine LED Headlights for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1953,
+      "decision": "EXCLUDE",
+      "product": "Toyota 35000-0K130 AC60F 6-Speed Automatic Transmission — Hilux 2.8L Diesel (2016+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1962,
+      "decision": "EXCLUDE",
+      "product": "Toyota A750F 5-Speed Automatic Transmission (35000-60D90) — Land Cruiser Prado 150 4.0L (2009–2015)",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1963,
+      "decision": "EXCLUDE",
+      "product": "Toyota 35000-0K130 AC60F 6-Speed Automatic Transmission — Hilux Revo 2.8L Diesel (2016+)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1987,
+      "decision": "EXCLUDE",
+      "product": "ARB Summit Front Bumper for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1992,
+      "decision": "EXCLUDE",
+      "product": "TJM Outback Front Bumper for Toyota LandCruiser 300",
+      "application": "Land Cruiser 300 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 300 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 1993,
+      "decision": "EXCLUDE",
+      "product": "TJM Outback Front Bumper for Toyota Prado 150",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2240,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu Rear Leaf Spring for 2015–2022 Toyota Hilux — EL105R (Each)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2241,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu Rear Leaf Spring for 2015–2022 Toyota Hilux (Heavy Load) — EL106R (Each)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2244,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu Rear Leaf Spring for Toyota Land Cruiser 78 & 79 Series — EL113R (Each)",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2246,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu Front Upper Control Arms for 2005–2022 Toyota Hilux — UCA0003 (Pair)",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2251,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu Front Sway Bar Kit for Toyota Land Cruiser 76, 78 & 79 Series — OMESTAB3",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2255,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu MT64 Rear Right Shock for 2015-on Toyota Hilux — MT64601001R",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2256,
+      "decision": "EXCLUDE",
+      "product": "Old Man Emu MT64 Rear Left Shock for 2015-on Toyota Hilux — MT64601001L",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2257,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Black Deluxe Bull Bar for 2016-on Toyota Land Cruiser 76, 78 & 79 Series (Big Chassis) — BU59-3724",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2258,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Classic Black Bull Bar for 2007–2016 Toyota Land Cruiser 76, 78 & 79 Series (Narrow Chassis) — BU59-3506",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2261,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Classic Black Bull Bar for Toyota Land Cruiser Prado 150 Series — BU59-3512",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2262,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Black Deluxe Bull Bar for Toyota Land Cruiser Prado 150 Series — BU59-3697",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2263,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Classic Black Bull Bar for Toyota Land Cruiser Prado 120 Series — BU59-3511",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2265,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Rear Bumper with Swing-Outs for Toyota Land Cruiser 79 Series — BW80-4143",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2277,
+      "decision": "EXCLUDE",
+      "product": "King Shocks 2.5 Performance Remote-Reservoir Front Shocks (Pair) for Toyota Land Cruiser 79 Series 4WD — 25001-363",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2278,
+      "decision": "EXCLUDE",
+      "product": "King Shocks 2.5 Performance Remote-Reservoir Rear Shocks (Pair) for Toyota Land Cruiser 79 Series 4WD — 25001-364",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2282,
+      "decision": "EXCLUDE",
+      "product": "ICON Tubular Upper Control Arm Kit with Delta Joint for 2005–2021 Toyota Hilux — 58450DJ",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2283,
+      "decision": "EXCLUDE",
+      "product": "ICON Billet Aluminum Upper Control Arm Kit with Delta Joint for 2005–2021 Toyota Hilux — 58550DJ",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2286,
+      "decision": "EXCLUDE",
+      "product": "ICON 2.5 Internal-Reservoir Extended-Travel Front Coilovers (Pair) for 2005–2015 Toyota Hilux — 58635",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2466,
+      "decision": "EXCLUDE",
+      "product": "Icon 0–3 in Suspension System Stage 5 Kit for 2012–2015 Toyota Hilux RWD — K53145",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2467,
+      "decision": "EXCLUDE",
+      "product": "Icon 0–3 in Suspension System Stage 3 Kit for 2012–2015 Toyota Hilux RWD — K53143",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2468,
+      "decision": "EXCLUDE",
+      "product": "Icon 0–3 in Suspension System Stage 2 Kit for 2012–2015 Toyota Hilux RWD — K53142",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2469,
+      "decision": "EXCLUDE",
+      "product": "Icon 0–3 in Suspension System Stage 4 Tubular Kit for 2012–2015 Toyota Hilux RWD — K53144T",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2470,
+      "decision": "EXCLUDE",
+      "product": "Icon 3 in Suspension System Stage 1 Kit for 2005–2011 Toyota Hilux RWD — K53136",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2478,
+      "decision": "EXCLUDE",
+      "product": "King Shocks 2.5 Performance w/ Remote Reservoir Shocks Rear Pair for 1984–2020 Toyota Land Cruiser 79 Series 4WD — 25001-364A",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2479,
+      "decision": "EXCLUDE",
+      "product": "King Shocks 2.5 Performance w/ Remote Reservoir Shocks Front Pair for 1984–2020 Toyota Land Cruiser 76 4WD — 25001-363A",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2482,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Coil Springs Kit for 1984–1989 Toyota Land Cruiser 70 4WD w/1.75 in lift — C59-082",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2483,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Coil Springs Kit for 1984–1989 Toyota Land Cruiser 70 4WD w/2 in lift — C59-083",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2496,
+      "decision": "EXCLUDE",
+      "product": "Camburg Toyota Prado 120/150 03–21 KINETIK Billet Uniball Upper Control Arms — CBG310192-GRY",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2497,
+      "decision": "EXCLUDE",
+      "product": "Camburg Toyota Prado 120/150 03–21 1.25 in Performance Uniball Upper Control Arms — CBG310044",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2561,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons Rear Bumper with Swing-Outs for Toyota Land Cruiser 76 / 78 Series LWB Wagon — BW80-4133",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2668,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons SS Loop Deluxe Bull Bar for Toyota Land Cruiser Prado 150 Series — BU59-3662",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2669,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons SS Loop Deluxe Bull Bar for Toyota Land Cruiser Prado 120 Series — BU59-3661",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2675,
+      "decision": "EXCLUDE",
+      "product": "Dobinsons 4-Degree Caster Correction Kit for Toyota Land Cruiser 76 / 78 / 79 Series — WA59-585K",
+      "application": "Land Cruiser 70 series",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser 70 series).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 2676,
+      "decision": "EXCLUDE",
+      "product": "Safari Snorkel for Toyota Land Cruiser Prado 150 Series — SS188HF",
+      "application": "Land Cruiser Prado",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Land Cruiser Prado).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 3599,
+      "decision": "EXCLUDE",
+      "product": "Fox 2.0 Performance Series Coilovers & Shocks Set — 2005–2015 Toyota Hilux 4WD — 985-24-071 / 983-02-087",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 3600,
+      "decision": "EXCLUDE",
+      "product": "Fox 2.0 Performance Series Coilovers Front Pair — 2005–2015 Toyota Hilux RWD — 983-02-087",
+      "application": "Hilux",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; this listing is for a Toyota model not sold in the US (Hilux).",
+      "sources": [],
+      "confidence": "high"
+    },
+    {
+      "id": 35,
+      "decision": "EXCLUDE",
+      "product": "Toyota 1JZ-GTE Turbocharged Inline-6 Engine",
+      "application": "1JZ-GTE (Japan-market engine)",
+      "evidence": "Owner instruction 2026-11-22: DrivoraParts sells only in the US; the 1JZ-GTE was fitted only to Japan-market Toyota models, never to a US-market vehicle.",
+      "sources": [],
       "confidence": "high"
     }
   ]
