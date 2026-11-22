@@ -6256,5 +6256,72 @@
     "description": "Genuine Toyota Illuminated Door Sills PT944-60240 for Toyota Land Cruiser (2024–2025)\n\nGenuine Toyota illuminated door sills PT944-60240 for the Toyota Land Cruiser. Genuine Toyota illuminated door sills for the 250-series Land Cruiser: the Toyota LED logo lights white when the front doors are open, with a durable corrosion-resistant finish and brushed polished accents that help prevent door sill scuffs and scrapes.\n\nSpecifications\n\nPart number: PT944-60240\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+); dealers list 2024-2026; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-illuminated-door-sills-pt944-60240",
     "createdAt": 1795100004484
+  },
+  {
+    "id": 4485,
+    "name": "Genuine Toyota Radiator Assembly 16400-50384 for Toyota Land Cruiser (2010–2021)",
+    "category": "engine",
+    "brand": "toyota",
+    "price": 305.19,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "16400-50384",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2010–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN)",
+    "fitmentYears": "2010–2021",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2010,
+        "yearTo": 2021,
+        "make": "Toyota",
+        "model": "Land Cruiser",
+        "submodel": "5.7L V8; 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/1.webp",
+      "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/2.webp",
+      "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/3.webp"
+    ],
+    "description": "Genuine Toyota Radiator Assembly 16400-50384 for Toyota Land Cruiser (2010–2021)\n\nGenuine Toyota radiator assembly 16400-50384 for the Toyota Land Cruiser. Engine cooling radiator assembly for the 200-series Land Cruiser.\n\nSpecifications\n\nPart number: 16400-50384\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2010–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN)\nRestriction (2010-2021 Land Cruiser): 200 Series, 5.7L V8; one retailer also lists 2009; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-radiator-assembly-16400-50384",
+    "createdAt": 1795100004485
+  },
+  {
+    "id": 4486,
+    "name": "Genuine Toyota Hood Panel 53301-60690 for Toyota Land Cruiser (2016–2021)",
+    "category": "body-parts",
+    "brand": "toyota",
+    "price": 468.69,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "53301-60690",
+    "freightNotes": "Ships as palletized freight (oversized assembly).",
+    "fitment": "2016–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN)",
+    "fitmentYears": "2016–2021",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2016,
+        "yearTo": 2021,
+        "make": "Toyota",
+        "model": "Land Cruiser",
+        "submodel": "5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-hood-panel-53301-60690/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-hood-panel-53301-60690/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-hood-panel-53301-60690/1.webp",
+      "/product-media/toyota-genuine/toyota-hood-panel-53301-60690/2.webp"
+    ],
+    "description": "Genuine Toyota Hood Panel 53301-60690 for Toyota Land Cruiser (2016–2021)\n\nGenuine Toyota hood panel 53301-60690 for the Toyota Land Cruiser. Steel hood panel (hood sub-assembly) for the 2016-2021 200-series Land Cruiser.\n\nSpecifications\n\nPart number: 53301-60690\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2021 Toyota Land Cruiser (5.7L V8; 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN)\nRestriction (2016-2021 Land Cruiser): 200 Series, 2016-2021 facelift; one retailer also lists 2015; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-hood-panel-53301-60690",
+    "createdAt": 1795100004486
   }
 ]

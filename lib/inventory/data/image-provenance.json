@@ -73090,5 +73090,91 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's accessory card on toyota.com names this part number in the image file; image fetched HTTP 200 (JPEG, converted to WebP), checked by eye against the accessory"
+  },
+  "product-4485": {
+    "productId": 4485,
+    "productName": "Genuine Toyota Radiator Assembly 16400-50384 for Toyota Land Cruiser (2010–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/1640050384/16400-50384_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "16400-50384",
+      "1640050384"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 16400-50384",
+    "sha256": "b0a8ae284c72d5a17e646e9e38ab617e35136584ee331d4cf952e30cd5e53775",
+    "bytes": 32836,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/1640050384/16400-50384_3.webp",
+        "sha256": "e9c7ef73a4c5a551da47943c5b8e57084c10e2e6f00139cc5a83779f17829538",
+        "bytes": 34662,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-radiator-assembly-16400-50384/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/1640050384/16400-50384_2.webp",
+        "sha256": "a87817bf90030f7196ced366af4f2b8348da2798c0bfe579735448857ba6e7a9",
+        "bytes": 33638,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4486": {
+    "productId": 4486,
+    "productName": "Genuine Toyota Hood Panel 53301-60690 for Toyota Land Cruiser (2016–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-hood-panel-53301-60690/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/53301-60690_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "53301-60690",
+      "5330160690"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 53301-60690",
+    "sha256": "9b9f22fb9f2625cfa395f256bc7a6e6af5bce116e1a9305d818a0209cac24291",
+    "bytes": 6214,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-hood-panel-53301-60690/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/53301-60690_1.webp",
+        "sha256": "d8d09ebf0fa2f79d05f5140ddb6993dad713922cae654aae9676bc600bb96aa6",
+        "bytes": 22118,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
