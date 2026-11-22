@@ -26,7 +26,7 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 3900,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota GR Supra, 2020–2025; Toyota's catalog lists the 2.0L and 3.0L (B58) engines. Confirm by VIN",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
@@ -145,7 +145,7 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 2400,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota Tacoma, 2005–2016; Toyota's catalog lists the 2.7L, 3.5L and 4.0L applications. Confirm by VIN",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
@@ -166,7 +166,7 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 3100,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota Hilux (Revo) with the 2.8L 1GD-FTV diesel (GUN126), four-wheel drive, 2016 onward. Toyota's dealer catalog lists 35000-0K130 as a new genuine assembly without a vehicle list; the 2.8L Hilux application comes from Australian and Middle East Toyota-parts suppliers. The 2.4L diesel uses a different assembly (35000-0K040)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
@@ -188,7 +188,7 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 5400,
-    "stock": false,
+    "stock": true,
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
       "/product-media/placeholders/transmission.svg"
@@ -349,7 +349,7 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 2537.5,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota Land Cruiser Prado 150 Series (GRJ150 / GRJ151) with the 4.0L 1GR-FE gasoline engine, 2009–2015, per Toyota's Japan catalog. Toyota lists 35000-60C30 for 2009–2013 builds and 35000-60D90 for 2009–2015 builds; the 2.7L gasoline and the 2015-and-newer diesel use different transmissions",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
@@ -370,7 +370,7 @@
     "category": "transmission",
     "brand": "toyota",
     "price": 2900,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota Hilux (Revo) with the 2.8L 1GD-FTV diesel (GUN126), four-wheel drive, 2016 onward. Toyota's dealer catalog lists 35000-0K130 as a new genuine assembly without a vehicle list; the 2.8L Hilux application comes from Australian and Middle East Toyota-parts suppliers. The 2.4L diesel uses a different assembly (35000-0K040)",
     "thumbnail": "/product-media/placeholders/transmission.svg",
     "images": [
@@ -607,7 +607,7 @@
     "category": "transmission",
     "brand": "xtreme-clutch",
     "price": 1490,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota GR Supra 3.0L B58, 2023 and newer, manual transmission only",
     "thumbnail": "/product-media/transmission/xclutch-gr-supra-b58-twin-sprung-organic-clutch-kit-xkty23560-2a/1.jpg",
     "images": [
@@ -617,7 +617,8 @@
     "description": "XClutch Twin Sprung Clutch Kit for Toyota GR Supra (B58, 2023+ Manual)\n\nClutch kit.\nFitment: Toyota GR Supra 3.0L B58, 2023 and newer, manual transmission only\nPart number: XKTY23560-2A\nSpecifications: 9.0 in twin sprung organic discs; single-mass flywheel; release bearing; hardware kit\n\nConfirm fitment against your vehicle and part number before ordering.",
     "sourceSlug": "xtreme-clutch-twin-plate-kit-for-toyota-gr-supra-a90",
     "createdAt": 1751959999970,
-    "partNumber": "XKTY23560-2A"
+    "partNumber": "XKTY23560-2A",
+    "condition": "brand-new"
   },
   {
     "id": 1976,
@@ -646,7 +647,7 @@
     "category": "transmission",
     "brand": "exedy",
     "price": 620,
-    "stock": false,
+    "stock": true,
     "fitment": "Toyota 86 / GR86 (ZN6, ZN8) and Subaru BRZ (ZC6, ZD8) with the FA20 or FA24 engine, 2012 onward",
     "thumbnail": "/product-media/transmission/exedy-hyper-single-clutch-kit-for-toyota-gr86/1.jpg",
     "images": [
