@@ -1,0 +1,253 @@
+{
+  "_comment": "Toyota expansion batch 13 (2026-11-22): Land Cruiser genuine accessories, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Rock Rail, Right Side (Passenger Side) PT228-60241 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "PT228-60241",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "rock_rail",
+      "condition": "brand-new",
+      "proposedCategory": "4x4-accessories",
+      "proposedCategoryName": "4x4 Accessories",
+      "fitment": "2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); right (passenger) side only, the left rail PT228-60240 and hardware kit PT228-60240-HK are separate; dealers list 2024-2026; professional installation recommended; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); right (passenger) side only, the left rail PT228-60240 and hardware kit PT228-60240-HK are separate; dealers list 2024-2026; professional installation recommended; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota rock rail, right side (passenger side) PT228-60241 for the Toyota Land Cruiser. Genuine Toyota rock rail for the right (passenger) side of the 250-series Land Cruiser: durable steel structure with a textured black powder topcoat, fitted to the vehicle frame to help protect the body on rugged trails; bolts to the frame with no drilling. Sold as a single side.\n\nSpecifications\n\nPart number: PT228-60241\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); right (passenger) side only, the left rail PT228-60240 and hardware kit PT228-60240-HK are separate; dealers list 2024-2026; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+); right (passenger) side only, the left rail PT228-60240 and hardware kit PT228-60240-HK are separate; dealers list 2024-2026; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 485.0,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 376.87,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~gx~lndc~rkrl~right~pt228-60241.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 376.87,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gx~lndc~rkrl~right~pt228-60241.html"
+          },
+          {
+            "seller": "Toyota of Nashua",
+            "price": 378.55,
+            "url": "https://parts.toyotaofnashua.com/oem-parts/toyota-rock-rails-right-side-pt22860241"
+          },
+          {
+            "seller": "Lakeland Toyota (Toyota Parts Express)",
+            "price": 392.08,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rock-rails-right-side-pt22860241"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 358.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "2.4L Turbo Hybrid",
+            "restriction": "250-series Land Cruiser (2024+); right (passenger) side only, the left rail PT228-60240 and hardware kit PT228-60240-HK are separate; dealers list 2024-2026; professional installation recommended; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota.com Land Cruiser accessories (Rock Rails, PT228-60241)",
+                "url": "https://www.toyota.com/landcruiser/accessories/",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2025-2026 Toyota Land Cruiser Rock Rails - Right Side PT228-60241)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rock-rails-right-side-pt22860241",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.toyotaofnashua.com/oem-parts/toyota-rock-rails-right-side-pt22860241",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-rock-rails-right-side-pt22860241",
+        "https://www.toyota.com/landcruiser/accessories/",
+        "https://www.toyotapartsdeal.com/oem/toyota~gx~lndc~rkrl~right~pt228-60241.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Skid Plate PT228-60242 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "PT228-60242",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "skid_plate",
+      "condition": "brand-new",
+      "proposedCategory": "4x4-accessories",
+      "proposedCategoryName": "4x4 Accessories",
+      "fitment": "2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); front skid plate only, the transmission and rear differential plates are separate part numbers; dealers list 2024-2026; professional installation recommended; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); front skid plate only, the transmission and rear differential plates are separate part numbers; dealers list 2024-2026; professional installation recommended; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front skid plate PT228-60242 for the Toyota Land Cruiser. Genuine Toyota front skid plate for the 250-series Land Cruiser: high-strength steel plate with a TOYOTA logo that shields the front underbody from off-road hazards; mounts to the existing Land Cruiser attachment points with no drilling.\n\nSpecifications\n\nPart number: PT228-60242\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+); front skid plate only, the transmission and rear differential plates are separate part numbers; dealers list 2024-2026; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+); front skid plate only, the transmission and rear differential plates are separate part numbers; dealers list 2024-2026; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 425.0,
+        "lowestCompetitor": {
+          "seller": "Ed Martin Toyota",
+          "price": 313.5,
+          "url": "https://parts.edmartintoyota.com/oem-parts/toyota-front-skid-plate-2024-land-cruiser-pt22860242"
+        },
+        "competitors": [
+          {
+            "seller": "Ed Martin Toyota",
+            "price": 313.5,
+            "url": "https://parts.edmartintoyota.com/oem-parts/toyota-front-skid-plate-2024-land-cruiser-pt22860242"
+          },
+          {
+            "seller": "SparksParts",
+            "price": 339.25,
+            "url": "https://www.sparksparts.com/oem-parts/toyota-front-skid-plate-pt22860242"
+          },
+          {
+            "seller": "Frontier Toyota",
+            "price": 360.25,
+            "url": "https://parts.frontiertoyota.com/oem-parts/toyota-land-cruiser-front-skid-plate-2024-2026-land-cruiser-pt22860242"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 297.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "2.4L Turbo Hybrid",
+            "restriction": "250-series Land Cruiser (2024+); front skid plate only, the transmission and rear differential plates are separate part numbers; dealers list 2024-2026; professional installation recommended; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota.com Land Cruiser accessories (Front Skid Plate, PT228-60242)",
+                "url": "https://www.toyota.com/landcruiser/accessories/",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Frontier Toyota (Toyota Land Cruiser Front Skid Plate 2024-2026, PT228-60242)",
+                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-land-cruiser-front-skid-plate-2024-2026-land-cruiser-pt22860242",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.edmartintoyota.com/oem-parts/toyota-front-skid-plate-2024-land-cruiser-pt22860242",
+        "https://parts.frontiertoyota.com/oem-parts/toyota-land-cruiser-front-skid-plate-2024-2026-land-cruiser-pt22860242",
+        "https://www.sparksparts.com/oem-parts/toyota-front-skid-plate-pt22860242",
+        "https://www.toyota.com/landcruiser/accessories/"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
