@@ -51,3 +51,27 @@ transmission listings still showing a placeholder (35000-WAA10, 33030-35A22, 350
 - Blocked only by photographs: 6.
 - Rejected: 6 (5 under $500, 1 with Lexus-only US fitment declined by the owner).
 - Ready for deployment once approved: 1 (ID 4481).
+
+## Batch 13: $200 floor for Land Cruiser parts (2026-11-22)
+The owner lowered the Land Cruiser research floor from $500 to the sitewide $200 minimum.
+Same rules otherwise: Toyota fitment only, at least three attributed US prices, price 5% under the
+lowest, and a Toyota photo of the exact part.
+
+| ID | Part no. | Product | Fits | US prices (lowest first) | Our price | Photo |
+|---|---|---|---|---|---|---|
+| 4482 | PT228-60241 | Rock rail, right (passenger) side, sold per side | Land Cruiser 2024-2025 (dealers list to 2026) | ToyotaPartsDeal $376.87; Toyota of Nashua $378.55; Lakeland $392.08 (MSRP $480-$485) | $358.09 | toyota.com, right-side rail on the vehicle |
+| 4483 | PT228-60242 | Front skid plate | Land Cruiser 2024-2025 (dealers list to 2026) | Ed Martin $313.50; SparksParts $339.25; Frontier $360.25 (also Elmhurst $336.30; MSRP $400-$425) | $297.89 | toyota.com |
+
+Prices come from dealer pages as shown in search results; the dealer sites themselves are outside
+this session's network allowlist, so they were not fetched directly. Ed Martin has two pages for this
+part ($313.50 and $339.85); the lower one is used.
+
+Held:
+- **PT228-60240** (rock rail, left): about $392-$412 at dealers, but Toyota serves the right-side
+  photo for this number, so there is no photo of the exact part.
+- **PT228-35241** (transmission skid plate): superseded by PT228-35247, and also listed for the Tacoma
+  hybrid; only one dealer price found ($256.50).
+- **PT970-60240** (roof cross bars): superseded by PT970-60245, which Toyota's own catalog lists for
+  the Lexus GX; no Toyota Land Cruiser fitment confirmed.
+- **PT228-35245** (rear differential skid plate), **PT944-60240** (illuminated door sills),
+  **PT949-08210** (dashcam): no attributable US prices found yet.

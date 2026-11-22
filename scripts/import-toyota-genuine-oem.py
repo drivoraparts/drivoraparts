@@ -81,6 +81,8 @@ IMAGES = {
     "48886-60032": ["pn_48886-60032_1.webp", "pn_48886-60032_3.webp"],
     # Batch 12: Toyota genuine accessory; photos from toyota.com (TCOM_SOURCES).
     "PT925-60240": ["tcom_PT925-60240_1.webp", "tcom_PT925-60240_2.webp"],
+    "PT228-60241": ["tcom_PT228-60241_1.webp"],
+    "PT228-60242": ["tcom_PT228-60242_1.webp"],
     # Image audit 2026-11-22: lead with the part itself; drop label cards, text
     # graphics and close-up fragments that are not product views.
     "16360-F0070": ["16360F0070_3.webp", "16360F0070_2.webp"],
@@ -121,6 +123,8 @@ TCOM_ACCESSORY_PAGE = "https://www.toyota.com/landcruiser/accessories/"
 TCOM_SOURCES = {
     "tcom_PT925-60240_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT925-60240_SK.jpg",
     "tcom_PT925-60240_2.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT925-60240.jpg",
+    "tcom_PT228-60241_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT228-60241.jpg",
+    "tcom_PT228-60242_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT228-60242.jpg",
 }
 
 
