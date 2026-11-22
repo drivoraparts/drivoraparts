@@ -84,6 +84,7 @@ IMAGES = {
     "PT228-60241": ["tcom_PT228-60241_1.webp"],
     "PT228-60242": ["tcom_PT228-60242_1.webp"],
     "PT944-60240": ["tcom_PT944-60240_1.webp"],
+    "PT970-60241": ["tcom_PT970-60241_1.webp"],
     # LC200 radiator: the three imgpn photos show this radiator; pn_ photo 2 shows a different core, so it is left out
     "16400-50384": ["imgpn_16400-50384_1.webp", "imgpn_16400-50384_3.webp", "imgpn_16400-50384_2.webp"],
     "53301-60690": ["pn_53301-60690_2.webp", "pn_53301-60690_1.webp"],
@@ -130,6 +131,7 @@ TCOM_SOURCES = {
     "tcom_PT228-60241_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT228-60241.jpg",
     "tcom_PT228-60242_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT228-60242.jpg",
     "tcom_PT944-60240_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT944-60240.jpg",
+    "tcom_PT970-60241_1.webp": "https://media.ads.vapims.tms.aws.toyota.com/parts/toyota/images/PT970-60241.jpg",
 }
 
 

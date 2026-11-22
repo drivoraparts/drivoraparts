@@ -132,3 +132,14 @@ Total swept: about 6,380 part numbers. Two have photos (back door panels 67005-6
 neither is listable. Toyota's own photo host is exhausted as a source for these Land Cruiser
 assemblies. Remaining routes: supplier photographs, or a manufacturer or retailer site that serves
 exact-part photos and allows automated download.
+
+### Batch 16 (2026-11-22): roof rack photo block cleared
+Toyota's accessory image host also serves photos under exact part numbers that the toyota.com
+accessory cards do not use. Probing those turned up:
+
+| Part no. | Result |
+|---|---|
+| **PT970-60241** roof rack | Photo of the rack alone, filed under its own part number. **Imported as 4487, $1,029.39**: 5% under Smithtown $1,083.50, with Greensburg $1,093.35, OEMGenuineParts $1,103.20, ToyotaPartsDeal $1,113.05 and Olathe $1,190.00. |
+| PT228-35247 transfer case skid plate | Exact-number photo now exists, but US prices are about $256-$325, below the $500 floor. |
+| PTR03-60243 TRD tail pipe | Photo exists; about $419, below $500. |
+| PTR03-60240 TRD center pipe | About $700-$775, but no photo under this number (403). Held. |

@@ -1,0 +1,147 @@
+{
+  "_comment": "Toyota expansion batch 16 (2026-11-22): Land Cruiser genuine roof rack, $500+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Roof Rack PT970-60241 — Land Cruiser",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "PT970-60241",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "roof_rack",
+      "condition": "brand-new",
+      "proposedCategory": "4x4-accessories",
+      "proposedCategoryName": "4x4 Accessories",
+      "fitment": "2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota roof rack PT970-60241 for the Toyota Land Cruiser. Genuine Toyota roof rack for the 250-series Land Cruiser: designed to secure cargo with more confidence, with additional secure tie-down points for roof-rack accessories.\n\nSpecifications\n\nPart number: PT970-60241\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1400.0,
+        "lowestCompetitor": {
+          "seller": "Smithtown Toyota",
+          "price": 1083.5,
+          "url": "https://parts.smithtowntoyota.com/oem-parts/toyota-roof-rack-pt97060241"
+        },
+        "competitors": [
+          {
+            "seller": "Smithtown Toyota",
+            "price": 1083.5,
+            "url": "https://parts.smithtowntoyota.com/oem-parts/toyota-roof-rack-pt97060241"
+          },
+          {
+            "seller": "Toyota of Greensburg",
+            "price": 1093.35,
+            "url": "https://parts.toyotaofgreensburg.com/oem-parts/toyota-roof-rack-pt97060241"
+          },
+          {
+            "seller": "OEMGenuineParts.com",
+            "price": 1103.2,
+            "url": "https://www.oemgenuineparts.com/oem-parts/toyota-roof-rack-pt97060241"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1113.05,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~lndc~roof~rack~pt970-60241.html"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 1190.0,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-roof-rack-pt97060241"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1029.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Land Cruiser",
+            "engine": "2.4L Turbo Hybrid",
+            "restriction": "250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota.com Land Cruiser accessories (Roof Rack)",
+                "url": "https://www.toyota.com/landcruiser/accessories/",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Smithtown Toyota (2024-2025 Toyota Land Cruiser Roof Rack PT970-60241)",
+                "url": "https://parts.smithtowntoyota.com/oem-parts/toyota-roof-rack-pt97060241",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2024-2025 Toyota Land Cruiser Roof Rack PT970-60241)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-roof-rack-pt97060241",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/oem-parts/toyota-roof-rack-pt97060241",
+        "https://parts.smithtowntoyota.com/oem-parts/toyota-roof-rack-pt97060241",
+        "https://parts.toyotaofgreensburg.com/oem-parts/toyota-roof-rack-pt97060241",
+        "https://www.oemgenuineparts.com/oem-parts/toyota-roof-rack-pt97060241",
+        "https://www.toyota.com/landcruiser/accessories/",
+        "https://www.toyotapartsdeal.com/oem/toyota~lndc~roof~rack~pt970-60241.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
