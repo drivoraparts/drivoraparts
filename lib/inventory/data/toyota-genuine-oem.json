@@ -6355,5 +6355,45 @@
     "description": "Genuine Toyota Roof Rack PT970-60241 for Toyota Land Cruiser (2024–2025)\n\nGenuine Toyota roof rack PT970-60241 for the Toyota Land Cruiser. Genuine Toyota roof rack for the 250-series Land Cruiser: designed to secure cargo with more confidence, with additional secure tie-down points for roof-rack accessories.\n\nSpecifications\n\nPart number: PT970-60241\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Land Cruiser (2.4L Turbo Hybrid; 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN)\nRestriction (2024-2025 Land Cruiser): 250-series Land Cruiser (2024+) with factory roof side rails; some dealers list 2026; awning, cargo cases and cross bars are not included; professional installation recommended; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-roof-rack-pt970-60241",
     "createdAt": 1795100004487
+  },
+  {
+    "id": 4488,
+    "name": "Genuine Toyota Turbocharger, Right 17208-F4011 for Toyota Tundra / Sequoia (2022–2025)",
+    "category": "turbocharger",
+    "brand": "toyota",
+    "price": 2633.69,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "17208-F4011",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2022–2025 Toyota Tundra (3.4L twin-turbo V6; right-bank (passenger side) turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications; supersedes 17208-F4010; dealers list 2022-2026; confirm by VIN; one-time-use fasteners are sold separately); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid; right-bank (passenger side) turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately)",
+    "fitmentYears": "2022–2025",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2022,
+        "yearTo": 2025,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "3.4L twin-turbo V6; right-bank (passenger side) turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications; supersedes 17208-F4010; dealers list 2022-2026; confirm by VIN; one-time-use fasteners are sold separately"
+      },
+      {
+        "yearFrom": 2023,
+        "yearTo": 2025,
+        "make": "Toyota",
+        "model": "Sequoia",
+        "submodel": "3.4L twin-turbo V6 hybrid; right-bank (passenger side) turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-turbocharger-right-17208-f4011/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-turbocharger-right-17208-f4011/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-turbocharger-right-17208-f4011/1.webp",
+      "/product-media/toyota-genuine/toyota-turbocharger-right-17208-f4011/2.webp"
+    ],
+    "description": "Genuine Toyota Turbocharger, Right 17208-F4011 for Toyota Tundra / Sequoia (2022–2025)\n\nGenuine Toyota turbocharger, right 17208-F4011 for the Toyota Tundra, Sequoia. Right-bank (passenger side) turbocharger for the 3.4L twin-turbo V6. Pairs with the left-bank unit 17201-F4011.\n\nSpecifications\n\nPart number: 17208-F4011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (3.4L twin-turbo V6; right-bank (passenger side) turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications; supersedes 17208-F4010; dealers list 2022-2026; confirm by VIN; one-time-use fasteners are sold separately); 2023–2025 Toyota Sequoia (3.4L twin-turbo V6 hybrid; right-bank (passenger side) turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately)\nRestriction (2022-2025 Tundra): right-bank (passenger side) turbocharger, 3.4L V35A twin-turbo V6; i-FORCE and i-FORCE MAX applications; supersedes 17208-F4010; dealers list 2022-2026; confirm by VIN; one-time-use fasteners are sold separately\nRestriction (2023-2025 Sequoia): right-bank (passenger side) turbocharger, 3.4L V35A i-FORCE MAX; confirm by VIN; one-time-use fasteners are sold separately\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-turbocharger-right-17208-f4011",
+    "createdAt": 1795100004488
   }
 ]
