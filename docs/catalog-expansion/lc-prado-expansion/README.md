@@ -72,3 +72,52 @@ Related US-platform genuine parts that are already listed (not Land Cruiser): KD
 
 ## Progress log
 See the batch sections below, which are added as work proceeds.
+
+### Progress log (2026-11-22)
+
+**Toyota photo host sweep.** Letter-suffix part numbers (A-Z without I/O/Q, digit, ending 0/1) for
+41110-60, 36100-60, 44200-60, 52119-60, 81070-60, 81140-60, 81550-60, 81560-60 and 67005-60: 4,140
+numbers, plus 48 numbers probed one by one. Results:
+- **67005-60B01 and 67005-60E00 (back door panels):** have photos, but neither is listable. 60B01 has
+  one sold-out $38.99 eBay page and points to the Land Cruiser 70 (non-US); 60E00 has no price or fitment.
+- **37110-60B00 (rear propeller shaft):** has a photo. Rejected: lowest US price $444.77, below $500.
+- **48007-60023 (KDSS front cylinder):** has photos, but it is already listed as 4472 (no duplicate made).
+- **81110-60P70 (LC70 headlamp):** non-US and about $20. Rejected.
+
+The sweep was stopped after these 9 families: 2 photos in about 4,100 numbers, neither usable. The
+remaining families (53811-60, 89661-60, 83800-60, 48810-60, 19000-38) were not scanned.
+
+**Other photo sources tried.**
+- ToyotaPartsDeal and ToyotaPartsNow refuse automated requests (403). Not bypassed.
+- OEMGenuineParts, Amazon, eBay, PartSouq, Amayama, Megazip and parts.toyota.com are outside the
+  network allowlist. Dealer RevolutionParts stores were 403 before.
+- Manufacturer sites for the aftermarket listings were added to the allowlist with owner-session
+  approval: addictivedesertdesigns.com and bilstein.com.
+
+**Image fixes.**
+- **1996 ADD Stealth Fighter front bumper (Tacoma 2016+): FIXED.** Six manufacturer photos of this
+  bumper replace the Ironman bull bar photos. Source: addictivedesertdesigns.com, F681202200103.
+  Provenance is in `lib/inventory/data/image-provenance.json`.
+- **1859 Bilstein 6112 front kit (Tacoma): unresolved.** The kit is 47-309975, but Bilstein's US site
+  redirects product URLs to its homepage, so there is no product page to take a photo from.
+- **2003 DV8, 2006 Fab Fours, 2012 Rough Country, 1861 Bilstein B8 8100: unresolved.** Each listing
+  name covers several SKUs that look different (with or without a guard, winch mount, KDSS or not).
+  The exact SKU is needed.
+- **2023 Rocket Bunny, 2015 Duraflex GT Concept, 2021 Liberty Walk: unresolved.** The manufacturer
+  sites are outside the allowlist, and an exact SKU match is not established.
+- **Placeholders 1946, 1952, 1954 (Toyota transmissions): unresolved.** Only used units, or other
+  part numbers, have photos online.
+
+**Candidate Land Cruiser parts blocked by photographs alone** (price and fitment known, no legitimate photo):
+
+| Part no. | Part | Fits | US price seen |
+|---|---|---|---|
+| 41110-60C50 | Front differential carrier | Land Cruiser 2016-2021 | $1,383 |
+| 48876-60022 | KDSS front cylinder | Land Cruiser 200 | $895 |
+| 67002-60631 | Front door shell, left | Land Cruiser 2008-2011 | $644 |
+| 83800-60G50 | Instrument cluster | Land Cruiser 2009 | $1,243 |
+| 81140-60N50 | Headlamp, right | Land Cruiser 2020-2021 | $1,284 |
+| 67005-60K21 | Back door panel | Land Cruiser 2017-2021 | $648 |
+| 41110-60A91 | Rear differential carrier | Land Cruiser 1998-2002 | $2,688 |
+
+Plus the six listed in `phase7/README.md`.

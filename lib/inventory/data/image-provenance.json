@@ -73176,5 +73176,143 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-1996-add-1": {
+    "productId": 1996,
+    "productName": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
+    "localFile": "/product-media/bumpers/add-stealth-fighter-front-bumper-for-toyota-tacoma/1.jpg",
+    "sourceUrl": "https://www.addictivedesertdesigns.com/cdn/shop/products/2016-2022-Toyota-Tacoma-winch-bumper_90c25c87-8527-48c7-9e23-27ca7432a02a.jpg",
+    "sourceName": "addictivedesertdesigns.com",
+    "landingPage": "https://www.addictivedesertdesigns.com/products/2016-2022-toyota-tacoma-stealth-fighter-winch-front-bumper_f681202200103",
+    "creator": "Addictive Desert Designs (manufacturer)",
+    "creatorUrl": "https://www.addictivedesertdesigns.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for the Stealth Fighter front bumper, 2016+ Tacoma (F681202200103), downloaded on the site owner's instruction (2026-11-22) to replace another product's photos. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "Stealth Fighter",
+      "Tacoma",
+      "F681202200103"
+    ],
+    "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
+    "sha256": "fd921552c20ac44795e9143178c70b5e372b3c7f8ec878d98c9c36c16e2262e9",
+    "downloadedAt": "2026-11-22"
+  },
+  "product-1996-add-2": {
+    "productId": 1996,
+    "productName": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
+    "localFile": "/product-media/bumpers/add-stealth-fighter-front-bumper-for-toyota-tacoma/2.jpg",
+    "sourceUrl": "https://www.addictivedesertdesigns.com/cdn/shop/products/2016-2019-Toyota-Tacoma-front-bumper_a2a7d644-d676-4a73-b230-f8e9cf57ab2c.jpg",
+    "sourceName": "addictivedesertdesigns.com",
+    "landingPage": "https://www.addictivedesertdesigns.com/products/2016-2022-toyota-tacoma-stealth-fighter-winch-front-bumper_f681202200103",
+    "creator": "Addictive Desert Designs (manufacturer)",
+    "creatorUrl": "https://www.addictivedesertdesigns.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for the Stealth Fighter front bumper, 2016+ Tacoma (F681202200103), downloaded on the site owner's instruction (2026-11-22) to replace another product's photos. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "Stealth Fighter",
+      "Tacoma",
+      "F681202200103"
+    ],
+    "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
+    "sha256": "6a25797f44e65555aaa3bf1d1a8563cc5512fec4ef8c3ac4be6712511574fa75",
+    "downloadedAt": "2026-11-22"
+  },
+  "product-1996-add-3": {
+    "productId": 1996,
+    "productName": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
+    "localFile": "/product-media/bumpers/add-stealth-fighter-front-bumper-for-toyota-tacoma/3.jpg",
+    "sourceUrl": "https://www.addictivedesertdesigns.com/cdn/shop/products/2016-2019-Toyota-Tacoma-front-bumpers_f41c1271-e21b-4f5a-8fc0-85d09e29c4ac.jpg",
+    "sourceName": "addictivedesertdesigns.com",
+    "landingPage": "https://www.addictivedesertdesigns.com/products/2016-2022-toyota-tacoma-stealth-fighter-winch-front-bumper_f681202200103",
+    "creator": "Addictive Desert Designs (manufacturer)",
+    "creatorUrl": "https://www.addictivedesertdesigns.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for the Stealth Fighter front bumper, 2016+ Tacoma (F681202200103), downloaded on the site owner's instruction (2026-11-22) to replace another product's photos. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "Stealth Fighter",
+      "Tacoma",
+      "F681202200103"
+    ],
+    "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
+    "sha256": "f2e581514616bc34cd79c1e8a426c1762f1cdd8e6219ab044e0ff4711973ff52",
+    "downloadedAt": "2026-11-22"
+  },
+  "product-1996-add-4": {
+    "productId": 1996,
+    "productName": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
+    "localFile": "/product-media/bumpers/add-stealth-fighter-front-bumper-for-toyota-tacoma/4.jpg",
+    "sourceUrl": "https://www.addictivedesertdesigns.com/cdn/shop/products/2016-2019-Toyota-Tacoma-winch-front-bumper_36083777-77ab-44c3-9879-73c9cc2fedbf.jpg",
+    "sourceName": "addictivedesertdesigns.com",
+    "landingPage": "https://www.addictivedesertdesigns.com/products/2016-2022-toyota-tacoma-stealth-fighter-winch-front-bumper_f681202200103",
+    "creator": "Addictive Desert Designs (manufacturer)",
+    "creatorUrl": "https://www.addictivedesertdesigns.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for the Stealth Fighter front bumper, 2016+ Tacoma (F681202200103), downloaded on the site owner's instruction (2026-11-22) to replace another product's photos. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "Stealth Fighter",
+      "Tacoma",
+      "F681202200103"
+    ],
+    "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
+    "sha256": "622786bc9046a81cef0d5863e2bcb483e6566b486e331cd7a483cdb73449c3c4",
+    "downloadedAt": "2026-11-22"
+  },
+  "product-1996-add-5": {
+    "productId": 1996,
+    "productName": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
+    "localFile": "/product-media/bumpers/add-stealth-fighter-front-bumper-for-toyota-tacoma/5.jpg",
+    "sourceUrl": "https://www.addictivedesertdesigns.com/cdn/shop/products/2019-Toyota-Tacoma-front-bumper_04ed0e26-291f-4b63-ac60-30482e59287c.jpg",
+    "sourceName": "addictivedesertdesigns.com",
+    "landingPage": "https://www.addictivedesertdesigns.com/products/2016-2022-toyota-tacoma-stealth-fighter-winch-front-bumper_f681202200103",
+    "creator": "Addictive Desert Designs (manufacturer)",
+    "creatorUrl": "https://www.addictivedesertdesigns.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for the Stealth Fighter front bumper, 2016+ Tacoma (F681202200103), downloaded on the site owner's instruction (2026-11-22) to replace another product's photos. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "Stealth Fighter",
+      "Tacoma",
+      "F681202200103"
+    ],
+    "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
+    "sha256": "564b116fdbbe175e3002351198d83fec55a4b81f37924b8b9a79fb32e2efdff9",
+    "downloadedAt": "2026-11-22"
+  },
+  "product-1996-add-6": {
+    "productId": 1996,
+    "productName": "ADD Stealth Fighter Front Bumper for Toyota Tacoma",
+    "localFile": "/product-media/bumpers/add-stealth-fighter-front-bumper-for-toyota-tacoma/6.jpg",
+    "sourceUrl": "https://www.addictivedesertdesigns.com/cdn/shop/products/Toyota-Tacoma-front-bumper_60b4886f-c34a-4290-920e-012f4d4735ff.jpg",
+    "sourceName": "addictivedesertdesigns.com",
+    "landingPage": "https://www.addictivedesertdesigns.com/products/2016-2022-toyota-tacoma-stealth-fighter-winch-front-bumper_f681202200103",
+    "creator": "Addictive Desert Designs (manufacturer)",
+    "creatorUrl": "https://www.addictivedesertdesigns.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for the Stealth Fighter front bumper, 2016+ Tacoma (F681202200103), downloaded on the site owner's instruction (2026-11-22) to replace another product's photos. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "Stealth Fighter",
+      "Tacoma",
+      "F681202200103"
+    ],
+    "query": "manufacturer catalogue: 2016-2022 Toyota Tacoma Stealth Fighter Winch Front Bumper F681202200103",
+    "sha256": "df4fba4d1e6b7c98aa128f23a854feb3709c69684478d50f492fa16d28aca06f",
+    "downloadedAt": "2026-11-22"
   }
 }
