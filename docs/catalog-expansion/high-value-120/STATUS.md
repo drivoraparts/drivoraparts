@@ -4,17 +4,17 @@ This file is updated after every batch. It is the resume point if a session stop
 
 ## Scoreboard (qualifying LIVE products)
 Count rules: live on drivoraparts.com, US-market Toyota application, at least $200, product-specific photo, documented
-prices, no duplicates.
+prices, no duplicates. `TRACKER.md` (generated from `pipeline.json`) is the per-product source of truth.
 
 | Category | Target | Qualifying live | Remaining | Live IDs |
 |---|---|---|---|---|
 | Tires | 20 | 20 | 0 | 5001-5020 |
-| Transmissions | 20 | 6 | 14 | 4489, 4490, 4491, 4492, 4496, 4497 |
-| Steering | 20 | 13 | 7 | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
-| Turbochargers | 20 | 7 | 13 | 4445, 4488, 5101, 5102, 5103, 5104, 5105 |
-| Engines | 20 | 14 (+1 in batch 31) | 6 (5 after batch 31) | 5106-5119 (+5120 pending) |
+| Transmissions | 20 | 6 | 14 | 4489-4492, 4496, 4497 |
+| Steering | 20 | 13 (18 after batch 35) | 7 (2) | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4501 (+4502-4506) |
+| Turbochargers | 20 | 11 | 9 | 4445, 4488, 5101-5105, 5121-5124 |
+| Engines | 20 | 15 | 5 | 5106-5120 |
 | Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **60** (61 after batch 31) | **60** (59) | |
+| **Total** | 120 | **65** (70 after batch 35) | **55** (50) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -33,7 +33,11 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 28 | #156 | ATK engines 869A (RAV4), 860 (Sienna AWD) (5118, 5119) | done |
 | 29 | #157 | Toyota racks 44250-04041 (Tacoma 2016-2023), 44250-35042 (Tacoma 1995-2004 / 4Runner 1996-2002) (4498, 4499) | done |
 | 30 | #158 | Toyota rack 44250-0C121 (Sequoia 2008-2022), pump 44310-0C090 (Tundra 2007-2021) (4500, 4501) | done |
-| 31 | (this PR) | ATK engine 862 (Tacoma 2005-2014 2TR-FE) (5120) | pending |
+| 31 | #159 | ATK engine 862 (Tacoma 2005-2014 2TR-FE) (5120) | done |
+| 32 | #160 | Dynamic Autowerx Flow Max, Ultra Flow 6466 (5121, 5122) | done |
+| 33 | #161 | Dynamic Autowerx New Gen 6769 (5123) | done |
+| 34 | #162 | Dynamic Autowerx 6969 (5124) | done |
+| 35 | (this PR) | Toyota racks 44250-0C200, 44250-0E260, 45510-0T011; columns 45250-06410, 45250-0C300 (4502-4506) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
@@ -44,7 +48,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 - **GReddy (greddy.com):** reachable, with manufacturer studio photos and US retail prices from Titan, DriftHQ, Vivid,
   MVP and JM.
 - **LIMIT+1 (limitplus1.com):** reachable product data. Sells HKS, Forced Performance and ARTEC turbo products for GR86, GR Corolla and Supra. ARTEC photos carry a logo overlay.
-- **Pure Turbos (pureturbos.com):** reachable, but its photos carry logo and text overlays.
+- **Pure Turbos (pureturbos.com):** reachable (Shopify `products.json`). The Pure650, 800 and 900 (NEW) are complete new turbos for the 2020-2026 GR Supra, but every photo carries the Pure logo, so they are IMAGE PENDING. The core-exchange units (Pure550 for GR Corolla, Pure650 and 800) need the buyer's own turbo.
+- **ToyotaPartsNow / ToyotaPartsDeal:** product pages are reachable at `/oem/toyota~x~<PN>` (redirects) and give price, MSRP and trim-level fitment. ToyotaPartsNow returns 403 after a burst of requests: space requests and do not retry.
 - **atkengines.com:** no response. **prpseats.com:** 403.
 
 ## Next actions (in order)
