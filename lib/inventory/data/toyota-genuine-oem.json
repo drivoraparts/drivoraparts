@@ -6560,5 +6560,37 @@
     "description": "Genuine Toyota Power Steering Pump Assembly 44310-0C080 for Toyota Tundra (2007–2009)\n\nGenuine Toyota power steering pump assembly 44310-0C080 for the Toyota Tundra. Hydraulic power steering (vane) pump assembly with pulley for the 2007-2009 Tundra.\n\nSpecifications\n\nPart number: 44310-0C080\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2009 Toyota Tundra (hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN)\nRestriction (2007-2009 Tundra): hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-power-steering-pump-assembly-44310-0c080",
     "createdAt": 1795100004493
+  },
+  {
+    "id": 4494,
+    "name": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-08080 for Toyota Sienna (2021–2025)",
+    "category": "suspension",
+    "brand": "toyota",
+    "price": 617.69,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "44250-08080",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2021–2025 Toyota Sienna (2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN)",
+    "fitmentYears": "2021–2025",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2021,
+        "yearTo": 2025,
+        "make": "Toyota",
+        "model": "Sienna",
+        "submodel": "2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-electric-power-steering-rack-and-pinion-assembly-44250-08080/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-electric-power-steering-rack-and-pinion-assembly-44250-08080/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-electric-power-steering-rack-and-pinion-assembly-44250-08080/1.webp"
+    ],
+    "description": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-08080 for Toyota Sienna (2021–2025)\n\nGenuine Toyota electric power steering rack and pinion assembly 44250-08080 for the Toyota Sienna. Electric power steering (EPS) rack and pinion gear assembly; dealer listings note the inner tie rods and boots are included. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-08080\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN)\nRestriction (2021-2025 Sienna): 2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-electric-power-steering-rack-and-pinion-assembly-44250-08080",
+    "createdAt": 1795100004494
   }
 ]

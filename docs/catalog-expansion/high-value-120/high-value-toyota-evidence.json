@@ -1,0 +1,56 @@
+{
+  "checked": "2026-11-23",
+  "pricing": "5% under the lowest attributed US price, same configuration",
+  "products": [
+    {
+      "id": 5101,
+      "partNumber": "VTT-B58-GC-2",
+      "aliases": [
+        "B58TU2GC",
+        "VTTB58GC2port"
+      ],
+      "maker": "Vargas Turbo Technologies (VTT)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 inline-6 turbo, 2-port exhaust manifold"
+        }
+      ],
+      "fitmentSources": [
+        "https://www.urotuning.com/products/vargas-turbo-technologies-b58-gc-gc-turbocharger-upgrade-vtt-b58-gc-1 (variant \"GC / B58 TU 2020 A90 Supra (B58 2 Port Manifold)\", SKU VTT-B58-GC-2)",
+        "https://www.turnermotorsport.com/p-25507162-vtt-gc-turbocharger-upgrade-b58tu-2-port-a90-mk5-supra (B58TU 2-Port, A90 MK5 Supra)",
+        "https://www.ecstuning.com/b-vargas-turbo-technologies-parts/vtt-gc-turbocharger-upgrade-b58tu-2-port-a90-mk5-supra/b58tu2gc~vtt/"
+      ],
+      "fitmentCaveat": "UroTuning's shared GC/GC+ description still carries an older line saying the unit does not fit the 2020 A90 Supra; it predates the A90 2-port variant, which the same page sells as SKU VTT-B58-GC-2. Fitment Industries lists the 2-port part for 2020-2024; the 2021-on Supra 3.0 uses the 6-port manifold, so the listing is limited to 2020.",
+      "competitors": [
+        {
+          "name": "Turner Motorsport",
+          "price": 1858.99,
+          "url": "https://www.turnermotorsport.com/p-25507162-vtt-gc-turbocharger-upgrade-b58tu-2-port-a90-mk5-supra"
+        },
+        {
+          "name": "ECS Tuning",
+          "price": 1858.99,
+          "url": "https://www.ecstuning.com/b-vargas-turbo-technologies-parts/vtt-gc-turbocharger-upgrade-b58tu-2-port-a90-mk5-supra/b58tu2gc~vtt/"
+        },
+        {
+          "name": "UroTuning",
+          "price": 1859.99,
+          "url": "https://www.urotuning.com/products/vargas-turbo-technologies-b58-gc-gc-turbocharger-upgrade-vtt-b58-gc-1"
+        },
+        {
+          "name": "Fitment Industries",
+          "price": 1976.24,
+          "url": "https://www.fitmentindustries.com/store/performance/752454/vargas-turbocharger-technologies-vtt-b58-2-port-manifold-gc-turbocharger-upgrade-toyota-supra-a90-2020-2024"
+        }
+      ],
+      "lowest": 1858.99,
+      "price": 1766.04,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    }
+  ]
+}

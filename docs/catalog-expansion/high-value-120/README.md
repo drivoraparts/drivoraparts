@@ -17,10 +17,10 @@ These are the owner's standing instructions:
 
 | Category | Target | Already live before brief | New: verified | New: imported | New: live |
 |---|---|---|---|---|---|
-| Turbochargers | 20 | 2 (17201-F4011, 17208-F4011) | 0 | 0 | 0 |
+| Turbochargers | 20 | 2 (17201-F4011, 17208-F4011) | 1 | 1 | 1 (5101) |
 | Engines & engine assemblies | 20 | 0 genuine | 0 | 0 | 0 |
 | Transmissions | 20 | 3 Toyota reman (4489-4491) + 1954 | 1 | 1 | 1 (4492) |
-| Steering | 20 | racks 4425-4427, 4430, 4471; knuckle 4422 | 1 | 1 | 1 (4493) |
+| Steering | 20 | racks 4425-4427, 4430, 4471; knuckle 4422 | 2 | 2 | 2 (4493, 4494) |
 | Seats | 20 | 0 | 0 | 0 | 0 |
 | Tires | 20 | 0 visible | 20 | 20 | **20 (5001-5020)** |
 
@@ -30,6 +30,8 @@ These are the owner's standing instructions:
 |---|---|---|---|---|---|---|---|---|
 | 4492 | Transmission | 35010-04080-84 | Toyota (Genuine Remanufactured) | Tacoma 2013-2015 4.0L V6 | $3,885.12 + $1,000 core | $4,640.89 | Toyota catalog (epc-images.toyota.com) | live |
 | 4493 | Steering | 44310-0C080 power steering pump | Toyota | Tundra 2007-2009 | $381.13 | $362.09 | Toyota catalog | live |
+| 4494 | Steering | 44250-08080 EPS rack and pinion | Toyota | Sienna 2021-2025 | $650.19 | $617.69 | Toyota catalog | live |
+| 5101 | Turbocharger | VTT-B58-GC-2 (GC, 2-port) | Vargas Turbo Technologies (aftermarket) | 2020 GR Supra 3.0 | $1,858.99 (no core) | $1,766.04 | VTT studio photo on UroTuning's listing | live |
 | 5001-5020 | Tires | 20 Nitto tires (codes in the tire table below) | Nitto | factory sizes of the 2027 4Runner, Tacoma, Tundra, Sequoia and Land Cruiser | 3+ US retailer prices each | $223.25-$386.92 per tire | nittotire.com product photo per line | live |
 
 ## Research log
@@ -201,3 +203,45 @@ No new permissions were obtained this round. None can be obtained without the ow
   permission.
 - This report.
 - No catalog or code changes, so no new deployment.
+
+## Round 5 (2026-11-23): first aftermarket turbo, Sienna rack
+
+### Counts toward the 120 (after this round)
+| Category | Target | Existing before brief | New under brief (live) | Image pending | Research |
+|---|---|---|---|---|---|
+| Turbochargers | 20 | 2 (4445, 4488) | **1 (5101)** | 2 (Pure800 / Pure900 NEW) | 6 lines |
+| Engines | 20 | 0 | 0 | 0 | 7 ATK engines |
+| Transmissions | 20 | 3 (4489-4491) | 1 (4492) | 0 | 1 |
+| Steering | 20 | 6 (4422, 4425-4427, 4430, 4471) | **2 (4493, 4494)** | 0 | 6 rack lines |
+| Seats | 20 | 0 | 0 | 0 | 0 |
+| Tires | 20 | 0 | 20 (5001-5020) | 0 | 0 |
+| **Total** | 120 | **11** | **24** | 2 | |
+
+Live total toward the 120: **35** (11 existing + 24 new).
+
+### Imported
+- **5101, Vargas Turbo Technologies VTT B58 GC (VTT-B58-GC-2), 2020 GR Supra 3.0, 2-port manifold: $1,766.04.**
+  - New-casting aftermarket unit, sold with no core, priced 5% under Turner / ECS at $1,858.99. UroTuning is $1,859.99 and
+    Fitment Industries $1,976.24.
+  - The listing quotes VTT's own words: "GC is cold side, and bearing housing only, GC+ is a complete unit". It is not
+    called complete.
+  - The 2021+ 6-port Supra uses VTT-B58-GC-3, and the listing says so.
+  - Photo: VTT's studio photo of the unit, from UroTuning's listing. The only lettering is VTT's cast logo and the engraved
+    "GC-2" tag. Recorded as manufacturer catalogue photography, RIGHTS NOT INDEPENDENTLY VERIFIED.
+  - New loader `lib/inventory/high-value-toyota-products.ts` reads `high-value-toyota.json`, written by
+    `scripts/build-high-value-toyota.py`. It follows the tire precedent: one data file, one loader, no new catalog system.
+    Brands added: `vargas-turbo-technologies` and `pure-turbos`.
+- **4494, Genuine Toyota EPS rack and pinion 44250-08080, Sienna 2021-2025: $617.69** (batch 20).
+  - Priced 5% under ToyotaPartsDeal at $650.19, with five dealer prices from $671.97 to $813.77.
+  - Toyota's rack photo is used.
+
+### Round 5 Toyota photo sweep (5,846 numbers; in progress at the time of writing)
+Rack photos were found for 44250-0E160, 0E220, 0E260, 0E270, 0E360, 08080, 06340, 06550, 06560 and 0R240, and for
+45510-0E010 / 0E070. These were rejected:
+- the pallet, bag and label photos (06340 #2-3, 0E160 #1-2, 0E360 #1);
+- 44250-42140, whose photo is a text graphic.
+
+Held:
+- 06340 (Camry 2007-2011) and 0E260 (Highlander 2024-2025): two attributed sellers each.
+- The rest: no attributed US price found yet.
+

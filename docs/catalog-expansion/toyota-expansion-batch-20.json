@@ -1,0 +1,152 @@
+{
+  "_comment": "Toyota expansion batch 20 (2026-11-23): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-08080 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-08080",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2021–2025 Toyota Sienna (2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota electric power steering rack and pinion assembly 44250-08080 for the Toyota Sienna. Electric power steering (EPS) rack and pinion gear assembly; dealer listings note the inner tie rods and boots are included. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-08080\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2021–2025 Toyota Sienna (2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN)\nRestriction (2021-2025 Sienna): 2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1025.44,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 650.19,
+          "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-rack_and_pinion.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 650.19,
+            "url": "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-rack_and_pinion.html"
+          },
+          {
+            "seller": "Conicelli Toyota of Conshohocken",
+            "price": 671.97,
+            "url": "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080"
+          },
+          {
+            "seller": "Ourisman Toyota of Richmond",
+            "price": 675.06,
+            "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080"
+          },
+          {
+            "seller": "Modern Toyota",
+            "price": 684.3,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080"
+          },
+          {
+            "seller": "Capo Valley Toyota",
+            "price": 769.08,
+            "url": "https://parts.capovalleytoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 813.77,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 617.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2021,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "2.5L hybrid (all 2021-2025 Sienna); dealers note FWD / AWD and trim differences, so confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (44250-08080 Rack And Pinion Assembly 2021-2025 Toyota Sienna)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Ourisman Toyota of Richmond (44250-08080 for 2021-2025 Toyota Sienna)",
+                "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2021-2025 Toyota Sienna Rack And Pinion Assembly 44250-08080)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.capovalleytoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+        "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+        "https://parts.longotoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+        "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-4425008080",
+        "https://www.toyotapartsdeal.com/oem-2024-toyota-sienna-rack_and_pinion.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
