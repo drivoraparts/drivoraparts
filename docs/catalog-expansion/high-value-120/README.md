@@ -342,3 +342,10 @@ Batch 27 is live and verified.
   - 857D: two prices.
   - Powertrain Products transmissions: generic family photos.
 
+## Batch 29 (2026-11-23): Toyota steering racks
+Batch 28 is live and verified.
+- **4498: 44250-04041 rack, Tacoma 2016-2023, $616.19.** Priced 5% under Toyota of Laredo at $648.56.
+- **4499: 44250-35042 rack, Tacoma 1995-2004 / 4Runner 1996-2002, $494.09.** Priced 5% under Ourisman at $520.00.
+- **Held:** 44250-0C131 (Tundra 2014-2021), 44250-04050 (Tacoma 2024) and 44250-35120 (4Runner 2025). None has a Toyota
+  photo, and each has one or two prices.
+
