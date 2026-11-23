@@ -20,7 +20,7 @@ These are the owner's standing instructions:
 | Turbochargers | 20 | 2 (17201-F4011, 17208-F4011) | 1 | 1 | 1 (5101) |
 | Engines & engine assemblies | 20 | 0 genuine | 0 | 0 | 0 |
 | Transmissions | 20 | 3 Toyota reman (4489-4491) + 1954 | 1 | 1 | 1 (4492) |
-| Steering | 20 | racks 4425-4427, 4430, 4471; knuckle 4422 | 2 | 2 | 2 (4493, 4494) |
+| Steering | 20 | racks 4425-4427, 4430, 4471; knuckle 4422 | 3 | 3 | 3 (4493-4495) |
 | Seats | 20 | 0 | 0 | 0 | 0 |
 | Tires | 20 | 0 visible | 20 | 20 | **20 (5001-5020)** |
 
@@ -31,6 +31,7 @@ These are the owner's standing instructions:
 | 4492 | Transmission | 35010-04080-84 | Toyota (Genuine Remanufactured) | Tacoma 2013-2015 4.0L V6 | $3,885.12 + $1,000 core | $4,640.89 | Toyota catalog (epc-images.toyota.com) | live |
 | 4493 | Steering | 44310-0C080 power steering pump | Toyota | Tundra 2007-2009 | $381.13 | $362.09 | Toyota catalog | live |
 | 4494 | Steering | 44250-08080 EPS rack and pinion | Toyota | Sienna 2021-2025 | $650.19 | $617.69 | Toyota catalog | live |
+| 4495 | Steering | 45250-08140 power tilt / telescopic column | Toyota | Sienna 2023-2025 | $1,901.58 | $1,806.59 | Toyota catalog (4 photos) | live |
 | 5101 | Turbocharger | VTT-B58-GC-2 (GC, 2-port) | Vargas Turbo Technologies (aftermarket) | 2020 GR Supra 3.0 | $1,858.99 (no core) | $1,766.04 | VTT studio photo on UroTuning's listing | live |
 | 5001-5020 | Tires | 20 Nitto tires (codes in the tire table below) | Nitto | factory sizes of the 2027 4Runner, Tacoma, Tundra, Sequoia and Land Cruiser | 3+ US retailer prices each | $223.25-$386.92 per tire | nittotire.com product photo per line | live |
 
@@ -244,4 +245,16 @@ Rack photos were found for 44250-0E160, 0E220, 0E260, 0E270, 0E360, 08080, 06340
 Held:
 - 06340 (Camry 2007-2011) and 0E260 (Highlander 2024-2025): two attributed sellers each.
 - The rest: no attributed US price found yet.
+
+### Batch 21 (2026-11-23, after #145)
+- **4495, Genuine Toyota power tilt and telescopic steering column 45250-08140, Sienna 2023-2025: $1,806.59.** Priced 5% under
+  Lakeland Toyota at $1,901.58. Olathe is $1,902.69, OEMPartsOnline $1,937.60 and American Toyota $1,972.52. It has four of
+  Toyota's own photos of this column. Steering wheel, airbag and switches are not included.
+- The storefront Steering section now also matches "steering column". No other listing has those words.
+- **Held:**
+  - 45250-08100 (Sienna manual tilt) and 45250-0E180 (Highlander): Toyota serves the same image file for both part numbers,
+    so the photo does not identify either part.
+  - 45510-02370 (Corolla 2019-2025): three prices, but only close-ups and a label. Now IMAGE PENDING.
+  - 45510-02170: one price, and superseded.
+- **Counts:** 25 new under the brief are live, 36 toward the 120 in total.
 
