@@ -12,9 +12,9 @@ prices, no duplicates.
 | Transmissions | 20 | 6 | 14 | 4489, 4490, 4491, 4492, 4496, 4497 |
 | Steering | 20 | 9 | 11 | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
 | Turbochargers | 20 | 7 | 13 | 4445, 4488, 5101, 5102, 5103, 5104, 5105 |
-| Engines | 20 | 4 (+3 in batch 26) | 16 (13 after batch 26) | 5106-5109 (+5110-5112 pending live check) |
+| Engines | 20 | 7 (+5 in batch 27) | 13 (8 after batch 27) | 5106-5112 (+5113-5117 pending live check) |
 | Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **46** (49 after batch 26) | **74** (71) | |
+| **Total** | 120 | **49** (54 after batch 27) | **71** (66) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -28,7 +28,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 23 | #151 | 5102 GReddy 11510033, 5103 GReddy 11510030 (Supra JZA80 turbo kits) | done |
 | 24 | #152 | 5104 HKS GR86 GTIII-RS kit; 5105 Forced Performance B58 super core | done |
 | 25 | #153 | ATK remanufactured engines 858B, 858, 858A, 865A (5106-5109) | done |
-| 26 | (this PR) | ATK engines 853A, 869B, 847E (5110-5112) | pending |
+| 26 | #154 | ATK engines 853A, 869B, 847E (5110-5112) | done |
+| 27 | (this PR) | ATK engines 853, 848, 857, 833, 851 (5113-5117) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.

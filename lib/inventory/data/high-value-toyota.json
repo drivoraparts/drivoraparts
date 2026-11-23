@@ -486,5 +486,246 @@
     "description": "ATK Remanufactured 3.0L 1MZ-FE V6 Long Block Engine 847E for 2001–2003 Toyota Highlander AWD\n\nRemanufactured Toyota 1MZ-FE 3.0L V6 long block, ATK part number 847E. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 847E\nEngine code: 1MZ-FE\nDisplacement: 3.0L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 847E)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2001–2003 Toyota Highlander AWD with the 3.0L 1MZ-FE engine; confirm by VIN.\n\nNotes\n\nAWD Highlander version of the 1MZ-FE; front-wheel-drive models use other ATK numbers.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "atk-engines-847e",
     "createdAt": 1795200005112
+  },
+  {
+    "id": 5113,
+    "name": "ATK Remanufactured 4.7L 2UZ-FE V8 Long Block Engine 853 for 1998–2004 Toyota Land Cruiser / Tundra / Sequoia / 4Runner (non-VVT-i)",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4701.55,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "853",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1998–2004 Toyota Land Cruiser / Tundra / Sequoia / 4Runner (non-VVT-i) with the 4.7L 2UZ-FE engine; confirm by VIN",
+    "fitmentYears": "1998–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1998,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Land Cruiser",
+        "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+      },
+      {
+        "yearFrom": 2000,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+      },
+      {
+        "yearFrom": 2001,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Sequoia",
+        "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+      },
+      {
+        "yearFrom": 2003,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-853/1.webp",
+    "image": "/product-media/engine/atk-853/1.webp",
+    "images": [
+      "/product-media/engine/atk-853/1.webp",
+      "/product-media/engine/atk-853/2.webp",
+      "/product-media/engine/atk-853/3.webp",
+      "/product-media/engine/atk-853/4.webp",
+      "/product-media/engine/atk-853/5.webp",
+      "/product-media/engine/atk-853/6.webp"
+    ],
+    "description": "ATK Remanufactured 4.7L 2UZ-FE V8 Long Block Engine 853 for 1998–2004 Toyota Land Cruiser / Tundra / Sequoia / 4Runner (non-VVT-i)\n\nRemanufactured Toyota 2UZ-FE 4.7L V8 long block, ATK part number 853. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 853\nEngine code: 2UZ-FE\nDisplacement: 4.7L\nConfiguration: V8\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 853)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1998–2004 Toyota Land Cruiser / Tundra / Sequoia / 4Runner (non-VVT-i) with the 4.7L 2UZ-FE engine; confirm by VIN.\n\nNotes\n\nNon-VVT-i 2UZ-FE built 1/1998 to 11/2004, per the listing; 2005-on VVT-i engines use ATK 853A. Use of TRD supercharger equipment voids the remanufacturer's warranty.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-853",
+    "createdAt": 1795200005113
+  },
+  {
+    "id": 5114,
+    "name": "ATK Remanufactured 3.4L 5VZ-FE V6 Long Block Engine 848 for 1995–2004 Toyota Tacoma / 4Runner / T100 / Tundra",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4272.14,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "848",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1995–2004 Toyota Tacoma / 4Runner / T100 / Tundra with the 3.4L 5VZ-FE engine; confirm by VIN",
+    "fitmentYears": "1995–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1995,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "3.4L 5VZ-FE V6"
+      },
+      {
+        "yearFrom": 1996,
+        "yearTo": 2002,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "3.4L 5VZ-FE V6"
+      },
+      {
+        "yearFrom": 1995,
+        "yearTo": 1998,
+        "make": "Toyota",
+        "model": "T100",
+        "submodel": "3.4L 5VZ-FE V6"
+      },
+      {
+        "yearFrom": 2000,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "3.4L 5VZ-FE V6"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-848/1.webp",
+    "image": "/product-media/engine/atk-848/1.webp",
+    "images": [
+      "/product-media/engine/atk-848/1.webp",
+      "/product-media/engine/atk-848/2.webp",
+      "/product-media/engine/atk-848/3.webp",
+      "/product-media/engine/atk-848/4.webp",
+      "/product-media/engine/atk-848/5.webp",
+      "/product-media/engine/atk-848/6.webp"
+    ],
+    "description": "ATK Remanufactured 3.4L 5VZ-FE V6 Long Block Engine 848 for 1995–2004 Toyota Tacoma / 4Runner / T100 / Tundra\n\nRemanufactured Toyota 5VZ-FE 3.4L V6 long block, ATK part number 848. The price includes the $470 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 848\nEngine code: 5VZ-FE\nDisplacement: 3.4L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $470, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 848)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1995–2004 Toyota Tacoma / 4Runner / T100 / Tundra with the 3.4L 5VZ-FE engine; confirm by VIN.\n\nNotes\n\nUse of TRD supercharger equipment voids the remanufacturer's warranty, per the listing.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-848",
+    "createdAt": 1795200005114
+  },
+  {
+    "id": 5115,
+    "name": "ATK Remanufactured 2.4L 2AZ-FE inline-4 Long Block Engine 857 for 2001–2007 Toyota Highlander / Camry",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4388.99,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "857",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2001–2007 Toyota Highlander / Camry with the 2.4L 2AZ-FE engine; confirm by VIN",
+    "fitmentYears": "2001–2007",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2001,
+        "yearTo": 2007,
+        "make": "Toyota",
+        "model": "Highlander",
+        "submodel": "2.4L 2AZ-FE inline-4"
+      },
+      {
+        "yearFrom": 2002,
+        "yearTo": 2006,
+        "make": "Toyota",
+        "model": "Camry",
+        "submodel": "2.4L 2AZ-FE inline-4"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-857/1.webp",
+    "image": "/product-media/engine/atk-857/1.webp",
+    "images": [
+      "/product-media/engine/atk-857/1.webp",
+      "/product-media/engine/atk-857/2.webp",
+      "/product-media/engine/atk-857/3.webp",
+      "/product-media/engine/atk-857/4.webp",
+      "/product-media/engine/atk-857/5.webp",
+      "/product-media/engine/atk-857/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.4L 2AZ-FE inline-4 Long Block Engine 857 for 2001–2007 Toyota Highlander / Camry\n\nRemanufactured Toyota 2AZ-FE 2.4L inline-4 long block, ATK part number 857. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 857\nEngine code: 2AZ-FE\nDisplacement: 2.4L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 857)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2001–2007 Toyota Highlander / Camry with the 2.4L 2AZ-FE engine; confirm by VIN.\n\nNotes\n\n2007-on Camry and other 2AZ-FE applications use other ATK numbers (857A-857F).\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-857",
+    "createdAt": 1795200005115
+  },
+  {
+    "id": 5116,
+    "name": "ATK Remanufactured 3.0L 3VZ-E V6 Long Block Engine 833 for 1988–1989 Toyota 4Runner / Pickup",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 3906.61,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "833",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1988–1989 Toyota 4Runner / Pickup with the 3.0L 3VZ-E engine; confirm by VIN",
+    "fitmentYears": "1988–1989",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1988,
+        "yearTo": 1989,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "3.0L 3VZ-E V6"
+      },
+      {
+        "yearFrom": 1988,
+        "yearTo": 1989,
+        "make": "Toyota",
+        "model": "Pickup",
+        "submodel": "3.0L 3VZ-E V6"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-833/1.webp",
+    "image": "/product-media/engine/atk-833/1.webp",
+    "images": [
+      "/product-media/engine/atk-833/1.webp",
+      "/product-media/engine/atk-833/2.webp",
+      "/product-media/engine/atk-833/3.webp",
+      "/product-media/engine/atk-833/4.webp",
+      "/product-media/engine/atk-833/5.webp",
+      "/product-media/engine/atk-833/6.webp"
+    ],
+    "description": "ATK Remanufactured 3.0L 3VZ-E V6 Long Block Engine 833 for 1988–1989 Toyota 4Runner / Pickup\n\nRemanufactured Toyota 3VZ-E 3.0L V6 long block, ATK part number 833. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 833\nEngine code: 3VZ-E\nDisplacement: 3.0L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 833)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1988–1989 Toyota 4Runner / Pickup with the 3.0L 3VZ-E engine; confirm by VIN.\n\nNotes\n\n1988-1989 engine; 1990-1995 3VZ-E engines use ATK 833A / 833C.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-833",
+    "createdAt": 1795200005116
+  },
+  {
+    "id": 5117,
+    "name": "ATK Remanufactured 2.4L 2RZ-FE inline-4 Long Block Engine 851 for 1995–1997 Toyota Tacoma",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 3511.91,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "851",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1995–1997 Toyota Tacoma with the 2.4L 2RZ-FE engine; confirm by VIN",
+    "fitmentYears": "1995–1997",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1995,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "2.4L 2RZ-FE inline-4"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-851/1.webp",
+    "image": "/product-media/engine/atk-851/1.webp",
+    "images": [
+      "/product-media/engine/atk-851/1.webp",
+      "/product-media/engine/atk-851/2.webp",
+      "/product-media/engine/atk-851/3.webp",
+      "/product-media/engine/atk-851/4.webp",
+      "/product-media/engine/atk-851/5.webp",
+      "/product-media/engine/atk-851/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.4L 2RZ-FE inline-4 Long Block Engine 851 for 1995–1997 Toyota Tacoma\n\nRemanufactured Toyota 2RZ-FE 2.4L inline-4 long block, ATK part number 851. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 851\nEngine code: 2RZ-FE\nDisplacement: 2.4L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 851)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1995–1997 Toyota Tacoma with the 2.4L 2RZ-FE engine; confirm by VIN.\n\nNotes\n\nBuilt 1/1995 to 6/1997, per the listing; later 2RZ-FE engines use ATK 851A / 851D.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-851",
+    "createdAt": 1795200005117
   }
 ]
