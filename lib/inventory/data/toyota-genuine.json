@@ -933,6 +933,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo; https://autoparts.toyota.com/products/product/gear-assembly-electric-power-steering-442500c200); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4507,
+      "partNumber": "44250-0E220",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo; https://autoparts.toyota.com/products/product/gear-assy-electric-power-steering-442500e220); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4503,
       "partNumber": "44250-0E260",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
@@ -1239,6 +1246,13 @@
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
       "verifiedOn": "2026-11-19",
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
+      "id": 4508,
+      "partNumber": "71200-35A81-B0",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo; https://autoparts.toyota.com/products/product/seat-assy-fr-lh-7120035a81b0); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
       "id": 4455,

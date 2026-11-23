@@ -44,7 +44,7 @@ GENUINE = os.path.join(ROOT, "lib/inventory/data/toyota-genuine.json")
 # labelled a parcel; only whole assemblies that need a pallet are freight.
 PARCEL_NOTE = "Ships as a single parcel."
 FREIGHT_NOTE = "Ships as palletized freight (oversized assembly)."
-FREIGHT_KINDS = {"engine_assembly", "transmission_assembly", "hood", "bumper_cover", "bumper_reinf"}
+FREIGHT_KINDS = {"engine_assembly", "transmission_assembly", "hood", "bumper_cover", "bumper_reinf", "seat"}
 
 # Storefront category slugs (lib/inventory/categories.ts); a listing in any
 # other category would be missing from every category page.
@@ -96,6 +96,9 @@ IMAGES = {
     "45250-0C300": ["452500C300_3.webp"],
     "45250-06410": ["imgpn_45250-06410_1.webp"],
     "45510-0T011": ["455100T011_1.webp"],
+    # Batch 36.
+    "44250-0E220": ["442500E220_1.webp"],
+    "71200-35A81-B0": ["imgpn_71200-35A81-B0_1.webp"],
     "44310-0C090": ["imgpn_44310-0C090_2.webp", "imgpn_44310-0C090_1.webp", "imgpn_44310-0C090_3.webp"],
     "44310-0C080": ["imgpn_44310-0C080_3.webp", "imgpn_44310-0C080_1.webp", "imgpn_44310-0C080_2.webp"],
     "35010-60E00-84": ["imgpn_35010-60E00-84_1.webp", "imgpn_35010-60E00-84_3.webp", "imgpn_35010-60E00-84_2.webp"],

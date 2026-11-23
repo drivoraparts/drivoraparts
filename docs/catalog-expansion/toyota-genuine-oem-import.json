@@ -1218,6 +1218,18 @@
       "partNumber": "45510-0T011",
       "name": "Genuine Toyota Steering Rack and Pinion Assembly 45510-0T011 for Toyota Venza (2009–2015)",
       "price": 501.69
+    },
+    {
+      "id": 4507,
+      "partNumber": "44250-0E220",
+      "name": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-0E220 for Toyota Grand Highlander (2024–2025)",
+      "price": 824.49
+    },
+    {
+      "id": 4508,
+      "partNumber": "71200-35A81-B0",
+      "name": "Genuine Toyota Front Driver Seat Assembly (Stone) 71200-35A81-B0 for Toyota 4Runner (2003–2005)",
+      "price": 2232.89
     }
   ],
   "excluded": [

@@ -400,3 +400,14 @@ Batch 34 is live and verified.
   - 44250-0C180: its photos show two different rack designs.
   - 45250-07180: its photo is the same file as 45250-08100's.
   - Pure Turbos 650, 800 and 900 (NEW): complete new turbos, but every photo on Pure's own store carries the Pure logo.
+
+## Batch 36 (2026-11-23): Grand Highlander rack and the first genuine seat
+Batch 35 is live and verified (4502-4506).
+- **4507 44250-0E220:** electric rack for 2024-2025 Grand Highlander, $824.49. Priced 5% under Conicelli Toyota at $867.79.
+- **4508 71200-35A81-B0:** genuine Toyota front driver seat for 2003-2005 4Runner SR5, Stone (trim code 12), with side and curtain
+  airbags. $2,232.89, priced 5% under ToyotaPartsDeal at $2,350.40 (ToyotaPartsNow $2,394.70; JoeTLC $3,860.49).
+  - Configuration comes from ToyotaPartsDeal's 2004 4Runner seat parts list, whose rows give the airbag option, colour and trim code.
+  - The photo is Toyota's catalog photo of this part number.
+  - It ships as freight. The new `seat` part kind maps to Interior and is in `FREIGHT_KINDS`.
+- **Seat photo source:** Toyota's photo host (`/img/<PN no dashes>/<PN>_n.webp`) has a real photo for about 1-2% of seat numbers.
+  For every other number it returns an HTML page with status 200, so a probe must check the file type.
