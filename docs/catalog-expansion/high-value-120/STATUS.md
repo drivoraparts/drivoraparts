@@ -11,10 +11,10 @@ prices, no duplicates.
 | Tires | 20 | 20 | 0 | 5001-5020 |
 | Transmissions | 20 | 6 | 14 | 4489, 4490, 4491, 4492, 4496, 4497 |
 | Steering | 20 | 9 | 11 | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
-| Turbochargers | 20 | 5 (+2 in batch 24) | 15 (13 after batch 24) | 4445, 4488, 5101, 5102, 5103 (+5104, 5105 pending live check) |
+| Turbochargers | 20 | 7 | 13 | 4445, 4488, 5101, 5102, 5103, 5104, 5105 |
 | Engines | 20 | 0 | 20 | none |
 | Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **40** (42 after batch 24) | **80** (78) | |
+| **Total** | 120 | **42** | **78** | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -26,7 +26,7 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 21 | #146 | 4495 Sienna power column | done |
 | 22 | #147 | 4496 RAV4 and 4497 Highlander reman transaxles | done |
 | 23 | #151 | 5102 GReddy 11510033, 5103 GReddy 11510030 (Supra JZA80 turbo kits) | done |
-| 24 | (this PR) | 5104 HKS GR86 GTIII-RS kit; 5105 Forced Performance B58 super core | pending |
+| 24 | #152 | 5104 HKS GR86 GTIII-RS kit; 5105 Forced Performance B58 super core | done |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
@@ -56,3 +56,20 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 4. Transmissions: find 2 more named prices for 30510-48120-84 and 30510-48011-84, and photos for 30510-48260-84 / 48250-84 /
    48601-84 / 48720-84.
 5. Steering: new photo sweeps of 44250 / 45510 / 45250 for 2014+ Highlander, RAV4, Camry and Tacoma, with prices.
+
+## Round log (2026-11-23, after batch 24)
+- **Turbos.** LIMIT+1's turbo range is used up. The ARTEC Sport 400 is IMAGE PENDING because every photo carries a logo overlay.
+  - **AMS Alpha 6 / Alpha 8 (GR Supra 2020):** REJECTED. AMS sells them only for race-only vehicles, after the buyer
+    completes an AMS race waiver form, which a reseller cannot reproduce.
+  - **Not yet checked:** ETS 1993-1998 Supra kit (Induction Performance $4,795-$7,545); Precision 6266 2JZ kits (Titan
+    $4,999, FTSpeed $5,008); SupraStore ProSeries.
+- **Engines.**
+  - **ATK 858B (4.0 1GR-FE, Tacoma/Tundra 2006-2015):** two ATK prices + $545 core (JEGS $5,891.99, AutoZone $6,102.99).
+    The VEGE (Summit $5,935.99) and Power Torque (O'Reilly $6,225.99) versions are other brands. No photo source:
+    atkengines.com does not respond.
+  - **Powertrain Products** (powertrainproducts.net, now on the allowlist): its own photos and prices, for example
+    1GR-FE 40759 at $6,049. RESEARCH: vehicle fitment is on a script-loaded tab, the core terms and contents are not
+    stated, and it is the only seller.
+  - **Other remanufacturer prices for 1GR-FE:** JDM Engine Zone $4,199, AAA Engine $3,950, Advance Auto (long block)
+    $5,811.99.
+- **Seats:** no qualifying candidate yet.
