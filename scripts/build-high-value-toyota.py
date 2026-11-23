@@ -320,6 +320,81 @@ PRODUCTS = [
     },
 ]
 
+PTP = "https://www.powertrainproducts.net/product/"
+
+
+def atk_engine(pid, atk, code, disp, layout, years, apps, fit_text, comps, ptp_slug, photos, core=545.0, notes=()):
+    """ATK North America remanufactured long block, priced with the core included (owner decision A)."""
+    return {
+        "id": pid, "category": "engine", "brand": "atk-engines", "maker": "ATK North America", "partNumber": atk,
+        "aliases": [f"ATK {atk}"], "condition": "remanufactured", "core": core,
+        "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+        "name": f"ATK Remanufactured {disp} {code} {layout} Long Block Engine {atk} for {years} Toyota {fit_text}",
+        "summary": (f"Remanufactured Toyota {code} {disp} {layout} long block, ATK part number {atk}. The price includes the "
+                    f"${core:,.0f} core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota "
+                    "Genuine part."),
+        "specs": [
+            ("Remanufacturer", "ATK North America"), ("ATK part number", atk), ("Engine code", code),
+            ("Displacement", disp), ("Configuration", layout), ("Type", "remanufactured long block"),
+            ("Remanufacturing (per the seller's listing)", "fully disassembled and cleaned, Magnaflux inspected, decks machined; "
+             "new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with "
+             "tensioners; sim tested for compression and oil pressure"),
+            ("Core charge", f"${core:,.0f}, included in our price"), ("Condition", "Remanufactured"),
+        ],
+        "includesNote": "What is included",
+        "includes": ["1 remanufactured long block engine (ATK " + atk + ")",
+                     "Not included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine"],
+        "notes": list(notes) + ["Confirm the engine code, VIN and casting numbers against the listing before ordering."],
+        "fitText": f"{years} Toyota {fit_text} with the {disp} {code} engine; confirm by VIN",
+        "fitmentApplications": apps,
+        "fitmentSources": [f"{c[0]}: {c[2]}" for c in comps],
+        "competitors": comps,
+        "photos": [{"file": f, "url": u, "landingPage": PTP + ptp_slug, "sourceName": "powertrainproducts.net",
+                    "creator": "Powertrain Products (retailer listing of this ATK engine)", "creatorUrl": "https://www.powertrainproducts.net/",
+                    "note": note} for f, u, note in photos],
+        "mediaDir": f"engine/atk-{atk.lower()}",
+        "photoBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK " + atk + ")",
+    }
+
+
+A = lambda y0, y1, model: {"yearFrom": y0, "yearTo": y1, "make": "Toyota", "model": model}
+ENGINES = [
+    atk_engine(5106, "858B", "1GR-FE", "4.0L", "V6", "2006\u20132015",
+               [dict(A(2006, 2010, "Tacoma"), submodel="4.0L 1GR-FE V6"), dict(A(2012, 2015, "Tacoma"), submodel="4.0L 1GR-FE V6"),
+                dict(A(2006, 2010, "Tundra"), submodel="4.0L 1GR-FE V6"), dict(A(2012, 2015, "Tundra"), submodel="4.0L 1GR-FE V6")],
+               "Tacoma / Tundra (2006\u20132010 and 2012\u20132015)",
+               [("JEGS", 5891.99, "https://www.jegs.com/i/ATK-Engines/059/858B/10002/-1"),
+                ("Powertrain Company", 6065.84, "https://powertraincompany.com/product/4-0l-1grfe-remanufactured-engine-858b-toyota-tacoma-tundra-2006-2015/"),
+                ("AutoZone (ATK 858B, SKU 879734)", 6102.99, "https://www.autozone.com/powertrain/engine/toyota/tundra")],
+               "11-6-2015-1grfe/", [("../ptpimg/858b_0.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-42314-4.jpg", "studio photo of the remanufactured 858B 1GR-FE long block"), ("../ptpimg/858b_1.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-42314-5.jpg", "studio photo of the remanufactured 858B 1GR-FE long block"), ("../ptpimg/858b_2.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-42314-3.jpg", "studio photo of the remanufactured 858B 1GR-FE long block"), ("../ptpimg/858b_3.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-42314-2.jpg", "studio photo of the remanufactured 858B 1GR-FE long block"), ("../ptpimg/858b_4.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-42314-1.jpg", "studio photo of the remanufactured 858B 1GR-FE long block"), ("../ptpimg/858b_5.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-42314.jpg", "studio photo of the remanufactured 858B 1GR-FE long block")],
+               notes=["Intake VVT with AIR (secondary air injection) version, per the listing."]),
+    atk_engine(5107, "858", "1GR-FE", "4.0L", "V6", "2005\u20132011",
+               [dict(A(2005, 2011, m), submodel="4.0L 1GR-FE V6") for m in ("4Runner", "Tacoma", "Tundra")]
+               + [dict(A(2007, 2011, "FJ Cruiser"), submodel="4.0L 1GR-FE V6")],
+               "4Runner / FJ Cruiser / Tacoma / Tundra",
+               [("AutoZone (ATK 858)", 5918.99, "https://www.autozone.com/powertrain/engine/toyota/tundra"),
+                ("Powertrain Products", 6049.00, "https://www.powertrainproducts.net/product/8-4-2011-1grfe/", None),
+                ("Powertrain Company", 6246.40, "https://powertraincompany.com/product/4-0l-1gr-fe-remanufactured-engine-858-toyota-2005-2011/")],
+               "8-4-2011-1grfe/", [("../ptpimg/858_0.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-40759-4.jpg", "studio photo of the remanufactured 858 1GR-FE long block"), ("../ptpimg/858_1.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-40759-5.jpg", "studio photo of the remanufactured 858 1GR-FE long block"), ("../ptpimg/858_2.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-40759-2.jpg", "studio photo of the remanufactured 858 1GR-FE long block"), ("../ptpimg/858_3.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-40759-3.jpg", "studio photo of the remanufactured 858 1GR-FE long block"), ("../ptpimg/858_4.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-40759.jpg", "studio photo of the remanufactured 858 1GR-FE long block"), ("../ptpimg/858_5.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-40759-1.jpg", "studio photo of the remanufactured 858 1GR-FE long block")],
+               notes=["Use of TRD supercharger equipment voids the remanufacturer's warranty, per the listing."]),
+    atk_engine(5108, "858A", "1GR-FE", "4.0L", "V6", "2003\u20132004",
+               [dict(A(2003, 2004, "4Runner"), submodel="4.0L 1GR-FE V6")],
+               "4Runner",
+               [("JEGS", 5002.99, "https://www.jegs.com/i/ATK-Engines/059/858A/10002/-1"),
+                ("Powertrain Products", 5399.00, "https://www.powertrainproducts.net/product/11-02-8-04-1grfe/", None),
+                ("Powertrain Company", 5474.65, "https://powertraincompany.com/product/4-0l-1gr-fe-remanufactured-engine-858a-toyota-4runner-2003-2004/")],
+               "11-02-8-04-1grfe/", [("../ptpimg/858a_0.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-1102-804-4.jpg", "studio photo of the remanufactured 858A 1GR-FE long block"), ("../ptpimg/858a_1.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-1102-804-5.jpg", "studio photo of the remanufactured 858A 1GR-FE long block"), ("../ptpimg/858a_2.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-1102-804-3.jpg", "studio photo of the remanufactured 858A 1GR-FE long block"), ("../ptpimg/858a_3.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-1102-804-2.jpg", "studio photo of the remanufactured 858A 1GR-FE long block"), ("../ptpimg/858a_4.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-1102-804-1.jpg", "studio photo of the remanufactured 858A 1GR-FE long block"), ("../ptpimg/858a_5.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-1grfe-4.0l-v6-remanufactured-engine-1102-804.jpg", "studio photo of the remanufactured 858A 1GR-FE long block")],
+               notes=["Use of TRD supercharger equipment voids the remanufacturer's warranty, per the listing."]),
+    atk_engine(5109, "865A", "3UR-FE", "5.7L", "V8", "2012\u20132015",
+               [dict(A(2012, 2015, m), submodel="5.7L 3UR-FE i-Force V8") for m in ("Tundra", "Sequoia")],
+               "Tundra / Sequoia",
+               [("JEGS", 7912.99, "https://www.jegs.com/i/ATK-Engines/059/865A/10002/-1"),
+                ("AutoZone (ATK 865A)", 8225.99, "https://www.autozone.com/powertrain/engine/toyota/tundra"),
+                ("Powertrain Company", 8561.65, "https://powertraincompany.com/product/toyota-3urfe-3urfbe-engine-2007-2018/")],
+               "2012-2017-3urfe-fbe-i-force/", [("../ptpimg/865a_0.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/engine-front-timing-1.jpg", "photo of the remanufactured 865A 3UR-FE long block in its shipping crate"), ("../ptpimg/865a_2.jpg", "https://www.powertrainproducts.net/wp-content/uploads/2022/03/engine-valley-1.jpg", "photo of the remanufactured 865A 3UR-FE long block in its shipping crate")],
+               notes=["Years are where the sellers' listings overlap (JEGS 2011-2015 Tundra; Powertrain Products 2012-2017 Tundra / Sequoia). Head covers with extra boss included, per the listing."]),
+]
+
 
 def media(p):
     out = []
@@ -335,11 +410,23 @@ def media(p):
 records, evidence = [], []
 prov_path = os.path.join(ROOT, "lib/inventory/data/image-provenance.json")
 prov = json.load(open(prov_path))
-for p in PRODUCTS:
-    comps = p["competitors"]
+for p in PRODUCTS + ENGINES:
+    core = p.get("core") or 0
+    if core:
+        # Owner decision "A" (2026-11-23): remanufactured units are priced with the core included, and every
+        # competitor price is compared with the same core added.
+        comps = []
+        for c in p["competitors"]:
+            n, v, u = c[:3]
+            if len(c) > 3 and c[3] is None:  # core amount not published by this seller: shown, not used for the lowest price
+                comps.append((f"{n} (${v:,.2f} + core charge set on the seller's invoice; not used for our price)", None, u))
+            else:
+                comps.append((f"{n} (${v:,.2f} + ${core:,.0f} core)", round(v + core, 2), u))
+    else:
+        comps = p["competitors"]
     if len(comps) < 3:
         sys.exit(f"{p['partNumber']}: needs three prices")
-    low = min(x[1] for x in comps)
+    low = min(x[1] for x in comps if x[1] is not None)
     price = math.floor(low * 95) / 100
     if price < 200:
         sys.exit(f"{p['partNumber']}: ${price} is below the $200 minimum")
@@ -356,8 +443,8 @@ for p in PRODUCTS:
     rels = [r for r, _, _ in shots]
     records.append({
         "id": p["id"], "name": p["name"], "category": p["category"], "brand": p["brand"], "price": price,
-        "competitorPriced": True, "referencePriceVerified": True, "stock": True, "condition": "brand-new",
-        "partNumber": p["partNumber"], "freightNotes": "Ships as a single parcel.",
+        "competitorPriced": True, "referencePriceVerified": True, "stock": True, "condition": p.get("condition", "brand-new"),
+        "partNumber": p["partNumber"], "freightNotes": p.get("freightNotes", "Ships as a single parcel."),
         "fitment": p["fitText"],
         "fitmentYears": f"{years[0]}" if years[0] == years[-1] else f"{years[0]}–{years[-1]}",
         "fitmentApplications": p["fitmentApplications"],
@@ -371,7 +458,7 @@ for p in PRODUCTS:
         "fitmentApplications": p["fitmentApplications"], "fitmentSources": p["fitmentSources"],
         "fitmentCaveat": p.get("fitmentCaveat"),
         "competitors": [{"name": n, "price": v, "url": u} for n, v, u in comps],
-        "lowest": low, "price": price, "core": "none (sold outright, per the manufacturer)", "checked": CHECKED,
+        "lowest": low, "price": price, "core": (f"${core:,.0f}, included in our price" if core else "none (sold outright, per the manufacturer)"), "checked": CHECKED,
     })
     for i, (rel, dest, ph) in enumerate(shots, 1):
         prov[f"product-{p['id']}-hv-{i}"] = {

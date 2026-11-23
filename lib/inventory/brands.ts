@@ -33,6 +33,7 @@ export const brands: Brand[] = [
    */
   { slug: "mercedes-amg", name: "Mercedes-AMG", category: "engine" },
   { slug: "aeromotive", name: "Aeromotive", category: "engine" },
+  { slug: "atk-engines", name: "ATK Engines", category: "engine" },
   { slug: "holley", name: "Holley", category: "engine" },
   { slug: "garrett", name: "Garrett", category: "engine" },
   { slug: "borgwarner", name: "BorgWarner", category: "engine" },

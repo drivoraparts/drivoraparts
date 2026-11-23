@@ -228,6 +228,231 @@
       "price": 1299.14,
       "core": "none (sold outright, per the manufacturer)",
       "checked": "2026-11-23"
+    },
+    {
+      "id": 5106,
+      "partNumber": "858B",
+      "aliases": [
+        "ATK 858B"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2006,
+          "yearTo": 2010,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "4.0L 1GR-FE V6"
+        },
+        {
+          "yearFrom": 2012,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "4.0L 1GR-FE V6"
+        },
+        {
+          "yearFrom": 2006,
+          "yearTo": 2010,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.0L 1GR-FE V6"
+        },
+        {
+          "yearFrom": 2012,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.0L 1GR-FE V6"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/858B/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/4-0l-1grfe-remanufactured-engine-858b-toyota-tacoma-tundra-2006-2015/",
+        "AutoZone (ATK 858B, SKU 879734): https://www.autozone.com/powertrain/engine/toyota/tundra"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($5,891.99 + $545 core)",
+          "price": 6436.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/858B/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($6,065.84 + $545 core)",
+          "price": 6610.84,
+          "url": "https://powertraincompany.com/product/4-0l-1grfe-remanufactured-engine-858b-toyota-tacoma-tundra-2006-2015/"
+        },
+        {
+          "name": "AutoZone (ATK 858B, SKU 879734) ($6,102.99 + $545 core)",
+          "price": 6647.99,
+          "url": "https://www.autozone.com/powertrain/engine/toyota/tundra"
+        }
+      ],
+      "lowest": 6436.99,
+      "price": 6115.14,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5107,
+      "partNumber": "858",
+      "aliases": [
+        "ATK 858"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L 1GR-FE V6"
+        },
+        {
+          "yearFrom": 2005,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "4.0L 1GR-FE V6"
+        },
+        {
+          "yearFrom": 2005,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.0L 1GR-FE V6"
+        },
+        {
+          "yearFrom": 2007,
+          "yearTo": 2011,
+          "make": "Toyota",
+          "model": "FJ Cruiser",
+          "submodel": "4.0L 1GR-FE V6"
+        }
+      ],
+      "fitmentSources": [
+        "AutoZone (ATK 858): https://www.autozone.com/powertrain/engine/toyota/tundra",
+        "Powertrain Products: https://www.powertrainproducts.net/product/8-4-2011-1grfe/",
+        "Powertrain Company: https://powertraincompany.com/product/4-0l-1gr-fe-remanufactured-engine-858-toyota-2005-2011/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "AutoZone (ATK 858) ($5,918.99 + $545 core)",
+          "price": 6463.99,
+          "url": "https://www.autozone.com/powertrain/engine/toyota/tundra"
+        },
+        {
+          "name": "Powertrain Products ($6,049.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/8-4-2011-1grfe/"
+        },
+        {
+          "name": "Powertrain Company ($6,246.40 + $545 core)",
+          "price": 6791.4,
+          "url": "https://powertraincompany.com/product/4-0l-1gr-fe-remanufactured-engine-858-toyota-2005-2011/"
+        }
+      ],
+      "lowest": 6463.99,
+      "price": 6140.79,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5108,
+      "partNumber": "858A",
+      "aliases": [
+        "ATK 858A"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2003,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L 1GR-FE V6"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/858A/10002/-1",
+        "Powertrain Products: https://www.powertrainproducts.net/product/11-02-8-04-1grfe/",
+        "Powertrain Company: https://powertraincompany.com/product/4-0l-1gr-fe-remanufactured-engine-858a-toyota-4runner-2003-2004/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($5,002.99 + $545 core)",
+          "price": 5547.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/858A/10002/-1"
+        },
+        {
+          "name": "Powertrain Products ($5,399.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/11-02-8-04-1grfe/"
+        },
+        {
+          "name": "Powertrain Company ($5,474.65 + $545 core)",
+          "price": 6019.65,
+          "url": "https://powertraincompany.com/product/4-0l-1gr-fe-remanufactured-engine-858a-toyota-4runner-2003-2004/"
+        }
+      ],
+      "lowest": 5547.99,
+      "price": 5270.59,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5109,
+      "partNumber": "865A",
+      "aliases": [
+        "ATK 865A"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2012,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "5.7L 3UR-FE i-Force V8"
+        },
+        {
+          "yearFrom": 2012,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "5.7L 3UR-FE i-Force V8"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/865A/10002/-1",
+        "AutoZone (ATK 865A): https://www.autozone.com/powertrain/engine/toyota/tundra",
+        "Powertrain Company: https://powertraincompany.com/product/toyota-3urfe-3urfbe-engine-2007-2018/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($7,912.99 + $545 core)",
+          "price": 8457.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/865A/10002/-1"
+        },
+        {
+          "name": "AutoZone (ATK 865A) ($8,225.99 + $545 core)",
+          "price": 8770.99,
+          "url": "https://www.autozone.com/powertrain/engine/toyota/tundra"
+        },
+        {
+          "name": "Powertrain Company ($8,561.65 + $545 core)",
+          "price": 9106.65,
+          "url": "https://powertraincompany.com/product/toyota-3urfe-3urfbe-engine-2007-2018/"
+        }
+      ],
+      "lowest": 8457.99,
+      "price": 8035.09,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
     }
   ]
 }
