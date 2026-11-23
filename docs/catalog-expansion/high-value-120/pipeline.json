@@ -1186,7 +1186,7 @@
     },
     {
       "category": "turbochargers",
-      "status": "PUBLISHED",
+      "status": "IMAGE PENDING",
       "manufacturer": "Vargas Turbo Technologies",
       "product": "VTT B58 GC turbocharger upgrade, 2-port (aftermarket; GC = cold side and bearing housing per VTT)",
       "partNumber": "VTT-B58-GC-2",
@@ -1196,8 +1196,8 @@
       "condition": "new casting",
       "proposedPrice": 1766.04,
       "imageSource": "urotuning.com/cdn/shop/products/1-1.jpg (manufacturer studio photo on a specialist retailer listing)",
-      "imagePermission": "manufacturer catalogue photography on retailer listing; RIGHTS NOT INDEPENDENTLY VERIFIED (existing catalog basis)",
-      "notes": "evidence: high-value-toyota-evidence.json; generator scripts/build-high-value-toyota.py",
+      "imagePermission": "NOT AUTHORIZED: UroTuning terms prohibit reproduction; no Vargas permission on record",
+      "notes": "evidence: high-value-toyota-evidence.json; generator scripts/build-high-value-toyota.py; held 2026-11-23 (lib/inventory/data/image-rights-holds.json), hidden from the storefront",
       "liveId": 5101
     },
     {
