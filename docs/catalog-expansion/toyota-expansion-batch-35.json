@@ -1,0 +1,688 @@
+{
+  "_comment": "Toyota expansion batch 35 (2026-11-23): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-0C200 — Tundra / Sequoia",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-0C200",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2022–2025 Toyota Tundra (electric power steering rack; not TRD Pro (sellers list TRD Pro under 44250-0C210); replaces 44250-0C180; confirm by VIN); 2023–2025 Toyota Sequoia (electric power steering rack; not TRD Pro; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "electric power steering rack; not TRD Pro (sellers list TRD Pro under 44250-0C210); replaces 44250-0C180; confirm by VIN"
+        },
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "electric power steering rack; not TRD Pro; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota electric power steering rack and pinion assembly 44250-0C200 for the Toyota Tundra, Sequoia. Electric power steering rack and pinion assembly (gear assembly, electric). Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-0C200\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2022–2025 Toyota Tundra (electric power steering rack; not TRD Pro (sellers list TRD Pro under 44250-0C210); replaces 44250-0C180; confirm by VIN); 2023–2025 Toyota Sequoia (electric power steering rack; not TRD Pro; confirm by VIN)\nRestriction (2022-2025 Tundra): electric power steering rack; not TRD Pro (sellers list TRD Pro under 44250-0C210); replaces 44250-0C180; confirm by VIN\nRestriction (2023-2025 Sequoia): electric power steering rack; not TRD Pro; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1397.87,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota",
+          "price": 905.64,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-442500c200"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota",
+            "price": 905.64,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-442500c200"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 936.19,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0c200.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 953.84,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0c200"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 860.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2022,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "electric power steering rack; not TRD Pro (sellers list TRD Pro under 44250-0C210); replaces 44250-0C180; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (44250-0C200: 2022-2025 Tundra 1794 Edition, Capstone, Limited, Platinum, SR, SR5; 3.4L)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0c200",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (44250-0C200 Rack And Pinion Assembly, 2022-2025, non-TRD Pro)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-442500c200",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Electric Power Steering Gear Assembly 44250-0C200)",
+                "url": "https://autoparts.toyota.com/products/product/gear-assembly-electric-power-steering-442500c200",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sequoia",
+            "engine": "",
+            "restriction": "electric power steering rack; not TRD Pro; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (44250-0C200: 2023-2025 Sequoia 1794 Edition, Capstone, Limited, Platinum, SR5; 3.4L hybrid)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0c200",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (44250-0C200 Rack And Pinion Assembly, 2022-2025, non-TRD Pro)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-442500c200",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/gear-assembly-electric-power-steering-442500c200",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-rack-and-pinion-assembly-442500c200",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0c200.html",
+        "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0c200"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-0E260 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-0E260",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2024–2025 Toyota Highlander (electric power steering rack; gas and hybrid; Grand Highlander is a different model; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "electric power steering rack; gas and hybrid; Grand Highlander is a different model; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota electric power steering rack and pinion assembly 44250-0E260 for the Toyota Highlander. Electric power steering rack and pinion assembly (gear assembly, electric). Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-0E260\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Highlander (electric power steering rack; gas and hybrid; Grand Highlander is a different model; confirm by VIN)\nRestriction (2024-2025 Highlander): electric power steering rack; gas and hybrid; Grand Highlander is a different model; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1399.7,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 937.42,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0e260.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 937.42,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0e260.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 955.09,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0e260"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 1110.77,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-assembly-442500e260"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 890.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "",
+            "restriction": "electric power steering rack; gas and hybrid; Grand Highlander is a different model; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (44250-0E260: 2024-2025 Highlander and Highlander Hybrid, 2.4L and 2.5L hybrid)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0e260",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (Rack Assembly 44250-0E260, 2024-2025 Toyota Highlander)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-rack-assembly-442500e260",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Electric Power Steering Gear Assembly 44250-0E260)",
+                "url": "https://autoparts.toyota.com/products/product/gear-assy-electric-power-steering-442500e260",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/gear-assy-electric-power-steering-442500e260",
+        "https://parts.longotoyota.com/oem-parts/toyota-rack-assembly-442500e260",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0e260.html",
+        "https://www.toyotapartsnow.com/oem/toyota~gear-assy-electric~44250-0e260"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Tilt Steering Column Assembly 45250-0C300 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "45250-0C300",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2018–2019 Toyota Tundra (trucks with a power tilt column; some sellers list other model years; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2018,
+          "yearTo": 2019,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "trucks with a power tilt column; some sellers list other model years; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power tilt steering column assembly 45250-0C300 for the Toyota Tundra. Power tilt steering column assembly. Steering wheel and airbag are not included.\n\nSpecifications\n\nPart number: 45250-0C300\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2018–2019 Toyota Tundra (trucks with a power tilt column; some sellers list other model years; confirm by VIN)\nRestriction (2018-2019 Tundra): trucks with a power tilt column; some sellers list other model years; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 2972.4,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 1930.05,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-452500c300"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 1930.05,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-452500c300"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 1990.71,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~column~assy~steerin~45250-0c300.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 2028.23,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~column-assembly-steering~45250-0c300"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1833.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2018,
+            "yearTo": 2019,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "trucks with a power tilt column; some sellers list other model years; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Steering Column 45250-0C300 for 2018-2019 Toyota Tundra, with power tilt)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-452500c300",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (45250-0C300: 2018-2019 Tundra 1794 Edition, Limited, Platinum, SR, SR5, TRD Pro)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~column-assembly-steering~45250-0c300",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Steering Column Assembly 45250-0C300)",
+                "url": "https://autoparts.toyota.com/products/product/column-assy-steerin-452500c300",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/column-assy-steerin-452500c300",
+        "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-452500c300",
+        "https://www.toyotapartsdeal.com/oem/toyota~column~assy~steerin~45250-0c300.html",
+        "https://www.toyotapartsnow.com/oem/toyota~column-assembly-steering~45250-0c300"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Steering Column Assembly 45250-06410 — Camry",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "45250-06410",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2002–2004 Toyota Camry (Camry sedan (not Camry Solara); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2002,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "Camry sedan (not Camry Solara); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota steering column assembly 45250-06410 for the Toyota Camry. Steering column assembly. Steering wheel and airbag are not included.\n\nSpecifications\n\nPart number: 45250-06410\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2002–2004 Toyota Camry (Camry sedan (not Camry Solara); confirm by VIN)\nRestriction (2002-2004 Camry): Camry sedan (not Camry Solara); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1365.6,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 894.77,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-4525006410"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 894.77,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-4525006410"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 914.47,
+            "url": "https://www.toyotapartsdeal.com/parts-list/2004-toyota-camry-nap/power_train_chassis/steering_column_shaft.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 931.82,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~column-assy-steering~45250-06410"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 850.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2002,
+            "yearTo": 2004,
+            "make": "Toyota",
+            "model": "Camry",
+            "engine": "",
+            "restriction": "Camry sedan (not Camry Solara); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (Steering Column 45250-06410 for 2002-2004 Toyota Camry)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-4525006410",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (45250-06410: 2002-2004 Camry LE, SE, XLE; 2.4L, 3.0L, 3.3L)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~column-assy-steering~45250-06410",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Steering Column Assembly 45250-06410)",
+                "url": "https://autoparts.toyota.com/products/product/column-assy-steering-4525006410",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/column-assy-steering-4525006410",
+        "https://parts.olathetoyota.com/oem-parts/toyota-steering-column-4525006410",
+        "https://www.toyotapartsdeal.com/parts-list/2004-toyota-camry-nap/power_train_chassis/steering_column_shaft.html",
+        "https://www.toyotapartsnow.com/oem/toyota~column-assy-steering~45250-06410"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Steering Rack and Pinion Assembly 45510-0T011 — Venza",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "45510-0T011",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2009–2015 Toyota Venza (2009-2015 Venza (the 2021-on Venza is a different vehicle); replaces 45510-0T010; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Venza",
+          "submodel": "2009-2015 Venza (the 2021-on Venza is a different vehicle); replaces 45510-0T010; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota steering rack and pinion assembly 45510-0T011 for the Toyota Venza. Steering rack and pinion (steering gear) assembly. Alignment required after installation.\n\nSpecifications\n\nPart number: 45510-0T011\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2009–2015 Toyota Venza (2009-2015 Venza (the 2021-on Venza is a different vehicle); replaces 45510-0T010; confirm by VIN)\nRestriction (2009-2015 Venza): 2009-2015 Venza (the 2021-on Venza is a different vehicle); replaces 45510-0T010; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 831.16,
+        "lowestCompetitor": {
+          "seller": "NuCar Toyota",
+          "price": 528.02,
+          "url": "https://toyotaparts.nucar.com/parts/toyota-2009-2015-toyota-venza-steering-gear-455100t011"
+        },
+        "competitors": [
+          {
+            "seller": "NuCar Toyota",
+            "price": 528.02,
+            "url": "https://toyotaparts.nucar.com/parts/toyota-2009-2015-toyota-venza-steering-gear-455100t011"
+          },
+          {
+            "seller": "AutoPartsPrime",
+            "price": 547.17,
+            "url": "https://www.autopartsprime.com/p/2015-toyota-venza-steering-gearbox"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 556.65,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~steering~45510-0t011.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 501.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Venza",
+            "engine": "",
+            "restriction": "2009-2015 Venza (the 2021-on Venza is a different vehicle); replaces 45510-0T010; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "NuCar Toyota (2009-2015 Toyota Venza Steering Gear 45510-0T011)",
+                "url": "https://toyotaparts.nucar.com/parts/toyota-2009-2015-toyota-venza-steering-gear-455100t011",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (45510-0T011 Gear Assy, Steering, Venza; replaces 45510-0T010)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~steering~45510-0t011.html",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Steering Gear Assembly 45510-0T011)",
+                "url": "https://autoparts.toyota.com/products/product/gear-assy-steering-455100t011",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/gear-assy-steering-455100t011",
+        "https://toyotaparts.nucar.com/parts/toyota-2009-2015-toyota-venza-steering-gear-455100t011",
+        "https://www.autopartsprime.com/p/2015-toyota-venza-steering-gearbox",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~steering~45510-0t011.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

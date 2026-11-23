@@ -381,3 +381,22 @@ Batch 32 is live and verified.
 Batch 33 is live and verified.
 - **5124: Dynamic Autowerx 6969 (DAW_G2_6969), 2021-2024 GR Supra 3.0 (6-port), $3,419.05.** Priced 5% under Titan Motorsports at $3,599.
 - The seats blocker is described in STATUS.md.
+
+## Batch 35 (2026-11-23): five genuine Toyota steering parts
+Batch 34 is live and verified.
+- **New price source:** the product pages of ToyotaPartsNow and ToyotaPartsDeal, read directly. They give the price, MSRP and exact
+  model and trim fitment. Toyota dealer stores found by search supply the remaining prices. ToyotaPartsNow started returning 403
+  after a few requests. It was not retried or worked around.
+- **4502 44250-0C200:** electric rack for 2022-2025 Tundra and 2023-2025 Sequoia, not TRD Pro, $860.39. Priced 5% under Modern
+  Toyota at $905.64.
+- **4503 44250-0E260:** electric rack for 2024-2025 Highlander and Highlander Hybrid, $890.59. Priced 5% under ToyotaPartsDeal
+  at $937.42.
+- **4504 45250-06410:** steering column for 2002-2004 Camry, $850.09. Priced 5% under Olathe Toyota at $894.77.
+- **4505 45250-0C300:** power tilt steering column for 2018-2019 Tundra, $1,833.59. Priced 5% under Olathe Toyota at $1,930.05.
+- **4506 45510-0T011:** rack and pinion for 2009-2015 Venza, $501.69. Priced 5% under NuCar Toyota at $528.02.
+- **Photos:** Toyota catalog photos of the whole part only. Close-ups are not used.
+- **Rejected or held:**
+  - 44250-06340: its Toyota photo shows an electric rack, but this Camry rack is hydraulic.
+  - 44250-0C180: its photos show two different rack designs.
+  - 45250-07180: its photo is the same file as 45250-08100's.
+  - Pure Turbos 650, 800 and 900 (NEW): complete new turbos, but every photo on Pure's own store carries the Pure logo.
