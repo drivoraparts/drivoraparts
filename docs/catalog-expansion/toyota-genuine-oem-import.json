@@ -1164,6 +1164,18 @@
       "partNumber": "30510-48150-84",
       "name": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-48150-84 for Toyota Highlander (2004–2007)",
       "price": 3334.09
+    },
+    {
+      "id": 4498,
+      "partNumber": "44250-04041",
+      "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04041 for Toyota Tacoma (2016–2023)",
+      "price": 616.19
+    },
+    {
+      "id": 4499,
+      "partNumber": "44250-35042",
+      "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-35042 for Toyota Tacoma / 4Runner (1995–2004)",
+      "price": 494.09
     }
   ],
   "excluded": [

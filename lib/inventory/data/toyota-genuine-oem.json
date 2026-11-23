@@ -6695,5 +6695,76 @@
     "description": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-48150-84 for Toyota Highlander (2004–2007)\n\nGenuine Toyota automatic transaxle assembly 30510-48150-84 for the Toyota Highlander. Toyota Genuine Remanufactured automatic transaxle, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transaxle has to be returned.\n\nSpecifications\n\nPart number: 30510-48150-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2004–2007 Toyota Highlander (3.3L V6; AWD (gasoline; not the hybrid); confirm drive type by VIN)\nRestriction (2004-2007 Highlander): 3.3L V6 AWD (gasoline; not the hybrid); confirm drive type by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-automatic-transaxle-assembly-30510-48150-84",
     "createdAt": 1795100004497
+  },
+  {
+    "id": 4498,
+    "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04041 for Toyota Tacoma (2016–2023)",
+    "category": "suspension",
+    "brand": "toyota",
+    "price": 616.19,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "44250-04041",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2016–2023 Toyota Tacoma (hydraulic power steering rack; drivetrain and trim applications vary; confirm by VIN)",
+    "fitmentYears": "2016–2023",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2016,
+        "yearTo": 2023,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "hydraulic power steering rack; drivetrain and trim applications vary; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04041/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04041/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-04041/1.webp"
+    ],
+    "description": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-04041 for Toyota Tacoma (2016–2023)\n\nGenuine Toyota power steering rack and pinion assembly 44250-04041 for the Toyota Tacoma. Hydraulic power steering rack and pinion assembly. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-04041\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2016–2023 Toyota Tacoma (hydraulic power steering rack; drivetrain and trim applications vary; confirm by VIN)\nRestriction (2016-2023 Tacoma): hydraulic power steering rack; drivetrain and trim applications vary; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-power-steering-rack-and-pinion-assembly-44250-04041",
+    "createdAt": 1795100004498
+  },
+  {
+    "id": 4499,
+    "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-35042 for Toyota Tacoma / 4Runner (1995–2004)",
+    "category": "suspension",
+    "brand": "toyota",
+    "price": 494.09,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "44250-35042",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "1995–2004 Toyota Tacoma (replaces 44250-35040 / 44250-35041; drivetrain applications vary; confirm by VIN); 1996–2002 Toyota 4Runner (rack-and-pinion 4Runner generation (1996-2002) within the dealers' 1995-2004 range; confirm by VIN)",
+    "fitmentYears": "1995–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1995,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "replaces 44250-35040 / 44250-35041; drivetrain applications vary; confirm by VIN"
+      },
+      {
+        "yearFrom": 1996,
+        "yearTo": 2002,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "rack-and-pinion 4Runner generation (1996-2002) within the dealers' 1995-2004 range; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-35042/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-35042/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-35042/1.webp"
+    ],
+    "description": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-35042 for Toyota Tacoma / 4Runner (1995–2004)\n\nGenuine Toyota power steering rack and pinion assembly 44250-35042 for the Toyota Tacoma, 4Runner. Hydraulic power steering rack and pinion assembly. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-35042\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 1995–2004 Toyota Tacoma (replaces 44250-35040 / 44250-35041; drivetrain applications vary; confirm by VIN); 1996–2002 Toyota 4Runner (rack-and-pinion 4Runner generation (1996-2002) within the dealers' 1995-2004 range; confirm by VIN)\nRestriction (1995-2004 Tacoma): replaces 44250-35040 / 44250-35041; drivetrain applications vary; confirm by VIN\nRestriction (1996-2002 4Runner): rack-and-pinion 4Runner generation (1996-2002) within the dealers' 1995-2004 range; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-power-steering-rack-and-pinion-assembly-44250-35042",
+    "createdAt": 1795100004499
   }
 ]

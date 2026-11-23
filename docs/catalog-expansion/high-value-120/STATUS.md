@@ -10,11 +10,11 @@ prices, no duplicates.
 |---|---|---|---|---|
 | Tires | 20 | 20 | 0 | 5001-5020 |
 | Transmissions | 20 | 6 | 14 | 4489, 4490, 4491, 4492, 4496, 4497 |
-| Steering | 20 | 9 | 11 | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
+| Steering | 20 | 9 (+2 in batch 29) | 11 (9 after batch 29) | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
 | Turbochargers | 20 | 7 | 13 | 4445, 4488, 5101, 5102, 5103, 5104, 5105 |
-| Engines | 20 | 12 (+2 in batch 28) | 8 (6 after batch 28) | 5106-5117 (+5118, 5119 pending live check) |
+| Engines | 20 | 14 | 6 | 5106-5119 |
 | Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **54** (56 after batch 28) | **66** (64) | |
+| **Total** | 120 | **56** (58 after batch 29) | **64** (62) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -30,7 +30,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 25 | #153 | ATK remanufactured engines 858B, 858, 858A, 865A (5106-5109) | done |
 | 26 | #154 | ATK engines 853A, 869B, 847E (5110-5112) | done |
 | 27 | #155 | ATK engines 853, 848, 857, 833, 851 (5113-5117) | done |
-| 28 | (this PR) | ATK engines 869A (RAV4), 860 (Sienna AWD) (5118, 5119) | pending |
+| 28 | #156 | ATK engines 869A (RAV4), 860 (Sienna AWD) (5118, 5119) | done |
+| 29 | (this PR) | Toyota racks 44250-04041 (Tacoma 2016-2023), 44250-35042 (Tacoma 1995-2004 / 4Runner 1996-2002) (4498, 4499) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.

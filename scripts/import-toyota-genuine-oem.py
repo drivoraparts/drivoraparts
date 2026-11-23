@@ -87,6 +87,8 @@ IMAGES = {
     "PT970-60241": ["tcom_PT970-60241_1.webp"],
     # Toyota reman transmissions: lead with the side view of the whole unit
     "35010-0C090-84": ["imgpn_35010-0C090-84_2.webp", "imgpn_35010-0C090-84_1.webp"],
+    "44250-04041": ["4425004041_1.webp"],
+    "44250-35042": ["imgpn_44250-35042_1.webp"],
     "44310-0C080": ["imgpn_44310-0C080_3.webp", "imgpn_44310-0C080_1.webp", "imgpn_44310-0C080_2.webp"],
     "35010-60E00-84": ["imgpn_35010-60E00-84_1.webp", "imgpn_35010-60E00-84_3.webp", "imgpn_35010-60E00-84_2.webp"],
     # LC200 radiator: the three imgpn photos show this radiator; pn_ photo 2 shows a different core, so it is left out
