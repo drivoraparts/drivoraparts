@@ -1,0 +1,258 @@
+{
+  "_comment": "Toyota expansion batch 19 (2026-11-23): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Steering Pump Assembly 44310-0C080 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44310-0C080",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "ps_pump",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2007–2009 Toyota Tundra (hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power steering pump assembly 44310-0C080 for the Toyota Tundra. Hydraulic power steering (vane) pump assembly with pulley for the 2007-2009 Tundra.\n\nSpecifications\n\nPart number: 44310-0C080\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2009 Toyota Tundra (hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN)\nRestriction (2007-2009 Tundra): hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 568.85,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 381.13,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-power-steering-pump-443100c080"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 381.13,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-power-steering-pump-443100c080"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 381.32,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~pump~assy~vane~44310-0c080.html"
+          },
+          {
+            "seller": "American Toyota",
+            "price": 396.71,
+            "url": "https://parts.americantoyota.com/oem-parts/toyota-power-steering-pump-443100c080"
+          },
+          {
+            "seller": "Longo Toyota",
+            "price": 451.43,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-power-steering-pump-443100c080"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 362.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2009,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "",
+            "restriction": "hydraulic vane pump with pulley; engine applications differ by VIN (one listing extends to 2010); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2007-2009 Toyota Tundra Power Steering Pump 44310-0C080)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-power-steering-pump-443100c080",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "American Toyota (2007-2009 Toyota Tundra Power Steering Pump 44310-0C080)",
+                "url": "https://parts.americantoyota.com/oem-parts/toyota-power-steering-pump-443100c080",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.americantoyota.com/oem-parts/toyota-power-steering-pump-443100c080",
+        "https://parts.longotoyota.com/oem-parts/toyota-power-steering-pump-443100c080",
+        "https://parts.olathetoyota.com/oem-parts/toyota-power-steering-pump-443100c080",
+        "https://www.toyotapartsdeal.com/oem/toyota~pump~assy~vane~44310-0c080.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transmission Assembly 35010-04080-84 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "35010-04080-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2013–2015 Toyota Tacoma (4.0L V6; automatic; replaces 35000-04060, 35000-04080 and 35010-04060-84; drive type by VIN; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2013,
+          "yearTo": 2015,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "4.0L V6; automatic; replaces 35000-04060, 35000-04080 and 35010-04060-84; drive type by VIN; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transmission assembly 35010-04080-84 for the Toyota Tacoma. Toyota Genuine Remanufactured automatic transmission, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transmission has to be returned.\n\nSpecifications\n\nPart number: 35010-04080-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2013–2015 Toyota Tacoma (4.0L V6; automatic; replaces 35000-04060, 35000-04080 and 35010-04060-84; drive type by VIN; confirm by VIN)\nRestriction (2013-2015 Tacoma): 4.0L V6 automatic; replaces 35000-04060, 35000-04080 and 35010-04060-84; drive type by VIN; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 5537.29,
+        "lowestCompetitor": {
+          "seller": "AutoPartsPrime ($3,885.12 + $1,000 core charge)",
+          "price": 4885.12,
+          "url": "https://www.autopartsprime.com/toyota/reman-atm/oe-350100408084"
+        },
+        "competitors": [
+          {
+            "seller": "AutoPartsPrime ($3,885.12 + $1,000 core charge)",
+            "price": 4885.12,
+            "url": "https://www.autopartsprime.com/toyota/reman-atm/oe-350100408084"
+          },
+          {
+            "seller": "Cobb County Toyota ($4,537.29 + $1,000 core charge)",
+            "price": 5537.29,
+            "url": "https://autoparts.cobbcountytoyota.com/products/product/reman-atm-350100408084"
+          },
+          {
+            "seller": "Jim Norton Toyota ($4,537.29 + $1,000 core charge)",
+            "price": 5537.29,
+            "url": "https://autoparts.jimnortontoyota.com/products/product/reman-atm-350100408084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 4640.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2013,
+            "yearTo": 2015,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "4.0L V6",
+            "restriction": "4.0L V6 automatic; replaces 35000-04060, 35000-04080 and 35010-04060-84; drive type by VIN; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (2014 Toyota Tacoma automatic transmission 35010-04080-84, $1,000 core charge)",
+                "url": "https://parts.toyota.com/p/Toyota_2014_Tacoma/Automatic-Transmission/69296648/350100408084.html",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "AutoPartsPrime (35010-04080-84, 2013-2015 Toyota Tacoma Base / TRD Pro 4.0L)",
+                "url": "https://www.autopartsprime.com/toyota/reman-atm/oe-350100408084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.cobbcountytoyota.com/products/product/reman-atm-350100408084",
+        "https://autoparts.jimnortontoyota.com/products/product/reman-atm-350100408084",
+        "https://parts.toyota.com/p/Toyota_2014_Tacoma/Automatic-Transmission/69296648/350100408084.html",
+        "https://www.autopartsprime.com/toyota/reman-atm/oe-350100408084"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

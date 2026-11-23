@@ -1128,6 +1128,18 @@
       "partNumber": "35010-60E00-84",
       "name": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-60E00-84 for Toyota 4Runner (2010–2023)",
       "price": 3525.19
+    },
+    {
+      "id": 4492,
+      "partNumber": "35010-04080-84",
+      "name": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-04080-84 for Toyota Tacoma (2013–2015)",
+      "price": 4640.89
+    },
+    {
+      "id": 4493,
+      "partNumber": "44310-0C080",
+      "name": "Genuine Toyota Power Steering Pump Assembly 44310-0C080 for Toyota Tundra (2007–2009)",
+      "price": 362.09
     }
   ],
   "excluded": [

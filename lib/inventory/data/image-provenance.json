@@ -73499,5 +73499,82 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4492": {
+    "productId": 4492,
+    "productName": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-04080-84 for Toyota Tacoma (2013–2015)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-04080-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/350100408084/35010-04080-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "35010-04080-84",
+      "350100408084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 35010-04080-84",
+    "sha256": "c46df78a9ac52a21e7f56a033748314a614b75bd1f65d26748121823ea964632",
+    "bytes": 25798,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4493": {
+    "productId": 4493,
+    "productName": "Genuine Toyota Power Steering Pump Assembly 44310-0C080 for Toyota Tundra (2007–2009)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c080/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/443100C080/44310-0C080_3.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44310-0C080",
+      "443100C080"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44310-0C080",
+    "sha256": "dd984dc6d19d52b8965f4e648b2342df42cb2017516713ee4d8961ecb29e5a66",
+    "bytes": 18336,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c080/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/443100C080/44310-0C080_1.webp",
+        "sha256": "249505a37ec80ade6c50aa5e88479f3685ad70e4d1af577e3101602e8a1d0739",
+        "bytes": 21552,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c080/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/443100C080/44310-0C080_2.webp",
+        "sha256": "a102642ba6aa299853e16e030477619ae90675286399855ab314db68bb4af3bb",
+        "bytes": 24344,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
