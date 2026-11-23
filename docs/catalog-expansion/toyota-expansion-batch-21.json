@@ -1,0 +1,147 @@
+{
+  "_comment": "Toyota expansion batch 21 (2026-11-23): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Power Tilt and Telescopic Steering Column Assembly 45250-08140 — Sienna",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "45250-08140",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2023–2025 Toyota Sienna (power tilt and telescopic column (trims with power steering-wheel adjustment, such as Limited and Platinum; dealers note production from 9/2022); manual-tilt vans use 45250-08100; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2023,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Sienna",
+          "submodel": "power tilt and telescopic column (trims with power steering-wheel adjustment, such as Limited and Platinum; dealers note production from 9/2022); manual-tilt vans use 45250-08100; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota power tilt and telescopic steering column assembly 45250-08140 for the Toyota Sienna. Electric power tilt and telescopic steering column assembly with its adjustment motors. Steering wheel, airbag, switches and covers are not included.\n\nSpecifications\n\nPart number: 45250-08140\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2023–2025 Toyota Sienna (power tilt and telescopic column (trims with power steering-wheel adjustment, such as Limited and Platinum; dealers note production from 9/2022); manual-tilt vans use 45250-08100; confirm by VIN)\nRestriction (2023-2025 Sienna): power tilt and telescopic column (trims with power steering-wheel adjustment, such as Limited and Platinum; dealers note production from 9/2022); manual-tilt vans use 45250-08100; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 2903.54,
+        "lowestCompetitor": {
+          "seller": "Lakeland Toyota",
+          "price": 1901.58,
+          "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-steering-column-4525008140"
+        },
+        "competitors": [
+          {
+            "seller": "Lakeland Toyota",
+            "price": 1901.58,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-steering-column-4525008140"
+          },
+          {
+            "seller": "Olathe Toyota",
+            "price": 1902.69,
+            "url": "https://parts.olathetoyota.com/v-2024-toyota-sienna--limited--2-5l-l4-electric-gas/steering--steering-wheel"
+          },
+          {
+            "seller": "OEMPartsOnline",
+            "price": 1937.6,
+            "url": "https://toyota.oempartsonline.com/v-2025-toyota-sienna--limited--2-5l-l4-electric-gas/steering--steering-wheel"
+          },
+          {
+            "seller": "American Toyota",
+            "price": 1972.52,
+            "url": "https://parts.americantoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/steering--steering-column-assembly"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 1806.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2023,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Sienna",
+            "engine": "",
+            "restriction": "power tilt and telescopic column (trims with power steering-wheel adjustment, such as Limited and Platinum; dealers note production from 9/2022); manual-tilt vans use 45250-08100; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2023-2024 Toyota Sienna Steering Column 45250-08140, power adjust)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-steering-column-4525008140",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "American Toyota (2024 Toyota Sienna steering column assembly)",
+                "url": "https://parts.americantoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/steering--steering-column-assembly",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "OEMPartsOnline (2025 Toyota Sienna Limited steering)",
+                "url": "https://toyota.oempartsonline.com/v-2025-toyota-sienna--limited--2-5l-l4-electric-gas/steering--steering-wheel",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Steering Column Assembly 45250-08140)",
+                "url": "https://autoparts.toyota.com/products/product/column-assy-steering-4525008140",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/column-assy-steering-4525008140",
+        "https://parts.americantoyota.com/v-2024-toyota-sienna--le--2-5l-l4-electric-gas/steering--steering-column-assembly",
+        "https://parts.olathetoyota.com/v-2024-toyota-sienna--limited--2-5l-l4-electric-gas/steering--steering-wheel",
+        "https://toyota.oempartsonline.com/v-2025-toyota-sienna--limited--2-5l-l4-electric-gas/steering--steering-wheel",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-steering-column-4525008140"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

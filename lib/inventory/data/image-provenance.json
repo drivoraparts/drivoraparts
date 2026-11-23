@@ -74069,5 +74069,60 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4495": {
+    "productId": 4495,
+    "productName": "Genuine Toyota Power Tilt and Telescopic Steering Column Assembly 45250-08140 for Toyota Sienna (2023–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-tilt-and-telescopic-steering-column-assembly-45250-08140/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4525008140/4525008140_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/products/product/column-assy-steering-4525008140",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "45250-08140",
+      "4525008140"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 45250-08140",
+    "sha256": "e0a97e18b008396bfe661bb872fb5f768f5458cc0d7f47f302eef1e8bf60f17f",
+    "bytes": 19310,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-tilt-and-telescopic-steering-column-assembly-45250-08140/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4525008140/4525008140_2.webp",
+        "sha256": "1a47306adda14bd734593238ddee0bec3893418d6e6d0364c8b4b2ae897e5e75",
+        "bytes": 23400,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-tilt-and-telescopic-steering-column-assembly-45250-08140/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4525008140/4525008140_3.webp",
+        "sha256": "e78934f26b88dc17e50031ae5ed61de62bff0c949073899734f7a06ca5fb832b",
+        "bytes": 20046,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-tilt-and-telescopic-steering-column-assembly-45250-08140/4.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/4525008140/4525008140_4.webp",
+        "sha256": "a503a603e40aa90dc7306c82e7678dde0e21683a1734931322b48250c20f208e",
+        "bytes": 14180,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
