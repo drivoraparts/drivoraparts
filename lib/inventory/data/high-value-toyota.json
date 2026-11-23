@@ -727,5 +727,79 @@
     "description": "ATK Remanufactured 2.4L 2RZ-FE inline-4 Long Block Engine 851 for 1995–1997 Toyota Tacoma\n\nRemanufactured Toyota 2RZ-FE 2.4L inline-4 long block, ATK part number 851. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 851\nEngine code: 2RZ-FE\nDisplacement: 2.4L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 851)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1995–1997 Toyota Tacoma with the 2.4L 2RZ-FE engine; confirm by VIN.\n\nNotes\n\nBuilt 1/1995 to 6/1997, per the listing; later 2RZ-FE engines use ATK 851A / 851D.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "atk-engines-851",
     "createdAt": 1795200005117
+  },
+  {
+    "id": 5118,
+    "name": "ATK Remanufactured 2.5L 2AR-FE inline-4 Long Block Engine 869A for 2009–2018 Toyota RAV4",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 5274.39,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "869A",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2009–2018 Toyota RAV4 with the 2.5L 2AR-FE engine; confirm by VIN",
+    "fitmentYears": "2009–2018",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2009,
+        "yearTo": 2018,
+        "make": "Toyota",
+        "model": "RAV4",
+        "submodel": "2.5L 2AR-FE inline-4 (dual VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-869a/1.webp",
+    "image": "/product-media/engine/atk-869a/1.webp",
+    "images": [
+      "/product-media/engine/atk-869a/1.webp",
+      "/product-media/engine/atk-869a/2.webp",
+      "/product-media/engine/atk-869a/3.webp",
+      "/product-media/engine/atk-869a/4.webp",
+      "/product-media/engine/atk-869a/5.webp",
+      "/product-media/engine/atk-869a/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.5L 2AR-FE inline-4 Long Block Engine 869A for 2009–2018 Toyota RAV4\n\nRemanufactured Toyota 2AR-FE 2.5L inline-4 long block, ATK part number 869A. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 869A\nEngine code: 2AR-FE\nDisplacement: 2.5L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 869A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2009–2018 Toyota RAV4 with the 2.5L 2AR-FE engine; confirm by VIN.\n\nNotes\n\nRAV4 version of the 2AR-FE; the 2010-2016 Camry uses ATK 869B. AutoZone also shows this SKU at $5,714.99 on another RAV4 page; the lower price is used for comparison.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-869a",
+    "createdAt": 1795200005118
+  },
+  {
+    "id": 5119,
+    "name": "ATK Remanufactured 3.3L 3MZ-FE V6 Long Block Engine 860 for 2004–2006 Toyota Sienna AWD",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4868.74,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "860",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2004–2006 Toyota Sienna AWD with the 3.3L 3MZ-FE engine; confirm by VIN",
+    "fitmentYears": "2004–2006",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2004,
+        "yearTo": 2006,
+        "make": "Toyota",
+        "model": "Sienna",
+        "submodel": "3.3L 3MZ-FE V6, AWD"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-860/1.webp",
+    "image": "/product-media/engine/atk-860/1.webp",
+    "images": [
+      "/product-media/engine/atk-860/1.webp",
+      "/product-media/engine/atk-860/2.webp",
+      "/product-media/engine/atk-860/3.webp",
+      "/product-media/engine/atk-860/4.webp",
+      "/product-media/engine/atk-860/5.webp",
+      "/product-media/engine/atk-860/6.webp"
+    ],
+    "description": "ATK Remanufactured 3.3L 3MZ-FE V6 Long Block Engine 860 for 2004–2006 Toyota Sienna AWD\n\nRemanufactured Toyota 3MZ-FE 3.3L V6 long block, ATK part number 860. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 860\nEngine code: 3MZ-FE\nDisplacement: 3.3L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 860)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2004–2006 Toyota Sienna AWD with the 3.3L 3MZ-FE engine; confirm by VIN.\n\nNotes\n\nAWD 3MZ-FE; front-wheel-drive 2004-2008 applications use ATK 860B. Years are the Sienna range in Powertrain Company's fitment table, inside JEGS's 2004-2007 range.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-860",
+    "createdAt": 1795200005119
   }
 ]

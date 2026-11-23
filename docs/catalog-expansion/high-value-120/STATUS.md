@@ -12,9 +12,9 @@ prices, no duplicates.
 | Transmissions | 20 | 6 | 14 | 4489, 4490, 4491, 4492, 4496, 4497 |
 | Steering | 20 | 9 | 11 | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
 | Turbochargers | 20 | 7 | 13 | 4445, 4488, 5101, 5102, 5103, 5104, 5105 |
-| Engines | 20 | 7 (+5 in batch 27) | 13 (8 after batch 27) | 5106-5112 (+5113-5117 pending live check) |
+| Engines | 20 | 12 (+2 in batch 28) | 8 (6 after batch 28) | 5106-5117 (+5118, 5119 pending live check) |
 | Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **49** (54 after batch 27) | **71** (66) | |
+| **Total** | 120 | **54** (56 after batch 28) | **66** (64) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -29,7 +29,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 24 | #152 | 5104 HKS GR86 GTIII-RS kit; 5105 Forced Performance B58 super core | done |
 | 25 | #153 | ATK remanufactured engines 858B, 858, 858A, 865A (5106-5109) | done |
 | 26 | #154 | ATK engines 853A, 869B, 847E (5110-5112) | done |
-| 27 | (this PR) | ATK engines 853, 848, 857, 833, 851 (5113-5117) | pending |
+| 27 | #155 | ATK engines 853, 848, 857, 833, 851 (5113-5117) | done |
+| 28 | (this PR) | ATK engines 869A (RAV4), 860 (Sienna AWD) (5118, 5119) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
@@ -82,3 +83,8 @@ ATK North America remanufactured engines are sold under the same ATK number by J
 Company and ATK Sales, each with a stated core (usually $545). Powertrain Products (powertrainproducts.net) sells them with
 studio photos, and its WooCommerce Store API (`/wp-json/wc/store/v1/products?search=toyota`) lists about 60 priced Toyota
 engines with their ATK numbers. Next engines to clear: 853A, 865B, 858C, 862, 861A, 860B, 869B, 848A, 857A, 863A.
+
+## Transmissions: Powertrain Products (checked 2026-11-23)
+Powertrain Products has about 80 remanufactured Toyota automatics (A750E/F, A340E/F, U140, U151, U241, U250, A541E), each
+titled with the exact application. They are IMAGE PENDING: each photo is a generic shot of the transmission family, shared by
+up to 32 listings, and the A340E photos are also used on A340F (4WD) units. Each listing still needs 3 named prices.
