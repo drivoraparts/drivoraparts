@@ -363,6 +363,8 @@ id,group,reason,genuine_candidate,category,brand,condition,part_number,in_stock,
 "5115","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","857","yes","4388.99","ATK Remanufactured 2.4L 2AZ-FE inline-4 Long Block Engine 857 for 2001–2007 Toyota Highlander / Camry"
 "5116","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","833","yes","3906.61","ATK Remanufactured 3.0L 3VZ-E V6 Long Block Engine 833 for 1988–1989 Toyota 4Runner / Pickup"
 "5117","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","851","yes","3511.91","ATK Remanufactured 2.4L 2RZ-FE inline-4 Long Block Engine 851 for 1995–1997 Toyota Tacoma"
+"5118","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","869A","yes","5274.39","ATK Remanufactured 2.5L 2AR-FE inline-4 Long Block Engine 869A for 2009–2018 Toyota RAV4"
+"5119","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","860","yes","4868.74","ATK Remanufactured 3.3L 3MZ-FE V6 Long Block Engine 860 for 2004–2006 Toyota Sienna AWD"
 "1","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4030","BMW N54 Twin Turbo Engine"
 "33","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","5100","BMW B58 TwinPower Turbo 3.0-Liter Engine"
 "37","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4505","BMW N55 Turbo Engine"

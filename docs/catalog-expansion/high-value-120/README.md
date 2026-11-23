@@ -333,3 +333,12 @@ Batch 26 is live and verified on production.
 - **Known issue on 5109 (865A, live):** its two photos are those same shared 3UR-FE crate photos. It stays live, because the
   owner has ruled that existing listings are not to be hidden. A variant-specific photo is wanted.
 
+## Batch 28 (2026-11-23): 869A and 860
+Batch 27 is live and verified.
+- **5118: ATK 869A, 2.5L 2AR-FE, RAV4 2009-2018, $5,274.39.**
+- **5119: ATK 860, 3.3L 3MZ-FE AWD, Sienna AWD 2004-2006, $4,868.74.**
+- **Held:**
+  - 833C: sellers disagree on the engine code and application.
+  - 857D: two prices.
+  - Powertrain Products transmissions: generic family photos.
+
