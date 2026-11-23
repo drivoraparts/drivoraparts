@@ -318,3 +318,18 @@ Batch 25 is live and verified on production.
 - 860B: approximate prices only.
 - 848 and 857: two named prices each.
 
+## Batch 27 (2026-11-23): five more ATK engines
+Batch 26 is live and verified on production.
+
+| ID | ATK no. | Engine | Fits | Our price (core included) |
+|---|---|---|---|---|
+| 5113 | 853 | 4.7L 2UZ-FE (non-VVT-i) | Land Cruiser 1998-2004, Tundra 2000-2004, Sequoia 2001-2004, 4Runner 2003-2004 | $4,701.55 |
+| 5114 | 848 | 3.4L 5VZ-FE | Tacoma 1995-2004, 4Runner 1996-2002, T100 1995-1998, Tundra 2000-2004 | $4,272.14 |
+| 5115 | 857 | 2.4L 2AZ-FE | Highlander 2001-2007, Camry 2002-2006 | $4,388.99 |
+| 5116 | 833 | 3.0L 3VZ-E | 4Runner / Pickup 1988-1989 | $3,906.61 |
+| 5117 | 851 | 2.4L 2RZ-FE | Tacoma 1995-1997 | $3,511.91 |
+
+- **865B: rejected.** The retailer's photos are generic files it also uses for 865A.
+- **Known issue on 5109 (865A, live):** its two photos are those same shared 3UR-FE crate photos. It stays live, because the
+  owner has ruled that existing listings are not to be hidden. A variant-specific photo is wanted.
+

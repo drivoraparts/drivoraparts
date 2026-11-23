@@ -612,6 +612,282 @@
       "price": 4170.49,
       "core": "$420, included in our price",
       "checked": "2026-11-23"
+    },
+    {
+      "id": 5113,
+      "partNumber": "853",
+      "aliases": [
+        "ATK 853"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1998,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+        },
+        {
+          "yearFrom": 2000,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+        },
+        {
+          "yearFrom": 2001,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+        },
+        {
+          "yearFrom": 2003,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.7L 2UZ-FE V8 (non-VVT-i)"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/853/10002/-1",
+        "AutoZone (NuTech by ATK 853): https://www.autozone.com/powertrain/engine/p/nutech-remanufactured-long-block-engine-853/561913_0_0",
+        "ATK Sales: https://www.atksales.com/product-list/?cat=Engines&sb=Toyota"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($4,404.00 + $545 core)",
+          "price": 4949.0,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/853/10002/-1"
+        },
+        {
+          "name": "AutoZone (NuTech by ATK 853) ($4,816.99 + $545 core)",
+          "price": 5361.99,
+          "url": "https://www.autozone.com/powertrain/engine/p/nutech-remanufactured-long-block-engine-853/561913_0_0"
+        },
+        {
+          "name": "ATK Sales ($4,999.00 + $545 core)",
+          "price": 5544.0,
+          "url": "https://www.atksales.com/product-list/?cat=Engines&sb=Toyota"
+        }
+      ],
+      "lowest": 4949.0,
+      "price": 4701.55,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5114,
+      "partNumber": "848",
+      "aliases": [
+        "ATK 848"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1995,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.4L 5VZ-FE V6"
+        },
+        {
+          "yearFrom": 1996,
+          "yearTo": 2002,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "3.4L 5VZ-FE V6"
+        },
+        {
+          "yearFrom": 1995,
+          "yearTo": 1998,
+          "make": "Toyota",
+          "model": "T100",
+          "submodel": "3.4L 5VZ-FE V6"
+        },
+        {
+          "yearFrom": 2000,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "3.4L 5VZ-FE V6"
+        }
+      ],
+      "fitmentSources": [
+        "AutoZone (NuTech by ATK 848): https://www.autozone.com/p/nutech-by-atk-engine-long-block-848/561907",
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/848/10002/-1",
+        "Powertrain Products: https://www.powertrainproducts.net/product/8-94-9-04-5vzf-e/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "AutoZone (NuTech by ATK 848) ($4,026.99 + $470 core)",
+          "price": 4496.99,
+          "url": "https://www.autozone.com/p/nutech-by-atk-engine-long-block-848/561907"
+        },
+        {
+          "name": "JEGS ($4,316.88 + $470 core)",
+          "price": 4786.88,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/848/10002/-1"
+        },
+        {
+          "name": "Powertrain Products ($4,349.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/8-94-9-04-5vzf-e/"
+        }
+      ],
+      "lowest": 4496.99,
+      "price": 4272.14,
+      "core": "$470, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5115,
+      "partNumber": "857",
+      "aliases": [
+        "ATK 857"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2001,
+          "yearTo": 2007,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "2.4L 2AZ-FE inline-4"
+        },
+        {
+          "yearFrom": 2002,
+          "yearTo": 2006,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.4L 2AZ-FE inline-4"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/857/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/2-4l-2az-fe-remanufactured-engine-857-toyota-camry-highlander-solara-2001-2007/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/11-00-2007-2azfe/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($4,199.99 + $420 core)",
+          "price": 4619.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/857/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($4,249.00 + $420 core)",
+          "price": 4669.0,
+          "url": "https://powertraincompany.com/product/2-4l-2az-fe-remanufactured-engine-857-toyota-camry-highlander-solara-2001-2007/"
+        },
+        {
+          "name": "Powertrain Products ($4,049.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/11-00-2007-2azfe/"
+        }
+      ],
+      "lowest": 4619.99,
+      "price": 4388.99,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5116,
+      "partNumber": "833",
+      "aliases": [
+        "ATK 833"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1988,
+          "yearTo": 1989,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "3.0L 3VZ-E V6"
+        },
+        {
+          "yearFrom": 1988,
+          "yearTo": 1989,
+          "make": "Toyota",
+          "model": "Pickup",
+          "submodel": "3.0L 3VZ-E V6"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/833/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/3-0l-3vz-remanufactured-engine-833-toyota-4runner-1988-1989/",
+        "AutoZone (ATK 833, Premium): https://autozone.com/powertrain/engine/spartan/bus-chassis"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,692.23 + $420 core)",
+          "price": 4112.23,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/833/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($3,790.75 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://powertraincompany.com/product/3-0l-3vz-remanufactured-engine-833-toyota-4runner-1988-1989/"
+        },
+        {
+          "name": "AutoZone (ATK 833, Premium) ($4,031.99 + $420 core)",
+          "price": 4451.99,
+          "url": "https://autozone.com/powertrain/engine/spartan/bus-chassis"
+        }
+      ],
+      "lowest": 4112.23,
+      "price": 3906.61,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5117,
+      "partNumber": "851",
+      "aliases": [
+        "ATK 851"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1995,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L 2RZ-FE inline-4"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/851/10002/-1",
+        "Powertrain Products: https://www.powertrainproducts.net/product/1-95-6-97-2rzf-e/",
+        "Powertrain Company: https://powertraincompany.com/product/2-4l-2rzfe-remanufactured-engine-toyota-tacoma-1995-1997/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,276.75 + $420 core)",
+          "price": 3696.75,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/851/10002/-1"
+        },
+        {
+          "name": "Powertrain Products ($3,499.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/1-95-6-97-2rzf-e/"
+        },
+        {
+          "name": "Powertrain Company ($3,684.44 + $420 core)",
+          "price": 4104.44,
+          "url": "https://powertraincompany.com/product/2-4l-2rzfe-remanufactured-engine-toyota-tacoma-1995-1997/"
+        }
+      ],
+      "lowest": 3696.75,
+      "price": 3511.91,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
     }
   ]
 }
