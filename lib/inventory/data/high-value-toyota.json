@@ -355,5 +355,136 @@
     "description": "ATK Remanufactured 5.7L 3UR-FE V8 Long Block Engine 865A for 2012–2015 Toyota Tundra / Sequoia\n\nRemanufactured Toyota 3UR-FE 5.7L V8 long block, ATK part number 865A. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 865A\nEngine code: 3UR-FE\nDisplacement: 5.7L\nConfiguration: V8\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 865A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2012–2015 Toyota Tundra / Sequoia with the 5.7L 3UR-FE engine; confirm by VIN.\n\nNotes\n\nYears are where the sellers' listings overlap (JEGS 2011-2015 Tundra; Powertrain Products 2012-2017 Tundra / Sequoia). Head covers with extra boss included, per the listing.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "atk-engines-865a",
     "createdAt": 1795200005109
+  },
+  {
+    "id": 5110,
+    "name": "ATK Remanufactured 4.7L 2UZ-FE V8 Long Block Engine 853A for 2005–2009 Toyota 4Runner / Land Cruiser / Sequoia / Tundra",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 5011.24,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "853A",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2005–2009 Toyota 4Runner / Land Cruiser / Sequoia / Tundra with the 4.7L 2UZ-FE engine; confirm by VIN",
+    "fitmentYears": "2005–2009",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2005,
+        "yearTo": 2009,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+      },
+      {
+        "yearFrom": 2005,
+        "yearTo": 2009,
+        "make": "Toyota",
+        "model": "Land Cruiser",
+        "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+      },
+      {
+        "yearFrom": 2005,
+        "yearTo": 2009,
+        "make": "Toyota",
+        "model": "Sequoia",
+        "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+      },
+      {
+        "yearFrom": 2005,
+        "yearTo": 2009,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-853a/1.webp",
+    "image": "/product-media/engine/atk-853a/1.webp",
+    "images": [
+      "/product-media/engine/atk-853a/1.webp",
+      "/product-media/engine/atk-853a/2.webp",
+      "/product-media/engine/atk-853a/3.webp",
+      "/product-media/engine/atk-853a/4.webp",
+      "/product-media/engine/atk-853a/5.webp",
+      "/product-media/engine/atk-853a/6.webp"
+    ],
+    "description": "ATK Remanufactured 4.7L 2UZ-FE V8 Long Block Engine 853A for 2005–2009 Toyota 4Runner / Land Cruiser / Sequoia / Tundra\n\nRemanufactured Toyota 2UZ-FE 4.7L V8 long block, ATK part number 853A. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 853A\nEngine code: 2UZ-FE\nDisplacement: 4.7L\nConfiguration: V8\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 853A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2005–2009 Toyota 4Runner / Land Cruiser / Sequoia / Tundra with the 4.7L 2UZ-FE engine; confirm by VIN.\n\nNotes\n\nVVT-i (intake) 2UZ-FE built from 8/2004 (2005-2009 model years), per the sellers' listings; earlier non-VVT-i engines use ATK 853. Use of TRD supercharger equipment voids the remanufacturer's warranty.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-853a",
+    "createdAt": 1795200005110
+  },
+  {
+    "id": 5111,
+    "name": "ATK Remanufactured 2.5L 2AR-FE inline-4 Long Block Engine 869B for 2010–2016 Toyota Camry",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 5295.29,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "869B",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2010–2016 Toyota Camry with the 2.5L 2AR-FE engine; confirm by VIN",
+    "fitmentYears": "2010–2016",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2010,
+        "yearTo": 2016,
+        "make": "Toyota",
+        "model": "Camry",
+        "submodel": "2.5L 2AR-FE inline-4 (dual VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-869b/1.webp",
+    "image": "/product-media/engine/atk-869b/1.webp",
+    "images": [
+      "/product-media/engine/atk-869b/1.webp",
+      "/product-media/engine/atk-869b/2.webp",
+      "/product-media/engine/atk-869b/3.webp",
+      "/product-media/engine/atk-869b/4.webp",
+      "/product-media/engine/atk-869b/5.webp",
+      "/product-media/engine/atk-869b/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.5L 2AR-FE inline-4 Long Block Engine 869B for 2010–2016 Toyota Camry\n\nRemanufactured Toyota 2AR-FE 2.5L inline-4 long block, ATK part number 869B. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 869B\nEngine code: 2AR-FE\nDisplacement: 2.5L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 869B)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2010–2016 Toyota Camry with the 2.5L 2AR-FE engine; confirm by VIN.\n\nNotes\n\nDual VVT-i 2AR-FE. The RAV4 uses ATK 869A; years are where JEGS (2010-2016) and Powertrain Company (Camry 2010-2017) overlap.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-869b",
+    "createdAt": 1795200005111
+  },
+  {
+    "id": 5112,
+    "name": "ATK Remanufactured 3.0L 1MZ-FE V6 Long Block Engine 847E for 2001–2003 Toyota Highlander AWD",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4170.49,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "847E",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2001–2003 Toyota Highlander AWD with the 3.0L 1MZ-FE engine; confirm by VIN",
+    "fitmentYears": "2001–2003",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2001,
+        "yearTo": 2003,
+        "make": "Toyota",
+        "model": "Highlander",
+        "submodel": "3.0L 1MZ-FE V6, AWD"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-847e/1.webp",
+    "image": "/product-media/engine/atk-847e/1.webp",
+    "images": [
+      "/product-media/engine/atk-847e/1.webp",
+      "/product-media/engine/atk-847e/2.webp",
+      "/product-media/engine/atk-847e/3.webp",
+      "/product-media/engine/atk-847e/4.webp",
+      "/product-media/engine/atk-847e/5.webp"
+    ],
+    "description": "ATK Remanufactured 3.0L 1MZ-FE V6 Long Block Engine 847E for 2001–2003 Toyota Highlander AWD\n\nRemanufactured Toyota 1MZ-FE 3.0L V6 long block, ATK part number 847E. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 847E\nEngine code: 1MZ-FE\nDisplacement: 3.0L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 847E)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2001–2003 Toyota Highlander AWD with the 3.0L 1MZ-FE engine; confirm by VIN.\n\nNotes\n\nAWD Highlander version of the 1MZ-FE; front-wheel-drive models use other ATK numbers.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-847e",
+    "createdAt": 1795200005112
   }
 ]
