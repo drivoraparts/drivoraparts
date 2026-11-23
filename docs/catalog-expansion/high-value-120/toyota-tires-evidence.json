@@ -1,0 +1,799 @@
+{
+  "checked": "2026-11-23",
+  "pricing": "5% under the lowest attributed US per-tire price",
+  "tires": [
+    {
+      "id": 5001,
+      "code": "217480",
+      "line": "Ridge Grappler",
+      "size": "LT265/70R18",
+      "loadIndexSpeed": "124/121Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "4Runner",
+        "Tacoma",
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/4runner/features/",
+        "https://www.toyota.com/tacoma/features/",
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Desert Rat",
+          "price": 325.0,
+          "url": "https://www.desertrat.com/i-23432113-lt265-70r18-nitto-ridge-grappler-124q-lr-e.html"
+        },
+        {
+          "name": "Big O Tires",
+          "price": 333.0,
+          "url": "https://www.bigotires.com/tires/sku/nitto/ridge-grappler/lt265-70r18-124-121q-e/000000000001105357"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 339.86,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/ridge-grappler/265-70r18-124-121q-e-10-ply-64676"
+        }
+      ],
+      "lowest": 325.0,
+      "price": 308.75,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5002,
+      "code": "218940",
+      "line": "Ridge Grappler",
+      "size": "265/70R18",
+      "loadIndexSpeed": "116T",
+      "loadRange": null,
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "4Runner",
+        "Tacoma",
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/4runner/features/",
+        "https://www.toyota.com/tacoma/features/",
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Desert Rat",
+          "price": 283.0,
+          "url": "https://desertrat.com/i-23432239-265-70r18-nitto-ridge-grappler-116t.html"
+        },
+        {
+          "name": "Big O Tires",
+          "price": 286.0,
+          "url": "https://www.bigotires.com/tires/sku/nitto/ridge-grappler/265-70r18-116t/000000000001145754"
+        },
+        {
+          "name": "Tires-Easy",
+          "price": 292.95,
+          "url": "https://www.tires-easy.com/265-70-18/nitto-tires/ridge-grappler/tirecode/218940"
+        }
+      ],
+      "lowest": 283.0,
+      "price": 268.85,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5003,
+      "code": "217110",
+      "line": "Ridge Grappler",
+      "size": "LT285/65R18",
+      "loadIndexSpeed": "125/122Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Tirebuyer",
+          "price": 388.0,
+          "url": "https://tirebuyer.com/tires/nitto/ridge-grappler/p/TV154000693"
+        },
+        {
+          "name": "BB Wheels Online",
+          "price": 388.0,
+          "url": "https://bbwheelsonline.com/nitto-ridge-grappler-tires-285-65r18-e-125-122q-10-ply-e-series-217-110"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 417.0,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/ridge-grappler/285-65r18-125-122q-e-10-ply-64658"
+        }
+      ],
+      "lowest": 388.0,
+      "price": 368.6,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5004,
+      "code": "217460",
+      "line": "Ridge Grappler",
+      "size": "LT265/60R20",
+      "loadIndexSpeed": "121/118Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "American Trucks",
+          "price": 371.0,
+          "url": "https://www.americantrucks.com/nitto-f150-ridge-grappler-at-tire-nito-217460.html"
+        },
+        {
+          "name": "Discount Tire",
+          "price": 371.0,
+          "url": "https://www.discounttire.com/buy-tires/nitto-ridge-grappler/p/41799"
+        },
+        {
+          "name": "Big O Tires",
+          "price": 380.0,
+          "url": "https://www.bigotires.com/tires/sku/nitto/ridge-grappler/lt265-60r20-121-118q-e/000000000001105363"
+        },
+        {
+          "name": "ThreePiece",
+          "price": 380.0,
+          "url": "https://www.threepiece.us/nitto-nit-ridge-grappler-lt265-60r20-10/"
+        }
+      ],
+      "lowest": 371.0,
+      "price": 352.45,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5005,
+      "code": "218890",
+      "line": "Ridge Grappler",
+      "size": "265/60R20",
+      "loadIndexSpeed": "112T",
+      "loadRange": null,
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "American Trucks",
+          "price": 331.0,
+          "url": "https://www.americantrucks.com/nitto-f150-ridge-grappler-a-t-tire-218890.html"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 334.0,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/ridge-grappler/265-60r20-112t-36185"
+        },
+        {
+          "name": "OK4WD",
+          "price": 334.0,
+          "url": "https://ok4wd.com/nitto-ridge-grappler-265-60r20"
+        },
+        {
+          "name": "Extreme Terrain",
+          "price": 334.0,
+          "url": "https://www.extremeterrain.com/nitto-tundra-ridge-grappler-a-t-tire-218890.html"
+        }
+      ],
+      "lowest": 331.0,
+      "price": 314.45,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5006,
+      "code": "217100",
+      "line": "Ridge Grappler",
+      "size": "LT265/70R17",
+      "loadIndexSpeed": "121/118Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Prime Wheels",
+          "price": 279.0,
+          "url": "https://primewheels.com/ridge-grappler"
+        },
+        {
+          "name": "American Trucks",
+          "price": 293.0,
+          "url": "https://www.americantrucks.com/nitto-f250-ridge-grappler-all-terrain-tire-217100.html"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 316.0,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/ridge-grappler/265-70r17-121-118q-e-10-ply-2305"
+        }
+      ],
+      "lowest": 279.0,
+      "price": 265.05,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5007,
+      "code": "217940",
+      "line": "Ridge Grappler",
+      "size": "265/70R17",
+      "loadIndexSpeed": "115T",
+      "loadRange": null,
+      "specSource": "https://www.nittotire.com/light-truck-tires/ridge-grappler-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "OK4WD",
+          "price": 235.0,
+          "url": "https://ok4wd.com/nitto-ridge-grappler-265-70r17"
+        },
+        {
+          "name": "BB Wheels Online",
+          "price": 235.0,
+          "url": "https://bbwheelsonline.com/nitto-ridge-grappler-tire-265-70r17-115t-217940"
+        },
+        {
+          "name": "Milky Motorsports",
+          "price": 247.0,
+          "url": "https://milkymotorsports.com/products/nitto-265-70-17-ridge-grappler-217940"
+        }
+      ],
+      "lowest": 235.0,
+      "price": 223.25,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5008,
+      "code": "223950",
+      "line": "Terra Grappler G3",
+      "size": "LT265/70R18",
+      "loadIndexSpeed": "124/121S",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/terra-grappler-g3-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "4Runner",
+        "Tacoma",
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/4runner/features/",
+        "https://www.toyota.com/tacoma/features/",
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Extreme Terrain",
+          "price": 278.0,
+          "url": "https://www.extremeterrain.com/nitto-tacoma-terra-grappler-g3-tire-223950.html"
+        },
+        {
+          "name": "OK4WD",
+          "price": 278.0,
+          "url": "https://ok4wd.com/nitto-terra-grappler-g3-lt265-70r18-load-range-e"
+        },
+        {
+          "name": "American Trucks",
+          "price": 291.0,
+          "url": "https://www.americantrucks.com/nitto-f150-terra-grappler-g3-tire-223950.html"
+        }
+      ],
+      "lowest": 278.0,
+      "price": 264.1,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5009,
+      "code": "224210",
+      "line": "Terra Grappler G3",
+      "size": "265/70R18",
+      "loadIndexSpeed": "116T",
+      "loadRange": null,
+      "specSource": "https://www.nittotire.com/light-truck-tires/terra-grappler-g3-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "4Runner",
+        "Tacoma",
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/4runner/features/",
+        "https://www.toyota.com/tacoma/features/",
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Walmart",
+          "price": 263.02,
+          "url": "https://www.walmart.com/ip/Tire/15435200839"
+        },
+        {
+          "name": "Richline Motorsports",
+          "price": 275.0,
+          "url": "https://richlinemotorsports.com/tire/3092/nitto-tires-terra-grappler-g3"
+        },
+        {
+          "name": "OK4WD",
+          "price": 278.0,
+          "url": "https://ok4wd.com/nitto-terra-grappler-g3-265-70r18-load-range-sl/"
+        }
+      ],
+      "lowest": 263.02,
+      "price": 249.86,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5010,
+      "code": "223910",
+      "line": "Terra Grappler G3",
+      "size": "LT285/65R18",
+      "loadIndexSpeed": "125/122S",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/terra-grappler-g3-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Tire Agent",
+          "price": 343.0,
+          "url": "https://snap.tireagent.com/products/nitto-terra-grappler-g3-223910"
+        },
+        {
+          "name": "ThreePiece",
+          "price": 367.0,
+          "url": "https://www.threepiece.us/nitto-terra-grappler-g3-lt285-65r18-125-122s-223910/"
+        },
+        {
+          "name": "Extreme Terrain",
+          "price": 367.0,
+          "url": "https://www.extremeterrain.com/nitto-tundra-terra-grappler-g3-tire-223910.html"
+        },
+        {
+          "name": "OK4WD",
+          "price": 367.0,
+          "url": "https://ok4wd.com/nitto-terra-grappler-g3-lt285-65r18-load-range-e"
+        }
+      ],
+      "lowest": 343.0,
+      "price": 325.85,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5011,
+      "code": "224580",
+      "line": "Terra Grappler G3",
+      "size": "285/65R18",
+      "loadIndexSpeed": "116T",
+      "loadRange": null,
+      "specSource": "https://www.nittotire.com/light-truck-tires/terra-grappler-g3-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/"
+      ],
+      "competitors": [
+        {
+          "name": "TFS Wheels",
+          "price": 366.3,
+          "url": "https://tfswheels.com/products/nitto-terra-grappler-g3"
+        },
+        {
+          "name": "ThreePiece",
+          "price": 370.0,
+          "url": "https://www.threepiece.us/nitto-terra-grappler-g3-285-65r18-116t-224580/"
+        },
+        {
+          "name": "Tires-Easy",
+          "price": 370.0,
+          "url": "https://www.tires-easy.com/285-65-18/nitto-tires/terra-grappler-g3/tirecode/224580"
+        }
+      ],
+      "lowest": 366.3,
+      "price": 347.98,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5012,
+      "code": "223830",
+      "line": "Terra Grappler G3",
+      "size": "LT265/60R20",
+      "loadIndexSpeed": "121/118S",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/terra-grappler-g3-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "SimpleTire",
+          "price": 333.0,
+          "url": "https://opt.simpletire.com/tire-sizes/lt265-60r20/brands/nitto-tires"
+        },
+        {
+          "name": "OK4WD",
+          "price": 340.0,
+          "url": "https://ok4wd.com/nitto-terra-grappler-g3-lt265-60r20-load-range-e"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 340.0,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/terra-grappler-g3-a-t/265-60r20-121-118s-e-10-ply-170208"
+        }
+      ],
+      "lowest": 333.0,
+      "price": 316.35,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5013,
+      "code": "223940",
+      "line": "Terra Grappler G3",
+      "size": "LT265/70R17",
+      "loadIndexSpeed": "123/120S",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/terra-grappler-g3-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "American Trucks",
+          "price": 263.0,
+          "url": "https://www.americantrucks.com/nitto-f150-terra-grappler-g3-tire-223940.html"
+        },
+        {
+          "name": "OK4WD",
+          "price": 263.0,
+          "url": "https://ok4wd.com/nitto-terra-grappler-g3-lt265-70r17-load-range-e"
+        },
+        {
+          "name": "Ecklers",
+          "price": 274.0,
+          "url": "https://www.ecklers.com/nitto-chevy-truck-terra-grappler-g3-tire-223940.html"
+        }
+      ],
+      "lowest": 263.0,
+      "price": 249.85,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5014,
+      "code": "218590",
+      "line": "Recon Grappler A/T",
+      "size": "LT285/65R18",
+      "loadIndexSpeed": "125/122R",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/recon-grappler-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Prime Wheels",
+          "price": 362.0,
+          "url": "https://primewheels.com/?p=23889"
+        },
+        {
+          "name": "OK4WD",
+          "price": 382.0,
+          "url": "https://ok4wd.com/nitto-recon-grappler-a-t-lt285-65r18-10-load-range-e"
+        },
+        {
+          "name": "Extreme Terrain",
+          "price": 382.0,
+          "url": "https://www.extremeterrain.com/nitto-xtr-recon-grappler-at-tire-nito-218590.html"
+        }
+      ],
+      "lowest": 362.0,
+      "price": 343.9,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5015,
+      "code": "218550",
+      "line": "Recon Grappler A/T",
+      "size": "LT265/60R20",
+      "loadIndexSpeed": "121/118S",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/recon-grappler-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia",
+        "Land Cruiser"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/",
+        "https://www.toyota.com/landcruiser/features/"
+      ],
+      "competitors": [
+        {
+          "name": "OK4WD",
+          "price": 335.0,
+          "url": "https://ok4wd.com/nitto-recon-grappler-a-t-lt265-60r20-10-load-range-e"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 360.0,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/recon-grappler-a-t/265-60r20-121-118s-e-10-ply-34412"
+        },
+        {
+          "name": "Discounted Wheel Warehouse",
+          "price": 375.14,
+          "url": "https://www.discountedwheelwarehouse.com/tires/brands/nitto/recon-grappler-a-t?partnum=NT-218550"
+        }
+      ],
+      "lowest": 335.0,
+      "price": 318.25,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5016,
+      "code": "218740",
+      "line": "Recon Grappler A/T",
+      "size": "LT265/70R17",
+      "loadIndexSpeed": "123/120S",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/recon-grappler-all-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "American Trucks",
+          "price": 293.0,
+          "url": "https://www.americantrucks.com/nitto-f150-recon-grappler-a-t-tire-218740.html"
+        },
+        {
+          "name": "JEGS",
+          "price": 293.0,
+          "url": "https://www.jegs.com/i/Nitto/726/218740/10002/-1"
+        },
+        {
+          "name": "OK4WD",
+          "price": 293.0,
+          "url": "https://ok4wd.com/nitto-recon-grappler-a-t-lt265-70r17-10-load-range-e"
+        }
+      ],
+      "lowest": 293.0,
+      "price": 278.35,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5017,
+      "code": "205740",
+      "line": "Trail Grappler M/T",
+      "size": "LT285/65R18",
+      "loadIndexSpeed": "125/122Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/trail-grappler-mud-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tundra",
+        "Sequoia"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tundra/features/",
+        "https://www.toyota.com/sequoia/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Katz Tires",
+          "price": 407.29,
+          "url": "https://katztires.com/trail-grappler-m-t-black-sidewall"
+        },
+        {
+          "name": "Quadratec",
+          "price": 411.0,
+          "url": "https://oms.quadratec.com/92622-5022-nitto-trail-grappler-m-t-lt285-65r18-205740.html"
+        },
+        {
+          "name": "Wheel Warehouse",
+          "price": 411.0,
+          "url": "https://wheelwarehouse.com/products/nitto-lt285-65r18-e-trail-grappler-m-t-tires-205740"
+        }
+      ],
+      "lowest": 407.29,
+      "price": 386.92,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5018,
+      "code": "205860",
+      "line": "Trail Grappler M/T",
+      "size": "LT265/70R17",
+      "loadIndexSpeed": "121/118Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/trail-grappler-mud-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Extreme Terrain",
+          "price": 317.0,
+          "url": "https://www.extremeterrain.com/nitto-xtr-trail-grappler-mt-mud-terrain-tire-nito-205860.html"
+        },
+        {
+          "name": "Quadratec",
+          "price": 317.0,
+          "url": "https://oms.quadratec.com/92622-5011-nitto-trail-grappler-m-t-lt265-70r17-205860.html"
+        },
+        {
+          "name": "Milky Motorsports",
+          "price": 317.0,
+          "url": "https://milkymotorsports.com/products/nitto-265-70-17-trail-grappler-205860"
+        }
+      ],
+      "lowest": 317.0,
+      "price": 301.15,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5019,
+      "code": "206870",
+      "line": "Exo Grappler AWT",
+      "size": "LT265/70R17",
+      "loadIndexSpeed": "121/118Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/heavy-duty-tires/exo-grappler-all-weather-traction-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Tirebuyer",
+          "price": 237.0,
+          "url": "https://tirebuyer.com/tires/nitto/exo-grappler-awt/p/TV154000535"
+        },
+        {
+          "name": "Extreme Terrain",
+          "price": 249.0,
+          "url": "https://www.extremeterrain.com/nitto-xtr-exo-grappler-all-terrain-tire-nito-206870.html"
+        },
+        {
+          "name": "Quadratec",
+          "price": 254.0,
+          "url": "https://www.quadratec.com/p/nitto/exo-grappler-awt-tire/lt265/70r17-206870"
+        }
+      ],
+      "lowest": 237.0,
+      "price": 225.15,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    },
+    {
+      "id": 5020,
+      "code": "205630",
+      "line": "Dura Grappler",
+      "size": "LT265/70R17",
+      "loadIndexSpeed": "121/118Q",
+      "loadRange": "E",
+      "specSource": "https://www.nittotire.com/light-truck-tires/dura-grappler-highway-terrain-light-truck-tire/",
+      "factorySizeModels": [
+        "Tacoma"
+      ],
+      "factorySizeSource": [
+        "https://www.toyota.com/tacoma/features/"
+      ],
+      "competitors": [
+        {
+          "name": "Milky Motorsports",
+          "price": 235.0,
+          "url": "https://milkymotorsports.com/products/nitto-265-70-17-dura-grappler-205630"
+        },
+        {
+          "name": "Big O Tires",
+          "price": 235.0,
+          "url": "https://www.bigotires.com/tires/sku/nitto/dura-grappler/lt265-70r17-121-118q-e/000000000001098373"
+        },
+        {
+          "name": "Priority Tire",
+          "price": 263.86,
+          "url": "https://www.prioritytire.com/by-brand/nitto-tires/dura-grappler-highway-terrain/265-70r17-121-118q-e-10-ply-17510"
+        }
+      ],
+      "lowest": 235.0,
+      "price": 223.25,
+      "checked": "2026-11-23",
+      "pricedPer": "tire"
+    }
+  ]
+}
