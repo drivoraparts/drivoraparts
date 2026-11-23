@@ -162,5 +162,198 @@
     "description": "Forced Performance Green V2 Upgrade Super Core 2805050 (Turbo Core Only) for 2020–2025 Toyota GR Supra 3.0 (B58)\n\nDrop-in upgrade super core for the GR Supra 3.0's factory B58 turbocharger: the center cartridge (journal-bearing CHRA) with an upgraded Xona Rotor compressor wheel and UHF turbine wheel, installed into the factory 2-port or 6-port turbo manifold housing. It is not a complete turbocharger. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: Forced Performance\nManufacturer part number: 2805050 (SKU FPT2805050)\nWhat it is: super core: center cartridge with compressor and turbine wheels; fits the factory turbo housing\nFlow rating (manufacturer): 57 lb/min, about 20% more flow than the factory turbo\nCompressor wheel: Xona Rotor\nTurbine wheel: Xona Rotor UHF, factory fitment\nBearing: stock-fitment journal bearing CHRA\nCompressor cover: factory style\nRetains: factory oil and coolant lines, wastegate and inlet size\nCore charge: none (no core required, per the manufacturer)\nEmissions: not CARB legal\nCondition: New (built to order by Forced Performance)\n\nWhat is included\n\n1 Forced Performance Green V2 super core (center cartridge with compressor and turbine wheels)\nNot included: the factory turbine housing / exhaust manifold (turbofold), which is reused\n\nToyota fitment\n\n2020–2025 Toyota GR Supra 3.0 (B58 3.0L, factory 2-port or 6-port turbo manifold). Not for the GR Supra 2.0.\n\nNotes\n\nWorks with the factory ECU and factory tune file without fault codes, per Forced Performance; more power needs a tune.\nBuilt to order: Forced Performance gives no fixed build time.\nNot CARB legal: for off-road / competition use only.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "forced-performance-2805050",
     "createdAt": 1795200005105
+  },
+  {
+    "id": 5106,
+    "name": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858B for 2006–2015 Toyota Tacoma / Tundra (2006–2010 and 2012–2015)",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 6115.14,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "858B",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2006–2015 Toyota Tacoma / Tundra (2006–2010 and 2012–2015) with the 4.0L 1GR-FE engine; confirm by VIN",
+    "fitmentYears": "2006–2015",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2006,
+        "yearTo": 2010,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "4.0L 1GR-FE V6"
+      },
+      {
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "4.0L 1GR-FE V6"
+      },
+      {
+        "yearFrom": 2006,
+        "yearTo": 2010,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "4.0L 1GR-FE V6"
+      },
+      {
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "4.0L 1GR-FE V6"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-858b/1.webp",
+    "image": "/product-media/engine/atk-858b/1.webp",
+    "images": [
+      "/product-media/engine/atk-858b/1.webp",
+      "/product-media/engine/atk-858b/2.webp",
+      "/product-media/engine/atk-858b/3.webp",
+      "/product-media/engine/atk-858b/4.webp",
+      "/product-media/engine/atk-858b/5.webp",
+      "/product-media/engine/atk-858b/6.webp"
+    ],
+    "description": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858B for 2006–2015 Toyota Tacoma / Tundra (2006–2010 and 2012–2015)\n\nRemanufactured Toyota 1GR-FE 4.0L V6 long block, ATK part number 858B. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 858B\nEngine code: 1GR-FE\nDisplacement: 4.0L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 858B)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2006–2015 Toyota Tacoma / Tundra (2006–2010 and 2012–2015) with the 4.0L 1GR-FE engine; confirm by VIN.\n\nNotes\n\nIntake VVT with AIR (secondary air injection) version, per the listing.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-858b",
+    "createdAt": 1795200005106
+  },
+  {
+    "id": 5107,
+    "name": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858 for 2005–2011 Toyota 4Runner / FJ Cruiser / Tacoma / Tundra",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 6140.79,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "858",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2005–2011 Toyota 4Runner / FJ Cruiser / Tacoma / Tundra with the 4.0L 1GR-FE engine; confirm by VIN",
+    "fitmentYears": "2005–2011",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2005,
+        "yearTo": 2011,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "4.0L 1GR-FE V6"
+      },
+      {
+        "yearFrom": 2005,
+        "yearTo": 2011,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "4.0L 1GR-FE V6"
+      },
+      {
+        "yearFrom": 2005,
+        "yearTo": 2011,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "4.0L 1GR-FE V6"
+      },
+      {
+        "yearFrom": 2007,
+        "yearTo": 2011,
+        "make": "Toyota",
+        "model": "FJ Cruiser",
+        "submodel": "4.0L 1GR-FE V6"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-858/1.webp",
+    "image": "/product-media/engine/atk-858/1.webp",
+    "images": [
+      "/product-media/engine/atk-858/1.webp",
+      "/product-media/engine/atk-858/2.webp",
+      "/product-media/engine/atk-858/3.webp",
+      "/product-media/engine/atk-858/4.webp",
+      "/product-media/engine/atk-858/5.webp",
+      "/product-media/engine/atk-858/6.webp"
+    ],
+    "description": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858 for 2005–2011 Toyota 4Runner / FJ Cruiser / Tacoma / Tundra\n\nRemanufactured Toyota 1GR-FE 4.0L V6 long block, ATK part number 858. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 858\nEngine code: 1GR-FE\nDisplacement: 4.0L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 858)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2005–2011 Toyota 4Runner / FJ Cruiser / Tacoma / Tundra with the 4.0L 1GR-FE engine; confirm by VIN.\n\nNotes\n\nUse of TRD supercharger equipment voids the remanufacturer's warranty, per the listing.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-858",
+    "createdAt": 1795200005107
+  },
+  {
+    "id": 5108,
+    "name": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858A for 2003–2004 Toyota 4Runner",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 5270.59,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "858A",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2003–2004 Toyota 4Runner with the 4.0L 1GR-FE engine; confirm by VIN",
+    "fitmentYears": "2003–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2003,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "4.0L 1GR-FE V6"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-858a/1.webp",
+    "image": "/product-media/engine/atk-858a/1.webp",
+    "images": [
+      "/product-media/engine/atk-858a/1.webp",
+      "/product-media/engine/atk-858a/2.webp",
+      "/product-media/engine/atk-858a/3.webp",
+      "/product-media/engine/atk-858a/4.webp",
+      "/product-media/engine/atk-858a/5.webp",
+      "/product-media/engine/atk-858a/6.webp"
+    ],
+    "description": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858A for 2003–2004 Toyota 4Runner\n\nRemanufactured Toyota 1GR-FE 4.0L V6 long block, ATK part number 858A. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 858A\nEngine code: 1GR-FE\nDisplacement: 4.0L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 858A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2003–2004 Toyota 4Runner with the 4.0L 1GR-FE engine; confirm by VIN.\n\nNotes\n\nUse of TRD supercharger equipment voids the remanufacturer's warranty, per the listing.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-858a",
+    "createdAt": 1795200005108
+  },
+  {
+    "id": 5109,
+    "name": "ATK Remanufactured 5.7L 3UR-FE V8 Long Block Engine 865A for 2012–2015 Toyota Tundra / Sequoia",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 8035.09,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "865A",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2012–2015 Toyota Tundra / Sequoia with the 5.7L 3UR-FE engine; confirm by VIN",
+    "fitmentYears": "2012–2015",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "5.7L 3UR-FE i-Force V8"
+      },
+      {
+        "yearFrom": 2012,
+        "yearTo": 2015,
+        "make": "Toyota",
+        "model": "Sequoia",
+        "submodel": "5.7L 3UR-FE i-Force V8"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-865a/1.webp",
+    "image": "/product-media/engine/atk-865a/1.webp",
+    "images": [
+      "/product-media/engine/atk-865a/1.webp",
+      "/product-media/engine/atk-865a/2.webp"
+    ],
+    "description": "ATK Remanufactured 5.7L 3UR-FE V8 Long Block Engine 865A for 2012–2015 Toyota Tundra / Sequoia\n\nRemanufactured Toyota 3UR-FE 5.7L V8 long block, ATK part number 865A. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 865A\nEngine code: 3UR-FE\nDisplacement: 5.7L\nConfiguration: V8\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 865A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2012–2015 Toyota Tundra / Sequoia with the 5.7L 3UR-FE engine; confirm by VIN.\n\nNotes\n\nYears are where the sellers' listings overlap (JEGS 2011-2015 Tundra; Powertrain Products 2012-2017 Tundra / Sequoia). Head covers with extra boss included, per the listing.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-865a",
+    "createdAt": 1795200005109
   }
 ]

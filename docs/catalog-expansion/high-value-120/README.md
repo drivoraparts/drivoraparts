@@ -290,3 +290,17 @@ These are priced with the $1,000 core included (owner's decision "A"). Every com
 - **ARTEC Sport 400 (GR Corolla): IMAGE PENDING.** Its studio photos carry an added logo.
 - **Live check of batch 23:** 5102 and 5103 passed on production.
 
+## Batch 25 (2026-11-23): ATK remanufactured Toyota engines (first engines)
+- **Pricing:** core included (owner decision A), 5% under the lowest named ATK-number price with its $545 core added.
+  - Powertrain Products' prices are shown with "core on invoice". They are not used for our price, because their core
+    amount is not published.
+- **Shipping:** freight (palletized).
+- **Photos:** from Powertrain Products' listing of each ATK engine.
+
+| ID | ATK no. | Engine | Fits | Our price (core included) |
+|---|---|---|---|---|
+| 5106 | 858B | 4.0L 1GR-FE V6 | Tacoma / Tundra 2006-2010, 2012-2015 | $6,115.14 |
+| 5107 | 858 | 4.0L 1GR-FE V6 | 4Runner / Tacoma / Tundra 2005-2011, FJ Cruiser 2007-2011 | $6,140.79 |
+| 5108 | 858A | 4.0L 1GR-FE V6 | 4Runner 2003-2004 | $5,270.59 |
+| 5109 | 865A | 5.7L 3UR-FE V8 | Tundra / Sequoia 2012-2015 | $8,035.09 |
+
