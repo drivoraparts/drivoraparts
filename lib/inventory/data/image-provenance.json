@@ -74218,5 +74218,68 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-5102-hv-1": {
+    "productId": 5102,
+    "productName": "GReddy Turbo Kit TD06SH-25G 10cm² (Actuator Type) 11510033 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "localFile": "/product-media/turbocharger/greddy-11510033/1.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/1668/8171/files/11510033_JZA80_TD06_WHT.jpg",
+    "sourceName": "greddy.com",
+    "landingPage": "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033",
+    "creator": "GReddy Performance Products (manufacturer)",
+    "creatorUrl": "https://www.greddy.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for this exact part number (studio photo of the complete 11510033 kit contents on the manufacturer's own product page; no watermark); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "11510033"
+    ],
+    "query": "retailer listing: 11510033",
+    "sha256": "2980a3bdf1a7f4e898fb4203245a6f9e79765836ae69b837832316f10a065741",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5102-hv-2": {
+    "productId": 5102,
+    "productName": "GReddy Turbo Kit TD06SH-25G 10cm² (Actuator Type) 11510033 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "localFile": "/product-media/turbocharger/greddy-11510033/2.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/1668/8171/files/11510033JZTD06.webp",
+    "sourceName": "greddy.com",
+    "landingPage": "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033",
+    "creator": "GReddy Performance Products (manufacturer)",
+    "creatorUrl": "https://www.greddy.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for this exact part number (studio photo of the TD06SH turbocharger with adapter and pipes from the 11510033 kit; the only lettering is the manufacturer's own cast and label markings); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "11510033"
+    ],
+    "query": "retailer listing: 11510033",
+    "sha256": "596858bceff4436f4a9984c8febd4d526f60f99b44cec6cd4c53bc794e81224d",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5103-hv-1": {
+    "productId": 5103,
+    "productName": "GReddy Turbo Upgrade Kit T78-29D 14cm² (Wastegate Type, R11) 11510030 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "localFile": "/product-media/turbocharger/greddy-11510030/1.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/1668/8171/files/SupraT78_WHT.jpg",
+    "sourceName": "greddy.com",
+    "landingPage": "https://www.greddy.com/products/turbo-kit-jza80-t78-88-t78-29d-14-11510030",
+    "creator": "GReddy Performance Products (manufacturer)",
+    "creatorUrl": "https://www.greddy.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography from the manufacturer's own product page for this exact part number (studio photo of the JZA80 T78 kit contents on the manufacturer's own product page; no watermark (the page's second photo carries a watermark and shows another kit number, so it is not used)); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "11510030"
+    ],
+    "query": "retailer listing: 11510030",
+    "sha256": "320aec948feaba80f8a0289ef6d61d410273f02ff67236db7f3a97a9fd4b6900",
+    "downloadedAt": "2026-11-23"
   }
 }

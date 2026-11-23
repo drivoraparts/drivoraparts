@@ -271,3 +271,12 @@ These are priced with the $1,000 core included (owner's decision "A"). Every com
 - **Held:** 30510-48120-84 (one price) and 30510-33140-84 (no current price).
 - **Counts:** 27 new under the brief are live, 38 toward the 120 in total.
 
+## Batch 23 (2026-11-23): GReddy JZA80 Supra turbo kits
+- **5102: GReddy 11510033 (TD06SH-25G actuator kit), $4,128.93.** Priced 5% under Titan Motorsports and DriftHQ at
+  $4,346.25. GReddy's own US store is $4,575.
+- **5103: GReddy 11510030 (T78-29D wastegate kit, stainless manifold), $5,092.00.** Priced 5% under JM Auto Racing at
+  $5,360. Vivid and MVP are $5,510, and GReddy is $5,800.
+- **Fitment:** 1993-1997 Supra Turbo (2JZ-GTE, non-VVT-i). GReddy lists both kits as not for VVT-i engines.
+- **Photos:** GReddy's own studio photos of each kit. A watermarked install photo of another kit number was rejected.
+- **Scoreboard and next actions:** `STATUS.md`.
+
