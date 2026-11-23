@@ -368,3 +368,11 @@ Batch 31 is live and verified.
 - Both are complete turbochargers with an integrated stainless manifold.
 - **Photos:** the manufacturer's photos from Titan Motorsports' listing. UroTuning's copies are not used, because its terms forbid reuse. The text-overlay photo, the screenshot with a UI artifact and the add-on hose photo are rejected.
 - **New:** `TRACKER.md` (master tracker generated from `pipeline.json` by `scripts/build-hv120-tracker.py`).
+
+## Batch 33 (2026-11-23)
+Batch 32 is live and verified.
+- **5123: Dynamic Autowerx New Gen 6769 (DAW_G258_6769), 2021-2024 GR Supra 3.0 (6-port), $3,277.50.** Priced 5% under Titan Motorsports at $3,450.
+- **IMAGE PENDING:**
+  - CTS Turbo A90 2-port kit CTS-TR-1059: every photo carries an added CTS logo.
+  - Dynamic Autowerx 6-port Flow Max: its photos are shared with the 2-port listing.
+- **Known issue:** 5121's turbo photo file is also used on the 6-port Flow Max listing.

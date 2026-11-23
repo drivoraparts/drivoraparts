@@ -2299,7 +2299,7 @@
     },
     {
       "category": "turbochargers",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Dynamic Autowerx",
       "product": "Flow Max upgrade turbocharger (Gen 2 B58TU 2-port, with stainless manifold)",
       "partNumber": "DAW-G258-2p-FM1",
@@ -2310,12 +2310,12 @@
       "proposedPrice": 2565.0,
       "imageSource": "titanmotorsports.com (3 photos; text-overlay photo and screenshot with UI artifact rejected)",
       "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
-      "notes": "batch 32",
+      "notes": "batch 32; KNOWN ISSUE: its turbo photo file is also used on the 6-port Flow Max listing (same Flow Max family); a variant-specific photo is wanted",
       "liveId": 5121
     },
     {
       "category": "turbochargers",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Dynamic Autowerx",
       "product": "Ultra Flow 6466 upgrade turbocharger (Gen 2 B58TU 2-port, with stainless manifold)",
       "partNumber": "DAW_G258_2p_UFR_5",
@@ -2343,6 +2343,54 @@
       "imageSource": "",
       "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
       "notes": "base kit excludes the turbocharger",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "Dynamic Autowerx",
+      "product": "New Gen 6769 upgrade turbocharger (Gen 2 B58TU 6-port, with stainless manifold)",
+      "partNumber": "DAW_G258_6769",
+      "fits": "GR Supra 3.0 2021-2024 (6-port)",
+      "usPrices": "Titan $3,450; UroTuning $3,550; Kies $3,550; Trucrane $3,550",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 3277.5,
+      "imageSource": "titanmotorsports.com (5 photos of this unit; shared inlet photo excluded)",
+      "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
+      "notes": "batch 33",
+      "liveId": 5123
+    },
+    {
+      "category": "turbochargers",
+      "status": "IMAGE PENDING",
+      "manufacturer": "CTS Turbo",
+      "product": "A90 2-port BOSS turbo kit (complete new turbo, dual ceramic BB)",
+      "partNumber": "CTS-TR-1059",
+      "fits": "GR Supra 2020 (2-port)",
+      "usPrices": "Titan $2,599.99; iAutoWork $2,599.99; Made Motorsports $2,599.99",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "every photo carries an added CTS logo",
+      "imagePermission": "",
+      "notes": "needs a clean photo",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Dynamic Autowerx",
+      "product": "Flow Max 6-port",
+      "partNumber": "DAW_G258_FM",
+      "fits": "GR Supra 2021-2024 (6-port)",
+      "usPrices": "Studio RSR $2,899.99; UroTuning $2,950; BimmerNetwork $2,950; Titan $2,950",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "photos shared with the 2-port Flow Max listing",
+      "imagePermission": "",
+      "notes": "needs a variant-specific photo",
       "liveId": null
     }
   ]
