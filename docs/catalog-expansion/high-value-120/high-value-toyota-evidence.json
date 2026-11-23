@@ -51,6 +51,93 @@
       "price": 1766.04,
       "core": "none (sold outright, per the manufacturer)",
       "checked": "2026-11-23"
+    },
+    {
+      "id": 5102,
+      "partNumber": "11510033",
+      "aliases": [],
+      "maker": "GReddy Performance Products",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1993,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "Supra",
+          "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"
+        }
+      ],
+      "fitmentSources": [
+        "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033 (Chassis JZA80, Engine 2JZ-GTE, Year 1993.05-1997.08, VVT-i not available)",
+        "https://titanmotorsports.com/products/greddy-93-02-toyota-supra-jdm-model-jza80-td06sh-25g-10cm-act-turbo-kit"
+      ],
+      "fitmentCaveat": "GReddy's catalog lists the JZA80 by production month; the US Supra Turbo used the same 2JZ-GTE twin-turbo engine without VVT-i through 1997.",
+      "competitors": [
+        {
+          "name": "Titan Motorsports",
+          "price": 4346.25,
+          "url": "https://titanmotorsports.com/products/greddy-93-02-toyota-supra-jdm-model-jza80-td06sh-25g-10cm-act-turbo-kit"
+        },
+        {
+          "name": "DriftHQ",
+          "price": 4346.25,
+          "url": "https://drifthq.com/products/greddy-93-02-toyota-supra-jdm-model-jza80-td06sh-25g-10cm-act-turbo-kit"
+        },
+        {
+          "name": "GReddy Performance Products (US store)",
+          "price": 4575.0,
+          "url": "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033"
+        }
+      ],
+      "lowest": 4346.25,
+      "price": 4128.93,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5103,
+      "partNumber": "11510030",
+      "aliases": [],
+      "maker": "GReddy Performance Products",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1993,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "Supra",
+          "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"
+        }
+      ],
+      "fitmentSources": [
+        "https://www.greddy.com/products/turbo-kit-jza80-t78-88-t78-29d-14-11510030 (Chassis JZA80, Engine 2JZ-GTE, Year 1993.05-1997.08, VVT-i cannot be installed)",
+        "https://www.vividracing.com/greddy-turbo-upgrade-kit-single-t78-29d14cm-toyota-supra-19931997-p-154223070.html (1993-1997 Toyota Supra)"
+      ],
+      "fitmentCaveat": "GReddy's catalog lists the JZA80 by production month; the US Supra Turbo used the same 2JZ-GTE twin-turbo engine without VVT-i through 1997.",
+      "competitors": [
+        {
+          "name": "JM Auto Racing",
+          "price": 5360.0,
+          "url": "https://jmautosports.com/products/greddy-t78-29d-turbo-upgrade-kit-11510030"
+        },
+        {
+          "name": "Vivid Racing",
+          "price": 5510.0,
+          "url": "https://www.vividracing.com/greddy-turbo-upgrade-kit-single-t78-29d14cm-toyota-supra-19931997-p-154223070.html"
+        },
+        {
+          "name": "MVP Motorsports",
+          "price": 5510.0,
+          "url": "https://www.mvpmotorsports.com/greddy/greddy-turbo-kit-upgrade/11510030"
+        },
+        {
+          "name": "GReddy Performance Products (US store)",
+          "price": 5800.0,
+          "url": "https://www.greddy.com/products/turbo-kit-jza80-t78-88-t78-29d-14-11510030"
+        }
+      ],
+      "lowest": 5360.0,
+      "price": 5092.0,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
     }
   ]
 }

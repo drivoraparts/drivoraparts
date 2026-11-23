@@ -102,6 +102,7 @@ export const brands: Brand[] = [
   // High-value Toyota brief (2026-11-23)
   { slug: "vargas-turbo-technologies", name: "Vargas Turbo Technologies", category: "turbocharger" },
   { slug: "pure-turbos", name: "Pure Turbos", category: "turbocharger" },
+  { slug: "greddy", name: "GReddy", category: "turbocharger" },
   { slug: "alliant-power", name: "Alliant Power", category: "turbocharger" },
   { slug: "synapse-auto", name: "Synapse Auto", category: "turbocharger" },
   { slug: "river-city-turbo", name: "River City Turbo", category: "turbocharger" },

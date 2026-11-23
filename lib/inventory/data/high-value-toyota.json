@@ -30,5 +30,70 @@
     "description": "Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)\n\nVTT \"GC\" turbocharger upgrade for the B58 engine with the 2-port exhaust manifold, made from new castings (not a rebuilt factory turbocharger). Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: Vargas Turbo Technologies (VTT)\nManufacturer part number: VTT-B58-GC-2 (also listed as B58TU2GC)\nEngine: B58 3.0L inline-6 turbo, 2-port exhaust manifold\nSupported power (manufacturer): stock to 600 WHP\nConstruction (manufacturer): 100% new castings; GC is the cold side and bearing housing (the GC+ is the complete unit, sold separately)\nTurbine wheel: 9-blade Mar-M 246\nCompressor wheel: 9-blade point-milled\nInlet: 3 in. turbocharger inlet\nConnections: factory oil, water, downpipe and charge pipe connections\nCore charge: none; the unit is sold outright\nManufacturer warranty: 12 months, unlimited mileage (per VTT)\nCondition: New\n\nIn the box (per the manufacturer)\n\n1 VTT B58 \"GC\" turbocharger\n1 VTT 3 in. to 4 in. silicone inlet elbow with adapters for the factory connections\n1 3 in. hose clamp for the inlet elbow\n1 optional 4 in. connector for the inlet elbow, for use with the stock airbox\n\nToyota fitment\n\n2020 Toyota GR Supra 3.0 (A90, B58 engine with the 2-port exhaust manifold). Does not fit 2021-and-later GR Supra 3.0 (6-port manifold), which uses VTT-B58-GC-3; confirm the manifold port count on your engine.\n\nNotes\n\nInstall kit, fuel system upgrades and an engine tune are not included. VTT recommends pairing the upgrade with a tune and supporting parts.\nFor off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "vargas-turbo-technologies-vtt-b58-gc-2",
     "createdAt": 1795200005101
+  },
+  {
+    "id": 5102,
+    "name": "GReddy Turbo Kit TD06SH-25G 10cm² (Actuator Type) 11510033 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "category": "turbocharger",
+    "brand": "greddy",
+    "price": 4128.93,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "11510033",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built 1993.05–1997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE",
+    "fitmentYears": "1993–1997",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1993,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "Supra",
+        "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/greddy-11510033/1.webp",
+    "image": "/product-media/turbocharger/greddy-11510033/1.webp",
+    "images": [
+      "/product-media/turbocharger/greddy-11510033/1.webp",
+      "/product-media/turbocharger/greddy-11510033/2.webp"
+    ],
+    "description": "GReddy Turbo Kit TD06SH-25G 10cm² (Actuator Type) 11510033 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)\n\nGReddy single-turbo kit for the JZA80 Supra's 2JZ-GTE that replaces the factory twin turbochargers, using the factory exhaust manifold through a turbine adapter. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: GReddy Performance Products\nManufacturer part number: 11510033\nTurbocharger: TD06SH-25G, 10 cm² turbine housing, GReddy reinforced actuator (internal wastegate)\nManifold: uses the factory exhaust manifold (adapter type)\nSetting (manufacturer): boost 0.85 kg/cm² = approx. 370 PS, with the factory intercooler layout and injectors\nEngine: 2JZ-GTE (non-VVT-i)\nCondition: New\n\nIn the box (per the manufacturer)\n\nTurbocharger body\nTurbine adapter\nOutlet pipe\nSuction pipe\nAirinx M80 air filter\nOil pressure hose\nShort parts set\n\nToyota fitment\n\n1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built 1993.05–1997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE.\n\nNotes\n\nNot compatible with VVT-i 2JZ-GTE engines (the 1998 US Supra Turbo). The factory catalyst can be retained only with the factory exhaust manifold.\nEngine management changes and tuning are not included. For off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "greddy-11510033",
+    "createdAt": 1795200005102
+  },
+  {
+    "id": 5103,
+    "name": "GReddy Turbo Upgrade Kit T78-29D 14cm² (Wastegate Type, R11) 11510030 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "category": "turbocharger",
+    "brand": "greddy",
+    "price": 5092.0,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "11510030",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built 1993.05–1997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE",
+    "fitmentYears": "1993–1997",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1993,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "Supra",
+        "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/greddy-11510030/1.webp",
+    "image": "/product-media/turbocharger/greddy-11510030/1.webp",
+    "images": [
+      "/product-media/turbocharger/greddy-11510030/1.webp"
+    ],
+    "description": "GReddy Turbo Upgrade Kit T78-29D 14cm² (Wastegate Type, R11) 11510030 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)\n\nGReddy single-turbo upgrade kit for the JZA80 Supra's 2JZ-GTE with its own stainless exhaust manifold and an external wastegate, replacing the factory twin turbochargers. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: GReddy Performance Products\nManufacturer part number: 11510030\nTurbocharger: T78-29D, 14 cm² turbine housing\nExhaust manifold: stainless steel (SUS), 42.7 mm\nWastegate: GReddy R11 external wastegate\nFront pipe: 80 mm\nAir filter: Airinx\nEngine: 2JZ-GTE (non-VVT-i)\nCondition: New\n\nKit specification as listed by GReddy\n\nT78-29D turbocharger (14 cm²)\nStainless exhaust manifold (42.7 mm)\nR11 wastegate\n80 mm front pipe\nAirinx air filter\n\nToyota fitment\n\n1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built 1993.05–1997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE.\n\nNotes\n\nNot compatible with VVT-i 2JZ-GTE engines (the 1998 US Supra Turbo). The factory front catalyst cannot be installed with this kit.\nFuel system, engine management and tuning are not included. For off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "greddy-11510030",
+    "createdAt": 1795200005103
   }
 ]

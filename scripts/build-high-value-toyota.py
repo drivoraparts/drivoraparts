@@ -93,6 +93,118 @@ PRODUCTS = [
         ],
         "mediaDir": "turbocharger/vargas-vtt-b58-gc-2",
     },
+    {
+        "id": 5102,
+        "category": "turbocharger",
+        "brand": "greddy",
+        "maker": "GReddy Performance Products",
+        "partNumber": "11510033",
+        "aliases": [],
+        "name": "GReddy Turbo Kit TD06SH-25G 10cm\u00b2 (Actuator Type) 11510033 for 1993\u20131997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+        "summary": ("GReddy single-turbo kit for the JZA80 Supra's 2JZ-GTE that replaces the factory twin turbochargers, using the "
+                    "factory exhaust manifold through a turbine adapter. Aftermarket part; not made or warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "GReddy Performance Products"),
+            ("Manufacturer part number", "11510033"),
+            ("Turbocharger", "TD06SH-25G, 10 cm\u00b2 turbine housing, GReddy reinforced actuator (internal wastegate)"),
+            ("Manifold", "uses the factory exhaust manifold (adapter type)"),
+            ("Setting (manufacturer)", "boost 0.85 kg/cm\u00b2 = approx. 370 PS, with the factory intercooler layout and injectors"),
+            ("Engine", "2JZ-GTE (non-VVT-i)"),
+            ("Condition", "New"),
+        ],
+        "includes": [
+            "Turbocharger body", "Turbine adapter", "Outlet pipe", "Suction pipe", "Airinx M80 air filter",
+            "Oil pressure hose", "Short parts set",
+        ],
+        "notes": [
+            "Not compatible with VVT-i 2JZ-GTE engines (the 1998 US Supra Turbo). The factory catalyst can be retained only with the factory exhaust manifold.",
+            "Engine management changes and tuning are not included. For off-road / competition use; check emissions rules in your state before installing.",
+        ],
+        "fitText": ("1993\u20131997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built "
+                    "1993.05\u20131997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE"),
+        "fitmentApplications": [
+            {"yearFrom": 1993, "yearTo": 1997, "make": "Toyota", "model": "Supra",
+             "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"},
+        ],
+        "fitmentSources": [
+            "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033 (Chassis JZA80, Engine 2JZ-GTE, Year 1993.05-1997.08, VVT-i not available)",
+            "https://titanmotorsports.com/products/greddy-93-02-toyota-supra-jdm-model-jza80-td06sh-25g-10cm-act-turbo-kit",
+        ],
+        "fitmentCaveat": "GReddy's catalog lists the JZA80 by production month; the US Supra Turbo used the same 2JZ-GTE twin-turbo engine without VVT-i through 1997.",
+        "competitors": [
+            ("Titan Motorsports", 4346.25, "https://titanmotorsports.com/products/greddy-93-02-toyota-supra-jdm-model-jza80-td06sh-25g-10cm-act-turbo-kit"),
+            ("DriftHQ", 4346.25, "https://drifthq.com/products/greddy-93-02-toyota-supra-jdm-model-jza80-td06sh-25g-10cm-act-turbo-kit"),
+            ("GReddy Performance Products (US store)", 4575.00, "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033"),
+        ],
+        "photos": [
+            {"file": "greddy-11510033-1.jpg", "url": "https://cdn.shopify.com/s/files/1/1668/8171/files/11510033_JZA80_TD06_WHT.jpg",
+             "landingPage": "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033",
+             "sourceName": "greddy.com", "creator": "GReddy Performance Products (manufacturer)", "creatorUrl": "https://www.greddy.com/",
+             "note": "studio photo of the complete 11510033 kit contents on the manufacturer's own product page; no watermark"},
+            {"file": "greddy-11510033-2.webp", "url": "https://cdn.shopify.com/s/files/1/1668/8171/files/11510033JZTD06.webp",
+             "landingPage": "https://www.greddy.com/products/turbo-kit-jza80-td06sh-25g-10cm-act-11510033",
+             "sourceName": "greddy.com", "creator": "GReddy Performance Products (manufacturer)", "creatorUrl": "https://www.greddy.com/",
+             "note": "studio photo of the TD06SH turbocharger with adapter and pipes from the 11510033 kit; the only lettering is the manufacturer's own cast and label markings"},
+        ],
+        "mediaDir": "turbocharger/greddy-11510033",
+        "photoBasis": "manufacturer product photography from the manufacturer's own product page for this exact part number",
+    },
+    {
+        "id": 5103,
+        "category": "turbocharger",
+        "brand": "greddy",
+        "maker": "GReddy Performance Products",
+        "partNumber": "11510030",
+        "aliases": [],
+        "name": "GReddy Turbo Upgrade Kit T78-29D 14cm\u00b2 (Wastegate Type, R11) 11510030 for 1993\u20131997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+        "summary": ("GReddy single-turbo upgrade kit for the JZA80 Supra's 2JZ-GTE with its own stainless exhaust manifold and an external "
+                    "wastegate, replacing the factory twin turbochargers. Aftermarket part; not made or warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "GReddy Performance Products"),
+            ("Manufacturer part number", "11510030"),
+            ("Turbocharger", "T78-29D, 14 cm\u00b2 turbine housing"),
+            ("Exhaust manifold", "stainless steel (SUS), 42.7 mm"),
+            ("Wastegate", "GReddy R11 external wastegate"),
+            ("Front pipe", "80 mm"),
+            ("Air filter", "Airinx"),
+            ("Engine", "2JZ-GTE (non-VVT-i)"),
+            ("Condition", "New"),
+        ],
+        "includesNote": "Kit specification as listed by GReddy",
+        "includes": [
+            "T78-29D turbocharger (14 cm\u00b2)", "Stainless exhaust manifold (42.7 mm)", "R11 wastegate", "80 mm front pipe",
+            "Airinx air filter",
+        ],
+        "notes": [
+            "Not compatible with VVT-i 2JZ-GTE engines (the 1998 US Supra Turbo). The factory front catalyst cannot be installed with this kit.",
+            "Fuel system, engine management and tuning are not included. For off-road / competition use; check emissions rules in your state before installing.",
+        ],
+        "fitText": ("1993\u20131997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built "
+                    "1993.05\u20131997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE"),
+        "fitmentApplications": [
+            {"yearFrom": 1993, "yearTo": 1997, "make": "Toyota", "model": "Supra",
+             "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"},
+        ],
+        "fitmentSources": [
+            "https://www.greddy.com/products/turbo-kit-jza80-t78-88-t78-29d-14-11510030 (Chassis JZA80, Engine 2JZ-GTE, Year 1993.05-1997.08, VVT-i cannot be installed)",
+            "https://www.vividracing.com/greddy-turbo-upgrade-kit-single-t78-29d14cm-toyota-supra-19931997-p-154223070.html (1993-1997 Toyota Supra)",
+        ],
+        "fitmentCaveat": "GReddy's catalog lists the JZA80 by production month; the US Supra Turbo used the same 2JZ-GTE twin-turbo engine without VVT-i through 1997.",
+        "competitors": [
+            ("JM Auto Racing", 5360.00, "https://jmautosports.com/products/greddy-t78-29d-turbo-upgrade-kit-11510030"),
+            ("Vivid Racing", 5510.00, "https://www.vividracing.com/greddy-turbo-upgrade-kit-single-t78-29d14cm-toyota-supra-19931997-p-154223070.html"),
+            ("MVP Motorsports", 5510.00, "https://www.mvpmotorsports.com/greddy/greddy-turbo-kit-upgrade/11510030"),
+            ("GReddy Performance Products (US store)", 5800.00, "https://www.greddy.com/products/turbo-kit-jza80-t78-88-t78-29d-14-11510030"),
+        ],
+        "photos": [
+            {"file": "greddy-11510030-1.jpg", "url": "https://cdn.shopify.com/s/files/1/1668/8171/files/SupraT78_WHT.jpg",
+             "landingPage": "https://www.greddy.com/products/turbo-kit-jza80-t78-88-t78-29d-14-11510030",
+             "sourceName": "greddy.com", "creator": "GReddy Performance Products (manufacturer)", "creatorUrl": "https://www.greddy.com/",
+             "note": "studio photo of the JZA80 T78 kit contents on the manufacturer's own product page; no watermark (the page's second photo carries a watermark and shows another kit number, so it is not used)"},
+        ],
+        "mediaDir": "turbocharger/greddy-11510030",
+        "photoBasis": "manufacturer product photography from the manufacturer's own product page for this exact part number",
+    },
 ]
 
 
@@ -122,7 +234,7 @@ for p in PRODUCTS:
     desc = "\n".join([
         p["name"], "", p["summary"], "",
         "Specifications", "", *[f"{k}: {v}" for k, v in p["specs"]], "",
-        "In the box (per the manufacturer)", "", *p["includes"], "",
+        p.get("includesNote") or "In the box (per the manufacturer)", "", *p["includes"], "",
         "Toyota fitment", "", p["fitText"] + ".", "",
         "Notes", "", *p["notes"], "",
         "Shipping", "Ships within the United States only.",
@@ -154,7 +266,7 @@ for p in PRODUCTS:
             "sourceName": ph["sourceName"], "landingPage": ph["landingPage"], "creator": ph["creator"],
             "creatorUrl": ph["creatorUrl"], "license": None, "licenseRaw": None, "licenseUrl": "",
             "attributionRequired": False,
-            "usageBasis": ("manufacturer catalogue photography of this exact part on a specialist retailer's listing of it ("
+            "usageBasis": ((p.get("photoBasis") or "manufacturer catalogue photography of this exact part on a specialist retailer's listing of it") + " ("
                            + ph["note"] + "); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; "
                            "not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. "
                            "RIGHTS NOT INDEPENDENTLY VERIFIED"),
