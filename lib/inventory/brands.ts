@@ -103,6 +103,7 @@ export const brands: Brand[] = [
   { slug: "vargas-turbo-technologies", name: "Vargas Turbo Technologies", category: "turbocharger" },
   { slug: "pure-turbos", name: "Pure Turbos", category: "turbocharger" },
   { slug: "greddy", name: "GReddy", category: "turbocharger" },
+  { slug: "forced-performance", name: "Forced Performance", category: "turbocharger" },
   { slug: "alliant-power", name: "Alliant Power", category: "turbocharger" },
   { slug: "synapse-auto", name: "Synapse Auto", category: "turbocharger" },
   { slug: "river-city-turbo", name: "River City Turbo", category: "turbocharger" },

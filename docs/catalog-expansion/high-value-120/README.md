@@ -280,3 +280,13 @@ These are priced with the $1,000 core included (owner's decision "A"). Every com
 - **Photos:** GReddy's own studio photos of each kit. A watermarked install photo of another kit number was rejected.
 - **Scoreboard and next actions:** `STATUS.md`.
 
+## Batch 24 (2026-11-23): HKS GR86 kit and Forced Performance B58 super core
+- **5104: HKS GTIII-RS bolt-on turbo kit 11001-KT007, 2022-2025 GR86 (FA24), $4,959.00.**
+  - Priced 5% under LIMIT+1 at $5,220. TurboKits is $5,349 and GR Performance Parts $5,800.
+  - Kit contents are listed as HKS gives them. The tune, pressure sensor and fuel parts are needed and not included.
+- **5105: Forced Performance Green V2 super core 2805050, 2020-2025 GR Supra 3.0 B58, $1,299.14.**
+  - Priced 5% under goturbo.net at $1,367.52.
+  - Described as a core only (center cartridge with wheels), not a complete turbo. The only photo used shows the core.
+- **ARTEC Sport 400 (GR Corolla): IMAGE PENDING.** Its studio photos carry an added logo.
+- **Live check of batch 23:** 5102 and 5103 passed on production.
+
