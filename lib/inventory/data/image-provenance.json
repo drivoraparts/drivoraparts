@@ -74124,5 +74124,99 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4496": {
+    "productId": 4496,
+    "productName": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-42320-84 for Toyota RAV4 (2006–2008)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-42320-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/305104232084/30510-42320-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "30510-42320-84",
+      "305104232084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 30510-42320-84",
+    "sha256": "6c9672b638695341c1273c5b5642d329b4c1d8ba270a8e5ecd3f7fddc3383239",
+    "bytes": 15556,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-42320-84/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/305104232084/30510-42320-84_2.webp",
+        "sha256": "f81f5dbfcb1b02b0921f9bc1436600f0835c21f1a7c445090f3e90805af96a33",
+        "bytes": 24548,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-42320-84/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/305104232084/30510-42320-84_3.webp",
+        "sha256": "cfaf78c985c2f0ec6a559e6351be24f32abbe92ccd3f02cab4ca395fc82630c6",
+        "bytes": 23242,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4497": {
+    "productId": 4497,
+    "productName": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-48150-84 for Toyota Highlander (2004–2007)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-48150-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/305104815084/30510-48150-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "30510-48150-84",
+      "305104815084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 30510-48150-84",
+    "sha256": "ee6fa1a838bcb773af76f624a99f5b9bf6c86de62ef93273098d53d817a01dbd",
+    "bytes": 21358,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-48150-84/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/305104815084/30510-48150-84_2.webp",
+        "sha256": "2e1fbcd32b5ff3f69c0c3693204c993756a0694065dd750bc679bb1db0fc262b",
+        "bytes": 25512,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-48150-84/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/305104815084/30510-48150-84_3.webp",
+        "sha256": "cd5d7afd6a52cbc5ba92ae5dc5b81f52aff61dcf8eeb3b261f2782de5833d955",
+        "bytes": 27150,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
