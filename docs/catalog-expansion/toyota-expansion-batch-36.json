@@ -1,0 +1,266 @@
+{
+  "_comment": "Toyota expansion batch 36 (2026-11-23): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-0E220 — Grand Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "44250-0E220",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "steering",
+      "condition": "brand-new",
+      "proposedCategory": "suspension",
+      "proposedCategoryName": "Suspension",
+      "fitment": "2024–2025 Toyota Grand Highlander (electric power steering rack; sellers list LE, XLE, Limited, Platinum and Hybrid XLE / Limited / Platinum / Nightshade (Hybrid MAX not listed); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2024,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "Grand Highlander",
+          "submodel": "electric power steering rack; sellers list LE, XLE, Limited, Platinum and Hybrid XLE / Limited / Platinum / Nightshade (Hybrid MAX not listed); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota electric power steering rack and pinion assembly 44250-0E220 for the Toyota Grand Highlander. Electric power steering rack and pinion assembly (gear assembly, electric) with inner tie rods and boots. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-0E220\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2024–2025 Toyota Grand Highlander (electric power steering rack; sellers list LE, XLE, Limited, Platinum and Hybrid XLE / Limited / Platinum / Nightshade (Hybrid MAX not listed); confirm by VIN)\nRestriction (2024-2025 Grand Highlander): electric power steering rack; sellers list LE, XLE, Limited, Platinum and Hybrid XLE / Limited / Platinum / Nightshade (Hybrid MAX not listed); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 1339.48,
+        "lowestCompetitor": {
+          "seller": "Conicelli Toyota of Conshohocken",
+          "price": 867.79,
+          "url": "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-2024-toyota-grand-highlander-gear-assembly-442500e220"
+        },
+        "competitors": [
+          {
+            "seller": "Conicelli Toyota of Conshohocken",
+            "price": 867.79,
+            "url": "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-2024-toyota-grand-highlander-gear-assembly-442500e220"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 897.09,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0e220.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 914.0,
+            "url": "https://www.toyotapartsnow.com/parts-select/toyota-grand-highlander-rack-and-pinion"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 824.49,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2024,
+            "yearTo": 2025,
+            "make": "Toyota",
+            "model": "Grand Highlander",
+            "engine": "",
+            "restriction": "electric power steering rack; sellers list LE, XLE, Limited, Platinum and Hybrid XLE / Limited / Platinum / Nightshade (Hybrid MAX not listed); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (44250-0E220 Gear Assy, Electric: 2024-2025 Toyota Grand Highlander)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0e220.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Conicelli Toyota of Conshohocken (44250-0E220, 2024 Toyota Grand Highlander gear assembly)",
+                "url": "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-2024-toyota-grand-highlander-gear-assembly-442500e220",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Electric Power Steering Gear Assembly 44250-0E220)",
+                "url": "https://autoparts.toyota.com/products/product/gear-assy-electric-power-steering-442500e220",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/gear-assy-electric-power-steering-442500e220",
+        "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-2024-toyota-grand-highlander-gear-assembly-442500e220",
+        "https://www.toyotapartsdeal.com/oem/toyota~gear~assy~electric~44250-0e220.html",
+        "https://www.toyotapartsnow.com/parts-select/toyota-grand-highlander-rack-and-pinion"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Driver Seat Assembly (Stone) 71200-35A81-B0 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "71200-35A81-B0",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "seat",
+      "condition": "brand-new",
+      "proposedCategory": "interior",
+      "proposedCategoryName": "Interior",
+      "fitment": "2003–2005 Toyota 4Runner (SR5; with Stone (trim code 12) upholstery, on trucks with driver, passenger, side and curtain airbags; other colours and trims use different numbers; match the trim code and confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2003,
+          "yearTo": 2005,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "SR5; with Stone (trim code 12) upholstery, on trucks with driver, passenger, side and curtain airbags; other colours and trims use different numbers; match the trim code and confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front driver seat assembly (stone) 71200-35A81-B0 for the Toyota 4Runner. Complete new front driver (left-hand) seat assembly, cushion and back, in Stone (trim code 12). Replaces 71200-3D780-B4, 71200-3D780-B7 and 71200-3D781-B0.\n\nSpecifications\n\nPart number: 71200-35A81-B0\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2003–2005 Toyota 4Runner (SR5; with Stone (trim code 12) upholstery, on trucks with driver, passenger, side and curtain airbags; other colours and trims use different numbers; match the trim code and confirm by VIN)\nRestriction (2003-2005 4Runner): SR5 with Stone (trim code 12) upholstery, on trucks with driver, passenger, side and curtain airbags; other colours and trims use different numbers; match the trim code and confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3509.47,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 2350.4,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~fr~lh~71200-35a81-b0.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2350.4,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~fr~lh~71200-35a81-b0.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 2394.7,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~seat-assembly-front-lh~71200-35a81-b0"
+          },
+          {
+            "seller": "JoeTLC",
+            "price": 3860.49,
+            "url": "https://www.joetlc.com/products/front-lh-seat-assembly-for-toyota-4runner-2002-2009-71200-35a81-b0"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 2232.89,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "medium",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2003,
+            "yearTo": 2005,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "SR5",
+            "restriction": "SR5 with Stone (trim code 12) upholstery, on trucks with driver, passenger, side and curtain airbags; other colours and trims use different numbers; match the trim code and confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (71200-35A81-B0 Seat Assembly, Front Driver Side: 2003-2005 4Runner, GRN21# / UZN21#)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~fr~lh~71200-35a81-b0.html",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal 2004 4Runner seat parts list (replaces 71200-3D780-B4 / -B7, 3D781-B0: SR5, SRS airbags driver, passenger, side and curtain, Stone, trim 12)",
+                "url": "https://www.toyotapartsdeal.com/parts-list/2004-toyota-4runner/body/seat_seat_track.html",
+                "note": ""
+              },
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (Seat Assembly, Front LH 71200-35A81-B0)",
+                "url": "https://autoparts.toyota.com/products/product/seat-assy-fr-lh-7120035a81b0",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://autoparts.toyota.com/products/product/seat-assy-fr-lh-7120035a81b0",
+        "https://www.joetlc.com/products/front-lh-seat-assembly-for-toyota-4runner-2002-2009-71200-35a81-b0",
+        "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~fr~lh~71200-35a81-b0.html",
+        "https://www.toyotapartsdeal.com/parts-list/2004-toyota-4runner/body/seat_seat_track.html",
+        "https://www.toyotapartsnow.com/oem/toyota~seat-assembly-front-lh~71200-35a81-b0"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

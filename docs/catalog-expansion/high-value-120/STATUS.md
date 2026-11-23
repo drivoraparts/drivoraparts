@@ -10,11 +10,11 @@ prices, no duplicates. `TRACKER.md` (generated from `pipeline.json`) is the per-
 |---|---|---|---|---|
 | Tires | 20 | 20 | 0 | 5001-5020 |
 | Transmissions | 20 | 6 | 14 | 4489-4492, 4496, 4497 |
-| Steering | 20 | 13 (18 after batch 35) | 7 (2) | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4501 (+4502-4506) |
+| Steering | 20 | 18 (19 after batch 36) | 2 (1) | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4506 (+4507) |
 | Turbochargers | 20 | 11 | 9 | 4445, 4488, 5101-5105, 5121-5124 |
 | Engines | 20 | 15 | 5 | 5106-5120 |
-| Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **65** (70 after batch 35) | **55** (50) | |
+| Seats | 20 | 0 (1 after batch 36) | 20 (19) | (+4508) |
+| **Total** | 120 | **70** (72 after batch 36) | **50** (48) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -37,7 +37,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 32 | #160 | Dynamic Autowerx Flow Max, Ultra Flow 6466 (5121, 5122) | done |
 | 33 | #161 | Dynamic Autowerx New Gen 6769 (5123) | done |
 | 34 | #162 | Dynamic Autowerx 6969 (5124) | done |
-| 35 | (this PR) | Toyota racks 44250-0C200, 44250-0E260, 45510-0T011; columns 45250-06410, 45250-0C300 (4502-4506) | pending |
+| 35 | #163 | Toyota racks 44250-0C200, 44250-0E260, 45510-0T011; columns 45250-06410, 45250-0C300 (4502-4506) | done |
+| 36 | (this PR) | Toyota rack 44250-0E220 (4507); first seat 71200-35A81-B0 (4508) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
