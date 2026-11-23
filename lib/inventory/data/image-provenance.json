@@ -73383,5 +73383,121 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4489": {
+    "productId": 4489,
+    "productName": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-0C090-84 for Toyota Tundra (2007–2013)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-0c090-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/350100C09084/35010-0C090-84_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "35010-0C090-84",
+      "350100C09084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 35010-0C090-84",
+    "sha256": "10a37f9729d151e399d0d840fcffa4840675d024397678bbf5db81f475aed41e",
+    "bytes": 28014,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-0c090-84/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/350100C09084/35010-0C090-84_1.webp",
+        "sha256": "0404b500dd3fdf432e7a4db1c1c213deaf41507944f08760de811cf18eb86698",
+        "bytes": 20528,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4490": {
+    "productId": 4490,
+    "productName": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-35A40-84 for Toyota 4Runner (2004–2009)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-35a40-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/3501035A4084/35010-35A40-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "35010-35A40-84",
+      "3501035A4084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 35010-35A40-84",
+    "sha256": "05fa230e502b73a358b719069b1f164007213820a369a2472df5055b3080bda0",
+    "bytes": 26120,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4491": {
+    "productId": 4491,
+    "productName": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-60E00-84 for Toyota 4Runner (2010–2023)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-60e00-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/3501060E0084/35010-60E00-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "35010-60E00-84",
+      "3501060E0084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 35010-60E00-84",
+    "sha256": "ab1044cf353a1fe827165992ba92d17615468fe40a7f0527486323e0ac715b78",
+    "bytes": 31408,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-60e00-84/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/3501060E0084/35010-60E00-84_3.webp",
+        "sha256": "bbe804ce838f7274a7c37678d13cfdfb368983a13b8a53b3c12d3c14e137ab55",
+        "bytes": 26918,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transmission-assembly-35010-60e00-84/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/3501060E0084/35010-60E00-84_2.webp",
+        "sha256": "47b500bd821efcaace695336d2115a78b32536c92d8277cf5170b73ff2d25b59",
+        "bytes": 22288,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

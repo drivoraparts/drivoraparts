@@ -1,0 +1,387 @@
+{
+  "_comment": "Toyota expansion batch 18 (2026-11-23): Toyota Genuine Remanufactured transmissions, core charge included.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transmission Assembly 35010-0C090-84 — Tundra",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "35010-0C090-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2007–2013 Toyota Tundra (4.0L V6; automatic; replaces 35000-0C090 and 35000-0C360; ToyotaPartsDeal lists 2007-2011 only; drive type and calibration by VIN; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.0L V6; automatic; replaces 35000-0C090 and 35000-0C360; ToyotaPartsDeal lists 2007-2011 only; drive type and calibration by VIN; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transmission assembly 35010-0C090-84 for the Toyota Tundra. Toyota Genuine Remanufactured automatic transmission, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transmission has to be returned.\n\nSpecifications\n\nPart number: 35010-0C090-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2007–2013 Toyota Tundra (4.0L V6; automatic; replaces 35000-0C090 and 35000-0C360; ToyotaPartsDeal lists 2007-2011 only; drive type and calibration by VIN; confirm by VIN)\nRestriction (2007-2013 Tundra): 4.0L V6 automatic; replaces 35000-0C090 and 35000-0C360; ToyotaPartsDeal lists 2007-2011 only; drive type and calibration by VIN; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 4137.04,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal (sale $2,659.48 + $1,000 core charge)",
+          "price": 3659.48,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-0c090-84.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal (sale $2,659.48 + $1,000 core charge)",
+            "price": 3659.48,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-0c090-84.html"
+          },
+          {
+            "seller": "Longo Toyota (sale $2,676.37 + $1,000 core charge)",
+            "price": 3676.37,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-transmission-350100c09084"
+          },
+          {
+            "seller": "Lakeland Toyota (sale $2,747.43 + $1,000 core charge)",
+            "price": 3747.43,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-transmission-350100c09084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3476.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2007,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Tundra",
+            "engine": "4.0L V6",
+            "restriction": "4.0L V6 automatic; replaces 35000-0C090 and 35000-0C360; ToyotaPartsDeal lists 2007-2011 only; drive type and calibration by VIN; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2007-2013 Toyota Tundra Transmission 35010-0C090-84)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-transmission-350100c09084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (35010-0C090-84 Transmission 2007-2013 Toyota Tundra, 4.0L V6)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-transmission-350100c09084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-transmission-350100c09084",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-transmission-350100c09084",
+        "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-0c090-84.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transmission Assembly 35010-60E00-84 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "35010-60E00-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2010–2023 Toyota 4Runner (4.0L V6; automatic, 4WD per Longo Toyota; replaces 35000-0W090 and 35010-60C20-84; ToyotaPartsDeal lists 2012-2016 only; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.0L V6; automatic, 4WD per Longo Toyota; replaces 35000-0W090 and 35010-60C20-84; ToyotaPartsDeal lists 2012-2016 only; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transmission assembly 35010-60E00-84 for the Toyota 4Runner. Toyota Genuine Remanufactured automatic transmission, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transmission has to be returned.\n\nSpecifications\n\nPart number: 35010-60E00-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2010–2023 Toyota 4Runner (4.0L V6; automatic, 4WD per Longo Toyota; replaces 35000-0W090 and 35010-60C20-84; ToyotaPartsDeal lists 2012-2016 only; confirm by VIN)\nRestriction (2010-2023 4Runner): 4.0L V6 automatic, 4WD per Longo Toyota; replaces 35000-0W090 and 35010-60C20-84; ToyotaPartsDeal lists 2012-2016 only; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 4293.889999999999,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota (sale $2,710.71 + $1,000 core charge)",
+          "price": 3710.71,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-transmission-3501060e0084"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota (sale $2,710.71 + $1,000 core charge)",
+            "price": 3710.71,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-transmission-3501060e0084"
+          },
+          {
+            "seller": "ToyotaPartsDeal (sale $2,791.40 + $1,000 core charge)",
+            "price": 3791.4,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-60e00-84.html"
+          },
+          {
+            "seller": "American Toyota (sale $2,810.19 + $1,000 core charge)",
+            "price": 3810.19,
+            "url": "https://parts.americantoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501060e0084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3525.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2010,
+            "yearTo": 2023,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "4.0L V6",
+            "restriction": "4.0L V6 automatic, 4WD per Longo Toyota; replaces 35000-0W090 and 35010-60C20-84; ToyotaPartsDeal lists 2012-2016 only; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "American Toyota (2010-2023 Toyota 4Runner Transmission 35010-60E00-84)",
+                "url": "https://parts.americantoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501060e0084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (35010-60E00-84, 2010-2024 Toyota 4Runner 4WD)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-transmission-3501060e0084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.americantoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501060e0084",
+        "https://parts.longotoyota.com/oem-parts/toyota-transmission-3501060e0084",
+        "https://parts.olathetoyota.com/oem-parts/toyota-transmission-3501060e0084",
+        "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-60e00-84.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transmission Assembly 35010-35A40-84 — 4Runner",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "35010-35A40-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2004–2009 Toyota 4Runner (automatic transmission; dealer listings note 2WD with the 4.7L V8, while ToyotaPartsDeal lists both the 4.0L V6 and 4.7L V8; engine and drive type by VIN; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2004,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "automatic transmission; dealer listings note 2WD with the 4.7L V8, while ToyotaPartsDeal lists both the 4.0L V6 and 4.7L V8; engine and drive type by VIN; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transmission assembly 35010-35A40-84 for the Toyota 4Runner. Toyota Genuine Remanufactured automatic transmission, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transmission has to be returned.\n\nSpecifications\n\nPart number: 35010-35A40-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2004–2009 Toyota 4Runner (automatic transmission; dealer listings note 2WD with the 4.7L V8, while ToyotaPartsDeal lists both the 4.0L V6 and 4.7L V8; engine and drive type by VIN; confirm by VIN)\nRestriction (2004-2009 4Runner): automatic transmission; dealer listings note 2WD with the 4.7L V8, while ToyotaPartsDeal lists both the 4.0L V6 and 4.7L V8; engine and drive type by VIN; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3914.03,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota (sale $2,420.10 + $1,000 core charge)",
+          "price": 3420.1,
+          "url": "https://parts.olathetoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota (sale $2,420.10 + $1,000 core charge)",
+            "price": 3420.1,
+            "url": "https://parts.olathetoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084"
+          },
+          {
+            "seller": "Conicelli Toyota of Conshohocken (sale $2,442.10 + $1,000 core charge)",
+            "price": 3442.1,
+            "url": "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084"
+          },
+          {
+            "seller": "ToyotaPartsDeal (sale $2,471.90 + $1,000 core charge)",
+            "price": 3471.9,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-35a40-84.html"
+          },
+          {
+            "seller": "Freeman Toyota (sale $2,622.63 + $1,000 core charge)",
+            "price": 3622.63,
+            "url": "https://parts.freemantoyota.com/parts/toyota-automatic-transmission-assembly-3501035a4084"
+          },
+          {
+            "seller": "Frontier Toyota (sale $2,750.11 + $1,000 core charge)",
+            "price": 3750.11,
+            "url": "https://parts.frontiertoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3249.19,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2004,
+            "yearTo": 2009,
+            "make": "Toyota",
+            "model": "4Runner",
+            "engine": "",
+            "restriction": "automatic transmission; dealer listings note 2WD with the 4.7L V8, while ToyotaPartsDeal lists both the 4.0L V6 and 4.7L V8; engine and drive type by VIN; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2004-2009 Toyota 4Runner Automatic Transmission Assembly 35010-35A40-84)",
+                "url": "https://parts.olathetoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Frontier Toyota (2004-2009 Toyota 4Runner Automatic Transmission Assembly 35010-35A40-84)",
+                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.conicellitoyotaofconshohocken.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084",
+        "https://parts.freemantoyota.com/parts/toyota-automatic-transmission-assembly-3501035a4084",
+        "https://parts.frontiertoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084",
+        "https://parts.olathetoyota.com/oem-parts/toyota-automatic-transmission-assembly-3501035a4084",
+        "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~35010-35a40-84.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

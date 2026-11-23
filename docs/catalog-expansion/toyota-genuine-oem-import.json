@@ -1110,6 +1110,24 @@
       "partNumber": "17208-F4011",
       "name": "Genuine Toyota Turbocharger, Right 17208-F4011 for Toyota Tundra / Sequoia (2022–2025)",
       "price": 2633.69
+    },
+    {
+      "id": 4489,
+      "partNumber": "35010-0C090-84",
+      "name": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-0C090-84 for Toyota Tundra (2007–2013)",
+      "price": 3476.59
+    },
+    {
+      "id": 4490,
+      "partNumber": "35010-35A40-84",
+      "name": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-35A40-84 for Toyota 4Runner (2004–2009)",
+      "price": 3249.19
+    },
+    {
+      "id": 4491,
+      "partNumber": "35010-60E00-84",
+      "name": "Genuine Toyota Remanufactured Automatic Transmission Assembly 35010-60E00-84 for Toyota 4Runner (2010–2023)",
+      "price": 3525.19
     }
   ],
   "excluded": [
