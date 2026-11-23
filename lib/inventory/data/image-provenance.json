@@ -76651,5 +76651,49 @@
     "query": "retailer listing: DAW_G258_6769",
     "sha256": "cab6fe15e3fe0da0dbce3629a727e5c6e622afff72074a57c6fc29f4a63a08f1",
     "downloadedAt": "2026-11-23"
+  },
+  "product-5124-hv-1": {
+    "productId": 5124,
+    "productName": "Dynamic Autowerx 6969 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G2_6969 for 2021–2024 Toyota GR Supra 3.0",
+    "localFile": "/product-media/turbocharger/dynamic-autowerx-6969-6port/1.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0066/0370/2362/files/rn-image_picker_lib_temp_749ef41e-2168-4be7-9f99-a38abfa40e52.png",
+    "sourceName": "titanmotorsports.com",
+    "landingPage": "https://titanmotorsports.com/products/untitled-may26_07-11",
+    "creator": "Dynamic Autowerx (manufacturer)",
+    "creatorUrl": "https://dynamicautowerx.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer catalogue photography of this exact part on a specialist retailer's listing of it (photo of the 6969 6-port turbocharger with its stainless manifold); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "DAW_G2_6969",
+      "DAW_G2_6969_"
+    ],
+    "query": "retailer listing: DAW_G2_6969",
+    "sha256": "9d20c4032a489eb8c539e8fc23cdf3a7cc1deeaa6e6fbb90ebf70176d79eca7c",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5124-hv-2": {
+    "productId": 5124,
+    "productName": "Dynamic Autowerx 6969 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G2_6969 for 2021–2024 Toyota GR Supra 3.0",
+    "localFile": "/product-media/turbocharger/dynamic-autowerx-6969-6port/2.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0066/0370/2362/files/rn-image_picker_lib_temp_aa315935-80d7-4add-840b-080e23f22aa0.png",
+    "sourceName": "titanmotorsports.com",
+    "landingPage": "https://titanmotorsports.com/products/untitled-may26_07-11",
+    "creator": "Dynamic Autowerx (manufacturer)",
+    "creatorUrl": "https://dynamicautowerx.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer catalogue photography of this exact part on a specialist retailer's listing of it (close-up of the 6969 turbocharger and its identification plate); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "DAW_G2_6969",
+      "DAW_G2_6969_"
+    ],
+    "query": "retailer listing: DAW_G2_6969",
+    "sha256": "213f10f80ac78c1aba0bc93583e99e3cbc1048d9dc1d06edbfa04832202a0054",
+    "downloadedAt": "2026-11-23"
   }
 }

@@ -374,6 +374,49 @@
       "checked": "2026-11-23"
     },
     {
+      "id": 5124,
+      "partNumber": "DAW_G2_6969",
+      "aliases": [
+        "DAW_G2_6969_"
+      ],
+      "maker": "Dynamic Autowerx",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2024,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 (B58TU), 6-port exhaust manifold"
+        }
+      ],
+      "fitmentSources": [
+        "https://trucranemotorsports.com/products/dynamic-autowerx-6969-bmw-supra-gen-2-b58tu-6-port (2019-2024 Toyota Supra 3.0L A90/A91)",
+        "https://titanmotorsports.com/products/untitled-may26_07-11 (Gen 2 B58TU, 6 port)"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "Titan Motorsports",
+          "price": 3599.0,
+          "url": "https://titanmotorsports.com/products/untitled-may26_07-11"
+        },
+        {
+          "name": "BimmerNetwork",
+          "price": 3769.0,
+          "url": "https://www.bimmernetwork.com/products/untitled-may26_07-11"
+        },
+        {
+          "name": "Trucrane Motorsports",
+          "price": 3769.0,
+          "url": "https://trucranemotorsports.com/products/dynamic-autowerx-6969-bmw-supra-gen-2-b58tu-6-port"
+        }
+      ],
+      "lowest": 3599.0,
+      "price": 3419.05,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
       "id": 5106,
       "partNumber": "858B",
       "aliases": [

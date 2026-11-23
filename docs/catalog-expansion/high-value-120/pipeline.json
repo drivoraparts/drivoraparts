@@ -2347,7 +2347,7 @@
     },
     {
       "category": "turbochargers",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Dynamic Autowerx",
       "product": "New Gen 6769 upgrade turbocharger (Gen 2 B58TU 6-port, with stainless manifold)",
       "partNumber": "DAW_G258_6769",
@@ -2391,6 +2391,38 @@
       "imageSource": "photos shared with the 2-port Flow Max listing",
       "imagePermission": "",
       "notes": "needs a variant-specific photo",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "Dynamic Autowerx",
+      "product": "6969 upgrade turbocharger (Gen 2 B58TU 6-port, with stainless manifold)",
+      "partNumber": "DAW_G2_6969",
+      "fits": "GR Supra 3.0 2021-2024 (6-port)",
+      "usPrices": "Titan $3,599; BimmerNetwork $3,769; Trucrane $3,769",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 3419.05,
+      "imageSource": "titanmotorsports.com (2 photos of this unit; shared, screenshot and overlay photos rejected)",
+      "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
+      "notes": "batch 34",
+      "liveId": 5124
+    },
+    {
+      "category": "seats",
+      "status": "RESEARCH",
+      "manufacturer": "Toyota",
+      "product": "Genuine seat assemblies (JoeTLC: Tundra, 4Runner, Sequoia)",
+      "partNumber": "71100-0C740-B5, 71200-35A91-E0, 71200-0CE80-B0 ...",
+      "fits": "US-market per JoeTLC",
+      "usPrices": "JoeTLC $3,055-$7,228 (single seller)",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "JoeTLC listings have NO photos; Toyota epc host has none",
+      "imagePermission": "",
+      "notes": "BLOCKER: no product-specific seat photos exist from any source checked; complete vehicle-specific aftermarket seats not found (aftermarket seats are universal + brackets, excluded by owner)",
       "liveId": null
     }
   ]

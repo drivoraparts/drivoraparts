@@ -376,3 +376,8 @@ Batch 32 is live and verified.
   - CTS Turbo A90 2-port kit CTS-TR-1059: every photo carries an added CTS logo.
   - Dynamic Autowerx 6-port Flow Max: its photos are shared with the 2-port listing.
 - **Known issue:** 5121's turbo photo file is also used on the 6-port Flow Max listing.
+
+## Batch 34 (2026-11-23)
+Batch 33 is live and verified.
+- **5124: Dynamic Autowerx 6969 (DAW_G2_6969), 2021-2024 GR Supra 3.0 (6-port), $3,419.05.** Priced 5% under Titan Motorsports at $3,599.
+- The seats blocker is described in STATUS.md.
