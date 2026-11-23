@@ -14,4 +14,4 @@
  * previous version of this file had no check and sat at 1,446 while the
  * catalog held 1,867.
  */
-export const HOME_LISTING_COUNT = 382;
+export const HOME_LISTING_COUNT = 383;

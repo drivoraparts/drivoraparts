@@ -1010,6 +1010,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo; https://autoparts.toyota.com/products/product/column-assy-steerin-452500c300); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4509,
+      "partNumber": "45510-07010",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo; https://autoparts.toyota.com/products/product/gear-assy-steering-4551007010); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4506,
       "partNumber": "45510-0T011",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
