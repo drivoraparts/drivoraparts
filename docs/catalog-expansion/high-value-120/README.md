@@ -287,3 +287,13 @@ the product is held.
   - Applying the rule to the whole catalog would hide every listing. That decision is with the owner (see the chat).
 - **Counts toward the 120:** none can count under the rule until permission is documented.
 
+## Image-rights remediation (2026-11-23, owner's autonomous directive)
+See `docs/catalog-expansion/image-rights/README.md`.
+- All 348 public listings and 588 images were checked against their sources' published terms and image programs.
+- **None has verified commercial-use permission**, so every listing is held. Its data is kept, and it comes back when
+  its photographs are verified.
+- **Counts toward the 120 are now 0 live.** The 37 products previously PUBLISHED under this brief are
+  `HELD (image rights)` in `pipeline.json`.
+- **New imports** stay unpublished until their photos are VERIFIED_LICENSED or VERIFIED_AUTHORIZED in
+  `lib/inventory/data/image-rights-registry.json`. `scripts/check-image-rights.mjs` enforces this on every build.
+
