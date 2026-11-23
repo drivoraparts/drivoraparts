@@ -1,0 +1,1188 @@
+{
+  "updated": "2026-11-23",
+  "statuses": {
+    "PUBLISHED": "live and verified on drivoraparts.com",
+    "IMAGE PENDING": "identity, US fitment and 3+ US prices verified; no photo with an established reuse basis yet",
+    "RESEARCH": "incomplete: missing prices, fitment, core terms or product identity"
+  },
+  "products": [
+    {
+      "category": "turbochargers",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine turbocharger left",
+      "partNumber": "17201-F4011",
+      "fits": "Tundra 2022-2025 / Sequoia 2023-2025 3.4L V35A",
+      "usPrices": "see batch 6 / 17",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 2694.09,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo (existing project basis)",
+      "notes": "",
+      "liveId": 4445
+    },
+    {
+      "category": "turbochargers",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine turbocharger right",
+      "partNumber": "17208-F4011",
+      "fits": "Tundra 2022-2025 / Sequoia 2023-2025 3.4L V35A",
+      "usPrices": "see batch 6 / 17",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 2633.69,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo (existing project basis)",
+      "notes": "",
+      "liveId": 4488
+    },
+    {
+      "category": "transmissions",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transmission",
+      "partNumber": "35010-0C090-84",
+      "fits": "Tundra 2007-2013 4.0L V6",
+      "usPrices": "see batches 18-19",
+      "coreDeposit": "$1,000 included in price",
+      "condition": "remanufactured",
+      "proposedPrice": 3476.59,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4489
+    },
+    {
+      "category": "transmissions",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transmission",
+      "partNumber": "35010-35A40-84",
+      "fits": "4Runner 2004-2009",
+      "usPrices": "see batches 18-19",
+      "coreDeposit": "$1,000 included in price",
+      "condition": "remanufactured",
+      "proposedPrice": 3249.19,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4490
+    },
+    {
+      "category": "transmissions",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transmission",
+      "partNumber": "35010-60E00-84",
+      "fits": "4Runner 2010-2023 4.0L V6",
+      "usPrices": "see batches 18-19",
+      "coreDeposit": "$1,000 included in price",
+      "condition": "remanufactured",
+      "proposedPrice": 3525.19,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4491
+    },
+    {
+      "category": "transmissions",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transmission",
+      "partNumber": "35010-04080-84",
+      "fits": "Tacoma 2013-2015 4.0L V6",
+      "usPrices": "see batches 18-19",
+      "coreDeposit": "$1,000 included in price",
+      "condition": "remanufactured",
+      "proposedPrice": 4640.89,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4492
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Steering knuckle, front right",
+      "partNumber": "43211-60200",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 366.39,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4422
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Power steering rack",
+      "partNumber": "44250-04030",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 684.79,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4425
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Power steering rack",
+      "partNumber": "44250-04040",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 618.39,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4426
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Power steering rack",
+      "partNumber": "44250-0C160",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 511.99,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4427
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Steering rack (RAV4)",
+      "partNumber": "45510-42161",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 543.89,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4430
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Power steering rack (Land Cruiser 200)",
+      "partNumber": "44200-60170",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 691.89,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4471
+    },
+    {
+      "category": "steering",
+      "status": "PUBLISHED",
+      "manufacturer": "Toyota",
+      "product": "Genuine Power steering pump",
+      "partNumber": "44310-0C080",
+      "fits": "see listing",
+      "usPrices": "see batch files",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 362.09,
+      "imageSource": "epc-images.toyota.com",
+      "imagePermission": "Toyota catalog photo",
+      "notes": "",
+      "liveId": 4493
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler LT265/70R18 124/121Q",
+      "partNumber": "217480",
+      "fits": "4Runner, Tacoma, Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "Desert Rat",
+          325.0
+        ],
+        [
+          "Big O Tires",
+          333.0
+        ],
+        [
+          "Priority Tire",
+          339.86
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 308.75,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5001
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler 265/70R18 116T",
+      "partNumber": "218940",
+      "fits": "4Runner, Tacoma, Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "Desert Rat",
+          283.0
+        ],
+        [
+          "Big O Tires",
+          286.0
+        ],
+        [
+          "Tires-Easy",
+          292.95
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 268.85,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5002
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler LT285/65R18 125/122Q",
+      "partNumber": "217110",
+      "fits": "Tundra, Sequoia (2027 factory size)",
+      "usPrices": [
+        [
+          "Tirebuyer",
+          388.0
+        ],
+        [
+          "BB Wheels Online",
+          388.0
+        ],
+        [
+          "Priority Tire",
+          417.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 368.6,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5003
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler LT265/60R20 121/118Q",
+      "partNumber": "217460",
+      "fits": "Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "American Trucks",
+          371.0
+        ],
+        [
+          "Discount Tire",
+          371.0
+        ],
+        [
+          "Big O Tires",
+          380.0
+        ],
+        [
+          "ThreePiece",
+          380.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 352.45,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5004
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler 265/60R20 112T",
+      "partNumber": "218890",
+      "fits": "Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "American Trucks",
+          331.0
+        ],
+        [
+          "Priority Tire",
+          334.0
+        ],
+        [
+          "OK4WD",
+          334.0
+        ],
+        [
+          "Extreme Terrain",
+          334.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 314.45,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5005
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler LT265/70R17 121/118Q",
+      "partNumber": "217100",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "Prime Wheels",
+          279.0
+        ],
+        [
+          "American Trucks",
+          293.0
+        ],
+        [
+          "Priority Tire",
+          316.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 265.05,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5006
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Ridge Grappler 265/70R17 115T",
+      "partNumber": "217940",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "OK4WD",
+          235.0
+        ],
+        [
+          "BB Wheels Online",
+          235.0
+        ],
+        [
+          "Milky Motorsports",
+          247.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 223.25,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5007
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Terra Grappler G3 LT265/70R18 124/121S",
+      "partNumber": "223950",
+      "fits": "4Runner, Tacoma, Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "Extreme Terrain",
+          278.0
+        ],
+        [
+          "OK4WD",
+          278.0
+        ],
+        [
+          "American Trucks",
+          291.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 264.1,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5008
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Terra Grappler G3 265/70R18 116T",
+      "partNumber": "224210",
+      "fits": "4Runner, Tacoma, Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "Walmart",
+          263.02
+        ],
+        [
+          "Richline Motorsports",
+          275.0
+        ],
+        [
+          "OK4WD",
+          278.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 249.86,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5009
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Terra Grappler G3 LT285/65R18 125/122S",
+      "partNumber": "223910",
+      "fits": "Tundra, Sequoia (2027 factory size)",
+      "usPrices": [
+        [
+          "Tire Agent",
+          343.0
+        ],
+        [
+          "ThreePiece",
+          367.0
+        ],
+        [
+          "Extreme Terrain",
+          367.0
+        ],
+        [
+          "OK4WD",
+          367.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 325.85,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5010
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Terra Grappler G3 285/65R18 116T",
+      "partNumber": "224580",
+      "fits": "Tundra, Sequoia (2027 factory size)",
+      "usPrices": [
+        [
+          "TFS Wheels",
+          366.3
+        ],
+        [
+          "ThreePiece",
+          370.0
+        ],
+        [
+          "Tires-Easy",
+          370.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 347.98,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5011
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Terra Grappler G3 LT265/60R20 121/118S",
+      "partNumber": "223830",
+      "fits": "Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "SimpleTire",
+          333.0
+        ],
+        [
+          "OK4WD",
+          340.0
+        ],
+        [
+          "Priority Tire",
+          340.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 316.35,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5012
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Terra Grappler G3 LT265/70R17 123/120S",
+      "partNumber": "223940",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "American Trucks",
+          263.0
+        ],
+        [
+          "OK4WD",
+          263.0
+        ],
+        [
+          "Ecklers",
+          274.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 249.85,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5013
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Recon Grappler A/T LT285/65R18 125/122R",
+      "partNumber": "218590",
+      "fits": "Tundra, Sequoia (2027 factory size)",
+      "usPrices": [
+        [
+          "Prime Wheels",
+          362.0
+        ],
+        [
+          "OK4WD",
+          382.0
+        ],
+        [
+          "Extreme Terrain",
+          382.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 343.9,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5014
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Recon Grappler A/T LT265/60R20 121/118S",
+      "partNumber": "218550",
+      "fits": "Tundra, Sequoia, Land Cruiser (2027 factory size)",
+      "usPrices": [
+        [
+          "OK4WD",
+          335.0
+        ],
+        [
+          "Priority Tire",
+          360.0
+        ],
+        [
+          "Discounted Wheel Warehouse",
+          375.14
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 318.25,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5015
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Recon Grappler A/T LT265/70R17 123/120S",
+      "partNumber": "218740",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "American Trucks",
+          293.0
+        ],
+        [
+          "JEGS",
+          293.0
+        ],
+        [
+          "OK4WD",
+          293.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 278.35,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5016
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Trail Grappler M/T LT285/65R18 125/122Q",
+      "partNumber": "205740",
+      "fits": "Tundra, Sequoia (2027 factory size)",
+      "usPrices": [
+        [
+          "Katz Tires",
+          407.29
+        ],
+        [
+          "Quadratec",
+          411.0
+        ],
+        [
+          "Wheel Warehouse",
+          411.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 386.92,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5017
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Trail Grappler M/T LT265/70R17 121/118Q",
+      "partNumber": "205860",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "Extreme Terrain",
+          317.0
+        ],
+        [
+          "Quadratec",
+          317.0
+        ],
+        [
+          "Milky Motorsports",
+          317.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 301.15,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5018
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Exo Grappler AWT LT265/70R17 121/118Q",
+      "partNumber": "206870",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "Tirebuyer",
+          237.0
+        ],
+        [
+          "Extreme Terrain",
+          249.0
+        ],
+        [
+          "Quadratec",
+          254.0
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 225.15,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5019
+    },
+    {
+      "category": "tires",
+      "status": "PUBLISHED",
+      "manufacturer": "Nitto",
+      "product": "Dura Grappler LT265/70R17 121/118Q",
+      "partNumber": "205630",
+      "fits": "Tacoma (2027 factory size)",
+      "usPrices": [
+        [
+          "Milky Motorsports",
+          235.0
+        ],
+        [
+          "Big O Tires",
+          235.0
+        ],
+        [
+          "Priority Tire",
+          263.86
+        ]
+      ],
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 223.25,
+      "imageSource": "nittotire.com",
+      "imagePermission": "manufacturer photo (existing project basis)",
+      "notes": "",
+      "liveId": 5020
+    },
+    {
+      "category": "turbochargers",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Pure Turbos",
+      "product": "Pure800 (NEW), new aftermarket housing",
+      "partNumber": "Pure800 NEW (A90/A91)",
+      "fits": "Toyota GR Supra 2020-2026, 3.0L B58 Gen 2",
+      "usPrices": [
+        [
+          "Pure Turbos",
+          3107.0
+        ],
+        [
+          "Kies Motorsports",
+          2995.0
+        ],
+        [
+          "Vehicle Virals",
+          2995.0
+        ]
+      ],
+      "coreDeposit": "none (no core)",
+      "condition": "new",
+      "proposedPrice": 2845.25,
+      "imageSource": "pureturbos.com",
+      "imagePermission": "maker photos carry a Pure 'P' logo badge: needs unbranded photos from Pure Turbos or the supplier",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Pure Turbos",
+      "product": "Pure900 (NEW), new aftermarket housing",
+      "partNumber": "Pure900 NEW (A90/A91)",
+      "fits": "Toyota GR Supra 2020-2026, 3.0L B58 Gen 2 (6-port)",
+      "usPrices": [
+        [
+          "Pure Turbos",
+          3626.0
+        ],
+        [
+          "ORT Motorsport",
+          3870.0
+        ],
+        [
+          "Vehicle Virals",
+          4001.0
+        ]
+      ],
+      "coreDeposit": "none (no core)",
+      "condition": "new",
+      "proposedPrice": 3444.7,
+      "imageSource": "pureturbos.com",
+      "imagePermission": "logo badge and text overlays: needs unbranded photos",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "other (Land Cruiser, outside the six categories)",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "Front differential carrier",
+      "partNumber": "41110-60B81",
+      "fits": "Land Cruiser 2008-2015",
+      "usPrices": "3+ US prices, see phase7/README.md",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 1357.89,
+      "imageSource": "none: no Toyota photo; dealer sites refuse automated requests",
+      "imagePermission": "needs supplier photo",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "other (Land Cruiser, outside the six categories)",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "Transfer case",
+      "partNumber": "36100-60B02",
+      "fits": "Land Cruiser 2011-2021",
+      "usPrices": "3+ US prices, see phase7/README.md",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 2626.84,
+      "imageSource": "none: no Toyota photo; dealer sites refuse automated requests",
+      "imagePermission": "needs supplier photo",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "other (Land Cruiser, outside the six categories)",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "Brake booster with master cylinder",
+      "partNumber": "47050-60043",
+      "fits": "Land Cruiser 2003-2007",
+      "usPrices": "3+ US prices, see phase7/README.md",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 1272.77,
+      "imageSource": "none: no Toyota photo; dealer sites refuse automated requests",
+      "imagePermission": "needs supplier photo",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "other (Land Cruiser, outside the six categories)",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "A/C compressor",
+      "partNumber": "88320-6A320",
+      "fits": "Land Cruiser 2008-2020",
+      "usPrices": "3+ US prices, see phase7/README.md",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 585.66,
+      "imageSource": "none: no Toyota photo; dealer sites refuse automated requests",
+      "imagePermission": "needs supplier photo",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "other (Land Cruiser, outside the six categories)",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "Outside mirror with camera, left",
+      "partNumber": "87940-6A570",
+      "fits": "Land Cruiser 2024-2025",
+      "usPrices": "3+ US prices, see phase7/README.md",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 995.52,
+      "imageSource": "none: no Toyota photo; dealer sites refuse automated requests",
+      "imagePermission": "needs supplier photo",
+      "notes": "",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "RESEARCH",
+      "manufacturer": "Pure Turbos",
+      "product": "Pure600 (NEW)",
+      "partNumber": "",
+      "fits": "GR Supra 2020-2026",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "$1,095 (Pure), $1,095 (Vehicle Virals); needs a third price; logo-badged photos",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "RESEARCH",
+      "manufacturer": "Pure Turbos",
+      "product": "Pure650 (NEW)",
+      "partNumber": "",
+      "fits": "GR Supra 2020-2026",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "$2,695 (Pure) only US price; logo-badged photos",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "RESEARCH",
+      "manufacturer": "Pure Turbos",
+      "product": "Pure550 / Pure650 / Pure800 (core units)",
+      "partNumber": "",
+      "fits": "GR Corolla 2023-2026 / GR Supra",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "maker prices $1,995 / $2,000 / $2,594 exclude an unstated refundable core deposit",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "RESEARCH",
+      "manufacturer": "TheTurboEngineers",
+      "product": "TTE500 (TTE10423) / TTE570 (TTE10672)",
+      "partNumber": "",
+      "fits": "GR Corolla 2023+ G16E-GTS",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "UroTuning $4,116.81 / $4,500.02 only; UroTuning photos watermarked",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "858B remanufactured crate engine, 1GR-FE 4.0L V6",
+      "partNumber": "",
+      "fits": "Tacoma / Tundra 2006-2010, 2012-2015",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "JEGS $5,962.99 + $435 core; one price; JEGS refuses automated requests; atkengines.com unreachable",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "853A remanufactured crate engine, 2UZ-FE 4.7L V8",
+      "partNumber": "",
+      "fits": "Toyota 2004-2009 (Tundra, Sequoia, 4Runner, Land Cruiser per ATK application list)",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "JEGS $5,016.99 + $435 core; one price",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "865B remanufactured crate engine, 3UR-FE 5.7L V8",
+      "partNumber": "",
+      "fits": "Toyota 2010-2011",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "JEGS about $7,914 (price formatting unclear); one price",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "860B remanufactured crate engine, 3MZ-FE 3.3L V6",
+      "partNumber": "",
+      "fits": "Toyota 2004-2008 (Highlander, Sienna, Camry Solara)",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "JEGS $4,962.99; one price",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "833C remanufactured crate engine, 3VZ-FE 3.0L V6",
+      "partNumber": "",
+      "fits": "Toyota pickup / 4Runner",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "JEGS $3,522.99; one price",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "2RZ-FE remanufactured crate engine",
+      "partNumber": "",
+      "fits": "Tacoma 1997-2000",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "JEGS $3,052.99 + $310 core; one price",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "RESEARCH",
+      "manufacturer": "ATK North America",
+      "product": "ATK848 remanufactured long block, 5VZ-FE 3.4L V6",
+      "partNumber": "",
+      "fits": "Tacoma / 4Runner / T100 / Tundra",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "NAPA lists it without a price in results",
+      "liveId": null
+    },
+    {
+      "category": "steering",
+      "status": "RESEARCH",
+      "manufacturer": "Toyota",
+      "product": "Electric power steering gear 44250-0C200",
+      "partNumber": "",
+      "fits": "Tundra / Sequoia 2022+",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "one new price (Faulkner $1,357.12)",
+      "liveId": null
+    },
+    {
+      "category": "steering",
+      "status": "RESEARCH",
+      "manufacturer": "Toyota",
+      "product": "Steering column assemblies 45250-0C300 / 0C350",
+      "partNumber": "",
+      "fits": "Tundra",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "$1,758-$1,972; tilt type (power / manual) and years unresolved",
+      "liveId": null
+    },
+    {
+      "category": "transmissions",
+      "status": "RESEARCH",
+      "manufacturer": "Toyota",
+      "product": "Remanufactured automatic transmission 35010-34130-84",
+      "partNumber": "",
+      "fits": "unknown",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "Toyota photo exists; no US price or fitment found",
+      "liveId": null
+    },
+    {
+      "category": "seats",
+      "status": "RESEARCH",
+      "manufacturer": "various",
+      "product": "complete seat assemblies",
+      "partNumber": "",
+      "fits": "",
+      "usPrices": null,
+      "coreDeposit": null,
+      "condition": "",
+      "proposedPrice": "",
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "no genuine Toyota seat with a reachable photo; aftermarket seats found are universal (no Toyota-specific fitment)",
+      "liveId": null
+    }
+  ]
+}

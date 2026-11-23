@@ -149,3 +149,55 @@ maker (for example on request to Pure Turbos, info@pureturbos.com).
 - Short: turbos 20, engines 20, transmissions 19, steering 19, seats 20.
 - The binding constraint is clean, reusable photographs of the exact part. Prices and fitment are found for many candidates
   (see the tables above and in the earlier rounds).
+
+## Round 4 (2026-11-23): pipeline with statuses, audit of existing listings, image-source workstream
+
+### Statuses
+The machine-readable list is `pipeline.json` in this folder.
+- **PUBLISHED:** live and verified.
+- **IMAGE PENDING:** identity, US fitment and three or more US prices are verified; a photo with an established reuse basis is still needed.
+- **RESEARCH:** incomplete.
+
+### Counts toward the 120
+Existing live listings were audited. They count only with a real photo, a price of at least $200 and a US-market Toyota application.
+
+| Category | Target | Published (live) | Image pending | Research | Still to find |
+|---|---|---|---|---|---|
+| Turbochargers | 20 | 2 (4445, 4488) | 2 (Pure800 NEW, Pure900 NEW) | 4 lines | 12+ |
+| Engines | 20 | 0 | 0 | 7 ATK engines (one price each) | 13+ |
+| Transmissions | 20 | 4 (4489-4492) | 0 | 1 | 15 |
+| Steering | 20 | 7 (4422, 4425-4427, 4430, 4471, 4493) | 0 | 2 | 11 |
+| Seats | 20 | 0 | 0 | 0 | 20 |
+| Tires | 20 | **20 (5001-5020)** | 0 | 0 | 0 |
+| **Total** | 120 | **33** | 2 | 14 | |
+
+**Not counted**
+- 1946, 1952, 1954 show a placeholder.
+- 1961's photo carries a LIMIT+1 watermark.
+- 88 / 89 (R154, V160) photos have no recorded source.
+- 36 / 2115 (1UZ-FE) is a Lexus-only engine in the US.
+- Transfer cases 4476 / 4477 are drivetrain, not transmissions.
+
+Five Land Cruiser parts outside the six categories are also IMAGE PENDING (see `phase7/README.md`).
+
+### Image sourcing workstream
+These routes give images with an explicit reuse basis. Each needs the owner, because it involves an account or agreement that
+I cannot create.
+1. **SEMA Data Co-op** (apps.semadata.org, already on the network allowlist). This is the aftermarket industry's licensed product
+   data and image feed for resellers, covering Pure Turbos, ATK, Nitto, ARB and most brands. A reseller account gives image
+   rights by agreement. This is the strongest single fix for turbos, engines and seats.
+2. **Warehouse distributor dealer accounts** (Turn 14, Meyer, Keystone / LKQ, Premier). Their dealer portals include
+   manufacturer image libraries licensed for resale listings.
+3. **Manufacturer marketing assets on request**, for example:
+   - Pure Turbos (info@pureturbos.com, (760) 721-7669): unbranded Pure800 / Pure900 NEW photos;
+   - ATK: dealer image files.
+4. **The offline supplier's own photos** of genuine Toyota parts (seats, engines, transfer cases, Land Cruiser parts), with
+   written permission.
+
+No new permissions were obtained this round. None can be obtained without the owner's action.
+
+### Changes this round
+- `docs/catalog-expansion/high-value-120/pipeline.json`: new, 65 products with status, prices, core terms, image source and
+  permission.
+- This report.
+- No catalog or code changes, so no new deployment.
