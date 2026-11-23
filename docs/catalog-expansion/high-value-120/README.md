@@ -411,3 +411,11 @@ Batch 35 is live and verified (4502-4506).
   - It ships as freight. The new `seat` part kind maps to Interior and is in `FREIGHT_KINDS`.
 - **Seat photo source:** Toyota's photo host (`/img/<PN no dashes>/<PN>_n.webp`) has a real photo for about 1-2% of seat numbers.
   For every other number it returns an HTML page with status 200, so a probe must check the file type.
+
+## Batch 37 (2026-11-23): Avalon rack, completing steering
+Batch 36 is live and verified (4507, 4508).
+- **4509 45510-07010:** rack and pinion for 2013-2018 Avalon and Avalon Hybrid, $517.89. Priced 5% under Modern Toyota at $545.09;
+  ToyotaPartsDeal $558.44, Toyota of Fort Worth $596.54, Reliable Toyota $733.76.
+- This brings steering to 20 once live.
+- **Transmissions:** the photos for Toyota manual transmission 33030-04080 (RC60F, 2024 Tacoma) are annotated label diagrams,
+  so it is IMAGE PENDING.

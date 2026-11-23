@@ -76914,5 +76914,35 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4509": {
+    "productId": 4509,
+    "productName": "Genuine Toyota Steering Rack and Pinion Assembly 45510-07010 for Toyota Avalon (2013–2018)",
+    "localFile": "/product-media/toyota-genuine/toyota-steering-rack-and-pinion-assembly-45510-07010/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4551007010/4551007010_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/products/product/gear-assy-steering-4551007010",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "45510-07010",
+      "4551007010"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 45510-07010",
+    "sha256": "867b93d5f9ad9c2898629b21046119baafad08c5bcfd07765fde83a5c53a0083",
+    "bytes": 12492,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

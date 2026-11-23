@@ -2491,19 +2491,19 @@
     },
     {
       "category": "steering",
-      "status": "RESEARCH",
+      "status": "READY",
       "manufacturer": "Toyota",
       "product": "Genuine rack and pinion (Avalon)",
       "partNumber": "45510-07010",
-      "fits": "Avalon 2013-2018",
-      "usPrices": "ToyotaPartsDeal $558.44",
+      "fits": "Avalon / Avalon Hybrid 2013-2018",
+      "usPrices": "Modern Toyota $545.09; ToyotaPartsDeal $558.44; Toyota of Fort Worth $596.54; Reliable Toyota $733.76",
       "coreDeposit": null,
       "condition": "new",
-      "proposedPrice": null,
-      "imageSource": "",
-      "imagePermission": "",
-      "notes": "one new price; Toyota photos usable",
-      "liveId": null
+      "proposedPrice": 517.89,
+      "imageSource": "epc-images.toyota.com (photo 1, whole rack; composite photo 2 not used)",
+      "imagePermission": "Toyota catalog photo (existing project basis)",
+      "notes": "batch 37",
+      "liveId": 4509
     },
     {
       "category": "steering",
@@ -2571,7 +2571,7 @@
     },
     {
       "category": "steering",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Toyota",
       "product": "Genuine EPS rack (Grand Highlander)",
       "partNumber": "44250-0E220",
@@ -2587,7 +2587,7 @@
     },
     {
       "category": "seats",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Toyota",
       "product": "Genuine front driver seat assembly, Stone (trim 12)",
       "partNumber": "71200-35A81-B0",
@@ -2679,6 +2679,22 @@
       "imageSource": "epc-images (2 photos)",
       "imagePermission": "",
       "notes": "US fitment not confirmed; 17208-F4010/F4020 photos are shared (rejected)",
+      "liveId": null
+    },
+    {
+      "category": "transmissions",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "Genuine RC60F 6-speed manual transmission",
+      "partNumber": "33030-04080",
+      "fits": "Tacoma 2024 (2.4L, per ToyotaPartsNow)",
+      "usPrices": "ToyotaPartsNow $3,126.23",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "Toyota photos are annotated label diagrams: rejected",
+      "imagePermission": "",
+      "notes": "needs a product photo and two more prices",
       "liveId": null
     }
   ]
