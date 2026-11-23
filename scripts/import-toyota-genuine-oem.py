@@ -85,6 +85,9 @@ IMAGES = {
     "PT228-60242": ["tcom_PT228-60242_1.webp"],
     "PT944-60240": ["tcom_PT944-60240_1.webp"],
     "PT970-60241": ["tcom_PT970-60241_1.webp"],
+    # Toyota reman transmissions: lead with the side view of the whole unit
+    "35010-0C090-84": ["imgpn_35010-0C090-84_2.webp", "imgpn_35010-0C090-84_1.webp"],
+    "35010-60E00-84": ["imgpn_35010-60E00-84_1.webp", "imgpn_35010-60E00-84_3.webp", "imgpn_35010-60E00-84_2.webp"],
     # LC200 radiator: the three imgpn photos show this radiator; pn_ photo 2 shows a different core, so it is left out
     "16400-50384": ["imgpn_16400-50384_1.webp", "imgpn_16400-50384_3.webp", "imgpn_16400-50384_2.webp"],
     "53301-60690": ["pn_53301-60690_2.webp", "pn_53301-60690_1.webp"],
@@ -207,7 +210,8 @@ for pn, r in sorted(staged.items()):
         if a["model"] not in models:
             models.append(a["model"])
     title = PART_TITLE.get(r["partKind"], r["name"].split(" — ")[0].replace("Genuine Toyota ", "").rsplit(" ", 1)[0])
-    name = f"Genuine Toyota {title} {pn} for Toyota {' / '.join(models)} ({years_text(apps)})"
+    reman = r.get("condition") == "remanufactured"
+    name = f"Genuine Toyota {'Remanufactured ' if reman else ''}{title} {pn} for Toyota {' / '.join(models)} ({years_text(apps)})"
     slug = slugify(f"toyota-{title}-{pn}")
     if pn in previous:
         pid = previous[pn]
@@ -234,7 +238,7 @@ for pn, r in sorted(staged.items()):
     desc = "\n".join([
         name, "", body, "",
         "Specifications", "",
-        f"Part number: {pn}", "Brand: Toyota", "Type: Genuine Toyota part", "Condition: New",
+        f"Part number: {pn}", "Brand: Toyota", "Type: Genuine Toyota part", "Condition: " + ("Remanufactured (Toyota Genuine Remanufactured)" if reman else "New"),
         f"Fitment: {r['fitment']}", *restr, "",
         "Confirm fitment with your VIN before ordering.", "",
         "Shipping", "Ships within the United States only.",
@@ -250,7 +254,7 @@ for pn, r in sorted(staged.items()):
         "competitorPriced": True,
         "referencePriceVerified": True,
         "stock": True,
-        "condition": "brand-new",
+        "condition": "remanufactured" if reman else "brand-new",
         "partNumber": pn,
         "freightNotes": FREIGHT_NOTE if r.get("partKind") in FREIGHT_KINDS else PARCEL_NOTE,
         "fitment": r["fitment"],

@@ -32,7 +32,7 @@ CAT = {
     "headlight": ("lighting", "Lighting"), "taillight": ("lighting", "Lighting"), "fog_light": ("lighting", "Lighting"),
     "mirror": ("body-parts", "Body Parts"), "grille": ("body-parts", "Body Parts"),
     "master_cylinder": ("brakes", "Brakes"), "abs": ("brakes", "Brakes"),
-    "propshaft": ("transmission", "Transmission"), "transfer": ("transmission", "Transmission"),
+    "propshaft": ("transmission", "Transmission"), "transmission_assembly": ("transmission", "Transmission"), "transfer": ("transmission", "Transmission"),
     "turbo": ("turbocharger", "Turbocharger"),
     "throttle": ("engine", "Engine"), "manifold": ("engine", "Engine"), "valve_cover": ("engine", "Engine"),
     "oil_pump": ("engine", "Engine"), "blower": ("engine", "Engine"), "ps_pump": ("suspension", "Suspension"),
@@ -47,9 +47,12 @@ CAT = {
 }
 
 
-def P(pn, kind, name, msrp, comps, apps, spec, sup=None, unattributed=None, excluded=""):
+def P(pn, kind, name, msrp, comps, apps, spec, sup=None, unattributed=None, excluded="", condition="brand-new"):
     return dict(pn=pn, kind=kind, name=name, cat=CAT[kind], msrp=msrp, comps=[c(*x) for x in comps],
-                apps=apps, spec=spec, sup=sup or [], unattributed=unattributed or [], excluded=excluded)
+                apps=apps, spec=spec, sup=sup or [], unattributed=unattributed or [], excluded=excluded, condition=condition)
+
+
+CONDITION_TEXT = {"brand-new": "New", "remanufactured": "Remanufactured (Toyota Genuine Remanufactured)"}
 
 
 def D(name, url):
@@ -100,7 +103,7 @@ def build(batch_no, PARTS, comment):
         restr = [f"Restriction ({a['yearFrom']}-{a['yearTo']} {a['model']}): " + "; ".join(x for x in (a.get("restriction"), a.get("assemblyOrigin"), a.get("productionDates")) if x)
                  for a in claimed if a["status"] == "vin_dependent"]
         desc = (f"Genuine Toyota {p['name'].lower()} {p['pn']} for the Toyota {', '.join(models) or 'vehicles listed below'}. {p['spec']}\n\n"
-                f"Specifications\n\nPart number: {p['pn']}\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\n"
+                f"Specifications\n\nPart number: {p['pn']}\nBrand: Toyota\nType: Genuine Toyota part\nCondition: {CONDITION_TEXT[p.get('condition', 'brand-new')]}\n"
                 f"Fitment: {fit or 'under review (no verified application)'}\n" + "".join(x + "\n" for x in restr)
                 + "\nConfirm fitment with your VIN before ordering.")
         pricing = assess(p["pn"], False)
@@ -109,7 +112,7 @@ def build(batch_no, PARTS, comment):
             "name": f"Genuine Toyota {p['name']} {p['pn']} — {' / '.join(models) if models else 'fitment under review'}",
             "brand": "toyota", "manufacturer": "Toyota", "partNumber": p["pn"],
             "supersedes": "", "supersededBy": None,
-            "partType": "Genuine Toyota", "partKind": p["kind"], "condition": "brand-new",
+            "partType": "Genuine Toyota", "partKind": p["kind"], "condition": p.get("condition", "brand-new"),
             "proposedCategory": p["cat"][0], "proposedCategoryName": p["cat"][1],
             "fitment": fit, "fitmentApplications": apps,
             "engines": "; ".join(sorted({m for a in claimed for m in ENGINE_CODE.findall(a["engine"] or "")})),

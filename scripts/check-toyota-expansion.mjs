@@ -36,7 +36,9 @@ const US_MODELS = new Set([
   "FJ Cruiser", "GR Corolla", "GR Supra", "GR86", "Grand Highlander", "Highlander", "Land Cruiser",
   "Matrix", "Mirai", "Prius", "RAV4", "Sequoia", "Sienna", "Tacoma", "Tundra", "Venza", "Yaris",
 ]);
-const PART_NUMBER = /^[0-9A-Z]{5}-[0-9A-Z]{5}$/;
+// Optional two-character suffix: Toyota Genuine Remanufactured units carry "-84"
+// (35010-0C090-84), as check-toyota-genuine.mjs already accepts.
+const PART_NUMBER = /^[0-9A-Z]{5}-[0-9A-Z]{5}(?:-[0-9A-Z]{2})?$/;
 const FORBIDDEN = /\b(authori[sz]ed (?:toyota )?dealer|in stock|ships (?:in|within) \d|same[- ]day|warranty|guarantee[ds]?)\b/i;
 
 const snapshot = JSON.parse(fs.readFileSync(path.join(ROOT, "lib/inventory/data/catalog-snapshot.json"), "utf8"));
