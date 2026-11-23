@@ -10,11 +10,11 @@ prices, no duplicates.
 |---|---|---|---|---|
 | Tires | 20 | 20 | 0 | 5001-5020 |
 | Transmissions | 20 | 6 | 14 | 4489, 4490, 4491, 4492, 4496, 4497 |
-| Steering | 20 | 11 (+2 in batch 30) | 9 (7 after batch 30) | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
+| Steering | 20 | 13 | 7 | 4422, 4425, 4426, 4427, 4430, 4471, 4493, 4494, 4495 |
 | Turbochargers | 20 | 7 | 13 | 4445, 4488, 5101, 5102, 5103, 5104, 5105 |
-| Engines | 20 | 14 | 6 | 5106-5119 |
+| Engines | 20 | 14 (+1 in batch 31) | 6 (5 after batch 31) | 5106-5119 (+5120 pending) |
 | Seats | 20 | 0 | 20 | none |
-| **Total** | 120 | **58** (60 after batch 30) | **62** (60) | |
+| **Total** | 120 | **60** (61 after batch 31) | **60** (59) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -32,7 +32,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 27 | #155 | ATK engines 853, 848, 857, 833, 851 (5113-5117) | done |
 | 28 | #156 | ATK engines 869A (RAV4), 860 (Sienna AWD) (5118, 5119) | done |
 | 29 | #157 | Toyota racks 44250-04041 (Tacoma 2016-2023), 44250-35042 (Tacoma 1995-2004 / 4Runner 1996-2002) (4498, 4499) | done |
-| 30 | (this PR) | Toyota rack 44250-0C121 (Sequoia 2008-2022), pump 44310-0C090 (Tundra 2007-2021) (4500, 4501) | pending |
+| 30 | #158 | Toyota rack 44250-0C121 (Sequoia 2008-2022), pump 44310-0C090 (Tundra 2007-2021) (4500, 4501) | done |
+| 31 | (this PR) | ATK engine 862 (Tacoma 2005-2014 2TR-FE) (5120) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
@@ -90,3 +91,12 @@ engines with their ATK numbers. Next engines to clear: 853A, 865B, 858C, 862, 86
 Powertrain Products has about 80 remanufactured Toyota automatics (A750E/F, A340E/F, U140, U151, U241, U250, A541E), each
 titled with the exact application. They are IMAGE PENDING: each photo is a generic shot of the transmission family, shared by
 up to 32 listings, and the A340E photos are also used on A340F (4WD) units. Each listing still needs 3 named prices.
+
+## Dead ends (2026-11-23, after batch 30)
+- No Toyota photo exists on epc-images for:
+  - 19 more remanufactured transmissions (35010-35A60/35A50/3G470/04030/04010/0C170/0C030/35B10/0C270-84;
+    30510-33211/33670/52490/0R010/12C10/33620/0E040/48720/0R060/48601-84);
+  - seat assemblies 71100-0CF31-E0, 0CF20-B1, 0CF30-B1, 0C740-B5, WB055, 06N71-E0 and 71200-0C740-C5 / 0C360-E5;
+  - pumps 44310-04150 and 44310-60542, and rack 44250-0C030.
+- atksales.com loads its prices client-side, so ATK Sales prices come from search snippets.
+- 858C: the model years for the dual-VVT 1GR are unclear between sellers. 849: two prices. 863: Lexus-only.

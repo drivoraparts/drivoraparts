@@ -355,3 +355,8 @@ Batch 29 is live and verified.
 - **4501: 44310-0C090 power steering pump, Tundra 2007-2021, $270.89.** Priced 5% under Lakeland at $285.12.
 - **Held:** 44250-0C200 (2022+ Tundra / Sequoia), which has the same price on two sites.
 
+
+## Batch 31 (2026-11-23)
+Batch 30 is live and verified.
+- **5120: ATK 862, 2.7L 2TR-FE, Tacoma 2005-2014, $4,061.59 (core included).** Priced against JEGS at $3,730.36 + $545 core.
+- Dead ends this round are in STATUS.md.

@@ -976,6 +976,50 @@
       "price": 4868.74,
       "core": "$420, included in our price",
       "checked": "2026-11-23"
+    },
+    {
+      "id": 5120,
+      "partNumber": "862",
+      "aliases": [
+        "ATK 862"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2014,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.7L 2TR-FE inline-4"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/862/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/2tr-fe-05-14-remanufactured-engine-862-toyota-4runner-tacoma-2005-2015/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/9-04-11-14-2trfe/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,730.36 + $545 core)",
+          "price": 4275.36,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/862/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($4,261.90 + $545 core)",
+          "price": 4806.9,
+          "url": "https://powertraincompany.com/product/2tr-fe-05-14-remanufactured-engine-862-toyota-4runner-tacoma-2005-2015/"
+        },
+        {
+          "name": "Powertrain Products ($4,299.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/"
+        }
+      ],
+      "lowest": 4275.36,
+      "price": 4061.59,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
     }
   ]
 }

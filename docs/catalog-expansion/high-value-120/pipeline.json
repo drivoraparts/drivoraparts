@@ -1835,19 +1835,19 @@
     },
     {
       "category": "engines",
-      "status": "RESEARCH",
+      "status": "READY",
       "manufacturer": "ATK North America",
       "product": "Remanufactured long block 862",
       "partNumber": "862",
-      "fits": "2TR-FE 2.7 Tacoma/4Runner 2005-2014",
-      "usPrices": "JEGS $3,730.36 or $4,002 (conflicting); Powertrain Company $4,261.90",
+      "fits": "Tacoma 2005-2014 2.7 2TR-FE",
+      "usPrices": "JEGS $3,730.36 (+$545 core); Powertrain Company $4,261.90; Powertrain Products $4,299",
       "coreDeposit": 545,
       "condition": "remanufactured",
       "proposedPrice": null,
       "imageSource": "powertrainproducts.net listing (studio photos of this ATK engine)",
       "imagePermission": "retailer listing photos (existing project basis)",
-      "notes": "conflicting JEGS price",
-      "liveId": null
+      "notes": "batch 31; JEGS also shown at $4,002 elsewhere, the lower figure is used",
+      "liveId": 5120
     },
     {
       "category": "engines",
@@ -2219,7 +2219,7 @@
     },
     {
       "category": "steering",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Toyota",
       "product": "Genuine power steering rack (Sequoia)",
       "partNumber": "44250-0C121",
@@ -2235,7 +2235,7 @@
     },
     {
       "category": "steering",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Toyota",
       "product": "Genuine power steering pump (Tundra)",
       "partNumber": "44310-0C090",
@@ -2279,6 +2279,22 @@
       "imageSource": "Toyota photos are a pallet, a drawing and a label",
       "imagePermission": "",
       "notes": "no usable photo (batch 19 finding)",
+      "liveId": null
+    },
+    {
+      "category": "seats",
+      "status": "RESEARCH",
+      "manufacturer": "Toyota",
+      "product": "Genuine front RH seat assemblies (Tundra 2006-2013)",
+      "partNumber": "71100-0CF20-B1 / 0CF30-B1 / 0C740-B5",
+      "fits": "Tundra 2006-2013",
+      "usPrices": "JoeTLC $3,055.39 each",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "no Toyota photo; JoeTLC listing photos not yet checked",
+      "imagePermission": "",
+      "notes": "needs 2 more named prices and a product photo",
       "liveId": null
     }
   ]
