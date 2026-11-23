@@ -100,3 +100,12 @@ up to 32 listings, and the A340E photos are also used on A340F (4WD) units. Each
   - pumps 44310-04150 and 44310-60542, and rack 44250-0C030.
 - atksales.com loads its prices client-side, so ATK Sales prices come from search snippets.
 - 858C: the model years for the dual-VVT 1GR are unclear between sellers. 849: two prices. 863: Lexus-only.
+
+## Seats blocker (2026-11-23)
+- **Genuine Toyota seat assemblies:** sold by part number by JoeTLC (Tundra, 4Runner, Sequoia; $3,055-$7,228), ToyotaPartsDeal
+  and dealer sites. No seller shows a photo of the seat. JoeTLC's listings have no images at all, and Toyota's photo host
+  has none for the 71100 / 71200 numbers checked.
+- **Complete vehicle-specific aftermarket seats:** none found. Recaro, Sparco and Bride are universal seats with separate
+  brackets, which the owner has excluded.
+- **Route that would work:** photographs of the actual units from the offline supplier, with the supplier's permission,
+  combined with the part-number pricing already found.

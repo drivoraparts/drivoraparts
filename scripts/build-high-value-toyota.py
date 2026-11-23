@@ -456,6 +456,53 @@ PRODUCTS = [
         ],
         "mediaDir": "turbocharger/dynamic-autowerx-6769-6port",
     },
+    {
+        "id": 5124,
+        "category": "turbocharger",
+        "brand": "dynamic-autowerx",
+        "maker": "Dynamic Autowerx",
+        "partNumber": "DAW_G2_6969",
+        "aliases": ["DAW_G2_6969_"],
+        "name": "Dynamic Autowerx 6969 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G2_6969 for 2021\u20132024 Toyota GR Supra 3.0",
+        "summary": ("Complete OEM-location upgrade turbocharger (not a hybrid) for the 6-port Gen 2 B58 (B58TU) engine of the GR Supra 3.0, "
+                    "with a high-efficiency turbine housing and stainless steel manifold. "
+                    "Aftermarket part; not made or warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "Dynamic Autowerx"),
+            ("Manufacturer part number", "DAW_G2_6969"),
+            ("Supported power (manufacturer)", "rated to 1150+ hp"),
+            ("Design", "full-frame stock-location turbocharger (not a hybrid), successor to the 6769"),
+            ("Turbine housing", "Ni-Resist D-5S, with stainless steel manifold and extended tubular runners"),
+            ("Thrust", "race thrust assembly"),
+            ("Manufacturer warranty", "12-month limited (per most sellers' listings)"),
+            ("Condition", "New"),
+        ],
+        "includesNote": "What is included (per the manufacturer)",
+        "includes": [
+            "1 Dynamic Autowerx 6969 turbocharger with integrated stainless steel manifold (turbine housing)",
+                    ],
+        "notes": [
+            "Engine tuning and fuel system upgrades are not included; at these power levels they are required.",
+            "For off-road / competition use; check emissions rules in your state before installing.",
+        ],
+        "fitText": "2021\u20132024 Toyota GR Supra 3.0 (Gen 2 B58 / B58TU engine with the 6-port exhaust manifold); the 2020 2-port engine uses other Dynamic Autowerx parts. Verify the 6-port head before ordering",
+        "fitmentApplications": [
+            {"yearFrom": 2021, "yearTo": 2024, "make": "Toyota", "model": "GR Supra", "submodel": "3.0L B58 (B58TU), 6-port exhaust manifold"},
+        ],
+        "fitmentSources": ["https://trucranemotorsports.com/products/dynamic-autowerx-6969-bmw-supra-gen-2-b58tu-6-port (2019-2024 Toyota Supra 3.0L A90/A91)",
+                           "https://titanmotorsports.com/products/untitled-may26_07-11 (Gen 2 B58TU, 6 port)"],
+        "competitors": [
+            ("Titan Motorsports", 3599.00, "https://titanmotorsports.com/products/untitled-may26_07-11"),
+            ("BimmerNetwork", 3769.00, "https://www.bimmernetwork.com/products/untitled-may26_07-11"),
+            ("Trucrane Motorsports", 3769.00, "https://trucranemotorsports.com/products/dynamic-autowerx-6969-bmw-supra-gen-2-b58tu-6-port"),
+        ],
+        "photos": [
+            {"file": f, "url": u, "landingPage": "https://titanmotorsports.com/products/untitled-may26_07-11", "sourceName": "titanmotorsports.com",
+              "creator": "Dynamic Autowerx (manufacturer)", "creatorUrl": "https://dynamicautowerx.com/", "note": note}
+            for f, u, note in [("daw6969-0.png", "https://cdn.shopify.com/s/files/1/0066/0370/2362/files/rn-image_picker_lib_temp_749ef41e-2168-4be7-9f99-a38abfa40e52.png", "photo of the 6969 6-port turbocharger with its stainless manifold"), ("daw6969-2.png", "https://cdn.shopify.com/s/files/1/0066/0370/2362/files/rn-image_picker_lib_temp_aa315935-80d7-4add-840b-080e23f22aa0.png", "close-up of the 6969 turbocharger and its identification plate")]
+        ],
+        "mediaDir": "turbocharger/dynamic-autowerx-6969-6port",
+    },
 ]
 
 PTP = "https://www.powertrainproducts.net/product/"

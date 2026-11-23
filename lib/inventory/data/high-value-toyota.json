@@ -269,6 +269,39 @@
     "createdAt": 1795200005123
   },
   {
+    "id": 5124,
+    "name": "Dynamic Autowerx 6969 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G2_6969 for 2021–2024 Toyota GR Supra 3.0",
+    "category": "turbocharger",
+    "brand": "dynamic-autowerx",
+    "price": 3419.05,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "DAW_G2_6969",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2021–2024 Toyota GR Supra 3.0 (Gen 2 B58 / B58TU engine with the 6-port exhaust manifold); the 2020 2-port engine uses other Dynamic Autowerx parts. Verify the 6-port head before ordering",
+    "fitmentYears": "2021–2024",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2021,
+        "yearTo": 2024,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "submodel": "3.0L B58 (B58TU), 6-port exhaust manifold"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/dynamic-autowerx-6969-6port/1.webp",
+    "image": "/product-media/turbocharger/dynamic-autowerx-6969-6port/1.webp",
+    "images": [
+      "/product-media/turbocharger/dynamic-autowerx-6969-6port/1.webp",
+      "/product-media/turbocharger/dynamic-autowerx-6969-6port/2.webp"
+    ],
+    "description": "Dynamic Autowerx 6969 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G2_6969 for 2021–2024 Toyota GR Supra 3.0\n\nComplete OEM-location upgrade turbocharger (not a hybrid) for the 6-port Gen 2 B58 (B58TU) engine of the GR Supra 3.0, with a high-efficiency turbine housing and stainless steel manifold. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: Dynamic Autowerx\nManufacturer part number: DAW_G2_6969\nSupported power (manufacturer): rated to 1150+ hp\nDesign: full-frame stock-location turbocharger (not a hybrid), successor to the 6769\nTurbine housing: Ni-Resist D-5S, with stainless steel manifold and extended tubular runners\nThrust: race thrust assembly\nManufacturer warranty: 12-month limited (per most sellers' listings)\nCondition: New\n\nWhat is included (per the manufacturer)\n\n1 Dynamic Autowerx 6969 turbocharger with integrated stainless steel manifold (turbine housing)\n\nToyota fitment\n\n2021–2024 Toyota GR Supra 3.0 (Gen 2 B58 / B58TU engine with the 6-port exhaust manifold); the 2020 2-port engine uses other Dynamic Autowerx parts. Verify the 6-port head before ordering.\n\nNotes\n\nEngine tuning and fuel system upgrades are not included; at these power levels they are required.\nFor off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "dynamic-autowerx-daw_g2_6969",
+    "createdAt": 1795200005124
+  },
+  {
     "id": 5106,
     "name": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858B for 2006–2015 Toyota Tacoma / Tundra (2006–2010 and 2012–2015)",
     "category": "engine",
