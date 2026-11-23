@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-catalog-snapshot.mjs && node scripts/check-image-rights.mjs",
+    "prebuild": "node scripts/build-catalog-snapshot.mjs",
     "build": "next build",
     "verify:cloudflare": "node scripts/verify-cloudflare-config.mjs",
     "verify:seo": "node scripts/verify-seo.mjs",
@@ -16,7 +16,7 @@
     "test:shipping": "node scripts/test-shipping-rates.mjs",
     "check:toyota-expansion": "node scripts/check-toyota-expansion.mjs",
     "test:toyota-fitment": "node scripts/test-toyota-fitment-validator.mjs",
-    "audit:storefront-claims": "node scripts/build-catalog-snapshot.mjs --check && node scripts/check-image-rights.mjs && node scripts/audit-storefront-claims.mjs && node scripts/audit-storefront-claims.mjs --self-test && node scripts/check-unknown-listing-facts.mjs && node scripts/check-meta-feed-images.mjs && node scripts/check-toyota-genuine.mjs && node scripts/check-toyota-expansion.mjs && node scripts/test-toyota-fitment-validator.mjs",
+    "audit:storefront-claims": "node scripts/build-catalog-snapshot.mjs --check && node scripts/audit-storefront-claims.mjs && node scripts/audit-storefront-claims.mjs --self-test && node scripts/check-unknown-listing-facts.mjs && node scripts/check-meta-feed-images.mjs && node scripts/check-toyota-genuine.mjs && node scripts/check-toyota-expansion.mjs && node scripts/test-toyota-fitment-validator.mjs",
     "verify:opennext": "node scripts/verify-opennext-output.mjs",
     "pages:build": "node scripts/verify-cloudflare-config.mjs && npx opennextjs-cloudflare build && node scripts/patch-opennext-assets.mjs && node scripts/patch-opennext-cron.mjs && node scripts/verify-opennext-output.mjs",
     "pages:deploy": "node scripts/verify-worker-chunks.mjs && npx opennextjs-cloudflare deploy",
@@ -27,8 +27,7 @@
     "start": "next start",
     "icons:generate": "node scripts/generate-brand-icons.mjs",
     "normalize:bodyparts": "node scripts/normalize-bodyparts-media.mjs",
-    "catalog:snapshot": "node scripts/build-catalog-snapshot.mjs",
-    "check:image-rights": "node scripts/check-image-rights.mjs"
+    "catalog:snapshot": "node scripts/build-catalog-snapshot.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.117.1",

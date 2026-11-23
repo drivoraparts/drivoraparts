@@ -24,13 +24,6 @@ const usFitmentHidden = new Set(
     .map((d) => d.id)
 );
 
-// Listings held by the image-rights gate (no verified photo permission).
-const imageRightsHeld = new Set(
-  read("lib/inventory/data/image-rights-registry.json")
-    .images.filter((e) => e.permissionStatus !== "VERIFIED_LICENSED" && e.permissionStatus !== "VERIFIED_AUTHORIZED")
-    .map((e) => e.productId)
-);
-
 const TOYOTA_PART_NUMBER = /^(?:\d{5}-[0-9A-Z]{5}(?:-[0-9A-Z]{2})?|SU\d{3}-\d{5}|[0-9A-Z]{5}-[0-9A-Z]{5})$/;
 const problems = [];
 const seen = new Set();
@@ -38,7 +31,7 @@ const seen = new Set();
 for (const [i, entry] of (genuine.verified ?? []).entries()) {
   const where = `verified[${i}] (id ${entry?.id})`;
   if (!Number.isInteger(entry?.id)) problems.push(`${where}: id must be a listing id`);
-  else if (!visible.has(entry.id) && !belowMinimumPrice.has(entry.id) && !usFitmentHidden.has(entry.id) && !imageRightsHeld.has(entry.id)) problems.push(`${where}: listing is not public (lib/inventory/data/toyota-catalog.json)`);
+  else if (!visible.has(entry.id) && !belowMinimumPrice.has(entry.id) && !usFitmentHidden.has(entry.id)) problems.push(`${where}: listing is not public (lib/inventory/data/toyota-catalog.json)`);
   if (seen.has(entry?.id)) problems.push(`${where}: listed twice`);
   seen.add(entry?.id);
   if (!TOYOTA_PART_NUMBER.test(String(entry?.partNumber ?? ""))) problems.push(`${where}: partNumber must be a Toyota part number, e.g. 35000-0K130`);

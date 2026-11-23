@@ -64,7 +64,6 @@ process.stdout.write(JSON.stringify({
     partNumber: p.partNumber ?? "", stock: p.stock !== false, price: p.price,
     condition: resolveProductCondition(p),
     description: p.description ?? "",
-    thumbnail: p.thumbnail ?? "", images: p.images ?? [],
   })),
 }));
 `
@@ -174,14 +173,14 @@ const usFitmentDecisions = new Map(
     .decisions.map((d) => [d.id, d])
 );
 
-// Image rights (owner instruction 2026-11-23): a listing is published only when
-// every one of its photographs has verified commercial-use permission
-// (VERIFIED_LICENSED / VERIFIED_AUTHORIZED in
-// lib/inventory/data/image-rights-registry.json). Anything else is held: it
-// stays in the catalog and is hidden until an authorized photograph is on
-// record. See scripts/lib/image-rights.mjs.
-import { listingStatus, loadRegistry, syncRegistry } from "./lib/image-rights.mjs";
-let imageRights = loadRegistry(ROOT);
+// Image rights (owner instruction 2026-11-23): a listing whose photograph has no
+// confirmed commercial-use permission is held (hidden) until an authorized
+// photograph is available. Holds are listed, with evidence, in
+// lib/inventory/data/image-rights-holds.json.
+const imageRightsHolds = new Map(
+  JSON.parse(fs.readFileSync(path.join(ROOT, "lib/inventory/data/image-rights-holds.json"), "utf8"))
+    .holds.map((h) => [h.id, h])
+);
 
 const rows = products
   .filter((p) => p.id !== checkoutTestId)
@@ -190,29 +189,15 @@ const rows = products
     const [group, reason] =
       decision && (decision.decision === "EXCLUDE" || decision.decision === "HOLD")
         ? ["C", `US fitment research: ${decision.decision}`]
-        : typeof p.price === "number" && p.price < MIN_LISTED_PRICE
+        : imageRightsHolds.has(p.id)
+          ? ["C", "image rights: HOLD (no confirmed commercial-use permission)"]
+          : typeof p.price === "number" && p.price < MIN_LISTED_PRICE
           ? ["C", `below the ${MIN_LISTED_PRICE} USD minimum listing price (owner instruction 2026-11-22)`]
           : classify(p);
     const genuineClaim = /\b(?:toyota genuine|genuine toyota)\b/i.test(p.name) || p.brand === "toyota";
     const toyotaPartNumber = TOYOTA_PART_NUMBER.test(`${p.partNumber} ${p.name}`);
     return { ...p, group, reason, genuineCandidate: group === "A" && (genuineClaim || toyotaPartNumber) };
   });
-
-// Image-rights gate: sync the registry for every listing that would otherwise
-// be public, then hold those without verified permission for every photo.
-imageRights = syncRegistry(ROOT, imageRights, rows.filter((r) => r.group === "A"));
-for (const r of rows) {
-  if (r.group !== "A") continue;
-  const s = listingStatus(imageRights, r);
-  if (!s.publishable) {
-    r.group = "C";
-    r.reason = `image rights: ${s.status} (no verified commercial-use permission for its photograph)`;
-    r.genuineCandidate = false;
-  }
-}
-if (WRITE) {
-  fs.writeFileSync(path.join(ROOT, "lib/inventory/data/image-rights-registry.json"), JSON.stringify(imageRights, null, 2) + "\n");
-}
 
 const by = (g) => rows.filter((r) => r.group === g);
 const A = by("A");
