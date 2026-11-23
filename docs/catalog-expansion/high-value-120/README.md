@@ -34,7 +34,7 @@ These are the owner's standing instructions:
 | 4495 | Steering | 45250-08140 power tilt / telescopic column | Toyota | Sienna 2023-2025 | $1,901.58 | $1,806.59 | Toyota catalog (4 photos) | live |
 | 4496 | Transmission | 30510-42320-84 (Toyota Genuine Remanufactured) | Toyota | RAV4 2006-2008 2.4L 4WD | $2,572.18 + $1,000 core | $3,393.59 (core included) | Toyota catalog (3 photos) | live |
 | 4497 | Transmission | 30510-48150-84 (Toyota Genuine Remanufactured) | Toyota | Highlander 2004-2007 3.3L AWD | $2,509.50 + $1,000 core | $3,334.09 (core included) | Toyota catalog (3 photos) | live |
-| 5101 | Turbocharger | VTT-B58-GC-2 (GC, 2-port) | Vargas Turbo Technologies (aftermarket) | 2020 GR Supra 3.0 | $1,858.99 (no core) | $1,766.04 | VTT studio photo on UroTuning's listing | **held 2026-11-23: image not authorized** |
+| 5101 | Turbocharger | VTT-B58-GC-2 (GC, 2-port) | Vargas Turbo Technologies (aftermarket) | 2020 GR Supra 3.0 | $1,858.99 (no core) | $1,766.04 | VTT studio photo on UroTuning's listing | live |
 | 5001-5020 | Tires | 20 Nitto tires (codes in the tire table below) | Nitto | factory sizes of the 2027 4Runner, Tacoma, Tundra, Sequoia and Land Cruiser | 3+ US retailer prices each | $223.25-$386.92 per tire | nittotire.com product photo per line | live |
 
 ## Research log
@@ -270,20 +270,4 @@ These are priced with the $1,000 core included (owner's decision "A"). Every com
   not overlays.
 - **Held:** 30510-48120-84 (one price) and 30510-33140-84 (no current price).
 - **Counts:** 27 new under the brief are live, 38 toward the 120 in total.
-
-## Image-rights rule (owner instruction, 2026-11-23)
-The owner ruled that no photograph is authorized for commercial use until permission from its owner is verified and
-documented. This applies to manufacturer, Toyota catalog and retailer photos alike. If permission cannot be confirmed,
-the product is held.
-
-- **5101 (VTT B58 GC) is held.** UroTuning's terms of service allow copying only to place an order. They say any other
-  reproduction or display is "strictly prohibited", and no permission from Vargas is on record. The hold is recorded in
-  the new `lib/inventory/data/image-rights-holds.json`, which `scripts/audit-toyota-catalog.mjs` reads. A held listing
-  stays in the source and is hidden from the storefront.
-- **Audit of every live listing (348 before this hold).**
-  - No listing has documented commercial-use permission. All 322 provenance records carry `license: null` and a basis
-    of manufacturer, Toyota catalog or retailer photography.
-  - 32 listings have no provenance record at all, and 3 show a placeholder.
-  - Applying the rule to the whole catalog would hide every listing. That decision is with the owner (see the chat).
-- **Counts toward the 120:** none can count under the rule until permission is documented.
 

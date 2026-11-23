@@ -346,6 +346,7 @@ id,group,reason,genuine_candidate,category,brand,condition,part_number,in_stock,
 "5018","A","listing names a Toyota vehicle, engine or platform","","wheels-tires","nitto","brand-new","205860","yes","301.15","Nitto Trail Grappler M/T LT265/70R17 121/118Q, Load Range E Tire for Toyota Tacoma"
 "5019","A","listing names a Toyota vehicle, engine or platform","","wheels-tires","nitto","brand-new","206870","yes","225.15","Nitto Exo Grappler AWT LT265/70R17 121/118Q, Load Range E Tire for Toyota Tacoma"
 "5020","A","listing names a Toyota vehicle, engine or platform","","wheels-tires","nitto","brand-new","205630","yes","223.25","Nitto Dura Grappler LT265/70R17 121/118Q, Load Range E Tire for Toyota Tacoma"
+"5101","A","structured fitment lists Toyota","","turbocharger","vargas-turbo-technologies","brand-new","VTT-B58-GC-2","yes","1766.04","Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)"
 "1","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4030","BMW N54 Twin Turbo Engine"
 "33","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","5100","BMW B58 TwinPower Turbo 3.0-Liter Engine"
 "37","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4505","BMW N55 Turbo Engine"
@@ -4254,4 +4255,3 @@ id,group,reason,genuine_candidate,category,brand,condition,part_number,in_stock,
 "4408","C","below the 200 USD minimum listing price (owner instruction 2026-11-22)","","brakes","toyota","brand-new","04466-02310","yes","49.39","Genuine Toyota Rear Brake Pad Set 04466-02310 for Toyota Corolla (2009–2019)"
 "4409","C","below the 200 USD minimum listing price (owner instruction 2026-11-22)","","engine","toyota","brand-new","16571-0V020","yes","42.69","Genuine Toyota Radiator Hose 16571-0V020 for Toyota RAV4 (2009–2012)"
 "4410","C","below the 200 USD minimum listing price (owner instruction 2026-11-22)","","brakes","toyota","brand-new","43512-02111","yes","63.89","Genuine Toyota Front Brake Rotor 43512-02111 for Toyota Corolla (2003–2008)"
-"5101","C","image rights: HOLD (no confirmed commercial-use permission)","","turbocharger","vargas-turbo-technologies","brand-new","VTT-B58-GC-2","yes","1766.04","Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)"

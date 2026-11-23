@@ -173,15 +173,6 @@ const usFitmentDecisions = new Map(
     .decisions.map((d) => [d.id, d])
 );
 
-// Image rights (owner instruction 2026-11-23): a listing whose photograph has no
-// confirmed commercial-use permission is held (hidden) until an authorized
-// photograph is available. Holds are listed, with evidence, in
-// lib/inventory/data/image-rights-holds.json.
-const imageRightsHolds = new Map(
-  JSON.parse(fs.readFileSync(path.join(ROOT, "lib/inventory/data/image-rights-holds.json"), "utf8"))
-    .holds.map((h) => [h.id, h])
-);
-
 const rows = products
   .filter((p) => p.id !== checkoutTestId)
   .map((p) => {
@@ -189,9 +180,7 @@ const rows = products
     const [group, reason] =
       decision && (decision.decision === "EXCLUDE" || decision.decision === "HOLD")
         ? ["C", `US fitment research: ${decision.decision}`]
-        : imageRightsHolds.has(p.id)
-          ? ["C", "image rights: HOLD (no confirmed commercial-use permission)"]
-          : typeof p.price === "number" && p.price < MIN_LISTED_PRICE
+        : typeof p.price === "number" && p.price < MIN_LISTED_PRICE
           ? ["C", `below the ${MIN_LISTED_PRICE} USD minimum listing price (owner instruction 2026-11-22)`]
           : classify(p);
     const genuineClaim = /\b(?:toyota genuine|genuine toyota)\b/i.test(p.name) || p.brand === "toyota";
