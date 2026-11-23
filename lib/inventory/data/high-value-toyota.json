@@ -801,5 +801,42 @@
     "description": "ATK Remanufactured 3.3L 3MZ-FE V6 Long Block Engine 860 for 2004–2006 Toyota Sienna AWD\n\nRemanufactured Toyota 3MZ-FE 3.3L V6 long block, ATK part number 860. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 860\nEngine code: 3MZ-FE\nDisplacement: 3.3L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 860)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2004–2006 Toyota Sienna AWD with the 3.3L 3MZ-FE engine; confirm by VIN.\n\nNotes\n\nAWD 3MZ-FE; front-wheel-drive 2004-2008 applications use ATK 860B. Years are the Sienna range in Powertrain Company's fitment table, inside JEGS's 2004-2007 range.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "atk-engines-860",
     "createdAt": 1795200005119
+  },
+  {
+    "id": 5120,
+    "name": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4061.59,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "862",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "2005–2014 Toyota Tacoma with the 2.7L 2TR-FE engine; confirm by VIN",
+    "fitmentYears": "2005–2014",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2005,
+        "yearTo": 2014,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "2.7L 2TR-FE inline-4"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-862/1.webp",
+    "image": "/product-media/engine/atk-862/1.webp",
+    "images": [
+      "/product-media/engine/atk-862/1.webp",
+      "/product-media/engine/atk-862/2.webp",
+      "/product-media/engine/atk-862/3.webp",
+      "/product-media/engine/atk-862/4.webp",
+      "/product-media/engine/atk-862/5.webp",
+      "/product-media/engine/atk-862/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma\n\nRemanufactured Toyota 2TR-FE 2.7L inline-4 long block, ATK part number 862. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 862\nEngine code: 2TR-FE\nDisplacement: 2.7L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 862)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n2005–2014 Toyota Tacoma with the 2.7L 2TR-FE engine; confirm by VIN.\n\nNotes\n\nBuilt 9/2004 to 11/2014, per the listing; the 2015 Tacoma (intake VVT) uses ATK 862A.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-862",
+    "createdAt": 1795200005120
   }
 ]

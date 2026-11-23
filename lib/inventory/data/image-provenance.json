@@ -76262,5 +76262,137 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-5120-hv-1": {
+    "productId": 5120,
+    "productName": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "localFile": "/product-media/engine/atk-862/1.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2trfe-2.7l-l4-remanufactured-engine-904-1114-5.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 862) (studio photo of the remanufactured 862 2TR-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "862",
+      "ATK 862"
+    ],
+    "query": "retailer listing: 862",
+    "sha256": "d70cabc0855c26909ed2f35e3a47f5c05954066db9d813fcd9f6656f15cfd4c9",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5120-hv-2": {
+    "productId": 5120,
+    "productName": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "localFile": "/product-media/engine/atk-862/2.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2trfe-2.7l-l4-remanufactured-engine-904-1114-4.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 862) (studio photo of the remanufactured 862 2TR-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "862",
+      "ATK 862"
+    ],
+    "query": "retailer listing: 862",
+    "sha256": "64df9ae82412aead95d945149e6b20f7fbd06df22d9d9364202700d45f8b3f82",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5120-hv-3": {
+    "productId": 5120,
+    "productName": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "localFile": "/product-media/engine/atk-862/3.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2trfe-2.7l-l4-remanufactured-engine-904-1114-3.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 862) (studio photo of the remanufactured 862 2TR-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "862",
+      "ATK 862"
+    ],
+    "query": "retailer listing: 862",
+    "sha256": "d4b4c11d80c1153397ebd7f5dc19a732b6a1266d60889331e2fe5a5751f48879",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5120-hv-4": {
+    "productId": 5120,
+    "productName": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "localFile": "/product-media/engine/atk-862/4.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2trfe-2.7l-l4-remanufactured-engine-904-1114-2.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 862) (studio photo of the remanufactured 862 2TR-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "862",
+      "ATK 862"
+    ],
+    "query": "retailer listing: 862",
+    "sha256": "6ec219422160940af913c918d19e9171fdd0d16c443d49c925bbc0bd23604b99",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5120-hv-5": {
+    "productId": 5120,
+    "productName": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "localFile": "/product-media/engine/atk-862/5.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2trfe-2.7l-l4-remanufactured-engine-904-1114-1.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 862) (studio photo of the remanufactured 862 2TR-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "862",
+      "ATK 862"
+    ],
+    "query": "retailer listing: 862",
+    "sha256": "42b423a14b1ac0cf2eef908ebc9aba0261d584f2fa7d2f143188af859e96899e",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5120-hv-6": {
+    "productId": 5120,
+    "productName": "ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma",
+    "localFile": "/product-media/engine/atk-862/6.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2trfe-2.7l-l4-remanufactured-engine-904-1114.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/9-04-11-14-2trfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 862) (studio photo of the remanufactured 862 2TR-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "862",
+      "ATK 862"
+    ],
+    "query": "retailer listing: 862",
+    "sha256": "15b11799059afc35c6478527f50f932cd580f404a0e71d42260cc3632393e543",
+    "downloadedAt": "2026-11-23"
   }
 }
