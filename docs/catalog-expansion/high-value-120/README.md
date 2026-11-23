@@ -98,3 +98,54 @@ Every tire is priced per tire, 5% under the lowest attributed US price. The phot
 | 5018 | Trail Grappler M/T | LT265/70R17 | 121/118Q LR E | 205860 | $317.00 | $301.15 | Tacoma |
 | 5019 | Exo Grappler AWT | LT265/70R17 | 121/118Q LR E | 206870 | $237.00 | $225.15 | Tacoma |
 | 5020 | Dura Grappler | LT265/70R17 | 121/118Q LR E | 205630 | $235.00 | $223.25 | Tacoma |
+
+## Round 3 (2026-11-23): owner's sourcing model and the existing workflow
+
+**How the existing catalog was built.** This was checked in `lib/inventory/data/image-provenance.json` and `scripts/import-*.mjs`.
+- Photos come from the manufacturer (bddiesel, sbfilters, ARB, Nitto, Toyota) or from an established specialist retailer's listing
+  of the exact part (dieselpowerproducts, shocksurplus, mudify), where the image is the manufacturer's catalogue photography.
+- Each image is recorded with a usage basis ("RIGHTS NOT INDEPENDENTLY VERIFIED").
+- The same standard is applied here, plus the owner's photo rules: no watermarks, no logo or promotional overlays, and the exact product.
+
+**Sources tried this round**
+
+| Source | Result |
+|---|---|
+| Summit Racing, JEGS, Vivid Racing | 403 to automated requests. Not bypassed. |
+| ATK (atkengines.com) | Allowlisted but does not respond. |
+| UroTuning, AMS Performance, pureturbos.com, Cruiser Parts | Reachable. |
+
+**Turbochargers: Pure Turbos, read from the maker's own pages (all US-market GR Supra / GR Corolla)**
+
+| Product | Fits | Maker price | Core | US prices found | Status |
+|---|---|---|---|---|---|
+| Pure800 (NEW) | GR Supra A90/A91 2020-2026, 3.0L B58 Gen 2 | $3,107 | none | Kies $2,995; Vehicle Virals $2,995 | **Prices OK; photo held** |
+| Pure900 (NEW) | GR Supra 2020-2026 | $3,626 | none | ORT $3,870; Vehicle Virals $4,001 | **Prices OK; photo held** |
+| Pure600 (NEW) | GR Supra 2020-2026 | $1,095 | none | Vehicle Virals $1,095 | Held: 2 prices |
+| Pure650 (NEW) | GR Supra 2020-2026 | $2,695 | none | (AUD only) | Held: 1 US price |
+| Pure550 / Pure650 / Pure800 (core units) | GR Corolla / GR Supra | $1,995 / $2,000 / $2,594 | refundable, amount not stated | | Held: core deposit unknown, so the core-inclusive price cannot be set |
+| TTE570 (TTE10672) / TTE500 (TTE10423) | GR Corolla G16E-GTS | | | UroTuning $4,500.02 / $4,116.81 only | Held: one US price each |
+
+**Image block for these turbos.**
+- Every Pure Turbos product photo carries the Pure "P" logo badge, and some carry text overlays ("T51R MOD", "STANDARD").
+- UroTuning's TTE photos carry a large retailer watermark.
+- AMS's photo is an engine-bay installation shot that does not identify the unit.
+
+Removing logos or watermarks from someone else's photo is not done. These products need a clean photo from the supplier or the
+maker (for example on request to Pure Turbos, info@pureturbos.com).
+
+**Leads the owner supplied**
+
+| Lead | Assessment |
+|---|---|
+| Grieco / Olathe turbo pages | Same Tundra / Sequoia turbos already live. |
+| eBay items, Revline used engines | The sellers' own photos of their own units. No reuse basis. |
+| usaautopartsdirect 1HD-FTE turbo | Non-US engine, aftermarket. |
+| Toyota Parts Now (Land Cruiser steering gear) | 403. |
+| Frontier rack 44250-60370; seat frames 71120-60781 / 71110-60581 | No Toyota photo of the part number. Retailer images not verified. |
+
+**Remaining (counted toward the 120)**
+- Live under the brief: tires 20/20, transmissions 1, steering 1.
+- Short: turbos 20, engines 20, transmissions 19, steering 19, seats 20.
+- The binding constraint is clean, reusable photographs of the exact part. Prices and fitment are found for many candidates
+  (see the tables above and in the earlier rounds).
