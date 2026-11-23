@@ -74016,5 +74016,58 @@
     "query": "manufacturer catalogue: Nitto Dura Grappler",
     "sha256": "3e1bc014077b5b5b43c64bc895b77e68006ac85a61bc9306ac9e3a148c5740fe",
     "downloadedAt": "2026-11-23"
+  },
+  "product-5101-hv-1": {
+    "productId": 5101,
+    "productName": "Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)",
+    "localFile": "/product-media/turbocharger/vargas-vtt-b58-gc-2/1.webp",
+    "sourceUrl": "https://www.urotuning.com/cdn/shop/products/1-1.jpg",
+    "sourceName": "urotuning.com",
+    "landingPage": "https://www.urotuning.com/products/vargas-turbo-technologies-b58-gc-gc-turbocharger-upgrade-vtt-b58-gc-1",
+    "creator": "Vargas Turbo Technologies (manufacturer)",
+    "creatorUrl": "https://www.vargasturbo.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer catalogue photography of this exact part on a specialist retailer's listing of it (studio photo of the VTT B58 GC turbocharger; the only lettering is VTT's own cast-in marking on the housing); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "VTT-B58-GC-2",
+      "B58TU2GC",
+      "VTTB58GC2port"
+    ],
+    "query": "retailer listing: VTT-B58-GC-2",
+    "sha256": "ba9dc153cdac24ae4281640584f31262d32799c09ab7f4fad13f306339dc0c64",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-4494": {
+    "productId": 4494,
+    "productName": "Genuine Toyota Electric Power Steering Rack and Pinion Assembly 44250-08080 for Toyota Sienna (2021–2025)",
+    "localFile": "/product-media/toyota-genuine/toyota-electric-power-steering-rack-and-pinion-assembly-44250-08080/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/4425008080/4425008080_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44250-08080",
+      "4425008080"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44250-08080",
+    "sha256": "bca32d3c66ac80c5ae738318acc37cb11033961a4b0612cf23c757a25922f031",
+    "bytes": 12714,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

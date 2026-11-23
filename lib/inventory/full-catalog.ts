@@ -40,6 +40,7 @@ import { roofRackProducts } from "./roof-rack-products";
 import { suspensionLiftProducts } from "./suspension-lift-products";
 import { headlightProducts } from "./headlight-products";
 import { tireProducts } from "./tire-products";
+import { highValueToyotaProducts } from "./high-value-toyota-products";
 import { transmissionProducts } from "./transmission-products";
 import { bumperProducts } from "./bumper-products";
 import { canopyProducts } from "./canopy-products";
@@ -68,6 +69,7 @@ const extensionProducts: Product[] = [
   ...suspensionLiftProducts,
   ...headlightProducts,
   ...tireProducts,
+  ...highValueToyotaProducts,
   ...transmissionProducts,
   ...bumperProducts,
   ...canopyProducts,

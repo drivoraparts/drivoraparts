@@ -1,0 +1,34 @@
+[
+  {
+    "id": 5101,
+    "name": "Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)",
+    "category": "turbocharger",
+    "brand": "vargas-turbo-technologies",
+    "price": 1766.04,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "VTT-B58-GC-2",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2020 Toyota GR Supra 3.0 (A90, B58 engine with the 2-port exhaust manifold). Does not fit 2021-and-later GR Supra 3.0 (6-port manifold), which uses VTT-B58-GC-3; confirm the manifold port count on your engine",
+    "fitmentYears": "2020",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2020,
+        "yearTo": 2020,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "submodel": "3.0L B58 inline-6 turbo, 2-port exhaust manifold"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/vargas-vtt-b58-gc-2/1.webp",
+    "image": "/product-media/turbocharger/vargas-vtt-b58-gc-2/1.webp",
+    "images": [
+      "/product-media/turbocharger/vargas-vtt-b58-gc-2/1.webp"
+    ],
+    "description": "Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)\n\nVTT \"GC\" turbocharger upgrade for the B58 engine with the 2-port exhaust manifold, made from new castings (not a rebuilt factory turbocharger). Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: Vargas Turbo Technologies (VTT)\nManufacturer part number: VTT-B58-GC-2 (also listed as B58TU2GC)\nEngine: B58 3.0L inline-6 turbo, 2-port exhaust manifold\nSupported power (manufacturer): stock to 600 WHP\nConstruction (manufacturer): 100% new castings; GC is the cold side and bearing housing (the GC+ is the complete unit, sold separately)\nTurbine wheel: 9-blade Mar-M 246\nCompressor wheel: 9-blade point-milled\nInlet: 3 in. turbocharger inlet\nConnections: factory oil, water, downpipe and charge pipe connections\nCore charge: none; the unit is sold outright\nManufacturer warranty: 12 months, unlimited mileage (per VTT)\nCondition: New\n\nIn the box (per the manufacturer)\n\n1 VTT B58 \"GC\" turbocharger\n1 VTT 3 in. to 4 in. silicone inlet elbow with adapters for the factory connections\n1 3 in. hose clamp for the inlet elbow\n1 optional 4 in. connector for the inlet elbow, for use with the stock airbox\n\nToyota fitment\n\n2020 Toyota GR Supra 3.0 (A90, B58 engine with the 2-port exhaust manifold). Does not fit 2021-and-later GR Supra 3.0 (6-port manifold), which uses VTT-B58-GC-3; confirm the manifold port count on your engine.\n\nNotes\n\nInstall kit, fuel system upgrades and an engine tune are not included. VTT recommends pairing the upgrade with a tune and supporting parts.\nFor off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "vargas-turbo-technologies-vtt-b58-gc-2",
+    "createdAt": 1795200005101
+  }
+]
