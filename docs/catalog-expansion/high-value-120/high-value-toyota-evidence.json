@@ -230,6 +230,102 @@
       "checked": "2026-11-23"
     },
     {
+      "id": 5121,
+      "partNumber": "DAW-G258-2p-FM1",
+      "aliases": [],
+      "maker": "Dynamic Autowerx",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 (B58TU), 2-port exhaust manifold"
+        }
+      ],
+      "fitmentSources": [
+        "https://studiorsr.com/products/daw-turbo-dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port",
+        "https://titanmotorsports.com/products/flow-max",
+        "https://www.kiesmotorsports.com/products/dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port",
+        "https://dynamicautowerx.com/products/flow-max"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "Studio RSR",
+          "price": 2700.0,
+          "url": "https://studiorsr.com/products/daw-turbo-dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port"
+        },
+        {
+          "name": "Titan Motorsports",
+          "price": 2750.0,
+          "url": "https://titanmotorsports.com/products/flow-max"
+        },
+        {
+          "name": "Kies Motorsports",
+          "price": 2750.0,
+          "url": "https://www.kiesmotorsports.com/products/dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port"
+        },
+        {
+          "name": "Dynamic Autowerx (manufacturer store)",
+          "price": 2750.0,
+          "url": "https://dynamicautowerx.com/products/flow-max"
+        }
+      ],
+      "lowest": 2700.0,
+      "price": 2565.0,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5122,
+      "partNumber": "DAW_G258_2p_UFR_5",
+      "aliases": [],
+      "maker": "Dynamic Autowerx",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 (B58TU), 2-port exhaust manifold"
+        }
+      ],
+      "fitmentSources": [
+        "https://titanmotorsports.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger",
+        "https://europerformancecenter.com/product/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger/",
+        "https://www.bimmernetwork.com/products/daw-gen2-b58-6port-supra-ultra-flow-turbo-upgrade",
+        "https://dynamicautowerx.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "Titan Motorsports",
+          "price": 3150.0,
+          "url": "https://titanmotorsports.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger"
+        },
+        {
+          "name": "Euro Performance Center",
+          "price": 3150.0,
+          "url": "https://europerformancecenter.com/product/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger/"
+        },
+        {
+          "name": "BimmerNetwork",
+          "price": 3150.0,
+          "url": "https://www.bimmernetwork.com/products/daw-gen2-b58-6port-supra-ultra-flow-turbo-upgrade"
+        },
+        {
+          "name": "Dynamic Autowerx (manufacturer store)",
+          "price": 3150.0,
+          "url": "https://dynamicautowerx.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger"
+        }
+      ],
+      "lowest": 3150.0,
+      "price": 2992.5,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
       "id": 5106,
       "partNumber": "858B",
       "aliases": [
