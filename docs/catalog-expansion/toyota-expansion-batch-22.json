@@ -1,0 +1,288 @@
+{
+  "_comment": "Toyota expansion batch 22 (2026-11-23): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transaxle Assembly 30510-42320-84 — RAV4",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "30510-42320-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2006–2008 Toyota RAV4 (2.4L; 4-cylinder, 4WD (dealer note: 2.4L, 4WD); replaces 30500-42220, 30500-42221, 30500-42320 and 30510-42220-84; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2006,
+          "yearTo": 2008,
+          "make": "Toyota",
+          "model": "RAV4",
+          "submodel": "2.4L; 4-cylinder, 4WD (dealer note: 2.4L, 4WD); replaces 30500-42220, 30500-42221, 30500-42320 and 30510-42220-84; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transaxle assembly 30510-42320-84 for the Toyota RAV4. Toyota Genuine Remanufactured automatic transaxle, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transaxle has to be returned.\n\nSpecifications\n\nPart number: 30510-42320-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2006–2008 Toyota RAV4 (2.4L; 4-cylinder, 4WD (dealer note: 2.4L, 4WD); replaces 30500-42220, 30500-42221, 30500-42320 and 30510-42220-84; confirm by VIN)\nRestriction (2006-2008 RAV4): 2.4L 4-cylinder, 4WD (dealer note: 2.4L, 4WD); replaces 30500-42220, 30500-42221, 30500-42320 and 30510-42220-84; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 4099.96,
+        "lowestCompetitor": {
+          "seller": "Ourisman Toyota of Richmond ($2,572.18 + $1,000 core charge)",
+          "price": 3572.18,
+          "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-trans-axle-305104232084"
+        },
+        "competitors": [
+          {
+            "seller": "Ourisman Toyota of Richmond ($2,572.18 + $1,000 core charge)",
+            "price": 3572.18,
+            "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-trans-axle-305104232084"
+          },
+          {
+            "seller": "American Toyota ($2,597.92 + $1,000 core charge)",
+            "price": 3597.92,
+            "url": "https://parts.americantoyota.com/oem-parts/toyota-transaxle-305104232084"
+          },
+          {
+            "seller": "Toyota of Colorado Springs ($2,621.33 + $1,000 core charge)",
+            "price": 3621.33,
+            "url": "https://parts.toyotaofcoloradosprings.com/oem-parts/toyota-trans-axle-305104232084"
+          },
+          {
+            "seller": "Toyota South ($2,691.54 + $1,000 core charge)",
+            "price": 3691.54,
+            "url": "https://parts.toyotasouth.com/oem-parts/toyota-trans-axle-305104232084"
+          },
+          {
+            "seller": "Capo Valley Toyota ($2,789.96 + $1,000 core charge)",
+            "price": 3789.96,
+            "url": "https://parts.capovalleytoyota.com/oem-parts/toyota-trans-axle-305104232084"
+          },
+          {
+            "seller": "Camelback Toyota ($2,925.59 + $1,000 core charge)",
+            "price": 3925.59,
+            "url": "https://parts.camelbacktoyota.com/oem-parts/toyota-trans-axle-305104232084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3393.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2006,
+            "yearTo": 2008,
+            "make": "Toyota",
+            "model": "RAV4",
+            "engine": "2.4L",
+            "restriction": "2.4L 4-cylinder, 4WD (dealer note: 2.4L, 4WD); replaces 30500-42220, 30500-42221, 30500-42320 and 30510-42220-84; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "toyota_official",
+                "source": "Toyota Parts (2006 Toyota RAV4 REMAN ATM 30510-42320-84)",
+                "url": "https://parts.toyota.com/p/Toyota_2006_RAV4/REMAN-ATM/69294663/305104232084.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Ourisman Toyota of Richmond (30510-42320-84 Trans-Axle 2006-2008 Toyota RAV4)",
+                "url": "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-trans-axle-305104232084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Camelback Toyota (2006-2008 Toyota RAV4 Trans-Axle 30510-42320-84)",
+                "url": "https://parts.camelbacktoyota.com/oem-parts/toyota-trans-axle-305104232084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.americantoyota.com/oem-parts/toyota-transaxle-305104232084",
+        "https://parts.camelbacktoyota.com/oem-parts/toyota-trans-axle-305104232084",
+        "https://parts.capovalleytoyota.com/oem-parts/toyota-trans-axle-305104232084",
+        "https://parts.toyota.com/p/Toyota_2006_RAV4/REMAN-ATM/69294663/305104232084.html",
+        "https://parts.toyotaofcoloradosprings.com/oem-parts/toyota-trans-axle-305104232084",
+        "https://parts.toyotasouth.com/oem-parts/toyota-trans-axle-305104232084",
+        "https://toyotaparts.ourismantoyotaofrichmond.com/oem-parts/toyota-trans-axle-305104232084"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    },
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transaxle Assembly 30510-48150-84 — Highlander",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "30510-48150-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2004–2007 Toyota Highlander (3.3L V6; AWD (gasoline; not the hybrid); confirm drive type by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2004,
+          "yearTo": 2007,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.3L V6; AWD (gasoline; not the hybrid); confirm drive type by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transaxle assembly 30510-48150-84 for the Toyota Highlander. Toyota Genuine Remanufactured automatic transaxle, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transaxle has to be returned.\n\nSpecifications\n\nPart number: 30510-48150-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2004–2007 Toyota Highlander (3.3L V6; AWD (gasoline; not the hybrid); confirm drive type by VIN)\nRestriction (2004-2007 Highlander): 3.3L V6 AWD (gasoline; not the hybrid); confirm drive type by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3994.46,
+        "lowestCompetitor": {
+          "seller": "Modern Toyota ($2,509.50 + $1,000 core charge)",
+          "price": 3509.5,
+          "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-trans-axle-assembly-auto-305104815084"
+        },
+        "competitors": [
+          {
+            "seller": "Modern Toyota ($2,509.50 + $1,000 core charge)",
+            "price": 3509.5,
+            "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-trans-axle-assembly-auto-305104815084"
+          },
+          {
+            "seller": "ToyotaPartsDeal ($2,575.72 + $1,000 core charge)",
+            "price": 3575.72,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~30510-48150-84.html"
+          },
+          {
+            "seller": "Lakeland Toyota ($2,622.54 + $1,000 core charge)",
+            "price": 3622.54,
+            "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-trans-axle-305104815084"
+          },
+          {
+            "seller": "Frontier Toyota ($3,119.92 + $1,000 core charge)",
+            "price": 4119.92,
+            "url": "https://parts.frontiertoyota.com/oem-parts/toyota-trans-axle-305104815084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3334.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2004,
+            "yearTo": 2007,
+            "make": "Toyota",
+            "model": "Highlander",
+            "engine": "3.3L V6",
+            "restriction": "3.3L V6 AWD (gasoline; not the hybrid); confirm drive type by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (2004-2007 Toyota Highlander Trans-Axle 30510-48150-84)",
+                "url": "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-trans-axle-305104815084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Frontier Toyota (2004-2007 Toyota Highlander Trans-Axle 30510-48150-84)",
+                "url": "https://parts.frontiertoyota.com/oem-parts/toyota-trans-axle-305104815084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Modern Toyota (OEM 2004-2007 Toyota Highlander Trans-axle Assembly 30510-48150-84)",
+                "url": "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-trans-axle-assembly-auto-305104815084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.frontiertoyota.com/oem-parts/toyota-trans-axle-305104815084",
+        "https://toyotaparts.lakelandtoyota.com/oem-parts/toyota-trans-axle-305104815084",
+        "https://wholesaledirect.moderntoyota.com/oem-parts/toyota-trans-axle-assembly-auto-305104815084",
+        "https://www.toyotapartsdeal.com/oem/toyota~reman~atm~30510-48150-84.html"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

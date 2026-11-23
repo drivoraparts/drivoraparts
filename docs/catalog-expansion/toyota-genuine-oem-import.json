@@ -1152,6 +1152,18 @@
       "partNumber": "45250-08140",
       "name": "Genuine Toyota Power Tilt and Telescopic Steering Column Assembly 45250-08140 for Toyota Sienna (2023–2025)",
       "price": 1806.59
+    },
+    {
+      "id": 4496,
+      "partNumber": "30510-42320-84",
+      "name": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-42320-84 for Toyota RAV4 (2006–2008)",
+      "price": 3393.59
+    },
+    {
+      "id": 4497,
+      "partNumber": "30510-48150-84",
+      "name": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-48150-84 for Toyota Highlander (2004–2007)",
+      "price": 3334.09
     }
   ],
   "excluded": [

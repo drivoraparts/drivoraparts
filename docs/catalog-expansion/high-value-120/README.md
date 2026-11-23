@@ -19,7 +19,7 @@ These are the owner's standing instructions:
 |---|---|---|---|---|---|
 | Turbochargers | 20 | 2 (17201-F4011, 17208-F4011) | 1 | 1 | 1 (5101) |
 | Engines & engine assemblies | 20 | 0 genuine | 0 | 0 | 0 |
-| Transmissions | 20 | 3 Toyota reman (4489-4491) + 1954 | 1 | 1 | 1 (4492) |
+| Transmissions | 20 | 3 Toyota reman (4489-4491) + 1954 | 3 | 3 | 3 (4492, 4496, 4497) |
 | Steering | 20 | racks 4425-4427, 4430, 4471; knuckle 4422 | 3 | 3 | 3 (4493-4495) |
 | Seats | 20 | 0 | 0 | 0 | 0 |
 | Tires | 20 | 0 visible | 20 | 20 | **20 (5001-5020)** |
@@ -32,6 +32,8 @@ These are the owner's standing instructions:
 | 4493 | Steering | 44310-0C080 power steering pump | Toyota | Tundra 2007-2009 | $381.13 | $362.09 | Toyota catalog | live |
 | 4494 | Steering | 44250-08080 EPS rack and pinion | Toyota | Sienna 2021-2025 | $650.19 | $617.69 | Toyota catalog | live |
 | 4495 | Steering | 45250-08140 power tilt / telescopic column | Toyota | Sienna 2023-2025 | $1,901.58 | $1,806.59 | Toyota catalog (4 photos) | live |
+| 4496 | Transmission | 30510-42320-84 (Toyota Genuine Remanufactured) | Toyota | RAV4 2006-2008 2.4L 4WD | $2,572.18 + $1,000 core | $3,393.59 (core included) | Toyota catalog (3 photos) | live |
+| 4497 | Transmission | 30510-48150-84 (Toyota Genuine Remanufactured) | Toyota | Highlander 2004-2007 3.3L AWD | $2,509.50 + $1,000 core | $3,334.09 (core included) | Toyota catalog (3 photos) | live |
 | 5101 | Turbocharger | VTT-B58-GC-2 (GC, 2-port) | Vargas Turbo Technologies (aftermarket) | 2020 GR Supra 3.0 | $1,858.99 (no core) | $1,766.04 | VTT studio photo on UroTuning's listing | live |
 | 5001-5020 | Tires | 20 Nitto tires (codes in the tire table below) | Nitto | factory sizes of the 2027 4Runner, Tacoma, Tundra, Sequoia and Land Cruiser | 3+ US retailer prices each | $223.25-$386.92 per tire | nittotire.com product photo per line | live |
 
@@ -257,4 +259,15 @@ Held:
   - 45510-02370 (Corolla 2019-2025): three prices, but only close-ups and a label. Now IMAGE PENDING.
   - 45510-02170: one price, and superseded.
 - **Counts:** 25 new under the brief are live, 36 toward the 120 in total.
+
+### Batch 22 (2026-11-23): Toyota Genuine Remanufactured transaxles
+These are priced with the $1,000 core included (owner's decision "A"). Every competitor price is compared with its core added.
+- **4496, 30510-42320-84, RAV4 2006-2008 2.4L 4WD: $3,393.59.** Priced against Ourisman's $2,572.18 + core. Five more dealers
+  are higher, up to Camelback at $2,925.59 + core. Toyota's parts site lists the part for the 2006 RAV4.
+- **4497, 30510-48150-84, Highlander 2004-2007 3.3L V6 AWD: $3,334.09.** Priced against Modern Toyota's $2,509.50 + core.
+  ToyotaPartsDeal, Lakeland and Frontier are higher.
+- The photos are Toyota's own photos of the remanufactured units. The tags visible on them are Toyota's reman tags on the part,
+  not overlays.
+- **Held:** 30510-48120-84 (one price) and 30510-33140-84 (no current price).
+- **Counts:** 27 new under the brief are live, 38 toward the 120 in total.
 
