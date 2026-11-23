@@ -370,6 +370,8 @@ id,group,reason,genuine_candidate,category,brand,condition,part_number,in_stock,
 "5118","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","869A","yes","5274.39","ATK Remanufactured 2.5L 2AR-FE inline-4 Long Block Engine 869A for 2009–2018 Toyota RAV4"
 "5119","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","860","yes","4868.74","ATK Remanufactured 3.3L 3MZ-FE V6 Long Block Engine 860 for 2004–2006 Toyota Sienna AWD"
 "5120","A","structured fitment lists Toyota","","engine","atk-engines","refurbished","862","yes","4061.59","ATK Remanufactured 2.7L 2TR-FE inline-4 Long Block Engine 862 for 2005–2014 Toyota Tacoma"
+"5121","A","structured fitment lists Toyota","","turbocharger","dynamic-autowerx","brand-new","DAW-G258-2p-FM1","yes","2565","Dynamic Autowerx Flow Max Upgrade Turbocharger (Gen 2 B58TU, 2-Port) DAW-G258-2p-FM1 for 2020 Toyota GR Supra 3.0"
+"5122","A","structured fitment lists Toyota","","turbocharger","dynamic-autowerx","brand-new","DAW_G258_2p_UFR_5","yes","2992.5","Dynamic Autowerx Ultra Flow 6466 Upgrade Turbocharger (Gen 2 B58TU, 2-Port) DAW_G258_2p_UFR_5 for 2020 Toyota GR Supra 3.0"
 "1","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4030","BMW N54 Twin Turbo Engine"
 "33","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","5100","BMW B58 TwinPower Turbo 3.0-Liter Engine"
 "37","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4505","BMW N55 Turbo Engine"

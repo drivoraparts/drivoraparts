@@ -1835,7 +1835,7 @@
     },
     {
       "category": "engines",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "ATK North America",
       "product": "Remanufactured long block 862",
       "partNumber": "862",
@@ -2295,6 +2295,54 @@
       "imageSource": "no Toyota photo; JoeTLC listing photos not yet checked",
       "imagePermission": "",
       "notes": "needs 2 more named prices and a product photo",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "Dynamic Autowerx",
+      "product": "Flow Max upgrade turbocharger (Gen 2 B58TU 2-port, with stainless manifold)",
+      "partNumber": "DAW-G258-2p-FM1",
+      "fits": "GR Supra 3.0 2020 (2-port)",
+      "usPrices": "Studio RSR $2,700; Titan $2,750; Kies $2,750; Dynamic Autowerx $2,750 (also UroTuning, BimmerHub, Euro Performance Center $2,750)",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 2565.0,
+      "imageSource": "titanmotorsports.com (3 photos; text-overlay photo and screenshot with UI artifact rejected)",
+      "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
+      "notes": "batch 32",
+      "liveId": 5121
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "Dynamic Autowerx",
+      "product": "Ultra Flow 6466 upgrade turbocharger (Gen 2 B58TU 2-port, with stainless manifold)",
+      "partNumber": "DAW_G258_2p_UFR_5",
+      "fits": "GR Supra 3.0 2020 (2-port)",
+      "usPrices": "Titan $3,150; Euro Performance Center $3,150; BimmerNetwork $3,150; Dynamic Autowerx $3,150",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 2992.5,
+      "imageSource": "titanmotorsports.com (4 photos; add-on hose photo excluded)",
+      "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
+      "notes": "batch 32",
+      "liveId": 5122
+    },
+    {
+      "category": "turbochargers",
+      "status": "REJECTED",
+      "manufacturer": "Dynamic Autowerx",
+      "product": "ETS 2021+ Supra 6-port turbo kit",
+      "partNumber": "ETS B58 6-port",
+      "fits": "GR Supra 2021+",
+      "usPrices": "$5,407-$6,145 base",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "",
+      "imagePermission": "manufacturer photos on Titan Motorsports' listing (existing project basis)",
+      "notes": "base kit excludes the turbocharger",
       "liveId": null
     }
   ]

@@ -360,3 +360,11 @@ Batch 29 is live and verified.
 Batch 30 is live and verified.
 - **5120: ATK 862, 2.7L 2TR-FE, Tacoma 2005-2014, $4,061.59 (core included).** Priced against JEGS at $3,730.36 + $545 core.
 - Dead ends this round are in STATUS.md.
+
+## Batch 32 (2026-11-23): Dynamic Autowerx GR Supra turbos
+Batch 31 is live and verified.
+- **5121: Dynamic Autowerx Flow Max (DAW-G258-2p-FM1), 2020 GR Supra 3.0 (2-port), $2,565.00.** Priced 5% under Studio RSR at $2,700.
+- **5122: Dynamic Autowerx Ultra Flow 6466 (DAW_G258_2p_UFR_5), same fitment, $2,992.50.** Priced 5% under $3,150, which Titan, Euro Performance Center and BimmerNetwork all charge.
+- Both are complete turbochargers with an integrated stainless manifold.
+- **Photos:** the manufacturer's photos from Titan Motorsports' listing. UroTuning's copies are not used, because its terms forbid reuse. The text-overlay photo, the screenshot with a UI artifact and the add-on hose photo are rejected.
+- **New:** `TRACKER.md` (master tracker generated from `pipeline.json` by `scripts/build-hv120-tracker.py`).

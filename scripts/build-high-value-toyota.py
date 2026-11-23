@@ -318,6 +318,95 @@ PRODUCTS = [
         ],
         "mediaDir": "turbocharger/forced-performance-2805050",
     },
+    {
+        "id": 5121,
+        "category": "turbocharger",
+        "brand": "dynamic-autowerx",
+        "maker": "Dynamic Autowerx",
+        "partNumber": "DAW-G258-2p-FM1",
+        "aliases": [],
+        "name": "Dynamic Autowerx Flow Max Upgrade Turbocharger (Gen 2 B58TU, 2-Port) DAW-G258-2p-FM1 for 2020 Toyota GR Supra 3.0",
+        "summary": ("Complete upgrade turbocharger for the 2-port Gen 2 B58 (B58TU) engine of the 2020 GR Supra 3.0, with an upgraded "
+                    "turbine housing cast together with a stainless steel manifold. Machined, welded, balanced and assembled in the USA, "
+                    "per the manufacturer. Aftermarket part; not made or warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "Dynamic Autowerx"),
+            ("Manufacturer part number", "DAW-G258-2p-FM1 (Supra version)"),
+            ("Supported power (manufacturer)", "up to 700+ hp"),
+            ("Compressor wheel", "point-milled billet"),
+            ("Turbine wheel", "MAR-M alloy"),
+            ("Turbine housing", "Ni-Resist D-5S, with stainless steel manifold and longer tubular runners"),
+            ("Bearing housing", "upgraded, with dual piston ring thrust assembly"),
+            ("Inlet", "CNC aluminum turbo inlet; upgraded lower turbo inlet"),
+            ("Manufacturer warranty", "12-month limited (per Dynamic Autowerx)"),
+            ("Condition", "New"),
+        ],
+        "includesNote": "What is included (per the manufacturer)",
+        "includes": [
+            "1 Dynamic Autowerx Flow Max turbocharger with integrated stainless steel manifold (turbine housing)",
+            "CNC aluminum turbo inlet and upgraded lower turbo inlet, per the listing",
+        ],
+        "notes": [
+            "Engine tuning, fuel system upgrades and installation hardware not listed above are not included.",
+            "For off-road / competition use; check emissions rules in your state before installing.",
+        ],
+        "fitText": "2020 Toyota GR Supra 3.0 (Gen 2 B58 / B58TU engine with the 2-port exhaust manifold). The 2021-on 6-port engine uses a different Dynamic Autowerx part",
+        "fitmentApplications": [
+            {"yearFrom": 2020, "yearTo": 2020, "make": "Toyota", "model": "GR Supra", "submodel": "3.0L B58 (B58TU), 2-port exhaust manifold"},
+        ],
+        "fitmentSources": [c[2] for c in [('Studio RSR', 2700.0, 'https://studiorsr.com/products/daw-turbo-dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port'), ('Titan Motorsports', 2750.0, 'https://titanmotorsports.com/products/flow-max'), ('Kies Motorsports', 2750.0, 'https://www.kiesmotorsports.com/products/dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port'), ('Dynamic Autowerx (manufacturer store)', 2750.0, 'https://dynamicautowerx.com/products/flow-max')]],
+        "competitors": [('Studio RSR', 2700.0, 'https://studiorsr.com/products/daw-turbo-dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port'), ('Titan Motorsports', 2750.0, 'https://titanmotorsports.com/products/flow-max'), ('Kies Motorsports', 2750.0, 'https://www.kiesmotorsports.com/products/dynamic-autowerx-bmw-supra-b58tu-gen-2-flow-max-2-port'), ('Dynamic Autowerx (manufacturer store)', 2750.0, 'https://dynamicautowerx.com/products/flow-max')],
+        "photos": [
+            {"file": f, "url": u, "landingPage": "https://titanmotorsports.com/products/flow-max", "sourceName": "titanmotorsports.com",
+              "creator": "Dynamic Autowerx (manufacturer)", "creatorUrl": "https://dynamicautowerx.com/", "note": note}
+            for f, u, note in [('daw-fm-1.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/ei_1689811199459-removebg_f54c98be-ed5a-436f-bc17-c22f6f898898.png', 'studio cut-out photo of the Flow Max turbocharger'), ('daw-fm-3.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/ei_1697596816684-removebg_7f51769c-35c6-4e33-8cff-009a9f20f563.png', 'photo of the Flow Max CNC aluminum turbo inlet'), ('daw-fm-4.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/ei_1697596769215-removebg_48a1c3cc-2b21-4c18-8ddf-8053a3a099d5.png', 'photo of the Flow Max lower turbo inlet')]
+        ],
+        "mediaDir": "turbocharger/dynamic-autowerx-flow-max-2port",
+    },
+    {
+        "id": 5122,
+        "category": "turbocharger",
+        "brand": "dynamic-autowerx",
+        "maker": "Dynamic Autowerx",
+        "partNumber": "DAW_G258_2p_UFR_5",
+        "aliases": [],
+        "name": "Dynamic Autowerx Ultra Flow 6466 Upgrade Turbocharger (Gen 2 B58TU, 2-Port) DAW_G258_2p_UFR_5 for 2020 Toyota GR Supra 3.0",
+        "summary": ("Complete upgrade turbocharger for the 2-port Gen 2 B58 (B58TU) engine of the 2020 GR Supra 3.0, with an upgraded "
+                    "turbine housing cast together with a stainless steel manifold. Machined, welded, balanced and assembled in the USA, "
+                    "per the manufacturer. Aftermarket part; not made or warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "Dynamic Autowerx"),
+            ("Manufacturer part number", "DAW_G258_2p_UFR_5 (Supra version)"),
+            ("Supported power (manufacturer)", "up to 850 hp"),
+            ("Compressor wheel", "point-milled billet"),
+            ("Turbine wheel", "MAR-M alloy"),
+            ("Turbine housing", "Ni-Resist D-5S, with stainless steel manifold and longer tubular runners"),
+            ("Bearing housing", "upgraded, with dual piston ring thrust assembly"),
+            ("Frame", "6466 full-frame turbocharger that keeps the OEM appearance on the 2-port manifold position"),
+            ("Manufacturer warranty", "12-month limited (per Dynamic Autowerx)"),
+            ("Condition", "New"),
+        ],
+        "includesNote": "What is included (per the manufacturer)",
+        "includes": [
+            "1 Dynamic Autowerx Ultra Flow 6466 turbocharger with integrated stainless steel manifold (turbine housing)",
+        ],
+        "notes": [
+            "Engine tuning, fuel system upgrades and installation hardware not listed above are not included.",
+            "For off-road / competition use; check emissions rules in your state before installing.",
+        ],
+        "fitText": "2020 Toyota GR Supra 3.0 (Gen 2 B58 / B58TU engine with the 2-port exhaust manifold). The 2021-on 6-port engine uses a different Dynamic Autowerx part",
+        "fitmentApplications": [
+            {"yearFrom": 2020, "yearTo": 2020, "make": "Toyota", "model": "GR Supra", "submodel": "3.0L B58 (B58TU), 2-port exhaust manifold"},
+        ],
+        "fitmentSources": [c[2] for c in [('Titan Motorsports', 3150.0, 'https://titanmotorsports.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger'), ('Euro Performance Center', 3150.0, 'https://europerformancecenter.com/product/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger/'), ('BimmerNetwork', 3150.0, 'https://www.bimmernetwork.com/products/daw-gen2-b58-6port-supra-ultra-flow-turbo-upgrade'), ('Dynamic Autowerx (manufacturer store)', 3150.0, 'https://dynamicautowerx.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger')]],
+        "competitors": [('Titan Motorsports', 3150.0, 'https://titanmotorsports.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger'), ('Euro Performance Center', 3150.0, 'https://europerformancecenter.com/product/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger/'), ('BimmerNetwork', 3150.0, 'https://www.bimmernetwork.com/products/daw-gen2-b58-6port-supra-ultra-flow-turbo-upgrade'), ('Dynamic Autowerx (manufacturer store)', 3150.0, 'https://dynamicautowerx.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger')],
+        "photos": [
+            {"file": f, "url": u, "landingPage": "https://titanmotorsports.com/products/bmw-supra-gen-2-b58tu-2-port-ultra-flow-turbocharger", "sourceName": "titanmotorsports.com",
+              "creator": "Dynamic Autowerx (manufacturer)", "creatorUrl": "https://dynamicautowerx.com/", "note": note}
+            for f, u, note in [('daw-uf-0.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/rn-image_picker_lib_temp_3d111103-2e7f-46ec-98cc-7ab0b2f6b1f8.png', 'photo of the Ultra Flow 6466 2-port turbocharger'), ('daw-uf-1.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/rn-image_picker_lib_temp_0e520643-5b4d-495a-8112-2d644cb90311.png', 'photo of the Ultra Flow 6466 2-port turbocharger'), ('daw-uf-2.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/ei_1687207379394-removebg.png', 'photo of the Ultra Flow 6466 2-port turbocharger'), ('daw-uf-3.png', 'https://cdn.shopify.com/s/files/1/0066/0370/2362/files/ei_1687207401655-removebg.png', 'photo of the Ultra Flow 6466 2-port turbocharger')]
+        ],
+        "mediaDir": "turbocharger/dynamic-autowerx-ultra-flow-6466-2port",
+    },
 ]
 
 PTP = "https://www.powertrainproducts.net/product/"
