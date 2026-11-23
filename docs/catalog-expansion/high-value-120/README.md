@@ -22,7 +22,7 @@ These are the owner's standing instructions:
 | Transmissions | 20 | 3 Toyota reman (4489-4491) + 1954 | 1 | 1 | 1 (4492) |
 | Steering | 20 | racks 4425-4427, 4430, 4471; knuckle 4422 | 1 | 1 | 1 (4493) |
 | Seats | 20 | 0 | 0 | 0 | 0 |
-| Tires | 20 | 0 visible | 20 | 20 | pending deploy (5001-5020) |
+| Tires | 20 | 0 visible | 20 | 20 | **20 (5001-5020)** |
 
 ## Products imported under this brief
 
@@ -30,7 +30,7 @@ These are the owner's standing instructions:
 |---|---|---|---|---|---|---|---|---|
 | 4492 | Transmission | 35010-04080-84 | Toyota (Genuine Remanufactured) | Tacoma 2013-2015 4.0L V6 | $3,885.12 + $1,000 core | $4,640.89 | Toyota catalog (epc-images.toyota.com) | live |
 | 4493 | Steering | 44310-0C080 power steering pump | Toyota | Tundra 2007-2009 | $381.13 | $362.09 | Toyota catalog | live |
-| 5001-5020 | Tires | 20 Nitto tires (codes in the tire table below) | Nitto | factory sizes of the 2027 4Runner, Tacoma, Tundra, Sequoia and Land Cruiser | 3+ US retailer prices each | $223.25-$386.92 per tire | nittotire.com product photo per line | imported |
+| 5001-5020 | Tires | 20 Nitto tires (codes in the tire table below) | Nitto | factory sizes of the 2027 4Runner, Tacoma, Tundra, Sequoia and Land Cruiser | 3+ US retailer prices each | $223.25-$386.92 per tire | nittotire.com product photo per line | live |
 
 ## Research log
 
@@ -62,7 +62,11 @@ A second sweep checked 1,089 classic turbo numbers: 17201/17208-46 (Supra MK4), 
 - Pure Turbos (GR Supra Pure800): host allowlisted, but the download was blocked by the session's
   automatic safety check. Not bypassed.
 - Falken (Incapsula bot protection) and BFGoodrich (403) refuse automated requests.
-- toyotires.com: wrong URL (404); still to check.
+- toyotires.com: wrong URL (404); not needed after Nitto.
+- Turbo makers: CXRacing refuses automated requests (403); platinumracingproducts.com does not respond from
+  this session; Kinugawa, Garrett, Mamba, ATP and Full Race have no reachable product page for a US Toyota
+  application. **Turbos, engines and seats are blocked by photographs**: Toyota's catalog has none for the
+  remaining part numbers, and the aftermarket makers' sites are unreachable or refuse automated downloads.
 - nittotire.com: serves official tire photos and full size, load and speed specs per size, with Nitto
   product codes. This is the tire source in use.
 
