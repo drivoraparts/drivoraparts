@@ -47,6 +47,7 @@ async function texts(id: number) {
   ]);
 }
 process.stdout.write(JSON.stringify({
+  publicCount: all.length,
   unknownId: unknown?.id ?? null,
   unknownText: unknown ? await texts(unknown.id) : "",
   knownId: known?.id ?? null,
@@ -86,6 +87,13 @@ const out = JSON.parse(
   execFileSync(process.execPath, [bundle], { cwd: ROOT, maxBuffer: 64 * 1024 * 1024, encoding: "utf8" })
 );
 fs.rmSync(tmp, { recursive: true, force: true });
+
+// With nothing published (for example while every listing is held by the
+// image-rights gate) there is no generated copy to check.
+if (out.publicCount === 0) {
+  console.log("Unknown-listing-facts check skipped: no published listings to generate copy for.");
+  process.exit(0);
+}
 
 /* No generated copy may contain a literal placeholder for a missing fact. */
 const LEAK = /\bundefined\b|\bNaN\b|\bnull\b/i;
