@@ -349,6 +349,8 @@ id,group,reason,genuine_candidate,category,brand,condition,part_number,in_stock,
 "5101","A","structured fitment lists Toyota","","turbocharger","vargas-turbo-technologies","brand-new","VTT-B58-GC-2","yes","1766.04","Vargas Turbo Technologies VTT B58 GC Turbocharger Upgrade VTT-B58-GC-2 for 2020 Toyota GR Supra 3.0 (2-Port Manifold)"
 "5102","A","structured fitment lists Toyota","","turbocharger","greddy","brand-new","11510033","yes","4128.93","GReddy Turbo Kit TD06SH-25G 10cm² (Actuator Type) 11510033 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)"
 "5103","A","structured fitment lists Toyota","","turbocharger","greddy","brand-new","11510030","yes","5092","GReddy Turbo Upgrade Kit T78-29D 14cm² (Wastegate Type, R11) 11510030 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)"
+"5104","A","structured fitment lists Toyota","yes","turbocharger","hks","brand-new","11001-KT007","yes","4959","HKS GTIII-RS Bolt-On Turbo Kit 11001-KT007 for 2022–2025 Toyota GR86 (FA24 2.4L)"
+"5105","A","structured fitment lists Toyota","","turbocharger","forced-performance","brand-new","2805050","yes","1299.14","Forced Performance Green V2 Upgrade Super Core 2805050 (Turbo Core Only) for 2020–2025 Toyota GR Supra 3.0 (B58)"
 "1","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4030","BMW N54 Twin Turbo Engine"
 "33","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","5100","BMW B58 TwinPower Turbo 3.0-Liter Engine"
 "37","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4505","BMW N55 Turbo Engine"

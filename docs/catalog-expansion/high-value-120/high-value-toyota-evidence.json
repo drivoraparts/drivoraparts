@@ -138,6 +138,96 @@
       "price": 5092.0,
       "core": "none (sold outright, per the manufacturer)",
       "checked": "2026-11-23"
+    },
+    {
+      "id": 5104,
+      "partNumber": "11001-KT007",
+      "aliases": [],
+      "maker": "HKS",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2022,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "GR86",
+          "submodel": "2.4L FA24 flat-4"
+        }
+      ],
+      "fitmentSources": [
+        "https://limitplus1.com/products/hks-gr86-brz-gtiii-rs-bolt-on-turbo-kit (2022-on Toyota GR86, FA24 2.4L)",
+        "https://www.turbokits.com/2022-2024-toyota-gr86-subaru-brz-hks-gtiii-rs-bolt-on-turbo-kit.html",
+        "https://www.grperformanceparts.com/hks-bolt-on-turbo-kit-gtiii-rs-kit-for-the-gr86-brz-2022/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "LIMIT+1",
+          "price": 5220.0,
+          "url": "https://limitplus1.com/products/hks-gr86-brz-gtiii-rs-bolt-on-turbo-kit"
+        },
+        {
+          "name": "TurboKits.com",
+          "price": 5349.0,
+          "url": "https://www.turbokits.com/2022-2024-toyota-gr86-subaru-brz-hks-gtiii-rs-bolt-on-turbo-kit.html"
+        },
+        {
+          "name": "GR Performance Parts",
+          "price": 5800.0,
+          "url": "https://www.grperformanceparts.com/hks-bolt-on-turbo-kit-gtiii-rs-kit-for-the-gr86-brz-2022/"
+        }
+      ],
+      "lowest": 5220.0,
+      "price": 4959.0,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5105,
+      "partNumber": "2805050",
+      "aliases": [
+        "FPT2805050"
+      ],
+      "maker": "Forced Performance",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2025,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 inline-6 turbo"
+        }
+      ],
+      "fitmentSources": [
+        "https://limitplus1.com/products/forced-performance-gr-supra-b58-green-v2-upgrade-super-core (Compatibility: 2020+ GR Supra w/B58 3.0L; drops into a stock 2 port or 6 port turbofold)",
+        "https://goturbo.net/fpt2805050-forced-performance-toyota-supra-a90-b58-green-v2-upgrade-super-core-2805050"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "Armageddon Turbo & Performance (goturbo.net)",
+          "price": 1367.52,
+          "url": "https://goturbo.net/fpt2805050-forced-performance-toyota-supra-a90-b58-green-v2-upgrade-super-core-2805050"
+        },
+        {
+          "name": "SMGspeed",
+          "price": 1399.0,
+          "url": "https://smgspeed.com/products/forced-performance-toyota-supra-a90-b58-green-v2-upgrade-super-core"
+        },
+        {
+          "name": "Island Racewerks",
+          "price": 1399.0,
+          "url": "https://islandracewerks.com/collections/forced-performance"
+        },
+        {
+          "name": "LIMIT+1",
+          "price": 1399.0,
+          "url": "https://limitplus1.com/products/forced-performance-gr-supra-b58-green-v2-upgrade-super-core"
+        }
+      ],
+      "lowest": 1367.52,
+      "price": 1299.14,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
     }
   ]
 }

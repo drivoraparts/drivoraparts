@@ -1467,7 +1467,7 @@
     },
     {
       "category": "turbochargers",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "GReddy",
       "product": "Turbo kit TD06SH-25G 10cm2, actuator type (replaces factory twins)",
       "partNumber": "11510033",
@@ -1483,7 +1483,7 @@
     },
     {
       "category": "turbochargers",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "GReddy",
       "product": "Turbo upgrade kit T78-29D 14cm2, wastegate type R11, SUS manifold",
       "partNumber": "11510030",
@@ -1655,6 +1655,54 @@
       "imageSource": "no Toyota photo",
       "imagePermission": "",
       "notes": "needs prices, fitment and a photo",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "HKS",
+      "product": "GTIII-RS bolt-on turbo kit (turbo, manifold, catted downpipe, FMIC, intake)",
+      "partNumber": "11001-KT007",
+      "fits": "GR86 2022-2025 (FA24)",
+      "usPrices": "LIMIT+1 $5,220; TurboKits $5,349; GR Performance Parts $5,800",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 4959.0,
+      "imageSource": "limitplus1.com listing (4 HKS studio photos; install shots and flyers rejected)",
+      "imagePermission": "manufacturer photo on a specialist retailer listing (existing project basis)",
+      "notes": "batch 24",
+      "liveId": 5104
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "Forced Performance",
+      "product": "Green V2 upgrade super core (CHRA with wheels; not a complete turbo)",
+      "partNumber": "2805050",
+      "fits": "GR Supra 3.0 B58 2020-2025",
+      "usPrices": "goturbo.net $1,367.52; SMGspeed $1,399; Island Racewerks $1,399; LIMIT+1 $1,399",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 1299.14,
+      "imageSource": "limitplus1.com listing (core photo only)",
+      "imagePermission": "manufacturer photo on a specialist retailer listing (existing project basis)",
+      "notes": "batch 24",
+      "liveId": 5105
+    },
+    {
+      "category": "turbochargers",
+      "status": "IMAGE PENDING",
+      "manufacturer": "ARTEC Performance",
+      "product": "Sport 400 bolt-on turbo kit (Garrett G25-550)",
+      "partNumber": "SPORT 400 (G16E)",
+      "fits": "GR Corolla 2023+",
+      "usPrices": "Boost in Performance $3,500; DriftHQ $3,950; Speed Industry $3,950; LIMIT+1 $4,300",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "studio photos carry an added ARTEC logo; others are engine-installed shots",
+      "imagePermission": "",
+      "notes": "needs a clean product photo",
       "liveId": null
     }
   ]

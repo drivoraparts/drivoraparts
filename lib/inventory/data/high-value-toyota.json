@@ -95,5 +95,72 @@
     "description": "GReddy Turbo Upgrade Kit T78-29D 14cm² (Wastegate Type, R11) 11510030 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)\n\nGReddy single-turbo upgrade kit for the JZA80 Supra's 2JZ-GTE with its own stainless exhaust manifold and an external wastegate, replacing the factory twin turbochargers. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: GReddy Performance Products\nManufacturer part number: 11510030\nTurbocharger: T78-29D, 14 cm² turbine housing\nExhaust manifold: stainless steel (SUS), 42.7 mm\nWastegate: GReddy R11 external wastegate\nFront pipe: 80 mm\nAir filter: Airinx\nEngine: 2JZ-GTE (non-VVT-i)\nCondition: New\n\nKit specification as listed by GReddy\n\nT78-29D turbocharger (14 cm²)\nStainless exhaust manifold (42.7 mm)\nR11 wastegate\n80 mm front pipe\nAirinx air filter\n\nToyota fitment\n\n1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). GReddy lists the JZA80 2JZ-GTE built 1993.05–1997.08; not for the 1998 VVT-i engine or the non-turbo 2JZ-GE.\n\nNotes\n\nNot compatible with VVT-i 2JZ-GTE engines (the 1998 US Supra Turbo). The factory front catalyst cannot be installed with this kit.\nFuel system, engine management and tuning are not included. For off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "greddy-11510030",
     "createdAt": 1795200005103
+  },
+  {
+    "id": 5104,
+    "name": "HKS GTIII-RS Bolt-On Turbo Kit 11001-KT007 for 2022–2025 Toyota GR86 (FA24 2.4L)",
+    "category": "turbocharger",
+    "brand": "hks",
+    "price": 4959.0,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "11001-KT007",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2022–2025 Toyota GR86 (FA24 2.4L flat-4). Not for the 2017–2020 Toyota 86 (FA20 2.0L engine)",
+    "fitmentYears": "2022–2025",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2022,
+        "yearTo": 2025,
+        "make": "Toyota",
+        "model": "GR86",
+        "submodel": "2.4L FA24 flat-4"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/hks-11001-kt007/1.webp",
+    "image": "/product-media/turbocharger/hks-11001-kt007/1.webp",
+    "images": [
+      "/product-media/turbocharger/hks-11001-kt007/1.webp",
+      "/product-media/turbocharger/hks-11001-kt007/2.webp",
+      "/product-media/turbocharger/hks-11001-kt007/3.webp",
+      "/product-media/turbocharger/hks-11001-kt007/4.webp"
+    ],
+    "description": "HKS GTIII-RS Bolt-On Turbo Kit 11001-KT007 for 2022–2025 Toyota GR86 (FA24 2.4L)\n\nHKS bolt-on turbocharger system built for the FA24 2.4L boxer engine of the 2022-on GR86: turbocharger, exhaust manifold, catted downpipe, front-mount intercooler with piping and intake. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: HKS\nManufacturer part number: 11001-KT007\nTurbocharger: HKS GTIII-RS, turbine A/R 0.80, 65 kPa internal wastegate\nEngine: FA24 2.4L flat-4 (naturally aspirated from the factory)\nOutput (manufacturer): approx. 366 hp (273 kW) and 294 lb-ft (398 N·m), stock approx. 232 hp\nEmissions: not CARB legal (no CARB EO)\nCondition: New\n\nKit includes (per HKS)\n\nHKS GTIII-RS turbocharger (A/R 0.80, 65 kPa internal wastegate)\nExhaust manifold\n113 mm catted downpipe\nFront-mount intercooler with piping\nHKS Super Power Flow intake\n\nToyota fitment\n\n2022–2025 Toyota GR86 (FA24 2.4L flat-4). Not for the 2017–2020 Toyota 86 (FA20 2.0L engine).\n\nNotes\n\nEngine management (ECU tuning), a pressure sensor and reinforced fuel parts such as injectors are not included; HKS states they are required. Higher-output builds may also need an upgraded clutch.\nNot CARB legal: for off-road / competition use, and not for registered vehicles in California or other states that follow CARB rules.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "hks-11001-kt007",
+    "createdAt": 1795200005104
+  },
+  {
+    "id": 5105,
+    "name": "Forced Performance Green V2 Upgrade Super Core 2805050 (Turbo Core Only) for 2020–2025 Toyota GR Supra 3.0 (B58)",
+    "category": "turbocharger",
+    "brand": "forced-performance",
+    "price": 1299.14,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "2805050",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2020–2025 Toyota GR Supra 3.0 (B58 3.0L, factory 2-port or 6-port turbo manifold). Not for the GR Supra 2.0",
+    "fitmentYears": "2020–2025",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2020,
+        "yearTo": 2025,
+        "make": "Toyota",
+        "model": "GR Supra",
+        "submodel": "3.0L B58 inline-6 turbo"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/forced-performance-2805050/1.webp",
+    "image": "/product-media/turbocharger/forced-performance-2805050/1.webp",
+    "images": [
+      "/product-media/turbocharger/forced-performance-2805050/1.webp"
+    ],
+    "description": "Forced Performance Green V2 Upgrade Super Core 2805050 (Turbo Core Only) for 2020–2025 Toyota GR Supra 3.0 (B58)\n\nDrop-in upgrade super core for the GR Supra 3.0's factory B58 turbocharger: the center cartridge (journal-bearing CHRA) with an upgraded Xona Rotor compressor wheel and UHF turbine wheel, installed into the factory 2-port or 6-port turbo manifold housing. It is not a complete turbocharger. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: Forced Performance\nManufacturer part number: 2805050 (SKU FPT2805050)\nWhat it is: super core: center cartridge with compressor and turbine wheels; fits the factory turbo housing\nFlow rating (manufacturer): 57 lb/min, about 20% more flow than the factory turbo\nCompressor wheel: Xona Rotor\nTurbine wheel: Xona Rotor UHF, factory fitment\nBearing: stock-fitment journal bearing CHRA\nCompressor cover: factory style\nRetains: factory oil and coolant lines, wastegate and inlet size\nCore charge: none (no core required, per the manufacturer)\nEmissions: not CARB legal\nCondition: New (built to order by Forced Performance)\n\nWhat is included\n\n1 Forced Performance Green V2 super core (center cartridge with compressor and turbine wheels)\nNot included: the factory turbine housing / exhaust manifold (turbofold), which is reused\n\nToyota fitment\n\n2020–2025 Toyota GR Supra 3.0 (B58 3.0L, factory 2-port or 6-port turbo manifold). Not for the GR Supra 2.0.\n\nNotes\n\nWorks with the factory ECU and factory tune file without fault codes, per Forced Performance; more power needs a tune.\nBuilt to order: Forced Performance gives no fixed build time.\nNot CARB legal: for off-road / competition use only.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "forced-performance-2805050",
+    "createdAt": 1795200005105
   }
 ]

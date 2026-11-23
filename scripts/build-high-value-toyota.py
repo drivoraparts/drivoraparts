@@ -205,6 +205,119 @@ PRODUCTS = [
         "mediaDir": "turbocharger/greddy-11510030",
         "photoBasis": "manufacturer product photography from the manufacturer's own product page for this exact part number",
     },
+    {
+        "id": 5104,
+        "category": "turbocharger",
+        "brand": "hks",
+        "maker": "HKS",
+        "partNumber": "11001-KT007",
+        "aliases": [],
+        "name": "HKS GTIII-RS Bolt-On Turbo Kit 11001-KT007 for 2022\u20132025 Toyota GR86 (FA24 2.4L)",
+        "summary": ("HKS bolt-on turbocharger system built for the FA24 2.4L boxer engine of the 2022-on GR86: turbocharger, "
+                    "exhaust manifold, catted downpipe, front-mount intercooler with piping and intake. Aftermarket part; not made or "
+                    "warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "HKS"),
+            ("Manufacturer part number", "11001-KT007"),
+            ("Turbocharger", "HKS GTIII-RS, turbine A/R 0.80, 65 kPa internal wastegate"),
+            ("Engine", "FA24 2.4L flat-4 (naturally aspirated from the factory)"),
+            ("Output (manufacturer)", "approx. 366 hp (273 kW) and 294 lb-ft (398 N\u00b7m), stock approx. 232 hp"),
+            ("Emissions", "not CARB legal (no CARB EO)"),
+            ("Condition", "New"),
+        ],
+        "includesNote": "Kit includes (per HKS)",
+        "includes": [
+            "HKS GTIII-RS turbocharger (A/R 0.80, 65 kPa internal wastegate)",
+            "Exhaust manifold",
+            "113 mm catted downpipe",
+            "Front-mount intercooler with piping",
+            "HKS Super Power Flow intake",
+        ],
+        "notes": [
+            "Engine management (ECU tuning), a pressure sensor and reinforced fuel parts such as injectors are not included; HKS states they are required. Higher-output builds may also need an upgraded clutch.",
+            "Not CARB legal: for off-road / competition use, and not for registered vehicles in California or other states that follow CARB rules.",
+        ],
+        "fitText": "2022\u20132025 Toyota GR86 (FA24 2.4L flat-4). Not for the 2017\u20132020 Toyota 86 (FA20 2.0L engine)",
+        "fitmentApplications": [
+            {"yearFrom": 2022, "yearTo": 2025, "make": "Toyota", "model": "GR86", "submodel": "2.4L FA24 flat-4"},
+        ],
+        "fitmentSources": [
+            "https://limitplus1.com/products/hks-gr86-brz-gtiii-rs-bolt-on-turbo-kit (2022-on Toyota GR86, FA24 2.4L)",
+            "https://www.turbokits.com/2022-2024-toyota-gr86-subaru-brz-hks-gtiii-rs-bolt-on-turbo-kit.html",
+            "https://www.grperformanceparts.com/hks-bolt-on-turbo-kit-gtiii-rs-kit-for-the-gr86-brz-2022/",
+        ],
+        "competitors": [
+            ("LIMIT+1", 5220.00, "https://limitplus1.com/products/hks-gr86-brz-gtiii-rs-bolt-on-turbo-kit"),
+            ("TurboKits.com", 5349.00, "https://www.turbokits.com/2022-2024-toyota-gr86-subaru-brz-hks-gtiii-rs-bolt-on-turbo-kit.html"),
+            ("GR Performance Parts", 5800.00, "https://www.grperformanceparts.com/hks-bolt-on-turbo-kit-gtiii-rs-kit-for-the-gr86-brz-2022/"),
+        ],
+        "photos": [
+            {"file": f"hks-gr86-{n}.png", "url": f"https://cdn.shopify.com/s/files/1/0709/2351/8231/files/HKS_GR86___BRZ_GTIII-RS_Bolt_On_Turbo_Kit{n}.png",
+             "landingPage": "https://limitplus1.com/products/hks-gr86-brz-gtiii-rs-bolt-on-turbo-kit",
+             "sourceName": "limitplus1.com", "creator": "HKS (manufacturer)", "creatorUrl": "https://hksusa.com/",
+             "note": note}
+            for n, note in [(1, "studio photo of the complete 11001-KT007 kit contents"), (2, "studio photo of the kit contents"),
+                            (5, "studio photo of the GTIII-RS turbocharger from the kit"), (6, "studio photo of the kit's front-mount intercooler core")]
+        ],
+        "mediaDir": "turbocharger/hks-11001-kt007",
+    },
+    {
+        "id": 5105,
+        "category": "turbocharger",
+        "brand": "forced-performance",
+        "maker": "Forced Performance",
+        "partNumber": "2805050",
+        "aliases": ["FPT2805050"],
+        "name": "Forced Performance Green V2 Upgrade Super Core 2805050 (Turbo Core Only) for 2020\u20132025 Toyota GR Supra 3.0 (B58)",
+        "summary": ("Drop-in upgrade super core for the GR Supra 3.0's factory B58 turbocharger: the center cartridge (journal-bearing "
+                    "CHRA) with an upgraded Xona Rotor compressor wheel and UHF turbine wheel, installed into the factory 2-port or "
+                    "6-port turbo manifold housing. It is not a complete turbocharger. Aftermarket part; not made or warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "Forced Performance"),
+            ("Manufacturer part number", "2805050 (SKU FPT2805050)"),
+            ("What it is", "super core: center cartridge with compressor and turbine wheels; fits the factory turbo housing"),
+            ("Flow rating (manufacturer)", "57 lb/min, about 20% more flow than the factory turbo"),
+            ("Compressor wheel", "Xona Rotor"),
+            ("Turbine wheel", "Xona Rotor UHF, factory fitment"),
+            ("Bearing", "stock-fitment journal bearing CHRA"),
+            ("Compressor cover", "factory style"),
+            ("Retains", "factory oil and coolant lines, wastegate and inlet size"),
+            ("Core charge", "none (no core required, per the manufacturer)"),
+            ("Emissions", "not CARB legal"),
+            ("Condition", "New (built to order by Forced Performance)"),
+        ],
+        "includesNote": "What is included",
+        "includes": [
+            "1 Forced Performance Green V2 super core (center cartridge with compressor and turbine wheels)",
+            "Not included: the factory turbine housing / exhaust manifold (turbofold), which is reused",
+        ],
+        "notes": [
+            "Works with the factory ECU and factory tune file without fault codes, per Forced Performance; more power needs a tune.",
+            "Built to order: Forced Performance gives no fixed build time.",
+            "Not CARB legal: for off-road / competition use only.",
+        ],
+        "fitText": "2020\u20132025 Toyota GR Supra 3.0 (B58 3.0L, factory 2-port or 6-port turbo manifold). Not for the GR Supra 2.0",
+        "fitmentApplications": [
+            {"yearFrom": 2020, "yearTo": 2025, "make": "Toyota", "model": "GR Supra", "submodel": "3.0L B58 inline-6 turbo"},
+        ],
+        "fitmentSources": [
+            "https://limitplus1.com/products/forced-performance-gr-supra-b58-green-v2-upgrade-super-core (Compatibility: 2020+ GR Supra w/B58 3.0L; drops into a stock 2 port or 6 port turbofold)",
+            "https://goturbo.net/fpt2805050-forced-performance-toyota-supra-a90-b58-green-v2-upgrade-super-core-2805050",
+        ],
+        "competitors": [
+            ("Armageddon Turbo & Performance (goturbo.net)", 1367.52, "https://goturbo.net/fpt2805050-forced-performance-toyota-supra-a90-b58-green-v2-upgrade-super-core-2805050"),
+            ("SMGspeed", 1399.00, "https://smgspeed.com/products/forced-performance-toyota-supra-a90-b58-green-v2-upgrade-super-core"),
+            ("Island Racewerks", 1399.00, "https://islandracewerks.com/collections/forced-performance"),
+            ("LIMIT+1", 1399.00, "https://limitplus1.com/products/forced-performance-gr-supra-b58-green-v2-upgrade-super-core"),
+        ],
+        "photos": [
+            {"file": "fp-3.png", "url": "https://cdn.shopify.com/s/files/1/0709/2351/8231/files/Forced_Performance_GR_Supra_B58_Green_V2_Upgrade_Super_Core3.png",
+             "landingPage": "https://limitplus1.com/products/forced-performance-gr-supra-b58-green-v2-upgrade-super-core",
+             "sourceName": "limitplus1.com", "creator": "Forced Performance (manufacturer)", "creatorUrl": "https://www.forcedperformance.shop/",
+             "note": "studio photo of the super core itself (center cartridge with wheels), which is what is sold; the listing's other photos show a complete turbo assembly and are not used"},
+        ],
+        "mediaDir": "turbocharger/forced-performance-2805050",
+    },
 ]
 
 
