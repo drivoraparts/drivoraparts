@@ -76185,5 +76185,82 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4500": {
+    "productId": 4500,
+    "productName": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-0C121 for Toyota Sequoia (2008–2022)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c121/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/442500C121/442500C121_3.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44250-0C121",
+      "442500C121"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44250-0C121",
+    "sha256": "07c2cda30de3b6c5d24047f634221582d94a1e2661d7807d9711204aa612f363",
+    "bytes": 11780,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4501": {
+    "productId": 4501,
+    "productName": "Genuine Toyota Power Steering Pump Assembly 44310-0C090 for Toyota Tundra (2007–2021)",
+    "localFile": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/443100C090/44310-0C090_2.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "44310-0C090",
+      "443100C090"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 44310-0C090",
+    "sha256": "aea8b83d85b7a4c18e69731e5dd650ccada0c40af4ba4cfecca4d1e2fcc39e82",
+    "bytes": 18608,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/443100C090/44310-0C090_1.webp",
+        "sha256": "9f85f8a25651dae0eb0b741bb4a21521aa9a28aa7d90e33eba6697b46b9c7732",
+        "bytes": 26414,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/443100C090/44310-0C090_3.webp",
+        "sha256": "1df02e855e78390b4513292cae356eb8ea5c3ffa1506bec2e5c22edfd0d74799",
+        "bytes": 18896,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

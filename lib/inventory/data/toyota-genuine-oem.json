@@ -6766,5 +6766,71 @@
     "description": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-35042 for Toyota Tacoma / 4Runner (1995–2004)\n\nGenuine Toyota power steering rack and pinion assembly 44250-35042 for the Toyota Tacoma, 4Runner. Hydraulic power steering rack and pinion assembly. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-35042\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 1995–2004 Toyota Tacoma (replaces 44250-35040 / 44250-35041; drivetrain applications vary; confirm by VIN); 1996–2002 Toyota 4Runner (rack-and-pinion 4Runner generation (1996-2002) within the dealers' 1995-2004 range; confirm by VIN)\nRestriction (1995-2004 Tacoma): replaces 44250-35040 / 44250-35041; drivetrain applications vary; confirm by VIN\nRestriction (1996-2002 4Runner): rack-and-pinion 4Runner generation (1996-2002) within the dealers' 1995-2004 range; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-power-steering-rack-and-pinion-assembly-44250-35042",
     "createdAt": 1795100004499
+  },
+  {
+    "id": 4500,
+    "name": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-0C121 for Toyota Sequoia (2008–2022)",
+    "category": "suspension",
+    "brand": "toyota",
+    "price": 598.59,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "44250-0C121",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2008–2022 Toyota Sequoia (hydraulic power rack; dealers note a production split (to 09/2017, from 10/2017) and supersession from 44250-0C090 / 0C091 / 0C120; confirm by VIN)",
+    "fitmentYears": "2008–2022",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2008,
+        "yearTo": 2022,
+        "make": "Toyota",
+        "model": "Sequoia",
+        "submodel": "hydraulic power rack; dealers note a production split (to 09/2017, from 10/2017) and supersession from 44250-0C090 / 0C091 / 0C120; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c121/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c121/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-power-steering-rack-and-pinion-assembly-44250-0c121/1.webp"
+    ],
+    "description": "Genuine Toyota Power Steering Rack and Pinion Assembly 44250-0C121 for Toyota Sequoia (2008–2022)\n\nGenuine Toyota power steering rack and pinion assembly 44250-0C121 for the Toyota Sequoia. Hydraulic power steering rack and pinion assembly. Alignment required after installation.\n\nSpecifications\n\nPart number: 44250-0C121\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2008–2022 Toyota Sequoia (hydraulic power rack; dealers note a production split (to 09/2017, from 10/2017) and supersession from 44250-0C090 / 0C091 / 0C120; confirm by VIN)\nRestriction (2008-2022 Sequoia): hydraulic power rack; dealers note a production split (to 09/2017, from 10/2017) and supersession from 44250-0C090 / 0C091 / 0C120; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-power-steering-rack-and-pinion-assembly-44250-0c121",
+    "createdAt": 1795100004500
+  },
+  {
+    "id": 4501,
+    "name": "Genuine Toyota Power Steering Pump Assembly 44310-0C090 for Toyota Tundra (2007–2021)",
+    "category": "suspension",
+    "brand": "toyota",
+    "price": 270.89,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "44310-0C090",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "2007–2021 Toyota Tundra (hydraulic vane pump with pulley; engine applications differ by VIN; confirm by VIN)",
+    "fitmentYears": "2007–2021",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2007,
+        "yearTo": 2021,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "hydraulic vane pump with pulley; engine applications differ by VIN; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/1.webp",
+      "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/2.webp",
+      "/product-media/toyota-genuine/toyota-power-steering-pump-assembly-44310-0c090/3.webp"
+    ],
+    "description": "Genuine Toyota Power Steering Pump Assembly 44310-0C090 for Toyota Tundra (2007–2021)\n\nGenuine Toyota power steering pump assembly 44310-0C090 for the Toyota Tundra. Hydraulic power steering (vane) pump assembly with pulley.\n\nSpecifications\n\nPart number: 44310-0C090\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2007–2021 Toyota Tundra (hydraulic vane pump with pulley; engine applications differ by VIN; confirm by VIN)\nRestriction (2007-2021 Tundra): hydraulic vane pump with pulley; engine applications differ by VIN; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-power-steering-pump-assembly-44310-0c090",
+    "createdAt": 1795100004501
   }
 ]

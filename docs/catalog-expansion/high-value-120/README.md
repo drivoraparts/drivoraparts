@@ -349,3 +349,9 @@ Batch 28 is live and verified.
 - **Held:** 44250-0C131 (Tundra 2014-2021), 44250-04050 (Tacoma 2024) and 44250-35120 (4Runner 2025). None has a Toyota
   photo, and each has one or two prices.
 
+## Batch 30 (2026-11-23)
+Batch 29 is live and verified.
+- **4500: 44250-0C121 rack, Sequoia 2008-2022, $598.59.** Priced 5% under Ourisman at $630.05.
+- **4501: 44310-0C090 power steering pump, Tundra 2007-2021, $270.89.** Priced 5% under Lakeland at $285.12.
+- **Held:** 44250-0C200 (2022+ Tundra / Sequoia), which has the same price on two sites.
+
