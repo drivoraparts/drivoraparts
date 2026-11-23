@@ -304,3 +304,17 @@ These are priced with the $1,000 core included (owner's decision "A"). Every com
 | 5108 | 858A | 4.0L 1GR-FE V6 | 4Runner 2003-2004 | $5,270.59 |
 | 5109 | 865A | 5.7L 3UR-FE V8 | Tundra / Sequoia 2012-2015 | $8,035.09 |
 
+## Batch 26 (2026-11-23): more ATK engines
+Batch 25 is live and verified on production.
+
+| ID | ATK no. | Engine | Fits | Our price (core included) |
+|---|---|---|---|---|
+| 5110 | 853A | 4.7L 2UZ-FE V8 (VVT-i) | 4Runner / Land Cruiser / Sequoia / Tundra 2005-2009 | $5,011.24 |
+| 5111 | 869B | 2.5L 2AR-FE | Camry 2010-2016 | $5,295.29 |
+| 5112 | 847E | 3.0L 1MZ-FE | Highlander AWD 2001-2003 | $4,170.49 |
+
+**Held:**
+- 847A and 847C: seller year ranges run past the years the models used this engine.
+- 860B: approximate prices only.
+- 848 and 857: two named prices each.
+

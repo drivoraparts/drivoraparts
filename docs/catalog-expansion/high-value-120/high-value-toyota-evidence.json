@@ -453,6 +453,165 @@
       "price": 8035.09,
       "core": "$545, included in our price",
       "checked": "2026-11-23"
+    },
+    {
+      "id": 5110,
+      "partNumber": "853A",
+      "aliases": [
+        "ATK 853A"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2005,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+        },
+        {
+          "yearFrom": 2005,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Land Cruiser",
+          "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+        },
+        {
+          "yearFrom": 2005,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Sequoia",
+          "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+        },
+        {
+          "yearFrom": 2005,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "4.7L 2UZ-FE V8 (VVT-i)"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/853A/10002/-1",
+        "AutoZone (NuTech by ATK 853A): https://www.autozone.com/p/nutech-by-atk-engine-long-block-853a/252473",
+        "ATK Sales: https://www.atksales.com/product-list/?cat=Engines&sb=Toyota",
+        "Powertrain Company: https://powertraincompany.com/product/4-7l-2uz-fe-remanufactured-engine-853a-lexus-toyota-2004-2009/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($4,729.99 + $545 core)",
+          "price": 5274.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/853A/10002/-1"
+        },
+        {
+          "name": "AutoZone (NuTech by ATK 853A) ($4,799.99 + $545 core)",
+          "price": 5344.99,
+          "url": "https://www.autozone.com/p/nutech-by-atk-engine-long-block-853a/252473"
+        },
+        {
+          "name": "ATK Sales ($4,999.00 + $545 core)",
+          "price": 5544.0,
+          "url": "https://www.atksales.com/product-list/?cat=Engines&sb=Toyota"
+        },
+        {
+          "name": "Powertrain Company ($5,254.15 + $545 core)",
+          "price": 5799.15,
+          "url": "https://powertraincompany.com/product/4-7l-2uz-fe-remanufactured-engine-853a-lexus-toyota-2004-2009/"
+        }
+      ],
+      "lowest": 5274.99,
+      "price": 5011.24,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5111,
+      "partNumber": "869B",
+      "aliases": [
+        "ATK 869B"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2010,
+          "yearTo": 2016,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.5L 2AR-FE inline-4 (dual VVT-i)"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/869B/10002/-1",
+        "ATK Sales: https://www.atksales.com/product-list/?cat=Engines&sb=Toyota",
+        "Powertrain Company: https://powertraincompany.com/product/2-5l-2ar-fe-remanufactured-engine-869b-toyota-camry-2010-2017/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($5,153.99 + $420 core)",
+          "price": 5573.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/869B/10002/-1"
+        },
+        {
+          "name": "ATK Sales ($5,449.00 + $420 core)",
+          "price": 5869.0,
+          "url": "https://www.atksales.com/product-list/?cat=Engines&sb=Toyota"
+        },
+        {
+          "name": "Powertrain Company ($5,695.15 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://powertraincompany.com/product/2-5l-2ar-fe-remanufactured-engine-869b-toyota-camry-2010-2017/"
+        }
+      ],
+      "lowest": 5573.99,
+      "price": 5295.29,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5112,
+      "partNumber": "847E",
+      "aliases": [
+        "ATK 847E"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2001,
+          "yearTo": 2003,
+          "make": "Toyota",
+          "model": "Highlander",
+          "submodel": "3.0L 1MZ-FE V6, AWD"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/atk-engines-059-847e-remanufactured-crate-engine-for-2001-2003-toyota-highlander-with-3-0l-v6-1mzfe",
+        "Powertrain Products: https://www.powertrainproducts.net/product/11-00-8-03-1mzfe/",
+        "Powertrain Company: https://powertraincompany.com/product/3-0l-awd-1mz-fe-remanufactured-engine-847e-toyota-highlander-2001-2003/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,969.99 + $420 core)",
+          "price": 4389.99,
+          "url": "https://www.jegs.com/i/atk-engines-059-847e-remanufactured-crate-engine-for-2001-2003-toyota-highlander-with-3-0l-v6-1mzfe"
+        },
+        {
+          "name": "Powertrain Products ($4,249.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/11-00-8-03-1mzfe/"
+        },
+        {
+          "name": "Powertrain Company ($4,592.65 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://powertraincompany.com/product/3-0l-awd-1mz-fe-remanufactured-engine-847e-toyota-highlander-2001-2003/"
+        }
+      ],
+      "lowest": 4389.99,
+      "price": 4170.49,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
     }
   ]
 }
