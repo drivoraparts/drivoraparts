@@ -77855,5 +77855,35 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4512": {
+    "productId": 4512,
+    "productName": "Genuine Toyota Front Passenger Seat Assembly (Medium Gray Cloth) 71100-47260-B2 for Toyota Prius (2006–2009)",
+    "localFile": "/product-media/toyota-genuine/toyota-front-passenger-seat-assembly-medium-gray-cloth-71100-47260-b2/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/7110047260B2/71100-47260-B2_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "71100-47260-B2",
+      "7110047260B2"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 71100-47260-B2",
+    "sha256": "5f2a23b9d8800894d7ff327f4772972bb33b46fae981de064d6062bcf637a05a",
+    "bytes": 8854,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }
