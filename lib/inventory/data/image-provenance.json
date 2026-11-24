@@ -77825,5 +77825,35 @@
     "query": "retailer listing: 848A",
     "sha256": "aa84b5f2968d25f80170a2cbcfe9bcb9f9386dd2f956efb4b8af839427c9a701",
     "downloadedAt": "2026-11-23"
+  },
+  "product-4511": {
+    "productId": 4511,
+    "productName": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-41130-84 for Toyota Avalon (2000–2004)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-41130-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/305104113084/30510-41130-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "30510-41130-84",
+      "305104113084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 30510-41130-84",
+    "sha256": "4fddd179be752c9f577b80fbd7474a6b3ed0a4475310e052d713d59ebac9a283",
+    "bytes": 23844,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

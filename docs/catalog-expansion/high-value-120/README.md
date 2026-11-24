@@ -494,3 +494,15 @@ Batch 41 is live and verified (5128).
 **Held:**
 - 849A: its two JEGS prices conflict ($7,217.98 / $3,708.99).
 - 851D: its JEGS price appears only in a "customers also viewed" box.
+
+## Batch 43 (2026-11-24): Avalon remanufactured transaxle
+Batch 42 is live and verified (5129-5132). Engines are complete at 20.
+- **Method:** ToyotaPartsDeal's transmission parts lists (`power_train_chassis/transaxle_or_transmission_assy_gasket_kit_atm.html`,
+  where the Camry uses `-nap`) were collected, and every transmission number was probed on Toyota's photo host.
+- **4511 30510-41130-84:** Toyota Genuine Remanufactured transaxle for the 2000-2004 Avalon 3.0L, $3,255.59 with the $1,000 core
+  included. Priced 5% under Toyota of Nashua at $2,426.86 + core; ToyotaPartsDeal, ToyotaPartsNow and Longo Toyota also price it.
+- **Held:**
+  - 30510-33381-84: its photo has a strong colour cast.
+  - 30510-48120-84: two prices only.
+  - 30500-06050 / 30500-33371: superseded by reman numbers that have no photo.
+  - 30510-45020-84 and 35010-3G160-84: discontinued.
