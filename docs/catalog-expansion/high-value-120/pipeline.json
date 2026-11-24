@@ -2112,13 +2112,13 @@
       "product": "Remanufactured long block 857D",
       "partNumber": "857D",
       "fits": "Camry/Solara 2007-2009 2.4",
-      "usPrices": "Powertrain Company $3,684.44; Powertrain Products $3,799",
+      "usPrices": "Powertrain Company $3,820.90 (core $485 if none returned; checked 2026-11-24); Powertrain Products $3,799; JEGS $3,661.99 + $420 and Titan Engines $3,540.44 + $420 (search snippets, possibly stale; Titan page now 404)",
       "coreDeposit": 420,
       "condition": "remanufactured",
       "proposedPrice": null,
-      "imageSource": "",
+      "imageSource": "Powertrain Products 609 photos 1, 3 and 5 are distinct from the live 857 (photos 0, 2 and 4 are the same files); Powertrain Company uses photo 1 as 857D.jpg",
       "imagePermission": "",
-      "notes": "needs a third price",
+      "notes": "needs one current third price; photos 1 and 3 usable; fitment 2007-2009 Camry / Solara 2.4L 2AZ-FE",
       "liveId": null
     },
     {
@@ -2999,6 +2999,22 @@
       "imageSource": "no Toyota photo for any of the 20",
       "imagePermission": "",
       "notes": "photo dead end",
+      "liveId": null
+    },
+    {
+      "category": "engines",
+      "status": "REJECTED",
+      "manufacturer": "Fraser Engine Co",
+      "product": "Fraser remanufactured Toyota engines",
+      "partNumber": "",
+      "fits": "",
+      "usPrices": "fraserengineco.com only (e.g. 1GR-FE $5,799 + $360 core)",
+      "coreDeposit": null,
+      "condition": "remanufactured",
+      "proposedPrice": null,
+      "imageSource": "",
+      "imagePermission": "",
+      "notes": "single seller: no three comparable prices",
       "liveId": null
     }
   ]
