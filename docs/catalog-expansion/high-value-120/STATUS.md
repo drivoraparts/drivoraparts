@@ -139,3 +139,16 @@ What blocks the remaining 43 is recorded per candidate in `pipeline.json` / `TRA
 - **Engines (5):**
   - Remaining ATK numbers reuse 847E's photos (847A/847C) or have two prices (849, 857D).
   - VEGE, Jasper and independent rebuilders give no three comparable prices.
+
+## Round log (2026-11-24, after the checkpoint)
+- **Seats:** the seat sweep now covers every saved Toyota model-year page, including the 2015-2025 Tacoma, Tundra, 4Runner, Sequoia
+  and Land Cruiser, the Sienna and other models.
+  - 2016-and-later trucks are sold as seat components only (covers, frames, headrests), with no complete seat numbers.
+  - 4 new Sienna photo hits, all rejected: a colour mismatch with the stated trim, colour casts, a cushion only, or two different seats.
+- **Turbos:**
+  - KLM Race 6-port kit: clean photos and three prices, but KLM does not state the Precision turbo generation that dealers sell as
+    "Next Gen".
+  - ETS B58 kits: dealers do not distinguish the Gen 2 and NextGen turbo options.
+  - CTS originals on ctsturbo.com also carry the logo.
+  - The owner chose to keep the no-logo rule and not to contact manufacturers.
+- **Transmissions:** 20 more Toyota new and reman transmission numbers have no photo.
