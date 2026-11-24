@@ -1122,6 +1122,57 @@
       "checked": "2026-11-23"
     },
     {
+      "id": 5128,
+      "partNumber": "857D",
+      "aliases": [
+        "ATK 857D"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2007,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Camry",
+          "submodel": "2.4L 2AZ-FE inline-4"
+        },
+        {
+          "yearFrom": 2007,
+          "yearTo": 2008,
+          "make": "Toyota",
+          "model": "Camry Solara",
+          "submodel": "2.4L 2AZ-FE inline-4"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/857D/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/2-4l-2az-fe-remanufactured-engine-857d-toyota-camry-solara-2007-2009/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/2-6-2009-2azfe/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,661.99 + $420 core)",
+          "price": 4081.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/857D/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($3,820.90 + $420 core)",
+          "price": 4240.9,
+          "url": "https://powertraincompany.com/product/2-4l-2az-fe-remanufactured-engine-857d-toyota-camry-solara-2007-2009/"
+        },
+        {
+          "name": "Powertrain Products ($3,799.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/2-6-2009-2azfe/"
+        }
+      ],
+      "lowest": 4081.99,
+      "price": 3877.89,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
       "id": 5116,
       "partNumber": "833",
       "aliases": [

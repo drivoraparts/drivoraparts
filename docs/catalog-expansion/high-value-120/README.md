@@ -464,3 +464,11 @@ Batch 39 is live and verified (5126, 5127).
   - Reman A/T 30510-07020-84: its Toyota photo is a connector close-up.
 - **Engines beyond ATK:** VEGE (ATK numbering, Summit only), Jasper (no published prices) and independent remanufacturers (no shared
   part numbers) do not meet the price-reference rule.
+
+## Batch 41 (2026-11-24): ATK 857D
+- **5128 ATK 857D 2AZ-FE 2.4L long block:** for the 2007-2009 Camry and 2007-2008 Camry Solara, $3,877.89 with the $420 core
+  included. Priced 5% under JEGS at $3,661.99 + $420.
+  - Other prices: Powertrain Company $3,820.90 (checked 2026-11-24) and Powertrain Products $3,799. This is the same price-source
+    set as the live ATK 857.
+  - Photos: only Powertrain Products 609 photos 1 and 3, which differ from 857's photo files. Powertrain Company uses photo 1 as its
+    857D photo.

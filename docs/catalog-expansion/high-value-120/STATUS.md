@@ -12,7 +12,7 @@ prices, no duplicates. `TRACKER.md` (generated from `pipeline.json`) is the per-
 | Transmissions | 20 | 6 | 14 | 4489-4492, 4496, 4497 |
 | Steering | 20 | 20 | 0 | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4507, 4509 |
 | Turbochargers | 20 | 14 | 6 | 4445, 4488, 5101-5105, 5121-5127 |
-| Engines | 20 | 15 | 5 | 5106-5120 |
+| Engines | 20 | 15 (16 after batch 41) | 5 (4) | 5106-5120 (+5128) |
 | Seats | 20 | 2 | 18 | 4508, 4510 |
 | **Total** | 120 | **77** | **43** | |
 
