@@ -77885,5 +77885,44 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-4513": {
+    "productId": 4513,
+    "productName": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-1A870-84 for Toyota Corolla / Matrix (2009–2013)",
+    "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-1a870-84/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/305101A87084/30510-1A870-84_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "30510-1A870-84",
+      "305101A87084"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 30510-1A870-84",
+    "sha256": "542bec1939b0b8e7da5d9423aa26c367cf8f1b35cc526604e267ad2dfff9894d",
+    "bytes": 27296,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-1a870-84/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/305101A87084/30510-1A870-84_2.webp",
+        "sha256": "6bddbafe3ad1ba6011a925e02655b65eb5bb2a2fd01adec0a48365ee42444bd5",
+        "bytes": 29858,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

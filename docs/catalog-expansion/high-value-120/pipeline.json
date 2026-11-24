@@ -3115,7 +3115,7 @@
     },
     {
       "category": "seats",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Toyota",
       "product": "Genuine front passenger seat, medium gray cloth (trim 1)",
       "partNumber": "71100-47260-B2",
@@ -3135,14 +3135,14 @@
       "manufacturer": "Toyota",
       "product": "Genuine front driver seat, Neutral Bone (trim 4)",
       "partNumber": "71200-02K80-E4",
-      "fits": "Corolla / Matrix 2004-2007 (sources disagree)",
+      "fits": "Corolla LE 2005-2006 (ZZE130 NAP, built 05/2004-09/2006)",
       "usPrices": "ToyotaPartsDeal $585.30; ToyotaPartsNow $596.33",
       "coreDeposit": null,
       "condition": "new",
       "proposedPrice": null,
       "imageSource": "epc-images.toyota.com (clean whole-seat photo)",
       "imagePermission": "",
-      "notes": "needs a third price and consistent fitment",
+      "notes": "fitment settled from Toyota catalog rows; needs a third price",
       "liveId": null
     },
     {
@@ -3176,6 +3176,22 @@
       "imagePermission": "",
       "notes": "",
       "liveId": null
+    },
+    {
+      "category": "transmissions",
+      "status": "READY",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transaxle (Corolla XRS / Matrix 2.4L)",
+      "partNumber": "30510-1A870-84",
+      "fits": "Corolla XRS 2009-2010 2.4L; Matrix S/XRS 2009-2013 2.4L (FWD)",
+      "usPrices": "Olathe Toyota $2,289.11; OEMPartsOnline $2,331.11; ToyotaPartsDeal $2,360.51; ToyotaPartsNow $2,404.61; Tom Wood Toyota $2,781.58 (+$1,000 core each)",
+      "coreDeposit": 1000,
+      "condition": "remanufactured (Toyota Genuine)",
+      "proposedPrice": 3124.69,
+      "imageSource": "epc-images.toyota.com (whole-unit photos 1-2; photo 3 colour cast not used)",
+      "imagePermission": "Toyota catalog photo (existing project basis)",
+      "notes": "batch 45",
+      "liveId": 4513
     }
   ]
 }
