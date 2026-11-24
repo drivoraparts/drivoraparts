@@ -1,0 +1,141 @@
+{
+  "_comment": "Toyota expansion batch 44 (2026-11-24): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Passenger Seat Assembly (Medium Gray Cloth) 71100-47260-B2 — Prius",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "71100-47260-B2",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "seat",
+      "condition": "brand-new",
+      "proposedCategory": "interior",
+      "proposedCategoryName": "Interior",
+      "fitment": "2006–2009 Toyota Prius (front passenger (right-hand) seat, medium gray cloth (trim code 1), with side and curtain airbags; confirm trim code and VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2006,
+          "yearTo": 2009,
+          "make": "Toyota",
+          "model": "Prius",
+          "submodel": "front passenger (right-hand) seat, medium gray cloth (trim code 1), with side and curtain airbags; confirm trim code and VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front passenger seat assembly (medium gray cloth) 71100-47260-B2 for the Toyota Prius. Complete new front passenger (right-hand) seat assembly, cushion and back, medium gray cloth (trim code 1).\n\nSpecifications\n\nPart number: 71100-47260-B2\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2006–2009 Toyota Prius (front passenger (right-hand) seat, medium gray cloth (trim code 1), with side and curtain airbags; confirm trim code and VIN)\nRestriction (2006-2009 Prius): front passenger (right-hand) seat, medium gray cloth (trim code 1), with side and curtain airbags; confirm trim code and VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3826.3,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota",
+          "price": 2507.38,
+          "url": "https://parts.olathetoyota.com/v-2008-toyota-prius--touring--1-5l-l4-electric-gas/body--front-seat-components"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota",
+            "price": 2507.38,
+            "url": "https://parts.olathetoyota.com/v-2008-toyota-prius--touring--1-5l-l4-electric-gas/body--front-seat-components"
+          },
+          {
+            "seller": "American Toyota",
+            "price": 2537.18,
+            "url": "https://parts.americantoyota.com/v-2009-toyota-prius--base--1-5l-l4-electric-gas/body--front-seat-components"
+          },
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2562.59,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~x~71100-47260-B2.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 2610.9,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~x~71100-47260-B2"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 2382.09,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2006,
+            "yearTo": 2009,
+            "make": "Toyota",
+            "model": "Prius",
+            "engine": "",
+            "restriction": "front passenger (right-hand) seat, medium gray cloth (trim code 1), with side and curtain airbags; confirm trim code and VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (71100-47260-B2: 2006-2009 Prius Base, Touring)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~x~71100-47260-B2",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal 2006 Prius front seat parts list (SRS airbags driver, passenger, side and curtain shield; medium gray, trim 1#; NHW20 USA)",
+                "url": "https://www.toyotapartsdeal.com/parts-list/2006-toyota-prius/body/front_seat_seat_track.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "American Toyota (2009 Toyota Prius front seat components: seat assembly with side air bag, gray, cloth)",
+                "url": "https://parts.americantoyota.com/v-2009-toyota-prius--base--1-5l-l4-electric-gas/body--front-seat-components",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.americantoyota.com/v-2009-toyota-prius--base--1-5l-l4-electric-gas/body--front-seat-components",
+        "https://parts.olathetoyota.com/v-2008-toyota-prius--touring--1-5l-l4-electric-gas/body--front-seat-components",
+        "https://www.toyotapartsdeal.com/oem/toyota~x~71100-47260-B2.html",
+        "https://www.toyotapartsdeal.com/parts-list/2006-toyota-prius/body/front_seat_seat_track.html",
+        "https://www.toyotapartsnow.com/oem/toyota~x~71100-47260-B2"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

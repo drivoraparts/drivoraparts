@@ -506,3 +506,16 @@ Batch 42 is live and verified (5129-5132). Engines are complete at 20.
   - 30510-48120-84: two prices only.
   - 30500-06050 / 30500-33371: superseded by reman numbers that have no photo.
   - 30510-45020-84 and 35010-3G160-84: discontinued.
+
+## Batch 44 (2026-11-24): Prius front passenger seat
+Batch 43 is live and verified (4511).
+- **Seat sweep, extended:** many models keep their seats on `body/front_seat_seat_track.html` rather than `seat_seat_track.html`.
+  Their URLs also vary (`-nap`, `-nap_sedan_hatchback`). About 1,200 complete-seat numbers have now been probed.
+- **4512 71100-47260-B2:** genuine Toyota front passenger seat for the 2006-2009 Prius, medium gray cloth (trim 1), with side and
+  curtain airbags. $2,382.09, priced 5% under Olathe Toyota at $2,507.38. American Toyota, ToyotaPartsDeal and ToyotaPartsNow also
+  price it.
+- **Held:**
+  - 71200-02K80-E4: two prices, and the Corolla and Matrix fitment sources disagree.
+  - 71100-06780-E4: two prices.
+- **Rejected:** other photo hits that show a headrest only, a partial view, a packaged unit, a colour cast, or a colour that differs
+  from the catalog colour.
