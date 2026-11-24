@@ -1440,7 +1440,7 @@
       "product": "Genuine Remanufactured automatic transaxle (Highlander 2001-2004)",
       "partNumber": "30510-48120-84",
       "fits": "Highlander 2001-2004 (TPD)",
-      "usPrices": "ToyotaPartsDeal $2,360.09 + $1,000 core only",
+      "usPrices": "ToyotaPartsDeal $2,360.09; ToyotaPartsNow $2,404.18 (+$1,000 core each); fits 2001-2003 Highlander 2.4L",
       "coreDeposit": 1000,
       "condition": "remanufactured (Toyota Genuine)",
       "proposedPrice": null,
@@ -1552,7 +1552,7 @@
       "product": "Genuine Remanufactured transaxle (Highlander 2001-2004)",
       "partNumber": "30510-48120-84",
       "fits": "Highlander 2001-2004",
-      "usPrices": "ToyotaPartsDeal $2,360.09 + $1,000 core only",
+      "usPrices": "ToyotaPartsDeal $2,360.09; ToyotaPartsNow $2,404.18 (+$1,000 core each); fits 2001-2003 Highlander 2.4L",
       "coreDeposit": null,
       "condition": "new",
       "proposedPrice": null,
@@ -3019,7 +3019,7 @@
     },
     {
       "category": "engines",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "ATK North America",
       "product": "Remanufactured long block 849",
       "partNumber": "849",
@@ -3035,7 +3035,7 @@
     },
     {
       "category": "engines",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "ATK North America",
       "product": "Remanufactured long block 849C",
       "partNumber": "849C",
@@ -3051,7 +3051,7 @@
     },
     {
       "category": "engines",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "ATK North America",
       "product": "Remanufactured long block 851A",
       "partNumber": "851A",
@@ -3067,7 +3067,7 @@
     },
     {
       "category": "engines",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "ATK North America",
       "product": "Remanufactured long block 848A",
       "partNumber": "848A",
@@ -3080,6 +3080,38 @@
       "imagePermission": "product photography on a specialist remanufactured-engine retailer's listing (existing ATK basis)",
       "notes": "batch 42; Powertrain Company current price from its store API (2026-11-24); photos checked unique across all 78 Powertrain Products engine listings",
       "liveId": 5132
+    },
+    {
+      "category": "transmissions",
+      "status": "READY",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transaxle (Avalon)",
+      "partNumber": "30510-41130-84",
+      "fits": "Avalon 2000-2004 3.0L V6 (XL, XLS)",
+      "usPrices": "Toyota of Nashua $2,426.86; ToyotaPartsDeal $2,434.86; ToyotaPartsNow $2,480.36; Longo Toyota $2,816.89 (+$1,000 core each)",
+      "coreDeposit": 1000,
+      "condition": "remanufactured (Toyota Genuine)",
+      "proposedPrice": 3255.59,
+      "imageSource": "epc-images.toyota.com (whole-unit photo 1)",
+      "imagePermission": "Toyota catalog photo (existing project basis)",
+      "notes": "batch 43",
+      "liveId": 4511
+    },
+    {
+      "category": "transmissions",
+      "status": "IMAGE PENDING",
+      "manufacturer": "Toyota",
+      "product": "Genuine Remanufactured automatic transaxle (Camry / Solara V6)",
+      "partNumber": "30510-33381-84",
+      "fits": "Camry 2004-2006 V6 / Solara 2004-2008 V6",
+      "usPrices": "Grieco Toyota $2,486.89; ToyotaPartsDeal $2,539.54; ToyotaPartsNow $2,587.02 (+$1,000 core)",
+      "coreDeposit": 1000,
+      "condition": "remanufactured (Toyota Genuine)",
+      "proposedPrice": null,
+      "imageSource": "Toyota photo has a strong gold colour cast",
+      "imagePermission": "",
+      "notes": "prices complete; photo would misrepresent the unit",
+      "liveId": null
     }
   ]
 }

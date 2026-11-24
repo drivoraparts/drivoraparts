@@ -7130,5 +7130,37 @@
     "description": "Genuine Toyota Front Driver Seat Assembly (SR5 Package, Gray) 71200-04310-B2 for Toyota Tacoma (2008–2012)\n\nGenuine Toyota front driver seat assembly (sr5 package, gray) 71200-04310-B2 for the Toyota Tacoma. Complete new front driver (left-hand) bucket seat assembly, cushion and back, gray (trim code 1).\n\nSpecifications\n\nPart number: 71200-04310-B2\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2008–2012 Toyota Tacoma (SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN)\nRestriction (2008-2012 Tacoma): Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2",
     "createdAt": 1795100004510
+  },
+  {
+    "id": 4511,
+    "name": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-41130-84 for Toyota Avalon (2000–2004)",
+    "category": "transmission",
+    "brand": "toyota",
+    "price": 3255.59,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "30510-41130-84",
+    "freightNotes": "Ships as palletized freight (oversized assembly).",
+    "fitment": "2000–2004 Toyota Avalon (3.0L V6; (1MZ-FE), floor shift; confirm by VIN)",
+    "fitmentYears": "2000–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2000,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Avalon",
+        "submodel": "3.0L V6; (1MZ-FE), floor shift; confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-41130-84/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-41130-84/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-automatic-transaxle-assembly-30510-41130-84/1.webp"
+    ],
+    "description": "Genuine Toyota Remanufactured Automatic Transaxle Assembly 30510-41130-84 for Toyota Avalon (2000–2004)\n\nGenuine Toyota automatic transaxle assembly 30510-41130-84 for the Toyota Avalon. Toyota Genuine Remanufactured automatic transaxle, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transaxle has to be returned.\n\nSpecifications\n\nPart number: 30510-41130-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2000–2004 Toyota Avalon (3.0L V6; (1MZ-FE), floor shift; confirm by VIN)\nRestriction (2000-2004 Avalon): 3.0L V6 (1MZ-FE), floor shift; confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-automatic-transaxle-assembly-30510-41130-84",
+    "createdAt": 1795100004511
   }
 ]

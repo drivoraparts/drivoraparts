@@ -1,0 +1,140 @@
+{
+  "_comment": "Toyota expansion batch 43 (2026-11-24): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transaxle Assembly 30510-41130-84 — Avalon",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "30510-41130-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2000–2004 Toyota Avalon (3.0L V6; (1MZ-FE), floor shift; confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2000,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Avalon",
+          "submodel": "3.0L V6; (1MZ-FE), floor shift; confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transaxle assembly 30510-41130-84 for the Toyota Avalon. Toyota Genuine Remanufactured automatic transaxle, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transaxle has to be returned.\n\nSpecifications\n\nPart number: 30510-41130-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2000–2004 Toyota Avalon (3.0L V6; (1MZ-FE), floor shift; confirm by VIN)\nRestriction (2000-2004 Avalon): 3.0L V6 (1MZ-FE), floor shift; confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3869.98,
+        "lowestCompetitor": {
+          "seller": "Toyota of Nashua ($2,426.86 + $1,000 core charge)",
+          "price": 3426.86,
+          "url": "https://parts.toyotaofnashua.com/oem-parts/toyota-trans-axle-305104113084"
+        },
+        "competitors": [
+          {
+            "seller": "Toyota of Nashua ($2,426.86 + $1,000 core charge)",
+            "price": 3426.86,
+            "url": "https://parts.toyotaofnashua.com/oem-parts/toyota-trans-axle-305104113084"
+          },
+          {
+            "seller": "ToyotaPartsDeal ($2,434.86 + $1,000 core charge)",
+            "price": 3434.86,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~x~30510-41130-84.html"
+          },
+          {
+            "seller": "ToyotaPartsNow ($2,480.36 + $1,000 core charge)",
+            "price": 3480.36,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~x~30510-41130-84"
+          },
+          {
+            "seller": "Longo Toyota ($2,816.89 + $1,000 core charge)",
+            "price": 3816.89,
+            "url": "https://parts.longotoyota.com/oem-parts/toyota-trans-axle-305104113084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3255.59,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2000,
+            "yearTo": 2004,
+            "make": "Toyota",
+            "model": "Avalon",
+            "engine": "3.0L V6",
+            "restriction": "3.0L V6 (1MZ-FE), floor shift; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (30510-41130-84: 2000-2004 Avalon XL, XLS, 3.0L)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~x~30510-41130-84",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Longo Toyota (30510-41130-84 Trans-Axle 2000-2004 Toyota Avalon)",
+                "url": "https://parts.longotoyota.com/oem-parts/toyota-trans-axle-305104113084",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Toyota of Nashua (30510-41130-84 Trans-Axle 2000-2004 Toyota Avalon)",
+                "url": "https://parts.toyotaofnashua.com/oem-parts/toyota-trans-axle-305104113084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.longotoyota.com/oem-parts/toyota-trans-axle-305104113084",
+        "https://parts.toyotaofnashua.com/oem-parts/toyota-trans-axle-305104113084",
+        "https://www.toyotapartsdeal.com/oem/toyota~x~30510-41130-84.html",
+        "https://www.toyotapartsnow.com/oem/toyota~x~30510-41130-84"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

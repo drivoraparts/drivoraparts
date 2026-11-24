@@ -548,6 +548,13 @@
       "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
     },
     {
+      "id": 4511,
+      "partNumber": "30510-41130-84",
+      "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
+      "verifiedOn": "2026-11-19",
+      "evidence": "Part number present in Toyota's own parts catalog (epc-images.toyota.com part photo); fitment and pricing evidence in docs/catalog-expansion/toyota-expansion-batch-*.json."
+    },
+    {
       "id": 4496,
       "partNumber": "30510-42320-84",
       "verifiedBy": "Claude (catalog import, on the DrivoraParts owner's instruction)",
