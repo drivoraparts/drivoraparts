@@ -464,6 +464,99 @@
       "checked": "2026-11-23"
     },
     {
+      "id": 5126,
+      "partNumber": "18559880117",
+      "aliases": [
+        "17201-WAA03"
+      ],
+      "maker": "BorgWarner",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2020,
+          "yearTo": 2020,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 inline-6 turbo, 2-port exhaust manifold"
+        }
+      ],
+      "fitmentSources": [
+        "https://titanmotorsports.com/products/borgwarner-toyota-bmw-b58-2-port-oe-replacement-turbocharger-17201-waa03-11657934332-11657934388 (BorgWarner 20-21 Toyota GR Supra B58 2 Port OE Replacement Turbocharger, 17201-WAA03)",
+        "https://www.threepiece.us/borgwarner-20-21-toyota-gr-supra-b58-2-port-oe-replacement-turbocharger-17201-waa03-11657934332-18559880117/",
+        "https://turbochargersdirect.com/new-genuine-oem-borgwarner-b03g-upgrade-turbocharger-for-bmw-m240i-m340i-x3-z4-and-toyota-supra-3-0-b58-18559880117-tur-106564-bwn/"
+      ],
+      "fitmentCaveat": "Retailers title the 2-port unit for 2020-2021; the 2021-on GR Supra 3.0 uses the 6-port manifold, so the listing is limited to 2020. Confirm the manifold port count.",
+      "competitors": [
+        {
+          "name": "Turbos.com",
+          "price": 1006.99,
+          "url": "https://turbos.com/borg-warner-turbocharger-b03g-18559880117/"
+        },
+        {
+          "name": "Turbochargers Direct",
+          "price": 1128.95,
+          "url": "https://turbochargersdirect.com/new-genuine-oem-borgwarner-b03g-upgrade-turbocharger-for-bmw-m240i-m340i-x3-z4-and-toyota-supra-3-0-b58-18559880117-tur-106564-bwn/"
+        },
+        {
+          "name": "Denco Diesel",
+          "price": 1890.91,
+          "url": "https://www.dencodiesel.com/products/18559880117-turbocharger-b03g-bmw-toyota-engine-b58b30m1-3-0l"
+        },
+        {
+          "name": "Titan Motorsports",
+          "price": 2055.11,
+          "url": "https://titanmotorsports.com/products/borgwarner-toyota-bmw-b58-2-port-oe-replacement-turbocharger-17201-waa03-11657934332-11657934388"
+        }
+      ],
+      "lowest": 1006.99,
+      "price": 956.64,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5127,
+      "partNumber": "18559880116",
+      "aliases": [
+        "17201-WAA08"
+      ],
+      "maker": "BorgWarner",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2021,
+          "yearTo": 2023,
+          "make": "Toyota",
+          "model": "GR Supra",
+          "submodel": "3.0L B58 inline-6 turbo, 6-port exhaust manifold"
+        }
+      ],
+      "fitmentSources": [
+        "https://titanmotorsports.com/products/borgwarner-bmw-toyota-b58-6-port-oe-replacement-turbocharger-11657934387-11658679022-17201-waa08 (BorgWarner 21-23 Toyota Supra B58 6 Port OE Replacement Turbocharger, 17201-WAA08)",
+        "https://store.ngpracing.com/products/borgwarner-21-23-toyota-supra-b58-6-port-oe-replacement-turbocharger-11657934387-17201-waa08",
+        "https://jceracing.com/borgwarner-21-23-toyota-supra-b58-6-port-oe-replacement-turbocharger-11657934387-17201-waa08-18559880116/"
+      ],
+      "fitmentCaveat": "Retailers list 2021-2023; later model years are not stated, so the listing stops at 2023.",
+      "competitors": [
+        {
+          "name": "Turbos.com",
+          "price": 3270.99,
+          "url": "https://turbos.com/borg-warner-turbocharger-b03g-18559880116/"
+        },
+        {
+          "name": "Titan Motorsports",
+          "price": 6304.12,
+          "url": "https://titanmotorsports.com/products/borgwarner-bmw-toyota-b58-6-port-oe-replacement-turbocharger-11657934387-11658679022-17201-waa08"
+        },
+        {
+          "name": "NGP Racing",
+          "price": 6304.12,
+          "url": "https://store.ngpracing.com/products/borgwarner-21-23-toyota-supra-b58-6-port-oe-replacement-turbocharger-11657934387-17201-waa08"
+        }
+      ],
+      "lowest": 3270.99,
+      "price": 3107.44,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
       "id": 5106,
       "partNumber": "858B",
       "aliases": [
