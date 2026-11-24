@@ -9,11 +9,11 @@ prices, no duplicates. `TRACKER.md` (generated from `pipeline.json`) is the per-
 | Category | Target | Qualifying live | Remaining | Live IDs |
 |---|---|---|---|---|
 | Tires | 20 | 20 | 0 | 5001-5020 |
-| Transmissions | 20 | 7 | 13 | 4489-4492, 4496, 4497, 4511 |
+| Transmissions | 20 | 7 (8 after batch 45) | 13 (12) | 4489-4492, 4496, 4497, 4511 (+4513) |
 | Steering | 20 | 20 | 0 | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4507, 4509 |
 | Turbochargers | 20 | 14 | 6 | 4445, 4488, 5101-5105, 5121-5127 |
 | Engines | 20 | 20 | 0 | 5106-5120, 5128-5132 |
-| Seats | 20 | 2 (3 after batch 44) | 18 (17) | 4508, 4510 (+4512) |
+| Seats | 20 | 3 | 17 | 4508, 4510, 4512 |
 | **Total** | 120 | **77** | **43** | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115

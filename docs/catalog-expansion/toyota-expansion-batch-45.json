@@ -1,0 +1,179 @@
+{
+  "_comment": "Toyota expansion batch 45 (2026-11-24): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Automatic Transaxle Assembly 30510-1A870-84 — Corolla / Matrix",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "30510-1A870-84",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "transmission_assembly",
+      "condition": "remanufactured",
+      "proposedCategory": "transmission",
+      "proposedCategoryName": "Transmission",
+      "fitment": "2009–2010 Toyota Corolla (XRS; 2.4L 2AZ-FE, front-wheel drive; confirm by VIN); 2009–2013 Toyota Matrix (S / XRS; 2.4L 2AZ-FE, front-wheel drive only (not AWD); confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2009,
+          "yearTo": 2010,
+          "make": "Toyota",
+          "model": "Corolla",
+          "submodel": "XRS; 2.4L 2AZ-FE, front-wheel drive; confirm by VIN"
+        },
+        {
+          "yearFrom": 2009,
+          "yearTo": 2013,
+          "make": "Toyota",
+          "model": "Matrix",
+          "submodel": "S / XRS; 2.4L 2AZ-FE, front-wheel drive only (not AWD); confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota automatic transaxle assembly 30510-1A870-84 for the Toyota Corolla, Matrix. Toyota Genuine Remanufactured automatic transaxle, rebuilt by Toyota to its fit and performance standards. The price includes Toyota's $1,000 core charge, so no old transaxle has to be returned.\n\nSpecifications\n\nPart number: 30510-1A870-84\nBrand: Toyota\nType: Genuine Toyota part\nCondition: Remanufactured (Toyota Genuine Remanufactured)\nFitment: 2009–2010 Toyota Corolla (XRS; 2.4L 2AZ-FE, front-wheel drive; confirm by VIN); 2009–2013 Toyota Matrix (S / XRS; 2.4L 2AZ-FE, front-wheel drive only (not AWD); confirm by VIN)\nRestriction (2009-2010 Corolla): 2.4L 2AZ-FE, front-wheel drive; confirm by VIN\nRestriction (2009-2013 Matrix): 2.4L 2AZ-FE, front-wheel drive only (not AWD); confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3781.58,
+        "lowestCompetitor": {
+          "seller": "Olathe Toyota ($2,289.11 + $1,000 core charge)",
+          "price": 3289.11,
+          "url": "https://parts.olathetoyota.com/v-2009-toyota-matrix--s--2-4l-l4-gas/automatic-transmission--automatic-transmission"
+        },
+        "competitors": [
+          {
+            "seller": "Olathe Toyota ($2,289.11 + $1,000 core charge)",
+            "price": 3289.11,
+            "url": "https://parts.olathetoyota.com/v-2009-toyota-matrix--s--2-4l-l4-gas/automatic-transmission--automatic-transmission"
+          },
+          {
+            "seller": "OEMPartsOnline ($2,331.11 + $1,000 core charge)",
+            "price": 3331.11,
+            "url": "https://toyota.oempartsonline.com/v-2009-toyota-corolla--xrs--2-4l-l4-gas/automatic-transmission--automatic-transmission"
+          },
+          {
+            "seller": "ToyotaPartsDeal ($2,360.51 + $1,000 core charge)",
+            "price": 3360.51,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~x~30510-1A870-84.html"
+          },
+          {
+            "seller": "ToyotaPartsNow ($2,404.61 + $1,000 core charge)",
+            "price": 3404.61,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~x~30510-1A870-84"
+          },
+          {
+            "seller": "Tom Wood Toyota ($2,781.58 + $1,000 core charge)",
+            "price": 3781.58,
+            "url": "https://parts.tomwoodtoyota.com/oem-parts/toyota-trans-axle-305101a87084"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 3124.69,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2009,
+            "yearTo": 2010,
+            "make": "Toyota",
+            "model": "Corolla",
+            "engine": "XRS",
+            "restriction": "2.4L 2AZ-FE, front-wheel drive; confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (30510-1A870-84: 2009-2010 Corolla XRS 2.4L; 2009-2013 Matrix S, XRS 2.4L)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~x~30510-1A870-84",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "OEMPartsOnline (2009 Toyota Corolla XRS 2.4L automatic transmission)",
+                "url": "https://toyota.oempartsonline.com/v-2009-toyota-corolla--xrs--2-4l-l4-gas/automatic-transmission--automatic-transmission",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Tom Wood Toyota (Trans-Axle 30510-1A870-84, 2009-2013 Toyota)",
+                "url": "https://parts.tomwoodtoyota.com/oem-parts/toyota-trans-axle-305101a87084",
+                "note": ""
+              }
+            ],
+            "reason": null
+          },
+          {
+            "yearFrom": 2009,
+            "yearTo": 2013,
+            "make": "Toyota",
+            "model": "Matrix",
+            "engine": "S / XRS",
+            "restriction": "2.4L 2AZ-FE, front-wheel drive only (not AWD); confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsNow (30510-1A870-84: 2009-2013 Matrix S, XRS 2.4L)",
+                "url": "https://www.toyotapartsnow.com/oem/toyota~x~30510-1A870-84",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Olathe Toyota (2009 Toyota Matrix S 2.4L automatic transmission)",
+                "url": "https://parts.olathetoyota.com/v-2009-toyota-matrix--s--2-4l-l4-gas/automatic-transmission--automatic-transmission",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.olathetoyota.com/v-2009-toyota-matrix--s--2-4l-l4-gas/automatic-transmission--automatic-transmission",
+        "https://parts.tomwoodtoyota.com/oem-parts/toyota-trans-axle-305101a87084",
+        "https://toyota.oempartsonline.com/v-2009-toyota-corolla--xrs--2-4l-l4-gas/automatic-transmission--automatic-transmission",
+        "https://www.toyotapartsdeal.com/oem/toyota~x~30510-1A870-84.html",
+        "https://www.toyotapartsnow.com/oem/toyota~x~30510-1A870-84"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}

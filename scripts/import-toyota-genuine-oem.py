@@ -107,6 +107,8 @@ IMAGES = {
     "30510-41130-84": ["imgpn_30510-41130-84_1.webp"],
     # Batch 44: whole-seat photo only.
     "71100-47260-B2": ["imgpn_71100-47260-B2_1.webp"],
+    # Batch 45: whole-unit photos 1-2 (photo 3 has a colour cast).
+    "30510-1A870-84": ["imgpn_30510-1A870-84_1.webp", "imgpn_30510-1A870-84_2.webp"],
     "44310-0C090": ["imgpn_44310-0C090_2.webp", "imgpn_44310-0C090_1.webp", "imgpn_44310-0C090_3.webp"],
     "44310-0C080": ["imgpn_44310-0C080_3.webp", "imgpn_44310-0C080_1.webp", "imgpn_44310-0C080_2.webp"],
     "35010-60E00-84": ["imgpn_35010-60E00-84_1.webp", "imgpn_35010-60E00-84_3.webp", "imgpn_35010-60E00-84_2.webp"],

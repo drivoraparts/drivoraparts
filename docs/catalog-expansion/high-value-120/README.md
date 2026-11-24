@@ -519,3 +519,11 @@ Batch 43 is live and verified (4511).
   - 71100-06780-E4: two prices.
 - **Rejected:** other photo hits that show a headrest only, a partial view, a packaged unit, a colour cast, or a colour that differs
   from the catalog colour.
+
+## Batch 45 (2026-11-24): Corolla XRS / Matrix remanufactured transaxle
+Batch 44 is live and verified (4512).
+- **4513 30510-1A870-84:** Toyota Genuine Remanufactured transaxle for the 2009-2010 Corolla XRS and 2009-2013 Matrix S/XRS 2.4L
+  (front-wheel drive). $3,124.69 with the $1,000 core included.
+  - Priced 5% under Olathe Toyota at $2,289.11 + core.
+  - Other prices: OEMPartsOnline, ToyotaPartsDeal, ToyotaPartsNow and Tom Wood Toyota.
+  - Photos: Toyota whole-unit photos 1-2. Photo 3 has a colour cast and is not used.
