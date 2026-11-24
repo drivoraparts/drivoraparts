@@ -503,6 +503,70 @@ PRODUCTS = [
         ],
         "mediaDir": "turbocharger/dynamic-autowerx-6969-6port",
     },
+    {
+        "id": 5125,
+        "category": "turbocharger",
+        "brand": "hks",
+        "maker": "HKS",
+        "partNumber": "14020-AT004",
+        "aliases": [],
+        "name": "HKS Special Setup Kit with GTIII-4R Turbocharger 14020-AT004 for 1993\u20131997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+        "summary": ("HKS single-turbo conversion for the JZA80 Supra's 2JZ-GTE: GTIII-4R turbocharger with HKS's stainless exhaust "
+                    "manifold, external wastegate and oil lines, replacing the factory twin turbochargers. Aftermarket part; not made or "
+                    "warranted by Toyota."),
+        "specs": [
+            ("Manufacturer", "HKS"),
+            ("Manufacturer part number", "14020-AT004 (setup kit with turbocharger; 14020-AT003 is the same kit without the turbo)"),
+            ("Turbocharger", "HKS GTIII-4R (included)"),
+            ("Exhaust manifold", "stainless steel, 42.7 mm"),
+            ("Wastegate", "HKS GTII-type 60 mm external wastegate"),
+            ("Engine", "2JZ-GTE"),
+            ("Condition", "New"),
+        ],
+        "includesNote": "Kit contents as listed by HKS retailers",
+        "includes": [
+            "HKS GTIII-4R turbocharger",
+            "Stainless exhaust manifold (42.7 mm)",
+            "GTII-type 60 mm wastegate with return pipe",
+            "Oil feed and return lines",
+            "Flanges, gaskets and hardware",
+        ],
+        "notes": [
+            "Retailers note the kit may need additional fabrication, such as the intake (suction) piping, and a water line is not provided for the turbo. Engine management changes and tuning are not included.",
+            "Not documented for the 1998 VVT-i 2JZ-GTE; listed here for the non-VVT-i engine only.",
+            "For off-road / competition use; check emissions rules in your state before installing.",
+        ],
+        "fitText": ("1993\u20131997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). HKS lists the JZA80 2JZ-GTE; "
+                    "not for the non-turbo 2JZ-GE, and 1998 VVT-i compatibility is not documented"),
+        "fitmentApplications": [
+            {"yearFrom": 1993, "yearTo": 1997, "make": "Toyota", "model": "Supra",
+             "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"},
+        ],
+        "fitmentSources": [
+            "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3 (HKS SETUP KIT JZA80 2JZ-GTE WITH GTIII-4R)",
+            "https://www.vividracing.com/hks-special-set-kit-hks-gtiii4r-turbocharger-toyota-supra-jza80-2jzgte-19932002-p-152669329.html (Toyota Supra JZA80 2JZ-GTE)",
+            "https://conceptzperformance.com/hks-special-setup-kit-for-gtiii-4r-turbo-included-supra-jza80-2jz-14020-at004_p_56714.php (turbo included, Supra JZA80 2JZ)",
+        ],
+        "fitmentCaveat": "Retailers list the JZA80 2JZ-GTE; the listing is limited to the non-VVT-i US Supra Turbo because VVT-i compatibility is not stated.",
+        "competitors": [
+            ("Titan Motorsports", 6631.00, "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3"),
+            ("Vivid Racing", 6980.00, "https://www.vividracing.com/hks-special-set-kit-hks-gtiii4r-turbocharger-toyota-supra-jza80-2jzgte-19932002-p-152669329.html"),
+            ("Concept Z Performance", 6980.00, "https://conceptzperformance.com/hks-special-setup-kit-for-gtiii-4r-turbo-included-supra-jza80-2jz-14020-at004_p_56714.php"),
+            ("Kamispeed", 6980.00, "https://www.kamispeed.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r"),
+        ],
+        "photos": [
+            {"file": "hks-14020-at004-1.jpg", "url": "https://cdn.shopify.com/s/files/1/0066/0370/2362/products/538a0ea1e3ea7cb7763a8bdabe70e311_f01d2e84-c3a2-427b-a5a0-ebf029d3960a.jpg",
+             "landingPage": "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3",
+             "sourceName": "titanmotorsports.com", "creator": "HKS (manufacturer)", "creatorUrl": "https://hksusa.com/",
+             "note": "studio photo of the HKS GTIII-4R turbocharger supplied in the kit; the only lettering is HKS's own cast marking"},
+            {"file": "hks-14020-at004-2.jpg", "url": "https://cdn.shopify.com/s/files/1/0066/0370/2362/products/78b60997d74861abca4b8c224b9bbb25_067f039f-740b-4f73-a7e2-c32eebb12af3.jpg",
+             "landingPage": "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3",
+             "sourceName": "titanmotorsports.com", "creator": "HKS (manufacturer)", "creatorUrl": "https://hksusa.com/",
+             "note": "studio photo of the setup-kit components (manifold, wastegate, pipes, lines and hardware)"},
+        ],
+        "mediaDir": "turbocharger/hks-14020-at004",
+        "photoBasis": "manufacturer photos on retailer listing (existing project basis)",
+    },
 ]
 
 PTP = "https://www.powertrainproducts.net/product/"

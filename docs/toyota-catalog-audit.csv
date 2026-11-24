@@ -382,6 +382,7 @@ id,group,reason,genuine_candidate,category,brand,condition,part_number,in_stock,
 "5122","A","structured fitment lists Toyota","","turbocharger","dynamic-autowerx","brand-new","DAW_G258_2p_UFR_5","yes","2992.5","Dynamic Autowerx Ultra Flow 6466 Upgrade Turbocharger (Gen 2 B58TU, 2-Port) DAW_G258_2p_UFR_5 for 2020 Toyota GR Supra 3.0"
 "5123","A","structured fitment lists Toyota","","turbocharger","dynamic-autowerx","brand-new","DAW_G258_6769","yes","3277.5","Dynamic Autowerx New Gen 6769 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G258_6769 for 2021–2024 Toyota GR Supra 3.0"
 "5124","A","structured fitment lists Toyota","","turbocharger","dynamic-autowerx","brand-new","DAW_G2_6969","yes","3419.05","Dynamic Autowerx 6969 Upgrade Turbocharger (Gen 2 B58TU, 6-Port) DAW_G2_6969 for 2021–2024 Toyota GR Supra 3.0"
+"5125","A","structured fitment lists Toyota","yes","turbocharger","hks","brand-new","14020-AT004","yes","6299.45","HKS Special Setup Kit with GTIII-4R Turbocharger 14020-AT004 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)"
 "1","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4030","BMW N54 Twin Turbo Engine"
 "33","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","5100","BMW B58 TwinPower Turbo 3.0-Liter Engine"
 "37","B","listing names another manufacturer or platform","","engine","bmw","brand-new","","yes","4505","BMW N55 Turbo Engine"

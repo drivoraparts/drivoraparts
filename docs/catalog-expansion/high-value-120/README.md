@@ -419,3 +419,19 @@ Batch 36 is live and verified (4507, 4508).
 - This brings steering to 20 once live.
 - **Transmissions:** the photos for Toyota manual transmission 33030-04080 (RC60F, 2024 Tacoma) are annotated label diagrams,
   so it is IMAGE PENDING.
+
+## Batch 38 (2026-11-24): HKS JZA80 setup kit with GTIII-4R turbocharger
+Batch 37 is live and verified (4509). Steering is complete at 20.
+- **5125 HKS 14020-AT004:** setup kit with GTIII-4R turbocharger for the 1993-1997 Supra Turbo, $6,299.45.
+  - Priced 5% under Titan Motorsports at $6,631.00; Vivid Racing, Concept Z Performance and Kamispeed list it at $6,980.
+  - The kit includes the turbo, so it qualifies. 14020-AT003, the kit without the turbo, does not.
+  - Photos: HKS's studio photos of the turbo and kit, from Titan's listing.
+- **Rejected or held:**
+  - Pure850: Titan's photos carry a watermark.
+  - 17201-WAA03: Titan's image is a parts diagram.
+  - GReddy 11510540: its photos are shared with the other kits in the family.
+  - Toyota partial engines (19000): Toyota has no photo for any of the numbers checked.
+- **Engines:**
+  - Summit Racing is behind bot protection and was not worked around.
+  - The independent remanufacturers found (Power Engines, JDM Engine Zone, United Engine, Toyota Truck Engine) each sell their own
+    units under an engine code, not a shared part number, so no single engine has three comparable prices.
