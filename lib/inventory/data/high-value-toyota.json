@@ -931,6 +931,189 @@
     "createdAt": 1795200005128
   },
   {
+    "id": 5129,
+    "name": "ATK Remanufactured 2.7L 3RZ-FE inline-4 Long Block Engine 849 for 1994–1997 Toyota T100 / Tacoma / 4Runner",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 3630.66,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "849",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1994–1997 Toyota T100 / Tacoma / 4Runner with the 2.7L 3RZ-FE engine; confirm by VIN",
+    "fitmentYears": "1994–1997",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1994,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "T100",
+        "submodel": "2.7L 3RZ-FE inline-4"
+      },
+      {
+        "yearFrom": 1995,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "2.7L 3RZ-FE inline-4"
+      },
+      {
+        "yearFrom": 1996,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "2.7L 3RZ-FE inline-4"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-849/1.webp",
+    "image": "/product-media/engine/atk-849/1.webp",
+    "images": [
+      "/product-media/engine/atk-849/1.webp",
+      "/product-media/engine/atk-849/2.webp",
+      "/product-media/engine/atk-849/3.webp",
+      "/product-media/engine/atk-849/4.webp",
+      "/product-media/engine/atk-849/5.webp",
+      "/product-media/engine/atk-849/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.7L 3RZ-FE inline-4 Long Block Engine 849 for 1994–1997 Toyota T100 / Tacoma / 4Runner\n\nRemanufactured Toyota 3RZ-FE 2.7L inline-4 long block, ATK part number 849. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 849\nEngine code: 3RZ-FE\nDisplacement: 2.7L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 849)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1994–1997 Toyota T100 / Tacoma / 4Runner with the 2.7L 3RZ-FE engine; confirm by VIN.\n\nNotes\n\nEarly 3RZ-FE (1994-1997). Later engines use ATK 849A (1996-2000) and 849C (1999-2004, 4 oval intake ports).\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-849",
+    "createdAt": 1795200005129
+  },
+  {
+    "id": 5130,
+    "name": "ATK Remanufactured 2.7L 3RZ-FE inline-4 Long Block Engine 849C for 1999–2004 Toyota Tacoma / 4Runner",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 3630.66,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "849C",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1999–2004 Toyota Tacoma / 4Runner with the 2.7L 3RZ-FE engine; confirm by VIN",
+    "fitmentYears": "1999–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1999,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "2.7L 3RZ-FE inline-4"
+      },
+      {
+        "yearFrom": 1999,
+        "yearTo": 2000,
+        "make": "Toyota",
+        "model": "4Runner",
+        "submodel": "2.7L 3RZ-FE inline-4"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-849c/1.webp",
+    "image": "/product-media/engine/atk-849c/1.webp",
+    "images": [
+      "/product-media/engine/atk-849c/1.webp",
+      "/product-media/engine/atk-849c/2.webp",
+      "/product-media/engine/atk-849c/3.webp",
+      "/product-media/engine/atk-849c/4.webp",
+      "/product-media/engine/atk-849c/5.webp",
+      "/product-media/engine/atk-849c/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.7L 3RZ-FE inline-4 Long Block Engine 849C for 1999–2004 Toyota Tacoma / 4Runner\n\nRemanufactured Toyota 3RZ-FE 2.7L inline-4 long block, ATK part number 849C. The price includes the $545 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 849C\nEngine code: 3RZ-FE\nDisplacement: 2.7L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $545, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 849C)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1999–2004 Toyota Tacoma / 4Runner with the 2.7L 3RZ-FE engine; confirm by VIN.\n\nNotes\n\nLater 3RZ-FE with 4 oval intake ports (per JEGS); not for the T100.\nPowertrain Products notes that availability of this engine fluctuates.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-849c",
+    "createdAt": 1795200005130
+  },
+  {
+    "id": 5131,
+    "name": "ATK Remanufactured 2.4L 2RZ-FE inline-4 Long Block Engine 851A for 1998–2000 Toyota Tacoma 2WD",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 3512.14,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "851A",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1998–2000 Toyota Tacoma 2WD with the 2.4L 2RZ-FE engine; confirm by VIN",
+    "fitmentYears": "1998–2000",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1998,
+        "yearTo": 2000,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "2.4L 2RZ-FE inline-4 (2WD)"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-851a/1.webp",
+    "image": "/product-media/engine/atk-851a/1.webp",
+    "images": [
+      "/product-media/engine/atk-851a/1.webp",
+      "/product-media/engine/atk-851a/2.webp",
+      "/product-media/engine/atk-851a/3.webp",
+      "/product-media/engine/atk-851a/4.webp",
+      "/product-media/engine/atk-851a/5.webp",
+      "/product-media/engine/atk-851a/6.webp"
+    ],
+    "description": "ATK Remanufactured 2.4L 2RZ-FE inline-4 Long Block Engine 851A for 1998–2000 Toyota Tacoma 2WD\n\nRemanufactured Toyota 2RZ-FE 2.4L inline-4 long block, ATK part number 851A. The price includes the $420 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 851A\nEngine code: 2RZ-FE\nDisplacement: 2.4L\nConfiguration: inline-4\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $420, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 851A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1998–2000 Toyota Tacoma 2WD with the 2.4L 2RZ-FE engine; confirm by VIN.\n\nNotes\n\n2RZ-FE with 8 round intake ports (per Powertrain Products); 1995-1997 engines use ATK 851 and 1999-on 4-oval-port engines use 851D.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-851a",
+    "createdAt": 1795200005131
+  },
+  {
+    "id": 5132,
+    "name": "ATK Remanufactured 3.4L 5VZ-FE V6 Long Block Engine 848A for 1995–2004 Toyota T100 / Tacoma / Tundra",
+    "category": "engine",
+    "brand": "atk-engines",
+    "price": 4299.82,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "remanufactured",
+    "partNumber": "848A",
+    "freightNotes": "Freight / LTL: ships palletized (long block engine).",
+    "fitment": "1995–2004 Toyota T100 / Tacoma / Tundra with the 3.4L 5VZ-FE engine; confirm by VIN",
+    "fitmentYears": "1995–2004",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1995,
+        "yearTo": 1998,
+        "make": "Toyota",
+        "model": "T100",
+        "submodel": "3.4L 5VZ-FE V6"
+      },
+      {
+        "yearFrom": 1995,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "3.4L 5VZ-FE V6"
+      },
+      {
+        "yearFrom": 2000,
+        "yearTo": 2004,
+        "make": "Toyota",
+        "model": "Tundra",
+        "submodel": "3.4L 5VZ-FE V6"
+      }
+    ],
+    "thumbnail": "/product-media/engine/atk-848a/1.webp",
+    "image": "/product-media/engine/atk-848a/1.webp",
+    "images": [
+      "/product-media/engine/atk-848a/1.webp",
+      "/product-media/engine/atk-848a/2.webp",
+      "/product-media/engine/atk-848a/3.webp",
+      "/product-media/engine/atk-848a/4.webp",
+      "/product-media/engine/atk-848a/5.webp",
+      "/product-media/engine/atk-848a/6.webp"
+    ],
+    "description": "ATK Remanufactured 3.4L 5VZ-FE V6 Long Block Engine 848A for 1995–2004 Toyota T100 / Tacoma / Tundra\n\nRemanufactured Toyota 5VZ-FE 3.4L V6 long block, ATK part number 848A. The price includes the $470 core charge, so no old engine has to be returned. Remanufactured by ATK; not a Toyota Genuine part.\n\nSpecifications\n\nRemanufacturer: ATK North America\nATK part number: 848A\nEngine code: 5VZ-FE\nDisplacement: 3.4L\nConfiguration: V6\nType: remanufactured long block\nRemanufacturing (per the seller's listing): fully disassembled and cleaned, Magnaflux inspected, decks machined; new bearings, pistons, rings, lifters, oil pump, gaskets, Viton valve seals, freeze plugs and timing chain with tensioners; sim tested for compression and oil pressure\nCore charge: $470, included in our price\nCondition: Remanufactured\n\nWhat is included\n\n1 remanufactured long block engine (ATK 848A)\nNot included: intake manifold, fuel system, sensors, wiring, accessories and flywheel / flexplate, which are transferred from the original engine\n\nToyota fitment\n\n1995–2004 Toyota T100 / Tacoma / Tundra with the 3.4L 5VZ-FE engine; confirm by VIN.\n\nNotes\n\n848A has a thermostat housing without the oil-cooler water outlet (per JEGS); engines that need that outlet use ATK 848.\nConfirm the engine code, VIN and casting numbers against the listing before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "atk-engines-848a",
+    "createdAt": 1795200005132
+  },
+  {
     "id": 5116,
     "name": "ATK Remanufactured 3.0L 3VZ-E V6 Long Block Engine 833 for 1988–1989 Toyota 4Runner / Pickup",
     "category": "engine",

@@ -472,3 +472,25 @@ Batch 39 is live and verified (5126, 5127).
     set as the live ATK 857.
   - Photos: only Powertrain Products 609 photos 1 and 3, which differ from 857's photo files. Powertrain Company uses photo 1 as its
     857D photo.
+
+## Batch 42 (2026-11-24): four more ATK engines, completing engines
+Batch 41 is live and verified (5128).
+
+**Method:**
+- Current Powertrain Company prices for every ATK Toyota engine come from its store API.
+- Every Powertrain Products engine photo (78 listings, 406 files) was compared, so only listings with photos found on no other listing
+  are used.
+- Each ATK number is matched to its Powertrain Products listing by the production-date range, the same way the live 851 and 848 were
+  matched.
+
+**New listings:**
+- **5129 ATK 849 (3RZ-FE):** 1994-1997 T100, 1995-1997 Tacoma and 1996-1997 4Runner. $3,630.66, core included.
+- **5130 ATK 849C (3RZ-FE):** 1999-2004 Tacoma and 1999-2000 4Runner. $3,630.66, core included.
+- **5131 ATK 851A (2RZ-FE):** 1998-2000 Tacoma 2WD. $3,512.14, core included.
+- **5132 ATK 848A (5VZ-FE):** 1995-1998 T100, 1995-2004 Tacoma and 2000-2004 Tundra. $4,299.82, core included.
+- Each price is 5% under JEGS, core included. The other prices are Powertrain Company and Powertrain Products, plus ATK Sales for
+  848A.
+
+**Held:**
+- 849A: its two JEGS prices conflict ($7,217.98 / $3,708.99).
+- 851D: its JEGS price appears only in a "customers also viewed" box.

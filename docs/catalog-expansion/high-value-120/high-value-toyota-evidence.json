@@ -1173,6 +1173,223 @@
       "checked": "2026-11-23"
     },
     {
+      "id": 5129,
+      "partNumber": "849",
+      "aliases": [
+        "ATK 849"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1994,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "T100",
+          "submodel": "2.7L 3RZ-FE inline-4"
+        },
+        {
+          "yearFrom": 1995,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.7L 3RZ-FE inline-4"
+        },
+        {
+          "yearFrom": 1996,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "2.7L 3RZ-FE inline-4"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/849/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/3rzf-e-comp-remanufactured-engine-849-toyota-4runner-t100-tacoma-1994-2004/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/10-93-8-97-3rzf-e/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,276.75 + $545 core)",
+          "price": 3821.75,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/849/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($3,765.77 + $545 core)",
+          "price": 4310.77,
+          "url": "https://powertraincompany.com/product/3rzf-e-comp-remanufactured-engine-849-toyota-4runner-t100-tacoma-1994-2004/"
+        },
+        {
+          "name": "Powertrain Products ($3,499.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/10-93-8-97-3rzf-e/"
+        }
+      ],
+      "lowest": 3821.75,
+      "price": 3630.66,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5130,
+      "partNumber": "849C",
+      "aliases": [
+        "ATK 849C"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1999,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.7L 3RZ-FE inline-4"
+        },
+        {
+          "yearFrom": 1999,
+          "yearTo": 2000,
+          "make": "Toyota",
+          "model": "4Runner",
+          "submodel": "2.7L 3RZ-FE inline-4"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/849C/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/3rzf-e-comp-remanufactured-engine-849c-toyota-4runner-t100-tacoma-1994-2004/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/8-99-9-04-3rzf-e/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,276.75 + $545 core)",
+          "price": 3821.75,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/849C/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($3,710.65 + $545 core)",
+          "price": 4255.65,
+          "url": "https://powertraincompany.com/product/3rzf-e-comp-remanufactured-engine-849c-toyota-4runner-t100-tacoma-1994-2004/"
+        },
+        {
+          "name": "Powertrain Products ($3,499.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/8-99-9-04-3rzf-e/"
+        }
+      ],
+      "lowest": 3821.75,
+      "price": 3630.66,
+      "core": "$545, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5131,
+      "partNumber": "851A",
+      "aliases": [
+        "ATK 851A"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1998,
+          "yearTo": 2000,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "2.4L 2RZ-FE inline-4 (2WD)"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/851A/10002/-1",
+        "Powertrain Company: https://powertraincompany.com/product/2-4l-rwd-2rzfe-remanufactured-engine-851a-toyota-tacoma-1998-2000/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/6-97-8-00-2rzf-e/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($3,276.99 + $420 core)",
+          "price": 3696.99,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/851A/10002/-1"
+        },
+        {
+          "name": "Powertrain Company ($3,710.65 + $420 core)",
+          "price": 4130.65,
+          "url": "https://powertraincompany.com/product/2-4l-rwd-2rzfe-remanufactured-engine-851a-toyota-tacoma-1998-2000/"
+        },
+        {
+          "name": "Powertrain Products ($3,499.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/6-97-8-00-2rzf-e/"
+        }
+      ],
+      "lowest": 3696.99,
+      "price": 3512.14,
+      "core": "$420, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
+      "id": 5132,
+      "partNumber": "848A",
+      "aliases": [
+        "ATK 848A"
+      ],
+      "maker": "ATK North America",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1995,
+          "yearTo": 1998,
+          "make": "Toyota",
+          "model": "T100",
+          "submodel": "3.4L 5VZ-FE V6"
+        },
+        {
+          "yearFrom": 1995,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "3.4L 5VZ-FE V6"
+        },
+        {
+          "yearFrom": 2000,
+          "yearTo": 2004,
+          "make": "Toyota",
+          "model": "Tundra",
+          "submodel": "3.4L 5VZ-FE V6"
+        }
+      ],
+      "fitmentSources": [
+        "JEGS: https://www.jegs.com/i/ATK-Engines/059/848A/10002/-1",
+        "ATK Sales: https://www.atksales.com/product-list/?cat=Engines&sb=Toyota",
+        "Powertrain Company: https://powertraincompany.com/product/5vzf-e-comp-remanufactured-engine-848a-toyota-4runner-t100-tacoma-tundra-1996-2004/",
+        "Powertrain Products: https://www.powertrainproducts.net/product/8-94-8-04-5vzf-e/"
+      ],
+      "fitmentCaveat": null,
+      "competitors": [
+        {
+          "name": "JEGS ($4,056.13 + $470 core)",
+          "price": 4526.13,
+          "url": "https://www.jegs.com/i/ATK-Engines/059/848A/10002/-1"
+        },
+        {
+          "name": "ATK Sales ($4,349.00 + $470 core)",
+          "price": 4819.0,
+          "url": "https://www.atksales.com/product-list/?cat=Engines&sb=Toyota"
+        },
+        {
+          "name": "Powertrain Company ($4,592.65 + $470 core)",
+          "price": 5062.65,
+          "url": "https://powertraincompany.com/product/5vzf-e-comp-remanufactured-engine-848a-toyota-4runner-t100-tacoma-tundra-1996-2004/"
+        },
+        {
+          "name": "Powertrain Products ($4,349.00 + core charge set on the seller's invoice; not used for our price)",
+          "price": null,
+          "url": "https://www.powertrainproducts.net/product/8-94-8-04-5vzf-e/"
+        }
+      ],
+      "lowest": 4526.13,
+      "price": 4299.82,
+      "core": "$470, included in our price",
+      "checked": "2026-11-23"
+    },
+    {
       "id": 5116,
       "partNumber": "833",
       "aliases": [
