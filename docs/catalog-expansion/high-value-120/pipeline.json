@@ -2603,7 +2603,7 @@
     },
     {
       "category": "seats",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "Toyota",
       "product": "Genuine front driver seat, SR5 package, gray",
       "partNumber": "71200-04310-B2",
@@ -2887,6 +2887,54 @@
       "imageSource": "Toyota photo is a connector close-up",
       "imagePermission": "",
       "notes": "no usable photo",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "IMAGE PENDING",
+      "manufacturer": "CTS Turbo",
+      "product": "CTS-TR-1059 (re-checked on ctsturbo.com)",
+      "partNumber": "CTS-TR-1059",
+      "fits": "GR Supra 2020 2-port",
+      "usPrices": "Titan $2,599.99; iAutoWork $2,599.99; Made Motorsports $2,599.99",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "the manufacturer's own originals on ctsturbo.com also carry the CTS logo",
+      "imagePermission": "",
+      "notes": "needs logo-free originals from CTS",
+      "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "RESEARCH",
+      "manufacturer": "GReddy / Tomioka Racing / AVO",
+      "product": "GR86 FA24 bolt-on turbo kits",
+      "partNumber": "",
+      "fits": "GR86 2022+",
+      "usPrices": "GReddy kit via Subimods ~$8,028 (not on greddy.com US); Tomioka TR-TS1063 $4,675 (single seller); AVO (AU/UK pricing)",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "not checked: no three US prices",
+      "imagePermission": "",
+      "notes": "no kit with three named US prices found",
+      "liveId": null
+    },
+    {
+      "category": "seats",
+      "status": "REJECTED",
+      "manufacturer": "Toyota",
+      "product": "Seat sweep (2026-11-24)",
+      "partNumber": "~760 seat numbers",
+      "fits": "Tacoma, 4Runner, Tundra, Sequoia, FJ Cruiser, Land Cruiser",
+      "usPrices": "",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": null,
+      "imageSource": "Toyota photo host: complete-seat photos only for 71200-35A81-B0 (live), 71200-04310-B2 (live), 71200-04440-B1 (2 prices); 71440 / 71430 hits are seat backs",
+      "imagePermission": "",
+      "notes": "Sienna 2016 sells seat components only (no complete seat numbers); JoeTLC listings with images include no seats",
       "liveId": null
     }
   ]

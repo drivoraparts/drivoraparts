@@ -13,8 +13,8 @@ prices, no duplicates. `TRACKER.md` (generated from `pipeline.json`) is the per-
 | Steering | 20 | 20 | 0 | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4507, 4509 |
 | Turbochargers | 20 | 14 | 6 | 4445, 4488, 5101-5105, 5121-5127 |
 | Engines | 20 | 15 | 5 | 5106-5120 |
-| Seats | 20 | 1 (2 after batch 40) | 19 (18) | 4508 (+4510) |
-| **Total** | 120 | **76** (77 after batch 40) | **44** (43) | |
+| Seats | 20 | 2 | 18 | 4508, 4510 |
+| **Total** | 120 | **77** | **43** | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -42,7 +42,7 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 37 | #165 | Toyota rack 45510-07010 (4509) | done |
 | 38 | #166 | HKS 14020-AT004 JZA80 kit with GTIII-4R (5125) | done |
 | 39 | #167 | BorgWarner B03G 2-port and 6-port GR Supra turbos (5126, 5127) | done |
-| 40 | (this PR) | Genuine Tacoma seat 71200-04310-B2 (4510) | pending |
+| 40 | #168 | Genuine Tacoma seat 71200-04310-B2 (4510) | done |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
@@ -119,3 +119,23 @@ up to 32 listings, and the A340E photos are also used on A340F (4WD) units. Each
   brackets, which the owner has excluded.
 - **Route that would work:** photographs of the actual units from the offline supplier, with the supplier's permission,
   combined with the part-number pricing already found.
+
+## Checkpoint (2026-11-24, after batch 40): 77 of 120 live
+What blocks the remaining 43 is recorded per candidate in `pipeline.json` / `TRACKER.md`. In summary:
+- **Seats (18):**
+  - About 760 genuine seat numbers were probed on Toyota's photo host. Only three have a complete-seat photo: two are live and the
+    third, 71200-04440-B1, has two prices.
+  - JoeTLC and the dealer stores have no seat photos; dealer stores also refuse automated access.
+  - Recent Sienna parts lists sell seat components only.
+  - Unblocks: supplier photographs of actual units, with permission, for part numbers that already have prices.
+- **Transmissions (14):**
+  - Toyota's reman transmission photos are missing, connector close-ups or annotated diagrams (33030-04080).
+  - Powertrain Products uses generic family photos, and other remanufacturers have no shared part numbers.
+- **Turbochargers (6):**
+  - Logo or watermark: CTS, ARTEC, Pure.
+  - Photos shared between variants: Dynamic Autowerx Flow Max 6-port, GReddy T88.
+  - No photo: Toyota 17201-WAA02, 17201-18030.
+  - Sites refuse automated access: Vivid, ECS, dealer stores.
+- **Engines (5):**
+  - Remaining ATK numbers reuse 847E's photos (847A/847C) or have two prices (849, 857D).
+  - VEGE, Jasper and independent rebuilders give no three comparable prices.
