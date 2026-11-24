@@ -77253,5 +77253,49 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-5128-hv-1": {
+    "productId": 5128,
+    "productName": "ATK Remanufactured 2.4L 2AZ-FE inline-4 Long Block Engine 857D for 2007–2009 Toyota Camry / Camry Solara",
+    "localFile": "/product-media/engine/atk-857d/1.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2azfe-2.4l-l4-remanufactured-engine-39850-4.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/2-6-2009-2azfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 857D) (studio photo of the remanufactured 857D 2AZ-FE long block (also used by Powertrain Company as its 857D photo)); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "857D",
+      "ATK 857D"
+    ],
+    "query": "retailer listing: 857D",
+    "sha256": "928fd5b21546101137f2fcbd21d503bf5033333bb111ad39afa5dc2d27496e40",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5128-hv-2": {
+    "productId": 5128,
+    "productName": "ATK Remanufactured 2.4L 2AZ-FE inline-4 Long Block Engine 857D for 2007–2009 Toyota Camry / Camry Solara",
+    "localFile": "/product-media/engine/atk-857d/2.webp",
+    "sourceUrl": "https://www.powertrainproducts.net/wp-content/uploads/2022/03/toyota-2azfe-2.4l-l4-remanufactured-engine-39850-1.jpg",
+    "sourceName": "powertrainproducts.net",
+    "landingPage": "https://www.powertrainproducts.net/product/2-6-2009-2azfe/",
+    "creator": "Powertrain Products (retailer listing of this ATK engine)",
+    "creatorUrl": "https://www.powertrainproducts.net/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "product photography on a specialist remanufactured-engine retailer's listing of this exact engine (ATK 857D) (studio photo of the remanufactured 857D 2AZ-FE long block); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "857D",
+      "ATK 857D"
+    ],
+    "query": "retailer listing: 857D",
+    "sha256": "975fa8790edf02ea3d75a1e1a694bb7470d5e727c3334aab39d56430d28a77a0",
+    "downloadedAt": "2026-11-23"
   }
 }
