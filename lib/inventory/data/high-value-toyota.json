@@ -302,6 +302,39 @@
     "createdAt": 1795200005124
   },
   {
+    "id": 5125,
+    "name": "HKS Special Setup Kit with GTIII-4R Turbocharger 14020-AT004 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "category": "turbocharger",
+    "brand": "hks",
+    "price": 6299.45,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "14020-AT004",
+    "freightNotes": "Ships as a single parcel.",
+    "fitment": "1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). HKS lists the JZA80 2JZ-GTE; not for the non-turbo 2JZ-GE, and 1998 VVT-i compatibility is not documented",
+    "fitmentYears": "1993–1997",
+    "fitmentApplications": [
+      {
+        "yearFrom": 1993,
+        "yearTo": 1997,
+        "make": "Toyota",
+        "model": "Supra",
+        "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"
+      }
+    ],
+    "thumbnail": "/product-media/turbocharger/hks-14020-at004/1.webp",
+    "image": "/product-media/turbocharger/hks-14020-at004/1.webp",
+    "images": [
+      "/product-media/turbocharger/hks-14020-at004/1.webp",
+      "/product-media/turbocharger/hks-14020-at004/2.webp"
+    ],
+    "description": "HKS Special Setup Kit with GTIII-4R Turbocharger 14020-AT004 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)\n\nHKS single-turbo conversion for the JZA80 Supra's 2JZ-GTE: GTIII-4R turbocharger with HKS's stainless exhaust manifold, external wastegate and oil lines, replacing the factory twin turbochargers. Aftermarket part; not made or warranted by Toyota.\n\nSpecifications\n\nManufacturer: HKS\nManufacturer part number: 14020-AT004 (setup kit with turbocharger; 14020-AT003 is the same kit without the turbo)\nTurbocharger: HKS GTIII-4R (included)\nExhaust manifold: stainless steel, 42.7 mm\nWastegate: HKS GTII-type 60 mm external wastegate\nEngine: 2JZ-GTE\nCondition: New\n\nKit contents as listed by HKS retailers\n\nHKS GTIII-4R turbocharger\nStainless exhaust manifold (42.7 mm)\nGTII-type 60 mm wastegate with return pipe\nOil feed and return lines\nFlanges, gaskets and hardware\n\nToyota fitment\n\n1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE twin-turbo, non-VVT-i). HKS lists the JZA80 2JZ-GTE; not for the non-turbo 2JZ-GE, and 1998 VVT-i compatibility is not documented.\n\nNotes\n\nRetailers note the kit may need additional fabrication, such as the intake (suction) piping, and a water line is not provided for the turbo. Engine management changes and tuning are not included.\nNot documented for the 1998 VVT-i 2JZ-GTE; listed here for the non-VVT-i engine only.\nFor off-road / competition use; check emissions rules in your state before installing.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "hks-14020-at004",
+    "createdAt": 1795200005125
+  },
+  {
     "id": 5106,
     "name": "ATK Remanufactured 4.0L 1GR-FE V6 Long Block Engine 858B for 2006–2015 Toyota Tacoma / Tundra (2006–2010 and 2012–2015)",
     "category": "engine",

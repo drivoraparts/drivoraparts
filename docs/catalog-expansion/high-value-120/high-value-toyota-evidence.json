@@ -417,6 +417,53 @@
       "checked": "2026-11-23"
     },
     {
+      "id": 5125,
+      "partNumber": "14020-AT004",
+      "aliases": [],
+      "maker": "HKS",
+      "fitmentApplications": [
+        {
+          "yearFrom": 1993,
+          "yearTo": 1997,
+          "make": "Toyota",
+          "model": "Supra",
+          "submodel": "Turbo, 3.0L 2JZ-GTE twin-turbo inline-6 (non-VVT-i)"
+        }
+      ],
+      "fitmentSources": [
+        "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3 (HKS SETUP KIT JZA80 2JZ-GTE WITH GTIII-4R)",
+        "https://www.vividracing.com/hks-special-set-kit-hks-gtiii4r-turbocharger-toyota-supra-jza80-2jzgte-19932002-p-152669329.html (Toyota Supra JZA80 2JZ-GTE)",
+        "https://conceptzperformance.com/hks-special-setup-kit-for-gtiii-4r-turbo-included-supra-jza80-2jz-14020-at004_p_56714.php (turbo included, Supra JZA80 2JZ)"
+      ],
+      "fitmentCaveat": "Retailers list the JZA80 2JZ-GTE; the listing is limited to the non-VVT-i US Supra Turbo because VVT-i compatibility is not stated.",
+      "competitors": [
+        {
+          "name": "Titan Motorsports",
+          "price": 6631.0,
+          "url": "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3"
+        },
+        {
+          "name": "Vivid Racing",
+          "price": 6980.0,
+          "url": "https://www.vividracing.com/hks-special-set-kit-hks-gtiii4r-turbocharger-toyota-supra-jza80-2jzgte-19932002-p-152669329.html"
+        },
+        {
+          "name": "Concept Z Performance",
+          "price": 6980.0,
+          "url": "https://conceptzperformance.com/hks-special-setup-kit-for-gtiii-4r-turbo-included-supra-jza80-2jz-14020-at004_p_56714.php"
+        },
+        {
+          "name": "Kamispeed",
+          "price": 6980.0,
+          "url": "https://www.kamispeed.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r"
+        }
+      ],
+      "lowest": 6631.0,
+      "price": 6299.45,
+      "core": "none (sold outright, per the manufacturer)",
+      "checked": "2026-11-23"
+    },
+    {
       "id": 5106,
       "partNumber": "858B",
       "aliases": [

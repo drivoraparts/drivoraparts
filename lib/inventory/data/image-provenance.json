@@ -76944,5 +76944,47 @@
     "downloadedAt": "2026-11-19T00:00:00.000Z",
     "status": "downloaded",
     "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
+  },
+  "product-5125-hv-1": {
+    "productId": 5125,
+    "productName": "HKS Special Setup Kit with GTIII-4R Turbocharger 14020-AT004 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "localFile": "/product-media/turbocharger/hks-14020-at004/1.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0066/0370/2362/products/538a0ea1e3ea7cb7763a8bdabe70e311_f01d2e84-c3a2-427b-a5a0-ebf029d3960a.jpg",
+    "sourceName": "titanmotorsports.com",
+    "landingPage": "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3",
+    "creator": "HKS (manufacturer)",
+    "creatorUrl": "https://hksusa.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer photos on retailer listing (existing project basis) (studio photo of the HKS GTIII-4R turbocharger supplied in the kit; the only lettering is HKS's own cast marking); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "14020-AT004"
+    ],
+    "query": "retailer listing: 14020-AT004",
+    "sha256": "7798f5bcfa14faa8a7f44e2aaaeeec9c3f11879670ba51df676915a4db52018b",
+    "downloadedAt": "2026-11-23"
+  },
+  "product-5125-hv-2": {
+    "productId": 5125,
+    "productName": "HKS Special Setup Kit with GTIII-4R Turbocharger 14020-AT004 for 1993–1997 Toyota Supra Turbo (JZA80, 2JZ-GTE)",
+    "localFile": "/product-media/turbocharger/hks-14020-at004/2.webp",
+    "sourceUrl": "https://cdn.shopify.com/s/files/1/0066/0370/2362/products/78b60997d74861abca4b8c224b9bbb25_067f039f-740b-4f73-a7e2-c32eebb12af3.jpg",
+    "sourceName": "titanmotorsports.com",
+    "landingPage": "https://titanmotorsports.com/products/hks-setup-kit-jza80-2jz-gte-with-gtiii-4r-3",
+    "creator": "HKS (manufacturer)",
+    "creatorUrl": "https://hksusa.com/",
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer photos on retailer listing (existing project basis) (studio photo of the setup-kit components (manifold, wastegate, pipes, lines and hardware)); downloaded under the owner's high-value brief (2026-11-23). No watermark or overlay; not cropped or edited. No machine-readable licence is offered; DrivoraParts claims no ownership. RIGHTS NOT INDEPENDENTLY VERIFIED",
+    "matchedTokens": [
+      "14020-AT004"
+    ],
+    "query": "retailer listing: 14020-AT004",
+    "sha256": "dcb3a3ac7b97a6b9639cc0ffaa27fc1d06910af5e123f7f5f73ca626bc4c91ab",
+    "downloadedAt": "2026-11-23"
   }
 }

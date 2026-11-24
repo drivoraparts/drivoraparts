@@ -10,11 +10,11 @@ prices, no duplicates. `TRACKER.md` (generated from `pipeline.json`) is the per-
 |---|---|---|---|---|
 | Tires | 20 | 20 | 0 | 5001-5020 |
 | Transmissions | 20 | 6 | 14 | 4489-4492, 4496, 4497 |
-| Steering | 20 | 19 (20 after batch 37) | 1 (0) | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4507 (+4509) |
-| Turbochargers | 20 | 11 | 9 | 4445, 4488, 5101-5105, 5121-5124 |
+| Steering | 20 | 20 | 0 | 4422, 4425-4427, 4430, 4471, 4493-4495, 4498-4507, 4509 |
+| Turbochargers | 20 | 11 (12 after batch 38) | 9 (8) | 4445, 4488, 5101-5105, 5121-5124 (+5125) |
 | Engines | 20 | 15 | 5 | 5106-5120 |
 | Seats | 20 | 1 | 19 | 4508 |
-| **Total** | 120 | **72** (73 after batch 37) | **48** (47) | |
+| **Total** | 120 | **73** (74 after batch 38) | **47** (46) | |
 
 Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 89 (no photo source), 36 and 2115
 (Lexus-only engine), transfer cases 4476 and 4477.
@@ -39,7 +39,8 @@ Not counted: 1946, 1952 and 1954 (placeholder photos), 1961 (watermark), 88 and 
 | 34 | #162 | Dynamic Autowerx 6969 (5124) | done |
 | 35 | #163 | Toyota racks 44250-0C200, 44250-0E260, 45510-0T011; columns 45250-06410, 45250-0C300 (4502-4506) | done |
 | 36 | #164 | Toyota rack 44250-0E220 (4507); first seat 71200-35A81-B0 (4508) | done |
-| 37 | (this PR) | Toyota rack 45510-07010 (4509) | pending |
+| 37 | #165 | Toyota rack 45510-07010 (4509) | done |
+| 38 | (this PR) | HKS 14020-AT004 JZA80 kit with GTIII-4R (5125) | pending |
 
 ## Sources: what works and what is blocked
 - **Toyota photo host (epc-images.toyota.com):** good for racks, columns and some reman transaxles.
