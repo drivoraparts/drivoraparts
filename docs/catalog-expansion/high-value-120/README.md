@@ -447,3 +447,20 @@ Batch 38 is live and verified (5125).
 - **Retail price spread:** prices for these units vary widely between US retailers. Each listing is priced from the lowest named price.
 - **Photos:** turbos.com's own studio photos of each exact part number, five per unit, with none shared between the two. There is
   no watermark or overlay. turbos.com's store policies contain no reuse restriction, but it gives no explicit licence either.
+
+## Batch 40 (2026-11-24): second genuine seat
+Batch 39 is live and verified (5126, 5127).
+- **4510 71200-04310-B2:** genuine Toyota front driver seat for the 2008-2012 Tacoma Access Cab and Double Cab with the SR5 package,
+  gray (trim code 1).
+  - Priced 5% under ToyotaPartsDeal at $2,459.27; ToyotaPartsNow $2,505.63, Lakeland Toyota $2,560.82.
+  - Configuration comes from the Toyota catalog rows on the 2008, 2010 and 2011 Tacoma seat parts lists.
+  - Photos: three whole-seat Toyota photos of this part number.
+- **Rejected or held:**
+  - 71440-35A30-C6 and 71430-04480-B0: seat backs, not complete seats.
+  - 71200-04440-B1: two prices only.
+  - ATK 847A/847C: their photos are copies of 847E's.
+  - ATK 849: two prices only.
+  - 17201-WAA02: three prices, but no photo.
+  - Reman A/T 30510-07020-84: its Toyota photo is a connector close-up.
+- **Engines beyond ATK:** VEGE (ATK numbering, Summit only), Jasper (no published prices) and independent remanufacturers (no shared
+  part numbers) do not meet the price-reference rule.

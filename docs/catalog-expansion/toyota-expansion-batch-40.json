@@ -1,0 +1,135 @@
+{
+  "_comment": "Toyota expansion batch 40 (2026-11-24): high-value parts brief, $200+ final price.",
+  "records": [
+    {
+      "status": "commercial_pending",
+      "name": "Genuine Toyota Front Driver Seat Assembly (SR5 Package, Gray) 71200-04310-B2 — Tacoma",
+      "brand": "toyota",
+      "manufacturer": "Toyota",
+      "partNumber": "71200-04310-B2",
+      "supersedes": "",
+      "supersededBy": null,
+      "partType": "Genuine Toyota",
+      "partKind": "seat",
+      "condition": "brand-new",
+      "proposedCategory": "interior",
+      "proposedCategoryName": "Interior",
+      "fitment": "2008–2012 Toyota Tacoma (SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN)",
+      "fitmentApplications": [
+        {
+          "yearFrom": 2008,
+          "yearTo": 2012,
+          "make": "Toyota",
+          "model": "Tacoma",
+          "submodel": "SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN"
+        }
+      ],
+      "engines": "",
+      "description": "Genuine Toyota front driver seat assembly (sr5 package, gray) 71200-04310-B2 for the Toyota Tacoma. Complete new front driver (left-hand) bucket seat assembly, cushion and back, gray (trim code 1).\n\nSpecifications\n\nPart number: 71200-04310-B2\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2008–2012 Toyota Tacoma (SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN)\nRestriction (2008-2012 Tacoma): Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN\n\nConfirm fitment with your VIN before ordering.",
+      "price": null,
+      "pricing": {
+        "status": "verified",
+        "checkedOn": "2026-11-18",
+        "msrp": 3672.02,
+        "lowestCompetitor": {
+          "seller": "ToyotaPartsDeal",
+          "price": 2459.27,
+          "url": "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~front~lh~71200-04310-b2.html"
+        },
+        "competitors": [
+          {
+            "seller": "ToyotaPartsDeal",
+            "price": 2459.27,
+            "url": "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~front~lh~71200-04310-b2.html"
+          },
+          {
+            "seller": "ToyotaPartsNow",
+            "price": 2505.63,
+            "url": "https://www.toyotapartsnow.com/oem/toyota~x~71200-04310-B2"
+          },
+          {
+            "seller": "Lakeland Toyota",
+            "price": 2560.82,
+            "url": "https://parts.lakelandtoyota.com/p/toyota__TACOMA/Seat-Assembly-Left--Front/4230068/7120004310B2.html"
+          }
+        ],
+        "unattributedPrices": [],
+        "excluded": "",
+        "shipping": "not verified (item price only)",
+        "formula": "about 5% below the lowest verified competitor (never less than 3% below), ending in .x9",
+        "undercut": 0.05,
+        "recommendedPrice": 2336.39,
+        "priceType": "competitive target (not approved)",
+        "supplierCost": null,
+        "profitability": "review required",
+        "confidence": "high",
+        "flags": [],
+        "info": "",
+        "profitabilityFlags": [
+          "supplier cost not provided -- profitability cannot be established; flagged for review, not a selling price"
+        ],
+        "approved": false
+      },
+      "image": null,
+      "imageStatus": "none: no licensed photo of this part number (Openverse / Wikimedia Commons hold none; dealer photos are not licensed)",
+      "fitmentConfidence": "medium (VIN-dependent restrictions)",
+      "vinDependent": true,
+      "vinLookupPerformed": false,
+      "fitmentVerification": {
+        "auditedOn": "2026-11-19",
+        "verificationStatus": "vin_dependent",
+        "vinLookupPerformed": false,
+        "identity": null,
+        "applications": [
+          {
+            "yearFrom": 2008,
+            "yearTo": 2012,
+            "make": "Toyota",
+            "model": "Tacoma",
+            "engine": "SR5",
+            "restriction": "Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN",
+            "assemblyOrigin": null,
+            "productionDates": null,
+            "status": "vin_dependent",
+            "evidence": [
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal (71200-04310-B2 Seat Assembly, Front Driver Side: 2008-2012 Tacoma, model codes GRN2xx / TRN2xx)",
+                "url": "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~front~lh~71200-04310-b2.html",
+                "note": ""
+              },
+              {
+                "kind": "retailer",
+                "source": "ToyotaPartsDeal 2010 Tacoma seat parts list (SR5 package, gray, trim 1#; Access Cab and Double Cab)",
+                "url": "https://www.toyotapartsdeal.com/parts-list/2010-toyota-tacoma/body/seat_seat_track.html",
+                "note": ""
+              },
+              {
+                "kind": "dealer_catalog",
+                "source": "Lakeland Toyota (Seat Assembly, Left Front, driver side, 7120004310B2, Tacoma)",
+                "url": "https://parts.lakelandtoyota.com/p/toyota__TACOMA/Seat-Assembly-Left--Front/4230068/7120004310B2.html",
+                "note": ""
+              }
+            ],
+            "reason": null
+          }
+        ],
+        "supersession": [],
+        "rejectedSupersessions": [],
+        "blocking": [],
+        "unresolved": []
+      },
+      "sources": [
+        "https://parts.lakelandtoyota.com/p/toyota__TACOMA/Seat-Assembly-Left--Front/4230068/7120004310B2.html",
+        "https://www.toyotapartsdeal.com/oem/toyota~seat~assy~front~lh~71200-04310-b2.html",
+        "https://www.toyotapartsdeal.com/parts-list/2010-toyota-tacoma/body/seat_seat_track.html",
+        "https://www.toyotapartsnow.com/oem/toyota~x~71200-04310-B2"
+      ],
+      "approvalStatus": "REVIEW REQUIRED",
+      "reviewReasons": [
+        "supplier cost not established",
+        "no licensed product image"
+      ]
+    }
+  ]
+}
