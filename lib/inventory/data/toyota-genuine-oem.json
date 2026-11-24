@@ -7096,5 +7096,39 @@
     "description": "Genuine Toyota Steering Rack and Pinion Assembly 45510-07010 for Toyota Avalon (2013–2018)\n\nGenuine Toyota steering rack and pinion assembly 45510-07010 for the Toyota Avalon. Steering rack and pinion (steering gear) assembly. Alignment required after installation.\n\nSpecifications\n\nPart number: 45510-07010\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2013–2018 Toyota Avalon (2013-2018 Avalon and Avalon Hybrid (2.5L hybrid, 3.5L V6); confirm by VIN)\nRestriction (2013-2018 Avalon): 2013-2018 Avalon and Avalon Hybrid (2.5L hybrid, 3.5L V6); confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
     "sourceSlug": "toyota-steering-rack-and-pinion-assembly-45510-07010",
     "createdAt": 1795100004509
+  },
+  {
+    "id": 4510,
+    "name": "Genuine Toyota Front Driver Seat Assembly (SR5 Package, Gray) 71200-04310-B2 for Toyota Tacoma (2008–2012)",
+    "category": "interior",
+    "brand": "toyota",
+    "price": 2336.39,
+    "competitorPriced": true,
+    "referencePriceVerified": true,
+    "stock": true,
+    "condition": "brand-new",
+    "partNumber": "71200-04310-B2",
+    "freightNotes": "Ships as palletized freight (oversized assembly).",
+    "fitment": "2008–2012 Toyota Tacoma (SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN)",
+    "fitmentYears": "2008–2012",
+    "fitmentApplications": [
+      {
+        "yearFrom": 2008,
+        "yearTo": 2012,
+        "make": "Toyota",
+        "model": "Tacoma",
+        "submodel": "SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN"
+      }
+    ],
+    "thumbnail": "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/1.webp",
+    "image": "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/1.webp",
+    "images": [
+      "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/1.webp",
+      "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/2.webp",
+      "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/3.webp"
+    ],
+    "description": "Genuine Toyota Front Driver Seat Assembly (SR5 Package, Gray) 71200-04310-B2 for Toyota Tacoma (2008–2012)\n\nGenuine Toyota front driver seat assembly (sr5 package, gray) 71200-04310-B2 for the Toyota Tacoma. Complete new front driver (left-hand) bucket seat assembly, cushion and back, gray (trim code 1).\n\nSpecifications\n\nPart number: 71200-04310-B2\nBrand: Toyota\nType: Genuine Toyota part\nCondition: New\nFitment: 2008–2012 Toyota Tacoma (SR5; Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN)\nRestriction (2008-2012 Tacoma): Access Cab and Double Cab with the SR5 package and gray (trim 1) upholstery; the sand beige version is 71200-04310-E2; match the trim code and confirm by VIN\n\nConfirm fitment with your VIN before ordering.\n\nShipping\nShips within the United States only.",
+    "sourceSlug": "toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2",
+    "createdAt": 1795100004510
   }
 ]

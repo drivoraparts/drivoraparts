@@ -77206,5 +77206,52 @@
     "query": "retailer listing: 18559880116",
     "sha256": "a6bdcec7546b9e941c15a424e90207b4c0629d693b02aca61d23a6d43b06b0c3",
     "downloadedAt": "2026-11-23"
+  },
+  "product-4510": {
+    "productId": 4510,
+    "productName": "Genuine Toyota Front Driver Seat Assembly (SR5 Package, Gray) 71200-04310-B2 for Toyota Tacoma (2008–2012)",
+    "localFile": "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/1.webp",
+    "sourceUrl": "https://epc-images.toyota.com/img/7120004310B2/71200-04310-B2_1.webp",
+    "sourceName": "epc-images.toyota.com",
+    "landingPage": "https://autoparts.toyota.com/",
+    "creator": "Toyota Motor North America (Toyota Genuine Parts catalog)",
+    "creatorUrl": "https://autoparts.toyota.com/",
+    "hostedBy": "manufacturer",
+    "retailer": null,
+    "license": null,
+    "licenseRaw": null,
+    "licenseUrl": "",
+    "attributionRequired": false,
+    "usageBasis": "manufacturer product photography, taken from the manufacturer's own parts catalog image for this exact part number and used to show the part itself. No machine-readable licence is offered by the source, and DrivoraParts claims no ownership of the image. Added on the site owner's instruction (2026-11-19 Toyota catalog rebuild, original import workflow); reuse rights beyond that instruction are not verified by this repository.",
+    "matchedTokens": [
+      "71200-04310-B2",
+      "7120004310B2"
+    ],
+    "query": "Toyota catalog rebuild 2026-11-19: Toyota image host for 71200-04310-B2",
+    "sha256": "1b05eb8f20eee9d69f517c7f2830f7642cec8f6020b237e2964f11c7cab55122",
+    "bytes": 21428,
+    "width": 708,
+    "height": 393,
+    "additionalFiles": [
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/2.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/7120004310B2/71200-04310-B2_2.webp",
+        "sha256": "bf1a82dfca47415cc1fb776e6b17b545a7b3c02ddecfd96d4961ab159178ea8a",
+        "bytes": 14036,
+        "width": 708,
+        "height": 393
+      },
+      {
+        "localFile": "/product-media/toyota-genuine/toyota-front-driver-seat-assembly-sr5-package-gray-71200-04310-b2/3.webp",
+        "sourceUrl": "https://epc-images.toyota.com/img/7120004310B2/71200-04310-B2_3.webp",
+        "sha256": "9cf178e6c3c36da295f2503d528896d0d7cbb5ecb5d9b8ec1a4f4afee1695bc1",
+        "bytes": 14946,
+        "width": 708,
+        "height": 393
+      }
+    ],
+    "downloadedAt": "2026-11-19T00:00:00.000Z",
+    "status": "downloaded",
+    "verified": "Toyota's image host is keyed by this part number; image fetched HTTP 200, WebP, compared visually with the part type"
   }
 }

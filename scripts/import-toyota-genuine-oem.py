@@ -101,6 +101,8 @@ IMAGES = {
     "71200-35A81-B0": ["imgpn_71200-35A81-B0_1.webp"],
     # Batch 37: photo 2 is a two-view composite.
     "45510-07010": ["4551007010_1.webp"],
+    # Batch 40: whole-seat Toyota photos of this part number.
+    "71200-04310-B2": ["imgpn_71200-04310-B2_1.webp", "imgpn_71200-04310-B2_2.webp", "imgpn_71200-04310-B2_3.webp"],
     "44310-0C090": ["imgpn_44310-0C090_2.webp", "imgpn_44310-0C090_1.webp", "imgpn_44310-0C090_3.webp"],
     "44310-0C080": ["imgpn_44310-0C080_3.webp", "imgpn_44310-0C080_1.webp", "imgpn_44310-0C080_2.webp"],
     "35010-60E00-84": ["imgpn_35010-60E00-84_1.webp", "imgpn_35010-60E00-84_3.webp", "imgpn_35010-60E00-84_2.webp"],
