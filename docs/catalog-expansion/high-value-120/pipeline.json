@@ -2699,7 +2699,7 @@
     },
     {
       "category": "turbochargers",
-      "status": "READY",
+      "status": "LIVE VERIFIED",
       "manufacturer": "HKS",
       "product": "Special Setup Kit with GTIII-4R turbocharger (turbo included)",
       "partNumber": "14020-AT004",
@@ -2776,6 +2776,38 @@
       "imagePermission": "",
       "notes": "photo dead end",
       "liveId": null
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "BorgWarner",
+      "product": "BorgWarner B03G OE replacement turbo, 2-port (= Toyota 17201-WAA03)",
+      "partNumber": "18559880117",
+      "fits": "GR Supra 3.0 2020 (2-port)",
+      "usPrices": "Turbos.com $1,006.99; Turbochargers Direct $1,128.95; Denco Diesel $1,890.91; Titan $2,055.11",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 956.64,
+      "imageSource": "turbos.com (5 studio photos of this part number; no watermark)",
+      "imagePermission": "retailer product photos; turbos.com store policies contain no reuse restriction (no explicit licence)",
+      "notes": "batch 39",
+      "liveId": 5126
+    },
+    {
+      "category": "turbochargers",
+      "status": "READY",
+      "manufacturer": "BorgWarner",
+      "product": "BorgWarner B03G OE replacement turbo, 6-port (= Toyota 17201-WAA08)",
+      "partNumber": "18559880116",
+      "fits": "GR Supra 3.0 2021-2023 (6-port)",
+      "usPrices": "Turbos.com $3,270.99; Titan $6,304.12; NGP Racing $6,304.12",
+      "coreDeposit": null,
+      "condition": "new",
+      "proposedPrice": 3107.44,
+      "imageSource": "turbos.com (5 studio photos of this part number; no watermark)",
+      "imagePermission": "retailer product photos; turbos.com store policies contain no reuse restriction (no explicit licence)",
+      "notes": "batch 39",
+      "liveId": 5127
     }
   ]
 }

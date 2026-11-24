@@ -435,3 +435,15 @@ Batch 37 is live and verified (4509). Steering is complete at 20.
   - Summit Racing is behind bot protection and was not worked around.
   - The independent remanufacturers found (Power Engines, JDM Engine Zone, United Engine, Toyota Truck Engine) each sell their own
     units under an engine code, not a shared part number, so no single engine has three comparable prices.
+
+## Batch 39 (2026-11-24): BorgWarner OE replacement turbochargers for GR Supra 3.0
+Batch 38 is live and verified (5125).
+- **5126 BorgWarner 18559880117 (B03G, 2-port, replaces Toyota 17201-WAA03):** for the 2020 GR Supra 3.0, $956.64.
+  - Priced 5% under turbos.com at $1,006.99.
+  - Other prices: Turbochargers Direct $1,128.95, Denco Diesel $1,890.91, Titan $2,055.11.
+- **5127 BorgWarner 18559880116 (B03G, 6-port, replaces Toyota 17201-WAA08):** for the 2021-2023 GR Supra 3.0, $3,107.44.
+  - Priced 5% under turbos.com at $3,270.99.
+  - Other prices: Titan and NGP Racing at $6,304.12.
+- **Retail price spread:** prices for these units vary widely between US retailers. Each listing is priced from the lowest named price.
+- **Photos:** turbos.com's own studio photos of each exact part number, five per unit, with none shared between the two. There is
+  no watermark or overlay. turbos.com's store policies contain no reuse restriction, but it gives no explicit licence either.
